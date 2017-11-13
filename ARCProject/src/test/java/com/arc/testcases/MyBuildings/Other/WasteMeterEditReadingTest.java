@@ -14,7 +14,7 @@ public class WasteMeterEditReadingTest extends BaseClass {
 
 	@Test(dependsOnMethods = { "com.arc.testcases.MyBuildings.None.LoginCaseTest.loginCaseTest","com.arc.testcases.MyBuildings.None.ClickSearchedProgramTest.clickSearchedProgramTest","com.arc.testcases.MyBuildings.None.PaymentbyCCTest.paymentbyCCTest" })
 	@Parameters({"rowNum" ,"buildingSheet","loginSheet"})
-	public void wasteMeterEditReadingTest(int rowNum, String buildingSheet, String loginSheet) throws IOException {
+	public void wasteMeterEditReading(int rowNum, String buildingSheet, String loginSheet) throws IOException {
 		
 		CommonMethod.ExtentReportConfig();
 		

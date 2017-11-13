@@ -13,8 +13,8 @@ public class ProjectDetailsVerificationTest extends BaseClass {
 
 	
 	@Test(dependsOnMethods = { "com.arc.testcases.MyBuildings.None.LoginCaseTest.loginCaseTest","com.arc.testcases.MyBuildings.None.ClickSearchedProgramTest.clickSearchedProgramTest","com.arc.testcases.MyBuildings.None.PaymentbyCCTest.paymentbyCCTest" })
-	@Parameters({"rowNum" ,"buildingSheet","loginSheet", "paymentSheet"})
-	public void projectDetailsVerificationTest(int rowNum, String buildingSheet, String loginSheet) throws IOException {
+	@Parameters({"rowNum" ,"buildingSheet","loginSheet"})
+	public void projectDetailsVerification(int rowNum, String buildingSheet, String loginSheet) throws IOException {
 		
 		CommonMethod.ExtentReportConfig();
 		

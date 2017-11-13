@@ -100,9 +100,9 @@ pass data on below parameters before executing test suite
 <!-- </classes>
 </test> -->
 
-<test name="ARCRegressionTest-Building-Other">
+<!-- <test name="ARCRegressionTest-Building-Other">
 
-<!-- pass data on below parameters before executing test suite -->
+pass data on below parameters before executing test suite
 <parameter name="browserName" value="firefox"/>
 <parameter name="environment" value="staging"/>
 <parameter name="rowNum" value="5"/>
@@ -144,18 +144,15 @@ pass data on below parameters before executing test suite
 <class name="com.arc.testcases.MyBuildings.Other.BillingStatusVerificationTest"></class>
 <class name="com.arc.testcases.MyBuildings.Other.PerformanceScoreVerificationReviewTest"/>
 
-<<<<<<< HEAD
- 
-=======
- -->				  
+				  
 </classes>
-</test>
+</test> -->
 
 
 
 
 
-<test name="ARCRegressionTest-Building-Other">
+<test name="ARCRegressionTest-Building-None">
 
 <!-- pass data on below parameters before executing test suite -->
 <parameter name="browserName" value="firefox"/>
@@ -173,7 +170,6 @@ pass data on below parameters before executing test suite
 <!--BuilidingNone -->
 
 <class name="com.arc.testcases.MyBuildings.None.LoginCaseTest"></class>
-<class name="com.arc.testcases.MyBuildings.None.SearchProgramTest"></class>
 <class name="com.arc.testcases.MyBuildings.None.ClickSearchedProgramTest"></class>
 <class name="com.arc.testcases.MyBuildings.None.AddNewProjectTest"></class>
 <class name="com.arc.testcases.MyBuildings.None.PaymentbyCCTest"></class>
@@ -198,9 +194,8 @@ pass data on below parameters before executing test suite
 <class name="com.arc.testcases.MyBuildings.None.WasteReadingDateOverlappingTest"></class>
 <class name="com.arc.testcases.MyBuildings.None.AddNewProjectINDTest"></class>
 <class name="com.arc.testcases.MyBuildings.None.PaymentbyCheckTest"></class>
-
 <class name="com.arc.testcases.MyBuildings.None.PerformanceScoreVerificationReviewTest"/>
->>>>>>> 104557fba1658b7fcb45e2001140bef3e240b0ce
+
 
 </classes>
 </test>

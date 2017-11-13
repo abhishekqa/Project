@@ -15,7 +15,7 @@ public class AddTeamMemberTest extends BaseClass {
 	
 	@Test(dependsOnMethods = { "com.arc.testcases.MyBuildings.Other.LoginCaseTest.loginCaseTest","com.arc.testcases.MyBuildings.Other.PaymentbyCCTest.paymentbyCCTest" })
 	@Parameters({"rowNum" ,"buildingSheet" , "teamSheet","loginSheet"})
-	public void addTeamMemberTest(int rowNum, String buildingSheet, String teamSheet, String loginSheet) throws IOException {
+	public void addTeamMember(int rowNum, String buildingSheet, String teamSheet, String loginSheet) throws IOException {
 		CommonMethod.ExtentReportConfig();
 		CommonMethod.test = CommonMethod.extent.startTest("AddTeamMemberTest-BOther", "Verifies if TeamMember add functionality is working fine").assignCategory("CheckTeam");
 		ReusableMethodsLogin reuse = new ReusableMethodsLogin();

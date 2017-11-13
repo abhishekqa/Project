@@ -15,7 +15,7 @@ public class EnergyMeterCreateTest extends BaseClass {
 	
 	@Test(dependsOnMethods = { "com.arc.testcases.MyBuildings.None.LoginCaseTest.loginCaseTest","com.arc.testcases.MyBuildings.None.ClickSearchedProgramTest.clickSearchedProgramTest","com.arc.testcases.MyBuildings.None.PaymentbyCCTest.paymentbyCCTest" })
 	@Parameters({"rowNum" ,"buildingSheet" ,"loginSheet","energySheet"})
-	public void energyMeterCreateTest(int rowNum, String buildingSheet, String loginSheet, String energySheet) throws IOException {
+	public void energyMeterCreate(int rowNum, String buildingSheet, String loginSheet, String energySheet) throws IOException {
 		
 		CommonMethod.ExtentReportConfig();
 		

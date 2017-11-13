@@ -11,7 +11,7 @@ public class LoginCaseTest extends BaseClass {
 
 	@Test
 	@Parameters({"rowNum" ,"loginSheet"})
-	public void loginCaseTest(int rowNum, String loginSheet)throws IOException {
+	public void loginCase(int rowNum, String loginSheet)throws IOException {
 		
 		CommonMethod.ExtentReportConfig();
 		

@@ -15,7 +15,7 @@ public class WaterMeterCreateTest extends BaseClass {
 	
 	@Test(dependsOnMethods = { "com.arc.testcases.MyBuildings.None.LoginCaseTest.loginCaseTest","com.arc.testcases.MyBuildings.None.ClickSearchedProgramTest.clickSearchedProgramTest","com.arc.testcases.MyBuildings.None.PaymentbyCCTest.paymentbyCCTest" })
 	@Parameters({"rowNum" ,"buildingSheet","loginSheet", "waterSheet"})
-	public void waterMeterCreateTest(int rowNum, String buildingSheet, String loginSheet, String waterSheet) throws IOException {
+	public void waterMeterCreate(int rowNum, String buildingSheet, String loginSheet, String waterSheet) throws IOException {
 		
 		CommonMethod.ExtentReportConfig();
 		

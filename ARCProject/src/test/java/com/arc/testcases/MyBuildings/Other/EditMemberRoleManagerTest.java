@@ -18,7 +18,7 @@ public class EditMemberRoleManagerTest extends BaseClass {
 	
 	@Test(dependsOnMethods = { "com.arc.testcases.MyBuildings.Other.LoginCaseTest.loginCaseTest","com.arc.testcases.MyBuildings.Other.ClickSearchedProgramTest.clickSearchedProgramTest","com.arc.testcases.MyBuildings.Other.PaymentbyCCTest.paymentbyCCTest","com.arc.testcases.MyBuildings.Other.AddTeamMemberTest.addTeamMemberTest" })
 	@Parameters({"rowNum" ,"buildingSheet","loginSheet"})
-	public void editMemberRoleManagerTest(int rowNum, String buildingSheet, String loginSheet) throws IOException {
+	public void editMemberRoleManager(int rowNum, String buildingSheet, String loginSheet) throws IOException {
 		
 		CommonMethod.ExtentReportConfig();
 		

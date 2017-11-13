@@ -311,9 +311,9 @@ public class ReusableMethodsManage extends BaseClass{
 		CommonMethod.scrolldowntoElement( "Apps");
 		CommonMethod.testlog( "Pass", "Clicking on Apps");
 		CommonMethod.click( "Apps");
-		CommonMethod.click( "EnergyStar");
+		/*CommonMethod.click( "EnergyStar");
 		CommonMethod.testlog( "Pass", "Unstalling Energystar(Default Install)");
-	    CommonMethod.assertEqualsmessage( "InfoMessage", "Uninstalled successfully.", "something went wrong");
+	    CommonMethod.assertEqualsmessage( "InfoMessage", "Uninstalled successfully.", "something went wrong");*/
 		Thread.sleep(2000);
 		CommonMethod.click( "DropBox");
 		CommonMethod.testlog( "Pass", "Installing Dropbox");

@@ -17,8 +17,8 @@ public class WaterFileUploadTest extends BaseClass {
 
 	
 	@Test(dependsOnMethods = { "com.arc.testcases.MyBuildings.None.LoginCaseTest.loginCaseTest","com.arc.testcases.MyBuildings.None.ClickSearchedProgramTest.clickSearchedProgramTest","com.arc.testcases.MyBuildings.None.PaymentbyCCTest.paymentbyCCTest" })
-	@Parameters({"rowNum" ,"buildingSheet","loginSheet", "wasteSheet"})
-	public void waterFileUploadTest(int rowNum, String buildingSheet, String loginSheet) throws IOException {
+	@Parameters({"rowNum" ,"buildingSheet","loginSheet"})
+	public void waterFileUpload(int rowNum, String buildingSheet, String loginSheet) throws IOException {
 		CommonMethod.ExtentReportConfig();
 		CommonMethod.test = CommonMethod.extent.startTest("WaterFileUploadTest-BNone", "Verifies  Water File Uploaded successfully").assignCategory("FileUpload");
 		ReusableMethodsLogin reuse = new ReusableMethodsLogin();

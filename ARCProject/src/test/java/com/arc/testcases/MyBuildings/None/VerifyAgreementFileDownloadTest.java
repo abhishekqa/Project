@@ -18,7 +18,7 @@ public class VerifyAgreementFileDownloadTest extends BaseClass {
 	
 	@Test(dependsOnMethods = { "com.arc.testcases.MyBuildings.None.LoginCaseTest.loginCaseTest","com.arc.testcases.MyBuildings.None.ClickSearchedProgramTest.clickSearchedProgramTest","com.arc.testcases.MyBuildings.None.PaymentbyCCTest.paymentbyCCTest" })
 	@Parameters({"rowNum" ,"buildingSheet","loginSheet"})
-	public void verifyAgreementFileDownloadTest(int rowNum, String buildingSheet, String loginSheet) throws IOException {
+	public void verifyAgreementFileDownload(int rowNum, String buildingSheet, String loginSheet) throws IOException {
 		
 		CommonMethod.ExtentReportConfig();
 		

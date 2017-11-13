@@ -11,7 +11,7 @@ public class AddNewProjectTest extends BaseClass {
 	
 	@Test//(dependsOnMethods={"com.arc.testcases.MyBuildings.Other.LoginCaseTest.loginCaseTest"})
 	@Parameters({"rowNum" ,"loginSheet","buildingSheet"})
-	public void addNewProjectTest(int rowNum,String loginSheet,  String buildingSheet) throws IOException {
+	public void addNewProject(int rowNum,String loginSheet,  String buildingSheet) throws IOException {
 		CommonMethod.ExtentReportConfig();
 		CommonMethod.test = CommonMethod.extent.startTest("AddNewProjectUSTest-BOther", "Verifies if New Project is added successfully").assignCategory("CheckAddProject");
         ReusableMethodsLogin reuse = new ReusableMethodsLogin();

@@ -15,7 +15,7 @@ public class InternationalLanguagesSpecaialCharacterMeterCreateTest extends Base
 	
 	@Test(dependsOnMethods = { "com.arc.testcases.MyBuildings.None.LoginCaseTest.loginCaseTest","com.arc.testcases.MyBuildings.None.ClickSearchedProgramTest.clickSearchedProgramTest","com.arc.testcases.MyBuildings.None.PaymentbyCCTest.paymentbyCCTest" })
 	@Parameters({"rowNum" ,"buildingSheet" ,"loginSheet"})
-	public void energyMeterCreateTest(int rowNum, String buildingSheet, String loginSheet) throws IOException {
+	public void energyMeterCreate(int rowNum, String buildingSheet, String loginSheet) throws IOException {
 		
 		CommonMethod.ExtentReportConfig();
 		

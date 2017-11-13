@@ -13,7 +13,7 @@ public class PerformanceScoreVerificationReviewTest extends BaseClass {
 	
 	@Test(dependsOnMethods = { "com.arc.testcases.MyBuildings.Other.LoginCaseTest.loginCaseTest","com.arc.testcases.MyBuildings.Other.ClickSearchedProgramTest.clickSearchedProgramTest","com.arc.testcases.MyBuildings.Other.PaymentbyCCTest.paymentbyCCTest" })
 	@Parameters({"rowNum" ,"buildingSheet","loginSheet", "paymentSheet"})
-	public void waterFileUploadTest(int rowNum, String buildingSheet, String loginSheet, String paymentSheet) throws IOException {
+	public void waterFileUpload(int rowNum, String buildingSheet, String loginSheet, String paymentSheet) throws IOException {
 		CommonMethod.ExtentReportConfig();
 		CommonMethod.test = CommonMethod.extent.startTest("SubmitPerformanceScoreAllFunctionalityTest-BOther", "Verifies  ReviewPageTest successully ").assignCategory("SubmitForReview");
 		ReusableMethodsLogin reuse = new ReusableMethodsLogin();

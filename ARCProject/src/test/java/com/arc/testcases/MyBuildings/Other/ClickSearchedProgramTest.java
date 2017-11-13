@@ -13,7 +13,7 @@ public class ClickSearchedProgramTest extends BaseClass {
 	@Test
 	//(dependsOnMethods = { "com.arc.testcases.MyBuildings.Other.LoginCaseTest.loginCaseTest"})
 	@Parameters({"rowNum" ,"loginSheet"})
-	public void clickSearchedProgramTest(int rowNum, String loginSheet) throws IOException {
+	public void clickSearchedProgram(int rowNum, String loginSheet) throws IOException {
 		
 		CommonMethod.ExtentReportConfig();
 		

@@ -11,8 +11,8 @@ import com.arc.driver.CommonMethod;
 public class ClickSearchedProgramTest extends BaseClass {
 
 	@Test(dependsOnMethods = { "com.arc.testcases.MyBuildings.None.LoginCaseTest.loginCaseTest"})
-	@Parameters({"rowNum" ,"buildingSheet" ,"loginSheet","paymentSheet"})
-	public void clickSearchedProgramTest(int rowNum, String buildingSheet, String loginSheet) throws IOException {
+	@Parameters({"rowNum" ,"buildingSheet" ,"loginSheet"})
+	public void clickSearchedProgram(int rowNum, String buildingSheet, String loginSheet) throws IOException {
 		
 		CommonMethod.ExtentReportConfig();
 		

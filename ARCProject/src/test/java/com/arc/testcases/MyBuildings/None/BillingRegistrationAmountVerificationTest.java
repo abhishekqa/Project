@@ -16,7 +16,7 @@ public class BillingRegistrationAmountVerificationTest extends BaseClass {
 	
 	@Test(dependsOnMethods = { "com.arc.testcases.MyBuildings.None.LoginCaseTest.loginCaseTest","com.arc.testcases.MyBuildings.None.ClickSearchedProgramTest.clickSearchedProgramTest","com.arc.testcases.MyBuildings.None.PaymentbyCCTest.paymentbyCCTest" })
 	@Parameters({"rowNum" ,"buildingSheet" ,"loginSheet","paymentSheet"})
-	public void billingRegistrationAmountVerificationTest(int rowNum, String buildingSheet, String loginSheet, String paymentSheet) throws IOException {
+	public void billingRegistrationAmountVerification(int rowNum, String buildingSheet, String loginSheet, String paymentSheet) throws IOException {
 		
 		CommonMethod.ExtentReportConfig();
 		

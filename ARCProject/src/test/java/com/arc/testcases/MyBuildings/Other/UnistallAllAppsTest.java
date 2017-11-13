@@ -16,7 +16,7 @@ public class UnistallAllAppsTest extends BaseClass {
 	
 	@Test(dependsOnMethods = {"com.arc.testcases.MyBuildings.Other.LoginCaseTest.loginCaseTest","com.arc.testcases.MyBuildings.Other.ClickSearchedProgramTest.clickSearchedProgramTest","com.arc.testcases.MyBuildings.Other.PaymentbyCCTest.paymentbyCCTest" })
 	@Parameters({"rowNum" ,"buildingSheet","loginSheet"})
-	public void installAllAppsTest(int rowNum, String buildingSheet, String loginSheet) throws IOException {
+	public void UnistallAllApps(int rowNum, String buildingSheet, String loginSheet) throws IOException {
 		
 		CommonMethod.ExtentReportConfig();
 		

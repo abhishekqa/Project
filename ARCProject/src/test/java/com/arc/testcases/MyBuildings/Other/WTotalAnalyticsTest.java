@@ -15,7 +15,7 @@ public class  WTotalAnalyticsTest extends BaseClass {
 	
 	@Test(dependsOnMethods = { "com.arc.testcases.MyBuildings.Other.LoginCaseTest.loginCaseTest","com.arc.testcases.MyBuildings.Other.ClickSearchedProgramTest.clickSearchedProgramTest","com.arc.testcases.MyBuildings.Other.PaymentbyCCTest.paymentbyCCTest" })
 	@Parameters({"rowNum" ,"buildingSheet","loginSheet", "waterSheet"})
-	public void verifyWDailiyMTCO2Test(int rowNum, String buildingSheet, String loginSheet) throws IOException {
+	public void verifyWDailiyMTCO2(int rowNum, String buildingSheet, String loginSheet) throws IOException {
 		
 		CommonMethod.ExtentReportConfig();
 		

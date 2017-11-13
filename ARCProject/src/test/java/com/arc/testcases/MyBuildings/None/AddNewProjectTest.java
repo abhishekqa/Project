@@ -12,7 +12,7 @@ public class AddNewProjectTest extends BaseClass {
 	@Test
 	//(dependsOnMethods={"com.arc.testcases.MyBuildings.None.LoginCaseTest.loginCaseTest"})
 	@Parameters({"rowNum" ,"loginSheet", "buildingSheet"})
-	public void addNewProjectTest(int rowNum, String loginSheet, String buildingSheet) throws IOException {
+	public void addNewProject(int rowNum, String loginSheet, String buildingSheet) throws IOException {
 		
 		CommonMethod.ExtentReportConfig();
 		

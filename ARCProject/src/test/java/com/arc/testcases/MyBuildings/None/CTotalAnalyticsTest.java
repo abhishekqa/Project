@@ -15,7 +15,7 @@ public class  CTotalAnalyticsTest extends BaseClass {
 	
 	@Test(dependsOnMethods = { "com.arc.testcases.MyBuildings.None.LoginCaseTest.loginCaseTest","com.arc.testcases.MyBuildings.None.ClickSearchedProgramTest.clickSearchedProgramTest","com.arc.testcases.MyBuildings.None.PaymentbyCCTest.paymentbyCCTest" })
 	@Parameters({"rowNum" ,"buildingSheet" ,"loginSheet"})
-	public void carbonTotalTest(int rowNum, String buildingSheet, String loginSheet ) throws IOException {
+	public void carbonTotal(int rowNum, String buildingSheet, String loginSheet ) throws IOException {
 		
 		CommonMethod.ExtentReportConfig();
 		

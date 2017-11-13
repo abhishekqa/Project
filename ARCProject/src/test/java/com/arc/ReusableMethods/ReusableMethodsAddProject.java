@@ -24,20 +24,35 @@ public class ReusableMethodsAddProject extends BaseClass{
 	}
 	public void AddProjectNoneUS(int rowNum, String sheetName) throws IOException, InterruptedException {
 		
+		String prjType 		= data.getCellData(sheetName, "Project Type", rowNum);
+		String prjRating 	= data.getCellData(sheetName, "Rating System", rowNum);
+		String ownerOrg 	= data.getCellData(sheetName, "Owner Organization", rowNum);
+		String ownerCountry = data.getCellData(sheetName, "Owner Country", rowNum);
+		String ownerMail 	= data.getCellData(sheetName, "Owner Email", rowNum);
+		String prjArea 		= data.getCellData(sheetName, "Area", rowNum);
+		String prjAddress 	= data.getCellData(sheetName, "Address", rowNum);
+		String prjCity 		= data.getCellData(sheetName, "City", rowNum);
+		String prjCountry 	= data.getCellData(sheetName, "Country", rowNum);
+		String prjState 	= data.getCellData(sheetName, "State", rowNum);
+		String prjZip 		= data.getCellData(sheetName, "Zip", rowNum);
 		
-		
+		//creating the project name
+		data.setCellData(sheetName,"Project Name" ,rowNum, "US Building None"+" " + CommonMethod.randomNumber() );
+														   
+		String prjName 	= data.getCellData(sheetName, "Project Name", rowNum);
 		
 		clickAddProjectMyBuildings();
-		CommonMethod.sendKeys("ProjectName",
-				"BuildingNone" + " " + CommonMethod.randomNumber());
+		
+		CommonMethod.sendKeys( "ProjectName", prjName);
+				
 		Thread.sleep(2000);
 		CommonMethod.testlog("Pass", "Feeding Random Unique name for Project and saving to external location");
 		
-		CommonMethod.selectdropdown("ClickOnProjectType","Buildings");
+		CommonMethod.selectdropdown("ClickOnProjectType",prjType);
 		CommonMethod.testlog("Pass","Selecting Project Type as Buildings");
 	
 		
-		CommonMethod.selectdropdown("ClickOnRatingSystem","None");
+		CommonMethod.selectdropdown("ClickOnRatingSystem",prjRating);
 		CommonMethod.testlog("Pass","Selecting Ratings as LEED for Buildings");
 		
 		CommonMethod.selectdropdownrandom("SpaceType");
@@ -47,7 +62,7 @@ public class ReusableMethodsAddProject extends BaseClass{
 		CommonMethod.testlog("Pass", "Selecting Owner Type Type");
 		
 		
-		CommonMethod.sendKeys("OwnerOrg", "T & W Corporation");
+		CommonMethod.sendKeys("OwnerOrg", ownerOrg);
 		Thread.sleep(2000);
 		CommonMethod.click("OwnerOrg");
 		
@@ -56,21 +71,21 @@ public class ReusableMethodsAddProject extends BaseClass{
 	//	CommonMethod.testlog( "Pass", "Entering Owner Type");	
 		
 		CommonMethod.testlog("Pass", "Entering Owner Organization");
-		CommonMethod.sendKeys("OwnerEmail", "ssinha@usgbc.org");
+		CommonMethod.sendKeys("OwnerEmail", ownerMail);
 		CommonMethod.testlog("Pass", "Entering Owner Email");
-		CommonMethod.selectdropdown("OwnerCountry", "United States");
+		CommonMethod.selectdropdown("OwnerCountry", ownerCountry);
 		CommonMethod.testlog("Pass", "Entering Owner Country");
-		CommonMethod.sendKeys("Area", "10000");
+		CommonMethod.sendKeys("Area", prjArea);
 		CommonMethod.testlog("Pass", "Entering Gross Floor Area");
-		CommonMethod.sendKeys("Address", "Test Address");
+		CommonMethod.sendKeys("Address", prjAddress);
 		CommonMethod.testlog("Pass", "Entering Address");
-		CommonMethod.sendKeys("City", "Test City");
+		CommonMethod.sendKeys("City", prjCity);
 		CommonMethod.testlog("Pass", "Entering City");
-		CommonMethod.selectdropdown("Country", "United States");
+		CommonMethod.selectdropdown("Country", prjCountry);
 		CommonMethod.testlog("Pass", "Entering Country");
-		CommonMethod.selectdropdown( "State", "Alabama");
+		CommonMethod.selectdropdown( "State", prjState);
 		CommonMethod.testlog("Pass", "Entering State");
-		CommonMethod.sendKeys( "ZipCode", "35005");
+		CommonMethod.sendKeys( "ZipCode", prjZip);
 		CommonMethod.testlog("Pass", "Entering Zipcode");
 		CommonMethod.click("AgreeTermsProgReg");
 		CommonMethod.testlog("Pass", "Clicking on agree to terms");
@@ -1001,8 +1016,17 @@ public void AddAboveProjectLEEDfortransit() throws IOException, InterruptedExcep
 		CommonMethod.testlog( "Pass", "Validating Payment Success Message");
 
 	}
-	public void PaymentbyCheck(String Objectlocator, String successMessage)
+	public void PaymentbyCheck(String Objectlocator, String successMessage, String sheetName, int rowNum)
 			throws IOException, InterruptedException {
+		
+		String partyName  = data.getCellData(sheetName, "Party Name", rowNum);
+		String partyEmail = data.getCellData(sheetName, "Party Email", rowNum);
+		String address    = data.getCellData(sheetName, "Address", rowNum);
+		String city       = data.getCellData(sheetName, "City", rowNum);
+		String country    = data.getCellData(sheetName, "Country", rowNum);
+		String state      = data.getCellData(sheetName, "State", rowNum);
+		String zip        = data.getCellData(sheetName, "Zip", rowNum);
+		
 /*
 		CommonMethod.sendKeys( "BillPartyName", "Test Party Name");
 		CommonMethod.testlog( "Pass", "Entering BillPartyName");
@@ -1012,21 +1036,21 @@ public void AddAboveProjectLEEDfortransit() throws IOException, InterruptedExcep
 		CommonMethod.testlog( "Pass", "Address");
 		CommonMethod.sendKeys( "City", "Delhi");
 		CommonMethod.testlog( "Pass", "Entering City");*/
-		CommonMethod.sendKeys( "BillPartyName", "Test Party Name");
+		CommonMethod.sendKeys( "BillPartyName", partyName);
 		CommonMethod.testlog( "Pass", "Entering Bill Party name");
-		CommonMethod.sendKeys( "BillPartyEmail", "TestParty@test.com");
+		CommonMethod.sendKeys( "BillPartyEmail", partyEmail);
 		CommonMethod.testlog( "Pass", "Entering Bill Party Email");
-		CommonMethod.sendKeys( "BillAddress1", "Test Address");
+		CommonMethod.sendKeys( "BillAddress1", address);
 		CommonMethod.testlog( "Pass", "Entering Billing Address");
 		// CommonMethod.sendKeys( "BillAddress2", "sample Address");
-		CommonMethod.sendKeys( "BillCity", "Test City");
+		CommonMethod.sendKeys( "BillCity", city);
 		CommonMethod.testlog( "Pass", "Entering City");
-		CommonMethod.selectdropdown( "BillCountry", "United States");
+		CommonMethod.selectdropdown( "BillCountry", country);
 		CommonMethod.testlog( "Pass", "Entering Entering Country");
 		
-		CommonMethod.selectdropdown( "BillState", "Alaska");
+		CommonMethod.selectdropdown( "BillState", state);
 		CommonMethod.testlog( "Pass", "Entering State");
-		CommonMethod.sendKeys( "BillZipCode", "99501");
+		CommonMethod.sendKeys( "BillZipCode", zip);
 		CommonMethod.testlog( "Pass", "Entering Zipcode");
 		CommonMethod.click( "NextButtonPayment");
 		CommonMethod.testlog( "Pass", "Clicking on Next Button");

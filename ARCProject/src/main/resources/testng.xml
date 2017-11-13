@@ -116,10 +116,10 @@ pass data on below parameters before executing test suite
 
 <classes>
 
-<!-- <class name="com.arc.testcases.MyBuildings.Other.LoginCaseTest"></class>
-<class name="com.arc.testcases.MyBuildings.Other.ClickSearchedProgramTest"></class> -->
+<class name="com.arc.testcases.MyBuildings.Other.LoginCaseTest"></class>
+<class name="com.arc.testcases.MyBuildings.Other.ClickSearchedProgramTest"></class>
 <class name="com.arc.testcases.MyBuildings.Other.AddNewProjectTest"></class>
-<!-- <class name="com.arc.testcases.MyBuildings.Other.PaymentbyCCTest"></class>
+<class name="com.arc.testcases.MyBuildings.Other.PaymentbyCCTest"></class>
 <class name="com.arc.testcases.MyBuildings.Other.EnergyMeterCreateTest"></class>
 <class name="com.arc.testcases.MyBuildings.Other.WaterMeterCreateTest"></class>
 <class name="com.arc.testcases.MyBuildings.Other.WasteMeterCreateTest"></class>
@@ -144,7 +144,7 @@ pass data on below parameters before executing test suite
 <class name="com.arc.testcases.MyBuildings.Other.BillingStatusVerificationTest"></class>
 <class name="com.arc.testcases.MyBuildings.Other.PerformanceScoreVerificationReviewTest"/>
 
- -->
+ 
 
 				  
 </classes>

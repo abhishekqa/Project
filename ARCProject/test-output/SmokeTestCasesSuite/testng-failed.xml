@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [SmokeTestCasesSuite]">
+  <parameter name="environment" value="staging"/>
+  <parameter name="browserName" value="firefox"/>
+  <test name="ARC_SmokeTest(failed)">
+    <parameter name="environment" value="staging"/>
+    <parameter name="browserName" value="firefox"/>
+    <classes>
+      <class name="com.arc.testcases.Manage.VerifyAgreementFileDownload">
+        <methods>
+          <include name="login"/>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.arc.testcases.Manage.VerifyAgreementFileDownload -->
+    </classes>
+  </test> <!-- ARC_SmokeTest(failed) -->
+</suite> <!-- Failed suite [SmokeTestCasesSuite] -->

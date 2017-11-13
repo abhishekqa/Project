@@ -1,0 +1,1863 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" total="33" passed="32">
+  <reporter-output>
+  </reporter-output>
+  <suite name="SanityTestCasesSuite" duration-ms="3217219" started-at="2017-11-10T10:32:31Z" finished-at="2017-11-10T11:26:08Z">
+    <groups>
+    </groups>
+    <test name="ARCRegressionTest-Building" duration-ms="3217219" started-at="2017-11-10T10:32:31Z" finished-at="2017-11-10T11:26:08Z">
+      <class name="com.arc.testcases.MyBuildings.LEED.AddNewProjectTest">
+        <test-method status="PASS" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.LEED.AddNewProjectTest@1e7c42fe]" name="setup" is-config="true" duration-ms="17929" started-at="2017-11-10T16:04:23Z" finished-at="2017-11-10T16:04:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[staging]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="addNewProjectTest(int, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.LEED.AddNewProjectTest@1e7c42fe]" name="addNewProjectTest" duration-ms="70412" started-at="2017-11-10T16:04:41Z" finished-at="2017-11-10T16:05:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Login]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[NewBuildingProject]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addNewProjectTest -->
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.arc.testcases.MyBuildings.LEED.AddNewProjectTest@1e7c42fe]" name="teardown" is-config="true" duration-ms="112" started-at="2017-11-10T16:05:51Z" finished-at="2017-11-10T16:05:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=addNewProjectTest status=SUCCESS method=AddNewProjectTest.addNewProjectTest(int, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.LEED.AddNewProjectTest@1e7c42fe] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="end()[pri:0, instance:com.arc.testcases.MyBuildings.LEED.AddNewProjectTest@1e7c42fe]" name="end" is-config="true" duration-ms="1912" started-at="2017-11-10T16:05:51Z" finished-at="2017-11-10T16:05:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- end -->
+      </class> <!-- com.arc.testcases.MyBuildings.LEED.AddNewProjectTest -->
+      <class name="com.arc.testcases.MyBuildings.LEED.EnergyFileUploadTest">
+        <test-method status="PASS" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.LEED.EnergyFileUploadTest@71506a1e]" name="setup" is-config="true" duration-ms="17851" started-at="2017-11-10T16:30:32Z" finished-at="2017-11-10T16:30:50Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[staging]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="energyFileUploadTest(int, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.LEED.EnergyFileUploadTest@71506a1e]" name="energyFileUploadTest" duration-ms="111283" started-at="2017-11-10T16:30:50Z" depends-on-methods="com.arc.testcases.MyBuildings.LEED.LoginCaseTest.loginCaseTest, com.arc.testcases.MyBuildings.LEED.PaymentbyCCTest.paymentbyCCTest, com.arc.testcases.MyBuildings.LEED.ClickSearchedProgramTest.clickSearchedProgramTest" finished-at="2017-11-10T16:32:42Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[NewBuildingProject]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Login]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- energyFileUploadTest -->
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.arc.testcases.MyBuildings.LEED.EnergyFileUploadTest@71506a1e]" name="teardown" is-config="true" duration-ms="67" started-at="2017-11-10T16:32:42Z" finished-at="2017-11-10T16:32:42Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=energyFileUploadTest status=SUCCESS method=EnergyFileUploadTest.energyFileUploadTest(int, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.LEED.EnergyFileUploadTest@71506a1e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="end()[pri:0, instance:com.arc.testcases.MyBuildings.LEED.EnergyFileUploadTest@71506a1e]" name="end" is-config="true" duration-ms="2374" started-at="2017-11-10T16:32:42Z" finished-at="2017-11-10T16:32:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- end -->
+      </class> <!-- com.arc.testcases.MyBuildings.LEED.EnergyFileUploadTest -->
+      <class name="com.arc.testcases.MyBuildings.LEED.BillingRegistrationAmountVerificationTest">
+        <test-method status="PASS" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.LEED.BillingRegistrationAmountVerificationTest@14583a4e]" name="setup" is-config="true" duration-ms="18852" started-at="2017-11-10T16:49:14Z" finished-at="2017-11-10T16:49:33Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[staging]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="billingRegistrationAmountVerificationTest(int, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.LEED.BillingRegistrationAmountVerificationTest@14583a4e]" name="billingRegistrationAmountVerificationTest" duration-ms="37807" started-at="2017-11-10T16:49:33Z" depends-on-methods="com.arc.testcases.MyBuildings.LEED.LoginCaseTest.loginCaseTest, com.arc.testcases.MyBuildings.LEED.PaymentbyCCTest.paymentbyCCTest, com.arc.testcases.MyBuildings.LEED.ClickSearchedProgramTest.clickSearchedProgramTest" finished-at="2017-11-10T16:50:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[NewBuildingProject]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Payment]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Login]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- billingRegistrationAmountVerificationTest -->
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.arc.testcases.MyBuildings.LEED.BillingRegistrationAmountVerificationTest@14583a4e]" name="teardown" is-config="true" duration-ms="73" started-at="2017-11-10T16:50:11Z" finished-at="2017-11-10T16:50:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=billingRegistrationAmountVerificationTest status=SUCCESS method=BillingRegistrationAmountVerificationTest.billingRegistrationAmountVerificationTest(int, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.LEED.BillingRegistrationAmountVerificationTest@14583a4e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="end()[pri:0, instance:com.arc.testcases.MyBuildings.LEED.BillingRegistrationAmountVerificationTest@14583a4e]" name="end" is-config="true" duration-ms="2277" started-at="2017-11-10T16:50:11Z" finished-at="2017-11-10T16:50:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- end -->
+      </class> <!-- com.arc.testcases.MyBuildings.LEED.BillingRegistrationAmountVerificationTest -->
+      <class name="com.arc.testcases.MyBuildings.LEED.VerifyPRFileDownloadTest">
+        <test-method status="PASS" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.LEED.VerifyPRFileDownloadTest@6fa97a7]" name="setup" is-config="true" duration-ms="19407" started-at="2017-11-10T16:43:15Z" finished-at="2017-11-10T16:43:34Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[staging]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="billingStatusVerificationTest(int, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.LEED.VerifyPRFileDownloadTest@6fa97a7]" name="billingStatusVerificationTest" duration-ms="51923" started-at="2017-11-10T16:43:34Z" finished-at="2017-11-10T16:44:26Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[NewBuildingProject]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Login]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- billingStatusVerificationTest -->
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.arc.testcases.MyBuildings.LEED.VerifyPRFileDownloadTest@6fa97a7]" name="teardown" is-config="true" duration-ms="71" started-at="2017-11-10T16:44:26Z" finished-at="2017-11-10T16:44:26Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=billingStatusVerificationTest status=SUCCESS method=VerifyPRFileDownloadTest.billingStatusVerificationTest(int, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.LEED.VerifyPRFileDownloadTest@6fa97a7] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="end()[pri:0, instance:com.arc.testcases.MyBuildings.LEED.VerifyPRFileDownloadTest@6fa97a7]" name="end" is-config="true" duration-ms="2074" started-at="2017-11-10T16:44:26Z" finished-at="2017-11-10T16:44:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- end -->
+      </class> <!-- com.arc.testcases.MyBuildings.LEED.VerifyPRFileDownloadTest -->
+      <class name="com.arc.testcases.MyBuildings.LEED.PrerequisitesAttemptTest">
+        <test-method status="PASS" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.LEED.PrerequisitesAttemptTest@35a2b4ea]" name="setup" is-config="true" duration-ms="19860" started-at="2017-11-10T16:21:51Z" finished-at="2017-11-10T16:22:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[staging]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="prerequisitesAttemptTest(int, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.LEED.PrerequisitesAttemptTest@35a2b4ea]" name="prerequisitesAttemptTest" duration-ms="155317" started-at="2017-11-10T16:22:11Z" depends-on-methods="com.arc.testcases.MyBuildings.LEED.LoginCaseTest.loginCaseTest, com.arc.testcases.MyBuildings.LEED.PaymentbyCCTest.paymentbyCCTest, com.arc.testcases.MyBuildings.LEED.ClickSearchedProgramTest.clickSearchedProgramTest" finished-at="2017-11-10T16:24:46Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[NewBuildingProject]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Login]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- prerequisitesAttemptTest -->
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.arc.testcases.MyBuildings.LEED.PrerequisitesAttemptTest@35a2b4ea]" name="teardown" is-config="true" duration-ms="71" started-at="2017-11-10T16:24:46Z" finished-at="2017-11-10T16:24:47Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=prerequisitesAttemptTest status=SUCCESS method=PrerequisitesAttemptTest.prerequisitesAttemptTest(int, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.LEED.PrerequisitesAttemptTest@35a2b4ea] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="end()[pri:0, instance:com.arc.testcases.MyBuildings.LEED.PrerequisitesAttemptTest@35a2b4ea]" name="end" is-config="true" duration-ms="2080" started-at="2017-11-10T16:24:47Z" finished-at="2017-11-10T16:24:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- end -->
+      </class> <!-- com.arc.testcases.MyBuildings.LEED.PrerequisitesAttemptTest -->
+      <class name="com.arc.testcases.MyBuildings.LEED.ProjectDetailsVerificationTest">
+        <test-method status="PASS" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.LEED.ProjectDetailsVerificationTest@ace10d9]" name="setup" is-config="true" duration-ms="18742" started-at="2017-11-10T16:38:38Z" finished-at="2017-11-10T16:38:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[staging]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="FAIL" signature="projectDetailsVerificationTest(int, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.LEED.ProjectDetailsVerificationTest@ace10d9]" name="projectDetailsVerificationTest" duration-ms="44363" started-at="2017-11-10T16:38:56Z" depends-on-methods="com.arc.testcases.MyBuildings.LEED.LoginCaseTest.loginCaseTest, com.arc.testcases.MyBuildings.LEED.PaymentbyCCTest.paymentbyCCTest, com.arc.testcases.MyBuildings.LEED.ClickSearchedProgramTest.clickSearchedProgramTest" finished-at="2017-11-10T16:39:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[NewBuildingProject]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Login]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.Error">
+            <message>
+              <![CDATA[Value is not correct expected [10000] but found [5000]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Error: Value is not correct expected [10000] but found [5000]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertEquals(Assert.java:125)
+	at org.testng.Assert.assertEquals(Assert.java:178)
+	at com.arc.driver.CommonMethod.assertEqualsmessageAttributevalue(CommonMethod.java:228)
+	at com.arc.ReusableMethods.ReusableMethodsManage.VerifyProjectDetails(ReusableMethodsManage.java:120)
+	at com.arc.testcases.MyBuildings.LEED.ProjectDetailsVerificationTest.projectDetailsVerificationTest(ProjectDetailsVerificationTest.java:36)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1191)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.run(TestNG.java:1024)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Error -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- projectDetailsVerificationTest -->
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.arc.testcases.MyBuildings.LEED.ProjectDetailsVerificationTest@ace10d9]" name="teardown" is-config="true" duration-ms="59" started-at="2017-11-10T16:39:41Z" finished-at="2017-11-10T16:39:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=projectDetailsVerificationTest status=FAILURE method=ProjectDetailsVerificationTest.projectDetailsVerificationTest(int, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.LEED.ProjectDetailsVerificationTest@ace10d9] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="end()[pri:0, instance:com.arc.testcases.MyBuildings.LEED.ProjectDetailsVerificationTest@ace10d9]" name="end" is-config="true" duration-ms="1840" started-at="2017-11-10T16:39:41Z" finished-at="2017-11-10T16:39:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- end -->
+      </class> <!-- com.arc.testcases.MyBuildings.LEED.ProjectDetailsVerificationTest -->
+      <class name="com.arc.testcases.MyBuildings.LEED.PaymentbyCCTest">
+        <test-method status="PASS" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.LEED.PaymentbyCCTest@70124154]" name="setup" is-config="true" duration-ms="19339" started-at="2017-11-10T16:05:53Z" finished-at="2017-11-10T16:06:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[staging]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="paymentbyCCTest(int, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.LEED.PaymentbyCCTest@70124154]" name="paymentbyCCTest" duration-ms="62060" started-at="2017-11-10T16:06:12Z" finished-at="2017-11-10T16:07:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[NewBuildingProject]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Payment]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Login]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- paymentbyCCTest -->
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.arc.testcases.MyBuildings.LEED.PaymentbyCCTest@70124154]" name="teardown" is-config="true" duration-ms="103" started-at="2017-11-10T16:07:14Z" finished-at="2017-11-10T16:07:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=paymentbyCCTest status=SUCCESS method=PaymentbyCCTest.paymentbyCCTest(int, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.LEED.PaymentbyCCTest@70124154] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="end()[pri:0, instance:com.arc.testcases.MyBuildings.LEED.PaymentbyCCTest@70124154]" name="end" is-config="true" duration-ms="1948" started-at="2017-11-10T16:07:14Z" finished-at="2017-11-10T16:07:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- end -->
+      </class> <!-- com.arc.testcases.MyBuildings.LEED.PaymentbyCCTest -->
+      <class name="com.arc.testcases.MyBuildings.LEED.ModifyOccOptHrsProjectDetailsTest">
+        <test-method status="PASS" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.LEED.ModifyOccOptHrsProjectDetailsTest@5eb41c19]" name="setup" is-config="true" duration-ms="17740" started-at="2017-11-10T16:39:43Z" finished-at="2017-11-10T16:40:00Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[staging]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="modifyProjectDetailsTest(int, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.LEED.ModifyOccOptHrsProjectDetailsTest@5eb41c19]" name="modifyProjectDetailsTest" duration-ms="59366" started-at="2017-11-10T16:40:00Z" depends-on-methods="com.arc.testcases.MyBuildings.LEED.LoginCaseTest.loginCaseTest, com.arc.testcases.MyBuildings.LEED.PaymentbyCCTest.paymentbyCCTest, com.arc.testcases.MyBuildings.LEED.ClickSearchedProgramTest.clickSearchedProgramTest" finished-at="2017-11-10T16:41:00Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[NewBuildingProject]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Login]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- modifyProjectDetailsTest -->
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.arc.testcases.MyBuildings.LEED.ModifyOccOptHrsProjectDetailsTest@5eb41c19]" name="teardown" is-config="true" duration-ms="54" started-at="2017-11-10T16:41:00Z" finished-at="2017-11-10T16:41:00Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=modifyProjectDetailsTest status=SUCCESS method=ModifyOccOptHrsProjectDetailsTest.modifyProjectDetailsTest(int, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.LEED.ModifyOccOptHrsProjectDetailsTest@5eb41c19] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="end()[pri:0, instance:com.arc.testcases.MyBuildings.LEED.ModifyOccOptHrsProjectDetailsTest@5eb41c19]" name="end" is-config="true" duration-ms="2207" started-at="2017-11-10T16:41:00Z" finished-at="2017-11-10T16:41:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- end -->
+      </class> <!-- com.arc.testcases.MyBuildings.LEED.ModifyOccOptHrsProjectDetailsTest -->
+      <class name="com.arc.testcases.MyBuildings.LEED.PrerequisitesTextFileUploadTest">
+        <test-method status="PASS" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.LEED.PrerequisitesTextFileUploadTest@4aa192a5]" name="setup" is-config="true" duration-ms="20013" started-at="2017-11-10T16:18:59Z" finished-at="2017-11-10T16:19:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[staging]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="prerequisitesAttemptTest(int, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.LEED.PrerequisitesTextFileUploadTest@4aa192a5]" name="prerequisitesAttemptTest" duration-ms="149134" started-at="2017-11-10T16:19:20Z" depends-on-methods="com.arc.testcases.MyBuildings.LEED.LoginCaseTest.loginCaseTest, com.arc.testcases.MyBuildings.LEED.PaymentbyCCTest.paymentbyCCTest, com.arc.testcases.MyBuildings.LEED.ClickSearchedProgramTest.clickSearchedProgramTest" finished-at="2017-11-10T16:21:49Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[NewBuildingProject]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Login]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- prerequisitesAttemptTest -->
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.arc.testcases.MyBuildings.LEED.PrerequisitesTextFileUploadTest@4aa192a5]" name="teardown" is-config="true" duration-ms="71" started-at="2017-11-10T16:21:49Z" finished-at="2017-11-10T16:21:49Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=prerequisitesAttemptTest status=SUCCESS method=PrerequisitesTextFileUploadTest.prerequisitesAttemptTest(int, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.LEED.PrerequisitesTextFileUploadTest@4aa192a5] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="end()[pri:0, instance:com.arc.testcases.MyBuildings.LEED.PrerequisitesTextFileUploadTest@4aa192a5]" name="end" is-config="true" duration-ms="2578" started-at="2017-11-10T16:21:49Z" finished-at="2017-11-10T16:21:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- end -->
+      </class> <!-- com.arc.testcases.MyBuildings.LEED.PrerequisitesTextFileUploadTest -->
+      <class name="com.arc.testcases.MyBuildings.LEED.ClickSearchedProgramTest">
+        <test-method status="PASS" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.LEED.ClickSearchedProgramTest@49f5a659]" name="setup" is-config="true" duration-ms="18067" started-at="2017-11-10T16:03:38Z" finished-at="2017-11-10T16:03:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[staging]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="clickSearchedProgramTest(int, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.LEED.ClickSearchedProgramTest@49f5a659]" name="clickSearchedProgramTest" duration-ms="24400" started-at="2017-11-10T16:03:56Z" finished-at="2017-11-10T16:04:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Login]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickSearchedProgramTest -->
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.arc.testcases.MyBuildings.LEED.ClickSearchedProgramTest@49f5a659]" name="teardown" is-config="true" duration-ms="170" started-at="2017-11-10T16:04:21Z" finished-at="2017-11-10T16:04:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=clickSearchedProgramTest status=SUCCESS method=ClickSearchedProgramTest.clickSearchedProgramTest(int, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.LEED.ClickSearchedProgramTest@49f5a659] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="end()[pri:0, instance:com.arc.testcases.MyBuildings.LEED.ClickSearchedProgramTest@49f5a659]" name="end" is-config="true" duration-ms="1916" started-at="2017-11-10T16:04:21Z" finished-at="2017-11-10T16:04:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- end -->
+      </class> <!-- com.arc.testcases.MyBuildings.LEED.ClickSearchedProgramTest -->
+      <class name="com.arc.testcases.MyBuildings.LEED.BillingDateVerificationTest">
+        <test-method status="PASS" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.LEED.BillingDateVerificationTest@767f2121]" name="setup" is-config="true" duration-ms="18233" started-at="2017-11-10T16:48:14Z" finished-at="2017-11-10T16:48:32Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[staging]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="billingDateVerificationTest(int, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.LEED.BillingDateVerificationTest@767f2121]" name="billingDateVerificationTest" duration-ms="39950" started-at="2017-11-10T16:48:32Z" depends-on-methods="com.arc.testcases.MyBuildings.LEED.LoginCaseTest.loginCaseTest, com.arc.testcases.MyBuildings.LEED.PaymentbyCCTest.paymentbyCCTest, com.arc.testcases.MyBuildings.LEED.ClickSearchedProgramTest.clickSearchedProgramTest" finished-at="2017-11-10T16:49:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[NewBuildingProject]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Login]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- billingDateVerificationTest -->
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.arc.testcases.MyBuildings.LEED.BillingDateVerificationTest@767f2121]" name="teardown" is-config="true" duration-ms="60" started-at="2017-11-10T16:49:12Z" finished-at="2017-11-10T16:49:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=billingDateVerificationTest status=SUCCESS method=BillingDateVerificationTest.billingDateVerificationTest(int, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.LEED.BillingDateVerificationTest@767f2121] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="end()[pri:0, instance:com.arc.testcases.MyBuildings.LEED.BillingDateVerificationTest@767f2121]" name="end" is-config="true" duration-ms="2089" started-at="2017-11-10T16:49:12Z" finished-at="2017-11-10T16:49:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- end -->
+      </class> <!-- com.arc.testcases.MyBuildings.LEED.BillingDateVerificationTest -->
+      <class name="com.arc.testcases.MyBuildings.LEED.InstallAllAppsTest">
+        <test-method status="PASS" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.LEED.InstallAllAppsTest@ec99b58]" name="setup" is-config="true" duration-ms="17755" started-at="2017-11-10T16:45:37Z" finished-at="2017-11-10T16:45:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[staging]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="installAllAppsTest(int, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.LEED.InstallAllAppsTest@ec99b58]" name="installAllAppsTest" duration-ms="57695" started-at="2017-11-10T16:45:54Z" depends-on-methods="com.arc.testcases.MyBuildings.LEED.LoginCaseTest.loginCaseTest, com.arc.testcases.MyBuildings.LEED.PaymentbyCCTest.paymentbyCCTest, com.arc.testcases.MyBuildings.LEED.ClickSearchedProgramTest.clickSearchedProgramTest" finished-at="2017-11-10T16:46:52Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[NewBuildingProject]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Login]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- installAllAppsTest -->
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.arc.testcases.MyBuildings.LEED.InstallAllAppsTest@ec99b58]" name="teardown" is-config="true" duration-ms="64" started-at="2017-11-10T16:46:52Z" finished-at="2017-11-10T16:46:52Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=installAllAppsTest status=SUCCESS method=InstallAllAppsTest.installAllAppsTest(int, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.LEED.InstallAllAppsTest@ec99b58] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="end()[pri:0, instance:com.arc.testcases.MyBuildings.LEED.InstallAllAppsTest@ec99b58]" name="end" is-config="true" duration-ms="2256" started-at="2017-11-10T16:46:52Z" finished-at="2017-11-10T16:46:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- end -->
+      </class> <!-- com.arc.testcases.MyBuildings.LEED.InstallAllAppsTest -->
+      <class name="com.arc.testcases.MyBuildings.LEED.WTotalAnalyticsTest">
+        <test-method status="PASS" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.LEED.WTotalAnalyticsTest@3173175]" name="setup" is-config="true" duration-ms="19086" started-at="2017-11-10T16:52:18Z" finished-at="2017-11-10T16:52:37Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[staging]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="verifyWDailiyMTCO2Test(int, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.LEED.WTotalAnalyticsTest@3173175]" name="verifyWDailiyMTCO2Test" duration-ms="48854" started-at="2017-11-10T16:52:37Z" finished-at="2017-11-10T16:53:26Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[NewBuildingProject]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Login]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyWDailiyMTCO2Test -->
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.arc.testcases.MyBuildings.LEED.WTotalAnalyticsTest@3173175]" name="teardown" is-config="true" duration-ms="58" started-at="2017-11-10T16:53:26Z" finished-at="2017-11-10T16:53:26Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyWDailiyMTCO2Test status=SUCCESS method=WTotalAnalyticsTest.verifyWDailiyMTCO2Test(int, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.LEED.WTotalAnalyticsTest@3173175] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="end()[pri:0, instance:com.arc.testcases.MyBuildings.LEED.WTotalAnalyticsTest@3173175]" name="end" is-config="true" duration-ms="2386" started-at="2017-11-10T16:53:26Z" finished-at="2017-11-10T16:53:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- end -->
+      </class> <!-- com.arc.testcases.MyBuildings.LEED.WTotalAnalyticsTest -->
+      <class name="com.arc.testcases.MyBuildings.LEED.LoginCaseTest">
+        <test-method status="PASS" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.LEED.LoginCaseTest@56f47040]" name="setup" is-config="true" duration-ms="22711" started-at="2017-11-10T16:02:31Z" finished-at="2017-11-10T16:02:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[staging]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="loginCaseTest(int, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.LEED.LoginCaseTest@56f47040]" name="loginCaseTest" duration-ms="41681" started-at="2017-11-10T16:02:54Z" finished-at="2017-11-10T16:03:35Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Login]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginCaseTest -->
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.arc.testcases.MyBuildings.LEED.LoginCaseTest@56f47040]" name="teardown" is-config="true" duration-ms="605" started-at="2017-11-10T16:03:35Z" finished-at="2017-11-10T16:03:36Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=loginCaseTest status=SUCCESS method=LoginCaseTest.loginCaseTest(int, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.LEED.LoginCaseTest@56f47040] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="end()[pri:0, instance:com.arc.testcases.MyBuildings.LEED.LoginCaseTest@56f47040]" name="end" is-config="true" duration-ms="2232" started-at="2017-11-10T16:03:36Z" finished-at="2017-11-10T16:03:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- end -->
+      </class> <!-- com.arc.testcases.MyBuildings.LEED.LoginCaseTest -->
+      <class name="com.arc.testcases.MyBuildings.LEED.WaterMeterCreateTest">
+        <test-method status="PASS" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.LEED.WaterMeterCreateTest@4459116]" name="setup" is-config="true" duration-ms="18052" started-at="2017-11-10T16:27:27Z" finished-at="2017-11-10T16:27:45Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[staging]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="waterMeterCreateTest(int, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.LEED.WaterMeterCreateTest@4459116]" name="waterMeterCreateTest" duration-ms="78110" started-at="2017-11-10T16:27:45Z" finished-at="2017-11-10T16:29:03Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[NewBuildingProject]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[BWater]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Login]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- waterMeterCreateTest -->
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.arc.testcases.MyBuildings.LEED.WaterMeterCreateTest@4459116]" name="teardown" is-config="true" duration-ms="65" started-at="2017-11-10T16:29:03Z" finished-at="2017-11-10T16:29:03Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=waterMeterCreateTest status=SUCCESS method=WaterMeterCreateTest.waterMeterCreateTest(int, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.LEED.WaterMeterCreateTest@4459116] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="end()[pri:0, instance:com.arc.testcases.MyBuildings.LEED.WaterMeterCreateTest@4459116]" name="end" is-config="true" duration-ms="2039" started-at="2017-11-10T16:29:03Z" finished-at="2017-11-10T16:29:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- end -->
+      </class> <!-- com.arc.testcases.MyBuildings.LEED.WaterMeterCreateTest -->
+      <class name="com.arc.testcases.MyBuildings.LEED.WaterFileUploadTest">
+        <test-method status="PASS" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.LEED.WaterFileUploadTest@566711b0]" name="setup" is-config="true" duration-ms="18160" started-at="2017-11-10T16:32:44Z" finished-at="2017-11-10T16:33:02Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[staging]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="waterFileUploadTest(int, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.LEED.WaterFileUploadTest@566711b0]" name="waterFileUploadTest" duration-ms="54747" started-at="2017-11-10T16:33:02Z" finished-at="2017-11-10T16:33:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[NewBuildingProject]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Login]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- waterFileUploadTest -->
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.arc.testcases.MyBuildings.LEED.WaterFileUploadTest@566711b0]" name="teardown" is-config="true" duration-ms="61" started-at="2017-11-10T16:33:57Z" finished-at="2017-11-10T16:33:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=waterFileUploadTest status=SUCCESS method=WaterFileUploadTest.waterFileUploadTest(int, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.LEED.WaterFileUploadTest@566711b0] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="end()[pri:0, instance:com.arc.testcases.MyBuildings.LEED.WaterFileUploadTest@566711b0]" name="end" is-config="true" duration-ms="2250" started-at="2017-11-10T16:33:57Z" finished-at="2017-11-10T16:33:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- end -->
+      </class> <!-- com.arc.testcases.MyBuildings.LEED.WaterFileUploadTest -->
+      <class name="com.arc.testcases.MyBuildings.LEED.RenewableAllBaseScoreAttemptTest">
+        <test-method status="PASS" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.LEED.RenewableAllBaseScoreAttemptTest@ef2625f]" name="setup" is-config="true" duration-ms="19325" started-at="2017-11-10T16:11:38Z" finished-at="2017-11-10T16:11:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[staging]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="baseScoreAttemptTest(int, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.LEED.RenewableAllBaseScoreAttemptTest@ef2625f]" name="baseScoreAttemptTest" duration-ms="245829" started-at="2017-11-10T16:11:57Z" finished-at="2017-11-10T16:16:03Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[NewBuildingProject]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Login]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- baseScoreAttemptTest -->
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.arc.testcases.MyBuildings.LEED.RenewableAllBaseScoreAttemptTest@ef2625f]" name="teardown" is-config="true" duration-ms="96" started-at="2017-11-10T16:16:03Z" finished-at="2017-11-10T16:16:03Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=baseScoreAttemptTest status=SUCCESS method=RenewableAllBaseScoreAttemptTest.baseScoreAttemptTest(int, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.LEED.RenewableAllBaseScoreAttemptTest@ef2625f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="end()[pri:0, instance:com.arc.testcases.MyBuildings.LEED.RenewableAllBaseScoreAttemptTest@ef2625f]" name="end" is-config="true" duration-ms="2569" started-at="2017-11-10T16:16:03Z" finished-at="2017-11-10T16:16:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- end -->
+      </class> <!-- com.arc.testcases.MyBuildings.LEED.RenewableAllBaseScoreAttemptTest -->
+      <class name="com.arc.testcases.MyBuildings.LEED.ETotalAnalyticsTest">
+        <test-method status="PASS" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.LEED.ETotalAnalyticsTest@2c5be151]" name="setup" is-config="true" duration-ms="18205" started-at="2017-11-10T16:50:13Z" finished-at="2017-11-10T16:50:31Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[staging]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="energyTotalAnalyticsTest(int, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.LEED.ETotalAnalyticsTest@2c5be151]" name="energyTotalAnalyticsTest" duration-ms="40814" started-at="2017-11-10T16:50:31Z" depends-on-methods="com.arc.testcases.MyBuildings.LEED.LoginCaseTest.loginCaseTest, com.arc.testcases.MyBuildings.LEED.PaymentbyCCTest.paymentbyCCTest, com.arc.testcases.MyBuildings.LEED.ClickSearchedProgramTest.clickSearchedProgramTest" finished-at="2017-11-10T16:51:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[NewBuildingProject]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Login]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- energyTotalAnalyticsTest -->
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.arc.testcases.MyBuildings.LEED.ETotalAnalyticsTest@2c5be151]" name="teardown" is-config="true" duration-ms="53" started-at="2017-11-10T16:51:12Z" finished-at="2017-11-10T16:51:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=energyTotalAnalyticsTest status=SUCCESS method=ETotalAnalyticsTest.energyTotalAnalyticsTest(int, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.LEED.ETotalAnalyticsTest@2c5be151] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="end()[pri:0, instance:com.arc.testcases.MyBuildings.LEED.ETotalAnalyticsTest@2c5be151]" name="end" is-config="true" duration-ms="2413" started-at="2017-11-10T16:51:12Z" finished-at="2017-11-10T16:51:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- end -->
+      </class> <!-- com.arc.testcases.MyBuildings.LEED.ETotalAnalyticsTest -->
+      <class name="com.arc.testcases.MyBuildings.LEED.BillingStatusVerificationTest">
+        <test-method status="PASS" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.LEED.BillingStatusVerificationTest@67aff9e8]" name="setup" is-config="true" duration-ms="18403" started-at="2017-11-10T16:53:28Z" finished-at="2017-11-10T16:53:46Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[staging]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="billingStatusVerificationTest(int, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.LEED.BillingStatusVerificationTest@67aff9e8]" name="billingStatusVerificationTest" duration-ms="41597" started-at="2017-11-10T16:53:46Z" finished-at="2017-11-10T16:54:28Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[NewBuildingProject]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Login]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- billingStatusVerificationTest -->
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.arc.testcases.MyBuildings.LEED.BillingStatusVerificationTest@67aff9e8]" name="teardown" is-config="true" duration-ms="53" started-at="2017-11-10T16:54:28Z" finished-at="2017-11-10T16:54:28Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=billingStatusVerificationTest status=SUCCESS method=BillingStatusVerificationTest.billingStatusVerificationTest(int, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.LEED.BillingStatusVerificationTest@67aff9e8] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="end()[pri:0, instance:com.arc.testcases.MyBuildings.LEED.BillingStatusVerificationTest@67aff9e8]" name="end" is-config="true" duration-ms="2217" started-at="2017-11-10T16:54:28Z" finished-at="2017-11-10T16:54:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- end -->
+      </class> <!-- com.arc.testcases.MyBuildings.LEED.BillingStatusVerificationTest -->
+      <class name="com.arc.testcases.MyBuildings.LEED.WasteMeterCreateTest">
+        <test-method status="PASS" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.LEED.WasteMeterCreateTest@73383d8a]" name="setup" is-config="true" duration-ms="18952" started-at="2017-11-10T16:29:05Z" finished-at="2017-11-10T16:29:24Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[staging]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="wasteMeterCreateTest(int, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.LEED.WasteMeterCreateTest@73383d8a]" name="wasteMeterCreateTest" duration-ms="66302" started-at="2017-11-10T16:29:24Z" finished-at="2017-11-10T16:30:30Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[NewBuildingProject]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[BWaste]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Login]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wasteMeterCreateTest -->
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.arc.testcases.MyBuildings.LEED.WasteMeterCreateTest@73383d8a]" name="teardown" is-config="true" duration-ms="69" started-at="2017-11-10T16:30:30Z" finished-at="2017-11-10T16:30:30Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=wasteMeterCreateTest status=SUCCESS method=WasteMeterCreateTest.wasteMeterCreateTest(int, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.LEED.WasteMeterCreateTest@73383d8a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="end()[pri:0, instance:com.arc.testcases.MyBuildings.LEED.WasteMeterCreateTest@73383d8a]" name="end" is-config="true" duration-ms="2097" started-at="2017-11-10T16:30:30Z" finished-at="2017-11-10T16:30:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- end -->
+      </class> <!-- com.arc.testcases.MyBuildings.LEED.WasteMeterCreateTest -->
+      <class name="com.arc.testcases.MyBuildings.LEED.InternationalLanguagesSpecaialCharacterMeterCreateTest">
+        <test-method status="PASS" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.LEED.InternationalLanguagesSpecaialCharacterMeterCreateTest@8ba6621]" name="setup" is-config="true" duration-ms="20058" started-at="2017-11-10T16:33:59Z" finished-at="2017-11-10T16:34:19Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[staging]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="energyMeterCreateTest(int, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.LEED.InternationalLanguagesSpecaialCharacterMeterCreateTest@8ba6621]" name="energyMeterCreateTest" duration-ms="114234" started-at="2017-11-10T16:34:19Z" depends-on-methods="com.arc.testcases.MyBuildings.LEED.LoginCaseTest.loginCaseTest, com.arc.testcases.MyBuildings.LEED.PaymentbyCCTest.paymentbyCCTest, com.arc.testcases.MyBuildings.LEED.ClickSearchedProgramTest.clickSearchedProgramTest" finished-at="2017-11-10T16:36:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[NewBuildingProject]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Login]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- energyMeterCreateTest -->
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.arc.testcases.MyBuildings.LEED.InternationalLanguagesSpecaialCharacterMeterCreateTest@8ba6621]" name="teardown" is-config="true" duration-ms="61" started-at="2017-11-10T16:36:14Z" finished-at="2017-11-10T16:36:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=energyMeterCreateTest status=SUCCESS method=InternationalLanguagesSpecaialCharacterMeterCreateTest.energyMeterCreateTest(int, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.LEED.InternationalLanguagesSpecaialCharacterMeterCreateTest@8ba6621] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="end()[pri:0, instance:com.arc.testcases.MyBuildings.LEED.InternationalLanguagesSpecaialCharacterMeterCreateTest@8ba6621]" name="end" is-config="true" duration-ms="6359" started-at="2017-11-10T16:36:14Z" finished-at="2017-11-10T16:36:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- end -->
+      </class> <!-- com.arc.testcases.MyBuildings.LEED.InternationalLanguagesSpecaialCharacterMeterCreateTest -->
+      <class name="com.arc.testcases.MyBuildings.LEED.PreCertReviewTest">
+        <test-method status="PASS" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.LEED.PreCertReviewTest@52402386]" name="setup" is-config="true" duration-ms="17696" started-at="2017-11-10T16:54:30Z" finished-at="2017-11-10T16:54:48Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[staging]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="waterFileUploadTest(int, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.LEED.PreCertReviewTest@52402386]" name="waterFileUploadTest" duration-ms="76702" started-at="2017-11-10T16:54:48Z" finished-at="2017-11-10T16:56:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[NewBuildingProject]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Payment]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Login]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- waterFileUploadTest -->
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.arc.testcases.MyBuildings.LEED.PreCertReviewTest@52402386]" name="teardown" is-config="true" duration-ms="57" started-at="2017-11-10T16:56:05Z" finished-at="2017-11-10T16:56:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=waterFileUploadTest status=SUCCESS method=PreCertReviewTest.waterFileUploadTest(int, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.LEED.PreCertReviewTest@52402386] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="end()[pri:0, instance:com.arc.testcases.MyBuildings.LEED.PreCertReviewTest@52402386]" name="end" is-config="true" duration-ms="3246" started-at="2017-11-10T16:56:05Z" finished-at="2017-11-10T16:56:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- end -->
+      </class> <!-- com.arc.testcases.MyBuildings.LEED.PreCertReviewTest -->
+      <class name="com.arc.testcases.MyBuildings.LEED.PrerequisitesPdfFileUploadTest">
+        <test-method status="PASS" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.LEED.PrerequisitesPdfFileUploadTest@4b1852a3]" name="setup" is-config="true" duration-ms="19454" started-at="2017-11-10T16:16:06Z" finished-at="2017-11-10T16:16:25Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[staging]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="prerequisitesAttemptTest(int, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.LEED.PrerequisitesPdfFileUploadTest@4b1852a3]" name="prerequisitesAttemptTest" duration-ms="151938" started-at="2017-11-10T16:16:25Z" depends-on-methods="com.arc.testcases.MyBuildings.LEED.LoginCaseTest.loginCaseTest, com.arc.testcases.MyBuildings.LEED.PaymentbyCCTest.paymentbyCCTest, com.arc.testcases.MyBuildings.LEED.ClickSearchedProgramTest.clickSearchedProgramTest" finished-at="2017-11-10T16:18:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[NewBuildingProject]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Login]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- prerequisitesAttemptTest -->
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.arc.testcases.MyBuildings.LEED.PrerequisitesPdfFileUploadTest@4b1852a3]" name="teardown" is-config="true" duration-ms="125" started-at="2017-11-10T16:18:57Z" finished-at="2017-11-10T16:18:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=prerequisitesAttemptTest status=SUCCESS method=PrerequisitesPdfFileUploadTest.prerequisitesAttemptTest(int, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.LEED.PrerequisitesPdfFileUploadTest@4b1852a3] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="end()[pri:0, instance:com.arc.testcases.MyBuildings.LEED.PrerequisitesPdfFileUploadTest@4b1852a3]" name="end" is-config="true" duration-ms="2258" started-at="2017-11-10T16:18:57Z" finished-at="2017-11-10T16:18:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- end -->
+      </class> <!-- com.arc.testcases.MyBuildings.LEED.PrerequisitesPdfFileUploadTest -->
+      <class name="com.arc.testcases.MyBuildings.LEED.OtherMeterCreateTest">
+        <test-method status="PASS" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.LEED.OtherMeterCreateTest@3dd36fa0]" name="setup" is-config="true" duration-ms="19445" started-at="2017-11-10T16:26:20Z" finished-at="2017-11-10T16:26:39Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[staging]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="energyOtherMeterCreateTest(int, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.LEED.OtherMeterCreateTest@3dd36fa0]" name="energyOtherMeterCreateTest" duration-ms="44471" started-at="2017-11-10T16:26:39Z" finished-at="2017-11-10T16:27:24Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[NewBuildingProject]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[BEnergy]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Login]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- energyOtherMeterCreateTest -->
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.arc.testcases.MyBuildings.LEED.OtherMeterCreateTest@3dd36fa0]" name="teardown" is-config="true" duration-ms="79" started-at="2017-11-10T16:27:24Z" finished-at="2017-11-10T16:27:24Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=energyOtherMeterCreateTest status=SUCCESS method=OtherMeterCreateTest.energyOtherMeterCreateTest(int, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.LEED.OtherMeterCreateTest@3dd36fa0] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="end()[pri:0, instance:com.arc.testcases.MyBuildings.LEED.OtherMeterCreateTest@3dd36fa0]" name="end" is-config="true" duration-ms="3154" started-at="2017-11-10T16:27:24Z" finished-at="2017-11-10T16:27:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- end -->
+      </class> <!-- com.arc.testcases.MyBuildings.LEED.OtherMeterCreateTest -->
+      <class name="com.arc.testcases.MyBuildings.LEED.AddTeamMemberTest">
+        <test-method status="PASS" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.LEED.AddTeamMemberTest@2a0dde2]" name="setup" is-config="true" duration-ms="18616" started-at="2017-11-10T16:41:02Z" finished-at="2017-11-10T16:41:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[staging]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="addTeamMemberTest(int, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.LEED.AddTeamMemberTest@2a0dde2]" name="addTeamMemberTest" duration-ms="41660" started-at="2017-11-10T16:41:21Z" depends-on-methods="com.arc.testcases.MyBuildings.LEED.LoginCaseTest.loginCaseTest, com.arc.testcases.MyBuildings.LEED.PaymentbyCCTest.paymentbyCCTest, com.arc.testcases.MyBuildings.LEED.ClickSearchedProgramTest.clickSearchedProgramTest" finished-at="2017-11-10T16:42:02Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[NewBuildingProject]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[BTeam]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Login]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addTeamMemberTest -->
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.arc.testcases.MyBuildings.LEED.AddTeamMemberTest@2a0dde2]" name="teardown" is-config="true" duration-ms="70" started-at="2017-11-10T16:42:02Z" finished-at="2017-11-10T16:42:02Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=addTeamMemberTest status=SUCCESS method=AddTeamMemberTest.addTeamMemberTest(int, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.LEED.AddTeamMemberTest@2a0dde2] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="end()[pri:0, instance:com.arc.testcases.MyBuildings.LEED.AddTeamMemberTest@2a0dde2]" name="end" is-config="true" duration-ms="2175" started-at="2017-11-10T16:42:02Z" finished-at="2017-11-10T16:42:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- end -->
+      </class> <!-- com.arc.testcases.MyBuildings.LEED.AddTeamMemberTest -->
+      <class name="com.arc.testcases.MyBuildings.LEED.VerifyAgreementFileDownloadTest">
+        <test-method status="PASS" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.LEED.VerifyAgreementFileDownloadTest@2dfa5885]" name="setup" is-config="true" duration-ms="18427" started-at="2017-11-10T16:44:28Z" finished-at="2017-11-10T16:44:47Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[staging]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="verifyAgreementFileDownloadTest(int, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.LEED.VerifyAgreementFileDownloadTest@2dfa5885]" name="verifyAgreementFileDownloadTest" duration-ms="47578" started-at="2017-11-10T16:44:47Z" depends-on-methods="com.arc.testcases.MyBuildings.LEED.LoginCaseTest.loginCaseTest, com.arc.testcases.MyBuildings.LEED.PaymentbyCCTest.paymentbyCCTest, com.arc.testcases.MyBuildings.LEED.ClickSearchedProgramTest.clickSearchedProgramTest" finished-at="2017-11-10T16:45:34Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[NewBuildingProject]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Login]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAgreementFileDownloadTest -->
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.arc.testcases.MyBuildings.LEED.VerifyAgreementFileDownloadTest@2dfa5885]" name="teardown" is-config="true" duration-ms="49" started-at="2017-11-10T16:45:34Z" finished-at="2017-11-10T16:45:34Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyAgreementFileDownloadTest status=SUCCESS method=VerifyAgreementFileDownloadTest.verifyAgreementFileDownloadTest(int, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.LEED.VerifyAgreementFileDownloadTest@2dfa5885] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="end()[pri:0, instance:com.arc.testcases.MyBuildings.LEED.VerifyAgreementFileDownloadTest@2dfa5885]" name="end" is-config="true" duration-ms="2119" started-at="2017-11-10T16:45:34Z" finished-at="2017-11-10T16:45:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- end -->
+      </class> <!-- com.arc.testcases.MyBuildings.LEED.VerifyAgreementFileDownloadTest -->
+      <class name="com.arc.testcases.MyBuildings.LEED.ETotalAnalyticsTooltipTest">
+        <test-method status="PASS" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.LEED.ETotalAnalyticsTooltipTest@5870501]" name="setup" is-config="true" duration-ms="17827" started-at="2017-11-10T16:36:20Z" finished-at="2017-11-10T16:36:38Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[staging]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="energyFileUploadTest(int, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.LEED.ETotalAnalyticsTooltipTest@5870501]" name="energyFileUploadTest" duration-ms="51639" started-at="2017-11-10T16:36:38Z" depends-on-methods="com.arc.testcases.MyBuildings.LEED.LoginCaseTest.loginCaseTest, com.arc.testcases.MyBuildings.LEED.PaymentbyCCTest.paymentbyCCTest, com.arc.testcases.MyBuildings.LEED.ClickSearchedProgramTest.clickSearchedProgramTest" finished-at="2017-11-10T16:37:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[NewBuildingProject]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Login]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- energyFileUploadTest -->
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.arc.testcases.MyBuildings.LEED.ETotalAnalyticsTooltipTest@5870501]" name="teardown" is-config="true" duration-ms="50" started-at="2017-11-10T16:37:29Z" finished-at="2017-11-10T16:37:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=energyFileUploadTest status=SUCCESS method=ETotalAnalyticsTooltipTest.energyFileUploadTest(int, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.LEED.ETotalAnalyticsTooltipTest@5870501] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="end()[pri:0, instance:com.arc.testcases.MyBuildings.LEED.ETotalAnalyticsTooltipTest@5870501]" name="end" is-config="true" duration-ms="2380" started-at="2017-11-10T16:37:29Z" finished-at="2017-11-10T16:37:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- end -->
+      </class> <!-- com.arc.testcases.MyBuildings.LEED.ETotalAnalyticsTooltipTest -->
+      <class name="com.arc.testcases.MyBuildings.LEED.BasePointPdfFileUplaod">
+        <test-method status="PASS" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.LEED.BasePointPdfFileUplaod@3e7f2b47]" name="setup" is-config="true" duration-ms="19431" started-at="2017-11-10T16:07:16Z" finished-at="2017-11-10T16:07:36Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[staging]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="baseScoreAttemptTest(int, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.LEED.BasePointPdfFileUplaod@3e7f2b47]" name="baseScoreAttemptTest" duration-ms="239479" started-at="2017-11-10T16:07:36Z" finished-at="2017-11-10T16:11:35Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[NewBuildingProject]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Login]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- baseScoreAttemptTest -->
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.arc.testcases.MyBuildings.LEED.BasePointPdfFileUplaod@3e7f2b47]" name="teardown" is-config="true" duration-ms="106" started-at="2017-11-10T16:11:35Z" finished-at="2017-11-10T16:11:35Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=baseScoreAttemptTest status=SUCCESS method=BasePointPdfFileUplaod.baseScoreAttemptTest(int, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.LEED.BasePointPdfFileUplaod@3e7f2b47] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="end()[pri:0, instance:com.arc.testcases.MyBuildings.LEED.BasePointPdfFileUplaod@3e7f2b47]" name="end" is-config="true" duration-ms="2412" started-at="2017-11-10T16:11:35Z" finished-at="2017-11-10T16:11:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- end -->
+      </class> <!-- com.arc.testcases.MyBuildings.LEED.BasePointPdfFileUplaod -->
+      <class name="com.arc.testcases.MyBuildings.LEED.ProjectFieldVerificationTest">
+        <test-method status="PASS" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.LEED.ProjectFieldVerificationTest@6359877c]" name="setup" is-config="true" duration-ms="17874" started-at="2017-11-10T16:37:32Z" finished-at="2017-11-10T16:37:50Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[staging]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="projectFieldVerificationTest(int, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.LEED.ProjectFieldVerificationTest@6359877c]" name="projectFieldVerificationTest" duration-ms="45596" started-at="2017-11-10T16:37:50Z" depends-on-methods="com.arc.testcases.MyBuildings.LEED.LoginCaseTest.loginCaseTest, com.arc.testcases.MyBuildings.LEED.PaymentbyCCTest.paymentbyCCTest, com.arc.testcases.MyBuildings.LEED.ClickSearchedProgramTest.clickSearchedProgramTest" finished-at="2017-11-10T16:38:35Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[NewBuildingProject]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Login]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- projectFieldVerificationTest -->
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.arc.testcases.MyBuildings.LEED.ProjectFieldVerificationTest@6359877c]" name="teardown" is-config="true" duration-ms="79" started-at="2017-11-10T16:38:35Z" finished-at="2017-11-10T16:38:35Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=projectFieldVerificationTest status=SUCCESS method=ProjectFieldVerificationTest.projectFieldVerificationTest(int, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.LEED.ProjectFieldVerificationTest@6359877c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="end()[pri:0, instance:com.arc.testcases.MyBuildings.LEED.ProjectFieldVerificationTest@6359877c]" name="end" is-config="true" duration-ms="2078" started-at="2017-11-10T16:38:35Z" finished-at="2017-11-10T16:38:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- end -->
+      </class> <!-- com.arc.testcases.MyBuildings.LEED.ProjectFieldVerificationTest -->
+      <class name="com.arc.testcases.MyBuildings.LEED.EditMemberRoleManagerTest">
+        <test-method status="PASS" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.LEED.EditMemberRoleManagerTest@f4721c7]" name="setup" is-config="true" duration-ms="17738" started-at="2017-11-10T16:42:04Z" finished-at="2017-11-10T16:42:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[staging]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="editMemberRoleManagerTest(int, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.LEED.EditMemberRoleManagerTest@f4721c7]" name="editMemberRoleManagerTest" duration-ms="50533" started-at="2017-11-10T16:42:22Z" depends-on-methods="com.arc.testcases.MyBuildings.LEED.LoginCaseTest.loginCaseTest, com.arc.testcases.MyBuildings.LEED.PaymentbyCCTest.paymentbyCCTest, com.arc.testcases.MyBuildings.LEED.ClickSearchedProgramTest.clickSearchedProgramTest" finished-at="2017-11-10T16:43:13Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[NewBuildingProject]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Login]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- editMemberRoleManagerTest -->
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.arc.testcases.MyBuildings.LEED.EditMemberRoleManagerTest@f4721c7]" name="teardown" is-config="true" duration-ms="54" started-at="2017-11-10T16:43:13Z" finished-at="2017-11-10T16:43:13Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=editMemberRoleManagerTest status=SUCCESS method=EditMemberRoleManagerTest.editMemberRoleManagerTest(int, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.LEED.EditMemberRoleManagerTest@f4721c7] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="end()[pri:0, instance:com.arc.testcases.MyBuildings.LEED.EditMemberRoleManagerTest@f4721c7]" name="end" is-config="true" duration-ms="2226" started-at="2017-11-10T16:43:13Z" finished-at="2017-11-10T16:43:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- end -->
+      </class> <!-- com.arc.testcases.MyBuildings.LEED.EditMemberRoleManagerTest -->
+      <class name="com.arc.testcases.MyBuildings.LEED.CTotalAnalyticsTest">
+        <test-method status="PASS" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.LEED.CTotalAnalyticsTest@4425a397]" name="setup" is-config="true" duration-ms="19188" started-at="2017-11-10T16:51:14Z" finished-at="2017-11-10T16:51:34Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[staging]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="carbonTotalTest(int, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.LEED.CTotalAnalyticsTest@4425a397]" name="carbonTotalTest" duration-ms="41806" started-at="2017-11-10T16:51:34Z" depends-on-methods="com.arc.testcases.MyBuildings.LEED.LoginCaseTest.loginCaseTest, com.arc.testcases.MyBuildings.LEED.PaymentbyCCTest.paymentbyCCTest, com.arc.testcases.MyBuildings.LEED.ClickSearchedProgramTest.clickSearchedProgramTest" finished-at="2017-11-10T16:52:15Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[NewBuildingProject]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Login]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- carbonTotalTest -->
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.arc.testcases.MyBuildings.LEED.CTotalAnalyticsTest@4425a397]" name="teardown" is-config="true" duration-ms="50" started-at="2017-11-10T16:52:15Z" finished-at="2017-11-10T16:52:16Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=carbonTotalTest status=SUCCESS method=CTotalAnalyticsTest.carbonTotalTest(int, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.LEED.CTotalAnalyticsTest@4425a397] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="end()[pri:0, instance:com.arc.testcases.MyBuildings.LEED.CTotalAnalyticsTest@4425a397]" name="end" is-config="true" duration-ms="2155" started-at="2017-11-10T16:52:16Z" finished-at="2017-11-10T16:52:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- end -->
+      </class> <!-- com.arc.testcases.MyBuildings.LEED.CTotalAnalyticsTest -->
+      <class name="com.arc.testcases.MyBuildings.LEED.EnergyMeterCreateTest">
+        <test-method status="PASS" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.LEED.EnergyMeterCreateTest@4d138a28]" name="setup" is-config="true" duration-ms="18383" started-at="2017-11-10T16:24:49Z" finished-at="2017-11-10T16:25:07Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[staging]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="energyMeterCreateTest(int, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.LEED.EnergyMeterCreateTest@4d138a28]" name="energyMeterCreateTest" duration-ms="70550" started-at="2017-11-10T16:25:07Z" finished-at="2017-11-10T16:26:18Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[NewBuildingProject]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[BEnergy]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Login]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- energyMeterCreateTest -->
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.arc.testcases.MyBuildings.LEED.EnergyMeterCreateTest@4d138a28]" name="teardown" is-config="true" duration-ms="71" started-at="2017-11-10T16:26:18Z" finished-at="2017-11-10T16:26:18Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=energyMeterCreateTest status=SUCCESS method=EnergyMeterCreateTest.energyMeterCreateTest(int, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.LEED.EnergyMeterCreateTest@4d138a28] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="end()[pri:0, instance:com.arc.testcases.MyBuildings.LEED.EnergyMeterCreateTest@4d138a28]" name="end" is-config="true" duration-ms="2008" started-at="2017-11-10T16:26:18Z" finished-at="2017-11-10T16:26:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- end -->
+      </class> <!-- com.arc.testcases.MyBuildings.LEED.EnergyMeterCreateTest -->
+      <class name="com.arc.testcases.MyBuildings.LEED.UnistallAllAppsTest">
+        <test-method status="PASS" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.LEED.UnistallAllAppsTest@55f5b5fd]" name="setup" is-config="true" duration-ms="20514" started-at="2017-11-10T16:46:54Z" finished-at="2017-11-10T16:47:15Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[staging]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="installAllAppsTest(int, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.LEED.UnistallAllAppsTest@55f5b5fd]" name="installAllAppsTest" duration-ms="56502" started-at="2017-11-10T16:47:15Z" depends-on-methods="com.arc.testcases.MyBuildings.LEED.LoginCaseTest.loginCaseTest, com.arc.testcases.MyBuildings.LEED.PaymentbyCCTest.paymentbyCCTest, com.arc.testcases.MyBuildings.LEED.ClickSearchedProgramTest.clickSearchedProgramTest" finished-at="2017-11-10T16:48:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[NewBuildingProject]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Login]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- installAllAppsTest -->
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.arc.testcases.MyBuildings.LEED.UnistallAllAppsTest@55f5b5fd]" name="teardown" is-config="true" duration-ms="73" started-at="2017-11-10T16:48:11Z" finished-at="2017-11-10T16:48:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=installAllAppsTest status=SUCCESS method=UnistallAllAppsTest.installAllAppsTest(int, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.LEED.UnistallAllAppsTest@55f5b5fd] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="end()[pri:0, instance:com.arc.testcases.MyBuildings.LEED.UnistallAllAppsTest@55f5b5fd]" name="end" is-config="true" duration-ms="2162" started-at="2017-11-10T16:48:11Z" finished-at="2017-11-10T16:48:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- end -->
+      </class> <!-- com.arc.testcases.MyBuildings.LEED.UnistallAllAppsTest -->
+    </test> <!-- ARCRegressionTest-Building -->
+  </suite> <!-- SanityTestCasesSuite -->
+</testng-results>

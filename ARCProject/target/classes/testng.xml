@@ -1,0 +1,70 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="SanityTestCasesSuite">
+
+
+<listeners>
+        <listener class-name="com.arc.driver.ExtentReportNG" />
+       <!--  <listener class-name="com.arc.driver.RetryListener"></listener> -->
+</listeners>
+
+   
+<test name="ARCRegressionTest-Building">
+
+<!-- pass data on below parameters before executing test suite -->
+<parameter name="browserName" value="firefox"/>
+<parameter name="environment" value="staging"/>
+<parameter name="rowNum" value="2"/>
+<parameter name="loginSheet" value="Login"/>
+<parameter name="buildingSheet" value="NewBuildingProject"/>
+<parameter name="paymentSheet" value="Payment"/>
+<parameter name="energySheet" value="BEnergy"/>
+<parameter name="teamSheet" value="BTeam"/>
+<parameter name="waterSheet" value="BWater"/>
+<parameter name="wasteSheet" value="BWaste"/>
+
+<!-- LEED -->
+<classes>
+
+<class name="com.arc.testcases.MyBuildings.LEED.LoginCaseTest"></class>
+ <class name="com.arc.testcases.MyBuildings.LEED.ClickSearchedProgramTest"></class>
+<class name="com.arc.testcases.MyBuildings.LEED.AddNewProjectTest"></class>
+<class name="com.arc.testcases.MyBuildings.LEED.PaymentbyCCTest"></class>
+<class name="com.arc.testcases.MyBuildings.LEED.BasePointPdfFileUplaod"/>
+<class name="com.arc.testcases.MyBuildings.LEED.RenewableAllBaseScoreAttemptTest"></class>
+<class name="com.arc.testcases.MyBuildings.LEED.PrerequisitesPdfFileUploadTest"></class>
+<class name="com.arc.testcases.MyBuildings.LEED.PrerequisitesTextFileUploadTest"></class>
+<class name="com.arc.testcases.MyBuildings.LEED.PrerequisitesAttemptTest"></class> 
+<class name="com.arc.testcases.MyBuildings.LEED.EnergyMeterCreateTest"/>
+<class name="com.arc.testcases.MyBuildings.LEED.OtherMeterCreateTest"/>
+<class name="com.arc.testcases.MyBuildings.LEED.WaterMeterCreateTest"/>
+<class name="com.arc.testcases.MyBuildings.LEED.WasteMeterCreateTest"/>
+<class name="com.arc.testcases.MyBuildings.LEED.EnergyFileUploadTest"/>
+<class name="com.arc.testcases.MyBuildings.LEED.WaterFileUploadTest"/>
+<class name="com.arc.testcases.MyBuildings.LEED.InternationalLanguagesSpecaialCharacterMeterCreateTest"></class>
+<class name="com.arc.testcases.MyBuildings.LEED.ETotalAnalyticsTooltipTest"/>
+<class name="com.arc.testcases.MyBuildings.LEED.ProjectFieldVerificationTest"></class>
+<class name="com.arc.testcases.MyBuildings.LEED.ProjectDetailsVerificationTest"></class>
+<class name="com.arc.testcases.MyBuildings.LEED.ModifyOccOptHrsProjectDetailsTest"></class>
+<class name="com.arc.testcases.MyBuildings.LEED.AddTeamMemberTest"></class>
+<class name="com.arc.testcases.MyBuildings.LEED.EditMemberRoleManagerTest"></class>
+<class name="com.arc.testcases.MyBuildings.LEED.VerifyPRFileDownloadTest"></class>
+<class name="com.arc.testcases.MyBuildings.LEED.VerifyAgreementFileDownloadTest"></class>
+<class name="com.arc.testcases.MyBuildings.LEED.InstallAllAppsTest"></class>
+<class name="com.arc.testcases.MyBuildings.LEED.UnistallAllAppsTest"></class>
+<class name="com.arc.testcases.MyBuildings.LEED.BillingDateVerificationTest"></class>
+<class name="com.arc.testcases.MyBuildings.LEED.BillingRegistrationAmountVerificationTest"></class>
+<class name="com.arc.testcases.MyBuildings.LEED.ETotalAnalyticsTest"/>
+<class name="com.arc.testcases.MyBuildings.LEED.CTotalAnalyticsTest"/>
+<class name="com.arc.testcases.MyBuildings.LEED.WTotalAnalyticsTest"/>
+<class name="com.arc.testcases.MyBuildings.LEED.BillingStatusVerificationTest"></class>
+<class name="com.arc.testcases.MyBuildings.LEED.PreCertReviewTest"/> 
+
+
+</classes>
+</test>
+
+</suite> 
+  
+
+    
+  

@@ -1,0 +1,1714 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-SanityTestCasesSuite">
+              <span class="suite-name border-failed">SanityTestCasesSuite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-SanityTestCasesSuite">
+                    <span>C:\Users\group10\workspace\ARCProject\src\main\resources\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-SanityTestCasesSuite">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-SanityTestCasesSuite">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-SanityTestCasesSuite">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-SanityTestCasesSuite">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-SanityTestCasesSuite">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-SanityTestCasesSuite">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">33 methods, 1 failed,   32 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-SanityTestCasesSuite" class="hide-methods failed suite-SanityTestCasesSuite"> (hide)</a> <!-- hide-methods failed suite-SanityTestCasesSuite -->
+                      <a href="#" panel-name="suite-SanityTestCasesSuite" class="show-methods failed suite-SanityTestCasesSuite"> (show)</a> <!-- show-methods failed suite-SanityTestCasesSuite -->
+                    </span>
+                    <div class="method-list-content failed suite-SanityTestCasesSuite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-SanityTestCasesSuite" title="com.arc.testcases.MyBuildings.LEED.ProjectDetailsVerificationTest" hash-for-method="projectDetailsVerificationTest(2, NewBuildingProject, Login)">projectDetailsVerificationTest(2, NewBuildingProject, Login)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-SanityTestCasesSuite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-SanityTestCasesSuite" class="hide-methods passed suite-SanityTestCasesSuite"> (hide)</a> <!-- hide-methods passed suite-SanityTestCasesSuite -->
+                      <a href="#" panel-name="suite-SanityTestCasesSuite" class="show-methods passed suite-SanityTestCasesSuite"> (show)</a> <!-- show-methods passed suite-SanityTestCasesSuite -->
+                    </span>
+                    <div class="method-list-content passed suite-SanityTestCasesSuite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-SanityTestCasesSuite" title="com.arc.testcases.MyBuildings.LEED.AddNewProjectTest" hash-for-method="addNewProjectTest(2, Login, NewBuildingProject)">addNewProjectTest(2, Login, NewBuildingProject)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-SanityTestCasesSuite" title="com.arc.testcases.MyBuildings.LEED.AddTeamMemberTest" hash-for-method="addTeamMemberTest(2, NewBuildingProject, BTeam, Login)">addTeamMemberTest(2, NewBuildingProject, BTeam, Login)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-SanityTestCasesSuite" title="com.arc.testcases.MyBuildings.LEED.RenewableAllBaseScoreAttemptTest" hash-for-method="baseScoreAttemptTest(2, NewBuildingProject, Login)">baseScoreAttemptTest(2, NewBuildingProject, Login)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-SanityTestCasesSuite" title="com.arc.testcases.MyBuildings.LEED.BasePointPdfFileUplaod" hash-for-method="baseScoreAttemptTest(2, NewBuildingProject, Login)">baseScoreAttemptTest(2, NewBuildingProject, Login)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-SanityTestCasesSuite" title="com.arc.testcases.MyBuildings.LEED.BillingDateVerificationTest" hash-for-method="billingDateVerificationTest(2, NewBuildingProject, Login)">billingDateVerificationTest(2, NewBuildingProject, Login)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-SanityTestCasesSuite" title="com.arc.testcases.MyBuildings.LEED.BillingRegistrationAmountVerificationTest" hash-for-method="billingRegistrationAmountVerificationTest(2, NewBuildingProject, Payment, Login)">billingRegistrationAmountVerificationTest(2, NewBuildingProject, Payment, Login)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-SanityTestCasesSuite" title="com.arc.testcases.MyBuildings.LEED.BillingStatusVerificationTest" hash-for-method="billingStatusVerificationTest(2, NewBuildingProject, Login)">billingStatusVerificationTest(2, NewBuildingProject, Login)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-SanityTestCasesSuite" title="com.arc.testcases.MyBuildings.LEED.VerifyPRFileDownloadTest" hash-for-method="billingStatusVerificationTest(2, NewBuildingProject, Login)">billingStatusVerificationTest(2, NewBuildingProject, Login)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-SanityTestCasesSuite" title="com.arc.testcases.MyBuildings.LEED.CTotalAnalyticsTest" hash-for-method="carbonTotalTest(2, NewBuildingProject, Login)">carbonTotalTest(2, NewBuildingProject, Login)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-SanityTestCasesSuite" title="com.arc.testcases.MyBuildings.LEED.ClickSearchedProgramTest" hash-for-method="clickSearchedProgramTest(2, Login)">clickSearchedProgramTest(2, Login)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-SanityTestCasesSuite" title="com.arc.testcases.MyBuildings.LEED.EditMemberRoleManagerTest" hash-for-method="editMemberRoleManagerTest(2, NewBuildingProject, Login)">editMemberRoleManagerTest(2, NewBuildingProject, Login)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-SanityTestCasesSuite" title="com.arc.testcases.MyBuildings.LEED.EnergyFileUploadTest" hash-for-method="energyFileUploadTest(2, NewBuildingProject, Login)">energyFileUploadTest(2, NewBuildingProject, Login)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-SanityTestCasesSuite" title="com.arc.testcases.MyBuildings.LEED.ETotalAnalyticsTooltipTest" hash-for-method="energyFileUploadTest(2, NewBuildingProject, Login)">energyFileUploadTest(2, NewBuildingProject, Login)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-SanityTestCasesSuite" title="com.arc.testcases.MyBuildings.LEED.EnergyMeterCreateTest" hash-for-method="energyMeterCreateTest(2, NewBuildingProject, BEnergy, Login)">energyMeterCreateTest(2, NewBuildingProject, BEnergy, Login)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-SanityTestCasesSuite" title="com.arc.testcases.MyBuildings.LEED.InternationalLanguagesSpecaialCharacterMeterCreateTest" hash-for-method="energyMeterCreateTest(2, NewBuildingProject, Login)">energyMeterCreateTest(2, NewBuildingProject, Login)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-SanityTestCasesSuite" title="com.arc.testcases.MyBuildings.LEED.OtherMeterCreateTest" hash-for-method="energyOtherMeterCreateTest(2, NewBuildingProject, BEnergy, Login)">energyOtherMeterCreateTest(2, NewBuildingProject, BEnergy, Login)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-SanityTestCasesSuite" title="com.arc.testcases.MyBuildings.LEED.ETotalAnalyticsTest" hash-for-method="energyTotalAnalyticsTest(2, NewBuildingProject, Login)">energyTotalAnalyticsTest(2, NewBuildingProject, Login)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-SanityTestCasesSuite" title="com.arc.testcases.MyBuildings.LEED.UnistallAllAppsTest" hash-for-method="installAllAppsTest(2, NewBuildingProject, Login)">installAllAppsTest(2, NewBuildingProject, Login)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-SanityTestCasesSuite" title="com.arc.testcases.MyBuildings.LEED.InstallAllAppsTest" hash-for-method="installAllAppsTest(2, NewBuildingProject, Login)">installAllAppsTest(2, NewBuildingProject, Login)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-SanityTestCasesSuite" title="com.arc.testcases.MyBuildings.LEED.LoginCaseTest" hash-for-method="loginCaseTest(2, Login)">loginCaseTest(2, Login)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-SanityTestCasesSuite" title="com.arc.testcases.MyBuildings.LEED.ModifyOccOptHrsProjectDetailsTest" hash-for-method="modifyProjectDetailsTest(2, NewBuildingProject, Login)">modifyProjectDetailsTest(2, NewBuildingProject, Login)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-SanityTestCasesSuite" title="com.arc.testcases.MyBuildings.LEED.PaymentbyCCTest" hash-for-method="paymentbyCCTest(2, NewBuildingProject, Payment, Login)">paymentbyCCTest(2, NewBuildingProject, Payment, Login)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-SanityTestCasesSuite" title="com.arc.testcases.MyBuildings.LEED.PrerequisitesPdfFileUploadTest" hash-for-method="prerequisitesAttemptTest(2, NewBuildingProject, Login)">prerequisitesAttemptTest(2, NewBuildingProject, Login)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-SanityTestCasesSuite" title="com.arc.testcases.MyBuildings.LEED.PrerequisitesTextFileUploadTest" hash-for-method="prerequisitesAttemptTest(2, NewBuildingProject, Login)">prerequisitesAttemptTest(2, NewBuildingProject, Login)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-SanityTestCasesSuite" title="com.arc.testcases.MyBuildings.LEED.PrerequisitesAttemptTest" hash-for-method="prerequisitesAttemptTest(2, NewBuildingProject, Login)">prerequisitesAttemptTest(2, NewBuildingProject, Login)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-SanityTestCasesSuite" title="com.arc.testcases.MyBuildings.LEED.ProjectFieldVerificationTest" hash-for-method="projectFieldVerificationTest(2, NewBuildingProject, Login)">projectFieldVerificationTest(2, NewBuildingProject, Login)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-SanityTestCasesSuite" title="com.arc.testcases.MyBuildings.LEED.VerifyAgreementFileDownloadTest" hash-for-method="verifyAgreementFileDownloadTest(2, NewBuildingProject, Login)">verifyAgreementFileDownloadTest(2, NewBuildingProject, Login)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-SanityTestCasesSuite" title="com.arc.testcases.MyBuildings.LEED.WTotalAnalyticsTest" hash-for-method="verifyWDailiyMTCO2Test(2, NewBuildingProject, Login)">verifyWDailiyMTCO2Test(2, NewBuildingProject, Login)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-SanityTestCasesSuite" title="com.arc.testcases.MyBuildings.LEED.WasteMeterCreateTest" hash-for-method="wasteMeterCreateTest(2, NewBuildingProject, BWaste, Login)">wasteMeterCreateTest(2, NewBuildingProject, BWaste, Login)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-SanityTestCasesSuite" title="com.arc.testcases.MyBuildings.LEED.WaterFileUploadTest" hash-for-method="waterFileUploadTest(2, NewBuildingProject, Login)">waterFileUploadTest(2, NewBuildingProject, Login)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-SanityTestCasesSuite" title="com.arc.testcases.MyBuildings.LEED.PreCertReviewTest" hash-for-method="waterFileUploadTest(2, NewBuildingProject, Payment, Login)">waterFileUploadTest(2, NewBuildingProject, Payment, Login)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-SanityTestCasesSuite" title="com.arc.testcases.MyBuildings.LEED.WaterMeterCreateTest" hash-for-method="waterMeterCreateTest(2, NewBuildingProject, BWater, Login)">waterMeterCreateTest(2, NewBuildingProject, BWater, Login)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-SanityTestCasesSuite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-SanityTestCasesSuite" class="panel SanityTestCasesSuite">
+          <div class="suite-SanityTestCasesSuite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.arc.testcases.MyBuildings.LEED.ProjectDetailsVerificationTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="projectDetailsVerificationTest(2, NewBuildingProject, Login)">
+                  </a> <!-- projectDetailsVerificationTest(2, NewBuildingProject, Login) -->
+                  <span class="method-name">projectDetailsVerificationTest</span>
+                  <span class="parameters">(2, NewBuildingProject, Login)</span>
+                  <div class="stack-trace">java.lang.Error: Value is not correct expected [10000] but found [5000]
+	at com.arc.driver.CommonMethod.assertEqualsmessageAttributevalue(CommonMethod.java:228)
+	at com.arc.ReusableMethods.ReusableMethodsManage.VerifyProjectDetails(ReusableMethodsManage.java:120)
+	at com.arc.testcases.MyBuildings.LEED.ProjectDetailsVerificationTest.projectDetailsVerificationTest(ProjectDetailsVerificationTest.java:36)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-SanityTestCasesSuite-class-failed -->
+          <div class="suite-SanityTestCasesSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.arc.testcases.MyBuildings.LEED.WaterMeterCreateTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="waterMeterCreateTest(2, NewBuildingProject, BWater, Login)">
+                  </a> <!-- waterMeterCreateTest(2, NewBuildingProject, BWater, Login) -->
+                  <span class="method-name">waterMeterCreateTest</span>
+                  <span class="parameters">(2, NewBuildingProject, BWater, Login)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-SanityTestCasesSuite-class-passed -->
+          <div class="suite-SanityTestCasesSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.arc.testcases.MyBuildings.LEED.VerifyPRFileDownloadTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="billingStatusVerificationTest(2, NewBuildingProject, Login)">
+                  </a> <!-- billingStatusVerificationTest(2, NewBuildingProject, Login) -->
+                  <span class="method-name">billingStatusVerificationTest</span>
+                  <span class="parameters">(2, NewBuildingProject, Login)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-SanityTestCasesSuite-class-passed -->
+          <div class="suite-SanityTestCasesSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.arc.testcases.MyBuildings.LEED.LoginCaseTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginCaseTest(2, Login)">
+                  </a> <!-- loginCaseTest(2, Login) -->
+                  <span class="method-name">loginCaseTest</span>
+                  <span class="parameters">(2, Login)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-SanityTestCasesSuite-class-passed -->
+          <div class="suite-SanityTestCasesSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.arc.testcases.MyBuildings.LEED.EditMemberRoleManagerTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="editMemberRoleManagerTest(2, NewBuildingProject, Login)">
+                  </a> <!-- editMemberRoleManagerTest(2, NewBuildingProject, Login) -->
+                  <span class="method-name">editMemberRoleManagerTest</span>
+                  <span class="parameters">(2, NewBuildingProject, Login)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-SanityTestCasesSuite-class-passed -->
+          <div class="suite-SanityTestCasesSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.arc.testcases.MyBuildings.LEED.ModifyOccOptHrsProjectDetailsTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="modifyProjectDetailsTest(2, NewBuildingProject, Login)">
+                  </a> <!-- modifyProjectDetailsTest(2, NewBuildingProject, Login) -->
+                  <span class="method-name">modifyProjectDetailsTest</span>
+                  <span class="parameters">(2, NewBuildingProject, Login)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-SanityTestCasesSuite-class-passed -->
+          <div class="suite-SanityTestCasesSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.arc.testcases.MyBuildings.LEED.ClickSearchedProgramTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="clickSearchedProgramTest(2, Login)">
+                  </a> <!-- clickSearchedProgramTest(2, Login) -->
+                  <span class="method-name">clickSearchedProgramTest</span>
+                  <span class="parameters">(2, Login)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-SanityTestCasesSuite-class-passed -->
+          <div class="suite-SanityTestCasesSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.arc.testcases.MyBuildings.LEED.UnistallAllAppsTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="installAllAppsTest(2, NewBuildingProject, Login)">
+                  </a> <!-- installAllAppsTest(2, NewBuildingProject, Login) -->
+                  <span class="method-name">installAllAppsTest</span>
+                  <span class="parameters">(2, NewBuildingProject, Login)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-SanityTestCasesSuite-class-passed -->
+          <div class="suite-SanityTestCasesSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.arc.testcases.MyBuildings.LEED.WaterFileUploadTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="waterFileUploadTest(2, NewBuildingProject, Login)">
+                  </a> <!-- waterFileUploadTest(2, NewBuildingProject, Login) -->
+                  <span class="method-name">waterFileUploadTest</span>
+                  <span class="parameters">(2, NewBuildingProject, Login)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-SanityTestCasesSuite-class-passed -->
+          <div class="suite-SanityTestCasesSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.arc.testcases.MyBuildings.LEED.WTotalAnalyticsTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyWDailiyMTCO2Test(2, NewBuildingProject, Login)">
+                  </a> <!-- verifyWDailiyMTCO2Test(2, NewBuildingProject, Login) -->
+                  <span class="method-name">verifyWDailiyMTCO2Test</span>
+                  <span class="parameters">(2, NewBuildingProject, Login)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-SanityTestCasesSuite-class-passed -->
+          <div class="suite-SanityTestCasesSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.arc.testcases.MyBuildings.LEED.BasePointPdfFileUplaod</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="baseScoreAttemptTest(2, NewBuildingProject, Login)">
+                  </a> <!-- baseScoreAttemptTest(2, NewBuildingProject, Login) -->
+                  <span class="method-name">baseScoreAttemptTest</span>
+                  <span class="parameters">(2, NewBuildingProject, Login)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-SanityTestCasesSuite-class-passed -->
+          <div class="suite-SanityTestCasesSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.arc.testcases.MyBuildings.LEED.ETotalAnalyticsTooltipTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="energyFileUploadTest(2, NewBuildingProject, Login)">
+                  </a> <!-- energyFileUploadTest(2, NewBuildingProject, Login) -->
+                  <span class="method-name">energyFileUploadTest</span>
+                  <span class="parameters">(2, NewBuildingProject, Login)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-SanityTestCasesSuite-class-passed -->
+          <div class="suite-SanityTestCasesSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.arc.testcases.MyBuildings.LEED.OtherMeterCreateTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="energyOtherMeterCreateTest(2, NewBuildingProject, BEnergy, Login)">
+                  </a> <!-- energyOtherMeterCreateTest(2, NewBuildingProject, BEnergy, Login) -->
+                  <span class="method-name">energyOtherMeterCreateTest</span>
+                  <span class="parameters">(2, NewBuildingProject, BEnergy, Login)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-SanityTestCasesSuite-class-passed -->
+          <div class="suite-SanityTestCasesSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.arc.testcases.MyBuildings.LEED.EnergyFileUploadTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="energyFileUploadTest(2, NewBuildingProject, Login)">
+                  </a> <!-- energyFileUploadTest(2, NewBuildingProject, Login) -->
+                  <span class="method-name">energyFileUploadTest</span>
+                  <span class="parameters">(2, NewBuildingProject, Login)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-SanityTestCasesSuite-class-passed -->
+          <div class="suite-SanityTestCasesSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.arc.testcases.MyBuildings.LEED.EnergyMeterCreateTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="energyMeterCreateTest(2, NewBuildingProject, BEnergy, Login)">
+                  </a> <!-- energyMeterCreateTest(2, NewBuildingProject, BEnergy, Login) -->
+                  <span class="method-name">energyMeterCreateTest</span>
+                  <span class="parameters">(2, NewBuildingProject, BEnergy, Login)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-SanityTestCasesSuite-class-passed -->
+          <div class="suite-SanityTestCasesSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.arc.testcases.MyBuildings.LEED.InstallAllAppsTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="installAllAppsTest(2, NewBuildingProject, Login)">
+                  </a> <!-- installAllAppsTest(2, NewBuildingProject, Login) -->
+                  <span class="method-name">installAllAppsTest</span>
+                  <span class="parameters">(2, NewBuildingProject, Login)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-SanityTestCasesSuite-class-passed -->
+          <div class="suite-SanityTestCasesSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.arc.testcases.MyBuildings.LEED.WasteMeterCreateTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="wasteMeterCreateTest(2, NewBuildingProject, BWaste, Login)">
+                  </a> <!-- wasteMeterCreateTest(2, NewBuildingProject, BWaste, Login) -->
+                  <span class="method-name">wasteMeterCreateTest</span>
+                  <span class="parameters">(2, NewBuildingProject, BWaste, Login)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-SanityTestCasesSuite-class-passed -->
+          <div class="suite-SanityTestCasesSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.arc.testcases.MyBuildings.LEED.BillingStatusVerificationTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="billingStatusVerificationTest(2, NewBuildingProject, Login)">
+                  </a> <!-- billingStatusVerificationTest(2, NewBuildingProject, Login) -->
+                  <span class="method-name">billingStatusVerificationTest</span>
+                  <span class="parameters">(2, NewBuildingProject, Login)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-SanityTestCasesSuite-class-passed -->
+          <div class="suite-SanityTestCasesSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.arc.testcases.MyBuildings.LEED.PrerequisitesAttemptTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="prerequisitesAttemptTest(2, NewBuildingProject, Login)">
+                  </a> <!-- prerequisitesAttemptTest(2, NewBuildingProject, Login) -->
+                  <span class="method-name">prerequisitesAttemptTest</span>
+                  <span class="parameters">(2, NewBuildingProject, Login)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-SanityTestCasesSuite-class-passed -->
+          <div class="suite-SanityTestCasesSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.arc.testcases.MyBuildings.LEED.ProjectFieldVerificationTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="projectFieldVerificationTest(2, NewBuildingProject, Login)">
+                  </a> <!-- projectFieldVerificationTest(2, NewBuildingProject, Login) -->
+                  <span class="method-name">projectFieldVerificationTest</span>
+                  <span class="parameters">(2, NewBuildingProject, Login)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-SanityTestCasesSuite-class-passed -->
+          <div class="suite-SanityTestCasesSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.arc.testcases.MyBuildings.LEED.VerifyAgreementFileDownloadTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyAgreementFileDownloadTest(2, NewBuildingProject, Login)">
+                  </a> <!-- verifyAgreementFileDownloadTest(2, NewBuildingProject, Login) -->
+                  <span class="method-name">verifyAgreementFileDownloadTest</span>
+                  <span class="parameters">(2, NewBuildingProject, Login)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-SanityTestCasesSuite-class-passed -->
+          <div class="suite-SanityTestCasesSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.arc.testcases.MyBuildings.LEED.InternationalLanguagesSpecaialCharacterMeterCreateTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="energyMeterCreateTest(2, NewBuildingProject, Login)">
+                  </a> <!-- energyMeterCreateTest(2, NewBuildingProject, Login) -->
+                  <span class="method-name">energyMeterCreateTest</span>
+                  <span class="parameters">(2, NewBuildingProject, Login)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-SanityTestCasesSuite-class-passed -->
+          <div class="suite-SanityTestCasesSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.arc.testcases.MyBuildings.LEED.BillingRegistrationAmountVerificationTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="billingRegistrationAmountVerificationTest(2, NewBuildingProject, Payment, Login)">
+                  </a> <!-- billingRegistrationAmountVerificationTest(2, NewBuildingProject, Payment, Login) -->
+                  <span class="method-name">billingRegistrationAmountVerificationTest</span>
+                  <span class="parameters">(2, NewBuildingProject, Payment, Login)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-SanityTestCasesSuite-class-passed -->
+          <div class="suite-SanityTestCasesSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.arc.testcases.MyBuildings.LEED.AddNewProjectTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="addNewProjectTest(2, Login, NewBuildingProject)">
+                  </a> <!-- addNewProjectTest(2, Login, NewBuildingProject) -->
+                  <span class="method-name">addNewProjectTest</span>
+                  <span class="parameters">(2, Login, NewBuildingProject)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-SanityTestCasesSuite-class-passed -->
+          <div class="suite-SanityTestCasesSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.arc.testcases.MyBuildings.LEED.CTotalAnalyticsTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="carbonTotalTest(2, NewBuildingProject, Login)">
+                  </a> <!-- carbonTotalTest(2, NewBuildingProject, Login) -->
+                  <span class="method-name">carbonTotalTest</span>
+                  <span class="parameters">(2, NewBuildingProject, Login)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-SanityTestCasesSuite-class-passed -->
+          <div class="suite-SanityTestCasesSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.arc.testcases.MyBuildings.LEED.PrerequisitesPdfFileUploadTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="prerequisitesAttemptTest(2, NewBuildingProject, Login)">
+                  </a> <!-- prerequisitesAttemptTest(2, NewBuildingProject, Login) -->
+                  <span class="method-name">prerequisitesAttemptTest</span>
+                  <span class="parameters">(2, NewBuildingProject, Login)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-SanityTestCasesSuite-class-passed -->
+          <div class="suite-SanityTestCasesSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.arc.testcases.MyBuildings.LEED.PreCertReviewTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="waterFileUploadTest(2, NewBuildingProject, Payment, Login)">
+                  </a> <!-- waterFileUploadTest(2, NewBuildingProject, Payment, Login) -->
+                  <span class="method-name">waterFileUploadTest</span>
+                  <span class="parameters">(2, NewBuildingProject, Payment, Login)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-SanityTestCasesSuite-class-passed -->
+          <div class="suite-SanityTestCasesSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.arc.testcases.MyBuildings.LEED.PaymentbyCCTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="paymentbyCCTest(2, NewBuildingProject, Payment, Login)">
+                  </a> <!-- paymentbyCCTest(2, NewBuildingProject, Payment, Login) -->
+                  <span class="method-name">paymentbyCCTest</span>
+                  <span class="parameters">(2, NewBuildingProject, Payment, Login)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-SanityTestCasesSuite-class-passed -->
+          <div class="suite-SanityTestCasesSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.arc.testcases.MyBuildings.LEED.ETotalAnalyticsTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="energyTotalAnalyticsTest(2, NewBuildingProject, Login)">
+                  </a> <!-- energyTotalAnalyticsTest(2, NewBuildingProject, Login) -->
+                  <span class="method-name">energyTotalAnalyticsTest</span>
+                  <span class="parameters">(2, NewBuildingProject, Login)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-SanityTestCasesSuite-class-passed -->
+          <div class="suite-SanityTestCasesSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.arc.testcases.MyBuildings.LEED.AddTeamMemberTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="addTeamMemberTest(2, NewBuildingProject, BTeam, Login)">
+                  </a> <!-- addTeamMemberTest(2, NewBuildingProject, BTeam, Login) -->
+                  <span class="method-name">addTeamMemberTest</span>
+                  <span class="parameters">(2, NewBuildingProject, BTeam, Login)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-SanityTestCasesSuite-class-passed -->
+          <div class="suite-SanityTestCasesSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.arc.testcases.MyBuildings.LEED.BillingDateVerificationTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="billingDateVerificationTest(2, NewBuildingProject, Login)">
+                  </a> <!-- billingDateVerificationTest(2, NewBuildingProject, Login) -->
+                  <span class="method-name">billingDateVerificationTest</span>
+                  <span class="parameters">(2, NewBuildingProject, Login)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-SanityTestCasesSuite-class-passed -->
+          <div class="suite-SanityTestCasesSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.arc.testcases.MyBuildings.LEED.RenewableAllBaseScoreAttemptTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="baseScoreAttemptTest(2, NewBuildingProject, Login)">
+                  </a> <!-- baseScoreAttemptTest(2, NewBuildingProject, Login) -->
+                  <span class="method-name">baseScoreAttemptTest</span>
+                  <span class="parameters">(2, NewBuildingProject, Login)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-SanityTestCasesSuite-class-passed -->
+          <div class="suite-SanityTestCasesSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.arc.testcases.MyBuildings.LEED.PrerequisitesTextFileUploadTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="prerequisitesAttemptTest(2, NewBuildingProject, Login)">
+                  </a> <!-- prerequisitesAttemptTest(2, NewBuildingProject, Login) -->
+                  <span class="method-name">prerequisitesAttemptTest</span>
+                  <span class="parameters">(2, NewBuildingProject, Login)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-SanityTestCasesSuite-class-passed -->
+        </div> <!-- panel SanityTestCasesSuite -->
+        <div panel-name="test-xml-SanityTestCasesSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\group10\workspace\ARCProject\src\main\resources\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;SanityTestCasesSuite&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;com.arc.driver.ExtentReportNG&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test name=&quot;ARCRegressionTest-Building&quot;&gt;
+    &lt;parameter name=&quot;paymentSheet&quot; value=&quot;Payment&quot;/&gt;
+    &lt;parameter name=&quot;loginSheet&quot; value=&quot;Login&quot;/&gt;
+    &lt;parameter name=&quot;buildingSheet&quot; value=&quot;NewBuildingProject&quot;/&gt;
+    &lt;parameter name=&quot;environment&quot; value=&quot;staging&quot;/&gt;
+    &lt;parameter name=&quot;energySheet&quot; value=&quot;BEnergy&quot;/&gt;
+    &lt;parameter name=&quot;browserName&quot; value=&quot;firefox&quot;/&gt;
+    &lt;parameter name=&quot;wasteSheet&quot; value=&quot;BWaste&quot;/&gt;
+    &lt;parameter name=&quot;waterSheet&quot; value=&quot;BWater&quot;/&gt;
+    &lt;parameter name=&quot;teamSheet&quot; value=&quot;BTeam&quot;/&gt;
+    &lt;parameter name=&quot;rowNum&quot; value=&quot;2&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.arc.testcases.MyBuildings.LEED.LoginCaseTest&quot;/&gt;
+      &lt;class name=&quot;com.arc.testcases.MyBuildings.LEED.ClickSearchedProgramTest&quot;/&gt;
+      &lt;class name=&quot;com.arc.testcases.MyBuildings.LEED.AddNewProjectTest&quot;/&gt;
+      &lt;class name=&quot;com.arc.testcases.MyBuildings.LEED.PaymentbyCCTest&quot;/&gt;
+      &lt;class name=&quot;com.arc.testcases.MyBuildings.LEED.BasePointPdfFileUplaod&quot;/&gt;
+      &lt;class name=&quot;com.arc.testcases.MyBuildings.LEED.RenewableAllBaseScoreAttemptTest&quot;/&gt;
+      &lt;class name=&quot;com.arc.testcases.MyBuildings.LEED.PrerequisitesPdfFileUploadTest&quot;/&gt;
+      &lt;class name=&quot;com.arc.testcases.MyBuildings.LEED.PrerequisitesTextFileUploadTest&quot;/&gt;
+      &lt;class name=&quot;com.arc.testcases.MyBuildings.LEED.PrerequisitesAttemptTest&quot;/&gt;
+      &lt;class name=&quot;com.arc.testcases.MyBuildings.LEED.EnergyMeterCreateTest&quot;/&gt;
+      &lt;class name=&quot;com.arc.testcases.MyBuildings.LEED.OtherMeterCreateTest&quot;/&gt;
+      &lt;class name=&quot;com.arc.testcases.MyBuildings.LEED.WaterMeterCreateTest&quot;/&gt;
+      &lt;class name=&quot;com.arc.testcases.MyBuildings.LEED.WasteMeterCreateTest&quot;/&gt;
+      &lt;class name=&quot;com.arc.testcases.MyBuildings.LEED.EnergyFileUploadTest&quot;/&gt;
+      &lt;class name=&quot;com.arc.testcases.MyBuildings.LEED.WaterFileUploadTest&quot;/&gt;
+      &lt;class name=&quot;com.arc.testcases.MyBuildings.LEED.InternationalLanguagesSpecaialCharacterMeterCreateTest&quot;/&gt;
+      &lt;class name=&quot;com.arc.testcases.MyBuildings.LEED.ETotalAnalyticsTooltipTest&quot;/&gt;
+      &lt;class name=&quot;com.arc.testcases.MyBuildings.LEED.ProjectFieldVerificationTest&quot;/&gt;
+      &lt;class name=&quot;com.arc.testcases.MyBuildings.LEED.ProjectDetailsVerificationTest&quot;/&gt;
+      &lt;class name=&quot;com.arc.testcases.MyBuildings.LEED.ModifyOccOptHrsProjectDetailsTest&quot;/&gt;
+      &lt;class name=&quot;com.arc.testcases.MyBuildings.LEED.AddTeamMemberTest&quot;/&gt;
+      &lt;class name=&quot;com.arc.testcases.MyBuildings.LEED.EditMemberRoleManagerTest&quot;/&gt;
+      &lt;class name=&quot;com.arc.testcases.MyBuildings.LEED.VerifyPRFileDownloadTest&quot;/&gt;
+      &lt;class name=&quot;com.arc.testcases.MyBuildings.LEED.VerifyAgreementFileDownloadTest&quot;/&gt;
+      &lt;class name=&quot;com.arc.testcases.MyBuildings.LEED.InstallAllAppsTest&quot;/&gt;
+      &lt;class name=&quot;com.arc.testcases.MyBuildings.LEED.UnistallAllAppsTest&quot;/&gt;
+      &lt;class name=&quot;com.arc.testcases.MyBuildings.LEED.BillingDateVerificationTest&quot;/&gt;
+      &lt;class name=&quot;com.arc.testcases.MyBuildings.LEED.BillingRegistrationAmountVerificationTest&quot;/&gt;
+      &lt;class name=&quot;com.arc.testcases.MyBuildings.LEED.ETotalAnalyticsTest&quot;/&gt;
+      &lt;class name=&quot;com.arc.testcases.MyBuildings.LEED.CTotalAnalyticsTest&quot;/&gt;
+      &lt;class name=&quot;com.arc.testcases.MyBuildings.LEED.WTotalAnalyticsTest&quot;/&gt;
+      &lt;class name=&quot;com.arc.testcases.MyBuildings.LEED.BillingStatusVerificationTest&quot;/&gt;
+      &lt;class name=&quot;com.arc.testcases.MyBuildings.LEED.PreCertReviewTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- ARCRegressionTest-Building --&gt;
+&lt;/suite&gt; &lt;!-- SanityTestCasesSuite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-SanityTestCasesSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for SanityTestCasesSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">ARCRegressionTest-Building (33 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-SanityTestCasesSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for SanityTestCasesSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-SanityTestCasesSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for SanityTestCasesSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_SanityTestCasesSuite');
+function tableData_SanityTestCasesSuite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(33);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'baseScoreAttemptTest')
+data.setCell(0, 2, 'com.arc.testcases.MyBuildings.LEED.RenewableAllBaseScoreAttemptTest')
+data.setCell(0, 3, 245829);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'baseScoreAttemptTest')
+data.setCell(1, 2, 'com.arc.testcases.MyBuildings.LEED.BasePointPdfFileUplaod')
+data.setCell(1, 3, 239479);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'prerequisitesAttemptTest')
+data.setCell(2, 2, 'com.arc.testcases.MyBuildings.LEED.PrerequisitesAttemptTest')
+data.setCell(2, 3, 155317);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'prerequisitesAttemptTest')
+data.setCell(3, 2, 'com.arc.testcases.MyBuildings.LEED.PrerequisitesPdfFileUploadTest')
+data.setCell(3, 3, 151938);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'prerequisitesAttemptTest')
+data.setCell(4, 2, 'com.arc.testcases.MyBuildings.LEED.PrerequisitesTextFileUploadTest')
+data.setCell(4, 3, 149134);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'energyMeterCreateTest')
+data.setCell(5, 2, 'com.arc.testcases.MyBuildings.LEED.InternationalLanguagesSpecaialCharacterMeterCreateTest')
+data.setCell(5, 3, 114234);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'energyFileUploadTest')
+data.setCell(6, 2, 'com.arc.testcases.MyBuildings.LEED.EnergyFileUploadTest')
+data.setCell(6, 3, 111283);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'waterMeterCreateTest')
+data.setCell(7, 2, 'com.arc.testcases.MyBuildings.LEED.WaterMeterCreateTest')
+data.setCell(7, 3, 78110);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'waterFileUploadTest')
+data.setCell(8, 2, 'com.arc.testcases.MyBuildings.LEED.PreCertReviewTest')
+data.setCell(8, 3, 76702);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'energyMeterCreateTest')
+data.setCell(9, 2, 'com.arc.testcases.MyBuildings.LEED.EnergyMeterCreateTest')
+data.setCell(9, 3, 70550);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'addNewProjectTest')
+data.setCell(10, 2, 'com.arc.testcases.MyBuildings.LEED.AddNewProjectTest')
+data.setCell(10, 3, 70412);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'wasteMeterCreateTest')
+data.setCell(11, 2, 'com.arc.testcases.MyBuildings.LEED.WasteMeterCreateTest')
+data.setCell(11, 3, 66302);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'paymentbyCCTest')
+data.setCell(12, 2, 'com.arc.testcases.MyBuildings.LEED.PaymentbyCCTest')
+data.setCell(12, 3, 62060);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'modifyProjectDetailsTest')
+data.setCell(13, 2, 'com.arc.testcases.MyBuildings.LEED.ModifyOccOptHrsProjectDetailsTest')
+data.setCell(13, 3, 59366);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'installAllAppsTest')
+data.setCell(14, 2, 'com.arc.testcases.MyBuildings.LEED.InstallAllAppsTest')
+data.setCell(14, 3, 57695);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'installAllAppsTest')
+data.setCell(15, 2, 'com.arc.testcases.MyBuildings.LEED.UnistallAllAppsTest')
+data.setCell(15, 3, 56502);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'waterFileUploadTest')
+data.setCell(16, 2, 'com.arc.testcases.MyBuildings.LEED.WaterFileUploadTest')
+data.setCell(16, 3, 54747);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'billingStatusVerificationTest')
+data.setCell(17, 2, 'com.arc.testcases.MyBuildings.LEED.VerifyPRFileDownloadTest')
+data.setCell(17, 3, 51923);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'energyFileUploadTest')
+data.setCell(18, 2, 'com.arc.testcases.MyBuildings.LEED.ETotalAnalyticsTooltipTest')
+data.setCell(18, 3, 51639);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'editMemberRoleManagerTest')
+data.setCell(19, 2, 'com.arc.testcases.MyBuildings.LEED.EditMemberRoleManagerTest')
+data.setCell(19, 3, 50533);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'verifyWDailiyMTCO2Test')
+data.setCell(20, 2, 'com.arc.testcases.MyBuildings.LEED.WTotalAnalyticsTest')
+data.setCell(20, 3, 48854);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'verifyAgreementFileDownloadTest')
+data.setCell(21, 2, 'com.arc.testcases.MyBuildings.LEED.VerifyAgreementFileDownloadTest')
+data.setCell(21, 3, 47578);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'projectFieldVerificationTest')
+data.setCell(22, 2, 'com.arc.testcases.MyBuildings.LEED.ProjectFieldVerificationTest')
+data.setCell(22, 3, 45596);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'energyOtherMeterCreateTest')
+data.setCell(23, 2, 'com.arc.testcases.MyBuildings.LEED.OtherMeterCreateTest')
+data.setCell(23, 3, 44471);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'projectDetailsVerificationTest')
+data.setCell(24, 2, 'com.arc.testcases.MyBuildings.LEED.ProjectDetailsVerificationTest')
+data.setCell(24, 3, 44363);
+data.setCell(25, 0, 25)
+data.setCell(25, 1, 'carbonTotalTest')
+data.setCell(25, 2, 'com.arc.testcases.MyBuildings.LEED.CTotalAnalyticsTest')
+data.setCell(25, 3, 41806);
+data.setCell(26, 0, 26)
+data.setCell(26, 1, 'loginCaseTest')
+data.setCell(26, 2, 'com.arc.testcases.MyBuildings.LEED.LoginCaseTest')
+data.setCell(26, 3, 41681);
+data.setCell(27, 0, 27)
+data.setCell(27, 1, 'addTeamMemberTest')
+data.setCell(27, 2, 'com.arc.testcases.MyBuildings.LEED.AddTeamMemberTest')
+data.setCell(27, 3, 41660);
+data.setCell(28, 0, 28)
+data.setCell(28, 1, 'billingStatusVerificationTest')
+data.setCell(28, 2, 'com.arc.testcases.MyBuildings.LEED.BillingStatusVerificationTest')
+data.setCell(28, 3, 41597);
+data.setCell(29, 0, 29)
+data.setCell(29, 1, 'energyTotalAnalyticsTest')
+data.setCell(29, 2, 'com.arc.testcases.MyBuildings.LEED.ETotalAnalyticsTest')
+data.setCell(29, 3, 40814);
+data.setCell(30, 0, 30)
+data.setCell(30, 1, 'billingDateVerificationTest')
+data.setCell(30, 2, 'com.arc.testcases.MyBuildings.LEED.BillingDateVerificationTest')
+data.setCell(30, 3, 39950);
+data.setCell(31, 0, 31)
+data.setCell(31, 1, 'billingRegistrationAmountVerificationTest')
+data.setCell(31, 2, 'com.arc.testcases.MyBuildings.LEED.BillingRegistrationAmountVerificationTest')
+data.setCell(31, 3, 37807);
+data.setCell(32, 0, 32)
+data.setCell(32, 1, 'clickSearchedProgramTest')
+data.setCell(32, 2, 'com.arc.testcases.MyBuildings.LEED.ClickSearchedProgramTest')
+data.setCell(32, 3, 24400);
+window.suiteTableData['SanityTestCasesSuite']= { tableData: data, tableDiv: 'times-div-SanityTestCasesSuite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 41 minutes</span>
+              <div id="times-div-SanityTestCasesSuite">
+              </div> <!-- times-div-SanityTestCasesSuite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-SanityTestCasesSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for SanityTestCasesSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-SanityTestCasesSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-SanityTestCasesSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.arc.testcases.MyBuildings.LEED.LoginCaseTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup(firefox, staging)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">loginCaseTest(2, Login)</span>
+                <span class="method-start">22715 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown([TestResult name=loginCaseTest status=SUCCESS method=LoginCaseTest.loginCaseTest(int, java.lang.Stri...)</span>
+                <span class="method-start">64398 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">end</span>
+                <span class="method-start">65003 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.arc.testcases.MyBuildings.LEED.ClickSearchedProgramTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup(firefox, staging)</span>
+                <span class="method-start">67237 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">clickSearchedProgramTest(2, Login)</span>
+                <span class="method-start">85304 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown([TestResult name=clickSearchedProgramTest status=SUCCESS method=ClickSearchedProgramTest.clickSearch...)</span>
+                <span class="method-start">109706 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">end</span>
+                <span class="method-start">109877 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.arc.testcases.MyBuildings.LEED.AddNewProjectTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup(firefox, staging)</span>
+                <span class="method-start">111794 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">addNewProjectTest(2, Login, NewBuildingProject)</span>
+                <span class="method-start">129723 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown([TestResult name=addNewProjectTest status=SUCCESS method=AddNewProjectTest.addNewProjectTest(int, ja...)</span>
+                <span class="method-start">200137 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">end</span>
+                <span class="method-start">200249 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.arc.testcases.MyBuildings.LEED.PaymentbyCCTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup(firefox, staging)</span>
+                <span class="method-start">202161 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">paymentbyCCTest(2, NewBuildingProject, Payment, Login)</span>
+                <span class="method-start">221500 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown([TestResult name=paymentbyCCTest status=SUCCESS method=PaymentbyCCTest.paymentbyCCTest(int, java.lan...)</span>
+                <span class="method-start">283563 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">end</span>
+                <span class="method-start">283666 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.arc.testcases.MyBuildings.LEED.BasePointPdfFileUplaod</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup(firefox, staging)</span>
+                <span class="method-start">285615 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">baseScoreAttemptTest(2, NewBuildingProject, Login)</span>
+                <span class="method-start">305046 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown([TestResult name=baseScoreAttemptTest status=SUCCESS method=BasePointPdfFileUplaod.baseScoreAttemptT...)</span>
+                <span class="method-start">544526 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">end</span>
+                <span class="method-start">544632 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.arc.testcases.MyBuildings.LEED.RenewableAllBaseScoreAttemptTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup(firefox, staging)</span>
+                <span class="method-start">547045 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">baseScoreAttemptTest(2, NewBuildingProject, Login)</span>
+                <span class="method-start">566370 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown([TestResult name=baseScoreAttemptTest status=SUCCESS method=RenewableAllBaseScoreAttemptTest.baseSco...)</span>
+                <span class="method-start">812201 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">end</span>
+                <span class="method-start">812297 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.arc.testcases.MyBuildings.LEED.PrerequisitesPdfFileUploadTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup(firefox, staging)</span>
+                <span class="method-start">814867 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">prerequisitesAttemptTest(2, NewBuildingProject, Login)</span>
+                <span class="method-start">834321 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown([TestResult name=prerequisitesAttemptTest status=SUCCESS method=PrerequisitesPdfFileUploadTest.prere...)</span>
+                <span class="method-start">986275 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">end</span>
+                <span class="method-start">986400 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.arc.testcases.MyBuildings.LEED.PrerequisitesTextFileUploadTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup(firefox, staging)</span>
+                <span class="method-start">988659 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">prerequisitesAttemptTest(2, NewBuildingProject, Login)</span>
+                <span class="method-start">1008672 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown([TestResult name=prerequisitesAttemptTest status=SUCCESS method=PrerequisitesTextFileUploadTest.prer...)</span>
+                <span class="method-start">1157808 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">end</span>
+                <span class="method-start">1157879 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.arc.testcases.MyBuildings.LEED.PrerequisitesAttemptTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup(firefox, staging)</span>
+                <span class="method-start">1160457 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">prerequisitesAttemptTest(2, NewBuildingProject, Login)</span>
+                <span class="method-start">1180317 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown([TestResult name=prerequisitesAttemptTest status=SUCCESS method=PrerequisitesAttemptTest.prerequisit...)</span>
+                <span class="method-start">1335635 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">end</span>
+                <span class="method-start">1335706 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.arc.testcases.MyBuildings.LEED.EnergyMeterCreateTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup(firefox, staging)</span>
+                <span class="method-start">1337786 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">energyMeterCreateTest(2, NewBuildingProject, BEnergy, Login)</span>
+                <span class="method-start">1356169 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown([TestResult name=energyMeterCreateTest status=SUCCESS method=EnergyMeterCreateTest.energyMeterCreate...)</span>
+                <span class="method-start">1426720 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">end</span>
+                <span class="method-start">1426791 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.arc.testcases.MyBuildings.LEED.OtherMeterCreateTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup(firefox, staging)</span>
+                <span class="method-start">1428799 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">energyOtherMeterCreateTest(2, NewBuildingProject, BEnergy, Login)</span>
+                <span class="method-start">1448244 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown([TestResult name=energyOtherMeterCreateTest status=SUCCESS method=OtherMeterCreateTest.energyOtherMe...)</span>
+                <span class="method-start">1492717 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">end</span>
+                <span class="method-start">1492796 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.arc.testcases.MyBuildings.LEED.WaterMeterCreateTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup(firefox, staging)</span>
+                <span class="method-start">1495950 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">waterMeterCreateTest(2, NewBuildingProject, BWater, Login)</span>
+                <span class="method-start">1514002 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown([TestResult name=waterMeterCreateTest status=SUCCESS method=WaterMeterCreateTest.waterMeterCreateTes...)</span>
+                <span class="method-start">1592113 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">end</span>
+                <span class="method-start">1592179 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.arc.testcases.MyBuildings.LEED.WasteMeterCreateTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup(firefox, staging)</span>
+                <span class="method-start">1594218 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">wasteMeterCreateTest(2, NewBuildingProject, BWaste, Login)</span>
+                <span class="method-start">1613170 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown([TestResult name=wasteMeterCreateTest status=SUCCESS method=WasteMeterCreateTest.wasteMeterCreateTes...)</span>
+                <span class="method-start">1679474 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">end</span>
+                <span class="method-start">1679543 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.arc.testcases.MyBuildings.LEED.EnergyFileUploadTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup(firefox, staging)</span>
+                <span class="method-start">1681640 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">energyFileUploadTest(2, NewBuildingProject, Login)</span>
+                <span class="method-start">1699491 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown([TestResult name=energyFileUploadTest status=SUCCESS method=EnergyFileUploadTest.energyFileUploadTes...)</span>
+                <span class="method-start">1810776 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">end</span>
+                <span class="method-start">1810843 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.arc.testcases.MyBuildings.LEED.WaterFileUploadTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup(firefox, staging)</span>
+                <span class="method-start">1813218 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">waterFileUploadTest(2, NewBuildingProject, Login)</span>
+                <span class="method-start">1831378 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown([TestResult name=waterFileUploadTest status=SUCCESS method=WaterFileUploadTest.waterFileUploadTest(i...)</span>
+                <span class="method-start">1886127 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">end</span>
+                <span class="method-start">1886188 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.arc.testcases.MyBuildings.LEED.InternationalLanguagesSpecaialCharacterMeterCreateTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup(firefox, staging)</span>
+                <span class="method-start">1888438 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">energyMeterCreateTest(2, NewBuildingProject, Login)</span>
+                <span class="method-start">1908496 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown([TestResult name=energyMeterCreateTest status=SUCCESS method=InternationalLanguagesSpecaialCharacter...)</span>
+                <span class="method-start">2022732 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">end</span>
+                <span class="method-start">2022793 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.arc.testcases.MyBuildings.LEED.ETotalAnalyticsTooltipTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup(firefox, staging)</span>
+                <span class="method-start">2029152 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">energyFileUploadTest(2, NewBuildingProject, Login)</span>
+                <span class="method-start">2046979 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown([TestResult name=energyFileUploadTest status=SUCCESS method=ETotalAnalyticsTooltipTest.energyFileUpl...)</span>
+                <span class="method-start">2098620 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">end</span>
+                <span class="method-start">2098670 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.arc.testcases.MyBuildings.LEED.ProjectFieldVerificationTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup(firefox, staging)</span>
+                <span class="method-start">2101050 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">projectFieldVerificationTest(2, NewBuildingProject, Login)</span>
+                <span class="method-start">2118924 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown([TestResult name=projectFieldVerificationTest status=SUCCESS method=ProjectFieldVerificationTest.pro...)</span>
+                <span class="method-start">2164522 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">end</span>
+                <span class="method-start">2164601 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.arc.testcases.MyBuildings.LEED.ProjectDetailsVerificationTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup(firefox, staging)</span>
+                <span class="method-start">2166679 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">projectDetailsVerificationTest(2, NewBuildingProject, Login)</span>
+                <span class="method-start">2185421 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown([TestResult name=projectDetailsVerificationTest status=FAILURE method=ProjectDetailsVerificationTest...)</span>
+                <span class="method-start">2229788 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">end</span>
+                <span class="method-start">2229848 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.arc.testcases.MyBuildings.LEED.ModifyOccOptHrsProjectDetailsTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup(firefox, staging)</span>
+                <span class="method-start">2231688 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">modifyProjectDetailsTest(2, NewBuildingProject, Login)</span>
+                <span class="method-start">2249428 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown([TestResult name=modifyProjectDetailsTest status=SUCCESS method=ModifyOccOptHrsProjectDetailsTest.mo...)</span>
+                <span class="method-start">2308795 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">end</span>
+                <span class="method-start">2308849 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.arc.testcases.MyBuildings.LEED.AddTeamMemberTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup(firefox, staging)</span>
+                <span class="method-start">2311057 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">addTeamMemberTest(2, NewBuildingProject, BTeam, Login)</span>
+                <span class="method-start">2329673 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown([TestResult name=addTeamMemberTest status=SUCCESS method=AddTeamMemberTest.addTeamMemberTest(int, ja...)</span>
+                <span class="method-start">2371334 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">end</span>
+                <span class="method-start">2371404 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.arc.testcases.MyBuildings.LEED.EditMemberRoleManagerTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup(firefox, staging)</span>
+                <span class="method-start">2373580 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">editMemberRoleManagerTest(2, NewBuildingProject, Login)</span>
+                <span class="method-start">2391318 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown([TestResult name=editMemberRoleManagerTest status=SUCCESS method=EditMemberRoleManagerTest.editMembe...)</span>
+                <span class="method-start">2441854 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">end</span>
+                <span class="method-start">2441909 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.arc.testcases.MyBuildings.LEED.VerifyPRFileDownloadTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup(firefox, staging)</span>
+                <span class="method-start">2444135 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">billingStatusVerificationTest(2, NewBuildingProject, Login)</span>
+                <span class="method-start">2463542 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown([TestResult name=billingStatusVerificationTest status=SUCCESS method=VerifyPRFileDownloadTest.billin...)</span>
+                <span class="method-start">2515467 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">end</span>
+                <span class="method-start">2515538 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.arc.testcases.MyBuildings.LEED.VerifyAgreementFileDownloadTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup(firefox, staging)</span>
+                <span class="method-start">2517613 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">verifyAgreementFileDownloadTest(2, NewBuildingProject, Login)</span>
+                <span class="method-start">2536040 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown([TestResult name=verifyAgreementFileDownloadTest status=SUCCESS method=VerifyAgreementFileDownloadTe...)</span>
+                <span class="method-start">2583620 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">end</span>
+                <span class="method-start">2583669 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.arc.testcases.MyBuildings.LEED.InstallAllAppsTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup(firefox, staging)</span>
+                <span class="method-start">2585788 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">installAllAppsTest(2, NewBuildingProject, Login)</span>
+                <span class="method-start">2603543 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown([TestResult name=installAllAppsTest status=SUCCESS method=InstallAllAppsTest.installAllAppsTest(int,...)</span>
+                <span class="method-start">2661239 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">end</span>
+                <span class="method-start">2661303 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.arc.testcases.MyBuildings.LEED.UnistallAllAppsTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup(firefox, staging)</span>
+                <span class="method-start">2663560 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">installAllAppsTest(2, NewBuildingProject, Login)</span>
+                <span class="method-start">2684074 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown([TestResult name=installAllAppsTest status=SUCCESS method=UnistallAllAppsTest.installAllAppsTest(int...)</span>
+                <span class="method-start">2740577 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">end</span>
+                <span class="method-start">2740650 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.arc.testcases.MyBuildings.LEED.BillingDateVerificationTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup(firefox, staging)</span>
+                <span class="method-start">2742812 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">billingDateVerificationTest(2, NewBuildingProject, Login)</span>
+                <span class="method-start">2761045 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown([TestResult name=billingDateVerificationTest status=SUCCESS method=BillingDateVerificationTest.billi...)</span>
+                <span class="method-start">2800997 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">end</span>
+                <span class="method-start">2801057 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.arc.testcases.MyBuildings.LEED.BillingRegistrationAmountVerificationTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup(firefox, staging)</span>
+                <span class="method-start">2803146 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">billingRegistrationAmountVerificationTest(2, NewBuildingProject, Payment, Login)</span>
+                <span class="method-start">2821998 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown([TestResult name=billingRegistrationAmountVerificationTest status=SUCCESS method=BillingRegistration...)</span>
+                <span class="method-start">2859807 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">end</span>
+                <span class="method-start">2859880 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.arc.testcases.MyBuildings.LEED.ETotalAnalyticsTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup(firefox, staging)</span>
+                <span class="method-start">2862158 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">energyTotalAnalyticsTest(2, NewBuildingProject, Login)</span>
+                <span class="method-start">2880365 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown([TestResult name=energyTotalAnalyticsTest status=SUCCESS method=ETotalAnalyticsTest.energyTotalAnaly...)</span>
+                <span class="method-start">2921180 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">end</span>
+                <span class="method-start">2921233 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.arc.testcases.MyBuildings.LEED.CTotalAnalyticsTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup(firefox, staging)</span>
+                <span class="method-start">2923646 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">carbonTotalTest(2, NewBuildingProject, Login)</span>
+                <span class="method-start">2942834 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown([TestResult name=carbonTotalTest status=SUCCESS method=CTotalAnalyticsTest.carbonTotalTest(int, java...)</span>
+                <span class="method-start">2984642 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">end</span>
+                <span class="method-start">2984693 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.arc.testcases.MyBuildings.LEED.WTotalAnalyticsTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup(firefox, staging)</span>
+                <span class="method-start">2986848 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">verifyWDailiyMTCO2Test(2, NewBuildingProject, Login)</span>
+                <span class="method-start">3005934 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown([TestResult name=verifyWDailiyMTCO2Test status=SUCCESS method=WTotalAnalyticsTest.verifyWDailiyMTCO2...)</span>
+                <span class="method-start">3054789 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">end</span>
+                <span class="method-start">3054847 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.arc.testcases.MyBuildings.LEED.BillingStatusVerificationTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup(firefox, staging)</span>
+                <span class="method-start">3057233 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">billingStatusVerificationTest(2, NewBuildingProject, Login)</span>
+                <span class="method-start">3075636 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown([TestResult name=billingStatusVerificationTest status=SUCCESS method=BillingStatusVerificationTest.b...)</span>
+                <span class="method-start">3117234 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">end</span>
+                <span class="method-start">3117287 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.arc.testcases.MyBuildings.LEED.PreCertReviewTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup(firefox, staging)</span>
+                <span class="method-start">3119504 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">waterFileUploadTest(2, NewBuildingProject, Payment, Login)</span>
+                <span class="method-start">3137200 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown([TestResult name=waterFileUploadTest status=SUCCESS method=PreCertReviewTest.waterFileUploadTest(int...)</span>
+                <span class="method-start">3213904 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">end</span>
+                <span class="method-start">3213961 ms</span>
+              </div> <!-- configuration-class after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

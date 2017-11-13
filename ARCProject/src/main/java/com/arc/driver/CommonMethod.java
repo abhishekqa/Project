@@ -464,7 +464,158 @@ public class CommonMethod extends BaseClass  {
 			return ProgramID;
 			
     }
-   
+    public static String randomnumberBNone(String Url) throws IOException, InterruptedException{
+    	
+      	 int random_num = 1;
+   		    Random t = new Random();
+   		    
+   		    // random integers in [1000, 800000]
+   		    random_num=	(t.nextInt(800000));
+   		    ProgramID = String.valueOf(random_num);
+   		    
+   		    System.out.println(ProgramID);
+   			Thread.sleep(1000);
+   			
+
+   			File file = new File(Url);
+
+   			if (!file.exists()) {
+   				file.createNewFile();
+   			}
+   			FileWriter fw = new FileWriter(file.getAbsoluteFile());
+   			BufferedWriter bw = new BufferedWriter(fw);
+   			bw.write("BuildingNone" + " " + ProgramID);
+   			bw.close();
+   			return ProgramID;
+   			
+      }
+    public static String randomnumberBOther(String Url) throws IOException, InterruptedException{
+    	
+      	 int random_num = 1;
+   		    Random t = new Random();
+   		    
+   		    // random integers in [1000, 800000]
+   		    random_num=	(t.nextInt(800000));
+   		    ProgramID = String.valueOf(random_num);
+   		    
+   		    System.out.println(ProgramID);
+   			Thread.sleep(1000);
+   			
+
+   			File file = new File(Url);
+
+   			if (!file.exists()) {
+   				file.createNewFile();
+   			}
+   			FileWriter fw = new FileWriter(file.getAbsoluteFile());
+   			BufferedWriter bw = new BufferedWriter(fw);
+   			bw.write("BuildingOther" + " " + ProgramID);
+   			bw.close();
+   			return ProgramID;
+   			
+      }
+    public static String randomnumberCLEED( String Url) throws IOException, InterruptedException{
+    	
+      	 int random_num = 1;
+   		    Random t = new Random();
+   		    
+   		    // random integers in [1000, 800000]
+   		    random_num=	(t.nextInt(800000));
+   		    ProgramID = String.valueOf(random_num);
+   		    
+   		    System.out.println(ProgramID);
+   			Thread.sleep(1000);
+   			
+
+   			File file = new File(Url);
+
+   			if (!file.exists()) {
+   				file.createNewFile();
+   			}
+   			FileWriter fw = new FileWriter(file.getAbsoluteFile());
+   			BufferedWriter bw = new BufferedWriter(fw);
+   			bw.write("LEED For Communites TestProject" + " " + ProgramID);
+   			bw.close();
+   			return ProgramID;
+   			
+      }
+    public static String randomnumberCOther( String Url) throws IOException, InterruptedException{
+    	
+      	 int random_num = 1;
+   		    Random t = new Random();
+   		    
+   		    // random integers in [1000, 800000]
+   		    random_num=	(t.nextInt(800000));
+   		    ProgramID = String.valueOf(random_num);
+   		    
+   		    System.out.println(ProgramID);
+   			Thread.sleep(1000);
+   			
+
+   			File file = new File(Url);
+
+   			if (!file.exists()) {
+   				file.createNewFile();
+   			}
+   			FileWriter fw = new FileWriter(file.getAbsoluteFile());
+   			BufferedWriter bw = new BufferedWriter(fw);
+   			bw.write("Communities Other TestProject" + " " + ProgramID);
+   			bw.close();
+   			return ProgramID;
+   			
+      }
+    public static String randomnumberCNone( String Url) throws IOException, InterruptedException{
+    	
+      	 int random_num = 1;
+   		    Random t = new Random();
+   		    
+   		    // random integers in [1000, 800000]
+   		    random_num=	(t.nextInt(800000));
+   		    ProgramID = String.valueOf(random_num);
+   		    
+   		    System.out.println(ProgramID);
+   			Thread.sleep(1000);
+   			
+
+   			File file = new File(Url);
+
+   			if (!file.exists()) {
+   				file.createNewFile();
+   			}
+   			FileWriter fw = new FileWriter(file.getAbsoluteFile());
+   			BufferedWriter bw = new BufferedWriter(fw);
+   			bw.write("Communities None TestProject" + " " + ProgramID);
+   			bw.close();
+   			return ProgramID;
+   			
+      }
+    
+    
+    public static String randomnumber(String Url) throws IOException, InterruptedException{
+    	
+   	 int random_num = 1;
+		    Random t = new Random();
+		    
+		    // random integers in [1000, 800000]
+		    random_num=	(t.nextInt(800000));
+		    ProgramID = String.valueOf(random_num);
+		    
+		    System.out.println(ProgramID);
+			Thread.sleep(1000);
+			
+
+			File file = new File(Url);
+
+			if (!file.exists()) {
+				file.createNewFile();
+			}
+			FileWriter fw = new FileWriter(file.getAbsoluteFile());
+			BufferedWriter bw = new BufferedWriter(fw);
+			bw.write("MachineTestProject" + " " + ProgramID);
+			bw.close();
+			return ProgramID;
+			
+   }
     public static String randomnumbersignup() throws IOException, InterruptedException{
     	
    	 int random_num = 1;

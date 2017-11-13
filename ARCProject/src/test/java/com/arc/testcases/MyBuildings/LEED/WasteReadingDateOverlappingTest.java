@@ -3,8 +3,6 @@ package com.arc.testcases.MyBuildings.LEED;
 
 import java.io.IOException;
 
-import org.testng.ITestResult;
-import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
@@ -13,7 +11,6 @@ import com.arc.ReusableMethods.ReusableMethodsLogin;
 import com.arc.ReusableMethods.ReusableMethodsSearch;
 import com.arc.driver.BaseClass;
 import com.arc.driver.CommonMethod;
-import com.relevantcodes.extentreports.LogStatus;
 
 public class WasteReadingDateOverlappingTest extends BaseClass {
 	@Test(dependsOnMethods = { "com.arc.testcases.MyBuildings.LEED.LoginCaseTest.loginCaseTest","com.arc.testcases.MyBuildings.LEED.SearchProgramTest.searchProgramTest","com.arc.testcases.MyBuildings.LEED.ClickSearchedProgramTest.clickSearchedProgramTest","com.arc.testcases.MyBuildings.LEED.PaymentbyCCTest.paymentbyCCTest" })

@@ -4,8 +4,7 @@ package com.arc.testcases.MyBuildings.None;
 
 import java.io.IOException;
 
-import org.testng.ITestResult;
-import org.testng.annotations.AfterMethod;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import com.arc.ReusableMethods.ReusableMethodsLogin;
@@ -13,15 +12,15 @@ import com.arc.ReusableMethods.ReusableMethodsManage;
 import com.arc.ReusableMethods.ReusableMethodsSearch;
 import com.arc.driver.BaseClass;
 import com.arc.driver.CommonMethod;
-import com.relevantcodes.extentreports.LogStatus;
 
 public class VerifyPRFileDownloadTest extends BaseClass {
 
 	
 	@Test(dependsOnMethods = { "com.arc.testcases.MyBuildings.None.LoginCaseTest.loginCaseTest","com.arc.testcases.MyBuildings.None.ClickSearchedProgramTest.clickSearchedProgramTest","com.arc.testcases.MyBuildings.None.PaymentbyCCTest.paymentbyCCTest" })
-	public void billingStatusVerificationTest() throws IOException {
+	@Parameters({"rowNum" ,"buildingSheet","loginSheet"})
+	public void billingStatusVerificationTest(int rowNum, String buildingSheet, String loginSheet) throws IOException {
 		
-		CommonMethod.ExtentReportConfig(driver);
+		CommonMethod.ExtentReportConfig();
 		
 		CommonMethod.test = CommonMethod.extent.startTest("BillingRegPdfdownTest-BNone", "Verifies if billing status is displaying correct in billing page").assignCategory("CheckBilling");
     
@@ -31,38 +30,18 @@ public class VerifyPRFileDownloadTest extends BaseClass {
 		
 		try {
 			
-			reuse.LoginToArc(4, "My Projects");
-			reuseSearch.SearchProgram(driver, CommonMethod.filereadID(CommonMethod.ArcProjectIDUrl_building));
-			reuseSearch.VerifySearchedProgram(driver, CommonMethod.filereadID(CommonMethod.ArcProjectIDUrl_building));
-			reuseManage.verifyDownloadPRPdf(driver,"pdf");
+			reuse.LoginToArc(rowNum, "My Projects", loginSheet);
+			reuseSearch.SearchProgram(data.getCellData(buildingSheet, "Project Name", rowNum));
+			reuseSearch.VerifySearchedProgram(data.getCellData(buildingSheet, "Project Name", rowNum));
+			reuseManage.verifyDownloadPRPdf();
 
 		} catch (Throwable t) {
 			System.out.println(t.getLocalizedMessage());
 			Error e1 = new Error(t.getMessage());
 			e1.setStackTrace(t.getStackTrace());
 			//CommonMethod.testlogError(driver,  "<pre>" + e1.toString() + "</pre>");
-			CommonMethod.takeScreenshot(driver, "billingRegPdfdownTest-BNone");
+			CommonMethod.takeScreenshot("billingRegPdfdownTest-BNone");
 			throw e1;
 		}
 	}
-
-	@AfterMethod
-	public void teardown(ITestResult result) {
-		
-		 if (result.getStatus() == ITestResult.FAILURE) {
-			 CommonMethod.test.log(LogStatus.FAIL, result.getThrowable());
-	        } else if (result.getStatus() == ITestResult.SKIP) {
-	        CommonMethod.test.log(LogStatus.SKIP, "Test skipped " + result.getThrowable());
-	        } else {
-	        CommonMethod.test.log(LogStatus.PASS, "Test passed");
-	        }
-
-  
-		CommonMethod.extent.endTest(CommonMethod.test);
-		CommonMethod.extent.flush();
-		
-		
-		
-	}
-
 }

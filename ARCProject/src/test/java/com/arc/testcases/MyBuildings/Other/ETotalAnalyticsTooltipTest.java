@@ -1,11 +1,7 @@
 package com.arc.testcases.MyBuildings.Other;
-
-
-
 import java.io.IOException;
 
-import org.testng.ITestResult;
-import org.testng.annotations.AfterMethod;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import com.arc.ReusableMethods.ReusableMethodsDataInput;
@@ -13,14 +9,14 @@ import com.arc.ReusableMethods.ReusableMethodsLogin;
 import com.arc.ReusableMethods.ReusableMethodsSearch;
 import com.arc.driver.BaseClass;
 import com.arc.driver.CommonMethod;
-import com.relevantcodes.extentreports.LogStatus;
 
 public class  ETotalAnalyticsTooltipTest extends BaseClass {
 	
 	@Test(dependsOnMethods = { "com.arc.testcases.MyBuildings.Other.LoginCaseTest.loginCaseTest","com.arc.testcases.MyBuildings.Other.ClickSearchedProgramTest.clickSearchedProgramTest","com.arc.testcases.MyBuildings.Other.PaymentbyCCTest.paymentbyCCTest" })
-	public void energyFileUploadTest() throws IOException {
+	@Parameters({"rowNum" ,"buildingSheet","loginSheet"})
+	public void energyFileUploadTest(int rowNum, String buildingSheet, String loginSheet) throws IOException {
 		
-		CommonMethod.ExtentReportConfig(driver);
+		CommonMethod.ExtentReportConfig();
 		
 		CommonMethod.test = CommonMethod.extent.startTest("ATToolTipVerifyTest-BOther", "Verifies Total Analytics successfully").assignCategory("CheckAnalytics");
     
@@ -30,40 +26,20 @@ public class  ETotalAnalyticsTooltipTest extends BaseClass {
 		
 		try {
 			
-			reuse.LoginToArc(4, "My Projects");
-			//reuseSearch.VerifySearchedProgram(driver, "1000136039");
-			reuseSearch.SearchProgram(driver, CommonMethod.filereadID(CommonMethod.ArcProjectIDUrl_building));
-			reuseSearch.VerifySearchedProgram(driver, CommonMethod.filereadID(CommonMethod.ArcProjectIDUrl_building));
-			reuseDI.verifyEAnaltyicsTooltip(driver,"Atotal");
+			reuse.LoginToArc(rowNum, "My Projects", loginSheet);
+			//reuseSearch.VerifySearchedProgram( "1000136039");
+			reuseSearch.SearchProgram( data.getCellData(buildingSheet, "Project Name", rowNum));
+			reuseSearch.VerifySearchedProgram( data.getCellData(buildingSheet, "Project Name", rowNum));
+			reuseDI.verifyEAnaltyicsTooltip("Atotal");
 			
 
 		} catch (Throwable t) {
 			System.out.println(t.getLocalizedMessage());
 			Error e1 = new Error(t.getMessage());
 			e1.setStackTrace(t.getStackTrace());
-			//CommonMethod.testlogError(driver,  "<pre>" + e1.toString() + "</pre>");
-			CommonMethod.takeScreenshot(driver, "energyFileUploadTest-BOther");
+			//CommonMethod.testlogError(  "<pre>" + e1.toString() + "</pre>");
+			CommonMethod.takeScreenshot( "energyFileUploadTest-BOther");
 			throw e1;
 		}
 	}
-
-	@AfterMethod
-	public void teardown(ITestResult result) {
-		
-		 if (result.getStatus() == ITestResult.FAILURE) {
-			 CommonMethod.test.log(LogStatus.FAIL, result.getThrowable());
-	        } else if (result.getStatus() == ITestResult.SKIP) {
-	        CommonMethod.test.log(LogStatus.SKIP, "Test skipped " + result.getThrowable());
-	        } else {
-	        CommonMethod.test.log(LogStatus.PASS, "Test passed");
-	        }
-
-  
-		CommonMethod.extent.endTest(CommonMethod.test);
-		CommonMethod.extent.flush();
-		
-		
-		
-	}
-
 }

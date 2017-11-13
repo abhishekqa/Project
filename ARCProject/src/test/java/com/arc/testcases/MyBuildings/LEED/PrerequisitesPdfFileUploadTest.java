@@ -4,8 +4,6 @@ package com.arc.testcases.MyBuildings.LEED;
 
 import java.io.IOException;
 
-import org.testng.ITestResult;
-import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
@@ -14,7 +12,6 @@ import com.arc.ReusableMethods.ReusableMethodsPrerequisites;
 import com.arc.ReusableMethods.ReusableMethodsSearch;
 import com.arc.driver.BaseClass;
 import com.arc.driver.CommonMethod;
-import com.relevantcodes.extentreports.LogStatus;
 
 public class PrerequisitesPdfFileUploadTest extends BaseClass {
 

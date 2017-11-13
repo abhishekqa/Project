@@ -2,8 +2,6 @@ package com.arc.ReusableMethods;
 
 import java.io.IOException;
 
-import org.openqa.selenium.WebDriver;
-
 import com.arc.driver.CommonMethod;
 import com.relevantcodes.extentreports.ExtentTest;
 
@@ -11,7 +9,7 @@ public class ReusableMethodsLandingPage {
 
 	public static ExtentTest test;
 	
-public void clickArcLogoPostLogin(WebDriver driver) throws IOException, InterruptedException{
+public void clickArcLogoPostLogin() throws IOException, InterruptedException{
 		
 		CommonMethod.click("Logo");
 		CommonMethod.testlog( "Pass", "Clicking Arc Logo on LandingPostLogin");
@@ -20,7 +18,7 @@ public void clickArcLogoPostLogin(WebDriver driver) throws IOException, Interrup
 		CommonMethod.testlog( "Pass", "Logo redirects to http://stg.arconline.io/");
 	}
 	
-public void clickArcLogo(WebDriver driver) throws IOException{
+public void clickArcLogo() throws IOException{
 		
 		CommonMethod.click( "ArcLogo");
 		CommonMethod.testlog( "Pass", "Clicking Arc Logo on Landing Page");

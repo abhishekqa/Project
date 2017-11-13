@@ -376,7 +376,9 @@ public class ReusableMethodsManage extends BaseClass{
 
 	public void verifyRegAmount( String sheetName, int rowNum) throws IOException, InterruptedException {
 
+		/** Reading data from excel **/
 		String amount = data.getCellData(sheetName, "Amount", rowNum);
+		
 		CommonMethod.ArcSpecifictoggle( "Manage");
 		CommonMethod.scrolldowntoElement( "Billing");
 		CommonMethod.click( "Billing");

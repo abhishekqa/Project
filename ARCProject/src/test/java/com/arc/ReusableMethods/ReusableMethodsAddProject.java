@@ -22,7 +22,10 @@ public class ReusableMethodsAddProject extends BaseClass{
 		Thread.sleep(1000);
 
 	}
-	public void AddProjectNoneUS() throws IOException, InterruptedException {
+	public void AddProjectNoneUS(int rowNum, String sheetName) throws IOException, InterruptedException {
+		
+		
+		
 		
 		clickAddProjectMyBuildings();
 		CommonMethod.sendKeys("ProjectName",
@@ -383,19 +386,35 @@ public void AddAboveProjectLEEDfortransit() throws IOException, InterruptedExcep
 		Thread.sleep(10000);
 
 	}
-	public void AddProjectOtherUS() throws IOException, InterruptedException {
+	public void AddProjectOtherUS(int rowNum, String sheetName) throws IOException, InterruptedException {
 
+		String prjType 		= data.getCellData(sheetName, "Project Type", rowNum);
+		String prjRating 	= data.getCellData(sheetName, "Rating System", rowNum);
+		String ownerOrg 	= data.getCellData(sheetName, "Owner Organization", rowNum);
+		String ownerCountry = data.getCellData(sheetName, "Owner Country", rowNum);
+		String ownerMail 	= data.getCellData(sheetName, "Owner Email", rowNum);
+		String prjArea 		= data.getCellData(sheetName, "Area", rowNum);
+		String prjAddress 	= data.getCellData(sheetName, "Address", rowNum);
+		String prjCity 		= data.getCellData(sheetName, "City", rowNum);
+		String prjCountry 	= data.getCellData(sheetName, "Country", rowNum);
+		String prjState 	= data.getCellData(sheetName, "State", rowNum);
+		String prjZip 		= data.getCellData(sheetName, "Zip", rowNum);
+		
+		//creating the project name
+		data.setCellData(sheetName,"Project Name" ,rowNum, "US Building Other"+" " + CommonMethod.randomNumber() );
+		String prjName 	= data.getCellData(sheetName, "Project Name", rowNum);
+		
 		clickAddProjectMyBuildings();
-		CommonMethod.sendKeys( "ProjectName",
-		"BuildingOther" + " " + CommonMethod.randomNumber());
+		
+		CommonMethod.sendKeys( "ProjectName", prjName);
 		Thread.sleep(1000);
 		CommonMethod.testlog( "Pass", "Feeding Random Unique name for Project and saving to external location");
 		
-		CommonMethod.selectdropdown("ClickOnProjectType","Buildings");
+		CommonMethod.selectdropdown("ClickOnProjectType",prjType);
 		CommonMethod.testlog("Pass","Selecting Project Type as Buildings");
 	
 		
-		CommonMethod.selectdropdown("ClickOnRatingSystem","None");
+		CommonMethod.selectdropdown("ClickOnRatingSystem",prjRating);
 		CommonMethod.testlog("Pass","Selecting Ratings as LEED for Buildings");
 		
 		CommonMethod.selectdropdownrandom( "SpaceType");
@@ -405,7 +424,7 @@ public void AddAboveProjectLEEDfortransit() throws IOException, InterruptedExcep
 		CommonMethod.testlog( "Pass", "Selecting Owner Type Type");
 		
 		
-		CommonMethod.sendKeys( "OwnerOrg", "T & W Corporation");
+		CommonMethod.sendKeys( "OwnerOrg", ownerOrg);
 		Thread.sleep(2000);
 		CommonMethod.click( "OwnerOrg");
 		
@@ -414,21 +433,21 @@ public void AddAboveProjectLEEDfortransit() throws IOException, InterruptedExcep
 	//	CommonMethod.testlog( "Pass", "Entering Owner Type");	
 		
 		CommonMethod.testlog( "Pass", "Entering Owner Organization");
-		CommonMethod.sendKeys( "OwnerEmail", "ssinha@usgbc.org");
+		CommonMethod.sendKeys( "OwnerEmail", ownerMail);
 		CommonMethod.testlog( "Pass", "Entering Owner Email");
-		CommonMethod.selectdropdown( "OwnerCountry", "United States");
+		CommonMethod.selectdropdown( "OwnerCountry", ownerCountry);
 		CommonMethod.testlog( "Pass", "Entering Owner Country");
-		CommonMethod.sendKeys( "Area", "10000");
+		CommonMethod.sendKeys( "Area", prjArea);
 		CommonMethod.testlog( "Pass", "Entering Gross Floor Area");
-		CommonMethod.sendKeys( "Address", "Test Address");
+		CommonMethod.sendKeys( "Address", prjAddress);
 		CommonMethod.testlog( "Pass", "Entering Address");
-		CommonMethod.sendKeys( "City", "Test City");
+		CommonMethod.sendKeys( "City", prjCity);
 		CommonMethod.testlog( "Pass", "Entering City");
-		CommonMethod.selectdropdown( "Country", "United States");
+		CommonMethod.selectdropdown( "Country", prjCountry);
 		CommonMethod.testlog( "Pass", "Entering Country");
-		CommonMethod.selectdropdown( "State", "Alabama");
+		CommonMethod.selectdropdown( "State", prjState);
 		CommonMethod.testlog( "Pass", "Entering State");
-		CommonMethod.sendKeys( "ZipCode", "35005");
+		CommonMethod.sendKeys( "ZipCode", prjZip);
 		CommonMethod.testlog( "Pass", "Entering Zipcode");
 		CommonMethod.click( "AgreeTermsProgReg");
 		CommonMethod.testlog( "Pass", "Clicking on agree to terms");

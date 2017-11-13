@@ -1,16 +1,12 @@
 package com.arc.testcases.MyBuildings.LEED;
 import java.io.IOException;
 
-import org.testng.ITestResult;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.DataProvider;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import com.arc.ReusableMethods.ReusableMethodsLogin;
 import com.arc.driver.BaseClass;
 import com.arc.driver.CommonMethod;
-import com.relevantcodes.extentreports.LogStatus;
 
 public class LoginCaseTest extends BaseClass {
 

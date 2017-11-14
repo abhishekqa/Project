@@ -13,7 +13,7 @@ import com.arc.driver.CommonMethod;
 
 public class  EnergyFileUploadTest extends BaseClass {
 	
-	@Test(dependsOnMethods = { "com.arc.testcases.MyBuildings.LEED.LoginCaseTest.loginCaseTest","com.arc.testcases.MyBuildings.LEED.ClickSearchedProgramTest.clickSearchedProgramTest","com.arc.testcases.MyBuildings.LEED.PaymentbyCCTest.paymentbyCCTest" })
+	@Test//(dependsOnMethods = { "com.arc.testcases.MyBuildings.LEED.LoginCaseTest.loginCaseTest","com.arc.testcases.MyBuildings.LEED.ClickSearchedProgramTest.clickSearchedProgramTest","com.arc.testcases.MyBuildings.LEED.PaymentbyCCTest.paymentbyCCTest" })
 	@Parameters({"rowNum" ,"buildingSheet", "loginSheet" })
 	public void energyFileUploadTest(int rowNum, String buildingSheet, String loginSheet ) throws IOException {
 		

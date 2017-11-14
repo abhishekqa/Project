@@ -155,10 +155,10 @@ public class ReusableMethodsLogin extends BaseClass {
     	   
       	}
        
-       public void LoginWithtransit(int col, String Postlogintext) throws IOException, InterruptedException{
+       public void LoginWithtransit(int col, String Postlogintext, String sheetName) throws IOException, InterruptedException{
     	    clickSignin();
     		CommonMethod.testlog("Pass", "Clicking on Login Button");
-    		getDataForLogin("ContactForm",col);
+    		getDataForLogin(sheetName,col);
     		CommonMethod.testlog("Info", "Getting Login data from Excel");
     		fillLoginDetails();
     		CommonMethod.testlog("Pass", "Filling Login Details");

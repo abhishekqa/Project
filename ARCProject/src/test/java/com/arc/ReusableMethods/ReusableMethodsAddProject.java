@@ -336,62 +336,88 @@ public class ReusableMethodsAddProject extends BaseClass{
 		Thread.sleep(10000);
 
 	}
-public void AddAboveProjectLEEDfortransit() throws IOException, InterruptedException {
+public void AddAboveProjectLEEDfortransit(int rowNum,  String sheetName ) throws IOException, InterruptedException {
 		
-		clickAddProject();
-		CommonMethod.sendKeys( "ProjectName",
-				"AbovegroundTestProject" + " " + CommonMethod.randomNumber());
+		String prjType 		    = data.getCellData(sheetName, "Project Type", rowNum);
+		String prjRating    	= data.getCellData(sheetName, "Rating System", rowNum);
+		String prjStation 	    = data.getCellData(sheetName, "is_station", rowNum);
+		String prjRidership     = data.getCellData(sheetName, "annual_ridership", rowNum);
+		String prjWeek_opr_hrs 	= data.getCellData(sheetName, "week_opr_hrs", rowNum);
+		String prjFulltime_staff= data.getCellData(sheetName, "fulltime_staff", rowNum);
+		String prjAvg_time_spent= data.getCellData(sheetName, "avg_time_spent", rowNum);
+		String prjNo_park_space = data.getCellData(sheetName, "no_park_space", rowNum);
+		String prjPark_level    = data.getCellData(sheetName, "park_level", rowNum);
+		String prjdate_comm	    = data.getCellData(sheetName, "date_comm", rowNum);
+		String ownerType   	= data.getCellData(sheetName, "Owner Type", rowNum);
+		String ownerOrg 	= data.getCellData(sheetName, "Owner Organization", rowNum);
+		String ownerCountry = data.getCellData(sheetName, "Owner Country", rowNum);
+		String ownerMail 	= data.getCellData(sheetName, "Owner Email", rowNum);
+		String prjArea 		= data.getCellData(sheetName, "Area", rowNum);
+		String prjAddress 	= data.getCellData(sheetName, "Address", rowNum);
+		String prjCity 		= data.getCellData(sheetName, "City", rowNum);
+		String prjCountry 	= data.getCellData(sheetName, "Country", rowNum);
+		String prjState 	= data.getCellData(sheetName, "State", rowNum);
+		String prjZip 		= data.getCellData(sheetName, "Zip", rowNum);
+		
+		//creating the project name
+		data.setCellData(sheetName,"Project Name" ,rowNum, "US Building AbovegroundTestProject"+" " + CommonMethod.randomNumber() );
+														   
+		String prjName 	= data.getCellData(sheetName, "Project Name", rowNum);
+		
+		clickAddProjectMyBuildings();
+		CommonMethod.sendKeys( "ProjectName", prjName);
+		
 		Thread.sleep(1000);
 		CommonMethod.testlog( "Pass", "Feeding Random Unique name for Project and saving to external location");
 		
-		CommonMethod.selectdropdown("ClickOnProjectType","Buildings");
+		CommonMethod.selectdropdown("ClickOnProjectType",prjType);
 		CommonMethod.testlog( "Pass", "Selecting Project Type as Buildings");
 		
-		CommonMethod.selectdropdown("ClickOnRatingSystem","LEED for transit");
+		CommonMethod.selectdropdown("ClickOnRatingSystem",prjRating);
 	    CommonMethod.testlog( "Pass", "Selecting ratings as LEED for transit");
 		
 	    CommonMethod.selectdropdownrandom( "SpaceType");
 		CommonMethod.testlog( "Pass", "Selecting Space Type");
 	    
-		CommonMethod.selectdropdown( "Station", "Above ground");
+		CommonMethod.selectdropdown( "Station", prjStation);
 		CommonMethod.testlog( "Pass", "Selecting RatingSystem as LEED");
 		Thread.sleep(1000);
-		CommonMethod.sendKeys("Annualridership","1000");
+		CommonMethod.sendKeys("Annualridership",prjRidership);
 		CommonMethod.testlog( "Pass", "Entered Annualridership");
 		
-		CommonMethod.sendKeys( "WeeklyHours","100");
+		CommonMethod.sendKeys( "WeeklyHours",prjWeek_opr_hrs);
 		CommonMethod.testlog( "Pass", "Entered WeeklyHours");
 		
-		CommonMethod.sendKeys( "Full_time_staff","1000");
+		CommonMethod.sendKeys( "Full_time_staff",prjFulltime_staff);
 		CommonMethod.testlog( "Pass", "Entered Full time Staff");
 		
-		CommonMethod.sendKeys( "Avg_time_staff","1000");
+		CommonMethod.sendKeys( "Avg_time_staff",prjAvg_time_spent);
 		CommonMethod.testlog( "Pass", "Entered Full time Staff");
 		
 		CommonMethod.selectdropdownrandom( "OwnerType");
 		CommonMethod.testlog( "Pass", "Selecting Owner Type Type");
 		
-		CommonMethod.sendKeys( "OwnerOrg", "T & W Corporation");
+		CommonMethod.sendKeys( "OwnerOrg", ownerOrg);
 		CommonMethod.click( "OwnerOrg");
 		Thread.sleep(1000);
 		CommonMethod.click( "ownerorg");
 		CommonMethod.testlog( "Pass", "Entering Owner Organization");
 		
-		CommonMethod.sendKeys( "OwnerEmail", "Test@gmail.com");
+		CommonMethod.sendKeys( "OwnerEmail", ownerMail);
 		CommonMethod.testlog( "Pass", "Entering Owner Email");
-		CommonMethod.selectdropdown( "OwnerCountry", "United States");
+		CommonMethod.selectdropdown( "OwnerCountry",ownerCountry);
 		CommonMethod.testlog( "Pass", "Entering Owner Country");
-		CommonMethod.sendKeys( "Area", "10000");
+		CommonMethod.sendKeys( "Area", prjArea);
 		CommonMethod.testlog( "Pass", "Entering Gross Floor Area");
-		CommonMethod.sendKeys( "Address", "Test Address");
+		CommonMethod.sendKeys( "Address", prjAddress);
 		CommonMethod.testlog( "Pass", "Entering Address");
-		CommonMethod.sendKeys( "City", "Test City");
+		CommonMethod.sendKeys( "City", prjCity);
 		CommonMethod.testlog( "Pass", "Entering City");
-		CommonMethod.selectdropdown( "Country", "United States");
+		CommonMethod.selectdropdown( "Country", prjCountry);
 		CommonMethod.testlog( "Pass", "Entering Country");
-		CommonMethod.selectdropdown( "State", "Alabama");
+		CommonMethod.selectdropdown( "State", prjState);
 		CommonMethod.testlog( "Pass", "Entering State");
-		CommonMethod.sendKeys( "ZipCode", "35005");
+		CommonMethod.sendKeys( "ZipCode", prjZip);
 		CommonMethod.testlog( "Pass", "Entering Zipcode");
 		Thread.sleep(1000);
 		CommonMethod.click( "AgreeTermsProgReg");
@@ -401,6 +427,98 @@ public void AddAboveProjectLEEDfortransit() throws IOException, InterruptedExcep
 		Thread.sleep(10000);
 
 	}
+
+public void AddUndergroundProjectLEEDfortransit(int rowNum,  String sheetName ) throws IOException, InterruptedException {
+	
+	String prjType 		    = data.getCellData(sheetName, "Project Type", rowNum);
+	String prjRating    	= data.getCellData(sheetName, "Rating System", rowNum);
+	String prjStation 	    = data.getCellData(sheetName, "is_station2", rowNum);
+	String prjRidership     = data.getCellData(sheetName, "annual_ridership", rowNum);
+	String prjWeek_opr_hrs 	= data.getCellData(sheetName, "week_opr_hrs", rowNum);
+	String prjFulltime_staff= data.getCellData(sheetName, "fulltime_staff", rowNum);
+	String prjAvg_time_spent= data.getCellData(sheetName, "avg_time_spent", rowNum);
+	String prjNo_park_space = data.getCellData(sheetName, "no_park_space", rowNum);
+	String prjPark_level    = data.getCellData(sheetName, "park_level", rowNum);
+	String prjdate_comm	    = data.getCellData(sheetName, "date_comm", rowNum);
+	String ownerType   	= data.getCellData(sheetName, "Owner Type", rowNum);
+	String ownerOrg 	= data.getCellData(sheetName, "Owner Organization", rowNum);
+	String ownerCountry = data.getCellData(sheetName, "Owner Country", rowNum);
+	String ownerMail 	= data.getCellData(sheetName, "Owner Email", rowNum);
+	String prjArea 		= data.getCellData(sheetName, "Area", rowNum);
+	String prjAddress 	= data.getCellData(sheetName, "Address", rowNum);
+	String prjCity 		= data.getCellData(sheetName, "City", rowNum);
+	String prjCountry 	= data.getCellData(sheetName, "Country", rowNum);
+	String prjState 	= data.getCellData(sheetName, "State", rowNum);
+	String prjZip 		= data.getCellData(sheetName, "Zip", rowNum);
+	
+	//creating the project name
+	data.setCellData(sheetName,"Project Name" ,rowNum, "US Building AbovegroundTestProject"+" " + CommonMethod.randomNumber() );
+													   
+	String prjName 	= data.getCellData(sheetName, "Project Name", rowNum);
+	
+	clickAddProjectMyBuildings();
+	CommonMethod.sendKeys( "ProjectName", prjName);
+	
+	Thread.sleep(1000);
+	CommonMethod.testlog( "Pass", "Feeding Random Unique name for Project and saving to external location");
+	
+	CommonMethod.selectdropdown("ClickOnProjectType",prjType);
+	CommonMethod.testlog( "Pass", "Selecting Project Type as Buildings");
+	
+	CommonMethod.selectdropdown("ClickOnRatingSystem",prjRating);
+    CommonMethod.testlog( "Pass", "Selecting ratings as LEED for transit");
+	
+    CommonMethod.selectdropdownrandom( "SpaceType");
+	CommonMethod.testlog( "Pass", "Selecting Space Type");
+    
+	CommonMethod.selectdropdown( "Station", prjStation);
+	CommonMethod.testlog( "Pass", "Selecting RatingSystem as LEED");
+	Thread.sleep(1000);
+	CommonMethod.sendKeys("Annualridership",prjRidership);
+	CommonMethod.testlog( "Pass", "Entered Annualridership");
+	
+	CommonMethod.sendKeys( "WeeklyHours",prjWeek_opr_hrs);
+	CommonMethod.testlog( "Pass", "Entered WeeklyHours");
+	
+	CommonMethod.sendKeys( "Full_time_staff",prjFulltime_staff);
+	CommonMethod.testlog( "Pass", "Entered Full time Staff");
+	
+	CommonMethod.sendKeys( "Avg_time_staff",prjAvg_time_spent);
+	CommonMethod.testlog( "Pass", "Entered Full time Staff");
+	
+	CommonMethod.selectdropdownrandom( "OwnerType");
+	CommonMethod.testlog( "Pass", "Selecting Owner Type Type");
+	
+	CommonMethod.sendKeys( "OwnerOrg", ownerOrg);
+	CommonMethod.click( "OwnerOrg");
+	Thread.sleep(1000);
+	CommonMethod.click( "ownerorg");
+	CommonMethod.testlog( "Pass", "Entering Owner Organization");
+	
+	CommonMethod.sendKeys( "OwnerEmail", ownerMail);
+	CommonMethod.testlog( "Pass", "Entering Owner Email");
+	CommonMethod.selectdropdown( "OwnerCountry",ownerCountry);
+	CommonMethod.testlog( "Pass", "Entering Owner Country");
+	CommonMethod.sendKeys( "Area", prjArea);
+	CommonMethod.testlog( "Pass", "Entering Gross Floor Area");
+	CommonMethod.sendKeys( "Address", prjAddress);
+	CommonMethod.testlog( "Pass", "Entering Address");
+	CommonMethod.sendKeys( "City", prjCity);
+	CommonMethod.testlog( "Pass", "Entering City");
+	CommonMethod.selectdropdown( "Country", prjCountry);
+	CommonMethod.testlog( "Pass", "Entering Country");
+	CommonMethod.selectdropdown( "State", prjState);
+	CommonMethod.testlog( "Pass", "Entering State");
+	CommonMethod.sendKeys( "ZipCode", prjZip);
+	CommonMethod.testlog( "Pass", "Entering Zipcode");
+	Thread.sleep(1000);
+	CommonMethod.click( "AgreeTermsProgReg");
+	CommonMethod.testlog( "Pass", "Clicking on agree to terms");
+	CommonMethod.click( "NextButton");
+	CommonMethod.testlog( "Pass", "Clicking on Next button");
+	Thread.sleep(10000);
+
+}
 	public void AddProjectOtherUS(int rowNum, String sheetName) throws IOException, InterruptedException {
 
 		String prjType 		= data.getCellData(sheetName, "Project Type", rowNum);

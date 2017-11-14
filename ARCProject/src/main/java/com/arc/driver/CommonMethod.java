@@ -1,4 +1,8 @@
 package com.arc.driver;
+import java.awt.Robot;
+import java.awt.Toolkit;
+import java.awt.datatransfer.StringSelection;
+import java.awt.event.KeyEvent;
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.File;
@@ -679,6 +683,38 @@ public class CommonMethod extends BaseClass  {
 		});
 		
 	}
+	
+	public static void displayhiddenElement(String objectLocator) throws IOException{
+	    
+	    JavascriptExecutor js = (JavascriptExecutor) driver;
+	    js.executeScript("arguments[0].setAttribute('style', 'display:block !important;')",findElement(objectLocator));
+	   }
+	
+	
+	
+	public static void setClipboardData(String string) {
+		//StringSelection is a class that can be used for copy and paste operations.
+		   StringSelection stringSelection = new StringSelection(string);
+		   Toolkit.getDefaultToolkit().getSystemClipboard().setContents(stringSelection, null);
+		}
+	
+	public static void uploadFile(String fileLocation) {
+        try {
+        	//Setting clipboard with file location
+            setClipboardData(fileLocation);
+            //native key strokes for CTRL, V and ENTER keys
+            Robot robot = new Robot();
+	
+            robot.keyPress(KeyEvent.VK_CONTROL);
+            robot.keyPress(KeyEvent.VK_V);
+            robot.keyRelease(KeyEvent.VK_V);
+            robot.keyRelease(KeyEvent.VK_CONTROL);
+            robot.keyPress(KeyEvent.VK_ENTER);
+            robot.keyRelease(KeyEvent.VK_ENTER);
+        } catch (Exception exp) {
+        	exp.printStackTrace();
+        }
+    }
 	
 		
 }

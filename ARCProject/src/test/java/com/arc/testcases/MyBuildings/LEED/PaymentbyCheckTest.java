@@ -16,7 +16,7 @@ public class PaymentbyCheckTest extends BaseClass {
 	
 	@Test(dependsOnMethods = { "com.arc.testcases.MyBuildings.LEED.LoginCaseTest.loginCaseTest","com.arc.testcases.MyBuildings.LEED.SearchProgramTest.searchProgramTest","com.arc.testcases.MyBuildings.LEED.ClickSearchedProgramTest.clickSearchedProgramTest","com.arc.testcases.MyBuildings.LEED.AddNewProjectTest.addNewProjectTest" })
 	@Parameters({"rowNum" ,"buildingSheet","paymentSheet","loginSheet" })
-	public void paymentbyCCTest(int rowNum, String buildingSheet, String payemntSheet, String loginSheet) throws IOException {
+	public void paymentbyCCTest(int rowNum, String buildingSheet, String paymentSheet, String loginSheet) throws IOException {
 		
 		CommonMethod.ExtentReportConfig();
 	    CommonMethod.test = CommonMethod.extent.startTest("PaymentByCheckTest-LEED", "Verifies if Payment done through creditcard is successful").assignCategory("CheckPayment");
@@ -27,7 +27,7 @@ public class PaymentbyCheckTest extends BaseClass {
 			reuse.LoginToArc(rowNum,"My Projects", loginSheet);
 			reusePublicSearch.SearchProgram(  data.getCellData(buildingSheet, "Project Name", rowNum));
 			reusePublicSearch.VerifySearchedProgram(  data.getCellData(buildingSheet, "Project Name", rowNum));
-			reuseAddProject.PaymentbyCheck("paymentsuccessvalidation","Congratulations!");
+			reuseAddProject.PaymentbyCheck("paymentsuccessvalidation","Congratulations!", paymentSheet, rowNum);
 
 		} catch (Throwable t) {
 			System.out.println(t.getLocalizedMessage());

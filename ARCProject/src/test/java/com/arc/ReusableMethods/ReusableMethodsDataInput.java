@@ -488,10 +488,16 @@ public void CreateWaterWMeter(String param,String Metername,String MeterLocator,
 		ClickDataInput();
     	ClickDataInputParam(param);
     	CommonMethod.click( "UploadButton");
-    	CommonMethod.click("UploadDataMeter");
-    	Thread.sleep(1000);
-    	Runtime.getRuntime().exec(System.getProperty("user.dir") +"\\ARCDataTemplete\\AutoItScrit.exe");
-    	Thread.sleep(1000);
+    	//CommonMethod.click("UploadDataMeter");
+    	Thread.sleep(4000);
+    	/*Runtime.getRuntime().exec(System.getProperty("user.dir") +"\\ARCDataTemplete\\AutoItScrit.exe");*/
+    	CommonMethod.displayhiddenElement("UploadDataMeterHidden");
+    	Thread.sleep(2000);
+    	/*CommonMethod.click("UploadDataMeterHidden");
+    	CommonMethod.uploadFile(System.getProperty("user.dir") +"\\ARCDataTemplete\\arc_Data_Template.xlsm");*/
+		
+    	CommonMethod.sendKeys("UploadDataMeterHidden", System.getProperty("user.dir") +"\\ARCDataTemplete\\arc_Data_Template.xlsm");
+    	
     	CommonMethod.testlog("Pass","File uploaded successfully");
     	String string = CommonMethod.getText("VerifySuccess");
         System.out.println(string);

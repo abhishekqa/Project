@@ -2,52 +2,115 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [SanityTestCasesSuite]">
   <parameter name="loginSheet" value="Login"/>
-  <parameter name="paymentSheet" value="Payment"/>
-  <parameter name="buildingSheet" value="NewBuildingProject"/>
   <parameter name="environment" value="staging"/>
+  <parameter name="waterSheet" value="BWater"/>
+  <parameter name="wasteSheet" value="BWaste"/>
+  <parameter name="citySheet" value="NewCityProject"/>
+  <parameter name="rowNum" value="2"/>
   <parameter name="browserName" value="firefox"/>
   <parameter name="energySheet" value="BEnergy"/>
-  <parameter name="wasteSheet" value="BWaste"/>
-  <parameter name="waterSheet" value="BWater"/>
-  <parameter name="rowNum" value="3"/>
   <parameter name="teamSheet" value="BTeam"/>
+  <parameter name="paymentSheet" value="Payment"/>
   <listeners>
     <listener class-name="com.arc.driver.ExtentReportNG"/>
   </listeners>
-  <test name="ARCRegressionTest-Building-Transit(failed)">
-    <parameter name="paymentSheet" value="Payment"/>
+  <test name="ARCRegressionTest-City-LEED(failed)">
     <parameter name="loginSheet" value="Login"/>
-    <parameter name="buildingSheet" value="NewBuildingProject"/>
     <parameter name="environment" value="staging"/>
-    <parameter name="energySheet" value="BEnergy"/>
-    <parameter name="browserName" value="firefox"/>
-    <parameter name="wasteSheet" value="BWaste"/>
     <parameter name="waterSheet" value="BWater"/>
+    <parameter name="wasteSheet" value="BWaste"/>
+    <parameter name="citySheet" value="NewCityProject"/>
+    <parameter name="rowNum" value="2"/>
+    <parameter name="browserName" value="firefox"/>
+    <parameter name="energySheet" value="BEnergy"/>
     <parameter name="teamSheet" value="BTeam"/>
-    <parameter name="rowNum" value="3"/>
+    <parameter name="paymentSheet" value="Payment"/>
     <classes>
-      <class name="com.arc.testcases.MyBuildings.LEEDfortransit.PreCertReviewTest">
+      <class name="com.arc.testcases.MyCities.LEEDforCities.AddNewProjectTest">
         <methods>
-          <include name="setup"/>
-          <include name="end"/>
           <include name="teardown"/>
+          <include name="end"/>
+          <include name="addNewProject"/>
+          <include name="setup"/>
         </methods>
-      </class> <!-- com.arc.testcases.MyBuildings.LEEDfortransit.PreCertReviewTest -->
-      <class name="com.arc.testcases.MyBuildings.LEEDfortransit.UnderGroundAddNewProjectTest">
+      </class> <!-- com.arc.testcases.MyCities.LEEDforCities.AddNewProjectTest -->
+      <class name="com.arc.testcases.MyCities.LEEDforCities.ProjectDetailsVerificationTest">
         <methods>
-          <include name="setup"/>
           <include name="end"/>
-          <include name="teardown"/>
+          <include name="setup"/>
+          <include name="projectDetailsVerification"/>
         </methods>
-      </class> <!-- com.arc.testcases.MyBuildings.LEEDfortransit.UnderGroundAddNewProjectTest -->
-      <class name="com.arc.testcases.MyBuildings.LEEDfortransit.PrecertificationPayTest">
+      </class> <!-- com.arc.testcases.MyCities.LEEDforCities.ProjectDetailsVerificationTest -->
+      <class name="com.arc.testcases.MyCities.LEEDforCities.VerifyAgreementFileDownloadTest">
         <methods>
-          <include name="setup"/>
-          <include name="precertificationPay" invocation-numbers="0"/>
-          <include name="end"/>
           <include name="teardown"/>
+          <include name="end"/>
+          <include name="verifyAgreementFileDownload" invocation-numbers="0"/>
+          <include name="setup"/>
         </methods>
-      </class> <!-- com.arc.testcases.MyBuildings.LEEDfortransit.PrecertificationPayTest -->
+      </class> <!-- com.arc.testcases.MyCities.LEEDforCities.VerifyAgreementFileDownloadTest -->
+      <class name="com.arc.testcases.MyCities.LEEDforCities.EditProjectDetailsTest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="editProjectDetails" invocation-numbers="0"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.arc.testcases.MyCities.LEEDforCities.EditProjectDetailsTest -->
+      <class name="com.arc.testcases.MyCities.LEEDforCities.SearchProgramTest">
+        <methods>
+          <include name="teardown"/>
+          <include name="searchProgram"/>
+          <include name="end"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.arc.testcases.MyCities.LEEDforCities.SearchProgramTest -->
+      <class name="com.arc.testcases.MyCities.LEEDforCities.ProjectFieldVerificationTest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.arc.testcases.MyCities.LEEDforCities.ProjectFieldVerificationTest -->
+      <class name="com.arc.testcases.MyCities.LEEDforCities.PrerequisitesAttemptTest">
+        <methods>
+          <include name="prerequisitesAttempt" invocation-numbers="0"/>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.arc.testcases.MyCities.LEEDforCities.PrerequisitesAttemptTest -->
+      <class name="com.arc.testcases.MyCities.LEEDforCities.LoginCaseTest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="loginCase"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.arc.testcases.MyCities.LEEDforCities.LoginCaseTest -->
+      <class name="com.arc.testcases.MyCities.LEEDforCities.ClickSearchedProgramTest">
+        <methods>
+          <include name="teardown"/>
+          <include name="clickSearchedProgram"/>
+          <include name="end"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.arc.testcases.MyCities.LEEDforCities.ClickSearchedProgramTest -->
+      <class name="com.arc.testcases.MyCities.LEEDforCities.AddTeamMemberTest">
+        <methods>
+          <include name="teardown"/>
+          <include name="end"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.arc.testcases.MyCities.LEEDforCities.AddTeamMemberTest -->
+      <class name="com.arc.testcases.MyCities.LEEDforCities.PaymentbyCCTest">
+        <methods>
+          <include name="teardown"/>
+          <include name="paymentbyCC"/>
+          <include name="end"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.arc.testcases.MyCities.LEEDforCities.PaymentbyCCTest -->
     </classes>
-  </test> <!-- ARCRegressionTest-Building-Transit(failed) -->
+  </test> <!-- ARCRegressionTest-City-LEED(failed) -->
 </suite> <!-- Failed suite [SanityTestCasesSuite] -->

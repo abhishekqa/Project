@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" total="3" passed="2">
+<testng-results skipped="1" failed="3" total="11" passed="7">
   <reporter-output>
   </reporter-output>
-  <suite name="SanityTestCasesSuite" duration-ms="279968" started-at="2017-11-14T07:26:16Z" finished-at="2017-11-14T07:30:56Z">
+  <suite name="SanityTestCasesSuite" duration-ms="745870" started-at="2017-11-14T10:00:24Z" finished-at="2017-11-14T10:12:50Z">
     <groups>
     </groups>
-    <test name="ARCRegressionTest-Building-Transit" duration-ms="279968" started-at="2017-11-14T07:26:16Z" finished-at="2017-11-14T07:30:56Z">
-      <class name="com.arc.testcases.MyBuildings.LEEDfortransit.PrecertificationPayTest">
-        <test-method status="PASS" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.LEEDfortransit.PrecertificationPayTest@26426fde]" name="setup" is-config="true" duration-ms="16929" started-at="2017-11-14T12:57:57Z" finished-at="2017-11-14T12:58:14Z">
+    <test name="ARCRegressionTest-City-LEED" duration-ms="745870" started-at="2017-11-14T10:00:24Z" finished-at="2017-11-14T10:12:50Z">
+      <class name="com.arc.testcases.MyCities.LEEDforCities.PrerequisitesAttemptTest">
+        <test-method status="PASS" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyCities.LEEDforCities.PrerequisitesAttemptTest@ff5b51f]" name="setup" is-config="true" duration-ms="24444" started-at="2017-11-14T15:35:29Z" finished-at="2017-11-14T15:35:54Z">
           <params>
             <param index="0">
               <value>
@@ -23,51 +23,42 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="FAIL" signature="precertificationPay(int, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.LEEDfortransit.PrecertificationPayTest@26426fde]" name="precertificationPay" duration-ms="87642" started-at="2017-11-14T12:58:14Z" finished-at="2017-11-14T12:59:41Z">
+        <test-method status="FAIL" signature="prerequisitesAttempt(int, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyCities.LEEDforCities.PrerequisitesAttemptTest@ff5b51f]" name="prerequisitesAttempt" duration-ms="103662" started-at="2017-11-14T15:35:54Z" depends-on-methods="com.arc.testcases.MyCities.LEEDforCities.ClickSearchedProgramTest.clickSearchedProgram, com.arc.testcases.MyCities.LEEDforCities.SearchProgramTest.searchProgram, com.arc.testcases.MyCities.LEEDforCities.PaymentbyCCTest.paymentbyCC, com.arc.testcases.MyCities.LEEDforCities.LoginCaseTest.loginCase" finished-at="2017-11-14T15:37:37Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[3]]>
+                <![CDATA[2]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[NewBuildingProject]]>
+                <![CDATA[Login]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[Login]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[Payment]]>
+                <![CDATA[NewCityProject]]>
               </value>
             </param>
           </params>
           <exception class="java.lang.Error">
             <message>
-              <![CDATA[Unable to locate element: {"method":"xpath","selector":".//*[text()='Submit for Review']"}
-Command duration or timeout: 65.66 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+              <![CDATA[Element is not currently visible and so may not be interacted with
+Command duration or timeout: 60.14 seconds
 Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
-System info: host: 'G10GNLT041', ip: '172.18.0.18', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_51'
-*** Element info: {Using=xpath, value=.//*[text()='Submit for Review']}
-Session ID: 0913b846-1437-4a7b-af1f-9895cb6b6b19
+System info: host: 'G10GNLT049', ip: '172.18.0.227', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_151'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=46.0}]]]>
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=32.0.2, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 8628b6e5-0ef1-40fb-b68b-25d47ec9c7fc]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.Error: Unable to locate element: {"method":"xpath","selector":".//*[text()='Submit for Review']"}
-Command duration or timeout: 65.66 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+              <![CDATA[java.lang.Error: Element is not currently visible and so may not be interacted with
+Command duration or timeout: 60.14 seconds
 Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
-System info: host: 'G10GNLT041', ip: '172.18.0.18', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_51'
-*** Element info: {Using=xpath, value=.//*[text()='Submit for Review']}
-Session ID: 0913b846-1437-4a7b-af1f-9895cb6b6b19
+System info: host: 'G10GNLT049', ip: '172.18.0.227', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_151'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=46.0}]
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=32.0.2, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 8628b6e5-0ef1-40fb-b68b-25d47ec9c7fc
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -75,14 +66,12 @@ Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cs
 	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
 	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-	at com.arc.driver.CommonMethod.findElement(CommonMethod.java:85)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:85)
 	at com.arc.driver.CommonMethod.click(CommonMethod.java:164)
-	at com.arc.ReusableMethods.ReusableMethodsPrerequisites.ClickSubmitforReview(ReusableMethodsPrerequisites.java:68)
-	at com.arc.testcases.MyBuildings.LEEDfortransit.PrecertificationPayTest.precertificationPay(PrecertificationPayTest.java:39)
+	at com.arc.ReusableMethods.ReusableMethodsPrerequisites.ClickPrerequisites(ReusableMethodsPrerequisites.java:75)
+	at com.arc.ReusableMethods.ReusableMethodsPrerequisites.PrereqAttempt(ReusableMethodsPrerequisites.java:15)
+	at com.arc.testcases.MyCities.LEEDforCities.PrerequisitesAttemptTest.prerequisitesAttempt(PrerequisitesAttemptTest.java:35)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -104,33 +93,33 @@ Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cs
 	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1191)
 	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
 	at org.testng.TestNG.run(TestNG.java:1024)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.Error -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- precertificationPay -->
-        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.arc.testcases.MyBuildings.LEEDfortransit.PrecertificationPayTest@26426fde]" name="teardown" is-config="true" duration-ms="171" started-at="2017-11-14T12:59:41Z" finished-at="2017-11-14T12:59:42Z">
+        </test-method> <!-- prerequisitesAttempt -->
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.arc.testcases.MyCities.LEEDforCities.PrerequisitesAttemptTest@ff5b51f]" name="teardown" is-config="true" duration-ms="100" started-at="2017-11-14T15:37:37Z" finished-at="2017-11-14T15:37:38Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=precertificationPay status=FAILURE method=PrecertificationPayTest.precertificationPay(int, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.LEEDfortransit.PrecertificationPayTest@26426fde] output={null}]]]>
+                <![CDATA[[TestResult name=prerequisitesAttempt status=FAILURE method=PrerequisitesAttemptTest.prerequisitesAttempt(int, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyCities.LEEDforCities.PrerequisitesAttemptTest@ff5b51f] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method status="PASS" signature="end()[pri:0, instance:com.arc.testcases.MyBuildings.LEEDfortransit.PrecertificationPayTest@26426fde]" name="end" is-config="true" duration-ms="1329" started-at="2017-11-14T12:59:42Z" finished-at="2017-11-14T12:59:43Z">
+        <test-method status="PASS" signature="end()[pri:0, instance:com.arc.testcases.MyCities.LEEDforCities.PrerequisitesAttemptTest@ff5b51f]" name="end" is-config="true" duration-ms="521" started-at="2017-11-14T15:37:38Z" finished-at="2017-11-14T15:37:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- end -->
-      </class> <!-- com.arc.testcases.MyBuildings.LEEDfortransit.PrecertificationPayTest -->
-      <class name="com.arc.testcases.MyBuildings.LEEDfortransit.UnderGroundAddNewProjectTest">
-        <test-method status="PASS" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.LEEDfortransit.UnderGroundAddNewProjectTest@53be6b71]" name="setup" is-config="true" duration-ms="15789" started-at="2017-11-14T12:59:43Z" finished-at="2017-11-14T12:59:59Z">
+      </class> <!-- com.arc.testcases.MyCities.LEEDforCities.PrerequisitesAttemptTest -->
+      <class name="com.arc.testcases.MyCities.LEEDforCities.EditProjectDetailsTest">
+        <test-method status="PASS" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyCities.LEEDforCities.EditProjectDetailsTest@69ea3742]" name="setup" is-config="true" duration-ms="23783" started-at="2017-11-14T15:38:39Z" finished-at="2017-11-14T15:39:03Z">
           <params>
             <param index="0">
               <value>
@@ -146,45 +135,425 @@ Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cs
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="addNewProject(int, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.LEEDfortransit.UnderGroundAddNewProjectTest@53be6b71]" name="addNewProject" duration-ms="55454" started-at="2017-11-14T12:59:59Z" finished-at="2017-11-14T13:00:54Z">
+        <test-method status="FAIL" signature="editProjectDetails(int, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyCities.LEEDforCities.EditProjectDetailsTest@69ea3742]" name="editProjectDetails" duration-ms="103258" started-at="2017-11-14T15:39:03Z" depends-on-methods="com.arc.testcases.MyCities.LEEDforCities.ClickSearchedProgramTest.clickSearchedProgram, com.arc.testcases.MyCities.LEEDforCities.SearchProgramTest.searchProgram, com.arc.testcases.MyCities.LEEDforCities.PaymentbyCCTest.paymentbyCC, com.arc.testcases.MyCities.LEEDforCities.LoginCaseTest.loginCase" finished-at="2017-11-14T15:40:46Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[3]]>
+                <![CDATA[2]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[NewBuildingProject]]>
+                <![CDATA[Login]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[NewCityProject]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.Error">
+            <message>
+              <![CDATA[Unable to locate element: {"method":"xpath","selector":".//*[@ng-model='projectInfo.operating_hours']"}
+Command duration or timeout: 64.48 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'G10GNLT049', ip: '172.18.0.227', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_151'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=32.0.2, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: d6ee0915-5c73-4919-8d09-b34d43e0732f
+*** Element info: {Using=xpath, value=.//*[@ng-model='projectInfo.operating_hours']}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Error: Unable to locate element: {"method":"xpath","selector":".//*[@ng-model='projectInfo.operating_hours']"}
+Command duration or timeout: 64.48 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'G10GNLT049', ip: '172.18.0.227', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_151'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=32.0.2, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: d6ee0915-5c73-4919-8d09-b34d43e0732f
+*** Element info: {Using=xpath, value=.//*[@ng-model='projectInfo.operating_hours']}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at com.arc.driver.CommonMethod.findElement(CommonMethod.java:85)
+	at com.arc.driver.CommonMethod.clear(CommonMethod.java:185)
+	at com.arc.ReusableMethods.ReusableMethodsManage.editProjectDetails(ReusableMethodsManage.java:204)
+	at com.arc.testcases.MyCities.LEEDforCities.EditProjectDetailsTest.editProjectDetails(EditProjectDetailsTest.java:36)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1191)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.run(TestNG.java:1024)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Error -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- editProjectDetails -->
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.arc.testcases.MyCities.LEEDforCities.EditProjectDetailsTest@69ea3742]" name="teardown" is-config="true" duration-ms="73" started-at="2017-11-14T15:40:46Z" finished-at="2017-11-14T15:40:46Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=editProjectDetails status=FAILURE method=EditProjectDetailsTest.editProjectDetails(int, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyCities.LEEDforCities.EditProjectDetailsTest@69ea3742] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="end()[pri:0, instance:com.arc.testcases.MyCities.LEEDforCities.EditProjectDetailsTest@69ea3742]" name="end" is-config="true" duration-ms="436" started-at="2017-11-14T15:40:46Z" finished-at="2017-11-14T15:40:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- end -->
+      </class> <!-- com.arc.testcases.MyCities.LEEDforCities.EditProjectDetailsTest -->
+      <class name="com.arc.testcases.MyCities.LEEDforCities.AddTeamMemberTest">
+        <test-method status="PASS" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyCities.LEEDforCities.AddTeamMemberTest@73846619]" name="setup" is-config="true" duration-ms="22292" started-at="2017-11-14T15:41:10Z" finished-at="2017-11-14T15:41:32Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[staging]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="addTeamMember(int, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyCities.LEEDforCities.AddTeamMemberTest@73846619]" name="addTeamMember" duration-ms="36188" started-at="2017-11-14T15:41:32Z" depends-on-methods="com.arc.testcases.MyCities.LEEDforCities.ClickSearchedProgramTest.clickSearchedProgram, com.arc.testcases.MyCities.LEEDforCities.SearchProgramTest.searchProgram, com.arc.testcases.MyCities.LEEDforCities.PaymentbyCCTest.paymentbyCC, com.arc.testcases.MyCities.LEEDforCities.LoginCaseTest.loginCase" finished-at="2017-11-14T15:42:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[BTeam]]>
               </value>
             </param>
             <param index="2">
               <value>
                 <![CDATA[Login]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[NewCityProject]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addTeamMember -->
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.arc.testcases.MyCities.LEEDforCities.AddTeamMemberTest@73846619]" name="teardown" is-config="true" duration-ms="103" started-at="2017-11-14T15:42:09Z" finished-at="2017-11-14T15:42:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=addTeamMember status=SUCCESS method=AddTeamMemberTest.addTeamMember(int, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyCities.LEEDforCities.AddTeamMemberTest@73846619] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="end()[pri:0, instance:com.arc.testcases.MyCities.LEEDforCities.AddTeamMemberTest@73846619]" name="end" is-config="true" duration-ms="588" started-at="2017-11-14T15:42:09Z" finished-at="2017-11-14T15:42:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- end -->
+      </class> <!-- com.arc.testcases.MyCities.LEEDforCities.AddTeamMemberTest -->
+      <class name="com.arc.testcases.MyCities.LEEDforCities.VerifyAgreementFileDownloadTest">
+        <test-method status="PASS" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyCities.LEEDforCities.VerifyAgreementFileDownloadTest@4bec1f0c]" name="setup" is-config="true" duration-ms="22544" started-at="2017-11-14T15:42:09Z" finished-at="2017-11-14T15:42:32Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[staging]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="FAIL" signature="verifyAgreementFileDownload(int, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyCities.LEEDforCities.VerifyAgreementFileDownloadTest@4bec1f0c]" name="verifyAgreementFileDownload" duration-ms="17770" started-at="2017-11-14T15:42:32Z" depends-on-methods="com.arc.testcases.MyCities.LEEDforCities.ClickSearchedProgramTest.clickSearchedProgram, com.arc.testcases.MyCities.LEEDforCities.SearchProgramTest.searchProgram, com.arc.testcases.MyCities.LEEDforCities.PaymentbyCCTest.paymentbyCC, com.arc.testcases.MyCities.LEEDforCities.LoginCaseTest.loginCase" finished-at="2017-11-14T15:42:50Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Login]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[NewCityProject]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.Error">
+            <message>
+              <![CDATA[Welcome Text is not correct expected [My Cities] but found [My Projects]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Error: Welcome Text is not correct expected [My Cities] but found [My Projects]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertEquals(Assert.java:125)
+	at org.testng.Assert.assertEquals(Assert.java:178)
+	at com.arc.driver.CommonMethod.assertEqualsmessage(CommonMethod.java:226)
+	at com.arc.ReusableMethods.ReusableMethodsLogin.assertPostLoginText(ReusableMethodsLogin.java:51)
+	at com.arc.ReusableMethods.ReusableMethodsLogin.LoginToArc(ReusableMethodsLogin.java:111)
+	at com.arc.testcases.MyCities.LEEDforCities.VerifyAgreementFileDownloadTest.verifyAgreementFileDownload(VerifyAgreementFileDownloadTest.java:34)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1191)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.run(TestNG.java:1024)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Error -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAgreementFileDownload -->
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.arc.testcases.MyCities.LEEDforCities.VerifyAgreementFileDownloadTest@4bec1f0c]" name="teardown" is-config="true" duration-ms="99" started-at="2017-11-14T15:42:50Z" finished-at="2017-11-14T15:42:50Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyAgreementFileDownload status=FAILURE method=VerifyAgreementFileDownloadTest.verifyAgreementFileDownload(int, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyCities.LEEDforCities.VerifyAgreementFileDownloadTest@4bec1f0c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="end()[pri:0, instance:com.arc.testcases.MyCities.LEEDforCities.VerifyAgreementFileDownloadTest@4bec1f0c]" name="end" is-config="true" duration-ms="516" started-at="2017-11-14T15:42:50Z" finished-at="2017-11-14T15:42:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- end -->
+      </class> <!-- com.arc.testcases.MyCities.LEEDforCities.VerifyAgreementFileDownloadTest -->
+      <class name="com.arc.testcases.MyCities.LEEDforCities.SearchProgramTest">
+        <test-method status="PASS" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyCities.LEEDforCities.SearchProgramTest@59494225]" name="setup" is-config="true" duration-ms="23827" started-at="2017-11-14T15:31:22Z" finished-at="2017-11-14T15:31:46Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[staging]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="searchProgram(int, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyCities.LEEDforCities.SearchProgramTest@59494225]" name="searchProgram" duration-ms="21993" started-at="2017-11-14T15:31:46Z" depends-on-methods="com.arc.testcases.MyCities.LEEDforCities.LoginCaseTest.loginCase" finished-at="2017-11-14T15:32:08Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Login]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[NewCityProject]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchProgram -->
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.arc.testcases.MyCities.LEEDforCities.SearchProgramTest@59494225]" name="teardown" is-config="true" duration-ms="340" started-at="2017-11-14T15:32:08Z" finished-at="2017-11-14T15:32:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=searchProgram status=SUCCESS method=SearchProgramTest.searchProgram(int, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyCities.LEEDforCities.SearchProgramTest@59494225] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="end()[pri:0, instance:com.arc.testcases.MyCities.LEEDforCities.SearchProgramTest@59494225]" name="end" is-config="true" duration-ms="547" started-at="2017-11-14T15:32:09Z" finished-at="2017-11-14T15:32:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- end -->
+      </class> <!-- com.arc.testcases.MyCities.LEEDforCities.SearchProgramTest -->
+      <class name="com.arc.testcases.MyCities.LEEDforCities.ProjectFieldVerificationTest">
+        <test-method status="PASS" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyCities.LEEDforCities.ProjectFieldVerificationTest@5702b3b1]" name="setup" is-config="true" duration-ms="23912" started-at="2017-11-14T15:37:38Z" finished-at="2017-11-14T15:38:02Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[staging]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="projectFieldVerification(int, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyCities.LEEDforCities.ProjectFieldVerificationTest@5702b3b1]" name="projectFieldVerification" duration-ms="36500" started-at="2017-11-14T15:38:02Z" depends-on-methods="com.arc.testcases.MyCities.LEEDforCities.ClickSearchedProgramTest.clickSearchedProgram, com.arc.testcases.MyCities.LEEDforCities.SearchProgramTest.searchProgram, com.arc.testcases.MyCities.LEEDforCities.PaymentbyCCTest.paymentbyCC, com.arc.testcases.MyCities.LEEDforCities.LoginCaseTest.loginCase" finished-at="2017-11-14T15:38:38Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Login]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[NewCityProject]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- projectFieldVerification -->
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.arc.testcases.MyCities.LEEDforCities.ProjectFieldVerificationTest@5702b3b1]" name="teardown" is-config="true" duration-ms="93" started-at="2017-11-14T15:38:38Z" finished-at="2017-11-14T15:38:39Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=projectFieldVerification status=SUCCESS method=ProjectFieldVerificationTest.projectFieldVerification(int, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyCities.LEEDforCities.ProjectFieldVerificationTest@5702b3b1] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="end()[pri:0, instance:com.arc.testcases.MyCities.LEEDforCities.ProjectFieldVerificationTest@5702b3b1]" name="end" is-config="true" duration-ms="520" started-at="2017-11-14T15:38:39Z" finished-at="2017-11-14T15:38:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- end -->
+      </class> <!-- com.arc.testcases.MyCities.LEEDforCities.ProjectFieldVerificationTest -->
+      <class name="com.arc.testcases.MyCities.LEEDforCities.AddNewProjectTest">
+        <test-method status="PASS" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyCities.LEEDforCities.AddNewProjectTest@5cb9f472]" name="setup" is-config="true" duration-ms="25305" started-at="2017-11-14T15:32:09Z" finished-at="2017-11-14T15:32:34Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[staging]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="addNewProject(int, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyCities.LEEDforCities.AddNewProjectTest@5cb9f472]" name="addNewProject" duration-ms="48945" started-at="2017-11-14T15:32:34Z" finished-at="2017-11-14T15:33:23Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Login]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[NewCityProject]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addNewProject -->
-        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.arc.testcases.MyBuildings.LEEDfortransit.UnderGroundAddNewProjectTest@53be6b71]" name="teardown" is-config="true" duration-ms="120" started-at="2017-11-14T13:00:54Z" finished-at="2017-11-14T13:00:54Z">
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.arc.testcases.MyCities.LEEDforCities.AddNewProjectTest@5cb9f472]" name="teardown" is-config="true" duration-ms="195" started-at="2017-11-14T15:33:23Z" finished-at="2017-11-14T15:33:24Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=addNewProject status=SUCCESS method=UnderGroundAddNewProjectTest.addNewProject(int, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.LEEDfortransit.UnderGroundAddNewProjectTest@53be6b71] output={null}]]]>
+                <![CDATA[[TestResult name=addNewProject status=SUCCESS method=AddNewProjectTest.addNewProject(int, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyCities.LEEDforCities.AddNewProjectTest@5cb9f472] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method status="PASS" signature="end()[pri:0, instance:com.arc.testcases.MyBuildings.LEEDfortransit.UnderGroundAddNewProjectTest@53be6b71]" name="end" is-config="true" duration-ms="1294" started-at="2017-11-14T13:00:54Z" finished-at="2017-11-14T13:00:56Z">
+        <test-method status="PASS" signature="end()[pri:0, instance:com.arc.testcases.MyCities.LEEDforCities.AddNewProjectTest@5cb9f472]" name="end" is-config="true" duration-ms="707" started-at="2017-11-14T15:33:24Z" finished-at="2017-11-14T15:33:24Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- end -->
-      </class> <!-- com.arc.testcases.MyBuildings.LEEDfortransit.UnderGroundAddNewProjectTest -->
-      <class name="com.arc.testcases.MyBuildings.LEEDfortransit.PreCertReviewTest">
-        <test-method status="PASS" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.LEEDfortransit.PreCertReviewTest@5ce69508]" name="setup" is-config="true" duration-ms="19773" started-at="2017-11-14T12:56:16Z" finished-at="2017-11-14T12:56:35Z">
+      </class> <!-- com.arc.testcases.MyCities.LEEDforCities.AddNewProjectTest -->
+      <class name="com.arc.testcases.MyCities.LEEDforCities.PaymentbyCCTest">
+        <test-method status="PASS" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyCities.LEEDforCities.PaymentbyCCTest@13805618]" name="setup" is-config="true" duration-ms="22158" started-at="2017-11-14T15:34:09Z" finished-at="2017-11-14T15:34:32Z">
           <params>
             <param index="0">
               <value>
@@ -200,21 +569,21 @@ Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cs
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="PreCertReview(int, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.LEEDfortransit.PreCertReviewTest@5ce69508]" name="PreCertReview" duration-ms="79418" started-at="2017-11-14T12:56:35Z" finished-at="2017-11-14T12:57:55Z">
+        <test-method status="PASS" signature="paymentbyCC(int, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyCities.LEEDforCities.PaymentbyCCTest@13805618]" name="paymentbyCC" duration-ms="57023" started-at="2017-11-14T15:34:32Z" depends-on-methods="com.arc.testcases.MyCities.LEEDforCities.ClickSearchedProgramTest.clickSearchedProgram, com.arc.testcases.MyCities.LEEDforCities.SearchProgramTest.searchProgram, com.arc.testcases.MyCities.LEEDforCities.AddNewProjectTest.addNewProject, com.arc.testcases.MyCities.LEEDforCities.LoginCaseTest.loginCase" finished-at="2017-11-14T15:35:29Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[3]]>
+                <![CDATA[2]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[NewBuildingProject]]>
+                <![CDATA[Login]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[Login]]>
+                <![CDATA[NewCityProject]]>
               </value>
             </param>
             <param index="3">
@@ -225,23 +594,178 @@ Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cs
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- PreCertReview -->
-        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.arc.testcases.MyBuildings.LEEDfortransit.PreCertReviewTest@5ce69508]" name="teardown" is-config="true" duration-ms="628" started-at="2017-11-14T12:57:55Z" finished-at="2017-11-14T12:57:56Z">
+        </test-method> <!-- paymentbyCC -->
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.arc.testcases.MyCities.LEEDforCities.PaymentbyCCTest@13805618]" name="teardown" is-config="true" duration-ms="143" started-at="2017-11-14T15:35:29Z" finished-at="2017-11-14T15:35:29Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=PreCertReview status=SUCCESS method=PreCertReviewTest.PreCertReview(int, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.LEEDfortransit.PreCertReviewTest@5ce69508] output={null}]]]>
+                <![CDATA[[TestResult name=paymentbyCC status=SUCCESS method=PaymentbyCCTest.paymentbyCC(int, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyCities.LEEDforCities.PaymentbyCCTest@13805618] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method status="PASS" signature="end()[pri:0, instance:com.arc.testcases.MyBuildings.LEEDfortransit.PreCertReviewTest@5ce69508]" name="end" is-config="true" duration-ms="1387" started-at="2017-11-14T12:57:56Z" finished-at="2017-11-14T12:57:57Z">
+        <test-method status="PASS" signature="end()[pri:0, instance:com.arc.testcases.MyCities.LEEDforCities.PaymentbyCCTest@13805618]" name="end" is-config="true" duration-ms="655" started-at="2017-11-14T15:35:29Z" finished-at="2017-11-14T15:35:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- end -->
-      </class> <!-- com.arc.testcases.MyBuildings.LEEDfortransit.PreCertReviewTest -->
-    </test> <!-- ARCRegressionTest-Building-Transit -->
+      </class> <!-- com.arc.testcases.MyCities.LEEDforCities.PaymentbyCCTest -->
+      <class name="com.arc.testcases.MyCities.LEEDforCities.ProjectDetailsVerificationTest">
+        <test-method status="PASS" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyCities.LEEDforCities.ProjectDetailsVerificationTest@4b952a2d]" name="setup" is-config="true" duration-ms="22760" started-at="2017-11-14T15:40:47Z" finished-at="2017-11-14T15:41:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[staging]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="SKIP" signature="projectDetailsVerification(int, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyCities.LEEDforCities.ProjectDetailsVerificationTest@4b952a2d]" name="projectDetailsVerification" duration-ms="0" started-at="2017-11-14T15:41:09Z" depends-on-methods="com.arc.testcases.MyCities.LEEDforCities.ClickSearchedProgramTest.clickSearchedProgram, com.arc.testcases.MyCities.LEEDforCities.SearchProgramTest.searchProgram, com.arc.testcases.MyCities.LEEDforCities.PaymentbyCCTest.paymentbyCC, com.arc.testcases.MyCities.LEEDforCities.LoginCaseTest.loginCase, com.arc.testcases.MyCities.LEEDforCities.EditProjectDetailsTest.editProjectDetails" finished-at="2017-11-14T15:41:09Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method ProjectDetailsVerificationTest.projectDetailsVerification(int, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyCities.LEEDforCities.ProjectDetailsVerificationTest@4b952a2d] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method ProjectDetailsVerificationTest.projectDetailsVerification(int, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyCities.LEEDforCities.ProjectDetailsVerificationTest@4b952a2d] depends on not successfully finished methods
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1033)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1191)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.run(TestNG.java:1024)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- projectDetailsVerification -->
+        <test-method status="PASS" signature="end()[pri:0, instance:com.arc.testcases.MyCities.LEEDforCities.ProjectDetailsVerificationTest@4b952a2d]" name="end" is-config="true" duration-ms="673" started-at="2017-11-14T15:41:09Z" finished-at="2017-11-14T15:41:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- end -->
+      </class> <!-- com.arc.testcases.MyCities.LEEDforCities.ProjectDetailsVerificationTest -->
+      <class name="com.arc.testcases.MyCities.LEEDforCities.LoginCaseTest">
+        <test-method status="PASS" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyCities.LEEDforCities.LoginCaseTest@6e06451e]" name="setup" is-config="true" duration-ms="23217" started-at="2017-11-14T15:30:24Z" finished-at="2017-11-14T15:30:48Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[staging]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="loginCase(int, java.lang.String)[pri:0, instance:com.arc.testcases.MyCities.LEEDforCities.LoginCaseTest@6e06451e]" name="loginCase" duration-ms="33550" started-at="2017-11-14T15:30:48Z" finished-at="2017-11-14T15:31:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Login]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginCase -->
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.arc.testcases.MyCities.LEEDforCities.LoginCaseTest@6e06451e]" name="teardown" is-config="true" duration-ms="528" started-at="2017-11-14T15:31:21Z" finished-at="2017-11-14T15:31:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=loginCase status=SUCCESS method=LoginCaseTest.loginCase(int, java.lang.String)[pri:0, instance:com.arc.testcases.MyCities.LEEDforCities.LoginCaseTest@6e06451e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="end()[pri:0, instance:com.arc.testcases.MyCities.LEEDforCities.LoginCaseTest@6e06451e]" name="end" is-config="true" duration-ms="803" started-at="2017-11-14T15:31:22Z" finished-at="2017-11-14T15:31:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- end -->
+      </class> <!-- com.arc.testcases.MyCities.LEEDforCities.LoginCaseTest -->
+      <class name="com.arc.testcases.MyCities.LEEDforCities.ClickSearchedProgramTest">
+        <test-method status="PASS" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyCities.LEEDforCities.ClickSearchedProgramTest@cb644e]" name="setup" is-config="true" duration-ms="23663" started-at="2017-11-14T15:33:24Z" finished-at="2017-11-14T15:33:48Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[staging]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="clickSearchedProgram(int, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyCities.LEEDforCities.ClickSearchedProgramTest@cb644e]" name="clickSearchedProgram" duration-ms="20768" started-at="2017-11-14T15:33:48Z" depends-on-methods="com.arc.testcases.MyCities.LEEDforCities.LoginCaseTest.loginCase" finished-at="2017-11-14T15:34:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Login]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[NewCityProject]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickSearchedProgram -->
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.arc.testcases.MyCities.LEEDforCities.ClickSearchedProgramTest@cb644e]" name="teardown" is-config="true" duration-ms="78" started-at="2017-11-14T15:34:09Z" finished-at="2017-11-14T15:34:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=clickSearchedProgram status=SUCCESS method=ClickSearchedProgramTest.clickSearchedProgram(int, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyCities.LEEDforCities.ClickSearchedProgramTest@cb644e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="end()[pri:0, instance:com.arc.testcases.MyCities.LEEDforCities.ClickSearchedProgramTest@cb644e]" name="end" is-config="true" duration-ms="548" started-at="2017-11-14T15:34:09Z" finished-at="2017-11-14T15:34:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- end -->
+      </class> <!-- com.arc.testcases.MyCities.LEEDforCities.ClickSearchedProgramTest -->
+    </test> <!-- ARCRegressionTest-City-LEED -->
   </suite> <!-- SanityTestCasesSuite -->
 </testng-results>

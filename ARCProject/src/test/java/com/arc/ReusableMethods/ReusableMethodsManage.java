@@ -124,6 +124,48 @@ public class ReusableMethodsManage extends BaseClass{
 
 	}
 	
+public void VerifyProjectDetailsTransit( String sheetName, int rowNum) throws IOException, InterruptedException {
+
+		
+		String address     = data.getCellData(sheetName, "Address", rowNum);
+		String city        = data.getCellData(sheetName, "City", rowNum);
+		String state       = data.getCellData(sheetName, "State", rowNum);
+		String country     = data.getCellData(sheetName, "Country", rowNum);
+		String own_org     = data.getCellData(sheetName, "Owner Organization", rowNum);
+		String own_email   = data.getCellData(sheetName, "Owner Email", rowNum);
+		String own_con     = data.getCellData(sheetName, "Owner Country", rowNum);
+		String gross_area  = data.getCellData(sheetName, "Area", rowNum);
+		String opr_hrs     = data.getCellData(sheetName, "opr_hrs2", rowNum);
+		String occupancy   = data.getCellData(sheetName, "occupancy", rowNum);
+		
+		CommonMethod.ArcSpecifictoggle( "Manage");
+		CommonMethod.click( "Project");
+		CommonMethod.testlog( "Pass", "Clicking on Project");
+		System.out.println(CommonMethod.getattributeValue( "M_ProjectID_value"));
+		// CommonMethod.assertEqualsmessageAttributevalue(
+		// "M_ProjectID_value",
+		// CommonMethod.filereadID(CommonMethod.ArcProjectIDUrl), "Value is not
+		// correct");
+		CommonMethod.assertEqualsmessageAttributevalue( "M_Address_value", address,
+				"Value is not correct");
+		CommonMethod.assertEqualsmessageAttributevalue( "M_City_value", city, "Value is not correct");
+		CommonMethod.assertEqualsmessageAttributevalue( "M_State_value", state, "Value is not correct");
+		CommonMethod.assertEqualsmessageAttributevalue( "M_Country_value", country,
+				"Value is not correct");
+		//CommonMethod.assertEqualsmessageAttributevalue( "M_OwnerType_value", "T & W Corporation","Value is not correct");
+		
+		CommonMethod.assertEqualsmessageAttributevalue( "M_OwnerOrg_value", own_org, "Value is not correct");
+		CommonMethod.assertEqualsmessageAttributevalue( "M_OwnerEmail_value", own_email,
+				"Value is not correct");
+		CommonMethod.assertEqualsmessageAttributevalue( "M_OwnerCountry_value", own_con,
+				"Value is not correct");
+		CommonMethod.assertEqualsmessageAttributevalue( "M_GrossArea_value", gross_area, "Value is not correct");
+		//CommonMethod.assertEqualsmessageAttributevalue( "M_OperatingHours_value", opr_hrs, "Value is not correct");
+		//CommonMethod.assertEqualsmessageAttributevalue( "M_Occupancy_value", occupancy, "Value is not correct");
+		CommonMethod.testlog( "Pass", "Verifying project details field present on Project details page");
+
+	}
+	
 	public void VerifyProjectDetailsParking() throws IOException, InterruptedException {
 
 		CommonMethod.ArcSpecifictoggle( "Manage");
@@ -417,7 +459,7 @@ public class ReusableMethodsManage extends BaseClass{
 		CommonMethod.click( "EnergyStar");
 		CommonMethod.testlog( "Pass", "Installing Energystar(Default Install Uninstalled to installed)");
 		Thread.sleep(2000);
-		 CommonMethod.assertEqualsmessage( "InfoMessage", "Installed successfully.", "something went wrong");
+		 CommonMethod.assertEqualsmessage( "InfoMessage", "Uninstalled successfully.", "something went wrong");
 		CommonMethod.click( "DropBox");
 		CommonMethod.testlog( "Pass", "Uninstalling Dropbox");
 		Thread.sleep(2000);

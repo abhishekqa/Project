@@ -4,6 +4,7 @@ package com.arc.testcases.MyBuildings.LEEDfortransit;
 
 import java.io.IOException;
 
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import com.arc.ReusableMethods.ReusableMethodsDataInput;
@@ -15,7 +16,8 @@ import com.arc.driver.CommonMethod;
 public class WaterMeterCreateTest extends BaseClass {
 
 	
-	@Test(dependsOnMethods = { "com.arc.testcases.MyBuildings.LEEDfortransit.LoginCaseTest.loginCaseTest","com.arc.testcases.MyBuildings.LEEDfortransit.ClickSearchedProgramTest.clickSearchedProgramTest","com.arc.testcases.MyBuildings.LEEDfortransit.PaymentbyCCTest.paymentbyCC" })
+	@Test(dependsOnMethods = { "com.arc.testcases.MyBuildings.LEEDfortransit.LoginCaseTest.loginCase","com.arc.testcases.MyBuildings.LEEDfortransit.ClickSearchedProgramTest.clickSearchedProgram","com.arc.testcases.MyBuildings.LEEDfortransit.PaymentbyCCTest.paymentbyCC" })
+	@Parameters({"rowNum" ,"buildingSheet","loginSheet", "waterSheet"})
 	public void waterMeterCreate(int rowNum, String buildingSheet, String loginSheet, String waterSheet) throws IOException {
 		
 		CommonMethod.ExtentReportConfig();

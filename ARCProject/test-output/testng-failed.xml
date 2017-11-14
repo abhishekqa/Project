@@ -1,14 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test name="Default test(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [SanityTestCasesSuite]">
+  <parameter name="loginSheet" value="Login"/>
+  <parameter name="paymentSheet" value="Payment"/>
+  <parameter name="buildingSheet" value="NewBuildingProject"/>
+  <parameter name="environment" value="staging"/>
+  <parameter name="browserName" value="firefox"/>
+  <parameter name="energySheet" value="BEnergy"/>
+  <parameter name="wasteSheet" value="BWaste"/>
+  <parameter name="waterSheet" value="BWater"/>
+  <parameter name="rowNum" value="3"/>
+  <parameter name="teamSheet" value="BTeam"/>
+  <listeners>
+    <listener class-name="com.arc.driver.ExtentReportNG"/>
+  </listeners>
+  <test name="ARCRegressionTest-Building-Transit(failed)">
+    <parameter name="paymentSheet" value="Payment"/>
+    <parameter name="loginSheet" value="Login"/>
+    <parameter name="buildingSheet" value="NewBuildingProject"/>
+    <parameter name="environment" value="staging"/>
+    <parameter name="energySheet" value="BEnergy"/>
+    <parameter name="browserName" value="firefox"/>
+    <parameter name="wasteSheet" value="BWaste"/>
+    <parameter name="waterSheet" value="BWater"/>
+    <parameter name="teamSheet" value="BTeam"/>
+    <parameter name="rowNum" value="3"/>
     <classes>
-      <class name="com.arc.testcases.MyBuildings.LEED.EnergyFileUploadTest">
+      <class name="com.arc.testcases.MyBuildings.LEEDfortransit.PreCertReviewTest">
         <methods>
-          <include name="energyFileUploadTest"/>
+          <include name="setup"/>
           <include name="end"/>
+          <include name="teardown"/>
         </methods>
-      </class> <!-- com.arc.testcases.MyBuildings.LEED.EnergyFileUploadTest -->
+      </class> <!-- com.arc.testcases.MyBuildings.LEEDfortransit.PreCertReviewTest -->
+      <class name="com.arc.testcases.MyBuildings.LEEDfortransit.UnderGroundAddNewProjectTest">
+        <methods>
+          <include name="setup"/>
+          <include name="end"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- com.arc.testcases.MyBuildings.LEEDfortransit.UnderGroundAddNewProjectTest -->
+      <class name="com.arc.testcases.MyBuildings.LEEDfortransit.PrecertificationPayTest">
+        <methods>
+          <include name="setup"/>
+          <include name="precertificationPay" invocation-numbers="0"/>
+          <include name="end"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- com.arc.testcases.MyBuildings.LEEDfortransit.PrecertificationPayTest -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- ARCRegressionTest-Building-Transit(failed) -->
+</suite> <!-- Failed suite [SanityTestCasesSuite] -->

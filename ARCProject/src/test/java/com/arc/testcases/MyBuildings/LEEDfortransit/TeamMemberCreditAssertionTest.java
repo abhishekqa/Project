@@ -16,7 +16,7 @@ import com.arc.driver.CommonMethod;
 public class TeamMemberCreditAssertionTest extends BaseClass {
 
 	
-	@Test(dependsOnMethods = { "com.arc.testcases.MyBuildings.LEED.Login.LoginCaseTest.loginCaseTest","com.arc.testcases.MyBuildings.LEED.PublicSearch.SearchProgramTest.searchProgramTest","com.arc.testcases.MyBuildings.LEED.PublicSearch.ClickSearchedProgramTest.clickSearchedProgramTest","com.arc.testcases.MyBuildings.LEED.AddProject.PaymentbyCCTest.paymentbyCCTest" })
+	@Test(dependsOnMethods = { "com.arc.testcases.MyBuildings.LEED.Login.LoginCaseTest.loginCase","com.arc.testcases.MyBuildings.LEED.PublicSearch.ClickSearchedProgramTest.clickSearchedProgram","com.arc.testcases.MyBuildings.LEED.AddProject.PaymentbyCCTest.paymentbyCC" })
 	@Parameters({"rowNum" ,"buildingSheet","loginSheet"})
 	public void prerequisitesAttempt(int rowNum, String buildingSheet, String loginSheet) throws IOException {
 		

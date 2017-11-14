@@ -360,7 +360,7 @@ public void AddAboveProjectLEEDfortransit(int rowNum,  String sheetName ) throws
 		String prjZip 		= data.getCellData(sheetName, "Zip", rowNum);
 		
 		//creating the project name
-		data.setCellData(sheetName,"Project Name" ,rowNum, "US Building AbovegroundTestProject"+" " + CommonMethod.randomNumber() );
+		data.setCellData(sheetName,"Project Name" ,rowNum, "US Building Aboveground"+" " + CommonMethod.randomNumber() );
 														   
 		String prjName 	= data.getCellData(sheetName, "Project Name", rowNum);
 		
@@ -452,7 +452,7 @@ public void AddUndergroundProjectLEEDfortransit(int rowNum,  String sheetName ) 
 	String prjZip 		= data.getCellData(sheetName, "Zip", rowNum);
 	
 	//creating the project name
-	data.setCellData(sheetName,"Project Name" ,rowNum, "US Building AbovegroundTestProject"+" " + CommonMethod.randomNumber() );
+	data.setCellData(sheetName,"Project Name" ,rowNum, "US Building Underground"+" " + CommonMethod.randomNumber() );
 													   
 	String prjName 	= data.getCellData(sheetName, "Project Name", rowNum);
 	

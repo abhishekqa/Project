@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="1" total="3" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="SanityTestCasesSuite" duration-ms="117050" started-at="2017-11-14T04:20:06Z" finished-at="2017-11-14T04:22:03Z">
+  <suite name="SanityTestCasesSuite" duration-ms="279968" started-at="2017-11-14T07:26:16Z" finished-at="2017-11-14T07:30:56Z">
     <groups>
     </groups>
-    <test name="ARCRegressionTest-Building-LEED" duration-ms="117050" started-at="2017-11-14T04:20:06Z" finished-at="2017-11-14T04:22:03Z">
-      <class name="com.arc.testcases.MyBuildings.LEED.EnergyFileUploadTest">
-        <test-method status="PASS" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.LEED.EnergyFileUploadTest@59ec2012]" name="setup" is-config="true" duration-ms="29273" started-at="2017-11-14T09:50:06Z" finished-at="2017-11-14T09:50:35Z">
+    <test name="ARCRegressionTest-Building-Transit" duration-ms="279968" started-at="2017-11-14T07:26:16Z" finished-at="2017-11-14T07:30:56Z">
+      <class name="com.arc.testcases.MyBuildings.LEEDfortransit.PrecertificationPayTest">
+        <test-method status="PASS" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.LEEDfortransit.PrecertificationPayTest@26426fde]" name="setup" is-config="true" duration-ms="16929" started-at="2017-11-14T12:57:57Z" finished-at="2017-11-14T12:58:14Z">
           <params>
             <param index="0">
               <value>
@@ -23,11 +23,134 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="energyFileUploadTest(int, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.LEED.EnergyFileUploadTest@59ec2012]" name="energyFileUploadTest" duration-ms="86500" started-at="2017-11-14T09:50:35Z" finished-at="2017-11-14T09:52:01Z">
+        <test-method status="FAIL" signature="precertificationPay(int, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.LEEDfortransit.PrecertificationPayTest@26426fde]" name="precertificationPay" duration-ms="87642" started-at="2017-11-14T12:58:14Z" finished-at="2017-11-14T12:59:41Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[2]]>
+                <![CDATA[3]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[NewBuildingProject]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Login]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Payment]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.Error">
+            <message>
+              <![CDATA[Unable to locate element: {"method":"xpath","selector":".//*[text()='Submit for Review']"}
+Command duration or timeout: 65.66 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'G10GNLT041', ip: '172.18.0.18', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_51'
+*** Element info: {Using=xpath, value=.//*[text()='Submit for Review']}
+Session ID: 0913b846-1437-4a7b-af1f-9895cb6b6b19
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=46.0}]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Error: Unable to locate element: {"method":"xpath","selector":".//*[text()='Submit for Review']"}
+Command duration or timeout: 65.66 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'G10GNLT041', ip: '172.18.0.18', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_51'
+*** Element info: {Using=xpath, value=.//*[text()='Submit for Review']}
+Session ID: 0913b846-1437-4a7b-af1f-9895cb6b6b19
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=46.0}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at com.arc.driver.CommonMethod.findElement(CommonMethod.java:85)
+	at com.arc.driver.CommonMethod.click(CommonMethod.java:164)
+	at com.arc.ReusableMethods.ReusableMethodsPrerequisites.ClickSubmitforReview(ReusableMethodsPrerequisites.java:68)
+	at com.arc.testcases.MyBuildings.LEEDfortransit.PrecertificationPayTest.precertificationPay(PrecertificationPayTest.java:39)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1191)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.run(TestNG.java:1024)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Error -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- precertificationPay -->
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.arc.testcases.MyBuildings.LEEDfortransit.PrecertificationPayTest@26426fde]" name="teardown" is-config="true" duration-ms="171" started-at="2017-11-14T12:59:41Z" finished-at="2017-11-14T12:59:42Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=precertificationPay status=FAILURE method=PrecertificationPayTest.precertificationPay(int, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.LEEDfortransit.PrecertificationPayTest@26426fde] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="end()[pri:0, instance:com.arc.testcases.MyBuildings.LEEDfortransit.PrecertificationPayTest@26426fde]" name="end" is-config="true" duration-ms="1329" started-at="2017-11-14T12:59:42Z" finished-at="2017-11-14T12:59:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- end -->
+      </class> <!-- com.arc.testcases.MyBuildings.LEEDfortransit.PrecertificationPayTest -->
+      <class name="com.arc.testcases.MyBuildings.LEEDfortransit.UnderGroundAddNewProjectTest">
+        <test-method status="PASS" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.LEEDfortransit.UnderGroundAddNewProjectTest@53be6b71]" name="setup" is-config="true" duration-ms="15789" started-at="2017-11-14T12:59:43Z" finished-at="2017-11-14T12:59:59Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[staging]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="addNewProject(int, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.LEEDfortransit.UnderGroundAddNewProjectTest@53be6b71]" name="addNewProject" duration-ms="55454" started-at="2017-11-14T12:59:59Z" finished-at="2017-11-14T13:00:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[3]]>
               </value>
             </param>
             <param index="1">
@@ -43,23 +166,82 @@
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- energyFileUploadTest -->
-        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.arc.testcases.MyBuildings.LEED.EnergyFileUploadTest@59ec2012]" name="teardown" is-config="true" duration-ms="377" started-at="2017-11-14T09:52:01Z" finished-at="2017-11-14T09:52:02Z">
+        </test-method> <!-- addNewProject -->
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.arc.testcases.MyBuildings.LEEDfortransit.UnderGroundAddNewProjectTest@53be6b71]" name="teardown" is-config="true" duration-ms="120" started-at="2017-11-14T13:00:54Z" finished-at="2017-11-14T13:00:54Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=energyFileUploadTest status=SUCCESS method=EnergyFileUploadTest.energyFileUploadTest(int, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.LEED.EnergyFileUploadTest@59ec2012] output={null}]]]>
+                <![CDATA[[TestResult name=addNewProject status=SUCCESS method=UnderGroundAddNewProjectTest.addNewProject(int, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.LEEDfortransit.UnderGroundAddNewProjectTest@53be6b71] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method status="PASS" signature="end()[pri:0, instance:com.arc.testcases.MyBuildings.LEED.EnergyFileUploadTest@59ec2012]" name="end" is-config="true" duration-ms="885" started-at="2017-11-14T09:52:02Z" finished-at="2017-11-14T09:52:03Z">
+        <test-method status="PASS" signature="end()[pri:0, instance:com.arc.testcases.MyBuildings.LEEDfortransit.UnderGroundAddNewProjectTest@53be6b71]" name="end" is-config="true" duration-ms="1294" started-at="2017-11-14T13:00:54Z" finished-at="2017-11-14T13:00:56Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- end -->
-      </class> <!-- com.arc.testcases.MyBuildings.LEED.EnergyFileUploadTest -->
-    </test> <!-- ARCRegressionTest-Building-LEED -->
+      </class> <!-- com.arc.testcases.MyBuildings.LEEDfortransit.UnderGroundAddNewProjectTest -->
+      <class name="com.arc.testcases.MyBuildings.LEEDfortransit.PreCertReviewTest">
+        <test-method status="PASS" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.LEEDfortransit.PreCertReviewTest@5ce69508]" name="setup" is-config="true" duration-ms="19773" started-at="2017-11-14T12:56:16Z" finished-at="2017-11-14T12:56:35Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[staging]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="PreCertReview(int, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.LEEDfortransit.PreCertReviewTest@5ce69508]" name="PreCertReview" duration-ms="79418" started-at="2017-11-14T12:56:35Z" finished-at="2017-11-14T12:57:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[NewBuildingProject]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Login]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Payment]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PreCertReview -->
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.arc.testcases.MyBuildings.LEEDfortransit.PreCertReviewTest@5ce69508]" name="teardown" is-config="true" duration-ms="628" started-at="2017-11-14T12:57:55Z" finished-at="2017-11-14T12:57:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=PreCertReview status=SUCCESS method=PreCertReviewTest.PreCertReview(int, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.LEEDfortransit.PreCertReviewTest@5ce69508] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="end()[pri:0, instance:com.arc.testcases.MyBuildings.LEEDfortransit.PreCertReviewTest@5ce69508]" name="end" is-config="true" duration-ms="1387" started-at="2017-11-14T12:57:56Z" finished-at="2017-11-14T12:57:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- end -->
+      </class> <!-- com.arc.testcases.MyBuildings.LEEDfortransit.PreCertReviewTest -->
+    </test> <!-- ARCRegressionTest-Building-Transit -->
   </suite> <!-- SanityTestCasesSuite -->
 </testng-results>

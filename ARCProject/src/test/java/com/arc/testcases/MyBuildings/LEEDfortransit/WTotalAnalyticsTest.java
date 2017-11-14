@@ -2,6 +2,7 @@ package com.arc.testcases.MyBuildings.LEEDfortransit;
 
 import java.io.IOException;
 
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import com.arc.ReusableMethods.ReusableMethodsDataInput;
@@ -12,7 +13,8 @@ import com.arc.driver.CommonMethod;
 
 public class  WTotalAnalyticsTest extends BaseClass {
 	
-	@Test(dependsOnMethods = { "com.arc.testcases.MyBuildings.LEEDfortransit.LoginCaseTest.loginCaseTest","com.arc.testcases.MyBuildings.LEEDfortransit.ClickSearchedProgramTest.clickSearchedProgramTest","com.arc.testcases.MyBuildings.LEEDfortransit.PaymentbyCCTest.paymentbyCC" })
+	@Test(dependsOnMethods = { "com.arc.testcases.MyBuildings.LEEDfortransit.LoginCaseTest.loginCase","com.arc.testcases.MyBuildings.LEEDfortransit.ClickSearchedProgramTest.clickSearchedProgram","com.arc.testcases.MyBuildings.LEEDfortransit.PaymentbyCCTest.paymentbyCC" })
+	@Parameters({"rowNum" ,"buildingSheet","loginSheet"})
 	public void verifyWDailiyMTCO2(int rowNum, String buildingSheet, String loginSheet) throws IOException {
 		
 		CommonMethod.ExtentReportConfig();

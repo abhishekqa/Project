@@ -18,7 +18,7 @@ import com.arc.driver.CommonMethod;
 public class PrecertificationPayTest extends BaseClass {
 
 	
-	@Test(dependsOnMethods = { "com.arc.testcases.MyBuildings.LEED.LoginCaseTest.loginCaseTest","com.arc.testcases.MyBuildings.LEED.SearchProgramTest.searchProgramTest","com.arc.testcases.MyBuildings.LEED.ClickSearchedProgramTest.clickSearchedProgramTest","com.arc.testcases.MyBuildings.LEED.PaymentbyCCTest.paymentbyCCTest","com.arc.testcases.MyBuildings.LEED.PrerequisitesAttemptTest.prerequisitesAttemptTest","com.arc.testcases.MyBuildings.LEED.VerifyRequirementsCompleteTest.verifyRequirementsComplete" })
+	@Test(dependsOnMethods = { "com.arc.testcases.MyBuildings.LEED.LoginCaseTest.loginCase","com.arc.testcases.MyBuildings.LEED.ClickSearchedProgramTest.clickSearchedProgram","com.arc.testcases.MyBuildings.LEED.PaymentbyCCTest.paymentbyCC","com.arc.testcases.MyBuildings.LEED.PrerequisitesAttemptTest.prerequisitesAttempt"})
 	@Parameters({"rowNum" ,"buildingSheet","loginSheet","paymentSheet"})
 	public void precertificationPay(int rowNum, String buildingSheet, String loginSheet, String paymentSheet) throws IOException {
 		

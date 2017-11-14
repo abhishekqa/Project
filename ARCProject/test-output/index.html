@@ -23,7 +23,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -37,7 +37,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-SanityTestCasesSuite">
-              <span class="suite-name border-passed">SanityTestCasesSuite</span>
+              <span class="suite-name border-failed">SanityTestCasesSuite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -48,7 +48,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-SanityTestCasesSuite">
-                    <span>C:\Users\Lenovo\Documents\WorkSpace\ARCProject\src\main\resources\testng.xml</span>
+                    <span>C:\Users\group10\workspace\ARCProject\src\main\resources\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -90,7 +90,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">3 methods, 1 failed,   2 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-SanityTestCasesSuite" class="hide-methods failed suite-SanityTestCasesSuite"> (hide)</a> <!-- hide-methods failed suite-SanityTestCasesSuite -->
+                      <a href="#" panel-name="suite-SanityTestCasesSuite" class="show-methods failed suite-SanityTestCasesSuite"> (show)</a> <!-- show-methods failed suite-SanityTestCasesSuite -->
+                    </span>
+                    <div class="method-list-content failed suite-SanityTestCasesSuite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-SanityTestCasesSuite" title="com.arc.testcases.MyBuildings.LEEDfortransit.PrecertificationPayTest" hash-for-method="precertificationPay(3, NewBuildingProject, Login, Payment)">precertificationPay(3, NewBuildingProject, Login, Payment)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-SanityTestCasesSuite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -101,7 +115,12 @@
                     <div class="method-list-content passed suite-SanityTestCasesSuite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-SanityTestCasesSuite" title="com.arc.testcases.MyBuildings.LEED.EnergyFileUploadTest" hash-for-method="energyFileUploadTest(2, NewBuildingProject, Login)">energyFileUploadTest(2, NewBuildingProject, Login)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-SanityTestCasesSuite" title="com.arc.testcases.MyBuildings.LEEDfortransit.PreCertReviewTest" hash-for-method="PreCertReview(3, NewBuildingProject, Login, Payment)">PreCertReview(3, NewBuildingProject, Login, Payment)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-SanityTestCasesSuite" title="com.arc.testcases.MyBuildings.LEEDfortransit.UnderGroundAddNewProjectTest" hash-for-method="addNewProject(3, NewBuildingProject, Login)">addNewProject(3, NewBuildingProject, Login)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-SanityTestCasesSuite -->
@@ -116,18 +135,72 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-SanityTestCasesSuite" class="panel SanityTestCasesSuite">
-          <div class="suite-SanityTestCasesSuite-class-passed">
+          <div class="suite-SanityTestCasesSuite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.arc.testcases.MyBuildings.LEED.EnergyFileUploadTest</span>
+              <img src="failed.png"/>
+              <span class="class-name">com.arc.testcases.MyBuildings.LEEDfortransit.PrecertificationPayTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="energyFileUploadTest(2, NewBuildingProject, Login)">
-                  </a> <!-- energyFileUploadTest(2, NewBuildingProject, Login) -->
-                  <span class="method-name">energyFileUploadTest</span>
-                  <span class="parameters">(2, NewBuildingProject, Login)</span>
+                  <a name="precertificationPay(3, NewBuildingProject, Login, Payment)">
+                  </a> <!-- precertificationPay(3, NewBuildingProject, Login, Payment) -->
+                  <span class="method-name">precertificationPay</span>
+                  <span class="parameters">(3, NewBuildingProject, Login, Payment)</span>
+                  <div class="stack-trace">java.lang.Error: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;.//*[text()=&apos;Submit for Review&apos;]&quot;}
+Command duration or timeout: 65.66 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;G10GNLT041&apos;, ip: &apos;172.18.0.18&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_51&apos;
+*** Element info: {Using=xpath, value=.//*[text()=&apos;Submit for Review&apos;]}
+Session ID: 0913b846-1437-4a7b-af1f-9895cb6b6b19
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=46.0}]
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at com.arc.driver.CommonMethod.findElement(CommonMethod.java:85)
+	at com.arc.driver.CommonMethod.click(CommonMethod.java:164)
+	at com.arc.ReusableMethods.ReusableMethodsPrerequisites.ClickSubmitforReview(ReusableMethodsPrerequisites.java:68)
+	at com.arc.testcases.MyBuildings.LEEDfortransit.PrecertificationPayTest.precertificationPay(PrecertificationPayTest.java:39)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-SanityTestCasesSuite-class-failed -->
+          <div class="suite-SanityTestCasesSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.arc.testcases.MyBuildings.LEEDfortransit.PreCertReviewTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="PreCertReview(3, NewBuildingProject, Login, Payment)">
+                  </a> <!-- PreCertReview(3, NewBuildingProject, Login, Payment) -->
+                  <span class="method-name">PreCertReview</span>
+                  <span class="parameters">(3, NewBuildingProject, Login, Payment)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-SanityTestCasesSuite-class-passed -->
+          <div class="suite-SanityTestCasesSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.arc.testcases.MyBuildings.LEEDfortransit.UnderGroundAddNewProjectTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="addNewProject(3, NewBuildingProject, Login)">
+                  </a> <!-- addNewProject(3, NewBuildingProject, Login) -->
+                  <span class="method-name">addNewProject</span>
+                  <span class="parameters">(3, NewBuildingProject, Login)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -135,7 +208,7 @@
         </div> <!-- panel SanityTestCasesSuite -->
         <div panel-name="test-xml-SanityTestCasesSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Lenovo\Documents\WorkSpace\ARCProject\src\main\resources\testng.xml</span>
+            <span class="header-content">C:\Users\group10\workspace\ARCProject\src\main\resources\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -145,21 +218,23 @@
   &lt;listeners&gt;
     &lt;listener class-name=&quot;com.arc.driver.ExtentReportNG&quot;/&gt;
   &lt;/listeners&gt;
-  &lt;test name=&quot;ARCRegressionTest-Building-LEED&quot;&gt;
+  &lt;test name=&quot;ARCRegressionTest-Building-Transit&quot;&gt;
+    &lt;parameter name=&quot;paymentSheet&quot; value=&quot;Payment&quot;/&gt;
     &lt;parameter name=&quot;loginSheet&quot; value=&quot;Login&quot;/&gt;
     &lt;parameter name=&quot;buildingSheet&quot; value=&quot;NewBuildingProject&quot;/&gt;
     &lt;parameter name=&quot;environment&quot; value=&quot;staging&quot;/&gt;
-    &lt;parameter name=&quot;waterSheet&quot; value=&quot;BWater&quot;/&gt;
-    &lt;parameter name=&quot;wasteSheet&quot; value=&quot;BWaste&quot;/&gt;
-    &lt;parameter name=&quot;rowNum&quot; value=&quot;2&quot;/&gt;
-    &lt;parameter name=&quot;browserName&quot; value=&quot;firefox&quot;/&gt;
     &lt;parameter name=&quot;energySheet&quot; value=&quot;BEnergy&quot;/&gt;
+    &lt;parameter name=&quot;browserName&quot; value=&quot;firefox&quot;/&gt;
+    &lt;parameter name=&quot;wasteSheet&quot; value=&quot;BWaste&quot;/&gt;
+    &lt;parameter name=&quot;waterSheet&quot; value=&quot;BWater&quot;/&gt;
     &lt;parameter name=&quot;teamSheet&quot; value=&quot;BTeam&quot;/&gt;
-    &lt;parameter name=&quot;paymentSheet&quot; value=&quot;Payment&quot;/&gt;
+    &lt;parameter name=&quot;rowNum&quot; value=&quot;3&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.arc.testcases.MyBuildings.LEED.EnergyFileUploadTest&quot;/&gt;
+      &lt;class name=&quot;com.arc.testcases.MyBuildings.LEEDfortransit.PreCertReviewTest&quot;/&gt;
+      &lt;class name=&quot;com.arc.testcases.MyBuildings.LEEDfortransit.PrecertificationPayTest&quot;/&gt;
+      &lt;class name=&quot;com.arc.testcases.MyBuildings.LEEDfortransit.UnderGroundAddNewProjectTest&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- ARCRegressionTest-Building-LEED --&gt;
+  &lt;/test&gt; &lt;!-- ARCRegressionTest-Building-Transit --&gt;
 &lt;/suite&gt; &lt;!-- SanityTestCasesSuite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -171,7 +246,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">ARCRegressionTest-Building-LEED (1 class)</span>
+                <span class="test-name">ARCRegressionTest-Building-Transit (3 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -197,16 +272,24 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(3);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'energyFileUploadTest')
-data.setCell(0, 2, 'com.arc.testcases.MyBuildings.LEED.EnergyFileUploadTest')
-data.setCell(0, 3, 86500);
+data.setCell(0, 1, 'precertificationPay')
+data.setCell(0, 2, 'com.arc.testcases.MyBuildings.LEEDfortransit.PrecertificationPayTest')
+data.setCell(0, 3, 87642);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'PreCertReview')
+data.setCell(1, 2, 'com.arc.testcases.MyBuildings.LEEDfortransit.PreCertReviewTest')
+data.setCell(1, 3, 79418);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'addNewProject')
+data.setCell(2, 2, 'com.arc.testcases.MyBuildings.LEEDfortransit.UnderGroundAddNewProjectTest')
+data.setCell(2, 3, 55454);
 window.suiteTableData['SanityTestCasesSuite']= { tableData: data, tableDiv: 'times-div-SanityTestCasesSuite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 3 minutes</span>
               <div id="times-div-SanityTestCasesSuite">
               </div> <!-- times-div-SanityTestCasesSuite -->
             </div> <!-- times-div -->
@@ -232,22 +315,62 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.arc.testcases.MyBuildings.LEED.EnergyFileUploadTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.arc.testcases.MyBuildings.LEEDfortransit.PreCertReviewTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setup(firefox, staging)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">energyFileUploadTest(2, NewBuildingProject, Login)</span>
-                <span class="method-start">29278 ms</span>
+                <span class="method-name">PreCertReview(3, NewBuildingProject, Login, Payment)</span>
+                <span class="method-start">19780 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">teardown([TestResult name=energyFileUploadTest status=SUCCESS method=EnergyFileUploadTest.energyFileUploadTes...)</span>
-                <span class="method-start">115780 ms</span>
+                <span class="method-name">teardown([TestResult name=PreCertReview status=SUCCESS method=PreCertReviewTest.PreCertReview(int, java.lang....)</span>
+                <span class="method-start">99201 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">end</span>
-                <span class="method-start">116157 ms</span>
+                <span class="method-start">99831 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.arc.testcases.MyBuildings.LEEDfortransit.PrecertificationPayTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup(firefox, staging)</span>
+                <span class="method-start">101219 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">precertificationPay(3, NewBuildingProject, Login, Payment)</span>
+                <span class="method-start">118149 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown([TestResult name=precertificationPay status=FAILURE method=PrecertificationPayTest.precertificationP...)</span>
+                <span class="method-start">205798 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">end</span>
+                <span class="method-start">205970 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.arc.testcases.MyBuildings.LEEDfortransit.UnderGroundAddNewProjectTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup(firefox, staging)</span>
+                <span class="method-start">207299 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">addNewProject(3, NewBuildingProject, Login)</span>
+                <span class="method-start">223088 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown([TestResult name=addNewProject status=SUCCESS method=UnderGroundAddNewProjectTest.addNewProject(int,...)</span>
+                <span class="method-start">278544 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">end</span>
+                <span class="method-start">278664 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

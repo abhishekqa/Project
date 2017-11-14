@@ -9,12 +9,12 @@
   <parameter name="energySheet" value="BEnergy"/>
   <parameter name="wasteSheet" value="BWaste"/>
   <parameter name="waterSheet" value="BWater"/>
-  <parameter name="rowNum" value="6"/>
+  <parameter name="rowNum" value="3"/>
   <parameter name="teamSheet" value="BTeam"/>
   <listeners>
     <listener class-name="com.arc.driver.ExtentReportNG"/>
   </listeners>
-  <test name="ARCRegressionTest-Building-None(failed)">
+  <test name="ARCRegressionTest-Building-Transit(failed)">
     <parameter name="paymentSheet" value="Payment"/>
     <parameter name="loginSheet" value="Login"/>
     <parameter name="buildingSheet" value="NewBuildingProject"/>
@@ -24,197 +24,30 @@
     <parameter name="wasteSheet" value="BWaste"/>
     <parameter name="waterSheet" value="BWater"/>
     <parameter name="teamSheet" value="BTeam"/>
-    <parameter name="rowNum" value="6"/>
+    <parameter name="rowNum" value="3"/>
     <classes>
-      <class name="com.arc.testcases.MyBuildings.None.BillingStatusVerificationTest">
-        <methods>
-          <include name="setup"/>
-          <include name="end"/>
-          <include name="billingStatusVerificationTest"/>
-        </methods>
-      </class> <!-- com.arc.testcases.MyBuildings.None.BillingStatusVerificationTest -->
-      <class name="com.arc.testcases.MyBuildings.None.VerifyPRFileDownloadTest">
+      <class name="com.arc.testcases.MyBuildings.LEEDfortransit.PreCertReviewTest">
         <methods>
           <include name="setup"/>
           <include name="end"/>
           <include name="teardown"/>
         </methods>
-      </class> <!-- com.arc.testcases.MyBuildings.None.VerifyPRFileDownloadTest -->
-      <class name="com.arc.testcases.MyBuildings.None.ClickSearchedProgramTest">
-        <methods>
-          <include name="setup"/>
-          <include name="end"/>
-          <include name="teardown"/>
-          <include name="clickSearchedProgramTest"/>
-        </methods>
-      </class> <!-- com.arc.testcases.MyBuildings.None.ClickSearchedProgramTest -->
-      <class name="com.arc.testcases.MyBuildings.None.BillingDateVerificationTest">
+      </class> <!-- com.arc.testcases.MyBuildings.LEEDfortransit.PreCertReviewTest -->
+      <class name="com.arc.testcases.MyBuildings.LEEDfortransit.UnderGroundAddNewProjectTest">
         <methods>
           <include name="setup"/>
           <include name="end"/>
           <include name="teardown"/>
         </methods>
-      </class> <!-- com.arc.testcases.MyBuildings.None.BillingDateVerificationTest -->
-      <class name="com.arc.testcases.MyBuildings.None.LoginCaseTest">
+      </class> <!-- com.arc.testcases.MyBuildings.LEEDfortransit.UnderGroundAddNewProjectTest -->
+      <class name="com.arc.testcases.MyBuildings.LEEDfortransit.PrecertificationPayTest">
         <methods>
           <include name="setup"/>
-          <include name="end"/>
-          <include name="loginCaseTest"/>
-          <include name="teardown"/>
-        </methods>
-      </class> <!-- com.arc.testcases.MyBuildings.None.LoginCaseTest -->
-      <class name="com.arc.testcases.MyBuildings.None.EditProjectDetailsTest">
-        <methods>
-          <include name="setup"/>
+          <include name="precertificationPay" invocation-numbers="0"/>
           <include name="end"/>
           <include name="teardown"/>
         </methods>
-      </class> <!-- com.arc.testcases.MyBuildings.None.EditProjectDetailsTest -->
-      <class name="com.arc.testcases.MyBuildings.None.PaymentbyCheckTest">
-        <methods>
-          <include name="setup"/>
-          <include name="paymentbyCCTest" invocation-numbers="0"/>
-          <include name="end"/>
-          <include name="teardown"/>
-        </methods>
-      </class> <!-- com.arc.testcases.MyBuildings.None.PaymentbyCheckTest -->
-      <class name="com.arc.testcases.MyBuildings.None.ProjectFieldVerificationTest">
-        <methods>
-          <include name="setup"/>
-          <include name="end"/>
-          <include name="teardown"/>
-        </methods>
-      </class> <!-- com.arc.testcases.MyBuildings.None.ProjectFieldVerificationTest -->
-      <class name="com.arc.testcases.MyBuildings.None.BillingRegistrationAmountVerificationTest">
-        <methods>
-          <include name="setup"/>
-          <include name="end"/>
-          <include name="teardown"/>
-        </methods>
-      </class> <!-- com.arc.testcases.MyBuildings.None.BillingRegistrationAmountVerificationTest -->
-      <class name="com.arc.testcases.MyBuildings.None.EnergyMeterCreateTest">
-        <methods>
-          <include name="setup"/>
-          <include name="end"/>
-          <include name="teardown"/>
-        </methods>
-      </class> <!-- com.arc.testcases.MyBuildings.None.EnergyMeterCreateTest -->
-      <class name="com.arc.testcases.MyBuildings.None.PaymentbyCCTest">
-        <methods>
-          <include name="setup"/>
-          <include name="end"/>
-          <include name="paymentbyCCTest"/>
-          <include name="teardown"/>
-        </methods>
-      </class> <!-- com.arc.testcases.MyBuildings.None.PaymentbyCCTest -->
-      <class name="com.arc.testcases.MyBuildings.None.VerifyAgreementFileDownloadTest">
-        <methods>
-          <include name="setup"/>
-          <include name="end"/>
-          <include name="teardown"/>
-        </methods>
-      </class> <!-- com.arc.testcases.MyBuildings.None.VerifyAgreementFileDownloadTest -->
-      <class name="com.arc.testcases.MyBuildings.None.WasteMeterCreateTest">
-        <methods>
-          <include name="setup"/>
-          <include name="wasteMeterCreateTest" invocation-numbers="0"/>
-          <include name="end"/>
-          <include name="teardown"/>
-        </methods>
-      </class> <!-- com.arc.testcases.MyBuildings.None.WasteMeterCreateTest -->
-      <class name="com.arc.testcases.MyBuildings.None.UnistallAllAppsTest">
-        <methods>
-          <include name="setup"/>
-          <include name="end"/>
-          <include name="teardown"/>
-        </methods>
-      </class> <!-- com.arc.testcases.MyBuildings.None.UnistallAllAppsTest -->
-      <class name="com.arc.testcases.MyBuildings.None.PerformanceScoreVerificationReviewTest">
-        <methods>
-          <include name="waterFileUploadTest"/>
-          <include name="setup"/>
-          <include name="end"/>
-          <include name="teardown"/>
-        </methods>
-      </class> <!-- com.arc.testcases.MyBuildings.None.PerformanceScoreVerificationReviewTest -->
-      <class name="com.arc.testcases.MyBuildings.None.WasteReadingDateOverlappingTest">
-        <methods>
-          <include name="setup"/>
-          <include name="end"/>
-          <include name="wasteMeterEditReadingTest"/>
-        </methods>
-      </class> <!-- com.arc.testcases.MyBuildings.None.WasteReadingDateOverlappingTest -->
-      <class name="com.arc.testcases.MyBuildings.None.WaterFileUploadTest">
-        <methods>
-          <include name="setup"/>
-          <include name="end"/>
-          <include name="waterFileUploadTest"/>
-        </methods>
-      </class> <!-- com.arc.testcases.MyBuildings.None.WaterFileUploadTest -->
-      <class name="com.arc.testcases.MyBuildings.None.AddNewProjectINDTest">
-        <methods>
-          <include name="setup"/>
-          <include name="end"/>
-          <include name="teardown"/>
-        </methods>
-      </class> <!-- com.arc.testcases.MyBuildings.None.AddNewProjectINDTest -->
-      <class name="com.arc.testcases.MyBuildings.None.EnergyFileUploadTest">
-        <methods>
-          <include name="setup"/>
-          <include name="end"/>
-          <include name="teardown"/>
-        </methods>
-      </class> <!-- com.arc.testcases.MyBuildings.None.EnergyFileUploadTest -->
-      <class name="com.arc.testcases.MyBuildings.None.InstallAllAppsTest">
-        <methods>
-          <include name="setup"/>
-          <include name="end"/>
-          <include name="teardown"/>
-        </methods>
-      </class> <!-- com.arc.testcases.MyBuildings.None.InstallAllAppsTest -->
-      <class name="com.arc.testcases.MyBuildings.None.ProjectDetailsVerificationTest">
-        <methods>
-          <include name="setup"/>
-          <include name="projectDetailsVerificationTest"/>
-          <include name="end"/>
-        </methods>
-      </class> <!-- com.arc.testcases.MyBuildings.None.ProjectDetailsVerificationTest -->
-      <class name="com.arc.testcases.MyBuildings.None.WasteMeterEditReadingTest">
-        <methods>
-          <include name="wasteMeterEditReadingTest"/>
-          <include name="setup"/>
-          <include name="end"/>
-        </methods>
-      </class> <!-- com.arc.testcases.MyBuildings.None.WasteMeterEditReadingTest -->
-      <class name="com.arc.testcases.MyBuildings.None.WaterMeterCreateTest">
-        <methods>
-          <include name="setup"/>
-          <include name="end"/>
-          <include name="teardown"/>
-        </methods>
-      </class> <!-- com.arc.testcases.MyBuildings.None.WaterMeterCreateTest -->
-      <class name="com.arc.testcases.MyBuildings.None.EditMemberRoleManagerTest">
-        <methods>
-          <include name="setup"/>
-          <include name="end"/>
-          <include name="teardown"/>
-        </methods>
-      </class> <!-- com.arc.testcases.MyBuildings.None.EditMemberRoleManagerTest -->
-      <class name="com.arc.testcases.MyBuildings.None.AddTeamMemberTest">
-        <methods>
-          <include name="setup"/>
-          <include name="end"/>
-          <include name="teardown"/>
-        </methods>
-      </class> <!-- com.arc.testcases.MyBuildings.None.AddTeamMemberTest -->
-      <class name="com.arc.testcases.MyBuildings.None.AddNewProjectTest">
-        <methods>
-          <include name="setup"/>
-          <include name="end"/>
-          <include name="teardown"/>
-          <include name="addNewProjectTest"/>
-        </methods>
-      </class> <!-- com.arc.testcases.MyBuildings.None.AddNewProjectTest -->
+      </class> <!-- com.arc.testcases.MyBuildings.LEEDfortransit.PrecertificationPayTest -->
     </classes>
-  </test> <!-- ARCRegressionTest-Building-None(failed) -->
+  </test> <!-- ARCRegressionTest-Building-Transit(failed) -->
 </suite> <!-- Failed suite [SanityTestCasesSuite] -->

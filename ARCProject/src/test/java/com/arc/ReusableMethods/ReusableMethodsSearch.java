@@ -2,7 +2,6 @@ package com.arc.ReusableMethods;
 
 import java.io.IOException;
 
-import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 
 import com.arc.driver.CommonMethod;
@@ -17,6 +16,7 @@ public class ReusableMethodsSearch {
 		CommonMethod.clear("SearchField");
 		CommonMethod.testlog("Pass", "Clearing values in search field");
 		CommonMethod.sendKeys("SearchField",Leedid);
+		CommonMethod.click("SearchField");
 		CommonMethod.testlog("Pass", "Entering Project name in searchfield "+ Leedid);
 		
 	}
@@ -26,7 +26,8 @@ public class ReusableMethodsSearch {
 	public void VerifySearchedProgram(String Leedid)
 		throws IOException, InterruptedException {
 		SearchProgram(Leedid);
-		Thread.sleep(1000);
+		Thread.sleep(3000);
+		CommonMethod.FluentWait("NumberOfProject");
 		String NoOfProject=CommonMethod.getText("NumberOfProject");
 		System.out.println(NoOfProject);
 		//Assert.assertEquals(actual, expected);

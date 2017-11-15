@@ -12,7 +12,7 @@ import com.arc.driver.CommonMethod;
 
 public class ClickSearchedProgramTest extends BaseClass {
 
-	@Test(dependsOnMethods = { "com.arc.testcases.MyCities.LEEDforCities.LoginCaseTest.loginCase"})
+	@Test//(dependsOnMethods = { "com.arc.testcases.MyCities.LEEDforCities.LoginCaseTest.loginCase"})
 	@Parameters({"rowNum" ,"loginSheet", "citySheet"})
 	public void clickSearchedProgram(int rowNum, String loginSheet, String citySheet) throws IOException {
 		

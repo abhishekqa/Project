@@ -827,6 +827,7 @@ public void AddUndergroundProjectLEEDfortransit(int rowNum,  String sheetName ) 
 		CommonMethod.testlog( "Pass", "Entering Zipcode");
 		CommonMethod.click( "AgreeTermsProgReg");
 		CommonMethod.testlog( "Pass", "Clicking on agree to terms");
+		CommonMethod.FluentWait("NextButton");
 		CommonMethod.click( "NextButton");
 		CommonMethod.testlog( "Pass", "Clicking on Next button");
 		Thread.sleep(10000);

@@ -3,12 +3,12 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.arc.testcases.MyBuildings.LEED.EnergyFileUploadTest">
+      <class name="com.arc.testcases.MyCities.LEEDforCities.ClickSearchedProgramTest">
         <methods>
-          <include name="energyFileUploadTest"/>
+          <include name="clickSearchedProgram"/>
           <include name="end"/>
         </methods>
-      </class> <!-- com.arc.testcases.MyBuildings.LEED.EnergyFileUploadTest -->
+      </class> <!-- com.arc.testcases.MyCities.LEEDforCities.ClickSearchedProgramTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -18,7 +18,7 @@ import com.arc.driver.CommonMethod;
 public class PrecertificationPayTest extends BaseClass {
 
 
-	@Test(dependsOnMethods = { "com.arc.testcases.cities.LoginCaseTest.loginCase","com.arc.testcases.cities.SearchProgramTest.searchProgram","com.arc.testcases.cities.ClickSearchedProgramTest.clickSearchedProgram","com.arc.testcases.cities.PaymentbyCCTest.paymentbyCC","com.arc.testcases.cities.PrerequisitesAttemptTest.prerequisitesAttempt","com.arc.testcases.cities.VerifyRequirementsCompleteTest.verifyRequirementsComplete" })
+	@Test(dependsOnMethods = { "com.arc.testcases.MyCities.None.LoginCaseTest.loginCase","com.arc.testcases.MyCities.None.SearchProgramTest.searchProgram","com.arc.testcases.MyCities.None.ClickSearchedProgramTest.clickSearchedProgram","com.arc.testcases.MyCities.None.PaymentbyCCTest.paymentbyCC","com.arc.testcases.MyCities.None.PrerequisitesAttemptTest.prerequisitesAttempt" })
 	@Parameters({"rowNum" ,"loginSheet","citySheet","paymentSheet"})
 	public void precertificationPay(int rowNum, String loginSheet, String citySheet, String paymentSheet) throws IOException {
 		
@@ -33,8 +33,6 @@ public class PrecertificationPayTest extends BaseClass {
 		ReusableMethodsAddProject reuseAddProject = new ReusableMethodsAddProject();
 		
 		try {
-			
-			
 			reuse.LoginWithCities(rowNum, "My Cities", loginSheet);
 			reuseSearch.SearchProgram(data.getCellData(citySheet, "ProjectName", rowNum));
 			reuseSearch.VerifySearchedProgram(data.getCellData(citySheet, "ProjectName", rowNum));

@@ -16,7 +16,7 @@ import com.arc.driver.CommonMethod;
 public class BillingRegistrationAmountVerificationTest extends BaseClass {
 
 	
-	@Test(dependsOnMethods = { "com.arc.testcases.cities.LoginCaseTest.loginCase","com.arc.testcases.cities.SearchProgramTest.searchProgram","com.arc.testcases.cities.ClickSearchedProgramTest.clickSearchedProgram","com.arc.testcases.cities.PaymentbyCCTest.paymentbyCC","com.arc.testcases.cities.PrecertificationPayTest.precertificationPay" })
+	@Test(dependsOnMethods = { "com.arc.testcases.MyCities.None.LoginCaseTest.loginCase","com.arc.testcases.MyCities.None.SearchProgramTest.searchProgram","com.arc.testcases.MyCities.None.ClickSearchedProgramTest.clickSearchedProgram","com.arc.testcases.MyCities.None.PaymentbyCCTest.paymentbyCC","com.arc.testcases.MyCities.None.PrecertificationPayTest.precertificationPay" })
 	@Parameters({"rowNum" ,"loginSheet","citySheet","paymentSheet"})
 	public void billingRegistrationAmountVerificationTest(int rowNum, String loginSheet, String citySheet, String paymentSheet) throws IOException {
 		

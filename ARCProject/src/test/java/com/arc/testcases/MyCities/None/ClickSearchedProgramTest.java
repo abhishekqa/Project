@@ -14,7 +14,7 @@ import com.arc.driver.CommonMethod;
 
 public class ClickSearchedProgramTest extends BaseClass {
 
-	@Test(dependsOnMethods = { "com.arc.testcases.cities.LoginCaseTest.loginCase"})
+	@Test//(dependsOnMethods = { "com.arc.testcases.MyCities.None.LoginCaseTest.loginCase"})
 	@Parameters({"rowNum" ,"loginSheet","citySheet"})
 	public void clickSearchedProgram(int rowNum, String loginSheet, String citySheet) throws IOException {
 		
@@ -30,7 +30,6 @@ public class ClickSearchedProgramTest extends BaseClass {
 			
 			reuse.LoginWithCities(rowNum, "My Cities", loginSheet);
 			reuseSearch.VerifySearchedProgram(data.getCellData(citySheet, "ProjectName", rowNum));
-
 		} catch (Throwable t) {
 			System.out.println(t.getLocalizedMessage());
 			Error e1 = new Error(t.getMessage());

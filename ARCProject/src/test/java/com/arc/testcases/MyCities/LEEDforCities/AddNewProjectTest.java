@@ -27,7 +27,7 @@ public class AddNewProjectTest extends BaseClass {
 		
 		try {
 			reuse.LoginToArc(rowNum, "My Projects",loginSheet);
-			reuseAddProject.AddProjectCities(rowNum, citySheet);
+			reuseAddProject.AddProjectCitiesLEED(rowNum, citySheet);
 
 		} catch (Throwable t) {
 			System.out.println(t.getLocalizedMessage());

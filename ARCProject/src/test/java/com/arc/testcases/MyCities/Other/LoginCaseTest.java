@@ -1,22 +1,20 @@
-package com.arc.testcases.cities;
+package com.arc.testcases.MyCities.Other;
 import java.io.IOException;
 
-import org.testng.ITestResult;
-import org.testng.annotations.AfterMethod;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import com.arc.ReusableMethods.ReusableMethodsLogin;
 import com.arc.driver.BaseClass;
 import com.arc.driver.CommonMethod;
-import com.relevantcodes.extentreports.LogStatus;
 
 public class LoginCaseTest extends BaseClass {
 
 	@Test
-	
-	public void loginCaseTest() throws IOException {
+	@Parameters({"rowNum" ,"loginSheet"})
+	public void loginCase(int rowNum, String loginSheet) throws IOException {
 		
-		CommonMethod.ExtentReportConfig(driver);
+		CommonMethod.ExtentReportConfig();
 		
 		CommonMethod.test = CommonMethod.extent.startTest("Login Test-Cities", "Verifies if Login functionality is working fine").assignCategory("CheckLogin");
     
@@ -25,36 +23,15 @@ public class LoginCaseTest extends BaseClass {
 		
 		try {
 			
-			
-			reuse.LoginWithCities(4, "My Cities");
+			reuse.LoginWithCities(rowNum, "My Cities", loginSheet);
 
 		} catch (Throwable t) {
 			System.out.println(t.getLocalizedMessage());
 			Error e1 = new Error(t.getMessage());
 			e1.setStackTrace(t.getStackTrace());
 			//CommonMethod.testlogError(driver,  "<pre>" + e1.toString() + "</pre>");
-			CommonMethod.takeScreenshot(driver, "loginCaseTest-city");
+			CommonMethod.takeScreenshot("loginCaseTest-city");
 			throw e1;
 		}
 	}
-
-	@AfterMethod
-	public void teardown(ITestResult result) {
-		
-		 if (result.getStatus() == ITestResult.FAILURE) {
-			 CommonMethod.test.log(LogStatus.FAIL, result.getThrowable());
-	        } else if (result.getStatus() == ITestResult.SKIP) {
-	        CommonMethod.test.log(LogStatus.SKIP, "Test skipped " + result.getThrowable());
-	        } else {
-	        CommonMethod.test.log(LogStatus.PASS, "Test passed");
-	        }
-
-  
-		CommonMethod.extent.endTest(CommonMethod.test);
-		CommonMethod.extent.flush();
-		
-		
-		
-	}
-
 }

@@ -1,25 +1,24 @@
-package com.arc.testcases.cities;
+package com.arc.testcases.MyCities.Other;
 
 
 
 import java.io.IOException;
 
-import org.testng.ITestResult;
-import org.testng.annotations.AfterMethod;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import com.arc.ReusableMethods.ReusableMethodsLogin;
 import com.arc.ReusableMethods.ReusableMethodsSearch;
 import com.arc.driver.BaseClass;
 import com.arc.driver.CommonMethod;
-import com.relevantcodes.extentreports.LogStatus;
 
 public class SearchProgramTest extends BaseClass {
 
-	@Test(dependsOnMethods = { "com.arc.testcases.cities.LoginCaseTest.loginCaseTest"})
-	public void searchProgramTest() throws IOException {
+	@Test(dependsOnMethods = { "com.arc.testcases.MyCities.Other.LoginCaseTest.loginCase"})
+	@Parameters({"rowNum" ,"loginSheet","citySheet"})
+	public void searchProgram(int rowNum, String loginSheet, String citySheet) throws IOException {
 		
-		CommonMethod.ExtentReportConfig(driver);
+		CommonMethod.ExtentReportConfig();
 		
 		CommonMethod.test = CommonMethod.extent.startTest("SearchProgram Test-Cities", "Verifies if Search functionality is working fine").assignCategory("CheckSearch");
         
@@ -29,36 +28,16 @@ public class SearchProgramTest extends BaseClass {
 		
 		try {
 			
-			reuse.LoginWithCities(2, "My Cities");
-			reuseSearch.SearchProgram(driver, "1000124489");
+			reuse.LoginWithCities(rowNum, "My Cities", loginSheet);
+			reuseSearch.SearchProgram(data.getCellData(citySheet, "ProjectName", rowNum));
 
 		} catch (Throwable t) {
 			System.out.println(t.getLocalizedMessage());
 			Error e1 = new Error(t.getMessage());
 			e1.setStackTrace(t.getStackTrace());
 			//CommonMethod.testlogError(driver,  "<pre>" + e1.toString() + "</pre>");
-			CommonMethod.takeScreenshot(driver, "searchProgramTest-city");
+			CommonMethod.takeScreenshot("searchProgramTest-city");
 			throw e1;
 		}
 	}
-
-	@AfterMethod
-	public void teardown(ITestResult result) {
-		
-		 if (result.getStatus() == ITestResult.FAILURE) {
-			 CommonMethod.test.log(LogStatus.FAIL, result.getThrowable());
-	        } else if (result.getStatus() == ITestResult.SKIP) {
-	        CommonMethod.test.log(LogStatus.SKIP, "Test skipped " + result.getThrowable());
-	        } else {
-	        CommonMethod.test.log(LogStatus.PASS, "Test passed");
-	        }
-
-  
-		CommonMethod.extent.endTest(CommonMethod.test);
-		CommonMethod.extent.flush();
-		
-		
-		
-	}
-
 }

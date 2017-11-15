@@ -279,9 +279,7 @@
 <parameter name="waterSheet" value="BWater"/>
 <parameter name="wasteSheet" value="BWaste"/>
 <classes>
-
-
- 
+<!--  
 <class name="com.arc.testcases.MyCities.None.LoginCaseTest"></class>
 <class name="com.arc.testcases.MyCities.None.SearchProgramTest"></class>
 <class name="com.arc.testcases.MyCities.None.AddNewProjectTest"/>
@@ -298,8 +296,50 @@
 <class name="com.arc.testcases.MyCities.None.BillingRegistrationAmountVerificationTest"/>
 <class name="com.arc.testcases.MyCities.None.BillingStatusVerificationTest"/>
 <class name="com.arc.testcases.MyCities.None.PrecertificationPayTest"/> 
+ --> </classes>
+ </test>
+ 
+ 
+ 
+  <test name="ARCRegressionTest-City-Other">
+
+<parameter name="browserName" value="firefox"/>
+<parameter name="environment" value="staging"/>
+<parameter name="rowNum" value="3"/>
+<parameter name="loginSheet" value="Login"/>
+<parameter name="citySheet" value="NewCityProject"/>
+<parameter name="paymentSheet" value="Payment"/>
+<parameter name="energySheet" value="BEnergy"/>
+<parameter name="teamSheet" value="BTeam"/>
+<parameter name="waterSheet" value="BWater"/>
+<parameter name="wasteSheet" value="BWaste"/>
+<classes>
+
+
+ 
+<class name="com.arc.testcases.MyCities.Other.LoginCaseTest"></class>
+<class name="com.arc.testcases.MyCities.Other.SearchProgramTest"></class>
+<class name="com.arc.testcases.MyCities.Other.AddNewProjectTest"/>
+<class name="com.arc.testcases.MyCities.Other.ClickSearchedProgramTest"></class>
+<class name="com.arc.testcases.MyCities.Other.PaymentbyCCTest"></class>
+<class name="com.arc.testcases.MyCities.Other.PrerequisitesAttemptTest"></class>
+<class name="com.arc.testcases.MyCities.Other.ProjectFieldVerificationTest"></class>
+<class name="com.arc.testcases.MyCities.Other.EditProjectDetailsTest"></class>
+<class name="com.arc.testcases.MyCities.Other.ProjectDetailsVerificationTest"></class>
+<class name="com.arc.testcases.MyCities.Other.AddTeamMemberTest"></class>
+<class name="com.arc.testcases.MyCities.Other.VerifyAgreementFileDownloadTest"></class>
+<class name="com.arc.testcases.MyCities.Other.InstallAllAppsTest"></class>
+<class name="com.arc.testcases.MyCities.Other.BillingDateVerificationTest"></class>
+<class name="com.arc.testcases.MyCities.Other.BillingRegistrationAmountVerificationTest"/>
+<class name="com.arc.testcases.MyCities.Other.BillingStatusVerificationTest"/>
+<class name="com.arc.testcases.MyCities.Other.PrecertificationPayTest"/> 
  </classes>
  </test>
+ 
+ 
+ 
+ 
+ 
  
 </suite> 
   

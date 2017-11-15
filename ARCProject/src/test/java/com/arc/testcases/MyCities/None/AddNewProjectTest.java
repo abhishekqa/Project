@@ -30,7 +30,7 @@ public class AddNewProjectTest extends BaseClass {
 		try {
 			
 			reuse.LoginWithCities(rowNum, "My Cities", loginSheet);
-			reuseAddProject.AddProjectCities(rowNum, citySheet);
+			reuseAddProject.AddProjectCitiesNONE(rowNum, citySheet);
 
 		} catch (Throwable t) {
 			System.out.println(t.getLocalizedMessage());

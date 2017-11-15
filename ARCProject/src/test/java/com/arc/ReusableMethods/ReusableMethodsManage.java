@@ -6,7 +6,6 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 
-import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 
 import com.arc.driver.BaseClass;
@@ -82,7 +81,50 @@ public class ReusableMethodsManage extends BaseClass{
 
 	}
 
-	public void VerifyProjectDetails( String sheetName, int rowNum) throws IOException, InterruptedException {
+	public void VerifyProjectDetailsCity( String sheetName, int rowNum) throws IOException, InterruptedException {
+
+		
+		String ProjectName     = data.getCellData(sheetName, "ProjectName", rowNum);
+		String Address       = data.getCellData(sheetName, "Address", rowNum);
+		String City       = data.getCellData(sheetName, "City", rowNum);
+		String State       = data.getCellData(sheetName, "State", rowNum);
+		String Country     = data.getCellData(sheetName, "Country", rowNum);
+		String own_org     = data.getCellData(sheetName, "OwnerOrganization", rowNum);
+		String own_email   = data.getCellData(sheetName, "OwnerEmail", rowNum);
+		String own_country    = data.getCellData(sheetName, "OwnerCountry", rowNum);
+		String gross_area  = data.getCellData(sheetName, "Area", rowNum);
+		String Population   = data.getCellData(sheetName, "Population", rowNum);
+		
+		CommonMethod.ArcSpecifictoggle( "Manage");
+		CommonMethod.click( "Project");
+		CommonMethod.testlog( "Pass", "Clicking on Project");
+		System.out.println(CommonMethod.getattributeValue( "M_ProjectID_value"));
+		// CommonMethod.assertEqualsmessageAttributevalue(
+		// "M_ProjectID_value",
+		// CommonMethod.filereadID(CommonMethod.ArcProjectIDUrl), "Value is not
+		// correct");
+		CommonMethod.assertEqualsmessageAttributevalue( "M_ProjectName_value", ProjectName,
+				"Value is not correct");
+		CommonMethod.assertEqualsmessageAttributevalue( "M_Address_value", Address,
+				"Value is not correct");
+		CommonMethod.assertEqualsmessageAttributevalue( "M_City_value", City, "Value is not correct");
+		CommonMethod.assertEqualsmessageAttributevalue( "M_State_value", State, "Value is not correct");
+		CommonMethod.assertEqualsmessageAttributevalue( "M_Country_value", Country,
+				"Value is not correct");
+		//CommonMethod.assertEqualsmessageAttributevalue( "M_OwnerType_value", "T & W Corporation","Value is not correct");
+		
+		CommonMethod.assertEqualsmessageAttributevalue( "M_OwnerOrg_value", own_org, "Value is not correct");
+		CommonMethod.assertEqualsmessageAttributevalue( "M_OwnerEmail_value", own_email,
+				"Value is not correct");
+		CommonMethod.assertEqualsmessageAttributevalue( "M_OwnerCountry_value", own_country,
+				"Value is not correct");
+		CommonMethod.assertEqualsmessageAttributevalue( "M_GrossArea_value", gross_area, "Value is not correct");
+		CommonMethod.assertEqualsmessageAttributevalue( "M_Occupancy_value", Population, "Value is not correct");
+		CommonMethod.testlog( "Pass", "Verifying project details field present on Project details page");
+
+	}
+	
+public void VerifyProjectDetails( String sheetName, int rowNum) throws IOException, InterruptedException {
 
 		
 		String address     = data.getCellData(sheetName, "Address", rowNum);
@@ -231,6 +273,38 @@ public void VerifyProjectDetailsTransit( String sheetName, int rowNum) throws IO
 		CommonMethod.assertEqualsmessageAttributevalue( "M_OperatingHours_value", opr_hrs2, "Value is not correct");
 		CommonMethod.assertEqualsmessageAttributevalue( "M_Occupancy_value", occupancy, "Value is not correct");
 		CommonMethod.testlog( "Pass", "Verified Opeating hours & Occupancy project details");
+
+	}
+	
+	public void editProjectDetailsCity( String sheetName, int rowNum) throws IOException, InterruptedException {
+
+		String editArea  = data.getCellData(sheetName, "editArea", rowNum);
+		String editPopulation  = data.getCellData(sheetName, "editPopulation", rowNum);
+		
+		
+		CommonMethod.ArcSpecifictoggle( "Manage");
+		CommonMethod.click( "Project");
+		CommonMethod.testlog( "Pass", "Clicking on Project");
+		
+		CommonMethod.clear( "M_GrossArea_value");
+		CommonMethod.clear( "M_Occupancy_value");
+		
+		
+		CommonMethod.sendKeys( "M_GrossArea_value", editArea);
+		Thread.sleep(1000);
+		CommonMethod.click( "M_GrossArea_value");
+		Thread.sleep(2000);
+		
+	
+		CommonMethod.sendKeys( "M_Occupancy_value", editPopulation);
+		CommonMethod.click( "M_Occupancy_value");
+		Thread.sleep(2000);
+		CommonMethod.testlog( "Pass", "Area and Population field edited");
+		Thread.sleep(1000);
+		
+		CommonMethod.assertEqualsmessageAttributevalue( "M_GrossArea_value", editArea, "Value is not correct");
+		CommonMethod.assertEqualsmessageAttributevalue( "M_Occupancy_value", editPopulation, "Value is not correct");
+		CommonMethod.testlog( "Pass", "Verified Area and population is saving after editing");
 
 	}
 	public void editProjectDetailsParking() throws IOException, InterruptedException {
@@ -457,7 +531,7 @@ public void VerifyProjectDetailsTransit( String sheetName, int rowNum) throws IO
 		CommonMethod.testlog( "Pass", "Clicking on Apps To Unistall");
 		CommonMethod.click( "Apps");
 		CommonMethod.click( "EnergyStar");
-		CommonMethod.testlog( "Pass", "Installing Energystar(Default Install Uninstalled to installed)");
+		CommonMethod.testlog( "Pass", "Uninstalling EnergyStar");
 		Thread.sleep(2000);
 		 CommonMethod.assertEqualsmessage( "InfoMessage", "Uninstalled successfully.", "something went wrong");
 		CommonMethod.click( "DropBox");

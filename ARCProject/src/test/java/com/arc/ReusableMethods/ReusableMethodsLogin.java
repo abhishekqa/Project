@@ -122,7 +122,7 @@ public class ReusableMethodsLogin extends BaseClass {
   		clickOnSubmit();
   		CommonMethod.testlog("Info", "Clicking on submit button");
   		Thread.sleep(4000);
-  		CommonMethod.click("CitiesClick");
+  		CommonMethod.click("CitiesSideBar");
   		Thread.sleep(2000);
   		assertPostLoginText(Postlogintext);
   		CommonMethod.testlog("Pass", "Login Validation thorugh Post Login Welcome Text");

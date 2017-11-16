@@ -92,8 +92,8 @@ public class ReusableMethodsManage extends BaseClass{
 		String own_org     = data.getCellData(sheetName, "OwnerOrganization", rowNum);
 		String own_email   = data.getCellData(sheetName, "OwnerEmail", rowNum);
 		String own_country    = data.getCellData(sheetName, "OwnerCountry", rowNum);
-		String gross_area  = data.getCellData(sheetName, "Area", rowNum);
-		String Population   = data.getCellData(sheetName, "Population", rowNum);
+		String gross_area  = data.getCellData(sheetName, "editArea", rowNum);
+		String Population   = data.getCellData(sheetName, "editPopulation", rowNum);
 		
 		CommonMethod.ArcSpecifictoggle( "Manage");
 		CommonMethod.click( "Project");
@@ -292,12 +292,12 @@ public void VerifyProjectDetailsTransit( String sheetName, int rowNum) throws IO
 		
 		CommonMethod.sendKeys( "M_GrossArea_value", editArea);
 		Thread.sleep(1000);
-		CommonMethod.click( "M_GrossArea_value");
+		CommonMethod.click( "M_Occupancy_value");
 		Thread.sleep(2000);
 		
 	
 		CommonMethod.sendKeys( "M_Occupancy_value", editPopulation);
-		CommonMethod.click( "M_Occupancy_value");
+		CommonMethod.click( "M_GrossArea_value");
 		Thread.sleep(2000);
 		CommonMethod.testlog( "Pass", "Area and Population field edited");
 		Thread.sleep(1000);

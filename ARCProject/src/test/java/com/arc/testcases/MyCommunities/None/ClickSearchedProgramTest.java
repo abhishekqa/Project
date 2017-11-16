@@ -14,7 +14,7 @@ import com.arc.driver.CommonMethod;
 
 public class ClickSearchedProgramTest extends BaseClass {
 
-	@Test(dependsOnMethods = { "com.arc.testcases.MyCommunities.None.LoginCaseTest.loginCase"})
+	@Test//(dependsOnMethods = { "com.arc.testcases.MyCommunities.None.LoginCaseTest.loginCase"})
 	@Parameters({"rowNum" ,"loginSheet","communitySheet"})
 	public void clickSearchedProgram(int rowNum, String loginSheet, String communitySheet) throws IOException {
 		

@@ -16,7 +16,7 @@ import com.arc.driver.CommonMethod;
 public class EditMemberRoleManagerTest extends BaseClass {
 
 	
-	@Test(dependsOnMethods = { "com.arc.testcases.MyCommunities.None.LoginCaseTest.loginCase","com.arc.testcases.MyCommunities.None.SearchProgramTest.searchProgram","com.arc.testcases.MyCommunities.None.ClickSearchedProgramTest.clickSearchedProgram","com.arc.testcases.MyCommunities.None.PaymentbyCCTest.paymentbyCC","com.arc.testcases.MyCommunities.None.AddTeamMemberTest.addTeamMember" })
+	@Test//(dependsOnMethods = { "com.arc.testcases.MyCommunities.None.LoginCaseTest.loginCase","com.arc.testcases.MyCommunities.None.SearchProgramTest.searchProgram","com.arc.testcases.MyCommunities.None.ClickSearchedProgramTest.clickSearchedProgram","com.arc.testcases.MyCommunities.None.PaymentbyCCTest.paymentbyCC","com.arc.testcases.MyCommunities.None.AddTeamMemberTest.addTeamMember" })
 	@Parameters({"rowNum" ,"loginSheet","communitySheet"})
 	public void editMemberRoleManager(int rowNum, String loginSheet, String communitySheet) throws IOException {
 		
@@ -34,7 +34,7 @@ public class EditMemberRoleManagerTest extends BaseClass {
 			reuse.LoginWithCommunities(rowNum, "My Communities", loginSheet);
 			reuseSearch.SearchProgram(data.getCellData(communitySheet, "ProjectName", rowNum));
 			reuseSearch.VerifySearchedProgram(data.getCellData(communitySheet, "ProjectName", rowNum));
-			reuseManage.EditTeamMemberRole("ARC Project Team Manager");
+			reuseManage.EditTeamMemberRole("Team Manager");
 
 		} catch (Throwable t) {
 			System.out.println(t.getLocalizedMessage());

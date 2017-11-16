@@ -16,7 +16,7 @@ import com.arc.driver.CommonMethod;
 public class PaymentbyCCTest extends BaseClass {
 
 	
-	@Test(dependsOnMethods = { "com.arc.testcases.MyCommunities.None.LoginCaseTest.loginCase","com.arc.testcases.MyCommunities.None.SearchProgramTest.searchProgram","com.arc.testcases.MyCommunities.None.ClickSearchedProgramTest.clickSearchedProgram","com.arc.testcases.MyCommunities.None.AddNewProjectTest.addNewProject" })
+	@Test//(dependsOnMethods = { "com.arc.testcases.MyCommunities.None.LoginCaseTest.loginCase","com.arc.testcases.MyCommunities.None.SearchProgramTest.searchProgram","com.arc.testcases.MyCommunities.None.ClickSearchedProgramTest.clickSearchedProgram","com.arc.testcases.MyCommunities.None.AddNewProjectTest.addNewProject" })
 	@Parameters({"rowNum" ,"loginSheet","communitySheet", "paymentSheet"})
 	public void paymentbyCC(int rowNum, String loginSheet, String communitySheet, String paymentSheet) throws IOException {
 		

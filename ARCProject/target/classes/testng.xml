@@ -13,7 +13,7 @@
 
 <parameter name="browserName" value="firefox"/>
 <parameter name="environment" value="staging"/>
-<parameter name="rowNum" value="2"/>
+<parameter name="rowNum" value="3"/>
 <parameter name="loginSheet" value="Login"/>
 <parameter name="communitySheet" value="NewCommunityProject"/>
 <parameter name="paymentSheet" value="Payment"/>
@@ -23,26 +23,27 @@
 <parameter name="wasteSheet" value="BWaste"/>
 <classes>
  
-<class name="com.arc.testcases.MyCommunities.LEEDforCommunities.BillingDateVerificationTest"></class>
-<!-- <class name="com.arc.testcases.MyCommunities.LEEDforCommunities.LoginCaseTest"></class>
-<class name="com.arc.testcases.MyCommunities.LEEDforCommunities.AddNewProjectTest"></class>
-<class name="com.arc.testcases.MyCommunities.LEEDforCommunities.SearchProgramTest"></class>
-<class name="com.arc.testcases.MyCommunities.LEEDforCommunities.ClickSearchedProgramTest"></class>
-<class name="com.arc.testcases.MyCommunities.LEEDforCommunities.PaymentbyCCTest"></class>
-<class name="com.arc.testcases.MyCommunities.LEEDforCommunities.EditProjectDetailsTest"></class>
-<class name="com.arc.testcases.MyCommunities.LEEDforCommunities.ProjectFieldVerificationTest"></class>
-<class name="com.arc.testcases.MyCommunities.LEEDforCommunities.ProjectDetailsVerificationTest"></class>
-<class name="com.arc.testcases.MyCommunities.LEEDforCommunities.AddTeamMemberTest"></class>
-<class name="com.arc.testcases.MyCommunities.LEEDforCommunities.EditMemberRoleManagerTest"></class>
-<class name="com.arc.testcases.MyCommunities.LEEDforCommunities.VerifyAgreementFileDownloadTest"></class>
-<class name="com.arc.testcases.MyCommunities.LEEDforCommunities.PreCertReviewTest"></class>
-<class name="com.arc.testcases.MyCommunities.LEEDforCommunities.VerifyCertificationStatusTest"></class>
-<class name="com.arc.testcases.MyCommunities.LEEDforCommunities.InstallAllAppsTest"></class>
-<class name="com.arc.testcases.MyCommunities.LEEDforCommunities.BillingDateVerificationTest"></class>
-<class name="com.arc.testcases.MyCommunities.LEEDforCommunities.BillingRegistrationAmountVerificationTest"></class>
-<class name="com.arc.testcases.MyCommunities.LEEDforCommunities.BillingStatusVerificationTest"></class>
+<class name="com.arc.testcases.MyCommunities.None.PerformanceReviewTest"></class>
 
- -->
+<!-- <class name="com.arc.testcases.MyCommunities.None.LoginCaseTest"></class>
+<class name="com.arc.testcases.MyCommunities.None.AddNewProjectTest"></class>
+<class name="com.arc.testcases.MyCommunities.None.SearchProgramTest"></class>
+<class name="com.arc.testcases.MyCommunities.None.ClickSearchedProgramTest"></class>
+<class name="com.arc.testcases.MyCommunities.None.PaymentbyCCTest"></class>
+<class name="com.arc.testcases.MyCommunities.None.EditProjectDetailsTest"></class>
+<class name="com.arc.testcases.MyCommunities.None.ProjectFieldVerificationTest"></class>
+<class name="com.arc.testcases.MyCommunities.None.ProjectDetailsVerificationTest"></class>
+<class name="com.arc.testcases.MyCommunities.None.AddTeamMemberTest"></class>
+<class name="com.arc.testcases.MyCommunities.None.EditMemberRoleManagerTest"></class>
+<class name="com.arc.testcases.MyCommunities.None.VerifyAgreementFileDownloadTest"></class>
+<class name="com.arc.testcases.MyCommunities.None.PerformanceReviewTest"></class>
+<class name="com.arc.testcases.MyCommunities.None.VerifyCertificationStatusTest"></class>
+<class name="com.arc.testcases.MyCommunities.None.InstallAllAppsTest"></class>
+<class name="com.arc.testcases.MyCommunities.None.BillingDateVerificationTest"></class>
+<class name="com.arc.testcases.MyCommunities.None.BillingRegistrationAmountVerificationTest"></class>
+<class name="com.arc.testcases.MyCommunities.None.BillingStatusVerificationTest"></class>
+
+  -->
 
 
 </classes>

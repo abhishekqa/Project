@@ -9,7 +9,7 @@
   <parameter name="wasteSheet" value="BWaste"/>
   <parameter name="waterSheet" value="BWater"/>
   <parameter name="communitySheet" value="NewCommunityProject"/>
-  <parameter name="rowNum" value="2"/>
+  <parameter name="rowNum" value="3"/>
   <parameter name="teamSheet" value="BTeam"/>
   <listeners>
     <listener class-name="com.arc.driver.ExtentReportNG"/>
@@ -24,16 +24,16 @@
     <parameter name="waterSheet" value="BWater"/>
     <parameter name="communitySheet" value="NewCommunityProject"/>
     <parameter name="teamSheet" value="BTeam"/>
-    <parameter name="rowNum" value="2"/>
+    <parameter name="rowNum" value="3"/>
     <classes>
-      <class name="com.arc.testcases.MyCommunities.LEEDforCommunities.BillingRegistrationAmountVerificationTest">
+      <class name="com.arc.testcases.MyCommunities.None.PerformanceReviewTest">
         <methods>
           <include name="setup"/>
           <include name="end"/>
-          <include name="billingRegistrationAmountVerification" invocation-numbers="0"/>
+          <include name="waterFileUploadTest" invocation-numbers="0"/>
           <include name="teardown"/>
         </methods>
-      </class> <!-- com.arc.testcases.MyCommunities.LEEDforCommunities.BillingRegistrationAmountVerificationTest -->
+      </class> <!-- com.arc.testcases.MyCommunities.None.PerformanceReviewTest -->
     </classes>
   </test> <!-- ARCRegressionTest-LEED-for-Communities(failed) -->
 </suite> <!-- Failed suite [SanityTestCasesSuite] -->

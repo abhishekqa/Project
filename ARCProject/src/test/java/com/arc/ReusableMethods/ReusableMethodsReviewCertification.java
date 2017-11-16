@@ -272,7 +272,7 @@ public class ReusableMethodsReviewCertification extends BaseClass{
 	   	CommonMethod.click( "ClickCertification");
 	   	Thread.sleep(1000);
 	   	CommonMethod.click( "SelectCertification");
-		 MarkDataInput();
+		MarkDataInput();
 	   	 
         CommonMethod.sendKeys("R_TextArea","Welcome to Arc -> Features of Arc to keep their LEED certification up to date. Project leads can also use Arc for performance data tracking ." );
 	   	CommonMethod.testlog( "Pass","Sended text area values correctly");

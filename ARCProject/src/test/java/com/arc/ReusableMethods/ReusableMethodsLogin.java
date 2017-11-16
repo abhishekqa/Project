@@ -147,7 +147,7 @@ public class ReusableMethodsLogin extends BaseClass {
     			CommonMethod.click("siderBarBuilding");
     			CommonMethod.testlog("Pass", "Clicking on My Buildings SiderBarBuilding");
     			Thread.sleep(1000);
-    			CommonMethod.click("CommunitiesClick");
+    			CommonMethod.click("CommunitySideBar");
     	        CommonMethod.testlog("Pass", "Clicking on My Communities Buttion");
     	        Thread.sleep(2000);
     			assertPostLoginText(Postlogintext);

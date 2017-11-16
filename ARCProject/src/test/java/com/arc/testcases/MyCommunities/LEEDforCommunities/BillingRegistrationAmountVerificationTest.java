@@ -16,9 +16,9 @@ import com.arc.driver.CommonMethod;
 public class BillingRegistrationAmountVerificationTest extends BaseClass {
 
 	
-	@Test(dependsOnMethods = { "com.arc.testcases.MyCommunities.LEEDforCommunities.LoginCaseTest.loginCase","com.arc.testcases.MyCommunities.LEEDforCommunities.SearchProgramTest.searchProgram","com.arc.testcases.MyCommunities.LEEDforCommunities.ClickSearchedProgramTest.clickSearchedProgram","com.arc.testcases.MyCommunities.LEEDforCommunities.PaymentbyCCTest.paymentbyCC","com.arc.testcases.MyCommunities.LEEDforCommunities.PrecertificationPayTest.precertificationPay" })
-	@Parameters({"rowNum" ,"loginSheet","communitySheet", "paymentSheet"})
-	public void billingRegistrationAmountVerification(int rowNum, String loginSheet, String communitySheet, String paymentSheet) throws IOException {
+	@Test//(dependsOnMethods = { "com.arc.testcases.MyCommunities.LEEDforCommunities.LoginCaseTest.loginCase","com.arc.testcases.MyCommunities.LEEDforCommunities.SearchProgramTest.searchProgram","com.arc.testcases.MyCommunities.LEEDforCommunities.ClickSearchedProgramTest.clickSearchedProgram","com.arc.testcases.MyCommunities.LEEDforCommunities.PaymentbyCCTest.paymentbyCC","com.arc.testcases.MyCommunities.LEEDforCommunities.PrecertificationPayTest.precertificationPay" })
+	@Parameters({"rowNum" ,"loginSheet","communitySheet"})
+	public void billingRegistrationAmountVerification(int rowNum, String loginSheet, String communitySheet) throws IOException {
 		
 		CommonMethod.ExtentReportConfig();
 		
@@ -33,7 +33,7 @@ public class BillingRegistrationAmountVerificationTest extends BaseClass {
 			reuse.LoginWithCommunities(rowNum, "My Communities", loginSheet);
 			reuseSearch.SearchProgram(data.getCellData(communitySheet, "ProjectName", rowNum));
 			reuseSearch.VerifySearchedProgram(data.getCellData(communitySheet, "ProjectName", rowNum));
-			reuseManage.verifyRegAmount(paymentSheet, rowNum);
+			reuseManage.verifyRegAmount(communitySheet, rowNum);
 
 		} catch (Throwable t) {
 			System.out.println(t.getLocalizedMessage());

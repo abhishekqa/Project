@@ -16,7 +16,7 @@ import com.arc.driver.CommonMethod;
 public class ProjectDetailsVerificationTest extends BaseClass {
 
 	
-	@Test(dependsOnMethods = { "com.arc.testcases.MyCommunities.LEEDforCommunities.LoginCaseTest.loginCase","com.arc.testcases.MyCommunities.LEEDforCommunities.SearchProgramTest.searchProgram","com.arc.testcases.MyCommunities.LEEDforCommunities.ClickSearchedProgramTest.clickSearchedProgram","com.arc.testcases.MyCommunities.LEEDforCommunities.PaymentbyCCTest.paymentbyCC","com.arc.testcases.MyCommunities.LEEDforCommunities.EditProjectDetailsTest.editProjectDetails" })
+	@Test//(dependsOnMethods = { "com.arc.testcases.MyCommunities.LEEDforCommunities.LoginCaseTest.loginCase","com.arc.testcases.MyCommunities.LEEDforCommunities.SearchProgramTest.searchProgram","com.arc.testcases.MyCommunities.LEEDforCommunities.ClickSearchedProgramTest.clickSearchedProgram","com.arc.testcases.MyCommunities.LEEDforCommunities.PaymentbyCCTest.paymentbyCC","com.arc.testcases.MyCommunities.LEEDforCommunities.EditProjectDetailsTest.editProjectDetails" })
 	@Parameters({"rowNum" ,"loginSheet","communitySheet"})
 	public void projectDetailsVerification(int rowNum, String loginSheet, String communitySheet) throws IOException {
 		
@@ -34,7 +34,7 @@ public class ProjectDetailsVerificationTest extends BaseClass {
 			reuse.LoginWithCommunities(rowNum, "My Communities", loginSheet);
 			reuseSearch.SearchProgram(data.getCellData(communitySheet, "ProjectName", rowNum));
 			reuseSearch.VerifySearchedProgram(data.getCellData(communitySheet, "ProjectName", rowNum));
-			reuseManage.VerifyProjectDetails(communitySheet, rowNum);
+			reuseManage.VerifyProjectDetailsCity(communitySheet, rowNum);
 
 		} catch (Throwable t) {
 			System.out.println(t.getLocalizedMessage());

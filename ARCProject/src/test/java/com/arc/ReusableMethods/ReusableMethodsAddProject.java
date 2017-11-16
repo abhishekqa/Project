@@ -992,6 +992,7 @@ public void AddUndergroundProjectLEEDfortransit(int rowNum,  String sheetName ) 
 		String ownerOrg 	= data.getCellData(sheetName, "OwnerOrganization", rowNum);
 		String ownerCountry = data.getCellData(sheetName, "OwnerCountry", rowNum);
 		String ownerMail 	= data.getCellData(sheetName, "OwnerEmail", rowNum);
+		String ownerType	= data.getCellData(sheetName, "OwnerType", rowNum);
 		String prjArea 		= data.getCellData(sheetName, "Area", rowNum);
 		String prjPopulation= data.getCellData(sheetName, "Population", rowNum);
 		String prjAddress 	= data.getCellData(sheetName, "Address", rowNum);
@@ -1015,7 +1016,7 @@ public void AddUndergroundProjectLEEDfortransit(int rowNum,  String sheetName ) 
 		CommonMethod.selectdropdown("ClickOnRatingSystem",prjRating);
 	    CommonMethod.testlog( "Pass", "Selecting ratings as LEED for Communities");
 	    
-	    CommonMethod.selectdropdownrandom( "OwnerType");
+	    CommonMethod.selectdropdown("OwnerType",ownerType);
 		CommonMethod.testlog( "Pass", "Selecting Owner Type Type");
 		
 		CommonMethod.sendKeys( "OwnerOrg", ownerOrg);
@@ -1051,9 +1052,12 @@ public void AddUndergroundProjectLEEDfortransit(int rowNum,  String sheetName ) 
 		CommonMethod.testlog( "Pass", "Entering Zipcode");
 		CommonMethod.click( "AgreeTermsProgReg");
 		CommonMethod.testlog( "Pass", "Clicking on agree to terms");
+		CommonMethod.FluentWait("NextButton");
 		CommonMethod.click( "NextButton");
 		CommonMethod.testlog( "Pass", "Clicking on Next button");
 		Thread.sleep(10000);
+		CommonMethod.FluentWait("VerifyPaymentDone");
+		CommonMethod.testlog( "Pass", "Project details filled");
 	}
 	
 	

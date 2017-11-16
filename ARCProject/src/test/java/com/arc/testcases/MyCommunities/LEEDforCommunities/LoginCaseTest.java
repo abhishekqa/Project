@@ -14,8 +14,8 @@ import com.arc.driver.CommonMethod;
 public class LoginCaseTest extends BaseClass {
 
 	@Test
-	@Parameters({"rowNum" ,"loginSheet","communitySheet"})
-	public void loginCase(int rowNum, String loginSheet, String communitySheet) throws IOException {
+	@Parameters({"rowNum" ,"loginSheet"})
+	public void loginCase(int rowNum, String loginSheet) throws IOException {
 		
 		CommonMethod.ExtentReportConfig();
 		
@@ -26,7 +26,7 @@ public class LoginCaseTest extends BaseClass {
 		
 		try {
 			
-			reuse.LoginWithCommunities(rowNum, "My Communities", communitySheet);
+			reuse.LoginWithCommunities(rowNum, "My Communities", loginSheet);
 
 		} catch (Throwable t) {
 			System.out.println(t.getLocalizedMessage());

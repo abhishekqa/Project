@@ -417,7 +417,7 @@ public void VerifyProjectDetailsTransit( String sheetName, int rowNum) throws IO
 		CommonMethod.scrolldowntoElement( "Certifications");
 		CommonMethod.click( "Certifications");
 		CommonMethod.testlog( "Pass", "Clicking on Certification");
-		CommonMethod.assertEqualsmessage( "certStatus", "Not Certified", "Certification Status is not correct");
+		CommonMethod.assertEqualsmessage( "certStatus", "Pending", "Certification Status is not correct");
 		CommonMethod.testlog( "Pass", "Verifying Certification status is correct");
 
 	}
@@ -480,12 +480,13 @@ public void VerifyProjectDetailsTransit( String sheetName, int rowNum) throws IO
 		Date date = new Date();
 		String Month = new SimpleDateFormat("MMM").format(cal.getTime());
 		String Curdate = dateFormat.format(date);
+		int Year = Calendar.getInstance().get(Calendar.YEAR);
 		CommonMethod.ArcSpecifictoggle( "Manage");
 		CommonMethod.scrolldowntoElement( "Billing");
 		CommonMethod.testlog( "Pass", "Clicking on Billing");
 		CommonMethod.click( "Billing");
-		System.out.println(Month + " " + Curdate + ", 2017");
-		CommonMethod.assertEqualsmessage( "BillingDate", Month + " " + Curdate + ", 2017",
+		System.out.println(Month + " " + Curdate + ", " + Year);
+		CommonMethod.assertEqualsmessage( "BillingDate", Month + " " + Curdate + ", " + Year,
 				"Billing Date is not correct in Billing page");
 		CommonMethod.testlog( "Pass", "Verifying Billing date is correct");
 	}
@@ -499,7 +500,7 @@ public void VerifyProjectDetailsTransit( String sheetName, int rowNum) throws IO
 		CommonMethod.scrolldowntoElement( "Billing");
 		CommonMethod.click( "Billing");
 		CommonMethod.testlog( "Pass", "Clicking on Billing");
-		CommonMethod.assertcontainsmessage( "TotalAmountReg", amount,
+		CommonMethod.assertEqualsmessage( "TotalAmountReg","$ " + amount,
 				"Registration Amount is not correct in Billing page");
 		CommonMethod.testlog( "Pass", "Verifying Registration amount is correct");
 	}

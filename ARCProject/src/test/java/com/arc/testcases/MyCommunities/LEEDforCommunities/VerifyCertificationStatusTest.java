@@ -16,7 +16,7 @@ import com.arc.driver.CommonMethod;
 public class VerifyCertificationStatusTest extends BaseClass {
 
 	
-	@Test(dependsOnMethods = { "com.arc.testcases.MyCommunities.LEEDforCommunities.LoginCaseTest.loginCase","com.arc.testcases.MyCommunities.LEEDforCommunities.SearchProgramTest.searchProgram","com.arc.testcases.MyCommunities.LEEDforCommunities.ClickSearchedProgramTest.clickSearchedProgram","com.arc.testcases.MyCommunities.LEEDforCommunities.PaymentbyCCTest.paymentbyCC","com.arc.testcases.MyCommunities.LEEDforCommunities.PrecertificationPayTest.precertificationPay" })
+	@Test//(dependsOnMethods = { "com.arc.testcases.MyCommunities.LEEDforCommunities.LoginCaseTest.loginCase","com.arc.testcases.MyCommunities.LEEDforCommunities.SearchProgramTest.searchProgram","com.arc.testcases.MyCommunities.LEEDforCommunities.ClickSearchedProgramTest.clickSearchedProgram","com.arc.testcases.MyCommunities.LEEDforCommunities.PaymentbyCCTest.paymentbyCC"})
 	@Parameters({"rowNum" ,"loginSheet","communitySheet"})
 	public void verifyCertificationStatus(int rowNum, String loginSheet, String communitySheet) throws IOException {
 		

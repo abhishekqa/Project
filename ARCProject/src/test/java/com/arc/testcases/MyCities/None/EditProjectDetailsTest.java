@@ -34,7 +34,7 @@ public class EditProjectDetailsTest extends BaseClass {
 			reuse.LoginWithCities(rowNum, "My Cities", loginSheet);
 			reuseSearch.SearchProgram(data.getCellData(citySheet, "ProjectName", rowNum));
 			reuseSearch.VerifySearchedProgram(data.getCellData(citySheet, "ProjectName", rowNum));
-			reuseManage.editProjectDetails(citySheet, rowNum);
+			reuseManage.editProjectDetailsCity(citySheet, rowNum);
 
 		} catch (Throwable t) {
 			System.out.println(t.getLocalizedMessage());

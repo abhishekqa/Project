@@ -33,7 +33,7 @@ public class EditProjectDetailsTest extends BaseClass {
 			reuse.LoginToArc(rowNum, "My Projects", loginSheet);
 			reuseSearch.SearchProgram(data.getCellData(citySheet, "ProjectName", rowNum));
 			reuseSearch.VerifySearchedProgram(data.getCellData(citySheet, "ProjectName", rowNum));
-			reuseManage.editProjectDetails(citySheet, rowNum);
+			reuseManage.editProjectDetailsCity(citySheet, rowNum);
 
 		} catch (Throwable t) {
 			System.out.println(t.getLocalizedMessage());

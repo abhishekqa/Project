@@ -20,7 +20,7 @@ import com.relevantcodes.extentreports.LogStatus;
 public class PrecertificationPayTest extends BaseClass {
 
 	
-	@Test(dependsOnMethods = { "com.arc.testcases.communities.LoginCaseTest.loginCaseTest","com.arc.testcases.communities.SearchProgramTest.searchProgramTest","com.arc.testcases.communities.ClickSearchedProgramTest.clickSearchedProgramTest","com.arc.testcases.communities.PaymentbyCCTest.paymentbyCCTest","com.arc.testcases.communities.PrerequisitesAttemptTest.prerequisitesAttemptTest","com.arc.testcases.communities.VerifyRequirementsCompleteTest.verifyRequirementsCompleteTest" })
+	@Test(dependsOnMethods = { "com.arc.testcases.communities.LoginCaseTest.loginCaseTest","com.arc.testcases.communities.SearchProgramTest.searchProgramTest","com.arc.testcases.communities.ClickSearchedProgramTest.clickSearchedProgramTest","com.arc.testcases.communities.PaymentbyCCTest.paymentbyCCTest"})
 	public void precertificationPayTest() throws IOException {
 		
 		CommonMethod.ExtentReportConfig(driver);

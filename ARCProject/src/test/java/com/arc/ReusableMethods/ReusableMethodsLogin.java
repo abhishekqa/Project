@@ -128,11 +128,11 @@ public class ReusableMethodsLogin extends BaseClass {
   		CommonMethod.testlog("Pass", "Login Validation thorugh Post Login Welcome Text");
    	}
        
-       public void LoginWithCommunities(int col, String Postlogintext) throws IOException, InterruptedException{
+       public void LoginWithCommunities(int col, String Postlogintext, String sheetName) throws IOException, InterruptedException{
     	  
     			clickSignin();
     			CommonMethod.testlog("Pass", "Clicking on Login Button");
-    			getDataForLogin("ContactForm",col);
+    			getDataForLogin(sheetName,col);
     			CommonMethod.testlog("Info", "Getting Login data from Excel");
     			fillLoginDetails();
     			CommonMethod.testlog("Pass", "Filling Login Details");

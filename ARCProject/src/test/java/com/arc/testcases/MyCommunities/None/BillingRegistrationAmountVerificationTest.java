@@ -1,11 +1,10 @@
-package com.arc.testcases.communities;
+package com.arc.testcases.MyCommunities.None;
 
 
 
 import java.io.IOException;
 
-import org.testng.ITestResult;
-import org.testng.annotations.AfterMethod;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import com.arc.ReusableMethods.ReusableMethodsLogin;
@@ -13,15 +12,15 @@ import com.arc.ReusableMethods.ReusableMethodsManage;
 import com.arc.ReusableMethods.ReusableMethodsSearch;
 import com.arc.driver.BaseClass;
 import com.arc.driver.CommonMethod;
-import com.relevantcodes.extentreports.LogStatus;
 
 public class BillingRegistrationAmountVerificationTest extends BaseClass {
 
 	
-	@Test(dependsOnMethods = { "com.arc.testcases.communities.LoginCaseTest.loginCaseTest","com.arc.testcases.communities.SearchProgramTest.searchProgramTest","com.arc.testcases.communities.ClickSearchedProgramTest.clickSearchedProgramTest","com.arc.testcases.communities.PaymentbyCCTest.paymentbyCCTest","com.arc.testcases.communities.PrecertificationPayTest.precertificationPayTest" })
-	public void billingRegistrationAmountVerificationTest() throws IOException {
+	@Test(dependsOnMethods = { "com.arc.testcases.MyCommunities.None.LoginCaseTest.loginCase","com.arc.testcases.MyCommunities.None.SearchProgramTest.searchProgram","com.arc.testcases.MyCommunities.None.ClickSearchedProgramTest.clickSearchedProgram","com.arc.testcases.MyCommunities.None.PaymentbyCCTest.paymentbyCC","com.arc.testcases.MyCommunities.None.PrecertificationPayTest.precertificationPay" })
+	@Parameters({"rowNum" ,"loginSheet","communitySheet"})
+	public void billingRegistrationAmountVerification(int rowNum, String loginSheet, String communitySheet) throws IOException {
 		
-		CommonMethod.ExtentReportConfig(driver);
+		CommonMethod.ExtentReportConfig();
 		
 		CommonMethod.test = CommonMethod.extent.startTest("RegistrationAmount Test-Communities", "Verifies if registration amount is displayed correct in billing page").assignCategory("CheckBilling");
     
@@ -32,38 +31,18 @@ public class BillingRegistrationAmountVerificationTest extends BaseClass {
 		try {
 			
 			
-			reuse.LoginWithCommunities(2, "My Communities");
-			reuseSearch.SearchProgram(driver, CommonMethod.filereadID(CommonMethod.ArcProjectIDUrl_communities));
-			reuseSearch.VerifySearchedProgram(driver, CommonMethod.filereadID(CommonMethod.ArcProjectIDUrl_communities));
-			reuseManage.verifyRegAmount(driver);
+			reuse.LoginWithCommunities(rowNum, "My Communities", loginSheet);
+			reuseSearch.SearchProgram(data.getCellData(communitySheet, "ProjectName", rowNum));
+			reuseSearch.VerifySearchedProgram(data.getCellData(communitySheet, "ProjectName", rowNum));
+			reuseManage.verifyRegAmount(communitySheet, rowNum);
 
 		} catch (Throwable t) {
 			System.out.println(t.getLocalizedMessage());
 			Error e1 = new Error(t.getMessage());
 			e1.setStackTrace(t.getStackTrace());
 			//CommonMethod.testlogError(driver,  "<pre>" + e1.toString() + "</pre>");
-			CommonMethod.takeScreenshot(driver, "billingRegistrationAmountVerificationTest-communities");
+			CommonMethod.takeScreenshot("billingRegistrationAmountVerificationTest-communities");
 			throw e1;
 		}
 	}
-
-	@AfterMethod
-	public void teardown(ITestResult result) {
-		
-		 if (result.getStatus() == ITestResult.FAILURE) {
-			 CommonMethod.test.log(LogStatus.FAIL, result.getThrowable());
-	        } else if (result.getStatus() == ITestResult.SKIP) {
-	        CommonMethod.test.log(LogStatus.SKIP, "Test skipped " + result.getThrowable());
-	        } else {
-	        CommonMethod.test.log(LogStatus.PASS, "Test passed");
-	        }
-
-  
-		CommonMethod.extent.endTest(CommonMethod.test);
-		CommonMethod.extent.flush();
-		
-		
-		
-	}
-
 }

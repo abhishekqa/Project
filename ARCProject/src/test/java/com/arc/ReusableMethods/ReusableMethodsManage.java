@@ -92,8 +92,8 @@ public class ReusableMethodsManage extends BaseClass{
 		String own_org     = data.getCellData(sheetName, "OwnerOrganization", rowNum);
 		String own_email   = data.getCellData(sheetName, "OwnerEmail", rowNum);
 		String own_country    = data.getCellData(sheetName, "OwnerCountry", rowNum);
-		String gross_area  = data.getCellData(sheetName, "editArea", rowNum);
-		String Population   = data.getCellData(sheetName, "editPopulation", rowNum);
+		String gross_area  = data.getCellData(sheetName, "Area", rowNum);
+		String Population   = data.getCellData(sheetName, "Population", rowNum);
 		
 		CommonMethod.ArcSpecifictoggle( "Manage");
 		CommonMethod.click( "Project");
@@ -292,12 +292,12 @@ public void VerifyProjectDetailsTransit( String sheetName, int rowNum) throws IO
 		
 		CommonMethod.sendKeys( "M_GrossArea_value", editArea);
 		Thread.sleep(1000);
-		CommonMethod.click( "M_Occupancy_value");
+		CommonMethod.click( "M_GrossArea_value");
 		Thread.sleep(2000);
 		
 	
 		CommonMethod.sendKeys( "M_Occupancy_value", editPopulation);
-		CommonMethod.click( "M_GrossArea_value");
+		CommonMethod.click( "M_Occupancy_value");
 		Thread.sleep(2000);
 		CommonMethod.testlog( "Pass", "Area and Population field edited");
 		Thread.sleep(1000);
@@ -307,8 +307,11 @@ public void VerifyProjectDetailsTransit( String sheetName, int rowNum) throws IO
 		CommonMethod.testlog( "Pass", "Verified Area and population is saving after editing");
 
 	}
-	public void editProjectDetailsParking() throws IOException, InterruptedException {
+	public void editProjectDetailsParking(int rowNum, String sheetName) throws IOException, InterruptedException {
 
+		String parkWebsite  = data.getCellData(sheetName, "Website", rowNum);
+		String parkDetails  = data.getCellData(sheetName, "parkDetail", rowNum);
+		
 		CommonMethod.ArcSpecifictoggle( "Manage");
 		CommonMethod.click( "Project");
 		CommonMethod.testlog( "Pass", "Clicking on Project");
@@ -318,8 +321,8 @@ public void VerifyProjectDetailsTransit( String sheetName, int rowNum) throws IO
 		CommonMethod.clear( "M_InputWebSite");
 		CommonMethod.clear("M_Inputdetails");
 		
-		CommonMethod.sendKeys("M_InputWebSite","http://www.stg.arconline.io");
-	    CommonMethod.sendKeys("M_Inputdetails","Brings the benefits of smart grid thinking to the forefront with a credit that rewards projects for participating in demand response programs");
+		CommonMethod.sendKeys("M_InputWebSite",parkWebsite);
+	    CommonMethod.sendKeys("M_Inputdetails",parkDetails);
 		Thread.sleep(2000);
 	    CommonMethod.testlog( "Pass", "Editing values of Project");
 		
@@ -327,8 +330,6 @@ public void VerifyProjectDetailsTransit( String sheetName, int rowNum) throws IO
 		CommonMethod.click( "SaveDetailsProject");
 		CommonMethod.testlog( "Pass", "Saving Project details after editing");
 		Thread.sleep(7000);
-		CommonMethod.assertEqualsmessageAttributevalue( "M_OperatingHours_value", "50", "Value is not correct");
-		CommonMethod.assertEqualsmessageAttributevalue( "M_Occupancy_value", "50", "Value is not correct");
 		CommonMethod.testlog( "Pass", "Verifying edited project details");
 
 	}
@@ -505,13 +506,15 @@ public void VerifyProjectDetailsTransit( String sheetName, int rowNum) throws IO
 		CommonMethod.testlog( "Pass", "Verifying Registration amount is correct");
 	}
 	
-	public void verifyRegAmountparking() throws IOException, InterruptedException {
+	public void verifyRegAmountparking(int rowNum, String sheetName) throws IOException, InterruptedException {
 
+		String amount = data.getCellData(sheetName, "Amount", rowNum);
+		
 		CommonMethod.ArcSpecifictoggle( "Manage");
 		CommonMethod.scrolldowntoElement( "Billing");
 		CommonMethod.click( "Billing");
 		CommonMethod.testlog( "Pass", "Clicking on Billing");
-		CommonMethod.assertcontainsmessage( "TotalAmountRegParking", "$ 250.00",
+		CommonMethod.assertcontainsmessage( "TotalAmountRegParking", amount,
 				"Registration Amount is not correct in Billing page");
 		CommonMethod.testlog( "Pass", "Verifying Registration amount is correct");
 	}

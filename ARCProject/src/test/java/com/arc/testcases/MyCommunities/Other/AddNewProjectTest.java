@@ -16,7 +16,7 @@ public class AddNewProjectTest extends BaseClass {
 
 	
 	@Test
-	//(dependsOnMethods = { "com.arc.testcases.communities.LoginCaseTest.loginCaseTest" })
+	//(dependsOnMethods = { "com.arc.testcases.MyCommunities.Other.LoginCaseTest.loginCaseTest" })
 	@Parameters({"rowNum" ,"loginSheet","communitySheet"})
 	public void addNewProject(int rowNum, String loginSheet, String communitySheet) throws IOException {
 		

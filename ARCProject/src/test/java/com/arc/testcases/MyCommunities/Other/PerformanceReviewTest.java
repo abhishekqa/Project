@@ -1,4 +1,4 @@
-package com.arc.testcases.MyCommunities.None;
+package com.arc.testcases.MyCommunities.Other;
 import java.io.IOException;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;

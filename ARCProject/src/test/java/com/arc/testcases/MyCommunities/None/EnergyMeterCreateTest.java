@@ -13,7 +13,7 @@ import com.arc.driver.CommonMethod;
 
 public class EnergyMeterCreateTest extends BaseClass {
 	
-	@Test//(dependsOnMethods = { "com.arc.testcases.MyCommunities.None.LoginCaseTest.loginCase","com.arc.testcases.MyCommunities.None.SearchProgramTest.searchProgram","com.arc.testcases.MyCommunities.None.ClickSearchedProgramTest.clickSearchedProgram","com.arc.testcases.MyCommunities.None.PaymentbyCCTest.paymentbyCC" })
+	@Test(dependsOnMethods = { "com.arc.testcases.MyCommunities.None.LoginCaseTest.loginCase","com.arc.testcases.MyCommunities.None.SearchProgramTest.searchProgram","com.arc.testcases.MyCommunities.None.ClickSearchedProgramTest.clickSearchedProgram","com.arc.testcases.MyCommunities.None.PaymentbyCCTest.paymentbyCC" })
 	@Parameters({"rowNum" ,"loginSheet","communitySheet","energySheet"})
 	public void energyMeterCreate(int rowNum, String loginSheet, String communitySheet, String energySheet) throws IOException {
 		

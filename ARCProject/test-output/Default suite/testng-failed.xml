@@ -3,12 +3,12 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.arc.testcases.MyCities.LEEDforCities.ClickSearchedProgramTest">
+      <class name="com.arc.testcases.MyBuildings.None.AddNewProjectTest">
         <methods>
-          <include name="clickSearchedProgram"/>
           <include name="end"/>
+          <include name="addNewProject"/>
         </methods>
-      </class> <!-- com.arc.testcases.MyCities.LEEDforCities.ClickSearchedProgramTest -->
+      </class> <!-- com.arc.testcases.MyBuildings.None.AddNewProjectTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

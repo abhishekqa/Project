@@ -16,7 +16,7 @@ import com.arc.driver.CommonMethod;
 public class WaterFileUploadTest extends BaseClass {
 
 	
-	@Test(dependsOnMethods = { "com.arc.testcases.MyBuildings.None.LoginCaseTest.loginCaseTest","com.arc.testcases.MyBuildings.None.ClickSearchedProgramTest.clickSearchedProgramTest","com.arc.testcases.MyBuildings.None.PaymentbyCCTest.paymentbyCCTest" })
+	@Test(dependsOnMethods = { "com.arc.testcases.MyBuildings.None.LoginCaseTest.loginCase","com.arc.testcases.MyBuildings.None.ClickSearchedProgramTest.clickSearchedProgram","com.arc.testcases.MyBuildings.None.PaymentbyCCTest.paymentbyCC" })
 	@Parameters({"rowNum" ,"buildingSheet","loginSheet"})
 	public void waterFileUpload(int rowNum, String buildingSheet, String loginSheet) throws IOException {
 		CommonMethod.ExtentReportConfig();

@@ -106,7 +106,7 @@ public class ReusableMethodsReviewCertification extends BaseClass{
 
 		}
 	 public void verifyPreCertReviewSelection(String param) throws IOException, InterruptedException{
-			//CommonMethod.ArcSpecifictoggle( "CreditAction");
+			CommonMethod.ArcSpecifictoggle( "CreditAction");
 			
 			 ClickReview("Review");
 			

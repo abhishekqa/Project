@@ -15,8 +15,8 @@ import com.arc.driver.CommonMethod;
 public class AddNewProjectINDTest extends BaseClass {
 	
 	@Test(dependsOnMethods={"com.arc.testcases.MyBuildings.None.LoginCaseTest.loginCaseTest"})
-	@Parameters({"rowNum" ,"loginSheet"})
-	public void addNewProjectTest(int rowNum, String loginSheet ) throws IOException {
+	@Parameters({"rowNum" ,"loginSheet","buildingSheet"})
+	public void addNewProjectTest(int rowNum, String loginSheet, String buildingSheet ) throws IOException {
 		
 		CommonMethod.ExtentReportConfig();
 		
@@ -26,7 +26,7 @@ public class AddNewProjectINDTest extends BaseClass {
 		try {
 			
 			reuse.LoginWithBuildings(rowNum , "My Buildings", loginSheet);
-			reuseAddProject.AddProjectNoneIND();
+			reuseAddProject.AddProjectNoneIND(buildingSheet, rowNum);
 
 		} catch (Throwable t) {
 			System.out.println(t.getLocalizedMessage());

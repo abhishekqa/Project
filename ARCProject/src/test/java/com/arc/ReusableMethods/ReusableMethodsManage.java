@@ -501,7 +501,7 @@ public void VerifyProjectDetailsTransit( String sheetName, int rowNum) throws IO
 		CommonMethod.scrolldowntoElement( "Billing");
 		CommonMethod.click( "Billing");
 		CommonMethod.testlog( "Pass", "Clicking on Billing");
-		CommonMethod.assertEqualsmessage( "TotalAmountReg","$ " + amount,
+		CommonMethod.assertEqualsmessage( "TotalAmountReg", amount,
 				"Registration Amount is not correct in Billing page");
 		CommonMethod.testlog( "Pass", "Verifying Registration amount is correct");
 	}

@@ -717,4 +717,14 @@ public class CommonMethod extends BaseClass  {
     }
 	
 		
+	
+	public static void waitTillVisible(String locater){
+		
+		/*WebDriverWait wait = new WebDriverWait(driver, 10);
+		WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(findElements(locater)));*/
+	}
+	
+	
+	
+	
 }

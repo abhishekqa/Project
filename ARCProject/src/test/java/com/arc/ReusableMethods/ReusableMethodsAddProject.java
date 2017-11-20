@@ -91,10 +91,17 @@ public class ReusableMethodsAddProject extends BaseClass{
 		CommonMethod.testlog("Pass", "Clicking on agree to terms");
 		CommonMethod.click("NextButton");
 		CommonMethod.testlog("Pass", "Clicking on Next button");
+		
+		String[] splits = CommonMethod.getText("amountPayable").split(" ");
+		
+		String Amount= splits[0]+" "+splits[1];
+		
+		data.setCellData(sheetName, "Amount" , rowNum, Amount );
+		
 		Thread.sleep(10000);
 
 	}
-	public void AddProjectNoneIND() throws IOException, InterruptedException {
+	public void AddProjectNoneIND(String sheetName, int rowNum) throws IOException, InterruptedException {
 
 		clickAddProjectMyBuildings();
 		CommonMethod.sendKeys( "ProjectName",
@@ -139,6 +146,12 @@ public class ReusableMethodsAddProject extends BaseClass{
 		CommonMethod.testlog("Pass", "Clicking on agree to terms");
 		CommonMethod.click("NextButton");
 		CommonMethod.testlog("Pass", "Clicking on Next button");
+		
+		String[] splits = CommonMethod.getText("amountPayable").split(" ");
+		
+		String Amount= splits[0]+" "+splits[1];
+		
+		data.setCellData(sheetName, "Amount" , rowNum, Amount );
 		Thread.sleep(10000);
 
 	}
@@ -194,13 +207,14 @@ public class ReusableMethodsAddProject extends BaseClass{
 
 	}
 	
-	/*********Excel Sheet Added ************/
+	
 	
 	public void AddProjectLEEDUS( String sheetName,int rowNum) throws IOException, InterruptedException {
 		
 		
 		String prjType 		= data.getCellData(sheetName, "Project Type", rowNum);
 		String prjRating 	= data.getCellData(sheetName, "Rating System", rowNum);
+		String ownerType 	= data.getCellData(sheetName, "Owner Type", rowNum);
 		String ownerOrg 	= data.getCellData(sheetName, "Owner Organization", rowNum);
 		String ownerCountry = data.getCellData(sheetName, "Owner Country", rowNum);
 		String ownerMail 	= data.getCellData(sheetName, "Owner Email", rowNum);
@@ -232,8 +246,8 @@ public class ReusableMethodsAddProject extends BaseClass{
 		CommonMethod.selectdropdownrandom( "SpaceType");
 		CommonMethod.testlog( "Pass", "Selecting Space Type");
 		
-		CommonMethod.selectdropdownrandom( "OwnerType");
-		CommonMethod.testlog( "Pass", "Selecting Owner Type Type");
+		CommonMethod.selectdropdown( "OwnerType",ownerType );
+		CommonMethod.testlog( "Pass", "Selecting Owner Type ");
 		
 		
 		CommonMethod.sendKeys( "OwnerOrg", ownerOrg);
@@ -265,6 +279,13 @@ public class ReusableMethodsAddProject extends BaseClass{
 		CommonMethod.testlog( "Pass", "Clicking on agree to terms");
 		CommonMethod.click( "NextButton");
 		CommonMethod.testlog( "Pass", "Clicking on Next button");
+		
+        String[] splits = CommonMethod.getText("amountPayable").split(" ");
+		
+		String Amount= splits[0]+" "+splits[1];
+		
+		data.setCellData(sheetName, "Amount" , rowNum, Amount );
+		
 		Thread.sleep(10000);
 
 	}
@@ -1383,6 +1404,13 @@ public void AddUndergroundProjectLEEDfortransit(int rowNum,  String sheetName ) 
 		
 		CommonMethod.click( "NextButtonPayment");
 		CommonMethod.testlog( "Pass", "Clicking on Next Button");
+		
+		/*String[] splits = CommonMethod.getText("amountPayable").split(" ");
+		
+		String Amount= splits[0]+" "+splits[1];
+		
+		data.setCellData(sheetName, "Amount" , rowNum, Amount );*/
+		
 		Thread.sleep(20000);
 		CommonMethod.assertEqualsmessage( Objectlocator, successMessage,
 				"Seems like Payment is not successful or its a timeout");

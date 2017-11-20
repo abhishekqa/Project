@@ -17,7 +17,7 @@ public class WasteMeterCreateTest extends BaseClass {
 
 
    
-	@Test(dependsOnMethods = { "com.arc.testcases.MyBuildings.None.LoginCaseTest.loginCaseTest","com.arc.testcases.MyBuildings.None.ClickSearchedProgramTest.clickSearchedProgramTest","com.arc.testcases.MyBuildings.None.PaymentbyCCTest.paymentbyCCTest" })
+	@Test(dependsOnMethods = { "com.arc.testcases.MyBuildings.None.LoginCaseTest.loginCase","com.arc.testcases.MyBuildings.None.ClickSearchedProgramTest.clickSearchedProgram","com.arc.testcases.MyBuildings.None.PaymentbyCCTest.paymentbyCC" })
 	@Parameters({"rowNum" ,"buildingSheet","loginSheet", "wasteSheet"})
 	public void wasteMeterCreate(int rowNum, String buildingSheet, String loginSheet, String wasteSheet) throws IOException {
 		

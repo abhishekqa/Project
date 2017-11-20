@@ -1,12 +1,18 @@
 package com.arc.ReusableMethods;
 
 import java.io.IOException;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
+import com.arc.driver.BaseClass;
 import com.arc.driver.CommonMethod;
 import com.relevantcodes.extentreports.ExtentTest;
 
-public class ReusableMethodsBasescore {
+public class ReusableMethodsBasescore extends BaseClass{
 
 	public static ExtentTest test;
 
@@ -97,12 +103,23 @@ CommonMethod.click( "SiteDevelopment");
 
 for(int i=0;i<=17;i++){
 	
-	CommonMethod.FluentWait( "BclickFileUpload");
-    CommonMethod.moveToElement( "BclickFileUpload");
-	CommonMethod.click( "BclickFileUpload");
-	Runtime.getRuntime().exec(System.getProperty("user.dir")+"\\ARCDataTemplete\\PdfScript.exe");
-	System.out.println(System.getProperty("user.dir")+"\\ARCDataTemplete\\PdfScript.exe");
-	Thread.sleep(6000);
+	//CommonMethod.click( "BclickFileUpload");
+	//CommonMethod.FluentWait( "UploadDataMeterHidden");
+    //CommonMethod.moveToElement( "UploadDataMeterHidden");
+/*	CommonMethod.displayhiddenElement("UploadDataMeterHidden");
+	Thread.sleep(3000);*/
+    //CommonMethod.click( "BclickFileUpload");
+	//Runtime.getRuntime().exec(System.getProperty("user.dir")+"\\ARCDataTemplete\\PdfScript.exe");
+	//System.out.println(System.getProperty("user.dir")+"\\ARCDataTemplete\\PdfScript.exe");
+	CommonMethod.displayhiddenElement("UploadBasePointHidden");
+	
+	CommonMethod.sendKeys("UploadBasePointHidden", System.getProperty("user.dir")+"\\ARCDataTemplete\\USGBC.pdf");
+	
+	//Thread.sleep(6000);
+	WebDriverWait wait = new WebDriverWait(driver, 15);
+	wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(".//*[@class='messenger-message-inner']")));
+	
+	//CommonMethod.FluentWait("InfoMessage");
 	CommonMethod.assertEqualsmessage( "InfoMessage", "File successfully uploaded.", "something went wrong");
 	
 	CommonMethod.click( "NextButtonprerequisites");

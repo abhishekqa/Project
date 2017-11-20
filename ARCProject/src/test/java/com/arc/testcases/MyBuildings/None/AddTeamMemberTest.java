@@ -13,7 +13,7 @@ import com.arc.driver.CommonMethod;
 public class AddTeamMemberTest extends BaseClass {
 
 	
-	@Test(dependsOnMethods = { "com.arc.testcases.MyBuildings.None.LoginCaseTest.loginCaseTest","com.arc.testcases.MyBuildings.None.PaymentbyCCTest.paymentbyCCTest" })
+	@Test(dependsOnMethods = { "com.arc.testcases.MyBuildings.None.LoginCaseTest.loginCase","com.arc.testcases.MyBuildings.None.PaymentbyCCTest.paymentbyCC" })
 	@Parameters({"rowNum" ,"buildingSheet" ,"loginSheet","teamSheet"})
 	public void addTeamMember(int rowNum, String buildingSheet, String loginSheet, String teamSheet ) throws IOException {
 		CommonMethod.ExtentReportConfig();

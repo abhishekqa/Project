@@ -721,7 +721,7 @@ public void CreateWaterWMeter(String param,String Metername,String MeterLocator,
     ClickDataInput();
    	ClickDataInputParam(param);
    	CommonMethod.click( "UploadButton");
-   	CommonMethod.click("UploadDataMeter");
+   /*	CommonMethod.click("UploadDataMeter");
    	Thread.sleep(1000);
    	Runtime.getRuntime().exec(System.getProperty("user.dir") +"\\ARCDataTemplete\\AutoItScrit.exe");
    	Thread.sleep(1000);
@@ -730,7 +730,17 @@ public void CreateWaterWMeter(String param,String Metername,String MeterLocator,
     //   System.out.println(string);
     
    //	if(string.contains("Excel submitted successfully. We will send you an email when you data is processed."))
-       
+*/  
+   	Thread.sleep(4000);
+	/*Runtime.getRuntime().exec(System.getProperty("user.dir") +"\\ARCDataTemplete\\AutoItScrit.exe");*/
+	CommonMethod.displayhiddenElement("UploadDataMeterHidden");
+	Thread.sleep(2000);
+	/*CommonMethod.click("UploadDataMeterHidden");
+	CommonMethod.uploadFile(System.getProperty("user.dir") +"\\ARCDataTemplete\\arc_Data_Template.xlsm");*/
+	
+	CommonMethod.sendKeys("UploadDataMeterHidden", System.getProperty("user.dir") +"\\ARCDataTemplete\\arc_Data_Template.xlsm");
+	
+   	
     CommonMethod.testlog("Pass","Energy arc_Data_Templete Uploaded Successully");
    	CommonMethod.click( "Close");
    	CommonMethod.testlog("Pass","Closed File Upload popup");

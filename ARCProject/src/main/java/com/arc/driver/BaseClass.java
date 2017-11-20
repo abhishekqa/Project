@@ -32,8 +32,6 @@ import com.relevantcodes.extentreports.LogStatus;
 
 public class BaseClass {
 	
-	
-	
 	public static WebDriver driver;
 	public static XlsReader data;
 	public Properties prop;

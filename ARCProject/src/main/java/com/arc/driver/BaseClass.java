@@ -3,21 +3,18 @@ package com.arc.driver;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
-import java.util.HashMap;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 import java.util.logging.Level;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxProfile;
 import org.openqa.selenium.htmlunit.HtmlUnitDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.opera.OperaDriver;
 import org.openqa.selenium.phantomjs.PhantomJSDriver;
-import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.safari.SafariDriver;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterClass;
@@ -47,8 +44,7 @@ public class BaseClass {
 		 
 		//selecting browser based on parameter from TestNG.xml
 		if(browserName.equalsIgnoreCase("firefox")){
-			String downDir= System.getProperty("user.dir") +"\\Downloads";
-			//System.out.println(downDir);
+			
 			FirefoxProfile profile = new FirefoxProfile();
 			   profile.setPreference("browser.download.folderList", 2);
 			   profile.setPreference("browser.download.dir", System.getProperty("user.dir") +"\\Downloads\\");

@@ -22,7 +22,7 @@ public class ProjectFieldVerificationTest extends BaseClass {
 		
 		CommonMethod.ExtentReportConfig();
 		
-		CommonMethod.test = CommonMethod.extent.startTest("ARC-Login Test", "Verifies if Login functionality is working fine").assignCategory("CheckLogin");
+		CommonMethod.test = CommonMethod.extent.startTest("Project Field Verification Test", "Verifies if Login functionality is working fine").assignCategory("CheckLogin");
     
 		ReusableMethodsLogin reuse = new ReusableMethodsLogin();
 		ReusableMethodsManage reuseManage = new ReusableMethodsManage();

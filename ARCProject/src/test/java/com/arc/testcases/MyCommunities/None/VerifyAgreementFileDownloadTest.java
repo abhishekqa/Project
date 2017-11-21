@@ -22,7 +22,7 @@ public class VerifyAgreementFileDownloadTest extends BaseClass {
 		
 		CommonMethod.ExtentReportConfig();
 		
-		CommonMethod.test = CommonMethod.extent.startTest("ARC-Login Test", "Verifies if Login functionality is working fine").assignCategory("CheckLogin");
+		CommonMethod.test = CommonMethod.extent.startTest("Verify Agreement File Download Test", "Verifies if Login functionality is working fine").assignCategory("CheckLogin");
     
 		ReusableMethodsLogin reuse = new ReusableMethodsLogin();
 		ReusableMethodsManage reuseManage = new ReusableMethodsManage();

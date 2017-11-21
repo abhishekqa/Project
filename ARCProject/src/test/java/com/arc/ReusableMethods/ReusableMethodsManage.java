@@ -92,7 +92,7 @@ public class ReusableMethodsManage extends BaseClass{
 		String own_org     = data.getCellData(sheetName, "OwnerOrganization", rowNum);
 		String own_email   = data.getCellData(sheetName, "OwnerEmail", rowNum);
 		String own_country    = data.getCellData(sheetName, "OwnerCountry", rowNum);
-		String gross_area  = data.getCellData(sheetName, "Area", rowNum);
+		String gross_area  = data.getCellData(sheetName, "editArea", rowNum);
 		String Population   = data.getCellData(sheetName, "Population", rowNum);
 		
 		CommonMethod.ArcSpecifictoggle( "Manage");

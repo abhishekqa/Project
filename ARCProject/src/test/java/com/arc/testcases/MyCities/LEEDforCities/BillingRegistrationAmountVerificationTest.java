@@ -17,8 +17,8 @@ public class BillingRegistrationAmountVerificationTest extends BaseClass {
 
 	
 	@Test(dependsOnMethods = { "com.arc.testcases.MyCities.LEEDforCities.LoginCaseTest.loginCase","com.arc.testcases.MyCities.LEEDforCities.SearchProgramTest.searchProgram","com.arc.testcases.MyCities.LEEDforCities.ClickSearchedProgramTest.clickSearchedProgram","com.arc.testcases.MyCities.LEEDforCities.PaymentbyCCTest.paymentbyCC","com.arc.testcases.MyCities.LEEDforCities.PrecertificationPayTest.precertificationPay" })
-	@Parameters({"rowNum" ,"loginSheet", "citySheet","paymentSheet"})
-	public void billingRegistrationAmountVerification(int rowNum, String loginSheet,  String citySheet, String paymentSheet) throws IOException {
+	@Parameters({"rowNum" ,"loginSheet", "citySheet"})
+	public void billingRegistrationAmountVerification(int rowNum, String loginSheet,  String citySheet) throws IOException {
 		
 		CommonMethod.ExtentReportConfig();
 		
@@ -34,7 +34,7 @@ public class BillingRegistrationAmountVerificationTest extends BaseClass {
 			reuse.LoginToArc(rowNum, "My Projects", loginSheet);
 			reuseSearch.SearchProgram(data.getCellData(citySheet, "ProjectName", rowNum));
 			reuseSearch.VerifySearchedProgram(data.getCellData(citySheet, "ProjectName", rowNum));
-			reuseManage.verifyRegAmount(paymentSheet, rowNum);
+			reuseManage.verifyRegAmount(citySheet, rowNum);
 
 		} catch (Throwable t) {
 			System.out.println(t.getLocalizedMessage());

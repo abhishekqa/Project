@@ -12,7 +12,7 @@ import com.arc.driver.CommonMethod;
 public class BillingDateVerificationTest extends BaseClass {
 
 	
-	@Test(dependsOnMethods = { "com.arc.testcases.MyBuildings.Other.LoginCaseTest.loginCaseTest","com.arc.testcases.MyBuildings.Other.ClickSearchedProgramTest.clickSearchedProgramTest","com.arc.testcases.MyBuildings.Other.PaymentbyCCTest.paymentbyCCTest" })
+	@Test(dependsOnMethods = { "com.arc.testcases.MyBuildings.Other.LoginCaseTest.loginCase","com.arc.testcases.MyBuildings.Other.ClickSearchedProgramTest.clickSearchedProgram","com.arc.testcases.MyBuildings.Other.PaymentbyCCTest.paymentbyCC" })
 	@Parameters({"rowNum" ,"buildingSheet" ,"loginSheet"})
 	public void billingDateVerification(int rowNum, String buildingSheet, String loginSheet) throws IOException {
 		

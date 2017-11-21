@@ -1,0 +1,241 @@
+<html>
+<head>
+<title>TestNG:  ARCRegressionTest-Other-for-Communities</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>ARCRegressionTest-Other-for-Communities</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>16/1/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Nov 20 18:04:09 IST 2017</td>
+</tr>
+<tr><td>Total time:</td><td>1332 seconds (1332565 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.arc.testcases.MyCommunities.Other.PerformanceReviewTest.waterFileUploadTest()'><b>waterFileUploadTest</b><br>Test class: com.arc.testcases.MyCommunities.Other.PerformanceReviewTest<br>Parameters: 3, NewCommunityProject, Payment, Login</td>
+<td><div><pre>java.lang.Error: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[text()=\&quot;Successfully Submitted\&quot;]&quot;}
+Command duration or timeout: 60.13 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;G10GNLT049&apos;, ip: &apos;192.168.0.100&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_151&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=32.0.2, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 02730568-edcc-4105-b710-1100ab03b653
+*** Element info: {Using=xpath, value=//span[text()=&quot;Successfully Submitted&quot;]}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at com.arc.driver.CommonMethod.findElement(CommonMethod.java:86)
+	at com.arc.driver.CommonMethod.getText(CommonMethod.java:177)
+	at com.arc.ReusableMethods.ReusableMethodsReviewCertification.verifySuccessfullySubmittedPayment(ReusableMethodsReviewCertification.java:258)
+	at com.arc.testcases.MyCommunities.Other.PerformanceReviewTest.waterFileUploadTest(PerformanceReviewTest.java:32)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace369573800", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace369573800'><pre>java.lang.Error: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[text()=\&quot;Successfully Submitted\&quot;]&quot;}
+Command duration or timeout: 60.13 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;G10GNLT049&apos;, ip: &apos;192.168.0.100&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_151&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=32.0.2, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 02730568-edcc-4105-b710-1100ab03b653
+*** Element info: {Using=xpath, value=//span[text()=&quot;Successfully Submitted&quot;]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at com.arc.driver.CommonMethod.findElement(CommonMethod.java:86)
+	at com.arc.driver.CommonMethod.getText(CommonMethod.java:177)
+	at com.arc.ReusableMethods.ReusableMethodsReviewCertification.verifySuccessfullySubmittedPayment(ReusableMethodsReviewCertification.java:258)
+	at com.arc.testcases.MyCommunities.Other.PerformanceReviewTest.waterFileUploadTest(PerformanceReviewTest.java:32)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1191)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.run(TestNG.java:1024)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+</pre></div></td>
+<td>127</td>
+<td>com.arc.testcases.MyCommunities.Other.PerformanceReviewTest@3e9b1010</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.arc.testcases.MyCommunities.Other.AddNewProjectTest.addNewProject()'><b>addNewProject</b><br>Test class: com.arc.testcases.MyCommunities.Other.AddNewProjectTest<br>Parameters: 3, Login, NewCommunityProject</td>
+<td></td>
+<td>56</td>
+<td>com.arc.testcases.MyCommunities.Other.AddNewProjectTest@6fc6f14e</td></tr>
+<tr>
+<td title='com.arc.testcases.MyCommunities.Other.AddTeamMemberTest.addTeamMember()'><b>addTeamMember</b><br>Test class: com.arc.testcases.MyCommunities.Other.AddTeamMemberTest<br>Parameters: 3, Login, NewCommunityProject, BTeam</td>
+<td></td>
+<td>48</td>
+<td>com.arc.testcases.MyCommunities.Other.AddTeamMemberTest@6b09bb57</td></tr>
+<tr>
+<td title='com.arc.testcases.MyCommunities.Other.BillingDateVerificationTest.billingDateVerification()'><b>billingDateVerification</b><br>Test class: com.arc.testcases.MyCommunities.Other.BillingDateVerificationTest<br>Parameters: 3, Login, NewCommunityProject</td>
+<td></td>
+<td>40</td>
+<td>com.arc.testcases.MyCommunities.Other.BillingDateVerificationTest@185d8b6</td></tr>
+<tr>
+<td title='com.arc.testcases.MyCommunities.Other.BillingRegistrationAmountVerificationTest.billingRegistrationAmountVerification()'><b>billingRegistrationAmountVerification</b><br>Test class: com.arc.testcases.MyCommunities.Other.BillingRegistrationAmountVerificationTest<br>Parameters: 3, Login, NewCommunityProject</td>
+<td></td>
+<td>47</td>
+<td>com.arc.testcases.MyCommunities.Other.BillingRegistrationAmountVerificationTest@67784306</td></tr>
+<tr>
+<td title='com.arc.testcases.MyCommunities.Other.BillingStatusVerificationTest.billingStatusVerification()'><b>billingStatusVerification</b><br>Test class: com.arc.testcases.MyCommunities.Other.BillingStatusVerificationTest<br>Parameters: 3, Login, NewCommunityProject</td>
+<td></td>
+<td>47</td>
+<td>com.arc.testcases.MyCommunities.Other.BillingStatusVerificationTest@335eadca</td></tr>
+<tr>
+<td title='com.arc.testcases.MyCommunities.Other.ClickSearchedProgramTest.clickSearchedProgram()'><b>clickSearchedProgram</b><br>Test class: com.arc.testcases.MyCommunities.Other.ClickSearchedProgramTest<br>Parameters: 3, Login, NewCommunityProject</td>
+<td></td>
+<td>34</td>
+<td>com.arc.testcases.MyCommunities.Other.ClickSearchedProgramTest@5abca1e0</td></tr>
+<tr>
+<td title='com.arc.testcases.MyCommunities.Other.EditMemberRoleManagerTest.editMemberRoleManager()'><b>editMemberRoleManager</b><br>Test class: com.arc.testcases.MyCommunities.Other.EditMemberRoleManagerTest<br>Parameters: 3, Login, NewCommunityProject</td>
+<td></td>
+<td>57</td>
+<td>com.arc.testcases.MyCommunities.Other.EditMemberRoleManagerTest@6536e911</td></tr>
+<tr>
+<td title='com.arc.testcases.MyCommunities.Other.EditProjectDetailsTest.editProjectDetails()'><b>editProjectDetails</b><br>Test class: com.arc.testcases.MyCommunities.Other.EditProjectDetailsTest<br>Parameters: 3, Login, NewCommunityProject</td>
+<td></td>
+<td>52</td>
+<td>com.arc.testcases.MyCommunities.Other.EditProjectDetailsTest@13a5fe33</td></tr>
+<tr>
+<td title='com.arc.testcases.MyCommunities.Other.InstallAllAppsTest.installAllApps()'><b>installAllApps</b><br>Test class: com.arc.testcases.MyCommunities.Other.InstallAllAppsTest<br>Parameters: 3, Login, NewCommunityProject</td>
+<td></td>
+<td>51</td>
+<td>com.arc.testcases.MyCommunities.Other.InstallAllAppsTest@6f1fba17</td></tr>
+<tr>
+<td title='com.arc.testcases.MyCommunities.Other.LoginCaseTest.loginCase()'><b>loginCase</b><br>Test class: com.arc.testcases.MyCommunities.Other.LoginCaseTest<br>Parameters: 3, Login</td>
+<td></td>
+<td>35</td>
+<td>com.arc.testcases.MyCommunities.Other.LoginCaseTest@20398b7c</td></tr>
+<tr>
+<td title='com.arc.testcases.MyCommunities.Other.PaymentbyCCTest.paymentbyCC()'><b>paymentbyCC</b><br>Test class: com.arc.testcases.MyCommunities.Other.PaymentbyCCTest<br>Parameters: 3, Login, NewCommunityProject, Payment</td>
+<td></td>
+<td>68</td>
+<td>com.arc.testcases.MyCommunities.Other.PaymentbyCCTest@2286778</td></tr>
+<tr>
+<td title='com.arc.testcases.MyCommunities.Other.ProjectDetailsVerificationTest.projectDetailsVerification()'><b>projectDetailsVerification</b><br>Test class: com.arc.testcases.MyCommunities.Other.ProjectDetailsVerificationTest<br>Parameters: 3, Login, NewCommunityProject</td>
+<td></td>
+<td>38</td>
+<td>com.arc.testcases.MyCommunities.Other.ProjectDetailsVerificationTest@5f9d02cb</td></tr>
+<tr>
+<td title='com.arc.testcases.MyCommunities.Other.ProjectFieldVerificationTest.projectFieldVerification()'><b>projectFieldVerification</b><br>Test class: com.arc.testcases.MyCommunities.Other.ProjectFieldVerificationTest<br>Parameters: 3, Login, NewCommunityProject</td>
+<td></td>
+<td>46</td>
+<td>com.arc.testcases.MyCommunities.Other.ProjectFieldVerificationTest@370736d9</td></tr>
+<tr>
+<td title='com.arc.testcases.MyCommunities.Other.SearchProgramTest.searchProgram()'><b>searchProgram</b><br>Test class: com.arc.testcases.MyCommunities.Other.SearchProgramTest<br>Parameters: 3, Login, NewCommunityProject</td>
+<td></td>
+<td>24</td>
+<td>com.arc.testcases.MyCommunities.Other.SearchProgramTest@56235b8e</td></tr>
+<tr>
+<td title='com.arc.testcases.MyCommunities.Other.VerifyAgreementFileDownloadTest.verifyAgreementFileDownload()'><b>verifyAgreementFileDownload</b><br>Test class: com.arc.testcases.MyCommunities.Other.VerifyAgreementFileDownloadTest<br>Parameters: 3, Login, NewCommunityProject</td>
+<td></td>
+<td>57</td>
+<td>com.arc.testcases.MyCommunities.Other.VerifyAgreementFileDownloadTest@18eed359</td></tr>
+<tr>
+<td title='com.arc.testcases.MyCommunities.Other.VerifyCertificationStatusTest.verifyCertificationStatus()'><b>verifyCertificationStatus</b><br>Test class: com.arc.testcases.MyCommunities.Other.VerifyCertificationStatusTest<br>Parameters: 3, Login, NewCommunityProject</td>
+<td></td>
+<td>42</td>
+<td>com.arc.testcases.MyCommunities.Other.VerifyCertificationStatusTest@6c3708b3</td></tr>
+</table><p>
+</body>
+</html>

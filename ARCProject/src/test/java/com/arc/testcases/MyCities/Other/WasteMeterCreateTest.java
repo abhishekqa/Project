@@ -23,7 +23,7 @@ public class WasteMeterCreateTest extends BaseClass {
 		
 		CommonMethod.ExtentReportConfig();
 		
-		CommonMethod.test = CommonMethod.extent.startTest("ARC-Login Test", "Verifies if Login functionality is working fine").assignCategory("CheckLogin");
+		CommonMethod.test = CommonMethod.extent.startTest("Waste Meter Create Test", "Verifies if Login functionality is working fine").assignCategory("CheckLogin");
     
 		ReusableMethodsLogin reuse = new ReusableMethodsLogin();
 		ReusableMethodsDataInput reuseDI = new ReusableMethodsDataInput();

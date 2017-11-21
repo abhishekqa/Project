@@ -23,7 +23,7 @@
 <classes>
  
  <!-- <class name="com.arc.testcases.MyBuildings.LEED.USBuildingLEEDv4Test"/> -->
-<!-- <class name="com.arc.testcases.MyBuildings.LEED.LoginCaseTest"></class>
+ <class name="com.arc.testcases.MyBuildings.LEED.LoginCaseTest"></class>
  <class name="com.arc.testcases.MyBuildings.LEED.ClickSearchedProgramTest"></class>
  <class name="com.arc.testcases.MyBuildings.LEED.AddNewProjectTest"></class>
 <class name="com.arc.testcases.MyBuildings.LEED.PaymentbyCCTest"></class>
@@ -57,7 +57,7 @@
 <class name="com.arc.testcases.MyBuildings.LEED.PreCertReviewTest"/> 
  
 
- -->
+ 
 </classes>
 </test>
  
@@ -103,7 +103,7 @@
 <class name="com.arc.testcases.MyBuildings.None.WasteReadingDateOverlappingTest"></class>
 <class name="com.arc.testcases.MyBuildings.None.PerformanceScoreVerificationReviewTest"/>
 
- 
+  
 </classes>
 </test>
 
@@ -121,7 +121,7 @@
 <parameter name="wasteSheet" value="BWaste"/>
 
 <classes>
-<!-- 
+
 <class name="com.arc.testcases.MyBuildings.Other.LoginCaseTest"></class>
 <class name="com.arc.testcases.MyBuildings.Other.ClickSearchedProgramTest"></class>
 <class name="com.arc.testcases.MyBuildings.Other.AddNewProjectTest"></class>
@@ -149,8 +149,7 @@
 <class name="com.arc.testcases.MyBuildings.Other.WTotalAnalyticsTest"/>
 <class name="com.arc.testcases.MyBuildings.Other.BillingStatusVerificationTest"></class>
 <class name="com.arc.testcases.MyBuildings.Other.PerformanceScoreVerificationReviewTest"/>
-  -->
-			
+  		
 </classes>
 </test>
 
@@ -170,7 +169,7 @@
 <parameter name="wasteSheet" value="BWaste"/>
 
 <classes>
-<!-- 
+
 <class name="com.arc.testcases.MyBuildings.LEEDfortransit.LoginCaseTest"></class>
 <class name="com.arc.testcases.MyBuildings.LEEDfortransit.ClickSearchedProgramTest"></class>
 <class name="com.arc.testcases.MyBuildings.LEEDfortransit.AbovegroundAddNewProjectTest"/>
@@ -203,13 +202,139 @@
 <class name="com.arc.testcases.MyBuildings.LEEDfortransit.ProjectDetailsVerificationTest"></class>
 <class name="com.arc.testcases.MyBuildings.LEEDfortransit.PreCertReviewTest"/>
 <class name="com.arc.testcases.MyBuildings.LEEDfortransit.UnderGroundAddNewProjectTest"/>
- -->
+
 </classes>
 </test>
 
 
 
- <test name="ARCRegressionTest-LEED-for-Communities">
+
+<test name="ARCRegressionTest-City-LEED">
+
+<parameter name="browserName" value="firefox"/>
+<parameter name="environment" value="staging"/>
+<parameter name="rowNum" value="2"/>
+<parameter name="loginSheet" value="Login"/>
+<parameter name="citySheet" value="NewCityProject"/>
+<parameter name="paymentSheet" value="Payment"/>
+<parameter name="energySheet" value="BEnergy"/>
+<parameter name="teamSheet" value="BTeam"/>
+<parameter name="waterSheet" value="BWater"/>
+<parameter name="wasteSheet" value="BWaste"/>
+
+
+
+<classes>
+<class name="com.arc.testcases.MyCities.LEEDforCities.LoginCaseTest"/>
+<class name="com.arc.testcases.MyCities.LEEDforCities.SearchProgramTest"/>
+<class name="com.arc.testcases.MyCities.LEEDforCities.ClickSearchedProgramTest"/> 
+<class name="com.arc.testcases.MyCities.LEEDforCities.AddNewProjectTest"/>
+<class name="com.arc.testcases.MyCities.LEEDforCities.PaymentbyCCTest"/> 
+<class name="com.arc.testcases.MyCities.LEEDforCities.PrerequisitesAttemptTest"/>
+<class name="com.arc.testcases.MyCities.LEEDforCities.ProjectFieldVerificationTest"/>
+<class name="com.arc.testcases.MyCities.LEEDforCities.EditProjectDetailsTest"/>
+<class name="com.arc.testcases.MyCities.LEEDforCities.ProjectDetailsVerificationTest"/>
+<class name="com.arc.testcases.MyCities.LEEDforCities.AddTeamMemberTest"/>
+<class name="com.arc.testcases.MyCities.LEEDforCities.VerifyAgreementFileDownloadTest"/>
+<class name="com.arc.testcases.MyCities.LEEDforCities.VerifyCertificationStatusTest"/>
+<class name="com.arc.testcases.MyCities.LEEDforCities.InstallAllAppsTest"/>
+<class name="com.arc.testcases.MyCities.LEEDforCities.BillingDateVerificationTest"/>
+<class name="com.arc.testcases.MyCities.LEEDforCities.BillingRegistrationAmountVerificationTest"/>
+<class name="com.arc.testcases.MyCities.LEEDforCities.BillingStatusVerificationTest"/>
+<class name="com.arc.testcases.MyCities.LEEDforCities.PrecertificationPayTest"/>
+
+</classes>
+</test>
+
+
+
+
+
+<test name="ARCRegressionTest-City-NONE">
+
+<parameter name="browserName" value="firefox"/>
+<parameter name="environment" value="staging"/>
+<parameter name="rowNum" value="4"/>
+<parameter name="loginSheet" value="Login"/>
+<parameter name="citySheet" value="NewCityProject"/>
+<parameter name="paymentSheet" value="Payment"/>
+<parameter name="energySheet" value="BEnergy"/>
+<parameter name="teamSheet" value="BTeam"/>
+<parameter name="waterSheet" value="BWater"/>
+<parameter name="wasteSheet" value="BWaste"/>
+
+
+
+<classes>
+<class name="com.arc.testcases.MyCities.None.LoginCaseTest"/>
+<class name="com.arc.testcases.MyCities.None.SearchProgramTest"/>
+<class name="com.arc.testcases.MyCities.None.ClickSearchedProgramTest"/> 
+<class name="com.arc.testcases.MyCities.None.AddNewProjectTest"/>
+<class name="com.arc.testcases.MyCities.None.PaymentbyCCTest"/> 
+<class name="com.arc.testcases.MyCities.None.ProjectFieldVerificationTest"/>
+<class name="com.arc.testcases.MyCities.None.EditProjectDetailsTest"/>
+<class name="com.arc.testcases.MyCities.None.ProjectDetailsVerificationTest"/>
+<class name="com.arc.testcases.MyCities.None.AddTeamMemberTest"/>
+<class name="com.arc.testcases.MyCities.None.VerifyAgreementFileDownloadTest"/>
+<class name="com.arc.testcases.MyCities.None.VerifyCertificationStatusTest"/>
+<class name="com.arc.testcases.MyCities.None.InstallAllAppsTest"/>
+<class name="com.arc.testcases.MyCities.None.BillingDateVerificationTest"/>
+<class name="com.arc.testcases.MyCities.None.BillingRegistrationAmountVerificationTest"/>
+<class name="com.arc.testcases.MyCities.None.BillingStatusVerificationTest"/>
+<class name="com.arc.testcases.MyCities.None.PerformanceReviewTest"/>
+ 
+</classes>
+</test>
+ 
+
+
+
+
+
+<test name="ARCRegressionTest-City-Other">
+
+<parameter name="browserName" value="firefox"/>
+<parameter name="environment" value="staging"/>
+<parameter name="rowNum" value="3"/>
+<parameter name="loginSheet" value="Login"/>
+<parameter name="citySheet" value="NewCityProject"/>
+<parameter name="paymentSheet" value="Payment"/>
+<parameter name="energySheet" value="BEnergy"/>
+<parameter name="teamSheet" value="BTeam"/>
+<parameter name="waterSheet" value="BWater"/>
+<parameter name="wasteSheet" value="BWaste"/>
+
+
+
+<classes>
+<class name="com.arc.testcases.MyCities.Other.LoginCaseTest"/>
+<class name="com.arc.testcases.MyCities.Other.SearchProgramTest"/>
+<class name="com.arc.testcases.MyCities.Other.ClickSearchedProgramTest"/> 
+<class name="com.arc.testcases.MyCities.Other.AddNewProjectTest"/>
+<class name="com.arc.testcases.MyCities.Other.PaymentbyCCTest"/> 
+<class name="com.arc.testcases.MyCities.Other.ProjectFieldVerificationTest"/>
+<class name="com.arc.testcases.MyCities.Other.EditProjectDetailsTest"/>
+<class name="com.arc.testcases.MyCities.Other.ProjectDetailsVerificationTest"/>
+<class name="com.arc.testcases.MyCities.Other.AddTeamMemberTest"/>
+<class name="com.arc.testcases.MyCities.Other.VerifyAgreementFileDownloadTest"/>
+<class name="com.arc.testcases.MyCities.Other.VerifyCertificationStatusTest"/>
+<class name="com.arc.testcases.MyCities.Other.InstallAllAppsTest"/>
+<class name="com.arc.testcases.MyCities.Other.BillingDateVerificationTest"/>
+<class name="com.arc.testcases.MyCities.Other.BillingRegistrationAmountVerificationTest"/>
+<class name="com.arc.testcases.MyCities.Other.BillingStatusVerificationTest"/>
+<class name="com.arc.testcases.MyCities.Other.PerformanceReviewTest"/>
+ 
+</classes>
+</test>
+
+
+
+
+
+
+
+
+<test name="ARCRegressionTest-LEED-for-Communities">
 
 <parameter name="browserName" value="firefox"/>
 <parameter name="environment" value="staging"/>
@@ -222,38 +347,110 @@
 <parameter name="waterSheet" value="BWater"/>
 <parameter name="wasteSheet" value="BWaste"/>
 <classes>
- <!--
-<class name="com.arc.testcases.MyCommunities.LEEDforCommunities.BillingDateVerificationTest"></class>
- <class name="com.arc.testcases.MyCommunities.LEEDforCommunities.LoginCaseTest"></class>
-<class name="com.arc.testcases.MyCommunities.LEEDforCommunities.AddNewProjectTest"></class>
-<class name="com.arc.testcases.MyCommunities.LEEDforCommunities.SearchProgramTest"></class>
-<class name="com.arc.testcases.MyCommunities.LEEDforCommunities.ClickSearchedProgramTest"></class>
-<class name="com.arc.testcases.MyCommunities.LEEDforCommunities.PaymentbyCCTest"></class>
-<class name="com.arc.testcases.MyCommunities.LEEDforCommunities.EditProjectDetailsTest"></class>
-<class name="com.arc.testcases.MyCommunities.LEEDforCommunities.ProjectFieldVerificationTest"></class>
-<class name="com.arc.testcases.MyCommunities.LEEDforCommunities.ProjectDetailsVerificationTest"></class>
-<class name="com.arc.testcases.MyCommunities.LEEDforCommunities.AddTeamMemberTest"></class>
-<class name="com.arc.testcases.MyCommunities.LEEDforCommunities.EditMemberRoleManagerTest"></class>
-<class name="com.arc.testcases.MyCommunities.LEEDforCommunities.VerifyAgreementFileDownloadTest"></class>
-<class name="com.arc.testcases.MyCommunities.LEEDforCommunities.PreCertReviewTest"></class>
-<class name="com.arc.testcases.MyCommunities.LEEDforCommunities.VerifyCertificationStatusTest"></class>
-<class name="com.arc.testcases.MyCommunities.LEEDforCommunities.InstallAllAppsTest"></class>
-<class name="com.arc.testcases.MyCommunities.LEEDforCommunities.BillingDateVerificationTest"></class>
-<class name="com.arc.testcases.MyCommunities.LEEDforCommunities.BillingRegistrationAmountVerificationTest"></class>
-<class name="com.arc.testcases.MyCommunities.LEEDforCommunities.BillingStatusVerificationTest"></class>
+ 
 
- -->
+ <class name="com.arc.testcases.MyCommunities.LEEDforCommunities.LoginCaseTest"/>
+<class name="com.arc.testcases.MyCommunities.LEEDforCommunities.AddNewProjectTest"/>
+<class name="com.arc.testcases.MyCommunities.LEEDforCommunities.SearchProgramTest"/>
+<class name="com.arc.testcases.MyCommunities.LEEDforCommunities.ClickSearchedProgramTest"/>
+<class name="com.arc.testcases.MyCommunities.LEEDforCommunities.PaymentbyCCTest"/>
+<class name="com.arc.testcases.MyCommunities.LEEDforCommunities.PrerequisitesAttemptTest"/>
+<class name="com.arc.testcases.MyCommunities.LEEDforCommunities.EditProjectDetailsTest"/>
+<class name="com.arc.testcases.MyCommunities.LEEDforCommunities.ProjectFieldVerificationTest"/>
+<class name="com.arc.testcases.MyCommunities.LEEDforCommunities.ProjectDetailsVerificationTest"/>
+<class name="com.arc.testcases.MyCommunities.LEEDforCommunities.AddTeamMemberTest"/>
+<class name="com.arc.testcases.MyCommunities.LEEDforCommunities.EditMemberRoleManagerTest"/>
+<class name="com.arc.testcases.MyCommunities.LEEDforCommunities.VerifyAgreementFileDownloadTest"/>
+<class name="com.arc.testcases.MyCommunities.LEEDforCommunities.PreCertReviewTest"/>
+<class name="com.arc.testcases.MyCommunities.LEEDforCommunities.VerifyCertificationStatusTest"/>
+<class name="com.arc.testcases.MyCommunities.LEEDforCommunities.InstallAllAppsTest"/>
+<class name="com.arc.testcases.MyCommunities.LEEDforCommunities.BillingDateVerificationTest"/>
+<class name="com.arc.testcases.MyCommunities.LEEDforCommunities.BillingRegistrationAmountVerificationTest"/>
+<class name="com.arc.testcases.MyCommunities.LEEDforCommunities.BillingStatusVerificationTest"/>
 
 
 </classes>
 </test>
  
  
- 
- 
- 
-</suite> 
-  
 
-    
-  
+
+<test name="ARCRegressionTest-Other-for-Communities">
+
+<parameter name="browserName" value="firefox"/>
+<parameter name="environment" value="staging"/>
+<parameter name="rowNum" value="3"/>
+<parameter name="loginSheet" value="Login"/>
+<parameter name="communitySheet" value="NewCommunityProject"/>
+<parameter name="paymentSheet" value="Payment"/>
+<parameter name="energySheet" value="BEnergy"/>
+<parameter name="teamSheet" value="BTeam"/>
+<parameter name="waterSheet" value="BWater"/>
+<parameter name="wasteSheet" value="BWaste"/>
+<classes>
+ 
+
+ <class name="com.arc.testcases.MyCommunities.Other.LoginCaseTest"/>
+<class name="com.arc.testcases.MyCommunities.Other.AddNewProjectTest"/>
+<class name="com.arc.testcases.MyCommunities.Other.SearchProgramTest"/>
+<class name="com.arc.testcases.MyCommunities.Other.ClickSearchedProgramTest"/>
+<class name="com.arc.testcases.MyCommunities.Other.PaymentbyCCTest"/>
+<class name="com.arc.testcases.MyCommunities.Other.EditProjectDetailsTest"/>
+<class name="com.arc.testcases.MyCommunities.Other.ProjectFieldVerificationTest"/>
+<class name="com.arc.testcases.MyCommunities.Other.ProjectDetailsVerificationTest"/>
+<class name="com.arc.testcases.MyCommunities.Other.AddTeamMemberTest"/>
+<class name="com.arc.testcases.MyCommunities.Other.EditMemberRoleManagerTest"/>
+<class name="com.arc.testcases.MyCommunities.Other.VerifyAgreementFileDownloadTest"/>
+<class name="com.arc.testcases.MyCommunities.Other.PerformanceReviewTest"/>
+<class name="com.arc.testcases.MyCommunities.Other.VerifyCertificationStatusTest"/>
+<class name="com.arc.testcases.MyCommunities.Other.InstallAllAppsTest"/>
+<class name="com.arc.testcases.MyCommunities.Other.BillingDateVerificationTest"/>
+<class name="com.arc.testcases.MyCommunities.Other.BillingRegistrationAmountVerificationTest"/>
+<class name="com.arc.testcases.MyCommunities.Other.BillingStatusVerificationTest"/>
+
+
+</classes>
+</test>
+ 
+
+
+
+
+<test name="ARCRegressionTest-None-for-Communities">
+
+<parameter name="browserName" value="firefox"/>
+<parameter name="environment" value="staging"/>
+<parameter name="rowNum" value="4"/>
+<parameter name="loginSheet" value="Login"/>
+<parameter name="communitySheet" value="NewCommunityProject"/>
+<parameter name="paymentSheet" value="Payment"/>
+<parameter name="energySheet" value="BEnergy"/>
+<parameter name="teamSheet" value="BTeam"/>
+<parameter name="waterSheet" value="BWater"/>
+<parameter name="wasteSheet" value="BWaste"/>
+<classes>
+ 
+
+<class name="com.arc.testcases.MyCommunities.None.LoginCaseTest"/>
+<class name="com.arc.testcases.MyCommunities.None.AddNewProjectTest"/>
+<class name="com.arc.testcases.MyCommunities.None.SearchProgramTest"/>
+<class name="com.arc.testcases.MyCommunities.None.ClickSearchedProgramTest"/>
+<class name="com.arc.testcases.MyCommunities.None.PaymentbyCCTest"/>
+<class name="com.arc.testcases.MyCommunities.None.EditProjectDetailsTest"/>
+<class name="com.arc.testcases.MyCommunities.None.ProjectFieldVerificationTest"/>
+<class name="com.arc.testcases.MyCommunities.None.ProjectDetailsVerificationTest"/>
+<class name="com.arc.testcases.MyCommunities.None.AddTeamMemberTest"/>
+<class name="com.arc.testcases.MyCommunities.None.EditMemberRoleManagerTest"/>
+<class name="com.arc.testcases.MyCommunities.None.VerifyAgreementFileDownloadTest"/>
+<class name="com.arc.testcases.MyCommunities.None.PerformanceReviewTest"/>
+<class name="com.arc.testcases.MyCommunities.None.VerifyCertificationStatusTest"/>
+<class name="com.arc.testcases.MyCommunities.None.InstallAllAppsTest"/>
+<class name="com.arc.testcases.MyCommunities.None.BillingDateVerificationTest"/>
+<class name="com.arc.testcases.MyCommunities.None.BillingRegistrationAmountVerificationTest"/>
+<class name="com.arc.testcases.MyCommunities.None.BillingStatusVerificationTest"/>
+
+
+</classes>
+</test>
+ 
+</suite>  

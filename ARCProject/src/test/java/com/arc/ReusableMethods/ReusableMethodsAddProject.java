@@ -152,6 +152,7 @@ public class ReusableMethodsAddProject extends BaseClass{
 		String Amount= splits[0]+" "+splits[1];
 		
 		data.setCellData(sheetName, "Amount" , rowNum, Amount );
+		
 		Thread.sleep(10000);
 
 	}
@@ -445,6 +446,13 @@ public void AddAboveProjectLEEDfortransit(int rowNum,  String sheetName ) throws
 		CommonMethod.testlog( "Pass", "Clicking on agree to terms");
 		CommonMethod.click( "NextButton");
 		CommonMethod.testlog( "Pass", "Clicking on Next button");
+		
+		String[] splits = CommonMethod.getText("amountPayable").split(" ");
+		
+		String Amount= splits[0]+" "+splits[1];
+		
+		data.setCellData(sheetName, "Amount" , rowNum, Amount );
+		
 		Thread.sleep(10000);
 
 	}
@@ -607,6 +615,13 @@ public void AddUndergroundProjectLEEDfortransit(int rowNum,  String sheetName ) 
 		CommonMethod.testlog( "Pass", "Clicking on agree to terms");
 		CommonMethod.click( "NextButton");
 		CommonMethod.testlog( "Pass", "Clicking on Next button");
+		
+		String[] splits = CommonMethod.getText("amountPayable").split(" ");
+		
+		String Amount= splits[0]+" "+splits[1];
+		
+		data.setCellData(sheetName, "Amount" , rowNum, Amount );
+		
 		Thread.sleep(10000);
 
 
@@ -739,6 +754,14 @@ public void AddUndergroundProjectLEEDfortransit(int rowNum,  String sheetName ) 
 		CommonMethod.testlog( "Pass", "Clicking on agree to terms");
 		CommonMethod.click( "NextButton");
 		CommonMethod.testlog( "Pass", "Clicking on Next button");
+		
+		String[] splits = CommonMethod.getText("amountPayable").split(" ");
+		
+		String Amount= splits[0]+" "+splits[1];
+		
+		data.setCellData(sheetName, "Amount" , rowNum, Amount );
+		
+		
 		Thread.sleep(10000);
 
 
@@ -872,6 +895,14 @@ public void AddUndergroundProjectLEEDfortransit(int rowNum,  String sheetName ) 
 		CommonMethod.FluentWait("NextButton");
 		CommonMethod.click( "NextButton");
 		CommonMethod.testlog( "Pass", "Clicking on Next button");
+		
+		String[] splits = CommonMethod.getText("amountPayable").split(" ");
+		
+		String Amount= splits[0]+" "+splits[1];
+		
+		data.setCellData(sheetName, "Amount" , rowNum, Amount );
+		
+		
 		Thread.sleep(10000);
 
 	}
@@ -947,6 +978,14 @@ public void AddUndergroundProjectLEEDfortransit(int rowNum,  String sheetName ) 
 		CommonMethod.FluentWait("NextButton");
 		CommonMethod.click( "NextButton");
 		CommonMethod.testlog( "Pass", "Clicking on Next button");
+		
+		String[] splits = CommonMethod.getText("amountPayable").split(" ");
+		
+		String Amount= splits[0]+" "+splits[1];
+		
+		data.setCellData(sheetName, "Amount" , rowNum, Amount );
+		
+		
 		Thread.sleep(10000);
 
 	}
@@ -1022,6 +1061,14 @@ public void AddUndergroundProjectLEEDfortransit(int rowNum,  String sheetName ) 
 		CommonMethod.FluentWait("NextButton");
 		CommonMethod.click( "NextButton");
 		CommonMethod.testlog( "Pass", "Clicking on Next button");
+		
+		String[] splits = CommonMethod.getText("amountPayable").split(" ");
+		
+		String Amount= splits[0]+" "+splits[1];
+		
+		data.setCellData(sheetName, "Amount" , rowNum, Amount );
+		
+		
 		Thread.sleep(10000);
 
 	}
@@ -1097,7 +1144,13 @@ public void AddUndergroundProjectLEEDfortransit(int rowNum,  String sheetName ) 
 		CommonMethod.FluentWait("NextButton");
 		CommonMethod.click( "NextButton");
 		CommonMethod.testlog( "Pass", "Clicking on Next button");
+		
+        String[] splits = CommonMethod.getText("amountPayable").split(" ");
+		String Amount= splits[0]+" "+splits[1];
+		data.setCellData(sheetName, "Amount" , rowNum, Amount );
+		
 		Thread.sleep(10000);
+		
 		CommonMethod.FluentWait("VerifyPaymentDone");
 		CommonMethod.testlog( "Pass", "Project details filled");
 	}
@@ -1172,6 +1225,11 @@ public void AddUndergroundProjectLEEDfortransit(int rowNum,  String sheetName ) 
 		CommonMethod.testlog( "Pass", "Clicking on agree to terms");
 		CommonMethod.click( "NextButton");
 		CommonMethod.testlog( "Pass", "Clicking on Next button");
+		
+		String[] splits = CommonMethod.getText("amountPayable").split(" ");
+		String Amount= splits[0]+" "+splits[1];
+		data.setCellData(sheetName, "Amount" , rowNum, Amount );
+		
 		Thread.sleep(10000);
 	}
 	
@@ -1244,8 +1302,15 @@ public void AddUndergroundProjectLEEDfortransit(int rowNum,  String sheetName ) 
 		CommonMethod.testlog( "Pass", "Clicking on agree to terms");
 		CommonMethod.click( "NextButton");
 		CommonMethod.testlog( "Pass", "Clicking on Next button");
+		
+		
+		String[] splits = CommonMethod.getText("amountPayable").split(" ");
+		String Amount= splits[0]+" "+splits[1];
+		data.setCellData(sheetName, "Amount" , rowNum, Amount );
+		
 		Thread.sleep(10000);
 	}
+	
 	/*public void AddProjectTransit() throws IOException, InterruptedException {
 
 		clickAddProject();

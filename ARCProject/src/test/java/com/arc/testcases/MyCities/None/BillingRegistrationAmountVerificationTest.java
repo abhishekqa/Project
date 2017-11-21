@@ -16,9 +16,9 @@ import com.arc.driver.CommonMethod;
 public class BillingRegistrationAmountVerificationTest extends BaseClass {
 
 	
-	@Test(dependsOnMethods = { "com.arc.testcases.MyCities.None.LoginCaseTest.loginCase","com.arc.testcases.MyCities.None.SearchProgramTest.searchProgram","com.arc.testcases.MyCities.None.ClickSearchedProgramTest.clickSearchedProgram","com.arc.testcases.MyCities.None.PaymentbyCCTest.paymentbyCC","com.arc.testcases.MyCities.None.PrecertificationPayTest.precertificationPay" })
-	@Parameters({"rowNum" ,"loginSheet","citySheet","paymentSheet"})
-	public void billingRegistrationAmountVerificationTest(int rowNum, String loginSheet, String citySheet, String paymentSheet) throws IOException {
+	@Test(dependsOnMethods = { "com.arc.testcases.MyCities.None.LoginCaseTest.loginCase","com.arc.testcases.MyCities.None.SearchProgramTest.searchProgram","com.arc.testcases.MyCities.None.ClickSearchedProgramTest.clickSearchedProgram","com.arc.testcases.MyCities.None.PaymentbyCCTest.paymentbyCC" })
+	@Parameters({"rowNum" ,"loginSheet","citySheet"})
+	public void billingRegistrationAmountVerificationTest(int rowNum, String loginSheet, String citySheet) throws IOException {
 		
 		CommonMethod.ExtentReportConfig();
 		
@@ -32,7 +32,7 @@ public class BillingRegistrationAmountVerificationTest extends BaseClass {
 			reuse.LoginWithCities(rowNum, "My Cities", loginSheet);
 			reuseSearch.SearchProgram(data.getCellData(citySheet, "ProjectName", rowNum));
 			reuseSearch.VerifySearchedProgram(data.getCellData(citySheet, "ProjectName", rowNum));
-			reuseManage.verifyRegAmount(paymentSheet, rowNum);
+			reuseManage.verifyRegAmount(citySheet, rowNum);
 
 		} catch (Throwable t) {
 			System.out.println(t.getLocalizedMessage());

@@ -22,7 +22,7 @@ public class WaterMeterCreateTest extends BaseClass {
 		
 		CommonMethod.ExtentReportConfig();
 		
-		CommonMethod.test = CommonMethod.extent.startTest("ARC-Login Test", "Verifies if Login functionality is working fine").assignCategory("CheckLogin");
+		CommonMethod.test = CommonMethod.extent.startTest("Water Meter Create Test", "Verifies if Login functionality is working fine").assignCategory("CheckLogin");
     
 		ReusableMethodsLogin reuse = new ReusableMethodsLogin();
 		ReusableMethodsDataInput reuseDI = new ReusableMethodsDataInput();

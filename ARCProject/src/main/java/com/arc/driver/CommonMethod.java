@@ -57,6 +57,7 @@ public class CommonMethod extends BaseClass  {
 	public static WebDriverWait wait = new WebDriverWait(driver, 60);
 	static WebElement element;
 	
+	
 	public static WebElement findElement(final String objectLocater) throws IOException{
 		//System.out.println(downloadPath);
 		Properties OR = new Properties();
@@ -109,6 +110,8 @@ public class CommonMethod extends BaseClass  {
 		}
 		
 		}
+	
+	
 	
 	
 	public static List<WebElement> findElements(String objectLocater) throws IOException{
@@ -664,7 +667,7 @@ public class CommonMethod extends BaseClass  {
 		
 		Wait<WebDriver> wait = new FluentWait<WebDriver>(driver)							
 				.withTimeout(30, TimeUnit.SECONDS) 			
-				.pollingEvery(5, TimeUnit.SECONDS) 			
+				.pollingEvery(2, TimeUnit.SECONDS) 			
 				.ignoring(NoSuchElementException.class);
 		
 			wait.until(new Function<WebDriver, WebElement>() {
@@ -672,9 +675,9 @@ public class CommonMethod extends BaseClass  {
 			public WebElement  apply(WebDriver t) {
 				//return t.findElement(By.xpath(".//*[contains(text(),'+ Add')]"));
 				try {
-					System.out.println(objectLocater);
+					
 					element= findElement(objectLocater);
-				 System.out.println(element);
+				
 				} catch (IOException e) {
 					e.printStackTrace();
 				}
@@ -684,6 +687,125 @@ public class CommonMethod extends BaseClass  {
 		
 	}
 	
+	public static WebElement WaitUntilPresence(String objectlocator) throws IOException{
+		
+		Properties OR = new Properties();
+		FileInputStream fp = new FileInputStream(System.getProperty("user.dir")+"\\src\\main\\resources\\ObjectLocator.properties");
+		OR.load(fp);
+		
+		FileInputStream fp1 = new FileInputStream(System.getProperty("user.dir")+"\\src\\main\\resources\\DashbordLocator.properties");
+		OR.load(fp1);
+		
+		
+		
+		String objecttypeandvalues = OR.getProperty(objectlocator);
+		
+		System.out.println(objecttypeandvalues);
+		String[] splits = objecttypeandvalues.split("~");
+		String objecttype = splits[0]; 
+		System.out.println("obj type: " + objecttype);
+		String objectvalue = splits[1];
+		System.out.println("obj val: " + objectvalue);
+		switch(objecttype){
+		
+		
+		  
+		case "id":
+			
+			return (wait.until(ExpectedConditions.presenceOfElementLocated(By.id(objectvalue))));
+			
+		case "xpath":
+
+			return (wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(objectvalue))));
+			                
+        case "name":
+
+        	return (wait.until(ExpectedConditions.presenceOfElementLocated(By.name(objectvalue))));
+			               		  
+        case "class":
+
+        	return (wait.until(ExpectedConditions.presenceOfElementLocated(By.className(objectvalue))));
+
+        case "tagname":
+
+        	return (wait.until(ExpectedConditions.presenceOfElementLocated(By.tagName(objectvalue))));
+ 
+        case "css":
+			  
+        	return (wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector(objectvalue))));
+        
+        case "linkText":
+  			  
+        	return (wait.until(ExpectedConditions.presenceOfElementLocated(By.linkText(objectvalue))));
+        default:
+        	
+        	return null;
+}
+		//By css = findElement(objectlocator);
+		
+	}
+	
+     public static WebElement WaitUntilVisibility(String objectlocator) throws IOException{
+		
+		Properties OR = new Properties();
+		FileInputStream fp = new FileInputStream(System.getProperty("user.dir")+"\\src\\main\\resources\\ObjectLocator.properties");
+		OR.load(fp);
+		
+		FileInputStream fp1 = new FileInputStream(System.getProperty("user.dir")+"\\src\\main\\resources\\DashbordLocator.properties");
+		OR.load(fp1);
+		
+		
+		
+		String objecttypeandvalues = OR.getProperty(objectlocator);
+		
+		System.out.println(objecttypeandvalues);
+		String[] splits = objecttypeandvalues.split("~");
+		String objecttype = splits[0]; 
+		System.out.println("obj type: " + objecttype);
+		String objectvalue = splits[1];
+		System.out.println("obj val: " + objectvalue);
+		switch(objecttype){
+		
+		
+		  
+		case "id":
+			
+			return (wait.until(ExpectedConditions.visibilityOfElementLocated(By.id(objectvalue))));
+			
+		case "xpath":
+
+			return (wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(objectvalue))));
+			                
+        case "name":
+
+        	return (wait.until(ExpectedConditions.visibilityOfElementLocated(By.name(objectvalue))));
+			               		  
+        case "class":
+
+        	return (wait.until(ExpectedConditions.visibilityOfElementLocated(By.className(objectvalue))));
+
+        case "tagname":
+
+        	return (wait.until(ExpectedConditions.visibilityOfElementLocated(By.tagName(objectvalue))));
+ 
+        case "css":
+			  
+        	return (wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(objectvalue))));
+        
+        case "linkText":
+  			  
+        	return (wait.until(ExpectedConditions.visibilityOfElementLocated(By.linkText(objectvalue))));
+        default:
+        	
+        	return null;
+}
+		//By css = findElement(objectlocator);
+		
+	}
+	
+
+
+
 	public static void displayhiddenElement(String objectLocator) throws IOException{
 	    
 	    JavascriptExecutor js = (JavascriptExecutor) driver;
@@ -718,12 +840,13 @@ public class CommonMethod extends BaseClass  {
 	
 		
 	
-	public static void waitTillVisible(String locater){
-		
-		/*WebDriverWait wait = new WebDriverWait(driver, 10);
-		WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(findElements(locater)));*/
-	}
-	
+	/*public WebElement find(String locator) 
+	{ 
+	WebElement loc = findElement(locator);
+	return wait.until(ExpectedConditions.visibilityOfElementLocated(loc)); 
+	} */
+
+
 	
 	
 	

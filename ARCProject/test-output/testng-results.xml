@@ -1,19 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="22" failed="0" total="24" passed="2">
+<testng-results skipped="0" failed="1" total="17" passed="16">
   <reporter-output>
   </reporter-output>
-  <suite name="SanityTestCasesSuite" duration-ms="1646498" started-at="2017-11-19T08:59:47Z" finished-at="2017-11-19T09:27:14Z">
+  <suite name="SanityTestCasesSuite" duration-ms="1241577" started-at="2017-11-20T13:10:11Z" finished-at="2017-11-20T13:30:53Z">
     <groups>
     </groups>
-    <test name="ARCRegressionTest-LEED-for-Buildings" duration-ms="9" started-at="2017-11-19T08:59:47Z" finished-at="2017-11-19T08:59:47Z">
+    <test name="ARCRegressionTest-LEED-for-Buildings" duration-ms="7" started-at="2017-11-20T13:10:11Z" finished-at="2017-11-20T13:10:11Z">
     </test> <!-- ARCRegressionTest-LEED-for-Buildings -->
-    <test name="ARCRegressionTest-Building-None" duration-ms="1646290" started-at="2017-11-19T08:59:47Z" finished-at="2017-11-19T09:27:14Z">
-      <class name="com.arc.testcases.MyBuildings.None.PerformanceScoreVerificationReviewTest">
-        <test-method status="PASS" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.None.PerformanceScoreVerificationReviewTest@2286778]" name="setup" is-config="true" duration-ms="15168" started-at="2017-11-19T14:56:57Z" finished-at="2017-11-19T14:57:12Z">
+    <test name="ARCRegressionTest-Building-None" duration-ms="2" started-at="2017-11-20T13:10:12Z" finished-at="2017-11-20T13:10:12Z">
+    </test> <!-- ARCRegressionTest-Building-None -->
+    <test name="ARCRegressionTest-Building-Other" duration-ms="1" started-at="2017-11-20T13:10:12Z" finished-at="2017-11-20T13:10:12Z">
+    </test> <!-- ARCRegressionTest-Building-Other -->
+    <test name="ARCRegressionTest-Building-Transit" duration-ms="1" started-at="2017-11-20T13:10:12Z" finished-at="2017-11-20T13:10:12Z">
+    </test> <!-- ARCRegressionTest-Building-Transit -->
+    <test name="ARCRegressionTest-City-LEED" duration-ms="1" started-at="2017-11-20T13:10:12Z" finished-at="2017-11-20T13:10:12Z">
+    </test> <!-- ARCRegressionTest-City-LEED -->
+    <test name="ARCRegressionTest-City-NONE" duration-ms="1" started-at="2017-11-20T13:10:12Z" finished-at="2017-11-20T13:10:12Z">
+    </test> <!-- ARCRegressionTest-City-NONE -->
+    <test name="ARCRegressionTest-None-for-Communities" duration-ms="1241423" started-at="2017-11-20T13:10:12Z" finished-at="2017-11-20T13:30:53Z">
+      <class name="com.arc.testcases.MyCommunities.None.ProjectDetailsVerificationTest">
+        <test-method status="PASS" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyCommunities.None.ProjectDetailsVerificationTest@5f9d02cb]" name="setup" is-config="true" duration-ms="22558" started-at="2017-11-20T18:48:13Z" finished-at="2017-11-20T18:48:36Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[chrome]]>
+                <![CDATA[firefox]]>
               </value>
             </param>
             <param index="1">
@@ -25,283 +35,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="SKIP" signature="PerformanceScoreVerificationReview(int, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.None.PerformanceScoreVerificationReviewTest@2286778]" name="PerformanceScoreVerificationReview" duration-ms="0" started-at="2017-11-19T14:57:12Z" depends-on-methods="com.arc.testcases.MyBuildings.None.LoginCaseTest.loginCase, com.arc.testcases.MyBuildings.None.PaymentbyCCTest.paymentbyCC, com.arc.testcases.MyBuildings.None.ClickSearchedProgramTest.clickSearchedProgram" finished-at="2017-11-19T14:57:12Z">
-          <exception class="java.lang.Throwable">
-            <message>
-              <![CDATA[Method PerformanceScoreVerificationReviewTest.PerformanceScoreVerificationReview(int, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.None.PerformanceScoreVerificationReviewTest@2286778] depends on not successfully finished methods]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method PerformanceScoreVerificationReviewTest.PerformanceScoreVerificationReview(int, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.None.PerformanceScoreVerificationReviewTest@2286778] depends on not successfully finished methods
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1033)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
-	at org.testng.TestRunner.privateRun(TestRunner.java:774)
-	at org.testng.TestRunner.run(TestRunner.java:624)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1191)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
-	at org.testng.TestNG.run(TestNG.java:1024)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- PerformanceScoreVerificationReview -->
-        <test-method status="PASS" signature="end()[pri:0, instance:com.arc.testcases.MyBuildings.None.PerformanceScoreVerificationReviewTest@2286778]" name="end" is-config="true" duration-ms="1427" started-at="2017-11-19T14:57:12Z" finished-at="2017-11-19T14:57:14Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- end -->
-      </class> <!-- com.arc.testcases.MyBuildings.None.PerformanceScoreVerificationReviewTest -->
-      <class name="com.arc.testcases.MyBuildings.None.WaterMeterCreateTest">
-        <test-method status="FAIL" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.None.WaterMeterCreateTest@21213b92]" name="setup" is-config="true" duration-ms="0" started-at="2017-11-19T14:45:55Z" finished-at="2017-11-19T14:45:55Z">
+        <test-method status="PASS" signature="projectDetailsVerification(int, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyCommunities.None.ProjectDetailsVerificationTest@5f9d02cb]" name="projectDetailsVerification" duration-ms="40137" started-at="2017-11-20T18:48:36Z" depends-on-methods="com.arc.testcases.MyCommunities.None.EditProjectDetailsTest.editProjectDetails, com.arc.testcases.MyCommunities.None.PaymentbyCCTest.paymentbyCC, com.arc.testcases.MyCommunities.None.SearchProgramTest.searchProgram, com.arc.testcases.MyCommunities.None.LoginCaseTest.loginCase, com.arc.testcases.MyCommunities.None.ClickSearchedProgramTest.clickSearchedProgram" finished-at="2017-11-20T18:49:16Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[staging]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[timeout
-  (Session info: chrome=62.0.3202.94)
-  (Driver info: chromedriver=2.33.506120 (e3e53437346286c0bc2d2dc9aa4915ba81d9023f),platform=Windows NT 10.0.15063 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 300.01 seconds
-Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
-System info: host: 'G10GNLT049', ip: '192.168.0.102', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_151'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.33.506120 (e3e53437346286c0bc2d2dc9aa4915ba81d9023f), userDataDir=C:\Users\Lenovo\AppData\Local\Temp\scoped_dir73704_15921}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=62.0.3202.94, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
-Session ID: c80136bfe5b3e0fb31d880e954602993]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: timeout
-  (Session info: chrome=62.0.3202.94)
-  (Driver info: chromedriver=2.33.506120 (e3e53437346286c0bc2d2dc9aa4915ba81d9023f),platform=Windows NT 10.0.15063 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 300.01 seconds
-Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
-System info: host: 'G10GNLT049', ip: '192.168.0.102', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_151'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.33.506120 (e3e53437346286c0bc2d2dc9aa4915ba81d9023f), userDataDir=C:\Users\Lenovo\AppData\Local\Temp\scoped_dir73704_15921}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=62.0.3202.94, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
-Session ID: c80136bfe5b3e0fb31d880e954602993
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:316)
-	at com.arc.driver.BaseClass.setup(BaseClass.java:151)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:510)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:211)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
-	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:170)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:104)
-	at org.testng.TestRunner.privateRun(TestRunner.java:774)
-	at org.testng.TestRunner.run(TestRunner.java:624)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1191)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
-	at org.testng.TestNG.run(TestNG.java:1024)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="SKIP" signature="waterMeterCreate(int, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.None.WaterMeterCreateTest@21213b92]" name="waterMeterCreate" duration-ms="0" started-at="2017-11-19T14:50:59Z" depends-on-methods="com.arc.testcases.MyBuildings.None.LoginCaseTest.loginCase, com.arc.testcases.MyBuildings.None.PaymentbyCCTest.paymentbyCC, com.arc.testcases.MyBuildings.None.ClickSearchedProgramTest.clickSearchedProgram" finished-at="2017-11-19T14:50:59Z">
-          <exception class="java.lang.Throwable">
-            <message>
-              <![CDATA[Method WaterMeterCreateTest.waterMeterCreate(int, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.None.WaterMeterCreateTest@21213b92] depends on not successfully finished methods]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method WaterMeterCreateTest.waterMeterCreate(int, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.None.WaterMeterCreateTest@21213b92] depends on not successfully finished methods
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1033)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
-	at org.testng.TestRunner.privateRun(TestRunner.java:774)
-	at org.testng.TestRunner.run(TestRunner.java:624)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1191)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
-	at org.testng.TestNG.run(TestNG.java:1024)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- waterMeterCreate -->
-        <test-method status="PASS" signature="end()[pri:0, instance:com.arc.testcases.MyBuildings.None.WaterMeterCreateTest@21213b92]" name="end" is-config="true" duration-ms="1027" started-at="2017-11-19T14:50:59Z" finished-at="2017-11-19T14:51:00Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- end -->
-      </class> <!-- com.arc.testcases.MyBuildings.None.WaterMeterCreateTest -->
-      <class name="com.arc.testcases.MyBuildings.None.EnergyFileUploadTest">
-        <test-method status="PASS" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.None.EnergyFileUploadTest@56235b8e]" name="setup" is-config="true" duration-ms="14983" started-at="2017-11-19T14:55:13Z" finished-at="2017-11-19T14:55:28Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[staging]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="end()[pri:0, instance:com.arc.testcases.MyBuildings.None.EnergyFileUploadTest@56235b8e]" name="end" is-config="true" duration-ms="1135" started-at="2017-11-19T14:55:28Z" finished-at="2017-11-19T14:55:29Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- end -->
-        <test-method status="SKIP" signature="energyFileUpload(int, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.None.EnergyFileUploadTest@56235b8e]" name="energyFileUpload" duration-ms="0" started-at="2017-11-19T14:55:28Z" depends-on-methods="com.arc.testcases.MyBuildings.None.LoginCaseTest.loginCase, com.arc.testcases.MyBuildings.None.PaymentbyCCTest.paymentbyCC, com.arc.testcases.MyBuildings.None.ClickSearchedProgramTest.clickSearchedProgram" finished-at="2017-11-19T14:55:28Z">
-          <exception class="java.lang.Throwable">
-            <message>
-              <![CDATA[Method EnergyFileUploadTest.energyFileUpload(int, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.None.EnergyFileUploadTest@56235b8e] depends on not successfully finished methods]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method EnergyFileUploadTest.energyFileUpload(int, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.None.EnergyFileUploadTest@56235b8e] depends on not successfully finished methods
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1033)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
-	at org.testng.TestRunner.privateRun(TestRunner.java:774)
-	at org.testng.TestRunner.run(TestRunner.java:624)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1191)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
-	at org.testng.TestNG.run(TestNG.java:1024)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- energyFileUpload -->
-      </class> <!-- com.arc.testcases.MyBuildings.None.EnergyFileUploadTest -->
-      <class name="com.arc.testcases.MyBuildings.None.AddNewProjectTest">
-        <test-method status="FAIL" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.None.AddNewProjectTest@60c6f5b]" name="setup" is-config="true" duration-ms="0" started-at="2017-11-19T14:35:08Z" finished-at="2017-11-19T14:35:08Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[staging]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[timeout
-  (Session info: chrome=62.0.3202.94)
-  (Driver info: chromedriver=2.33.506120 (e3e53437346286c0bc2d2dc9aa4915ba81d9023f),platform=Windows NT 10.0.15063 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 300.03 seconds
-Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
-System info: host: 'G10GNLT049', ip: '192.168.0.102', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_151'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.33.506120 (e3e53437346286c0bc2d2dc9aa4915ba81d9023f), userDataDir=C:\Users\Lenovo\AppData\Local\Temp\scoped_dir74732_9203}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=62.0.3202.94, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
-Session ID: b2e583fed9e89b586a0190378a0a28dd]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: timeout
-  (Session info: chrome=62.0.3202.94)
-  (Driver info: chromedriver=2.33.506120 (e3e53437346286c0bc2d2dc9aa4915ba81d9023f),platform=Windows NT 10.0.15063 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 300.03 seconds
-Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
-System info: host: 'G10GNLT049', ip: '192.168.0.102', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_151'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.33.506120 (e3e53437346286c0bc2d2dc9aa4915ba81d9023f), userDataDir=C:\Users\Lenovo\AppData\Local\Temp\scoped_dir74732_9203}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=62.0.3202.94, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
-Session ID: b2e583fed9e89b586a0190378a0a28dd
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:316)
-	at com.arc.driver.BaseClass.setup(BaseClass.java:151)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:510)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:211)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
-	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:170)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:104)
-	at org.testng.TestRunner.privateRun(TestRunner.java:774)
-	at org.testng.TestRunner.run(TestRunner.java:624)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1191)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
-	at org.testng.TestNG.run(TestNG.java:1024)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="SKIP" signature="addNewProject(int, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.None.AddNewProjectTest@60c6f5b]" name="addNewProject" duration-ms="4" started-at="2017-11-19T14:40:12Z" finished-at="2017-11-19T14:40:12Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[6]]>
+                <![CDATA[4]]>
               </value>
             </param>
             <param index="1">
@@ -311,35 +49,35 @@ Session ID: b2e583fed9e89b586a0190378a0a28dd
             </param>
             <param index="2">
               <value>
-                <![CDATA[NewBuildingProject]]>
+                <![CDATA[NewCommunityProject]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- addNewProject -->
-        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.arc.testcases.MyBuildings.None.AddNewProjectTest@60c6f5b]" name="teardown" is-config="true" duration-ms="85" started-at="2017-11-19T14:40:12Z" finished-at="2017-11-19T14:40:12Z">
+        </test-method> <!-- projectDetailsVerification -->
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.arc.testcases.MyCommunities.None.ProjectDetailsVerificationTest@5f9d02cb]" name="teardown" is-config="true" duration-ms="47" started-at="2017-11-20T18:49:16Z" finished-at="2017-11-20T18:49:16Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=addNewProject status=SKIP method=AddNewProjectTest.addNewProject(int, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.None.AddNewProjectTest@60c6f5b] output={null}]]]>
+                <![CDATA[[TestResult name=projectDetailsVerification status=SUCCESS method=ProjectDetailsVerificationTest.projectDetailsVerification(int, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyCommunities.None.ProjectDetailsVerificationTest@5f9d02cb] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method status="PASS" signature="end()[pri:0, instance:com.arc.testcases.MyBuildings.None.AddNewProjectTest@60c6f5b]" name="end" is-config="true" duration-ms="1542" started-at="2017-11-19T14:40:12Z" finished-at="2017-11-19T14:40:13Z">
+        <test-method status="PASS" signature="end()[pri:0, instance:com.arc.testcases.MyCommunities.None.ProjectDetailsVerificationTest@5f9d02cb]" name="end" is-config="true" duration-ms="509" started-at="2017-11-20T18:49:16Z" finished-at="2017-11-20T18:49:17Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- end -->
-      </class> <!-- com.arc.testcases.MyBuildings.None.AddNewProjectTest -->
-      <class name="com.arc.testcases.MyBuildings.None.EditMemberRoleManagerTest">
-        <test-method status="PASS" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.None.EditMemberRoleManagerTest@5ce81285]" name="setup" is-config="true" duration-ms="43879" started-at="2017-11-19T14:52:24Z" finished-at="2017-11-19T14:53:08Z">
+      </class> <!-- com.arc.testcases.MyCommunities.None.ProjectDetailsVerificationTest -->
+      <class name="com.arc.testcases.MyCommunities.None.AddTeamMemberTest">
+        <test-method status="PASS" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyCommunities.None.AddTeamMemberTest@6b09bb57]" name="setup" is-config="true" duration-ms="21581" started-at="2017-11-20T18:49:17Z" finished-at="2017-11-20T18:49:38Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[chrome]]>
+                <![CDATA[firefox]]>
               </value>
             </param>
             <param index="1">
@@ -351,47 +89,54 @@ Session ID: b2e583fed9e89b586a0190378a0a28dd
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="SKIP" signature="editMemberRoleManager(int, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.None.EditMemberRoleManagerTest@5ce81285]" name="editMemberRoleManager" duration-ms="0" started-at="2017-11-19T14:53:08Z" depends-on-methods="com.arc.testcases.MyBuildings.None.AddTeamMemberTest.addTeamMember, com.arc.testcases.MyBuildings.None.LoginCaseTest.loginCase, com.arc.testcases.MyBuildings.None.PaymentbyCCTest.paymentbyCC, com.arc.testcases.MyBuildings.None.ClickSearchedProgramTest.clickSearchedProgram" finished-at="2017-11-19T14:53:08Z">
-          <exception class="java.lang.Throwable">
-            <message>
-              <![CDATA[Method EditMemberRoleManagerTest.editMemberRoleManager(int, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.None.EditMemberRoleManagerTest@5ce81285] depends on not successfully finished methods]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method EditMemberRoleManagerTest.editMemberRoleManager(int, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.None.EditMemberRoleManagerTest@5ce81285] depends on not successfully finished methods
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1033)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
-	at org.testng.TestRunner.privateRun(TestRunner.java:774)
-	at org.testng.TestRunner.run(TestRunner.java:624)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1191)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
-	at org.testng.TestNG.run(TestNG.java:1024)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- editMemberRoleManager -->
-        <test-method status="PASS" signature="end()[pri:0, instance:com.arc.testcases.MyBuildings.None.EditMemberRoleManagerTest@5ce81285]" name="end" is-config="true" duration-ms="1086" started-at="2017-11-19T14:53:08Z" finished-at="2017-11-19T14:53:09Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- end -->
-      </class> <!-- com.arc.testcases.MyBuildings.None.EditMemberRoleManagerTest -->
-      <class name="com.arc.testcases.MyBuildings.None.EnergyMeterCreateTest">
-        <test-method status="FAIL" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.None.EnergyMeterCreateTest@71318ec4]" name="setup" is-config="true" duration-ms="0" started-at="2017-11-19T14:40:50Z" finished-at="2017-11-19T14:40:50Z">
+        <test-method status="PASS" signature="addTeamMember(int, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyCommunities.None.AddTeamMemberTest@6b09bb57]" name="addTeamMember" duration-ms="47133" started-at="2017-11-20T18:49:38Z" depends-on-methods="com.arc.testcases.MyCommunities.None.PaymentbyCCTest.paymentbyCC, com.arc.testcases.MyCommunities.None.SearchProgramTest.searchProgram, com.arc.testcases.MyCommunities.None.LoginCaseTest.loginCase, com.arc.testcases.MyCommunities.None.ClickSearchedProgramTest.clickSearchedProgram" finished-at="2017-11-20T18:50:25Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[chrome]]>
+                <![CDATA[4]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Login]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[NewCommunityProject]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[BTeam]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addTeamMember -->
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.arc.testcases.MyCommunities.None.AddTeamMemberTest@6b09bb57]" name="teardown" is-config="true" duration-ms="44" started-at="2017-11-20T18:50:25Z" finished-at="2017-11-20T18:50:25Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=addTeamMember status=SUCCESS method=AddTeamMemberTest.addTeamMember(int, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyCommunities.None.AddTeamMemberTest@6b09bb57] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="end()[pri:0, instance:com.arc.testcases.MyCommunities.None.AddTeamMemberTest@6b09bb57]" name="end" is-config="true" duration-ms="512" started-at="2017-11-20T18:50:25Z" finished-at="2017-11-20T18:50:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- end -->
+      </class> <!-- com.arc.testcases.MyCommunities.None.AddTeamMemberTest -->
+      <class name="com.arc.testcases.MyCommunities.None.PaymentbyCCTest">
+        <test-method status="PASS" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyCommunities.None.PaymentbyCCTest@2286778]" name="setup" is-config="true" duration-ms="26667" started-at="2017-11-20T18:44:24Z" finished-at="2017-11-20T18:44:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
               </value>
             </param>
             <param index="1">
@@ -400,28 +145,491 @@ Session ID: b2e583fed9e89b586a0190378a0a28dd
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.TimeoutException">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="paymentbyCC(int, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyCommunities.None.PaymentbyCCTest@2286778]" name="paymentbyCC" duration-ms="57682" started-at="2017-11-20T18:44:51Z" depends-on-methods="com.arc.testcases.MyCommunities.None.AddNewProjectTest.addNewProject, com.arc.testcases.MyCommunities.None.SearchProgramTest.searchProgram, com.arc.testcases.MyCommunities.None.LoginCaseTest.loginCase, com.arc.testcases.MyCommunities.None.ClickSearchedProgramTest.clickSearchedProgram" finished-at="2017-11-20T18:45:48Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[4]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Login]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[NewCommunityProject]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Payment]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- paymentbyCC -->
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.arc.testcases.MyCommunities.None.PaymentbyCCTest@2286778]" name="teardown" is-config="true" duration-ms="96" started-at="2017-11-20T18:45:48Z" finished-at="2017-11-20T18:45:49Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=paymentbyCC status=SUCCESS method=PaymentbyCCTest.paymentbyCC(int, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyCommunities.None.PaymentbyCCTest@2286778] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="end()[pri:0, instance:com.arc.testcases.MyCommunities.None.PaymentbyCCTest@2286778]" name="end" is-config="true" duration-ms="547" started-at="2017-11-20T18:45:49Z" finished-at="2017-11-20T18:45:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- end -->
+      </class> <!-- com.arc.testcases.MyCommunities.None.PaymentbyCCTest -->
+      <class name="com.arc.testcases.MyCommunities.None.EditProjectDetailsTest">
+        <test-method status="PASS" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyCommunities.None.EditProjectDetailsTest@13a5fe33]" name="setup" is-config="true" duration-ms="26363" started-at="2017-11-20T18:45:49Z" finished-at="2017-11-20T18:46:15Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[staging]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="editProjectDetails(int, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyCommunities.None.EditProjectDetailsTest@13a5fe33]" name="editProjectDetails" duration-ms="55516" started-at="2017-11-20T18:46:15Z" depends-on-methods="com.arc.testcases.MyCommunities.None.PaymentbyCCTest.paymentbyCC, com.arc.testcases.MyCommunities.None.SearchProgramTest.searchProgram, com.arc.testcases.MyCommunities.None.LoginCaseTest.loginCase, com.arc.testcases.MyCommunities.None.ClickSearchedProgramTest.clickSearchedProgram" finished-at="2017-11-20T18:47:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[4]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Login]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[NewCommunityProject]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- editProjectDetails -->
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.arc.testcases.MyCommunities.None.EditProjectDetailsTest@13a5fe33]" name="teardown" is-config="true" duration-ms="55" started-at="2017-11-20T18:47:11Z" finished-at="2017-11-20T18:47:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=editProjectDetails status=SUCCESS method=EditProjectDetailsTest.editProjectDetails(int, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyCommunities.None.EditProjectDetailsTest@13a5fe33] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="end()[pri:0, instance:com.arc.testcases.MyCommunities.None.EditProjectDetailsTest@13a5fe33]" name="end" is-config="true" duration-ms="444" started-at="2017-11-20T18:47:11Z" finished-at="2017-11-20T18:47:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- end -->
+      </class> <!-- com.arc.testcases.MyCommunities.None.EditProjectDetailsTest -->
+      <class name="com.arc.testcases.MyCommunities.None.BillingDateVerificationTest">
+        <test-method status="PASS" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyCommunities.None.BillingDateVerificationTest@185d8b6]" name="setup" is-config="true" duration-ms="23863" started-at="2017-11-20T18:57:42Z" finished-at="2017-11-20T18:58:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[staging]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="billingDateVerification(int, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyCommunities.None.BillingDateVerificationTest@185d8b6]" name="billingDateVerification" duration-ms="36294" started-at="2017-11-20T18:58:06Z" depends-on-methods="com.arc.testcases.MyCommunities.None.PaymentbyCCTest.paymentbyCC, com.arc.testcases.MyCommunities.None.SearchProgramTest.searchProgram, com.arc.testcases.MyCommunities.None.LoginCaseTest.loginCase, com.arc.testcases.MyCommunities.None.ClickSearchedProgramTest.clickSearchedProgram" finished-at="2017-11-20T18:58:42Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[4]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Login]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[NewCommunityProject]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- billingDateVerification -->
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.arc.testcases.MyCommunities.None.BillingDateVerificationTest@185d8b6]" name="teardown" is-config="true" duration-ms="82" started-at="2017-11-20T18:58:42Z" finished-at="2017-11-20T18:58:42Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=billingDateVerification status=SUCCESS method=BillingDateVerificationTest.billingDateVerification(int, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyCommunities.None.BillingDateVerificationTest@185d8b6] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="end()[pri:0, instance:com.arc.testcases.MyCommunities.None.BillingDateVerificationTest@185d8b6]" name="end" is-config="true" duration-ms="595" started-at="2017-11-20T18:58:42Z" finished-at="2017-11-20T18:58:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- end -->
+      </class> <!-- com.arc.testcases.MyCommunities.None.BillingDateVerificationTest -->
+      <class name="com.arc.testcases.MyCommunities.None.SearchProgramTest">
+        <test-method status="PASS" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyCommunities.None.SearchProgramTest@56235b8e]" name="setup" is-config="true" duration-ms="21600" started-at="2017-11-20T18:42:32Z" finished-at="2017-11-20T18:42:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[staging]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="searchProgram(int, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyCommunities.None.SearchProgramTest@56235b8e]" name="searchProgram" duration-ms="44199" started-at="2017-11-20T18:42:53Z" depends-on-methods="com.arc.testcases.MyCommunities.None.LoginCaseTest.loginCase" finished-at="2017-11-20T18:43:37Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[4]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Login]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[NewCommunityProject]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchProgram -->
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.arc.testcases.MyCommunities.None.SearchProgramTest@56235b8e]" name="teardown" is-config="true" duration-ms="63" started-at="2017-11-20T18:43:37Z" finished-at="2017-11-20T18:43:38Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=searchProgram status=SUCCESS method=SearchProgramTest.searchProgram(int, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyCommunities.None.SearchProgramTest@56235b8e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="end()[pri:0, instance:com.arc.testcases.MyCommunities.None.SearchProgramTest@56235b8e]" name="end" is-config="true" duration-ms="375" started-at="2017-11-20T18:43:38Z" finished-at="2017-11-20T18:43:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- end -->
+      </class> <!-- com.arc.testcases.MyCommunities.None.SearchProgramTest -->
+      <class name="com.arc.testcases.MyCommunities.None.InstallAllAppsTest">
+        <test-method status="PASS" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyCommunities.None.InstallAllAppsTest@6f1fba17]" name="setup" is-config="true" duration-ms="26378" started-at="2017-11-20T18:56:32Z" finished-at="2017-11-20T18:56:59Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[staging]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="installAllApps(int, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyCommunities.None.InstallAllAppsTest@6f1fba17]" name="installAllApps" duration-ms="42395" started-at="2017-11-20T18:56:59Z" depends-on-methods="com.arc.testcases.MyCommunities.None.PaymentbyCCTest.paymentbyCC, com.arc.testcases.MyCommunities.None.SearchProgramTest.searchProgram, com.arc.testcases.MyCommunities.None.LoginCaseTest.loginCase, com.arc.testcases.MyCommunities.None.ClickSearchedProgramTest.clickSearchedProgram" finished-at="2017-11-20T18:57:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[4]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Login]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[NewCommunityProject]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- installAllApps -->
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.arc.testcases.MyCommunities.None.InstallAllAppsTest@6f1fba17]" name="teardown" is-config="true" duration-ms="92" started-at="2017-11-20T18:57:41Z" finished-at="2017-11-20T18:57:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=installAllApps status=SUCCESS method=InstallAllAppsTest.installAllApps(int, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyCommunities.None.InstallAllAppsTest@6f1fba17] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="end()[pri:0, instance:com.arc.testcases.MyCommunities.None.InstallAllAppsTest@6f1fba17]" name="end" is-config="true" duration-ms="447" started-at="2017-11-20T18:57:41Z" finished-at="2017-11-20T18:57:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- end -->
+      </class> <!-- com.arc.testcases.MyCommunities.None.InstallAllAppsTest -->
+      <class name="com.arc.testcases.MyCommunities.None.ProjectFieldVerificationTest">
+        <test-method status="PASS" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyCommunities.None.ProjectFieldVerificationTest@370736d9]" name="setup" is-config="true" duration-ms="22570" started-at="2017-11-20T18:47:11Z" finished-at="2017-11-20T18:47:34Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[staging]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="projectFieldVerification(int, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyCommunities.None.ProjectFieldVerificationTest@370736d9]" name="projectFieldVerification" duration-ms="38618" started-at="2017-11-20T18:47:34Z" depends-on-methods="com.arc.testcases.MyCommunities.None.PaymentbyCCTest.paymentbyCC, com.arc.testcases.MyCommunities.None.SearchProgramTest.searchProgram, com.arc.testcases.MyCommunities.None.LoginCaseTest.loginCase, com.arc.testcases.MyCommunities.None.ClickSearchedProgramTest.clickSearchedProgram" finished-at="2017-11-20T18:48:13Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[4]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Login]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[NewCommunityProject]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- projectFieldVerification -->
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.arc.testcases.MyCommunities.None.ProjectFieldVerificationTest@370736d9]" name="teardown" is-config="true" duration-ms="75" started-at="2017-11-20T18:48:13Z" finished-at="2017-11-20T18:48:13Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=projectFieldVerification status=SUCCESS method=ProjectFieldVerificationTest.projectFieldVerification(int, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyCommunities.None.ProjectFieldVerificationTest@370736d9] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="end()[pri:0, instance:com.arc.testcases.MyCommunities.None.ProjectFieldVerificationTest@370736d9]" name="end" is-config="true" duration-ms="634" started-at="2017-11-20T18:48:13Z" finished-at="2017-11-20T18:48:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- end -->
+      </class> <!-- com.arc.testcases.MyCommunities.None.ProjectFieldVerificationTest -->
+      <class name="com.arc.testcases.MyCommunities.None.AddNewProjectTest">
+        <test-method status="PASS" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyCommunities.None.AddNewProjectTest@6fc6f14e]" name="setup" is-config="true" duration-ms="23632" started-at="2017-11-20T18:41:13Z" finished-at="2017-11-20T18:41:36Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[staging]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="addNewProject(int, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyCommunities.None.AddNewProjectTest@6fc6f14e]" name="addNewProject" duration-ms="54594" started-at="2017-11-20T18:41:36Z" finished-at="2017-11-20T18:42:31Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[4]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Login]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[NewCommunityProject]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addNewProject -->
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.arc.testcases.MyCommunities.None.AddNewProjectTest@6fc6f14e]" name="teardown" is-config="true" duration-ms="113" started-at="2017-11-20T18:42:31Z" finished-at="2017-11-20T18:42:31Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=addNewProject status=SUCCESS method=AddNewProjectTest.addNewProject(int, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyCommunities.None.AddNewProjectTest@6fc6f14e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="end()[pri:0, instance:com.arc.testcases.MyCommunities.None.AddNewProjectTest@6fc6f14e]" name="end" is-config="true" duration-ms="558" started-at="2017-11-20T18:42:31Z" finished-at="2017-11-20T18:42:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- end -->
+      </class> <!-- com.arc.testcases.MyCommunities.None.AddNewProjectTest -->
+      <class name="com.arc.testcases.MyCommunities.None.VerifyAgreementFileDownloadTest">
+        <test-method status="PASS" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyCommunities.None.VerifyAgreementFileDownloadTest@18eed359]" name="setup" is-config="true" duration-ms="23778" started-at="2017-11-20T18:51:46Z" finished-at="2017-11-20T18:52:10Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[staging]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="verifyAgreementFileDownload(int, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyCommunities.None.VerifyAgreementFileDownloadTest@18eed359]" name="verifyAgreementFileDownload" duration-ms="51310" started-at="2017-11-20T18:52:10Z" depends-on-methods="com.arc.testcases.MyCommunities.None.PaymentbyCCTest.paymentbyCC, com.arc.testcases.MyCommunities.None.SearchProgramTest.searchProgram, com.arc.testcases.MyCommunities.None.LoginCaseTest.loginCase, com.arc.testcases.MyCommunities.None.ClickSearchedProgramTest.clickSearchedProgram" finished-at="2017-11-20T18:53:02Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[4]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Login]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[NewCommunityProject]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAgreementFileDownload -->
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.arc.testcases.MyCommunities.None.VerifyAgreementFileDownloadTest@18eed359]" name="teardown" is-config="true" duration-ms="59" started-at="2017-11-20T18:53:02Z" finished-at="2017-11-20T18:53:02Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyAgreementFileDownload status=SUCCESS method=VerifyAgreementFileDownloadTest.verifyAgreementFileDownload(int, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyCommunities.None.VerifyAgreementFileDownloadTest@18eed359] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="end()[pri:0, instance:com.arc.testcases.MyCommunities.None.VerifyAgreementFileDownloadTest@18eed359]" name="end" is-config="true" duration-ms="489" started-at="2017-11-20T18:53:02Z" finished-at="2017-11-20T18:53:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- end -->
+      </class> <!-- com.arc.testcases.MyCommunities.None.VerifyAgreementFileDownloadTest -->
+      <class name="com.arc.testcases.MyCommunities.None.PerformanceReviewTest">
+        <test-method status="PASS" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyCommunities.None.PerformanceReviewTest@3e9b1010]" name="setup" is-config="true" duration-ms="25356" started-at="2017-11-20T18:53:02Z" finished-at="2017-11-20T18:53:27Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[staging]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="FAIL" signature="waterFileUploadTest(int, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyCommunities.None.PerformanceReviewTest@3e9b1010]" name="waterFileUploadTest" duration-ms="122191" started-at="2017-11-20T18:53:27Z" finished-at="2017-11-20T18:55:30Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[4]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[NewCommunityProject]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Payment]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Login]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.Error">
             <message>
-              <![CDATA[timeout
-  (Session info: chrome=62.0.3202.94)
-  (Driver info: chromedriver=2.33.506120 (e3e53437346286c0bc2d2dc9aa4915ba81d9023f),platform=Windows NT 10.0.15063 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 300.02 seconds
+              <![CDATA[Unable to locate element: {"method":"xpath","selector":"//span[text()=\"Successfully Submitted\"]"}
+Command duration or timeout: 60.07 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
-System info: host: 'G10GNLT049', ip: '192.168.0.102', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_151'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.33.506120 (e3e53437346286c0bc2d2dc9aa4915ba81d9023f), userDataDir=C:\Users\Lenovo\AppData\Local\Temp\scoped_dir74812_16461}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=62.0.3202.94, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
-Session ID: b9baa264bdd7afa5070e18d77e1b0290]]>
+System info: host: 'G10GNLT049', ip: '192.168.0.100', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_151'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=32.0.2, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 0aed8a4f-b039-415f-bf1a-8d6c76b2a0f7
+*** Element info: {Using=xpath, value=//span[text()="Successfully Submitted"]}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: timeout
-  (Session info: chrome=62.0.3202.94)
-  (Driver info: chromedriver=2.33.506120 (e3e53437346286c0bc2d2dc9aa4915ba81d9023f),platform=Windows NT 10.0.15063 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 300.02 seconds
+              <![CDATA[java.lang.Error: Unable to locate element: {"method":"xpath","selector":"//span[text()=\"Successfully Submitted\"]"}
+Command duration or timeout: 60.07 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
-System info: host: 'G10GNLT049', ip: '192.168.0.102', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_151'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.33.506120 (e3e53437346286c0bc2d2dc9aa4915ba81d9023f), userDataDir=C:\Users\Lenovo\AppData\Local\Temp\scoped_dir74812_16461}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=62.0.3202.94, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
-Session ID: b9baa264bdd7afa5070e18d77e1b0290
+System info: host: 'G10GNLT049', ip: '192.168.0.100', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_151'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=32.0.2, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 0aed8a4f-b039-415f-bf1a-8d6c76b2a0f7
+*** Element info: {Using=xpath, value=//span[text()="Successfully Submitted"]}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -429,46 +637,22 @@ Session ID: b9baa264bdd7afa5070e18d77e1b0290
 	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
 	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:316)
-	at com.arc.driver.BaseClass.setup(BaseClass.java:151)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at com.arc.driver.CommonMethod.findElement(CommonMethod.java:86)
+	at com.arc.driver.CommonMethod.getText(CommonMethod.java:177)
+	at com.arc.ReusableMethods.ReusableMethodsReviewCertification.verifySuccessfullySubmittedPayment(ReusableMethodsReviewCertification.java:258)
+	at com.arc.testcases.MyCommunities.None.PerformanceReviewTest.waterFileUploadTest(PerformanceReviewTest.java:32)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
 	at java.lang.reflect.Method.invoke(Unknown Source)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:510)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:211)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
-	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:170)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:104)
-	at org.testng.TestRunner.privateRun(TestRunner.java:774)
-	at org.testng.TestRunner.run(TestRunner.java:624)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1191)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
-	at org.testng.TestNG.run(TestNG.java:1024)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="SKIP" signature="energyMeterCreate(int, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.None.EnergyMeterCreateTest@71318ec4]" name="energyMeterCreate" duration-ms="0" started-at="2017-11-19T14:45:54Z" depends-on-methods="com.arc.testcases.MyBuildings.None.LoginCaseTest.loginCase, com.arc.testcases.MyBuildings.None.PaymentbyCCTest.paymentbyCC, com.arc.testcases.MyBuildings.None.ClickSearchedProgramTest.clickSearchedProgram" finished-at="2017-11-19T14:45:54Z">
-          <exception class="java.lang.Throwable">
-            <message>
-              <![CDATA[Method EnergyMeterCreateTest.energyMeterCreate(int, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.None.EnergyMeterCreateTest@71318ec4] depends on not successfully finished methods]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method EnergyMeterCreateTest.energyMeterCreate(int, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.None.EnergyMeterCreateTest@71318ec4] depends on not successfully finished methods
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1033)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
 	at org.testng.TestRunner.privateRun(TestRunner.java:774)
@@ -487,21 +671,32 @@ Session ID: b9baa264bdd7afa5070e18d77e1b0290
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
+          </exception> <!-- java.lang.Error -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- energyMeterCreate -->
-        <test-method status="PASS" signature="end()[pri:0, instance:com.arc.testcases.MyBuildings.None.EnergyMeterCreateTest@71318ec4]" name="end" is-config="true" duration-ms="1440" started-at="2017-11-19T14:45:54Z" finished-at="2017-11-19T14:45:55Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- end -->
-      </class> <!-- com.arc.testcases.MyBuildings.None.EnergyMeterCreateTest -->
-      <class name="com.arc.testcases.MyBuildings.None.UnistallAllAppsTest">
-        <test-method status="PASS" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.None.UnistallAllAppsTest@5383967b]" name="setup" is-config="true" duration-ms="14457" started-at="2017-11-19T14:53:41Z" finished-at="2017-11-19T14:53:55Z">
+        </test-method> <!-- waterFileUploadTest -->
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.arc.testcases.MyCommunities.None.PerformanceReviewTest@3e9b1010]" name="teardown" is-config="true" duration-ms="58" started-at="2017-11-20T18:55:30Z" finished-at="2017-11-20T18:55:30Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[chrome]]>
+                <![CDATA[[TestResult name=waterFileUploadTest status=FAILURE method=PerformanceReviewTest.waterFileUploadTest(int, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyCommunities.None.PerformanceReviewTest@3e9b1010] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="end()[pri:0, instance:com.arc.testcases.MyCommunities.None.PerformanceReviewTest@3e9b1010]" name="end" is-config="true" duration-ms="552" started-at="2017-11-20T18:55:30Z" finished-at="2017-11-20T18:55:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- end -->
+      </class> <!-- com.arc.testcases.MyCommunities.None.PerformanceReviewTest -->
+      <class name="com.arc.testcases.MyCommunities.None.ClickSearchedProgramTest">
+        <test-method status="PASS" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyCommunities.None.ClickSearchedProgramTest@5abca1e0]" name="setup" is-config="true" duration-ms="20441" started-at="2017-11-20T18:43:38Z" finished-at="2017-11-20T18:43:58Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
               </value>
             </param>
             <param index="1">
@@ -513,47 +708,49 @@ Session ID: b9baa264bdd7afa5070e18d77e1b0290
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="SKIP" signature="installAllApps(int, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.None.UnistallAllAppsTest@5383967b]" name="installAllApps" duration-ms="0" started-at="2017-11-19T14:53:55Z" depends-on-methods="com.arc.testcases.MyBuildings.None.LoginCaseTest.loginCase, com.arc.testcases.MyBuildings.None.PaymentbyCCTest.paymentbyCC, com.arc.testcases.MyBuildings.None.ClickSearchedProgramTest.clickSearchedProgram" finished-at="2017-11-19T14:53:55Z">
-          <exception class="java.lang.Throwable">
-            <message>
-              <![CDATA[Method UnistallAllAppsTest.installAllApps(int, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.None.UnistallAllAppsTest@5383967b] depends on not successfully finished methods]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method UnistallAllAppsTest.installAllApps(int, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.None.UnistallAllAppsTest@5383967b] depends on not successfully finished methods
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1033)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
-	at org.testng.TestRunner.privateRun(TestRunner.java:774)
-	at org.testng.TestRunner.run(TestRunner.java:624)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1191)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
-	at org.testng.TestNG.run(TestNG.java:1024)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- installAllApps -->
-        <test-method status="PASS" signature="end()[pri:0, instance:com.arc.testcases.MyBuildings.None.UnistallAllAppsTest@5383967b]" name="end" is-config="true" duration-ms="1117" started-at="2017-11-19T14:53:55Z" finished-at="2017-11-19T14:53:56Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- end -->
-      </class> <!-- com.arc.testcases.MyBuildings.None.UnistallAllAppsTest -->
-      <class name="com.arc.testcases.MyBuildings.None.ProjectDetailsVerificationTest">
-        <test-method status="PASS" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.None.ProjectDetailsVerificationTest@66480dd7]" name="setup" is-config="true" duration-ms="14842" started-at="2017-11-19T14:51:51Z" finished-at="2017-11-19T14:52:06Z">
+        <test-method status="PASS" signature="clickSearchedProgram(int, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyCommunities.None.ClickSearchedProgramTest@5abca1e0]" name="clickSearchedProgram" duration-ms="24984" started-at="2017-11-20T18:43:58Z" depends-on-methods="com.arc.testcases.MyCommunities.None.LoginCaseTest.loginCase" finished-at="2017-11-20T18:44:23Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[chrome]]>
+                <![CDATA[4]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Login]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[NewCommunityProject]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickSearchedProgram -->
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.arc.testcases.MyCommunities.None.ClickSearchedProgramTest@5abca1e0]" name="teardown" is-config="true" duration-ms="52" started-at="2017-11-20T18:44:23Z" finished-at="2017-11-20T18:44:23Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=clickSearchedProgram status=SUCCESS method=ClickSearchedProgramTest.clickSearchedProgram(int, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyCommunities.None.ClickSearchedProgramTest@5abca1e0] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="end()[pri:0, instance:com.arc.testcases.MyCommunities.None.ClickSearchedProgramTest@5abca1e0]" name="end" is-config="true" duration-ms="726" started-at="2017-11-20T18:44:23Z" finished-at="2017-11-20T18:44:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- end -->
+      </class> <!-- com.arc.testcases.MyCommunities.None.ClickSearchedProgramTest -->
+      <class name="com.arc.testcases.MyCommunities.None.LoginCaseTest">
+        <test-method status="PASS" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyCommunities.None.LoginCaseTest@20398b7c]" name="setup" is-config="true" duration-ms="31245" started-at="2017-11-20T18:40:12Z" finished-at="2017-11-20T18:40:43Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
               </value>
             </param>
             <param index="1">
@@ -565,63 +762,11 @@ Session ID: b9baa264bdd7afa5070e18d77e1b0290
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="SKIP" signature="projectDetailsVerification(int, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.None.ProjectDetailsVerificationTest@66480dd7]" name="projectDetailsVerification" duration-ms="0" started-at="2017-11-19T14:52:06Z" depends-on-methods="com.arc.testcases.MyBuildings.None.LoginCaseTest.loginCase, com.arc.testcases.MyBuildings.None.PaymentbyCCTest.paymentbyCC, com.arc.testcases.MyBuildings.None.ClickSearchedProgramTest.clickSearchedProgram" finished-at="2017-11-19T14:52:06Z">
-          <exception class="java.lang.Throwable">
-            <message>
-              <![CDATA[Method ProjectDetailsVerificationTest.projectDetailsVerification(int, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.None.ProjectDetailsVerificationTest@66480dd7] depends on not successfully finished methods]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method ProjectDetailsVerificationTest.projectDetailsVerification(int, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.None.ProjectDetailsVerificationTest@66480dd7] depends on not successfully finished methods
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1033)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
-	at org.testng.TestRunner.privateRun(TestRunner.java:774)
-	at org.testng.TestRunner.run(TestRunner.java:624)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1191)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
-	at org.testng.TestNG.run(TestNG.java:1024)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- projectDetailsVerification -->
-        <test-method status="PASS" signature="end()[pri:0, instance:com.arc.testcases.MyBuildings.None.ProjectDetailsVerificationTest@66480dd7]" name="end" is-config="true" duration-ms="974" started-at="2017-11-19T14:52:06Z" finished-at="2017-11-19T14:52:07Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- end -->
-      </class> <!-- com.arc.testcases.MyBuildings.None.ProjectDetailsVerificationTest -->
-      <class name="com.arc.testcases.MyBuildings.None.LoginCaseTest">
-        <test-method status="PASS" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.None.LoginCaseTest@7e0b0338]" name="setup" is-config="true" duration-ms="19111" started-at="2017-11-19T14:29:47Z" finished-at="2017-11-19T14:30:06Z">
+        <test-method status="PASS" signature="loginCase(int, java.lang.String)[pri:0, instance:com.arc.testcases.MyCommunities.None.LoginCaseTest@20398b7c]" name="loginCase" duration-ms="28564" started-at="2017-11-20T18:40:43Z" finished-at="2017-11-20T18:41:11Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[staging]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="loginCase(int, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.None.LoginCaseTest@7e0b0338]" name="loginCase" duration-ms="20161" started-at="2017-11-19T14:30:06Z" finished-at="2017-11-19T14:30:27Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[6]]>
+                <![CDATA[4]]>
               </value>
             </param>
             <param index="1">
@@ -633,28 +778,28 @@ Session ID: b9baa264bdd7afa5070e18d77e1b0290
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginCase -->
-        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.arc.testcases.MyBuildings.None.LoginCaseTest@7e0b0338]" name="teardown" is-config="true" duration-ms="336" started-at="2017-11-19T14:30:27Z" finished-at="2017-11-19T14:30:27Z">
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.arc.testcases.MyCommunities.None.LoginCaseTest@20398b7c]" name="teardown" is-config="true" duration-ms="364" started-at="2017-11-20T18:41:11Z" finished-at="2017-11-20T18:41:12Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=loginCase status=SUCCESS method=LoginCaseTest.loginCase(int, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.None.LoginCaseTest@7e0b0338] output={null}]]]>
+                <![CDATA[[TestResult name=loginCase status=SUCCESS method=LoginCaseTest.loginCase(int, java.lang.String)[pri:0, instance:com.arc.testcases.MyCommunities.None.LoginCaseTest@20398b7c] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method status="PASS" signature="end()[pri:0, instance:com.arc.testcases.MyBuildings.None.LoginCaseTest@7e0b0338]" name="end" is-config="true" duration-ms="1198" started-at="2017-11-19T14:30:27Z" finished-at="2017-11-19T14:30:28Z">
+        <test-method status="PASS" signature="end()[pri:0, instance:com.arc.testcases.MyCommunities.None.LoginCaseTest@20398b7c]" name="end" is-config="true" duration-ms="930" started-at="2017-11-20T18:41:12Z" finished-at="2017-11-20T18:41:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- end -->
-      </class> <!-- com.arc.testcases.MyBuildings.None.LoginCaseTest -->
-      <class name="com.arc.testcases.MyBuildings.None.BillingDateVerificationTest">
-        <test-method status="PASS" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.None.BillingDateVerificationTest@2ac273d3]" name="setup" is-config="true" duration-ms="24546" started-at="2017-11-19T14:53:56Z" finished-at="2017-11-19T14:54:21Z">
+      </class> <!-- com.arc.testcases.MyCommunities.None.LoginCaseTest -->
+      <class name="com.arc.testcases.MyCommunities.None.EditMemberRoleManagerTest">
+        <test-method status="PASS" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyCommunities.None.EditMemberRoleManagerTest@6536e911]" name="setup" is-config="true" duration-ms="29184" started-at="2017-11-20T18:50:26Z" finished-at="2017-11-20T18:50:55Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[chrome]]>
+                <![CDATA[firefox]]>
               </value>
             </param>
             <param index="1">
@@ -666,257 +811,49 @@ Session ID: b9baa264bdd7afa5070e18d77e1b0290
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="SKIP" signature="billingDateVerification(int, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.None.BillingDateVerificationTest@2ac273d3]" name="billingDateVerification" duration-ms="0" started-at="2017-11-19T14:54:21Z" depends-on-methods="com.arc.testcases.MyBuildings.None.LoginCaseTest.loginCase, com.arc.testcases.MyBuildings.None.PaymentbyCCTest.paymentbyCC, com.arc.testcases.MyBuildings.None.ClickSearchedProgramTest.clickSearchedProgram" finished-at="2017-11-19T14:54:21Z">
-          <exception class="java.lang.Throwable">
-            <message>
-              <![CDATA[Method BillingDateVerificationTest.billingDateVerification(int, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.None.BillingDateVerificationTest@2ac273d3] depends on not successfully finished methods]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method BillingDateVerificationTest.billingDateVerification(int, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.None.BillingDateVerificationTest@2ac273d3] depends on not successfully finished methods
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1033)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
-	at org.testng.TestRunner.privateRun(TestRunner.java:774)
-	at org.testng.TestRunner.run(TestRunner.java:624)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1191)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
-	at org.testng.TestNG.run(TestNG.java:1024)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- billingDateVerification -->
-        <test-method status="PASS" signature="end()[pri:0, instance:com.arc.testcases.MyBuildings.None.BillingDateVerificationTest@2ac273d3]" name="end" is-config="true" duration-ms="1056" started-at="2017-11-19T14:54:21Z" finished-at="2017-11-19T14:54:22Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- end -->
-      </class> <!-- com.arc.testcases.MyBuildings.None.BillingDateVerificationTest -->
-      <class name="com.arc.testcases.MyBuildings.None.VerifyPRFileDownloadTest">
-        <test-method status="PASS" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.None.VerifyPRFileDownloadTest@544fe44c]" name="setup" is-config="true" duration-ms="16752" started-at="2017-11-19T14:40:32Z" finished-at="2017-11-19T14:40:49Z">
+        <test-method status="PASS" signature="editMemberRoleManager(int, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyCommunities.None.EditMemberRoleManagerTest@6536e911]" name="editMemberRoleManager" duration-ms="50754" started-at="2017-11-20T18:50:55Z" depends-on-methods="com.arc.testcases.MyCommunities.None.PaymentbyCCTest.paymentbyCC, com.arc.testcases.MyCommunities.None.SearchProgramTest.searchProgram, com.arc.testcases.MyCommunities.None.AddTeamMemberTest.addTeamMember, com.arc.testcases.MyCommunities.None.LoginCaseTest.loginCase, com.arc.testcases.MyCommunities.None.ClickSearchedProgramTest.clickSearchedProgram" finished-at="2017-11-20T18:51:46Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[chrome]]>
+                <![CDATA[4]]>
               </value>
             </param>
             <param index="1">
-              <value>
-                <![CDATA[staging]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="SKIP" signature="billingStatusVerification(int, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.None.VerifyPRFileDownloadTest@544fe44c]" name="billingStatusVerification" duration-ms="0" started-at="2017-11-19T14:40:49Z" depends-on-methods="com.arc.testcases.MyBuildings.None.LoginCaseTest.loginCase, com.arc.testcases.MyBuildings.None.PaymentbyCCTest.paymentbyCC, com.arc.testcases.MyBuildings.None.ClickSearchedProgramTest.clickSearchedProgram" finished-at="2017-11-19T14:40:49Z">
-          <exception class="java.lang.Throwable">
-            <message>
-              <![CDATA[Method VerifyPRFileDownloadTest.billingStatusVerification(int, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.None.VerifyPRFileDownloadTest@544fe44c] depends on not successfully finished methods]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method VerifyPRFileDownloadTest.billingStatusVerification(int, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.None.VerifyPRFileDownloadTest@544fe44c] depends on not successfully finished methods
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1033)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
-	at org.testng.TestRunner.privateRun(TestRunner.java:774)
-	at org.testng.TestRunner.run(TestRunner.java:624)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1191)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
-	at org.testng.TestNG.run(TestNG.java:1024)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- billingStatusVerification -->
-        <test-method status="PASS" signature="end()[pri:0, instance:com.arc.testcases.MyBuildings.None.VerifyPRFileDownloadTest@544fe44c]" name="end" is-config="true" duration-ms="1118" started-at="2017-11-19T14:40:49Z" finished-at="2017-11-19T14:40:50Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- end -->
-      </class> <!-- com.arc.testcases.MyBuildings.None.VerifyPRFileDownloadTest -->
-      <class name="com.arc.testcases.MyBuildings.None.VerifyAgreementFileDownloadTest">
-        <test-method status="PASS" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.None.VerifyAgreementFileDownloadTest@5ec0a365]" name="setup" is-config="true" duration-ms="15558" started-at="2017-11-19T14:53:09Z" finished-at="2017-11-19T14:53:24Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[staging]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="end()[pri:0, instance:com.arc.testcases.MyBuildings.None.VerifyAgreementFileDownloadTest@5ec0a365]" name="end" is-config="true" duration-ms="1102" started-at="2017-11-19T14:53:24Z" finished-at="2017-11-19T14:53:25Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- end -->
-        <test-method status="SKIP" signature="verifyAgreementFileDownload(int, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.None.VerifyAgreementFileDownloadTest@5ec0a365]" name="verifyAgreementFileDownload" duration-ms="0" started-at="2017-11-19T14:53:24Z" depends-on-methods="com.arc.testcases.MyBuildings.None.LoginCaseTest.loginCase, com.arc.testcases.MyBuildings.None.PaymentbyCCTest.paymentbyCC, com.arc.testcases.MyBuildings.None.ClickSearchedProgramTest.clickSearchedProgram" finished-at="2017-11-19T14:53:24Z">
-          <exception class="java.lang.Throwable">
-            <message>
-              <![CDATA[Method VerifyAgreementFileDownloadTest.verifyAgreementFileDownload(int, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.None.VerifyAgreementFileDownloadTest@5ec0a365] depends on not successfully finished methods]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method VerifyAgreementFileDownloadTest.verifyAgreementFileDownload(int, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.None.VerifyAgreementFileDownloadTest@5ec0a365] depends on not successfully finished methods
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1033)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
-	at org.testng.TestRunner.privateRun(TestRunner.java:774)
-	at org.testng.TestRunner.run(TestRunner.java:624)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1191)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
-	at org.testng.TestNG.run(TestNG.java:1024)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyAgreementFileDownload -->
-      </class> <!-- com.arc.testcases.MyBuildings.None.VerifyAgreementFileDownloadTest -->
-      <class name="com.arc.testcases.MyBuildings.None.BillingRegistrationAmountVerificationTest">
-        <test-method status="PASS" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.None.BillingRegistrationAmountVerificationTest@71423665]" name="setup" is-config="true" duration-ms="16634" started-at="2017-11-19T14:54:22Z" finished-at="2017-11-19T14:54:39Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[staging]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="SKIP" signature="billingRegistrationAmountVerification(int, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.None.BillingRegistrationAmountVerificationTest@71423665]" name="billingRegistrationAmountVerification" duration-ms="0" started-at="2017-11-19T14:54:39Z" depends-on-methods="com.arc.testcases.MyBuildings.None.LoginCaseTest.loginCase, com.arc.testcases.MyBuildings.None.PaymentbyCCTest.paymentbyCC, com.arc.testcases.MyBuildings.None.ClickSearchedProgramTest.clickSearchedProgram" finished-at="2017-11-19T14:54:39Z">
-          <exception class="java.lang.Throwable">
-            <message>
-              <![CDATA[Method BillingRegistrationAmountVerificationTest.billingRegistrationAmountVerification(int, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.None.BillingRegistrationAmountVerificationTest@71423665] depends on not successfully finished methods]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method BillingRegistrationAmountVerificationTest.billingRegistrationAmountVerification(int, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.None.BillingRegistrationAmountVerificationTest@71423665] depends on not successfully finished methods
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1033)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
-	at org.testng.TestRunner.privateRun(TestRunner.java:774)
-	at org.testng.TestRunner.run(TestRunner.java:624)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1191)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
-	at org.testng.TestNG.run(TestNG.java:1024)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- billingRegistrationAmountVerification -->
-        <test-method status="PASS" signature="end()[pri:0, instance:com.arc.testcases.MyBuildings.None.BillingRegistrationAmountVerificationTest@71423665]" name="end" is-config="true" duration-ms="1059" started-at="2017-11-19T14:54:39Z" finished-at="2017-11-19T14:54:40Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- end -->
-      </class> <!-- com.arc.testcases.MyBuildings.None.BillingRegistrationAmountVerificationTest -->
-      <class name="com.arc.testcases.MyBuildings.None.ClickSearchedProgramTest">
-        <test-method status="PASS" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.None.ClickSearchedProgramTest@617faa95]" name="setup" is-config="true" duration-ms="190369" started-at="2017-11-19T14:30:28Z" finished-at="2017-11-19T14:33:38Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[staging]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="clickSearchedProgram(int, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.None.ClickSearchedProgramTest@617faa95]" name="clickSearchedProgram" duration-ms="88557" started-at="2017-11-19T14:33:38Z" depends-on-methods="com.arc.testcases.MyBuildings.None.LoginCaseTest.loginCase" finished-at="2017-11-19T14:35:07Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[6]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[NewBuildingProject]]>
-              </value>
-            </param>
-            <param index="2">
               <value>
                 <![CDATA[Login]]>
               </value>
             </param>
+            <param index="2">
+              <value>
+                <![CDATA[NewCommunityProject]]>
+              </value>
+            </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- clickSearchedProgram -->
-        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.arc.testcases.MyBuildings.None.ClickSearchedProgramTest@617faa95]" name="teardown" is-config="true" duration-ms="100" started-at="2017-11-19T14:35:07Z" finished-at="2017-11-19T14:35:07Z">
+        </test-method> <!-- editMemberRoleManager -->
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.arc.testcases.MyCommunities.None.EditMemberRoleManagerTest@6536e911]" name="teardown" is-config="true" duration-ms="46" started-at="2017-11-20T18:51:46Z" finished-at="2017-11-20T18:51:46Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=clickSearchedProgram status=SUCCESS method=ClickSearchedProgramTest.clickSearchedProgram(int, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.None.ClickSearchedProgramTest@617faa95] output={null}]]]>
+                <![CDATA[[TestResult name=editMemberRoleManager status=SUCCESS method=EditMemberRoleManagerTest.editMemberRoleManager(int, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyCommunities.None.EditMemberRoleManagerTest@6536e911] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method status="PASS" signature="end()[pri:0, instance:com.arc.testcases.MyBuildings.None.ClickSearchedProgramTest@617faa95]" name="end" is-config="true" duration-ms="1099" started-at="2017-11-19T14:35:07Z" finished-at="2017-11-19T14:35:08Z">
+        <test-method status="PASS" signature="end()[pri:0, instance:com.arc.testcases.MyCommunities.None.EditMemberRoleManagerTest@6536e911]" name="end" is-config="true" duration-ms="595" started-at="2017-11-20T18:51:46Z" finished-at="2017-11-20T18:51:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- end -->
-      </class> <!-- com.arc.testcases.MyBuildings.None.ClickSearchedProgramTest -->
-      <class name="com.arc.testcases.MyBuildings.None.WasteReadingDateOverlappingTest">
-        <test-method status="PASS" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.None.WasteReadingDateOverlappingTest@5abca1e0]" name="setup" is-config="true" duration-ms="21080" started-at="2017-11-19T14:56:35Z" finished-at="2017-11-19T14:56:56Z">
+      </class> <!-- com.arc.testcases.MyCommunities.None.EditMemberRoleManagerTest -->
+      <class name="com.arc.testcases.MyCommunities.None.BillingRegistrationAmountVerificationTest">
+        <test-method status="PASS" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyCommunities.None.BillingRegistrationAmountVerificationTest@67784306]" name="setup" is-config="true" duration-ms="25622" started-at="2017-11-20T18:58:42Z" finished-at="2017-11-20T18:59:08Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[chrome]]>
+                <![CDATA[firefox]]>
               </value>
             </param>
             <param index="1">
@@ -928,47 +865,49 @@ Session ID: b9baa264bdd7afa5070e18d77e1b0290
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="end()[pri:0, instance:com.arc.testcases.MyBuildings.None.WasteReadingDateOverlappingTest@5abca1e0]" name="end" is-config="true" duration-ms="1031" started-at="2017-11-19T14:56:56Z" finished-at="2017-11-19T14:56:57Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- end -->
-        <test-method status="SKIP" signature="wasteMeterEditReading(int, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.None.WasteReadingDateOverlappingTest@5abca1e0]" name="wasteMeterEditReading" duration-ms="0" started-at="2017-11-19T14:56:56Z" depends-on-methods="com.arc.testcases.MyBuildings.None.LoginCaseTest.loginCase, com.arc.testcases.MyBuildings.None.PaymentbyCCTest.paymentbyCC, com.arc.testcases.MyBuildings.None.ClickSearchedProgramTest.clickSearchedProgram" finished-at="2017-11-19T14:56:56Z">
-          <exception class="java.lang.Throwable">
-            <message>
-              <![CDATA[Method WasteReadingDateOverlappingTest.wasteMeterEditReading(int, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.None.WasteReadingDateOverlappingTest@5abca1e0] depends on not successfully finished methods]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method WasteReadingDateOverlappingTest.wasteMeterEditReading(int, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.None.WasteReadingDateOverlappingTest@5abca1e0] depends on not successfully finished methods
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1033)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
-	at org.testng.TestRunner.privateRun(TestRunner.java:774)
-	at org.testng.TestRunner.run(TestRunner.java:624)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1191)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
-	at org.testng.TestNG.run(TestNG.java:1024)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- wasteMeterEditReading -->
-      </class> <!-- com.arc.testcases.MyBuildings.None.WasteReadingDateOverlappingTest -->
-      <class name="com.arc.testcases.MyBuildings.None.BillingStatusVerificationTest">
-        <test-method status="PASS" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.None.BillingStatusVerificationTest@20398b7c]" name="setup" is-config="true" duration-ms="14735" started-at="2017-11-19T14:54:40Z" finished-at="2017-11-19T14:54:54Z">
+        <test-method status="PASS" signature="billingRegistrationAmountVerification(int, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyCommunities.None.BillingRegistrationAmountVerificationTest@67784306]" name="billingRegistrationAmountVerification" duration-ms="46527" started-at="2017-11-20T18:59:08Z" depends-on-methods="com.arc.testcases.MyCommunities.None.PaymentbyCCTest.paymentbyCC, com.arc.testcases.MyCommunities.None.SearchProgramTest.searchProgram, com.arc.testcases.MyCommunities.None.LoginCaseTest.loginCase, com.arc.testcases.MyCommunities.None.ClickSearchedProgramTest.clickSearchedProgram" finished-at="2017-11-20T18:59:55Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[chrome]]>
+                <![CDATA[4]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Login]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[NewCommunityProject]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- billingRegistrationAmountVerification -->
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.arc.testcases.MyCommunities.None.BillingRegistrationAmountVerificationTest@67784306]" name="teardown" is-config="true" duration-ms="60" started-at="2017-11-20T18:59:55Z" finished-at="2017-11-20T18:59:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=billingRegistrationAmountVerification status=SUCCESS method=BillingRegistrationAmountVerificationTest.billingRegistrationAmountVerification(int, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyCommunities.None.BillingRegistrationAmountVerificationTest@67784306] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="end()[pri:0, instance:com.arc.testcases.MyCommunities.None.BillingRegistrationAmountVerificationTest@67784306]" name="end" is-config="true" duration-ms="464" started-at="2017-11-20T18:59:55Z" finished-at="2017-11-20T18:59:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- end -->
+      </class> <!-- com.arc.testcases.MyCommunities.None.BillingRegistrationAmountVerificationTest -->
+      <class name="com.arc.testcases.MyCommunities.None.BillingStatusVerificationTest">
+        <test-method status="PASS" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyCommunities.None.BillingStatusVerificationTest@335eadca]" name="setup" is-config="true" duration-ms="22092" started-at="2017-11-20T18:59:55Z" finished-at="2017-11-20T19:00:17Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
               </value>
             </param>
             <param index="1">
@@ -980,47 +919,49 @@ Session ID: b9baa264bdd7afa5070e18d77e1b0290
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="SKIP" signature="billingStatusVerificationTest(int, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.None.BillingStatusVerificationTest@20398b7c]" name="billingStatusVerificationTest" duration-ms="1" started-at="2017-11-19T14:54:54Z" depends-on-methods="com.arc.testcases.MyBuildings.None.LoginCaseTest.loginCase, com.arc.testcases.MyBuildings.None.PaymentbyCCTest.paymentbyCC, com.arc.testcases.MyBuildings.None.ClickSearchedProgramTest.clickSearchedProgram" finished-at="2017-11-19T14:54:54Z">
-          <exception class="java.lang.Throwable">
-            <message>
-              <![CDATA[Method BillingStatusVerificationTest.billingStatusVerificationTest(int, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.None.BillingStatusVerificationTest@20398b7c] depends on not successfully finished methods]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method BillingStatusVerificationTest.billingStatusVerificationTest(int, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.None.BillingStatusVerificationTest@20398b7c] depends on not successfully finished methods
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1033)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
-	at org.testng.TestRunner.privateRun(TestRunner.java:774)
-	at org.testng.TestRunner.run(TestRunner.java:624)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1191)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
-	at org.testng.TestNG.run(TestNG.java:1024)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- billingStatusVerificationTest -->
-        <test-method status="PASS" signature="end()[pri:0, instance:com.arc.testcases.MyBuildings.None.BillingStatusVerificationTest@20398b7c]" name="end" is-config="true" duration-ms="1042" started-at="2017-11-19T14:54:54Z" finished-at="2017-11-19T14:54:55Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- end -->
-      </class> <!-- com.arc.testcases.MyBuildings.None.BillingStatusVerificationTest -->
-      <class name="com.arc.testcases.MyBuildings.None.WaterFileUploadTest">
-        <test-method status="PASS" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.None.WaterFileUploadTest@3632be31]" name="setup" is-config="true" duration-ms="65176" started-at="2017-11-19T14:55:29Z" finished-at="2017-11-19T14:56:34Z">
+        <test-method status="PASS" signature="billingStatusVerification(int, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyCommunities.None.BillingStatusVerificationTest@335eadca]" name="billingStatusVerification" duration-ms="35317" started-at="2017-11-20T19:00:17Z" depends-on-methods="com.arc.testcases.MyCommunities.None.PaymentbyCCTest.paymentbyCC, com.arc.testcases.MyCommunities.None.SearchProgramTest.searchProgram, com.arc.testcases.MyCommunities.None.LoginCaseTest.loginCase, com.arc.testcases.MyCommunities.None.ClickSearchedProgramTest.clickSearchedProgram" finished-at="2017-11-20T19:00:53Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[chrome]]>
+                <![CDATA[4]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Login]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[NewCommunityProject]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- billingStatusVerification -->
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.arc.testcases.MyCommunities.None.BillingStatusVerificationTest@335eadca]" name="teardown" is-config="true" duration-ms="54" started-at="2017-11-20T19:00:53Z" finished-at="2017-11-20T19:00:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=billingStatusVerification status=SUCCESS method=BillingStatusVerificationTest.billingStatusVerification(int, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyCommunities.None.BillingStatusVerificationTest@335eadca] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="end()[pri:0, instance:com.arc.testcases.MyCommunities.None.BillingStatusVerificationTest@335eadca]" name="end" is-config="true" duration-ms="440" started-at="2017-11-20T19:00:53Z" finished-at="2017-11-20T19:00:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- end -->
+      </class> <!-- com.arc.testcases.MyCommunities.None.BillingStatusVerificationTest -->
+      <class name="com.arc.testcases.MyCommunities.None.VerifyCertificationStatusTest">
+        <test-method status="PASS" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyCommunities.None.VerifyCertificationStatusTest@6c3708b3]" name="setup" is-config="true" duration-ms="23416" started-at="2017-11-20T18:55:30Z" finished-at="2017-11-20T18:55:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
               </value>
             </param>
             <param index="1">
@@ -1032,411 +973,43 @@ Session ID: b9baa264bdd7afa5070e18d77e1b0290
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="end()[pri:0, instance:com.arc.testcases.MyBuildings.None.WaterFileUploadTest@3632be31]" name="end" is-config="true" duration-ms="997" started-at="2017-11-19T14:56:34Z" finished-at="2017-11-19T14:56:35Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- end -->
-        <test-method status="SKIP" signature="waterFileUpload(int, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.None.WaterFileUploadTest@3632be31]" name="waterFileUpload" duration-ms="0" started-at="2017-11-19T14:56:34Z" depends-on-methods="com.arc.testcases.MyBuildings.None.LoginCaseTest.loginCase, com.arc.testcases.MyBuildings.None.PaymentbyCCTest.paymentbyCC, com.arc.testcases.MyBuildings.None.ClickSearchedProgramTest.clickSearchedProgram" finished-at="2017-11-19T14:56:34Z">
-          <exception class="java.lang.Throwable">
-            <message>
-              <![CDATA[Method WaterFileUploadTest.waterFileUpload(int, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.None.WaterFileUploadTest@3632be31] depends on not successfully finished methods]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method WaterFileUploadTest.waterFileUpload(int, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.None.WaterFileUploadTest@3632be31] depends on not successfully finished methods
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1033)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
-	at org.testng.TestRunner.privateRun(TestRunner.java:774)
-	at org.testng.TestRunner.run(TestRunner.java:624)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1191)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
-	at org.testng.TestNG.run(TestNG.java:1024)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- waterFileUpload -->
-      </class> <!-- com.arc.testcases.MyBuildings.None.WaterFileUploadTest -->
-      <class name="com.arc.testcases.MyBuildings.None.WasteMeterCreateTest">
-        <test-method status="PASS" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.None.WasteMeterCreateTest@a67c67e]" name="setup" is-config="true" duration-ms="17463" started-at="2017-11-19T14:51:00Z" finished-at="2017-11-19T14:51:17Z">
+        <test-method status="PASS" signature="verifyCertificationStatus(int, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyCommunities.None.VerifyCertificationStatusTest@6c3708b3]" name="verifyCertificationStatus" duration-ms="37887" started-at="2017-11-20T18:55:54Z" depends-on-methods="com.arc.testcases.MyCommunities.None.PaymentbyCCTest.paymentbyCC, com.arc.testcases.MyCommunities.None.SearchProgramTest.searchProgram, com.arc.testcases.MyCommunities.None.LoginCaseTest.loginCase, com.arc.testcases.MyCommunities.None.ClickSearchedProgramTest.clickSearchedProgram" finished-at="2017-11-20T18:56:32Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[chrome]]>
+                <![CDATA[4]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[staging]]>
+                <![CDATA[Login]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[NewCommunityProject]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="SKIP" signature="wasteMeterCreate(int, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.None.WasteMeterCreateTest@a67c67e]" name="wasteMeterCreate" duration-ms="0" started-at="2017-11-19T14:51:17Z" depends-on-methods="com.arc.testcases.MyBuildings.None.LoginCaseTest.loginCase, com.arc.testcases.MyBuildings.None.PaymentbyCCTest.paymentbyCC, com.arc.testcases.MyBuildings.None.ClickSearchedProgramTest.clickSearchedProgram" finished-at="2017-11-19T14:51:17Z">
-          <exception class="java.lang.Throwable">
-            <message>
-              <![CDATA[Method WasteMeterCreateTest.wasteMeterCreate(int, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.None.WasteMeterCreateTest@a67c67e] depends on not successfully finished methods]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method WasteMeterCreateTest.wasteMeterCreate(int, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.None.WasteMeterCreateTest@a67c67e] depends on not successfully finished methods
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1033)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
-	at org.testng.TestRunner.privateRun(TestRunner.java:774)
-	at org.testng.TestRunner.run(TestRunner.java:624)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1191)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
-	at org.testng.TestNG.run(TestNG.java:1024)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- wasteMeterCreate -->
-        <test-method status="PASS" signature="end()[pri:0, instance:com.arc.testcases.MyBuildings.None.WasteMeterCreateTest@a67c67e]" name="end" is-config="true" duration-ms="1101" started-at="2017-11-19T14:51:17Z" finished-at="2017-11-19T14:51:18Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- end -->
-      </class> <!-- com.arc.testcases.MyBuildings.None.WasteMeterCreateTest -->
-      <class name="com.arc.testcases.MyBuildings.None.PaymentbyCCTest">
-        <test-method status="PASS" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.None.PaymentbyCCTest@2038ae61]" name="setup" is-config="true" duration-ms="17780" started-at="2017-11-19T14:40:13Z" finished-at="2017-11-19T14:40:31Z">
+        </test-method> <!-- verifyCertificationStatus -->
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.arc.testcases.MyCommunities.None.VerifyCertificationStatusTest@6c3708b3]" name="teardown" is-config="true" duration-ms="66" started-at="2017-11-20T18:56:32Z" finished-at="2017-11-20T18:56:32Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[staging]]>
+                <![CDATA[[TestResult name=verifyCertificationStatus status=SUCCESS method=VerifyCertificationStatusTest.verifyCertificationStatus(int, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyCommunities.None.VerifyCertificationStatusTest@6c3708b3] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="SKIP" signature="paymentbyCC(int, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.None.PaymentbyCCTest@2038ae61]" name="paymentbyCC" duration-ms="0" started-at="2017-11-19T14:40:31Z" depends-on-methods="com.arc.testcases.MyBuildings.None.LoginCaseTest.loginCase, com.arc.testcases.MyBuildings.None.ClickSearchedProgramTest.clickSearchedProgram, com.arc.testcases.MyBuildings.None.AddNewProjectTest.addNewProject" finished-at="2017-11-19T14:40:31Z">
-          <exception class="java.lang.Throwable">
-            <message>
-              <![CDATA[Method PaymentbyCCTest.paymentbyCC(int, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.None.PaymentbyCCTest@2038ae61] depends on not successfully finished methods]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method PaymentbyCCTest.paymentbyCC(int, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.None.PaymentbyCCTest@2038ae61] depends on not successfully finished methods
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1033)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
-	at org.testng.TestRunner.privateRun(TestRunner.java:774)
-	at org.testng.TestRunner.run(TestRunner.java:624)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1191)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
-	at org.testng.TestNG.run(TestNG.java:1024)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- paymentbyCC -->
-        <test-method status="PASS" signature="end()[pri:0, instance:com.arc.testcases.MyBuildings.None.PaymentbyCCTest@2038ae61]" name="end" is-config="true" duration-ms="1012" started-at="2017-11-19T14:40:31Z" finished-at="2017-11-19T14:40:32Z">
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="end()[pri:0, instance:com.arc.testcases.MyCommunities.None.VerifyCertificationStatusTest@6c3708b3]" name="end" is-config="true" duration-ms="675" started-at="2017-11-20T18:56:32Z" finished-at="2017-11-20T18:56:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- end -->
-      </class> <!-- com.arc.testcases.MyBuildings.None.PaymentbyCCTest -->
-      <class name="com.arc.testcases.MyBuildings.None.ProjectFieldVerificationTest">
-        <test-method status="PASS" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.None.ProjectFieldVerificationTest@3327bd23]" name="setup" is-config="true" duration-ms="15496" started-at="2017-11-19T14:51:18Z" finished-at="2017-11-19T14:51:34Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[staging]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="SKIP" signature="projectFieldVerification(int, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.None.ProjectFieldVerificationTest@3327bd23]" name="projectFieldVerification" duration-ms="0" started-at="2017-11-19T14:51:34Z" depends-on-methods="com.arc.testcases.MyBuildings.None.LoginCaseTest.loginCase, com.arc.testcases.MyBuildings.None.PaymentbyCCTest.paymentbyCC, com.arc.testcases.MyBuildings.None.ClickSearchedProgramTest.clickSearchedProgram" finished-at="2017-11-19T14:51:34Z">
-          <exception class="java.lang.Throwable">
-            <message>
-              <![CDATA[Method ProjectFieldVerificationTest.projectFieldVerification(int, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.None.ProjectFieldVerificationTest@3327bd23] depends on not successfully finished methods]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method ProjectFieldVerificationTest.projectFieldVerification(int, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.None.ProjectFieldVerificationTest@3327bd23] depends on not successfully finished methods
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1033)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
-	at org.testng.TestRunner.privateRun(TestRunner.java:774)
-	at org.testng.TestRunner.run(TestRunner.java:624)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1191)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
-	at org.testng.TestNG.run(TestNG.java:1024)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- projectFieldVerification -->
-        <test-method status="PASS" signature="end()[pri:0, instance:com.arc.testcases.MyBuildings.None.ProjectFieldVerificationTest@3327bd23]" name="end" is-config="true" duration-ms="931" started-at="2017-11-19T14:51:34Z" finished-at="2017-11-19T14:51:35Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- end -->
-      </class> <!-- com.arc.testcases.MyBuildings.None.ProjectFieldVerificationTest -->
-      <class name="com.arc.testcases.MyBuildings.None.EditProjectDetailsTest">
-        <test-method status="PASS" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.None.EditProjectDetailsTest@4e1d422d]" name="setup" is-config="true" duration-ms="15134" started-at="2017-11-19T14:51:35Z" finished-at="2017-11-19T14:51:50Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[staging]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="SKIP" signature="editProjectDetails(int, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.None.EditProjectDetailsTest@4e1d422d]" name="editProjectDetails" duration-ms="0" started-at="2017-11-19T14:51:50Z" depends-on-methods="com.arc.testcases.MyBuildings.None.LoginCaseTest.loginCase, com.arc.testcases.MyBuildings.None.PaymentbyCCTest.paymentbyCC, com.arc.testcases.MyBuildings.None.ClickSearchedProgramTest.clickSearchedProgram" finished-at="2017-11-19T14:51:50Z">
-          <exception class="java.lang.Throwable">
-            <message>
-              <![CDATA[Method EditProjectDetailsTest.editProjectDetails(int, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.None.EditProjectDetailsTest@4e1d422d] depends on not successfully finished methods]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method EditProjectDetailsTest.editProjectDetails(int, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.None.EditProjectDetailsTest@4e1d422d] depends on not successfully finished methods
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1033)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
-	at org.testng.TestRunner.privateRun(TestRunner.java:774)
-	at org.testng.TestRunner.run(TestRunner.java:624)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1191)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
-	at org.testng.TestNG.run(TestNG.java:1024)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- editProjectDetails -->
-        <test-method status="PASS" signature="end()[pri:0, instance:com.arc.testcases.MyBuildings.None.EditProjectDetailsTest@4e1d422d]" name="end" is-config="true" duration-ms="1006" started-at="2017-11-19T14:51:50Z" finished-at="2017-11-19T14:51:51Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- end -->
-      </class> <!-- com.arc.testcases.MyBuildings.None.EditProjectDetailsTest -->
-      <class name="com.arc.testcases.MyBuildings.None.InstallAllAppsTest">
-        <test-method status="PASS" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.None.InstallAllAppsTest@4fe3c938]" name="setup" is-config="true" duration-ms="14473" started-at="2017-11-19T14:53:25Z" finished-at="2017-11-19T14:53:40Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[staging]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="SKIP" signature="installAllApps(int, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.None.InstallAllAppsTest@4fe3c938]" name="installAllApps" duration-ms="0" started-at="2017-11-19T14:53:40Z" depends-on-methods="com.arc.testcases.MyBuildings.None.LoginCaseTest.loginCase, com.arc.testcases.MyBuildings.None.PaymentbyCCTest.paymentbyCC, com.arc.testcases.MyBuildings.None.ClickSearchedProgramTest.clickSearchedProgram" finished-at="2017-11-19T14:53:40Z">
-          <exception class="java.lang.Throwable">
-            <message>
-              <![CDATA[Method InstallAllAppsTest.installAllApps(int, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.None.InstallAllAppsTest@4fe3c938] depends on not successfully finished methods]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method InstallAllAppsTest.installAllApps(int, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.None.InstallAllAppsTest@4fe3c938] depends on not successfully finished methods
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1033)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
-	at org.testng.TestRunner.privateRun(TestRunner.java:774)
-	at org.testng.TestRunner.run(TestRunner.java:624)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1191)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
-	at org.testng.TestNG.run(TestNG.java:1024)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- installAllApps -->
-        <test-method status="PASS" signature="end()[pri:0, instance:com.arc.testcases.MyBuildings.None.InstallAllAppsTest@4fe3c938]" name="end" is-config="true" duration-ms="1032" started-at="2017-11-19T14:53:40Z" finished-at="2017-11-19T14:53:41Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- end -->
-      </class> <!-- com.arc.testcases.MyBuildings.None.InstallAllAppsTest -->
-      <class name="com.arc.testcases.MyBuildings.None.AddTeamMemberTest">
-        <test-method status="PASS" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.None.AddTeamMemberTest@52a86356]" name="setup" is-config="true" duration-ms="15996" started-at="2017-11-19T14:52:07Z" finished-at="2017-11-19T14:52:23Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[staging]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="end()[pri:0, instance:com.arc.testcases.MyBuildings.None.AddTeamMemberTest@52a86356]" name="end" is-config="true" duration-ms="1061" started-at="2017-11-19T14:52:23Z" finished-at="2017-11-19T14:52:24Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- end -->
-        <test-method status="SKIP" signature="addTeamMember(int, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.None.AddTeamMemberTest@52a86356]" name="addTeamMember" duration-ms="0" started-at="2017-11-19T14:52:23Z" depends-on-methods="com.arc.testcases.MyBuildings.None.LoginCaseTest.loginCase, com.arc.testcases.MyBuildings.None.PaymentbyCCTest.paymentbyCC" finished-at="2017-11-19T14:52:23Z">
-          <exception class="java.lang.Throwable">
-            <message>
-              <![CDATA[Method AddTeamMemberTest.addTeamMember(int, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.None.AddTeamMemberTest@52a86356] depends on not successfully finished methods]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method AddTeamMemberTest.addTeamMember(int, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.None.AddTeamMemberTest@52a86356] depends on not successfully finished methods
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1033)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
-	at org.testng.TestRunner.privateRun(TestRunner.java:774)
-	at org.testng.TestRunner.run(TestRunner.java:624)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1191)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
-	at org.testng.TestNG.run(TestNG.java:1024)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- addTeamMember -->
-      </class> <!-- com.arc.testcases.MyBuildings.None.AddTeamMemberTest -->
-      <class name="com.arc.testcases.MyBuildings.None.WasteMeterEditReadingTest">
-        <test-method status="PASS" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.None.WasteMeterEditReadingTest@6fc6f14e]" name="setup" is-config="true" duration-ms="15997" started-at="2017-11-19T14:54:55Z" finished-at="2017-11-19T14:55:11Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[staging]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="SKIP" signature="wasteMeterEditReading(int, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.None.WasteMeterEditReadingTest@6fc6f14e]" name="wasteMeterEditReading" duration-ms="0" started-at="2017-11-19T14:55:11Z" depends-on-methods="com.arc.testcases.MyBuildings.None.LoginCaseTest.loginCase, com.arc.testcases.MyBuildings.None.PaymentbyCCTest.paymentbyCC, com.arc.testcases.MyBuildings.None.ClickSearchedProgramTest.clickSearchedProgram" finished-at="2017-11-19T14:55:11Z">
-          <exception class="java.lang.Throwable">
-            <message>
-              <![CDATA[Method WasteMeterEditReadingTest.wasteMeterEditReading(int, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.None.WasteMeterEditReadingTest@6fc6f14e] depends on not successfully finished methods]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method WasteMeterEditReadingTest.wasteMeterEditReading(int, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.None.WasteMeterEditReadingTest@6fc6f14e] depends on not successfully finished methods
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1033)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
-	at org.testng.TestRunner.privateRun(TestRunner.java:774)
-	at org.testng.TestRunner.run(TestRunner.java:624)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1191)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
-	at org.testng.TestNG.run(TestNG.java:1024)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- wasteMeterEditReading -->
-        <test-method status="PASS" signature="end()[pri:0, instance:com.arc.testcases.MyBuildings.None.WasteMeterEditReadingTest@6fc6f14e]" name="end" is-config="true" duration-ms="1109" started-at="2017-11-19T14:55:11Z" finished-at="2017-11-19T14:55:13Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- end -->
-      </class> <!-- com.arc.testcases.MyBuildings.None.WasteMeterEditReadingTest -->
-    </test> <!-- ARCRegressionTest-Building-None -->
-    <test name="ARCRegressionTest-Building-Other" duration-ms="0" started-at="2017-11-19T09:27:14Z" finished-at="2017-11-19T09:27:14Z">
-    </test> <!-- ARCRegressionTest-Building-Other -->
-    <test name="ARCRegressionTest-Building-Transit" duration-ms="0" started-at="2017-11-19T09:27:14Z" finished-at="2017-11-19T09:27:14Z">
-    </test> <!-- ARCRegressionTest-Building-Transit -->
-    <test name="ARCRegressionTest-LEED-for-Communities" duration-ms="0" started-at="2017-11-19T09:27:14Z" finished-at="2017-11-19T09:27:14Z">
-    </test> <!-- ARCRegressionTest-LEED-for-Communities -->
+      </class> <!-- com.arc.testcases.MyCommunities.None.VerifyCertificationStatusTest -->
+    </test> <!-- ARCRegressionTest-None-for-Communities -->
   </suite> <!-- SanityTestCasesSuite -->
 </testng-results>

@@ -13,7 +13,7 @@ public class PerformanceReviewTest extends BaseClass {
 	
 	@Test//(dependsOnMethods = { "com.arc.testcases.MyBuildings.LEED.LoginCaseTest.loginCaseTest","com.arc.testcases.MyBuildings.LEED.ClickSearchedProgramTest.clickSearchedProgramTest","com.arc.testcases.MyBuildings.LEED.PaymentbyCCTest.paymentbyCCTest" })
 	@Parameters({"rowNum" ,"communitySheet", "paymentSheet", "loginSheet" })
-	public void waterFileUploadTest(int rowNum, String communitySheet, String paymentSheet, String loginSheet) throws IOException {
+	public void performanceReview(int rowNum, String communitySheet, String paymentSheet, String loginSheet) throws IOException {
 		CommonMethod.ExtentReportConfig();
 		CommonMethod.test = CommonMethod.extent.startTest("AllSearaioPrecCertReviewTest", "Verifies  ReviewPageTest successully ").assignCategory("SubmitForReview");
 		ReusableMethodsLogin reuse = new ReusableMethodsLogin();

@@ -16,7 +16,7 @@ import com.arc.driver.CommonMethod;
 public class AddTeamMemberTest extends BaseClass {
 
 	
-	@Test(dependsOnMethods = { "com.arc.testcases.MyBuildings.LEED.LoginCaseTest.loginCaseTest","com.arc.testcases.MyBuildings.LEED.ClickSearchedProgramTest.clickSearchedProgramTest","com.arc.testcases.MyBuildings.LEED.PaymentbyCCTest.paymentbyCCTest" })
+	@Test//(dependsOnMethods = { "com.arc.testcases.MyBuildings.LEED.LoginCaseTest.loginCaseTest","com.arc.testcases.MyBuildings.LEED.ClickSearchedProgramTest.clickSearchedProgramTest","com.arc.testcases.MyBuildings.LEED.PaymentbyCCTest.paymentbyCCTest" })
 	@Parameters({"rowNum" ,"buildingSheet" , "teamSheet","loginSheet"})
 	public void addTeamMemberTest(int rowNum, String buildingSheet, String teamSheet, String loginSheet) throws IOException {
 		CommonMethod.ExtentReportConfig();

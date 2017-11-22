@@ -288,6 +288,9 @@ public class ReusableMethodsAddProject extends BaseClass{
 		data.setCellData(sheetName, "Amount" , rowNum, Amount );
 		
 		Thread.sleep(10000);
+		
+		CommonMethod.FluentWait("VerifyPaymentDone");
+		CommonMethod.testlog( "Pass", "Project details filled");
 
 	}
 	
@@ -356,6 +359,9 @@ public class ReusableMethodsAddProject extends BaseClass{
 		CommonMethod.click( "NextButton");
 		CommonMethod.testlog( "Pass", "Clicking on Next button");
 		Thread.sleep(10000);
+		
+		CommonMethod.FluentWait("VerifyPaymentDone");
+		CommonMethod.testlog( "Pass", "Project details filled");
 
 	}
 public void AddAboveProjectLEEDfortransit(int rowNum,  String sheetName ) throws IOException, InterruptedException {
@@ -454,6 +460,9 @@ public void AddAboveProjectLEEDfortransit(int rowNum,  String sheetName ) throws
 		data.setCellData(sheetName, "Amount" , rowNum, Amount );
 		
 		Thread.sleep(10000);
+		
+		CommonMethod.FluentWait("VerifyPaymentDone");
+		CommonMethod.testlog( "Pass", "Project details filled");
 
 	}
 
@@ -546,6 +555,9 @@ public void AddUndergroundProjectLEEDfortransit(int rowNum,  String sheetName ) 
 	CommonMethod.click( "NextButton");
 	CommonMethod.testlog( "Pass", "Clicking on Next button");
 	Thread.sleep(10000);
+	
+	CommonMethod.FluentWait("VerifyPaymentDone");
+		CommonMethod.testlog( "Pass", "Project details filled");
 
 }
 	public void AddProjectOtherUS(int rowNum, String sheetName) throws IOException, InterruptedException {
@@ -623,6 +635,9 @@ public void AddUndergroundProjectLEEDfortransit(int rowNum,  String sheetName ) 
 		data.setCellData(sheetName, "Amount" , rowNum, Amount );
 		
 		Thread.sleep(10000);
+		
+		CommonMethod.FluentWait("VerifyPaymentDone");
+		CommonMethod.testlog( "Pass", "Project details filled");
 
 
 	}
@@ -904,6 +919,9 @@ public void AddUndergroundProjectLEEDfortransit(int rowNum,  String sheetName ) 
 		
 		
 		Thread.sleep(10000);
+		
+		CommonMethod.FluentWait("VerifyPaymentDone");
+		CommonMethod.testlog( "Pass", "Project details filled");
 
 	}
 	
@@ -987,6 +1005,9 @@ public void AddUndergroundProjectLEEDfortransit(int rowNum,  String sheetName ) 
 		
 		
 		Thread.sleep(10000);
+		
+		CommonMethod.FluentWait("VerifyPaymentDone");
+		CommonMethod.testlog( "Pass", "Project details filled");
 
 	}
 	
@@ -1070,6 +1091,9 @@ public void AddUndergroundProjectLEEDfortransit(int rowNum,  String sheetName ) 
 		
 		
 		Thread.sleep(10000);
+		
+		CommonMethod.FluentWait("VerifyPaymentDone");
+		CommonMethod.testlog( "Pass", "Project details filled");
 
 	}
 
@@ -1153,6 +1177,9 @@ public void AddUndergroundProjectLEEDfortransit(int rowNum,  String sheetName ) 
 		
 		CommonMethod.FluentWait("VerifyPaymentDone");
 		CommonMethod.testlog( "Pass", "Project details filled");
+		
+		CommonMethod.FluentWait("VerifyPaymentDone");
+		CommonMethod.testlog( "Pass", "Project details filled");
 	}
 	
 	
@@ -1231,6 +1258,9 @@ public void AddUndergroundProjectLEEDfortransit(int rowNum,  String sheetName ) 
 		data.setCellData(sheetName, "Amount" , rowNum, Amount );
 		
 		Thread.sleep(10000);
+		
+		CommonMethod.FluentWait("VerifyPaymentDone");
+		CommonMethod.testlog( "Pass", "Project details filled");
 	}
 	
 	
@@ -1309,6 +1339,9 @@ public void AddUndergroundProjectLEEDfortransit(int rowNum,  String sheetName ) 
 		data.setCellData(sheetName, "Amount" , rowNum, Amount );
 		
 		Thread.sleep(10000);
+		
+		CommonMethod.FluentWait("VerifyPaymentDone");
+		CommonMethod.testlog( "Pass", "Project details filled");
 	}
 	
 	/*public void AddProjectTransit() throws IOException, InterruptedException {

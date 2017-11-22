@@ -109,11 +109,11 @@ for(int i=0;i<=17;i++){
 /*	CommonMethod.displayhiddenElement("UploadDataMeterHidden");
 	Thread.sleep(3000);*/
     //CommonMethod.click( "BclickFileUpload");
-	//Runtime.getRuntime().exec(System.getProperty("user.dir")+"\\ARCDataTemplete\\PdfScript.exe");
-	//System.out.println(System.getProperty("user.dir")+"\\ARCDataTemplete\\PdfScript.exe");
+	//Runtime.getRuntime().exec(System.getProperty("user.dir")+"/ARCDataTemplete/PdfScript.exe");
+	//System.out.println(System.getProperty("user.dir")+"/ARCDataTemplete/PdfScript.exe");
 	CommonMethod.displayhiddenElement("UploadBasePointHidden");
 	
-	CommonMethod.sendKeys("UploadBasePointHidden", System.getProperty("user.dir")+"\\ARCDataTemplete\\USGBC.pdf");
+	CommonMethod.sendKeys("UploadBasePointHidden", System.getProperty("user.dir")+"/ARCDataTemplete/USGBC.pdf");
 	
 	//Thread.sleep(6000);
 	WebDriverWait wait = new WebDriverWait(driver, 15);
@@ -143,7 +143,7 @@ for(int i=0;i<=22;i++){
 	CommonMethod.FluentWait( "BclickFileUpload");
     CommonMethod.moveToElement( "BclickFileUpload");
 	CommonMethod.click( "BclickFileUpload");
-	Runtime.getRuntime().exec(System.getProperty("user.dir")+"\\ARCDataTemplete\\PdfScript.exe");
+	Runtime.getRuntime().exec(System.getProperty("user.dir")+"/ARCDataTemplete/PdfScript.exe");
 	Thread.sleep(6000);
 	CommonMethod.assertEqualsmessage( "InfoMessage", "File successfully uploaded.", "something went wrong");
 	

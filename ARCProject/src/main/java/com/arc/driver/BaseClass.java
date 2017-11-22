@@ -39,7 +39,7 @@ public class BaseClass {
 	public void setup(String browserName,String environment) throws InterruptedException, IOException{
 		
 		//Excel path configuration
-		data= new XlsReader(System.getProperty("user.dir")+"\\ArcTest.xlsx"); 
+		data= new XlsReader(System.getProperty("user.dir")+"/ArcTest.xlsx"); 
 		
 		 
 		//selecting browser based on parameter from TestNG.xml
@@ -47,7 +47,7 @@ public class BaseClass {
 			
 			FirefoxProfile profile = new FirefoxProfile();
 			   profile.setPreference("browser.download.folderList", 2);
-			   profile.setPreference("browser.download.dir", System.getProperty("user.dir") +"\\Downloads\\");
+			   profile.setPreference("browser.download.dir", System.getProperty("user.dir") +"/Downloads/");
 			   profile.setPreference("browser.download.manager.alertOnEXEOpen", false);
 			   profile.setPreference("browser.helperApps.neverAsk.saveToDisk", "application/msword, application/csv, application/ris, text/csv, image/png, application/pdf, text/html, text/plain, application/zip, application/x-zip, application/x-zip-compressed, application/download, application/octet-stream");
 			   profile.setPreference("browser.download.manager.showWhenStarting", false);

@@ -3,8 +3,9 @@
   <groupId>Arc</groupId>
   <artifactId>ARCTests</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-   
    <build>
+    
+     
     <plugins>
       <plugin>
       <groupId>org.apache.maven.plugins</groupId>
@@ -13,9 +14,9 @@
         <configuration>
           <source>1.7</source>
           <target>1.7</target>
+		  <compilerArgument>-proc:none</compilerArgument>
         </configuration>
       </plugin>
-      <!-- 
      <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-surefire-plugin</artifactId>
@@ -26,18 +27,60 @@
         <environment>${environment}</environment>
          </systemPropertyVariables>                       
           <suiteXmlFiles>
-               <suiteXmlFile>src/main/resources/testng.xml</suiteXmlFile>              
-          </suiteXmlFiles>    
+               <suiteXmlFile>src/main/resources/TestNg-Building.xml</suiteXmlFile>              
+          </suiteXmlFiles>         
         </configuration>       
       </plugin>   
-    -->
+   <plugin>
+			<groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-clean-plugin</artifactId>
+            <version>2.4.1</version>
+            <configuration>
+                 <filesets>
+                    <fileset>
+                        <directory>/var/lib/jenkins/workspace/ARC-STG-Regression/AutomationTesting/ARCTests/Report</directory>
+                        <includes>
+                            <include>**/*</include>
+                        </includes>
+                        <followSymlinks>false</followSymlinks>
+     
+                    </fileset>
+					
+					 <fileset>
+                        <directory>/var/lib/jenkins/workspace/ARC-STG-Regression/AutomationTesting/ARCTests/Screenshots</directory>
+                        <includes>
+                            <include>**/*</include>
+                        </includes>
+                        <followSymlinks>false</followSymlinks>
+     
+                    </fileset>
+					
+					 <fileset>
+                        <directory>/var/lib/jenkins/workspace/ARC-STG-Regression/AutomationTesting/ARCTests/Downloads</directory>
+                        <includes>
+                            <include>**/*</include>
+                        </includes>
+                        <followSymlinks>false</followSymlinks>
+     
+                    </fileset>
+					
+					</filesets>
+            </configuration>
+			</plugin>
+			<plugin>
+  <groupId>com.qulice</groupId>
+  <artifactId>qulice-maven-plugin</artifactId>
+  <configuration>
+    <excludes>
+      <exclude>duplicatefinder:.*</exclude>
+    </excludes>
+  </configuration>
+</plugin>
     </plugins>
   </build>
   <properties>
   <poi.version>3.9</poi.version>
 </properties>
-
-
   <dependencies>
 
 		<dependency>
@@ -53,18 +96,6 @@
 			
 		</dependency>
 		
-		<dependency>
-    <groupId>net.java.dev.jna</groupId>
-    <artifactId>jna</artifactId>
-    <version>4.5.0</version>
-</dependency>
-
-<dependency>
-    <groupId>net.java.dev.jna</groupId>
-    <artifactId>jna-platform</artifactId>
-    <version>4.0.0</version>
-</dependency>
-		<!-- 
 		<dependency>
     <groupId>org.apache.poi</groupId>
     <artifactId>poi</artifactId>
@@ -96,20 +127,19 @@
     <artifactId>poi-scratchpad</artifactId>
     <version>${poi.version}</version>
       </dependency>
-       
-      <dependency>
-    <groupId>org.apache.poi</groupId>
-    <artifactId>poi-examples</artifactId>
-    <version>${poi.version}</version>
-     </dependency>
-       -->
+      
       <dependency>
    <groupId>io.github.bonigarcia</groupId>
    <artifactId>webdrivermanager</artifactId>
    <version>1.4.9</version>
 </dependency>
       
-     
+      
+      <dependency>
+    <groupId>org.apache.poi</groupId>
+    <artifactId>poi-examples</artifactId>
+    <version>${poi.version}</version>
+     </dependency>
      
       <dependency>
     <groupId>org.apache.xmlbeans</groupId>
@@ -134,11 +164,7 @@
     <artifactId>nekohtml</artifactId>
     <version>1.9.21</version>
     </dependency>
-<dependency>
-    <groupId>org.apache.poi</groupId>
-    <artifactId>poi-ooxml</artifactId>
-    <version>3.16-beta1</version>
-</dependency>
+
 		<dependency>
 			<groupId>com.relevantcodes</groupId>
 			<artifactId>extentreports</artifactId>

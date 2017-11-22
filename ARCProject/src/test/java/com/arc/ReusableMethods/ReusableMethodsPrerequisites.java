@@ -51,10 +51,10 @@ public class ReusableMethodsPrerequisites {
 			/*CommonMethod.FluentWait( "BclickFileUpload");
 		    CommonMethod.moveToElement( "BclickFileUpload");
 			CommonMethod.click( "BclickFileUpload");
-			Runtime.getRuntime().exec(System.getProperty("user.dir") +"\\ARCDataTemplete\\txtFileUploadScript.exe");*/
+			Runtime.getRuntime().exec(System.getProperty("user.dir") +"/ARCDataTemplete/txtFileUploadScript.exe");*/
 			CommonMethod.displayhiddenElement("UploadBasePointHidden");
 			Thread.sleep(6000);
-			CommonMethod.sendKeys("UploadBasePointHidden", System.getProperty("user.dir")+"\\ARCDataTemplete\\txtFileUpload.txt");
+			CommonMethod.sendKeys("UploadBasePointHidden", System.getProperty("user.dir")+"/ARCDataTemplete/txtFileUpload.txt");
 			Thread.sleep(5000);
 			CommonMethod.assertEqualsmessage( "InfoMessage", "File successfully uploaded.", "something went wrong");
 			CommonMethod.testlog( "Pass","text file Uploaded successfully");
@@ -132,10 +132,10 @@ public class ReusableMethodsPrerequisites {
 			/*CommonMethod.FluentWait( "BclickFileUpload");
 		    CommonMethod.moveToElement( "BclickFileUpload");
 			CommonMethod.click( "BclickFileUpload");
-			Runtime.getRuntime().exec(System.getProperty("user.dir") +"\\ARCDataTemplete\\PdfScript.exe");*/
+			Runtime.getRuntime().exec(System.getProperty("user.dir") +"/ARCDataTemplete/PdfScript.exe");*/
 			CommonMethod.displayhiddenElement("UploadBasePointHidden");
 			Thread.sleep(6000);
-			CommonMethod.sendKeys("UploadBasePointHidden", System.getProperty("user.dir")+"\\ARCDataTemplete\\USGBC.pdf");
+			CommonMethod.sendKeys("UploadBasePointHidden", System.getProperty("user.dir")+"/ARCDataTemplete/USGBC.pdf");
 			Thread.sleep(6000);
 			CommonMethod.assertEqualsmessage( "InfoMessage", "File successfully uploaded.", "something went wrong");
 			CommonMethod.testlog( "Pass","text file Uploaded successfully");

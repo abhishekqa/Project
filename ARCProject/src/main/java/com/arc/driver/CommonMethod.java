@@ -50,10 +50,10 @@ public class CommonMethod extends BaseClass  {
 	public static ExtentTest test;
 	public static String ProgramID;
 	public static String signupID;
-	public static String screenshotfile = System.getProperty("user.dir") +"\\Screenshots\\";
-    public static File extentconfigfile = new File(System.getProperty("user.dir") +"\\src\\main\\resources\\extent-config.xml");
-    public static String Reportfile = System.getProperty("user.dir") +"\\Report\\ARC-AutomationReport" + "_" + formatter.format(date) + ".html";
-	public static String downloadPath = System.getProperty("user.dir") +"\\Downloads\\";
+	public static String screenshotfile = System.getProperty("user.dir") +"/Screenshots/";
+    public static File extentconfigfile = new File(System.getProperty("user.dir") +"/src/main/resources/extent-config.xml");
+    public static String Reportfile = System.getProperty("user.dir") +"/Report/ARC-AutomationReport" + "_" + formatter.format(date) + ".html";
+	public static String downloadPath = System.getProperty("user.dir") +"/Downloads/";
 	public static WebDriverWait wait = new WebDriverWait(driver, 60);
 	static WebElement element;
 	
@@ -61,10 +61,10 @@ public class CommonMethod extends BaseClass  {
 	public static WebElement findElement(final String objectLocater) throws IOException{
 		//System.out.println(downloadPath);
 		Properties OR = new Properties();
-		FileInputStream fp = new FileInputStream(System.getProperty("user.dir")+"\\src\\main\\resources\\ObjectLocator.properties");
+		FileInputStream fp = new FileInputStream(System.getProperty("user.dir")+"/src/main/resources/ObjectLocator.properties");
 		OR.load(fp);
 		
-		FileInputStream fp1 = new FileInputStream(System.getProperty("user.dir")+"\\src\\main\\resources\\DashbordLocator.properties");
+		FileInputStream fp1 = new FileInputStream(System.getProperty("user.dir")+"/src/main/resources/DashbordLocator.properties");
 		OR.load(fp1);
 		
 		
@@ -116,7 +116,7 @@ public class CommonMethod extends BaseClass  {
 	
 	public static List<WebElement> findElements(String objectLocater) throws IOException{
 		Properties OR = new Properties();
-		FileInputStream fp = new FileInputStream(System.getProperty("user.dir")+"\\src\\main\\resources\\ObjectLocator.properties");
+		FileInputStream fp = new FileInputStream(System.getProperty("user.dir")+"/src/main/resources/ObjectLocator.properties");
 		OR.load(fp);
 		String objecttypeandvalues = OR.getProperty(objectLocater);
 		System.out.println(objecttypeandvalues);
@@ -269,11 +269,14 @@ public class CommonMethod extends BaseClass  {
     	
 	}
     
-    public static void selectdropdownrandom(String objectLocator) throws IOException{
+    public static void selectdropdownrandom(String objectLocator) throws IOException, InterruptedException{
     	
     	Select se = new Select( findElement(objectLocator));
     	List<WebElement> ele = se.getOptions();
     	se.selectByIndex(new Random().nextInt(ele.size()));
+    	Thread.sleep(2000);
+    	WebElement option = se.getFirstSelectedOption();
+    	System.out.println(option.getText());
     }
     
     public static void selectdropdown(String objectLocator,String value) throws IOException{
@@ -372,7 +375,7 @@ public class CommonMethod extends BaseClass  {
     
    public static void ArcSpecifictoggle(String objectLocator) throws IOException, InterruptedException{
 	   
-	   click("sidebarcollapse");
+	   //click("sidebarcollapse");
 	   moveToElement(objectLocator);
 	   Thread.sleep(2000);
 	   click(objectLocator);
@@ -690,10 +693,10 @@ public class CommonMethod extends BaseClass  {
 	public static WebElement WaitUntilPresence(String objectlocator) throws IOException{
 		
 		Properties OR = new Properties();
-		FileInputStream fp = new FileInputStream(System.getProperty("user.dir")+"\\src\\main\\resources\\ObjectLocator.properties");
+		FileInputStream fp = new FileInputStream(System.getProperty("user.dir")+"/src/main/resources/ObjectLocator.properties");
 		OR.load(fp);
 		
-		FileInputStream fp1 = new FileInputStream(System.getProperty("user.dir")+"\\src\\main\\resources\\DashbordLocator.properties");
+		FileInputStream fp1 = new FileInputStream(System.getProperty("user.dir")+"/src/main/resources/DashbordLocator.properties");
 		OR.load(fp1);
 		
 		
@@ -748,10 +751,10 @@ public class CommonMethod extends BaseClass  {
      public static WebElement WaitUntilVisibility(String objectlocator) throws IOException{
 		
 		Properties OR = new Properties();
-		FileInputStream fp = new FileInputStream(System.getProperty("user.dir")+"\\src\\main\\resources\\ObjectLocator.properties");
+		FileInputStream fp = new FileInputStream(System.getProperty("user.dir")+"/src/main/resources/ObjectLocator.properties");
 		OR.load(fp);
 		
-		FileInputStream fp1 = new FileInputStream(System.getProperty("user.dir")+"\\src\\main\\resources\\DashbordLocator.properties");
+		FileInputStream fp1 = new FileInputStream(System.getProperty("user.dir")+"/src/main/resources/DashbordLocator.properties");
 		OR.load(fp1);
 		
 		

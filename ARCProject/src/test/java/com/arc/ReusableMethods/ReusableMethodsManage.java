@@ -339,6 +339,7 @@ public void VerifyProjectDetailsTransit( String sheetName, int rowNum) throws IO
 		String team_mail = data.getCellData(sheetName, "Team_mail", rowNum);
 		
 		CommonMethod.ArcSpecifictoggle( "Manage");
+		CommonMethod.scrolldowntoElement("Team");
 		CommonMethod.click( "Team");
 		CommonMethod.testlog( "Pass", "Clicking on Team");
 		CommonMethod.sendKeys( "TeamMemberEmail", team_mail);
@@ -355,6 +356,7 @@ public void VerifyProjectDetailsTransit( String sheetName, int rowNum) throws IO
 	public void EditTeamMemberRole( String role) throws IOException, InterruptedException {
 
 		CommonMethod.ArcSpecifictoggle( "Manage");
+		CommonMethod.scrolldowntoElement("Team");
 		CommonMethod.click( "Team");
 		CommonMethod.testlog( "Pass", "Clicking on Team");
 		CommonMethod.click( "EditButtonTeamMember");

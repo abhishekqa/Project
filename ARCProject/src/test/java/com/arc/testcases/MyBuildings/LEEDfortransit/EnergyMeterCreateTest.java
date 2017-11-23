@@ -17,6 +17,7 @@ public class EnergyMeterCreateTest extends BaseClass {
 	@Parameters({"rowNum" ,"buildingSheet","loginSheet","energySheet"})
 	public void energyMeterCreate(int rowNum, String buildingSheet, String loginSheet, String energySheet) throws IOException {
 		
+		System.out.println(Thread.currentThread().getStackTrace()[1].getMethodName());
 		CommonMethod.ExtentReportConfig();
 		
 		CommonMethod.test = CommonMethod.extent.startTest("CreateEnergyMeterTest-TransitU", "Verifies if Energy meter created and added successfully").assignCategory("CheckMeter");

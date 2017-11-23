@@ -18,6 +18,7 @@ public class AddNewProjectINDTest extends BaseClass {
 	@Parameters({"rowNum" ,"buildingSheet","waterSheet" })
 	public void addNewProjectTest(int rowNum, String sheetName) throws IOException {
 		
+		System.out.println(Thread.currentThread().getStackTrace()[1].getMethodName());
 		CommonMethod.ExtentReportConfig();
 		CommonMethod.test = CommonMethod.extent.startTest("AddNewProjectINDTest-LEED", "Verifies if New Project is added successfully").assignCategory("CheckAddProject");
 		ReusableMethodsLogin reuse = new ReusableMethodsLogin();

@@ -19,7 +19,7 @@ public class ModifyOccOptHrsProjectDetailsTest extends BaseClass {
 	@Test(dependsOnMethods = { "com.arc.testcases.MyBuildings.Other.LoginCaseTest.loginCase","com.arc.testcases.MyBuildings.Other.ClickSearchedProgramTest.clickSearchedProgram","com.arc.testcases.MyBuildings.Other.PaymentbyCCTest.paymentbyCC" })
 	@Parameters({"rowNum" ,"buildingSheet","loginSheet"})
 	public void modifyProjectDetails(int rowNum, String buildingSheet, String loginSheet) throws IOException {
-		
+		System.out.println(Thread.currentThread().getStackTrace()[1].getMethodName());
 		CommonMethod.ExtentReportConfig();
 		
 		CommonMethod.test = CommonMethod.extent.startTest("MaxOccupancyOpthrsProjectTest-BOther", "Verifies if Edit Project functionality is working fine").assignCategory("CheckProject");

@@ -496,7 +496,7 @@ public void CreateWaterWMeter(String param,String Metername,String MeterLocator,
     	/*CommonMethod.click("UploadDataMeterHidden");
     	CommonMethod.uploadFile(System.getProperty("user.dir") +"\\ARCDataTemplete\\arc_Data_Template.xlsm");*/
 		
-    	CommonMethod.sendKeys("UploadDataMeterHidden", System.getProperty("user.dir") +"\\ARCDataTemplete\\arc_Data_Template.xlsm");
+    	CommonMethod.sendKeys("UploadDataMeterHidden", CommonMethod.energyUploadXlsx);
     	
     	CommonMethod.testlog("Pass","File uploaded successfully");
     	String string = CommonMethod.getText("VerifySuccess");
@@ -738,7 +738,7 @@ public void CreateWaterWMeter(String param,String Metername,String MeterLocator,
 	/*CommonMethod.click("UploadDataMeterHidden");
 	CommonMethod.uploadFile(System.getProperty("user.dir") +"\\ARCDataTemplete\\arc_Data_Template.xlsm");*/
 	
-	CommonMethod.sendKeys("UploadDataMeterHidden", System.getProperty("user.dir") +"\\ARCDataTemplete\\arc_Data_Template.xlsm");
+	CommonMethod.sendKeys("UploadDataMeterHidden", CommonMethod.waterUploadXlsx);
 	
    	
     CommonMethod.testlog("Pass","Energy arc_Data_Templete Uploaded Successully");

@@ -17,6 +17,7 @@ public class  EnergyFileUploadTest extends BaseClass {
 	@Parameters({"rowNum" ,"buildingSheet","loginSheet"})
 	public void energyFileUpload(int rowNum, String buildingSheet, String loginSheet) throws IOException {
 		
+		System.out.println(Thread.currentThread().getStackTrace()[1].getMethodName());
 		CommonMethod.ExtentReportConfig();
 		
 		CommonMethod.test = CommonMethod.extent.startTest("EnergyArc_data_templeteupload-TransitU", "Verifies if Energy meter created and added successfully").assignCategory("CheckMeter");

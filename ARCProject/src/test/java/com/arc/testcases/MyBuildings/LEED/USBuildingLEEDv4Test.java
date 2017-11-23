@@ -18,10 +18,10 @@ import com.arc.driver.CommonMethod;
 
 public class USBuildingLEEDv4Test extends BaseClass {
 	
-	@Test//(dependsOnMethods={"com.arc.testcases.MyBuildings.LEED.LoginCaseTest.loginCaseTest"})
+	@Test//(dependsOnMethods={"com.arc.testcases.MyBuildings.LEED.LoginCaseTest.loginCase"})
 	@Parameters({"rowNum" ,"loginSheet","buildingSheet","energySheet", "waterSheet", "wasteSheet", "paymentSheet", "teamSheet"})
-	public void addNewProjectTest(int rowNum, String loginSheet, String buildingSheet, String energySheet, String waterSheet, String wasteSheet, String paymentSheet, String teamSheet ) throws IOException {
-		
+	public void addNewProject(int rowNum, String loginSheet, String buildingSheet, String energySheet, String waterSheet, String wasteSheet, String paymentSheet, String teamSheet ) throws IOException {
+		System.out.println(Thread.currentThread().getStackTrace()[1].getMethodName());
 		CommonMethod.ExtentReportConfig();
 		CommonMethod.test = CommonMethod.extent.startTest("AddNewProjectUSTest-BLEED", "Verifies if New Project is added successfully").assignCategory("CheckAddProject");
 		ReusableMethodsLogin reuse = new ReusableMethodsLogin();

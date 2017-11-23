@@ -18,10 +18,10 @@ import com.arc.driver.CommonMethod;
 public class PrecertificationPayTest extends BaseClass {
 
 
-	@Test//(dependsOnMethods = { "com.arc.testcases.MyCities.Other.LoginCaseTest.loginCase","com.arc.testcases.MyCities.Other.SearchProgramTest.searchProgram","com.arc.testcases.MyCities.Other.ClickSearchedProgramTest.clickSearchedProgram","com.arc.testcases.MyCities.Other.PaymentbyCCTest.paymentbyCC" })
+	@Test//(dependsOnMethods = { "com.arc.testcases.MyCities.Other.LoginCaseTest.loginCase","com.arc.testcases.MyCities.Other.ClickSearchedProgramTest.clickSearchedProgram","com.arc.testcases.MyCities.Other.PaymentbyCCTest.paymentbyCC" })
 	@Parameters({"rowNum" ,"loginSheet","citySheet","paymentSheet"})
 	public void precertificationPay(int rowNum, String loginSheet, String citySheet, String paymentSheet) throws IOException {
-		
+		System.out.println(Thread.currentThread().getStackTrace()[1].getMethodName());
 		CommonMethod.ExtentReportConfig();
 		
 		CommonMethod.test = CommonMethod.extent.startTest("PrecertificationPay Test-Cities", "Verifies if Precertifiction functionality is correct").assignCategory("CheckPrecertification");

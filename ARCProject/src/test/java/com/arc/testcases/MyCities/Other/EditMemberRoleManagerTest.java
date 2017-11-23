@@ -16,10 +16,10 @@ import com.arc.driver.CommonMethod;
 public class EditMemberRoleManagerTest extends BaseClass {
 
 	
-	@Test(dependsOnMethods = { "com.arc.testcases.MyCities.Other.LoginCaseTest.loginCase","com.arc.testcases.MyCities.Other.SearchProgramTest.searchProgram","com.arc.testcases.MyCities.Other.ClickSearchedProgramTest.clickSearchedProgram","com.arc.testcases.MyCities.Other.PaymentbyCCTest.paymentbyCC","com.arc.testcases.MyCities.Other.AddTeamMemberTest.addTeamMember" })
+	@Test(dependsOnMethods = { "com.arc.testcases.MyCities.Other.LoginCaseTest.loginCase","com.arc.testcases.MyCities.Other.ClickSearchedProgramTest.clickSearchedProgram","com.arc.testcases.MyCities.Other.PaymentbyCCTest.paymentbyCC","com.arc.testcases.MyCities.Other.AddTeamMemberTest.addTeamMember" })
 	@Parameters({"rowNum" ,"loginSheet","citySheet"})
 	public void editMemberRoleManager(int rowNum, String loginSheet, String citySheet) throws IOException {
-		
+		System.out.println(Thread.currentThread().getStackTrace()[1].getMethodName());
 		CommonMethod.ExtentReportConfig();
 		
 		CommonMethod.test = CommonMethod.extent.startTest("EditTeamMemberRole Test-Cities", "Verifies if edit team member functionality is working fine").assignCategory("CheckTeam");

@@ -14,10 +14,10 @@ import com.arc.driver.CommonMethod;
 
 public class AddNewProjectTest extends BaseClass {
 	@Test
-	//(dependsOnMethods = { "com.arc.testcases.MyCities.LEEDforCities.LoginCaseTest.loginCaseTest" })
+	//(dependsOnMethods = { "com.arc.testcases.MyCities.LEEDforCities.LoginCaseTest.loginCase" })
 	@Parameters({"rowNum" ,"loginSheet","citySheet"})
 	public void addNewProject(int rowNum, String loginSheet, String citySheet) throws IOException {
-		
+		System.out.println(Thread.currentThread().getStackTrace()[1].getMethodName());
 		CommonMethod.ExtentReportConfig();
 		
 		CommonMethod.test = CommonMethod.extent.startTest("Add New Project-Cities", "Verifies if New Project is added successfully").assignCategory("CheckAddProject");

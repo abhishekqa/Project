@@ -17,9 +17,10 @@ public class WaterFileUploadTest extends BaseClass {
 
 	
 	@Test
-	//(dependsOnMethods = { "com.arc.testcases.MyBuildings.LEED.LoginCaseTest.loginCaseTest","com.arc.testcases.MyBuildings.LEED.ClickSearchedProgramTest.clickSearchedProgramTest","com.arc.testcases.MyBuildings.LEED.PaymentbyCCTest.paymentbyCCTest" })
+	//(dependsOnMethods = { "com.arc.testcases.MyBuildings.LEED.LoginCaseTest.loginCase","com.arc.testcases.MyBuildings.LEED.ClickSearchedProgramTest.clickSearchedProgram","com.arc.testcases.MyBuildings.LEED.PaymentbyCCTest.paymentbyCC" })
 	@Parameters({"rowNum" ,"buildingSheet", "loginSheet" })
-	public void waterFileUploadTest(int rowNum, String buildingSheet, String loginSheet) throws IOException {
+	public void waterFileUpload(int rowNum, String buildingSheet, String loginSheet) throws IOException {
+		System.out.println(Thread.currentThread().getStackTrace()[1].getMethodName());
 		CommonMethod.ExtentReportConfig();
 		CommonMethod.test = CommonMethod.extent.startTest("WaterFileuploadTest-BLEED", "Verifies  Water File Uploaded successfully").assignCategory("FileUpload");
 		ReusableMethodsLogin reuse = new ReusableMethodsLogin();

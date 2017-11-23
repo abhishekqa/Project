@@ -16,10 +16,10 @@ import com.arc.driver.CommonMethod;
 public class PrerequisitesAttemptTest extends BaseClass {
 
 	
-	@Test(dependsOnMethods = { "com.arc.testcases.MyCommunities.LEEDforCommunities.LoginCaseTest.loginCase","com.arc.testcases.MyCommunities.LEEDforCommunities.SearchProgramTest.searchProgram","com.arc.testcases.MyCommunities.LEEDforCommunities.ClickSearchedProgramTest.clickSearchedProgram","com.arc.testcases.MyCommunities.LEEDforCommunities.PaymentbyCCTest.paymentbyCC" })
+	@Test(dependsOnMethods = { "com.arc.testcases.MyCommunities.LEEDforCommunities.LoginCaseTest.loginCase","com.arc.testcases.MyCommunities.LEEDforCommunities.ClickSearchedProgramTest.clickSearchedProgram","com.arc.testcases.MyCommunities.LEEDforCommunities.PaymentbyCCTest.paymentbyCC" })
 	@Parameters({"rowNum" ,"loginSheet","communitySheet"})
 	public void prerequisitesAttempt(int rowNum, String loginSheet, String communitySheet) throws IOException {
-		
+		System.out.println(Thread.currentThread().getStackTrace()[1].getMethodName());
 		CommonMethod.ExtentReportConfig();
 		
 		CommonMethod.test = CommonMethod.extent.startTest("PrerequisitesAttempt Test-Communities", "Verifies if Prerequisites functionality is working fine").assignCategory("CheckPrerequisites");

@@ -13,7 +13,8 @@ public class CertificationReviewTest extends BaseClass {
 	
 	@Test(dependsOnMethods = { "com.arc.testcases.MyBuildings.LEED.LoginCaseTest.loginCase","com.arc.testcases.MyBuildings.LEED.ClickSearchedProgramTest.clickSearchedProgram","com.arc.testcases.MyBuildings.LEED.PaymentbyCCTest.paymentbyCC" })
 	@Parameters({"rowNum" ,"buildingSheet" ,"loginSheet","paymentSheet"})
-	public void waterFileUpload(int rowNum, String buildingSheet, String loginSheet, String paymentSheet) throws IOException {
+	public void certificationReview(int rowNum, String buildingSheet, String loginSheet, String paymentSheet) throws IOException {
+		System.out.println(Thread.currentThread().getStackTrace()[1].getMethodName());
 		CommonMethod.ExtentReportConfig();
 		CommonMethod.test = CommonMethod.extent.startTest("PrecCertReviewTest", "Verifies  ReviewPageTest successully ").assignCategory("FileUpload");
 		ReusableMethodsLogin reuse = new ReusableMethodsLogin();

@@ -15,10 +15,11 @@ public class OtherMeterCreateTest extends BaseClass {
 
 	
 	@Test
-	//(dependsOnMethods = { "com.arc.testcases.MyBuildings.LEED.LoginCaseTest.loginCaseTest","com.arc.testcases.MyBuildings.LEED.ClickSearchedProgramTest.clickSearchedProgramTest","com.arc.testcases.MyBuildings.LEED.PaymentbyCCTest.paymentbyCCTest" })
+	//(dependsOnMethods = { "com.arc.testcases.MyBuildings.LEED.LoginCaseTest.loginCase","com.arc.testcases.MyBuildings.LEED.ClickSearchedProgramTest.clickSearchedProgram","com.arc.testcases.MyBuildings.LEED.PaymentbyCCTest.paymentbyCC" })
 	@Parameters({"rowNum" ,"buildingSheet","energySheet","loginSheet" })
-	public void energyOtherMeterCreateTest(int rowNum, String buildingSheet, String energySheet, String loginSheet) throws IOException {
+	public void energyOtherMeterCreate(int rowNum, String buildingSheet, String energySheet, String loginSheet) throws IOException {
 		
+		System.out.println(Thread.currentThread().getStackTrace()[1].getMethodName());
 		CommonMethod.ExtentReportConfig();
 		
 		CommonMethod.test = CommonMethod.extent.startTest("CreateEnergyOtherMeterTest-BLEED", "Verifies if Other Energy meter created and added successfully").assignCategory("CheckMeter");

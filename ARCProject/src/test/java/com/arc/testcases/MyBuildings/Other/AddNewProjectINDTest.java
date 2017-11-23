@@ -17,7 +17,7 @@ public class AddNewProjectINDTest extends BaseClass {
 	@Test(dependsOnMethods={"com.arc.testcases.MyBuildings.Other.LoginCaseTest.loginCaseTest"})
 	@Parameters({"rowNum" ,"loginSheet","buildingSheet"})
 	public void addNewProjectTest(int rowNum, String buildingSheet) throws IOException {
-		
+		System.out.println(Thread.currentThread().getStackTrace()[1].getMethodName());
 		CommonMethod.ExtentReportConfig();
 		
 		CommonMethod.test = CommonMethod.extent.startTest("AddNewProjectINDTest-BOther", "Verifies if New Project is added successfully").assignCategory("CheckAddProject");

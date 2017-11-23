@@ -16,7 +16,7 @@ public class LoginInvaildValuesTest extends BaseClass {
 	@Test
 	@Parameters({"rowNum" ,"loginSheet"})
 	public void loginInvaildValuesTest(int rowNum, String loginSheet) throws IOException {
-		
+		System.out.println(Thread.currentThread().getStackTrace()[1].getMethodName());
 		CommonMethod.ExtentReportConfig();
 		
 		CommonMethod.test = CommonMethod.extent.startTest("Invalid Login Test-Communities", "Verifies if Login functionality is working fine with invalid values").assignCategory("CheckLogin");

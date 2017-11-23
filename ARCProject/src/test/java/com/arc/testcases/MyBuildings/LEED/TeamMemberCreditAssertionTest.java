@@ -16,10 +16,10 @@ import com.arc.driver.CommonMethod;
 public class TeamMemberCreditAssertionTest extends BaseClass {
 
 	
-	@Test(dependsOnMethods = { "com.arc.testcases.MyBuildings.LEED.Login.LoginCaseTest.loginCaseTest","com.arc.testcases.MyBuildings.LEED.PublicSearch.SearchProgramTest.searchProgramTest","com.arc.testcases.MyBuildings.LEED.PublicSearch.ClickSearchedProgramTest.clickSearchedProgramTest","com.arc.testcases.MyBuildings.LEED.AddProject.PaymentbyCCTest.paymentbyCCTest" })
+	@Test(dependsOnMethods = { "com.arc.testcases.MyBuildings.LEED.Login.LoginCaseTest.loginCase","com.arc.testcases.MyBuildings.LEED.PublicSearch.ClickSearchedProgramTest.clickSearchedProgram","com.arc.testcases.MyBuildings.LEED.AddProject.PaymentbyCCTest.paymentbyCC" })
 	@Parameters({"rowNum" ,"buildingSheet","loginSheet"})
-	public void prerequisitesAttemptTest(int rowNum,String buildingSheet,String loginSheet ) throws IOException {
-		
+	public void prerequisitesAttempt(int rowNum,String buildingSheet,String loginSheet ) throws IOException {
+		System.out.println(Thread.currentThread().getStackTrace()[1].getMethodName());
 		CommonMethod.ExtentReportConfig();
 		
 		CommonMethod.test = CommonMethod.extent.startTest("PrerequisitesAttemptTest-LEED", "Verifies if Prerequisites functionality is working fine").assignCategory("CheckPrerequisites","ARCPPS-465").assignCategory("ARCPPS");

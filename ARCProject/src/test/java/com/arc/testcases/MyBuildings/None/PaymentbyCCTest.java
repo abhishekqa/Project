@@ -17,7 +17,7 @@ public class PaymentbyCCTest extends BaseClass {
 	@Test(dependsOnMethods = { "com.arc.testcases.MyBuildings.None.LoginCaseTest.loginCase","com.arc.testcases.MyBuildings.None.ClickSearchedProgramTest.clickSearchedProgram","com.arc.testcases.MyBuildings.None.AddNewProjectTest.addNewProject" })
 	@Parameters({"rowNum" ,"buildingSheet","loginSheet", "paymentSheet"})
 	public void paymentbyCC(int rowNum, String buildingSheet, String loginSheet, String paymentSheet) throws IOException {
-		
+		System.out.println(Thread.currentThread().getStackTrace()[1].getMethodName());
 		CommonMethod.ExtentReportConfig();
 	    CommonMethod.test = CommonMethod.extent.startTest("PaymentByCreditcardTest-BNone", "Verifies if Payment done through creditcard is successful").assignCategory("CheckPayment");
         ReusableMethodsLogin reuse = new ReusableMethodsLogin();

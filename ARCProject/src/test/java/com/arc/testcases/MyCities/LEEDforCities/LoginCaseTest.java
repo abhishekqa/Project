@@ -13,7 +13,7 @@ public class LoginCaseTest extends BaseClass {
 	@Test
 	@Parameters({"rowNum" ,"loginSheet"})
 	public void loginCase(int rowNum, String loginSheet) throws IOException {
-		
+		System.out.println(Thread.currentThread().getStackTrace()[1].getMethodName());
 		CommonMethod.ExtentReportConfig();
 		
 		CommonMethod.test = CommonMethod.extent.startTest("Login Test-MyCities.LEEDforCities", "Verifies if Login functionality is working fine").assignCategory("CheckLogin");

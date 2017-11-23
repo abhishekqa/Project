@@ -12,8 +12,9 @@ public class LoginCaseTest extends BaseClass {
 
 	@Test
 	@Parameters({"rowNum" ,"loginSheet"})
-	public void loginCaseTest(int col, String loginSheet  )throws IOException {
+	public void loginCase(int col, String loginSheet  )throws IOException {
 		
+		System.out.println(Thread.currentThread().getStackTrace()[1].getMethodName());
 		CommonMethod.ExtentReportConfig();
 		
 		CommonMethod.test = CommonMethod.extent.startTest("LoginTest-BLEED", "Verifies if Login functionality is working fine").assignCategory("CheckLogin");

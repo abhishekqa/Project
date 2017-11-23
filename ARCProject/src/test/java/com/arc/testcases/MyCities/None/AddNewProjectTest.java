@@ -16,10 +16,10 @@ public class AddNewProjectTest extends BaseClass {
 
 	
 	@Test
-	//(dependsOnMethods = { "com.arc.testcases.cities.LoginCaseTest.loginCaseTest" })
+	//(dependsOnMethods = { "com.arc.testcases.cities.LoginCaseTest.loginCase" })
 	@Parameters({"rowNum" ,"loginSheet","citySheet"})
 	public void addNewProject(int rowNum, String loginSheet, String citySheet) throws IOException {
-		
+		System.out.println(Thread.currentThread().getStackTrace()[1].getMethodName());
 		CommonMethod.ExtentReportConfig();
 		
 		CommonMethod.test = CommonMethod.extent.startTest("Add New Project-Cities", "Verifies if New Project is added successfully").assignCategory("CheckAddProject");

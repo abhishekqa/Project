@@ -27,6 +27,7 @@ public class ReusableMethodsAddProject extends BaseClass{
 		String prjType 		= data.getCellData(sheetName, "Project Type", rowNum);
 		String prjRating 	= data.getCellData(sheetName, "Rating System", rowNum);
 		String ownerOrg 	= data.getCellData(sheetName, "Owner Organization", rowNum);
+		String ownerType 	= data.getCellData(sheetName, "Owner Type", rowNum);
 		String ownerCountry = data.getCellData(sheetName, "Owner Country", rowNum);
 		String ownerMail 	= data.getCellData(sheetName, "Owner Email", rowNum);
 		String prjArea 		= data.getCellData(sheetName, "Area", rowNum);
@@ -58,7 +59,7 @@ public class ReusableMethodsAddProject extends BaseClass{
 		CommonMethod.selectdropdownrandom("SpaceType");
 		CommonMethod.testlog("Pass", "Selecting Space Type");
 		
-		CommonMethod.selectdropdownrandom("OwnerType");
+		CommonMethod.selectdropdown("OwnerType",ownerType);
 		CommonMethod.testlog("Pass", "Selecting Owner Type Type");
 		
 		
@@ -422,7 +423,7 @@ public void AddAboveProjectLEEDfortransit(int rowNum,  String sheetName ) throws
 		CommonMethod.sendKeys( "Avg_time_staff",prjAvg_time_spent);
 		CommonMethod.testlog( "Pass", "Entered Full time Staff");
 		
-		CommonMethod.selectdropdownrandom( "OwnerType");
+		CommonMethod.selectdropdown( "OwnerType",ownerType);
 		CommonMethod.testlog( "Pass", "Selecting Owner Type Type");
 		
 		CommonMethod.sendKeys( "OwnerOrg", ownerOrg);
@@ -524,7 +525,7 @@ public void AddUndergroundProjectLEEDfortransit(int rowNum,  String sheetName ) 
 	CommonMethod.sendKeys( "Avg_time_staff",prjAvg_time_spent);
 	CommonMethod.testlog( "Pass", "Entered Full time Staff");
 	
-	CommonMethod.selectdropdownrandom( "OwnerType");
+	CommonMethod.selectdropdown( "OwnerType", ownerType);
 	CommonMethod.testlog( "Pass", "Selecting Owner Type Type");
 	
 	CommonMethod.sendKeys( "OwnerOrg", ownerOrg);
@@ -565,6 +566,7 @@ public void AddUndergroundProjectLEEDfortransit(int rowNum,  String sheetName ) 
 		String prjType 		= data.getCellData(sheetName, "Project Type", rowNum);
 		String prjRating 	= data.getCellData(sheetName, "Rating System", rowNum);
 		String ownerOrg 	= data.getCellData(sheetName, "Owner Organization", rowNum);
+		String ownerType 	= data.getCellData(sheetName, "Owner Type", rowNum);
 		String ownerCountry = data.getCellData(sheetName, "Owner Country", rowNum);
 		String ownerMail 	= data.getCellData(sheetName, "Owner Email", rowNum);
 		String prjArea 		= data.getCellData(sheetName, "Area", rowNum);
@@ -594,7 +596,7 @@ public void AddUndergroundProjectLEEDfortransit(int rowNum,  String sheetName ) 
 		CommonMethod.selectdropdownrandom( "SpaceType");
 		CommonMethod.testlog( "Pass", "Selecting Space Type");
 		
-		CommonMethod.selectdropdownrandom( "OwnerType");
+		CommonMethod.selectdropdown( "OwnerType", ownerType);
 		CommonMethod.testlog( "Pass", "Selecting Owner Type Type");
 		
 		
@@ -696,6 +698,7 @@ public void AddUndergroundProjectLEEDfortransit(int rowNum,  String sheetName ) 
 		String prjType 		= data.getCellData(sheetName, "Project Type", rowNum);
 		String prjRating 	= data.getCellData(sheetName, "Rating System", rowNum);
 		String ownerOrg 	= data.getCellData(sheetName, "Owner Organization", rowNum);
+		String ownerType 	= data.getCellData(sheetName, "Owner Type", rowNum);
 		String ownerCountry = data.getCellData(sheetName, "Owner Country", rowNum);
 		String ownerMail 	= data.getCellData(sheetName, "Owner Email", rowNum);
 		String prjParkNo 	= data.getCellData(sheetName, "no_park_space", rowNum);
@@ -726,7 +729,7 @@ public void AddUndergroundProjectLEEDfortransit(int rowNum,  String sheetName ) 
 		CommonMethod.selectdropdown("ClickOnRatingSystem",prjRating);
 		CommonMethod.testlog( "Pass", "Selecting RatingSystem Parksmart");
 		
-		CommonMethod.selectdropdownrandom( "OwnerType");
+		CommonMethod.selectdropdown( "OwnerType", ownerType);
 		CommonMethod.testlog( "Pass", "Selecting Owner Type Type");
 		
 		CommonMethod.sendKeys( "OwnerOrg", ownerOrg);
@@ -844,6 +847,7 @@ public void AddUndergroundProjectLEEDfortransit(int rowNum,  String sheetName ) 
 		String prjType 		= data.getCellData(sheetName, "ProjectType", rowNum);
 		String prjRating 	= data.getCellData(sheetName, "RatingSystem", rowNum);
 		String ownerOrg 	= data.getCellData(sheetName, "OwnerOrganization", rowNum);
+		String ownerType 	= data.getCellData(sheetName, "OwnerType", rowNum);
 		String ownerCountry = data.getCellData(sheetName, "OwnerCountry", rowNum);
 		String ownerMail 	= data.getCellData(sheetName, "OwnerEmail", rowNum);
 		String prjArea 		= data.getCellData(sheetName, "Area", rowNum);
@@ -871,7 +875,7 @@ public void AddUndergroundProjectLEEDfortransit(int rowNum,  String sheetName ) 
 		CommonMethod.selectdropdown("ClickOnRatingSystem",prjRating);
 	    CommonMethod.testlog( "Pass", "Selecting ratings as LEED for transit");
 	    
-	    CommonMethod.selectdropdownrandom( "OwnerType");
+	    CommonMethod.selectdropdown( "OwnerType", ownerType);
 		CommonMethod.testlog( "Pass", "Selecting Owner Type Type");
 		
 		CommonMethod.sendKeys( "OwnerOrg", ownerOrg);
@@ -930,6 +934,7 @@ public void AddUndergroundProjectLEEDfortransit(int rowNum,  String sheetName ) 
 		String prjType 		= data.getCellData(sheetName, "ProjectType", rowNum);
 		String prjRating 	= data.getCellData(sheetName, "RatingSystem", rowNum);
 		String ownerOrg 	= data.getCellData(sheetName, "OwnerOrganization", rowNum);
+		String ownerType 	= data.getCellData(sheetName, "OwnerType", rowNum);
 		String ownerCountry = data.getCellData(sheetName, "OwnerCountry", rowNum);
 		String ownerMail 	= data.getCellData(sheetName, "OwnerEmail", rowNum);
 		String prjArea 		= data.getCellData(sheetName, "Area", rowNum);
@@ -957,7 +962,7 @@ public void AddUndergroundProjectLEEDfortransit(int rowNum,  String sheetName ) 
 		CommonMethod.selectdropdown("ClickOnRatingSystem",prjRating);
 	    CommonMethod.testlog( "Pass", "Selecting ratings as LEED for transit");
 	    
-	    CommonMethod.selectdropdownrandom( "OwnerType");
+	    CommonMethod.selectdropdown( "OwnerType", ownerType);
 		CommonMethod.testlog( "Pass", "Selecting Owner Type Type");
 		
 		CommonMethod.sendKeys( "OwnerOrg", ownerOrg);
@@ -1016,6 +1021,7 @@ public void AddUndergroundProjectLEEDfortransit(int rowNum,  String sheetName ) 
 		String prjType 		= data.getCellData(sheetName, "ProjectType", rowNum);
 		String prjRating 	= data.getCellData(sheetName, "RatingSystem", rowNum);
 		String ownerOrg 	= data.getCellData(sheetName, "OwnerOrganization", rowNum);
+		String ownerType 	= data.getCellData(sheetName, "OwnerType", rowNum);
 		String ownerCountry = data.getCellData(sheetName, "OwnerCountry", rowNum);
 		String ownerMail 	= data.getCellData(sheetName, "OwnerEmail", rowNum);
 		String prjArea 		= data.getCellData(sheetName, "Area", rowNum);
@@ -1189,6 +1195,7 @@ public void AddUndergroundProjectLEEDfortransit(int rowNum,  String sheetName ) 
 		String prjType 		= data.getCellData(sheetName, "ProjectType", rowNum);
 		String prjRating 	= data.getCellData(sheetName, "RatingSystem", rowNum);
 		String ownerOrg 	= data.getCellData(sheetName, "OwnerOrganization", rowNum);
+		String ownerType 	= data.getCellData(sheetName, "OwnerType", rowNum);
 		String ownerCountry = data.getCellData(sheetName, "OwnerCountry", rowNum);
 		String ownerMail 	= data.getCellData(sheetName, "OwnerEmail", rowNum);
 		String prjArea 		= data.getCellData(sheetName, "Area", rowNum);
@@ -1214,7 +1221,7 @@ public void AddUndergroundProjectLEEDfortransit(int rowNum,  String sheetName ) 
 		CommonMethod.selectdropdown("ClickOnRatingSystem",prjRating);
 	    CommonMethod.testlog( "Pass", "Selecting ratings as Communities Other");
 	    
-	    CommonMethod.selectdropdownrandom( "OwnerType");
+	    CommonMethod.selectdropdown( "OwnerType", ownerType);
 		CommonMethod.testlog( "Pass", "Selecting Owner Type Type");
 		
 		CommonMethod.sendKeys( "OwnerOrg", ownerOrg);
@@ -1269,6 +1276,7 @@ public void AddUndergroundProjectLEEDfortransit(int rowNum,  String sheetName ) 
 		String prjType 		= data.getCellData(sheetName, "ProjectType", rowNum);
 		String prjRating 	= data.getCellData(sheetName, "RatingSystem", rowNum);
 		String ownerOrg 	= data.getCellData(sheetName, "OwnerOrganization", rowNum);
+		String ownerType 	= data.getCellData(sheetName, "OwnerType", rowNum);
 		String ownerCountry = data.getCellData(sheetName, "OwnerCountry", rowNum);
 		String ownerMail 	= data.getCellData(sheetName, "OwnerEmail", rowNum);
 		String prjArea 		= data.getCellData(sheetName, "Area", rowNum);
@@ -1294,7 +1302,7 @@ public void AddUndergroundProjectLEEDfortransit(int rowNum,  String sheetName ) 
 		CommonMethod.selectdropdown("ClickOnRatingSystem",prjRating);
 	    CommonMethod.testlog( "Pass", "Selecting ratings as LEED for Communities");
 	    
-	    CommonMethod.selectdropdownrandom( "OwnerType");
+	    CommonMethod.selectdropdown( "OwnerType", ownerType);
 		CommonMethod.testlog( "Pass", "Selecting Owner Type Type");
 		
 		CommonMethod.sendKeys( "OwnerOrg", ownerOrg);

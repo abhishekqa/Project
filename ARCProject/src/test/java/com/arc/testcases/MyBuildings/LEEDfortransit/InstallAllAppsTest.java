@@ -18,6 +18,7 @@ public class InstallAllAppsTest extends BaseClass {
 	@Parameters({"rowNum" ,"buildingSheet","loginSheet"})
 	public void installAllApps(int rowNum, String buildingSheet, String loginSheet) throws IOException {
 		
+		System.out.println(Thread.currentThread().getStackTrace()[1].getMethodName());
 		CommonMethod.ExtentReportConfig();
 		
 		CommonMethod.test = CommonMethod.extent.startTest("InstallAppsTest-TransitU", "Verifies if Apps functionality is working fine").assignCategory("CheckApps");

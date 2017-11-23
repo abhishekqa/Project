@@ -1,4 +1,4 @@
-package com.arc.testcases.MyCommunities.LEEDforCommunities;
+package com.arc.testcases.MyCommunities.Other;
 import java.io.IOException;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
@@ -11,9 +11,10 @@ import com.arc.driver.CommonMethod;
 public class PreCertReviewTest extends BaseClass {
 
 	
-	@Test//(dependsOnMethods = { "com.arc.testcases.MyBuildings.LEED.LoginCaseTest.loginCaseTest","com.arc.testcases.MyBuildings.LEED.ClickSearchedProgramTest.clickSearchedProgramTest","com.arc.testcases.MyBuildings.LEED.PaymentbyCCTest.paymentbyCCTest" })
+	@Test//(dependsOnMethods = { "com.arc.testcases.MyBuildings.LEED.LoginCaseTest.loginCase","com.arc.testcases.MyBuildings.LEED.ClickSearchedProgramTest.clickSearchedProgram","com.arc.testcases.MyBuildings.LEED.PaymentbyCCTest.paymentbyCC" })
 	@Parameters({"rowNum" ,"communitySheet", "paymentSheet", "loginSheet" })
-	public void waterFileUploadTest(int rowNum, String communitySheet, String paymentSheet, String loginSheet) throws IOException {
+	public void percertificationReview(int rowNum, String communitySheet, String paymentSheet, String loginSheet) throws IOException {
+		System.out.println(Thread.currentThread().getStackTrace()[1].getMethodName());
 		CommonMethod.ExtentReportConfig();
 		CommonMethod.test = CommonMethod.extent.startTest("AllSearaioPrecCertReviewTest", "Verifies  ReviewPageTest successully ").assignCategory("SubmitForReview");
 		ReusableMethodsLogin reuse = new ReusableMethodsLogin();

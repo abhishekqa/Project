@@ -16,10 +16,10 @@ import com.arc.driver.CommonMethod;
 public class VerifyCertificationStatusTest extends BaseClass {
 
 	
-	@Test(dependsOnMethods = { "com.arc.testcases.MyCities.LEEDforCities.LoginCaseTest.loginCase","com.arc.testcases.MyCities.LEEDforCities.SearchProgramTest.searchProgram","com.arc.testcases.MyCities.LEEDforCities.ClickSearchedProgramTest.clickSearchedProgram","com.arc.testcases.MyCities.LEEDforCities.PaymentbyCCTest.paymentbyCC","com.arc.testcases.MyCities.LEEDforCities.PrecertificationPayTest.precertificationPay" })
+	@Test(dependsOnMethods = { "com.arc.testcases.MyCities.LEEDforCities.LoginCaseTest.loginCase","com.arc.testcases.MyCities.LEEDforCities.ClickSearchedProgramTest.clickSearchedProgram","com.arc.testcases.MyCities.LEEDforCities.PaymentbyCCTest.paymentbyCC","com.arc.testcases.MyCities.LEEDforCities.PrecertificationPayTest.precertificationPay" })
 	@Parameters({"rowNum" ,"loginSheet", "citySheet"})
 	public void verifyCertificationStatus(int rowNum, String loginSheet, String citySheet) throws IOException {
-		
+		System.out.println(Thread.currentThread().getStackTrace()[1].getMethodName());
 		CommonMethod.ExtentReportConfig();
 		
 		CommonMethod.test = CommonMethod.extent.startTest("CertificationStatus Test-MyCities.LEEDforCities", "Verifies if Certification status is displayed correctly").assignCategory("CheckCertification");

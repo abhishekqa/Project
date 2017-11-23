@@ -17,6 +17,7 @@ public class WasteMeterEditReadingTest extends BaseClass {
 	@Test(dependsOnMethods = { "com.arc.testcases.MyBuildings.LEED.LoginCaseTest.loginCase","com.arc.testcases.MyBuildings.LEED.ClickSearchedProgramTest.clickSearchedProgram","com.arc.testcases.MyBuildings.LEED.PaymentbyCCTest.paymentbyCC" })
 	public void wasteMeterEditReading(int rowNum, String buildingSheet, String loginSheet) throws IOException {
 		
+		System.out.println(Thread.currentThread().getStackTrace()[1].getMethodName());
 		CommonMethod.ExtentReportConfig();
 		
 		CommonMethod.test = CommonMethod.extent.startTest("Edit Waste Meter Test-LEED", "Verifies if waste meter edited successfully").assignCategory("CheckMeter");

@@ -17,6 +17,7 @@ public class BasePointActivityTest extends BaseClass {
 	@Parameters({"rowNum" ,"loginSheet"})
 	public void energyMeterCreate(int rowNum, String loginSheet) throws IOException {
 		
+		System.out.println(Thread.currentThread().getStackTrace()[1].getMethodName());
 		CommonMethod.ExtentReportConfig();
 		
 		CommonMethod.test = CommonMethod.extent.startTest("CreateEnergyMeterTest-BLEED", "Verifies if Energy meter created and added successfully").assignCategory("CheckMeter");

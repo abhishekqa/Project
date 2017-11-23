@@ -19,7 +19,7 @@ public class VerifyPRFileDownloadTest extends BaseClass {
 	@Test(dependsOnMethods = { "com.arc.testcases.MyBuildings.Other.LoginCaseTest.loginCase","com.arc.testcases.MyBuildings.Other.ClickSearchedProgramTest.clickSearchedProgram","com.arc.testcases.MyBuildings.Other.PaymentbyCCTest.paymentbyCC" })
 	@Parameters({"rowNum" ,"buildingSheet","loginSheet"})
 	public void billingStatusVerification(int rowNum, String buildingSheet, String loginSheet) throws IOException {
-		
+		System.out.println(Thread.currentThread().getStackTrace()[1].getMethodName());
 		CommonMethod.ExtentReportConfig();
 		
 		CommonMethod.test = CommonMethod.extent.startTest("BillingRegPdfdownTest-BOther", "Verifies if billing status is displaying correct in billing page").assignCategory("CheckBilling");

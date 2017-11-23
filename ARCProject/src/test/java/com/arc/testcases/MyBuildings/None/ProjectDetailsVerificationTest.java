@@ -15,7 +15,7 @@ public class ProjectDetailsVerificationTest extends BaseClass {
 	@Test(dependsOnMethods = { "com.arc.testcases.MyBuildings.None.LoginCaseTest.loginCase","com.arc.testcases.MyBuildings.None.ClickSearchedProgramTest.clickSearchedProgram","com.arc.testcases.MyBuildings.None.PaymentbyCCTest.paymentbyCC" })
 	@Parameters({"rowNum" ,"buildingSheet","loginSheet"})
 	public void projectDetailsVerification(int rowNum, String buildingSheet, String loginSheet) throws IOException {
-		
+		System.out.println(Thread.currentThread().getStackTrace()[1].getMethodName());
 		CommonMethod.ExtentReportConfig();
 		
 		CommonMethod.test = CommonMethod.extent.startTest("MProjReadOnlyFieldTest-BNone", "Verifies if Project Details is correct").assignCategory("CheckProject");

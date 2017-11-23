@@ -22,6 +22,7 @@ public class PrecertificationPayTest extends BaseClass {
 	@Parameters({"rowNum" ,"buildingSheet","loginSheet","paymentSheet"})
 	public void precertificationPay(int rowNum, String buildingSheet, String loginSheet, String paymentSheet) throws IOException {
 		
+		System.out.println(Thread.currentThread().getStackTrace()[1].getMethodName());
 		CommonMethod.ExtentReportConfig();
 		
 		CommonMethod.test = CommonMethod.extent.startTest("PrecertificationPayTest-LEED", "Verifies if Precertifiction functionality is correct").assignCategory("CheckPrecertification");

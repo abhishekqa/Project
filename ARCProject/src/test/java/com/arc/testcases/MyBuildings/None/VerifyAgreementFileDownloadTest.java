@@ -19,7 +19,7 @@ public class VerifyAgreementFileDownloadTest extends BaseClass {
 	@Test(dependsOnMethods = { "com.arc.testcases.MyBuildings.None.LoginCaseTest.loginCase","com.arc.testcases.MyBuildings.None.ClickSearchedProgramTest.clickSearchedProgram","com.arc.testcases.MyBuildings.None.PaymentbyCCTest.paymentbyCC" })
 	@Parameters({"rowNum" ,"buildingSheet","loginSheet"})
 	public void verifyAgreementFileDownload(int rowNum, String buildingSheet, String loginSheet) throws IOException {
-		
+		System.out.println(Thread.currentThread().getStackTrace()[1].getMethodName());
 		CommonMethod.ExtentReportConfig();
 		
 		CommonMethod.test = CommonMethod.extent.startTest("AgreementpdfdownloadTest-BNone", "Verifies if Login functionality is working fine").assignCategory("CheckLogin");

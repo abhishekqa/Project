@@ -16,8 +16,9 @@ import com.arc.driver.CommonMethod;
 public class BasePointPdfFileUplaod extends BaseClass {
 	@Test(dependsOnMethods = { "com.arc.testcases.MyBuildings.LEEDfortransit.LoginCaseTest.loginCase","com.arc.testcases.MyBuildings.LEEDfortransit.ClickSearchedProgramTest.clickSearchedProgram","com.arc.testcases.MyBuildings.LEEDfortransit.PaymentbyCCTest.paymentbyCC" })
 	@Parameters({"rowNum" ,"buildingSheet" ,"loginSheet"})
-	public void baseScoreAttempt(int rowNum, String buildingSheet, String loginSheet) throws IOException {
+	public void basePointFileUpload(int rowNum, String buildingSheet, String loginSheet) throws IOException {
 		
+		System.out.println(Thread.currentThread().getStackTrace()[1].getMethodName());
 		CommonMethod.ExtentReportConfig();
 		
 		CommonMethod.test = CommonMethod.extent.startTest("BaseScorePdfUploadTest-TransitU", "Making credits Ready for review in Basescore Credits").assignCategory("CheckBasescore");

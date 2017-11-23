@@ -20,6 +20,7 @@ public class BillingDateVerificationTest extends BaseClass {
 	@Parameters({"rowNum" ,"buildingSheet" ,"loginSheet"})
 	public void billingDateVerification(int rowNum, String buildingSheet, String loginSheet) throws IOException {
 		
+		System.out.println(Thread.currentThread().getStackTrace()[1].getMethodName());
 		CommonMethod.ExtentReportConfig();
 		
 		CommonMethod.test = CommonMethod.extent.startTest("BillingDateTest-TransitU", "Verifies if Billing Date is correct").assignCategory("CheckBilling");

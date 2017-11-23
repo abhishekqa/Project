@@ -16,9 +16,10 @@ import com.arc.driver.CommonMethod;
 public class AddTeamMemberTest extends BaseClass {
 
 	
-	@Test//(dependsOnMethods = { "com.arc.testcases.MyBuildings.LEED.LoginCaseTest.loginCaseTest","com.arc.testcases.MyBuildings.LEED.ClickSearchedProgramTest.clickSearchedProgramTest","com.arc.testcases.MyBuildings.LEED.PaymentbyCCTest.paymentbyCCTest" })
+	@Test//(dependsOnMethods = { "com.arc.testcases.MyBuildings.LEED.LoginCaseTest.loginCase","com.arc.testcases.MyBuildings.LEED.ClickSearchedProgramTest.clickSearchedProgram","com.arc.testcases.MyBuildings.LEED.PaymentbyCCTest.paymentbyCC" })
 	@Parameters({"rowNum" ,"buildingSheet" , "teamSheet","loginSheet"})
-	public void addTeamMemberTest(int rowNum, String buildingSheet, String teamSheet, String loginSheet) throws IOException {
+	public void addTeamMember(int rowNum, String buildingSheet, String teamSheet, String loginSheet) throws IOException {
+		System.out.println(Thread.currentThread().getStackTrace()[1].getMethodName());
 		CommonMethod.ExtentReportConfig();
 		CommonMethod.test = CommonMethod.extent.startTest("AddTeamMemberTest-BLEED", "Verifies if TeamMember add functionality is working fine").assignCategory("CheckTeam");
 		ReusableMethodsLogin reuse = new ReusableMethodsLogin();

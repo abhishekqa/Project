@@ -11,9 +11,10 @@ import com.arc.driver.CommonMethod;
 public class PreCertReviewTest extends BaseClass {
 
 	
-	@Test//(dependsOnMethods = { "com.arc.testcases.MyBuildings.LEED.LoginCaseTest.loginCaseTest","com.arc.testcases.MyBuildings.LEED.ClickSearchedProgramTest.clickSearchedProgramTest","com.arc.testcases.MyBuildings.LEED.PaymentbyCCTest.paymentbyCCTest" })
+	@Test//(dependsOnMethods = { "com.arc.testcases.MyBuildings.LEED.LoginCaseTest.loginCase","com.arc.testcases.MyBuildings.LEED.ClickSearchedProgramTest.clickSearchedProgram","com.arc.testcases.MyBuildings.LEED.PaymentbyCCTest.paymentbyCC" })
 	@Parameters({"rowNum" ,"buildingSheet", "paymentSheet", "loginSheet" })
-	public void waterFileUploadTest(int rowNum, String buildingSheet, String paymentSheet, String loginSheet) throws IOException {
+	public void waterFileUpload(int rowNum, String buildingSheet, String paymentSheet, String loginSheet) throws IOException {
+		System.out.println(Thread.currentThread().getStackTrace()[1].getMethodName());
 		CommonMethod.ExtentReportConfig();
 		CommonMethod.test = CommonMethod.extent.startTest("AllSearaioPrecCertReviewTest", "Verifies  ReviewPageTest successully ").assignCategory("SubmitForReview");
 		ReusableMethodsLogin reuse = new ReusableMethodsLogin();

@@ -16,7 +16,7 @@ public class EnergyMeterCreateTest extends BaseClass {
 	@Test(dependsOnMethods = { "com.arc.testcases.MyBuildings.None.LoginCaseTest.loginCase","com.arc.testcases.MyBuildings.None.ClickSearchedProgramTest.clickSearchedProgram","com.arc.testcases.MyBuildings.None.PaymentbyCCTest.paymentbyCC" })
 	@Parameters({"rowNum" ,"buildingSheet" ,"loginSheet","energySheet"})
 	public void energyMeterCreate(int rowNum, String buildingSheet, String loginSheet, String energySheet) throws IOException {
-		
+		System.out.println(Thread.currentThread().getStackTrace()[1].getMethodName());
 		CommonMethod.ExtentReportConfig();
 		
 		CommonMethod.test = CommonMethod.extent.startTest("CreateEnergyMeterTest-BNone", "Verifies if Energy meter created and added successfully").assignCategory("CheckMeter");

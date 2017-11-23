@@ -14,6 +14,7 @@ public class PerformanceReviewTest extends BaseClass {
 	@Test//(dependsOnMethods = { "com.arc.testcases.MyBuildings.LEED.LoginCaseTest.loginCaseTest","com.arc.testcases.MyBuildings.LEED.ClickSearchedProgramTest.clickSearchedProgramTest","com.arc.testcases.MyBuildings.LEED.PaymentbyCCTest.paymentbyCCTest" })
 	@Parameters({"rowNum" ,"citySheet", "paymentSheet", "loginSheet" })
 	public void performanceReview(int rowNum, String communitySheet, String paymentSheet, String loginSheet) throws IOException {
+		System.out.println(Thread.currentThread().getStackTrace()[1].getMethodName());
 		CommonMethod.ExtentReportConfig();
 		CommonMethod.test = CommonMethod.extent.startTest("AllSearaioPrecCertReviewTest", "Verifies  ReviewPageTest successully ").assignCategory("SubmitForReview");
 		ReusableMethodsLogin reuse = new ReusableMethodsLogin();

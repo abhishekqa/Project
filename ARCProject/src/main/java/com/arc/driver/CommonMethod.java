@@ -56,6 +56,10 @@ public class CommonMethod extends BaseClass  {
 	public static String downloadPath = System.getProperty("user.dir") +"/Downloads/";
 	public static WebDriverWait wait = new WebDriverWait(driver, 60);
 	static WebElement element;
+	public static String energyUploadXlsx = System.getProperty("user.dir") +"\\ARCDataTemplete\\arc_Data_Template.xlsm";
+	public static String waterUploadXlsx = System.getProperty("user.dir") +"\\ARCDataTemplete\\arc_Data_Template.xlsm";
+	public static String basepointFilePdf = System.getProperty("user.dir")+"\\ARCDataTemplete\\USGBC.pdf";
+	public static String prerequisiteTextFile = System.getProperty("user.dir")+"\\ARCDataTemplete\\txtFileUpload.txt";
 	
 	
 	public static WebElement findElement(final String objectLocater) throws IOException{
@@ -378,7 +382,7 @@ public class CommonMethod extends BaseClass  {
 	   //click("sidebarcollapse");
 	   moveToElement(objectLocator);
 	   Thread.sleep(2000);
-	   click(objectLocator);
+	   //click(objectLocator);
 	   testlog("Pass", "Clicking "+ objectLocator );
    }
    

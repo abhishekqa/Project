@@ -18,6 +18,7 @@ public class BaseScoreAttemptTest extends BaseClass {
 	@Parameters({"rowNum" ,"buildingSheet" ,"loginSheet"})
 	public void baseScoreAttempt(int rowNum, String buildingSheet, String loginSheet) throws IOException {
 		
+		System.out.println(Thread.currentThread().getStackTrace()[1].getMethodName());
 		CommonMethod.ExtentReportConfig();
 		
 		CommonMethod.test = CommonMethod.extent.startTest("RenewableAllBaseScoreAttemptTest-TransitU", "Making credits Ready for review in Basescore Credits").assignCategory("CheckBasescore");

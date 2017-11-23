@@ -19,6 +19,7 @@ public class AddTeamMemberTest extends BaseClass {
 	@Test(dependsOnMethods = { "com.arc.testcases.MyBuildings.LEEDfortransit.LoginCaseTest.loginCase","com.arc.testcases.MyBuildings.LEEDfortransit.ClickSearchedProgramTest.clickSearchedProgram","com.arc.testcases.MyBuildings.LEEDfortransit.PaymentbyCCTest.paymentbyCC" })
 	@Parameters({"rowNum" ,"loginSheet","buildingSheet","teamSheet"})
 	public void addTeamMember(int rowNum, String loginSheet, String buildingSheet, String teamSheet) throws IOException {
+		System.out.println(Thread.currentThread().getStackTrace()[1].getMethodName());
 		CommonMethod.ExtentReportConfig();
 		CommonMethod.test = CommonMethod.extent.startTest("AddTeamMemberTest-TransitU", "Verifies if TeamMember add functionality is working fine").assignCategory("CheckTeam");
 		ReusableMethodsLogin reuse = new ReusableMethodsLogin();

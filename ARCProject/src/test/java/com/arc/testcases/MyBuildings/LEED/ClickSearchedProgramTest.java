@@ -17,10 +17,11 @@ import com.relevantcodes.extentreports.LogStatus;
 
 public class ClickSearchedProgramTest extends BaseClass {
 
-	@Test//(dependsOnMethods = { "com.arc.testcases.MyBuildings.LEED.LoginCaseTest.loginCaseTest"})
+	@Test//(dependsOnMethods = { "com.arc.testcases.MyBuildings.LEED.LoginCaseTest.loginCase"})
 	@Parameters({"rowNum" ,"loginSheet"})
-	public void clickSearchedProgramTest(int rowNum, String loginSheet) throws IOException {
+	public void clickSearchedProgram(int rowNum, String loginSheet) throws IOException {
 		
+		System.out.println(Thread.currentThread().getStackTrace()[1].getMethodName());
 		CommonMethod.ExtentReportConfig();
 		
 		CommonMethod.test = CommonMethod.extent.startTest("SearchClickNavigationTest-BLEED", "Verifies if Search functionality is working fine").assignCategory("CheckSearch");

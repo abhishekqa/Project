@@ -19,7 +19,7 @@ public class EditMemberRoleManagerTest extends BaseClass {
 	@Test(dependsOnMethods = { "com.arc.testcases.MyBuildings.None.LoginCaseTest.loginCase","com.arc.testcases.MyBuildings.None.ClickSearchedProgramTest.clickSearchedProgram","com.arc.testcases.MyBuildings.None.PaymentbyCCTest.paymentbyCC","com.arc.testcases.MyBuildings.None.AddTeamMemberTest.addTeamMember" })
 	@Parameters({"rowNum" ,"buildingSheet" ,"loginSheet"})
 	public void editMemberRoleManager(int rowNum, String buildingSheet, String loginSheet) throws IOException {
-		
+		System.out.println(Thread.currentThread().getStackTrace()[1].getMethodName());
 		CommonMethod.ExtentReportConfig();
 		
 		CommonMethod.test = CommonMethod.extent.startTest("EditTeamMemberRoleTest-BNone", "Verifies if edit team member functionality is working fine").assignCategory("CheckTeam");

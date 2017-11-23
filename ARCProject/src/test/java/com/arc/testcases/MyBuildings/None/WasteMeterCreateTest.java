@@ -20,7 +20,7 @@ public class WasteMeterCreateTest extends BaseClass {
 	@Test(dependsOnMethods = { "com.arc.testcases.MyBuildings.None.LoginCaseTest.loginCase","com.arc.testcases.MyBuildings.None.ClickSearchedProgramTest.clickSearchedProgram","com.arc.testcases.MyBuildings.None.PaymentbyCCTest.paymentbyCC" })
 	@Parameters({"rowNum" ,"buildingSheet","loginSheet", "wasteSheet"})
 	public void wasteMeterCreate(int rowNum, String buildingSheet, String loginSheet, String wasteSheet) throws IOException {
-		
+		System.out.println(Thread.currentThread().getStackTrace()[1].getMethodName());
 		CommonMethod.ExtentReportConfig();
 		
 		CommonMethod.test = CommonMethod.extent.startTest("CreateWasteMeterTest-BNone", "Verifies if Waste Reading added successfully").assignCategory("AddReading");

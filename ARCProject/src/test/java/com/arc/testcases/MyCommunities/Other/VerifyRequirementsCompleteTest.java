@@ -16,10 +16,10 @@ import com.arc.driver.CommonMethod;
 public class VerifyRequirementsCompleteTest extends BaseClass {
 
 	
-	@Test(dependsOnMethods = { "com.arc.testcases.MyCommunities.Other.LoginCaseTest.loginCase","com.arc.testcases.MyCommunities.Other.SearchProgramTest.searchProgram","com.arc.testcases.MyCommunities.Other.ClickSearchedProgramTest.clickSearchedProgram","com.arc.testcases.MyCommunities.Other.PaymentbyCCTest.paymentbyCC","com.arc.testcases.MyCommunities.Other.PrerequisitesAttemptTest.prerequisitesAttempt" })
+	@Test(dependsOnMethods = { "com.arc.testcases.MyCommunities.Other.LoginCaseTest.loginCase","com.arc.testcases.MyCommunities.Other.ClickSearchedProgramTest.clickSearchedProgram","com.arc.testcases.MyCommunities.Other.PaymentbyCCTest.paymentbyCC","com.arc.testcases.MyCommunities.Other.PrerequisitesAttemptTest.prerequisitesAttempt" })
 	@Parameters({"rowNum" ,"loginSheet","communitySheet"})
 	public void verifyRequirementsComplete(int rowNum, String loginSheet, String communitySheet) throws IOException {
-		
+		System.out.println(Thread.currentThread().getStackTrace()[1].getMethodName());
 		CommonMethod.ExtentReportConfig();
 		
 		CommonMethod.test = CommonMethod.extent.startTest("RequirementComplete Test-Communities", "Verifies if Requirements is complete for Precertification").assignCategory("CheckPrerequisties");

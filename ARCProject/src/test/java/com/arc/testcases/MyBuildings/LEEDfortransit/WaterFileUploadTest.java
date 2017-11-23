@@ -19,6 +19,7 @@ public class WaterFileUploadTest extends BaseClass {
 	@Parameters({"rowNum" ,"buildingSheet","loginSheet"})
 	public void waterFileUpload(int rowNum, String buildingSheet, String loginSheet) throws IOException {
 		
+		System.out.println(Thread.currentThread().getStackTrace()[1].getMethodName());
 		CommonMethod.ExtentReportConfig();
 		CommonMethod.test = CommonMethod.extent.startTest("WaterFileuploadTest-TransitU", "Verifies  Water File Uploaded successfully").assignCategory("FileUpload");
 		ReusableMethodsLogin reuse = new ReusableMethodsLogin();

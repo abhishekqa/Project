@@ -16,7 +16,7 @@ public class InternationalLanguagesSpecaialCharacterMeterCreateTest extends Base
 	@Test(dependsOnMethods = { "com.arc.testcases.MyBuildings.None.LoginCaseTest.loginCaseTest","com.arc.testcases.MyBuildings.None.ClickSearchedProgramTest.clickSearchedProgramTest","com.arc.testcases.MyBuildings.None.PaymentbyCCTest.paymentbyCCTest" })
 	@Parameters({"rowNum" ,"buildingSheet" ,"loginSheet"})
 	public void energyMeterCreate(int rowNum, String buildingSheet, String loginSheet) throws IOException {
-		
+		System.out.println(Thread.currentThread().getStackTrace()[1].getMethodName());
 		CommonMethod.ExtentReportConfig();
 		
 		CommonMethod.test = CommonMethod.extent.startTest("CreateILSepcharMeterTest-BNone", "Verifies if Energy meter created and added successfully").assignCategory("CheckMeter");

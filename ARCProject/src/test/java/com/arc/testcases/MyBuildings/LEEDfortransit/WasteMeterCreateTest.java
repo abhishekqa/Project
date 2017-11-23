@@ -21,6 +21,7 @@ public class WasteMeterCreateTest extends BaseClass {
 	@Parameters({"rowNum" ,"buildingSheet","loginSheet", "wasteSheet"})
 	public void wasteMeterCreate(int rowNum, String buildingSheet, String loginSheet, String wasteSheet) throws IOException {
 		
+		System.out.println(Thread.currentThread().getStackTrace()[1].getMethodName());
 		CommonMethod.ExtentReportConfig();
 		
 		CommonMethod.test = CommonMethod.extent.startTest("CreateWasteMeterTest-TransitU", "Verifies if Waste Reading added successfully").assignCategory("AddReading");

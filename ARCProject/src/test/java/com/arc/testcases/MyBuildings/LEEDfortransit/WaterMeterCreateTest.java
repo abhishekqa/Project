@@ -20,6 +20,7 @@ public class WaterMeterCreateTest extends BaseClass {
 	@Parameters({"rowNum" ,"buildingSheet","loginSheet", "waterSheet"})
 	public void waterMeterCreate(int rowNum, String buildingSheet, String loginSheet, String waterSheet) throws IOException {
 		
+		System.out.println(Thread.currentThread().getStackTrace()[1].getMethodName());
 		CommonMethod.ExtentReportConfig();
 		
 		CommonMethod.test = CommonMethod.extent.startTest("CreateWaterMeterTest-TransitU", "Verifies if Water meter created and added successfully").assignCategory("CheckMeter");

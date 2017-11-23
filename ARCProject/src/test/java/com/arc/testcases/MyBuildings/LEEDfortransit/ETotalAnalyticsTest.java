@@ -17,6 +17,7 @@ public class  ETotalAnalyticsTest extends BaseClass {
 	@Parameters({"rowNum" ,"buildingSheet","loginSheet"})
 	public void energyTotalAnalytics(int rowNum, String buildingSheet, String loginSheet) throws IOException {
 		
+		System.out.println(Thread.currentThread().getStackTrace()[1].getMethodName());
 		CommonMethod.ExtentReportConfig();
 		
 		CommonMethod.test = CommonMethod.extent.startTest("AEnergyCalculatioonTest-TransitU", "Verifies Total Analytics Tool Tip successfully").assignCategory("CheckAnalytics");

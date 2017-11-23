@@ -14,7 +14,7 @@ public class ClickSearchedProgramTest extends BaseClass {
 	//(dependsOnMethods = { "com.arc.testcases.MyBuildings.Other.LoginCaseTest.loginCaseTest"})
 	@Parameters({"rowNum" ,"loginSheet"})
 	public void clickSearchedProgram(int rowNum, String loginSheet) throws IOException {
-		
+		System.out.println(Thread.currentThread().getStackTrace()[1].getMethodName());
 		CommonMethod.ExtentReportConfig();
 		
 		CommonMethod.test = CommonMethod.extent.startTest("SearchClickNavigationTest-BOther", "Verifies if Search functionality is working fine").assignCategory("CheckSearch");

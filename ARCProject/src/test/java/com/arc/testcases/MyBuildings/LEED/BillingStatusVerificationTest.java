@@ -16,10 +16,11 @@ import com.arc.driver.CommonMethod;
 public class BillingStatusVerificationTest extends BaseClass {
 
 	
-	@Test//(dependsOnMethods = {"com.arc.testcases.MyBuildings.LEED.LoginCaseTest.loginCaseTest","com.arc.testcases.MyBuildings.LEED.ClickSearchedProgramTest.clickSearchedProgramTest","com.arc.testcases.MyBuildings.LEED.PaymentbyCCTest.paymentbyCCTest" })
+	@Test//(dependsOnMethods = {"com.arc.testcases.MyBuildings.LEED.LoginCaseTest.loginCase","com.arc.testcases.MyBuildings.LEED.ClickSearchedProgramTest.clickSearchedProgram","com.arc.testcases.MyBuildings.LEED.PaymentbyCCTest.paymentbyCC" })
 	@Parameters({"rowNum" ,"buildingSheet", "loginSheet" })
-	public void billingStatusVerificationTest(int rowNum, String buildingSheet, String loginSheet) throws IOException {
+	public void billingStatusVerification(int rowNum, String buildingSheet, String loginSheet) throws IOException {
 		
+		System.out.println(Thread.currentThread().getStackTrace()[1].getMethodName());
 		CommonMethod.ExtentReportConfig();
 		
 		CommonMethod.test = CommonMethod.extent.startTest("BillingStatusTest-BLEED", "Verifies if billing status is displaying correct in billing page").assignCategory("CheckBilling");

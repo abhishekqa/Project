@@ -16,7 +16,7 @@ public class LoginTestBlankValuesTest extends BaseClass {
 	@Test
 	@Parameters({"rowNum" ,"loginSheet"})
 	public void loginTestBlankValues(int rowNum, String loginSheet) throws IOException {
-		
+		System.out.println(Thread.currentThread().getStackTrace()[1].getMethodName());
 		CommonMethod.ExtentReportConfig();
 		
 		CommonMethod.test = CommonMethod.extent.startTest("BlankValue Login Test-communities", "Verifies if Login functionality is working fine with blank values").assignCategory("CheckLogin");

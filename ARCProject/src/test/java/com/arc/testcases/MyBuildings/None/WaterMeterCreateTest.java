@@ -16,7 +16,7 @@ public class WaterMeterCreateTest extends BaseClass {
 	@Test(dependsOnMethods = { "com.arc.testcases.MyBuildings.None.LoginCaseTest.loginCase","com.arc.testcases.MyBuildings.None.ClickSearchedProgramTest.clickSearchedProgram","com.arc.testcases.MyBuildings.None.PaymentbyCCTest.paymentbyCC" })
 	@Parameters({"rowNum" ,"buildingSheet","loginSheet", "waterSheet"})
 	public void waterMeterCreate(int rowNum, String buildingSheet, String loginSheet, String waterSheet) throws IOException {
-		
+		System.out.println(Thread.currentThread().getStackTrace()[1].getMethodName());
 		CommonMethod.ExtentReportConfig();
 		
 		CommonMethod.test = CommonMethod.extent.startTest("CreateWaterMeterTest-BNone", "Verifies if Water meter created and added successfully").assignCategory("CheckMeter");

@@ -18,6 +18,7 @@ public class ClickSearchedProgramTest extends BaseClass {
 	@Parameters({"rowNum" ,"loginSheet"})
 	public void clickSearchedProgram(int rowNum, String loginSheet) throws IOException {
 		
+		System.out.println(Thread.currentThread().getStackTrace()[1].getMethodName());
 		CommonMethod.ExtentReportConfig();
 		
 		CommonMethod.test = CommonMethod.extent.startTest("SearchClickNavigationTest-TransitU", "Verifies if Search functionality is working fine").assignCategory("CheckSearch");

@@ -16,10 +16,10 @@ import com.arc.driver.CommonMethod;
 public class BillingRegistrationAmountVerificationTest extends BaseClass {
 
 	
-	@Test(dependsOnMethods = { "com.arc.testcases.MyCities.None.LoginCaseTest.loginCase","com.arc.testcases.MyCities.None.SearchProgramTest.searchProgram","com.arc.testcases.MyCities.None.ClickSearchedProgramTest.clickSearchedProgram","com.arc.testcases.MyCities.None.PaymentbyCCTest.paymentbyCC" })
+	@Test(dependsOnMethods = { "com.arc.testcases.MyCities.None.LoginCaseTest.loginCase","com.arc.testcases.MyCities.None.ClickSearchedProgramTest.clickSearchedProgram","com.arc.testcases.MyCities.None.PaymentbyCCTest.paymentbyCC" })
 	@Parameters({"rowNum" ,"loginSheet","citySheet"})
-	public void billingRegistrationAmountVerificationTest(int rowNum, String loginSheet, String citySheet) throws IOException {
-		
+	public void billingRegistrationAmountVerification(int rowNum, String loginSheet, String citySheet) throws IOException {
+		System.out.println(Thread.currentThread().getStackTrace()[1].getMethodName());
 		CommonMethod.ExtentReportConfig();
 		
 		CommonMethod.test = CommonMethod.extent.startTest("RegistrationAmount Test-Cities", "Verifies if registration amount is displayed correct in billing page").assignCategory("CheckBilling");

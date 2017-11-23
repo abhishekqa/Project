@@ -16,10 +16,10 @@ import com.arc.driver.CommonMethod;
 public class VerifyRequirementsCompleteTest extends BaseClass {
 
 	
-	@Test(dependsOnMethods = { "com.arc.testcases.MyBuildings.LEED.LoginCaseTest.loginCaseTest","com.arc.testcases.MyBuildings.LEED.SearchProgramTest.searchProgramTest","com.arc.testcases.MyBuildings.LEED.ClickSearchedProgramTest.clickSearchedProgramTest","com.arc.testcases.MyBuildings.LEED.PaymentbyCCTest.paymentbyCCTest","com.arc.testcases.MyBuildings.LEED.PrerequisitesAttemptTest.prerequisitesAttemptTest" })
+	@Test(dependsOnMethods = { "com.arc.testcases.MyBuildings.LEED.LoginCaseTest.loginCase","com.arc.testcases.MyBuildings.LEED.ClickSearchedProgramTest.clickSearchedProgram","com.arc.testcases.MyBuildings.LEED.PaymentbyCCTest.paymentbyCC","com.arc.testcases.MyBuildings.LEED.PrerequisitesAttemptTest.prerequisitesAttempt" })
 	@Parameters({"rowNum" ,"buildingSheet","loginSheet" })
-	public void verifyRequirementsCompleteTest(int rowNum, String buildingSheet, String loginSheet) throws IOException {
-		
+	public void verifyRequirementsComplete(int rowNum, String buildingSheet, String loginSheet) throws IOException {
+		System.out.println(Thread.currentThread().getStackTrace()[1].getMethodName());
 		CommonMethod.ExtentReportConfig();
 		
 		CommonMethod.test = CommonMethod.extent.startTest("Requirement CompleteTest-LEED", "Verifies if Requirements is complete for Precertification").assignCategory("CheckPrerequisties");

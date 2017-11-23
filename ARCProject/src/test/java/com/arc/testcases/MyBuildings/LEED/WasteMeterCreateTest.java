@@ -17,10 +17,10 @@ public class WasteMeterCreateTest extends BaseClass {
 
 
    
-	@Test//(dependsOnMethods = { "com.arc.testcases.MyBuildings.LEED.LoginCaseTest.loginCaseTest","com.arc.testcases.MyBuildings.LEED.ClickSearchedProgramTest.clickSearchedProgramTest","com.arc.testcases.MyBuildings.LEED.PaymentbyCCTest.paymentbyCCTest" })
+	@Test//(dependsOnMethods = { "com.arc.testcases.MyBuildings.LEED.LoginCaseTest.loginCase","com.arc.testcases.MyBuildings.LEED.ClickSearchedProgramTest.clickSearchedProgram","com.arc.testcases.MyBuildings.LEED.PaymentbyCCTest.paymentbyCC" })
 	@Parameters({"rowNum" ,"buildingSheet","wasteSheet","loginSheet" })
-	public void wasteMeterCreateTest(int rowNum, String buildingSheet, String wasteSheet ,String loginSheet) throws IOException {
-		
+	public void wasteMeterCreate(int rowNum, String buildingSheet, String wasteSheet ,String loginSheet) throws IOException {
+		System.out.println(Thread.currentThread().getStackTrace()[1].getMethodName());
 		CommonMethod.ExtentReportConfig();
 		
 		CommonMethod.test = CommonMethod.extent.startTest("CreateWasteMeterTest-BLEED", "Verifies if Waste Reading added successfully").assignCategory("AddReading");

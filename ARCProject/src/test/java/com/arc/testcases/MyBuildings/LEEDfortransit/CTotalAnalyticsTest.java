@@ -17,6 +17,7 @@ public class  CTotalAnalyticsTest extends BaseClass {
 	@Parameters({"rowNum" ,"buildingSheet" ,"loginSheet"})
 	public void carbonTotal(int rowNum, String buildingSheet, String loginSheet) throws IOException {
 		
+		System.out.println(Thread.currentThread().getStackTrace()[1].getMethodName());
 		CommonMethod.ExtentReportConfig();
 		
 		CommonMethod.test = CommonMethod.extent.startTest("ACarbonCalculationTest-TransitU", "Verifies TOTAL ANNUAL CARBON EMISSIONS LEEDfortransit Successfully").assignCategory("CheckAnalytics");

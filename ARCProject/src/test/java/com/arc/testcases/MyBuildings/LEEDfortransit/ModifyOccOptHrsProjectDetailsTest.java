@@ -20,6 +20,7 @@ public class ModifyOccOptHrsProjectDetailsTest extends BaseClass {
 	@Parameters({"rowNum" ,"buildingSheet","loginSheet"})
 	public void modifyProjectDetails(int rowNum, String buildingSheet, String loginSheet) throws IOException {
 		
+		System.out.println(Thread.currentThread().getStackTrace()[1].getMethodName());
 		CommonMethod.ExtentReportConfig();
 		
 		CommonMethod.test = CommonMethod.extent.startTest("MaxOccupancyOpthrsProjectTest-TransitU", "Verifies if Edit Project functionality is working fine").assignCategory("CheckProject");

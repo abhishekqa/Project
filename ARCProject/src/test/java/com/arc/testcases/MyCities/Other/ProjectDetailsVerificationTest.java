@@ -16,10 +16,10 @@ import com.arc.driver.CommonMethod;
 public class ProjectDetailsVerificationTest extends BaseClass {
 
 	
-	@Test(dependsOnMethods = { "com.arc.testcases.MyCities.Other.LoginCaseTest.loginCase","com.arc.testcases.MyCities.Other.SearchProgramTest.searchProgram","com.arc.testcases.MyCities.Other.ClickSearchedProgramTest.clickSearchedProgram","com.arc.testcases.MyCities.Other.PaymentbyCCTest.paymentbyCC","com.arc.testcases.MyCities.Other.EditProjectDetailsTest.editProjectDetails" })
+	@Test(dependsOnMethods = { "com.arc.testcases.MyCities.Other.LoginCaseTest.loginCase","com.arc.testcases.MyCities.Other.ClickSearchedProgramTest.clickSearchedProgram","com.arc.testcases.MyCities.Other.PaymentbyCCTest.paymentbyCC","com.arc.testcases.MyCities.Other.EditProjectDetailsTest.editProjectDetails" })
 	@Parameters({"rowNum" ,"loginSheet","citySheet"})
 	public void projectDetailsVerification(int rowNum, String loginSheet, String citySheet) throws IOException {
-		
+		System.out.println(Thread.currentThread().getStackTrace()[1].getMethodName());
 		CommonMethod.ExtentReportConfig();
 		
 		CommonMethod.test = CommonMethod.extent.startTest("ProjectDetails Test-Buildings", "Verifies if Project Details is correct").assignCategory("CheckProject");

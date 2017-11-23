@@ -17,6 +17,7 @@ public class WasteReadingDateOverlappingTest extends BaseClass {
 	@Parameters({"rowNum" ,"buildingSheet","loginSheet"})
 	public void wasteMeterEditReading(int rowNum, String buildingSheet, String loginSheet) throws IOException {
 		
+		System.out.println(Thread.currentThread().getStackTrace()[1].getMethodName());
 		CommonMethod.ExtentReportConfig();
 		
 		CommonMethod.test = CommonMethod.extent.startTest("WasteDateOverlappingTest-LEED", "Verifies if DateOverlapping Tested  successfully").assignCategory("CheckMeter","ARCPPS-479").assignCategory("ARCPPS");

@@ -20,6 +20,8 @@ public class VerifyCertificationStatusTest extends BaseClass {
 	@Parameters({"rowNum" ,"buildingSheet","loginSheet"})
 	public void verifyCertificationStatus(int rowNum, String buildingSheet, String loginSheet) throws IOException {
 		
+		
+		System.out.println(Thread.currentThread().getStackTrace()[1].getMethodName());
 		CommonMethod.ExtentReportConfig();
 		
 		CommonMethod.test = CommonMethod.extent.startTest("CertificationStatusTest-LEED", "Verifies if Certification status is displayed correctly").assignCategory("CheckCertification");

@@ -16,10 +16,10 @@ import com.arc.driver.CommonMethod;
 public class PaymentbyCCTest extends BaseClass {
 
 	
-	@Test(dependsOnMethods = { "com.arc.testcases.MyCities.LEEDforCities.LoginCaseTest.loginCase","com.arc.testcases.MyCities.LEEDforCities.SearchProgramTest.searchProgram","com.arc.testcases.MyCities.LEEDforCities.ClickSearchedProgramTest.clickSearchedProgram","com.arc.testcases.MyCities.LEEDforCities.AddNewProjectTest.addNewProject" })
+	@Test(dependsOnMethods = { "com.arc.testcases.MyCities.LEEDforCities.LoginCaseTest.loginCase","com.arc.testcases.MyCities.LEEDforCities.ClickSearchedProgramTest.clickSearchedProgram","com.arc.testcases.MyCities.LEEDforCities.AddNewProjectTest.addNewProject" })
 	@Parameters({"rowNum" ,"loginSheet", "citySheet","paymentSheet"})
 	public void paymentbyCC(int rowNum, String loginSheet, String citySheet, String paymentSheet) throws IOException {
-		
+		System.out.println(Thread.currentThread().getStackTrace()[1].getMethodName());
 		CommonMethod.ExtentReportConfig();
 		
 		CommonMethod.test = CommonMethod.extent.startTest("Payment By Creditcard-MyCities.LEEDforCities", "Verifies if Payment done through creditcard is successful").assignCategory("CheckPayment");

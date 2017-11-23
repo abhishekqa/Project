@@ -19,6 +19,7 @@ public class  ETotalAnalyticsTooltipTest extends BaseClass {
 	@Parameters({"rowNum" ,"buildingSheet","loginSheet"})
 	public void energyFileUpload(int rowNum, String buildingSheet, String loginSheet ) throws IOException {
 		
+		System.out.println(Thread.currentThread().getStackTrace()[1].getMethodName());
 		CommonMethod.ExtentReportConfig();
 		
 		CommonMethod.test = CommonMethod.extent.startTest("ATToolTipVerifyTest-TransitU", "Verifies Total Analytics successfully").assignCategory("CheckAnalytics");

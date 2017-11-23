@@ -20,6 +20,7 @@ public class WasteFileUpload extends BaseClass {
 	@Parameters({"rowNum" ,"buildingSheet","loginSheet"})
 	public void wasteFileUpload(int rowNum, String buildingSheet, String loginSheet) throws IOException {
 		
+		System.out.println(Thread.currentThread().getStackTrace()[1].getMethodName());
 		CommonMethod.ExtentReportConfig();
 		
 		CommonMethod.test = CommonMethod.extent.startTest("Waste File UploadTest-LEED", "Verifies file uploaded successfully").assignCategory("FileUpload");

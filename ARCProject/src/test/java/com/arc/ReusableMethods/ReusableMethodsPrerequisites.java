@@ -54,9 +54,11 @@ public class ReusableMethodsPrerequisites {
 			Runtime.getRuntime().exec(System.getProperty("user.dir") +"/ARCDataTemplete/txtFileUploadScript.exe");*/
 			CommonMethod.displayhiddenElement("UploadBasePointHidden");
 			Thread.sleep(6000);
-			CommonMethod.sendKeys("UploadBasePointHidden", System.getProperty("user.dir")+"/ARCDataTemplete/txtFileUpload.txt");
-			Thread.sleep(5000);
-			CommonMethod.assertEqualsmessage( "InfoMessage", "File successfully uploaded.", "something went wrong");
+			CommonMethod.sendKeys("UploadBasePointHidden", CommonMethod.prerequisiteTextFile);
+			CommonMethod.WaitUntilPresence("txtFileUploaded");
+			CommonMethod.Isdisplayed("txtFileUploaded", "File Not Uploaded");
+			//Thread.sleep(5000);
+			//CommonMethod.assertEqualsmessage( "InfoMessage", "File successfully uploaded.", "something went wrong");
 			CommonMethod.testlog( "Pass","text file Uploaded successfully");
 			CommonMethod.click( "NextButtonprerequisites");
 			CommonMethod.testlog( "Pass","Clicking on Next button");
@@ -134,10 +136,12 @@ public class ReusableMethodsPrerequisites {
 			CommonMethod.click( "BclickFileUpload");
 			Runtime.getRuntime().exec(System.getProperty("user.dir") +"/ARCDataTemplete/PdfScript.exe");*/
 			CommonMethod.displayhiddenElement("UploadBasePointHidden");
-			Thread.sleep(6000);
-			CommonMethod.sendKeys("UploadBasePointHidden", System.getProperty("user.dir")+"/ARCDataTemplete/USGBC.pdf");
-			Thread.sleep(6000);
-			CommonMethod.assertEqualsmessage( "InfoMessage", "File successfully uploaded.", "something went wrong");
+			//Thread.sleep(6000);
+			CommonMethod.sendKeys("UploadBasePointHidden", CommonMethod.basepointFilePdf);
+			//Thread.sleep(6000);
+			CommonMethod.WaitUntilVisibility("pdfFileUploaded");
+			CommonMethod.Isdisplayed("pdfFileUploaded", "File Not Uploaded");
+			//CommonMethod.assertEqualsmessage( "InfoMessage", "File successfully uploaded.", "something went wrong");
 			CommonMethod.testlog( "Pass","text file Uploaded successfully");
 			CommonMethod.click( "NextButtonprerequisites");
 			CommonMethod.testlog( "Pass","Clicking on Next button");

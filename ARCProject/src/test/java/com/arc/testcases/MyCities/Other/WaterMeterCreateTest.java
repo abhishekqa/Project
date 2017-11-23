@@ -16,10 +16,10 @@ import com.arc.driver.CommonMethod;
 public class WaterMeterCreateTest extends BaseClass {
 
 	
-    @Test(dependsOnMethods = { "com.arc.testcases.MyCities.Other.LoginCaseTest.loginCase","com.arc.testcases.MyCities.Other.SearchProgramTest.searchProgram","com.arc.testcases.MyCities.Other.ClickSearchedProgramTest.clickSearchedProgram","com.arc.testcases.MyCities.Other.PaymentbyCCTest.paymentbyCC" })
+    @Test(dependsOnMethods = { "com.arc.testcases.MyCities.Other.LoginCaseTest.loginCase","com.arc.testcases.MyCities.Other.ClickSearchedProgramTest.clickSearchedProgram","com.arc.testcases.MyCities.Other.PaymentbyCCTest.paymentbyCC" })
 	@Parameters({"rowNum" ,"loginSheet","citySheet", "waterSheet"})
     public void waterMeterCreate(int rowNum, String loginSheet, String citySheet, String waterSheet) throws IOException {
-		
+    	System.out.println(Thread.currentThread().getStackTrace()[1].getMethodName());
 		CommonMethod.ExtentReportConfig();
 		
 		CommonMethod.test = CommonMethod.extent.startTest("Water Meter Create Test", "Verifies if Login functionality is working fine").assignCategory("CheckLogin");

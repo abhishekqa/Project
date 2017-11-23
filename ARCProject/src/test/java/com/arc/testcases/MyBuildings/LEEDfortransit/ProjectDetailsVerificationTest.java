@@ -16,6 +16,7 @@ public class ProjectDetailsVerificationTest extends BaseClass {
 	@Parameters({"rowNum" ,"buildingSheet","loginSheet"})
 	public void projectDetailsVerification(int rowNum, String buildingSheet, String loginSheet) throws IOException {
 		
+		System.out.println(Thread.currentThread().getStackTrace()[1].getMethodName());
 		CommonMethod.ExtentReportConfig();
 		
 		CommonMethod.test = CommonMethod.extent.startTest("ProjDetailsTest-TransitU", "Verifies if Project Details is correct").assignCategory("CheckProject");

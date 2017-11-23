@@ -20,6 +20,8 @@ public class VerifyPRFileDownloadTest extends BaseClass {
 	@Parameters({"rowNum" ,"buildingSheet","loginSheet"})
 	public void billingStatusVerification(int rowNum, String buildingSheet, String loginSheet) throws IOException {
 		
+		
+		System.out.println(Thread.currentThread().getStackTrace()[1].getMethodName());
 		CommonMethod.ExtentReportConfig();
 		
 		CommonMethod.test = CommonMethod.extent.startTest("BillingRegPdfdownTest-TransitU", "Verifies if billing status is displaying correct in billing page").assignCategory("CheckBilling");

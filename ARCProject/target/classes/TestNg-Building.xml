@@ -9,30 +9,30 @@
 </listeners>
 
 
- <test name="ARCRegressionTest-LEED-for-Buildings" >
-
-<parameter name="browserName"     value="firefox"/>
-<parameter name="environment"     value="staging"/>
-<parameter name="rowNum"          value="2"/>
-<parameter name="loginSheet"      value="Login"/>
-<parameter name="buildingSheet"  value="NewBuildingProject"/>
-<parameter name="paymentSheet"    value="Payment"/>
-<parameter name="energySheet"     value="BEnergy"/>
-<parameter name="teamSheet"       value="BTeam"/>
-<parameter name="waterSheet"      value="BWater"/>
-<parameter name="wasteSheet"      value="BWaste"/>
+<test name="ARCRegressionTest-LEED-for-Buildings">
+<parameter name="browserName"  value="firefox"/>
+<parameter name="environment"  value="staging"/>
+<parameter name="rowNum"       value="2"/>
+<parameter name="loginSheet"   value="Login"/>
+<parameter name="buildingSheet" value="NewBuildingProject"/>
+<parameter name="paymentSheet" value="Payment"/>
+<parameter name="energySheet"  value="BEnergy"/>
+<parameter name="teamSheet"    value="BTeam"/>
+<parameter name="waterSheet"   value="BWater"/>
+<parameter name="wasteSheet"   value="BWaste"/>
 <classes>
  
  <!-- <class name="com.arc.testcases.MyBuildings.LEED.USBuildingLEEDv4Test"/> -->
- <class name="com.arc.testcases.MyBuildings.LEED.LoginCaseTest"></class>
- <class name="com.arc.testcases.MyBuildings.LEED.ClickSearchedProgramTest"></class>
+<!--  <class name="com.arc.testcases.MyBuildings.LEED.LoginCaseTest"></class>
  <class name="com.arc.testcases.MyBuildings.LEED.AddNewProjectTest"></class>
-<class name="com.arc.testcases.MyBuildings.LEED.PaymentbyCCTest"></class>
+ <class name="com.arc.testcases.MyBuildings.LEED.ClickSearchedProgramTest"></class> 
+<class name="com.arc.testcases.MyBuildings.LEED.PaymentbyCCTest"></class>  --> 
 <class name="com.arc.testcases.MyBuildings.LEED.BasePointPdfFileUplaod"/>
- <class name="com.arc.testcases.MyBuildings.LEED.RenewableAllBaseScoreAttemptTest"></class>
-<class name="com.arc.testcases.MyBuildings.LEED.PrerequisitesPdfFileUploadTest"></class>
-<class name="com.arc.testcases.MyBuildings.LEED.PrerequisitesTextFileUploadTest"></class>
-<class name="com.arc.testcases.MyBuildings.LEED.PrerequisitesAttemptTest"></class>
+<!-- <class name="com.arc.testcases.MyBuildings.LEED.RenewableAllBaseScoreAttemptTest"></class> --> 
+
+<!-- <class name="com.arc.testcases.MyBuildings.LEED.PrerequisitesPdfFileUploadTest"></class>
+<class name="com.arc.testcases.MyBuildings.LEED.PrerequisitesTextFileUploadTest"></class> -->
+<!--  <class name="com.arc.testcases.MyBuildings.LEED.PrerequisitesAttemptTest"></class>
 <class name="com.arc.testcases.MyBuildings.LEED.EnergyMeterCreateTest"/>
 <class name="com.arc.testcases.MyBuildings.LEED.OtherMeterCreateTest"/>
 <class name="com.arc.testcases.MyBuildings.LEED.WaterMeterCreateTest"/>
@@ -41,8 +41,8 @@
 <class name="com.arc.testcases.MyBuildings.LEED.InternationalLanguagesSpecaialCharacterMeterCreateTest"></class>
 <class name="com.arc.testcases.MyBuildings.LEED.ETotalAnalyticsTooltipTest"/>
 <class name="com.arc.testcases.MyBuildings.LEED.ProjectFieldVerificationTest"></class>
-<class name="com.arc.testcases.MyBuildings.LEED.ProjectDetailsVerificationTest"></class>
 <class name="com.arc.testcases.MyBuildings.LEED.ModifyOccOptHrsProjectDetailsTest"></class>
+<class name="com.arc.testcases.MyBuildings.LEED.ProjectDetailsVerificationTest"></class>
 <class name="com.arc.testcases.MyBuildings.LEED.AddTeamMemberTest"></class>
 <class name="com.arc.testcases.MyBuildings.LEED.EditMemberRoleManagerTest"></class>
 <class name="com.arc.testcases.MyBuildings.LEED.VerifyPRFileDownloadTest"></class>
@@ -58,11 +58,11 @@
 <class name="com.arc.testcases.MyBuildings.LEED.PreCertReviewTest"/> 
  
 
- 
+  -->
 </classes>
 </test>
  
-<!-- other none same -->
+
 <test name="ARCRegressionTest-Building-None">
 
 <parameter name="browserName" value="firefox"/>
@@ -77,11 +77,11 @@
 <parameter name="wasteSheet" value="BWaste"/>
 
 <classes>
-
-
+ 
+<!-- 
 <class name="com.arc.testcases.MyBuildings.None.LoginCaseTest"></class>
-<class name="com.arc.testcases.MyBuildings.None.ClickSearchedProgramTest"></class>
 <class name="com.arc.testcases.MyBuildings.None.AddNewProjectTest"></class>
+<class name="com.arc.testcases.MyBuildings.None.ClickSearchedProgramTest"></class>
 <class name="com.arc.testcases.MyBuildings.None.PaymentbyCCTest"></class>
 <class name="com.arc.testcases.MyBuildings.None.VerifyPRFileDownloadTest"></class>
 <class name="com.arc.testcases.MyBuildings.None.EnergyMeterCreateTest"></class>
@@ -104,7 +104,7 @@
 <class name="com.arc.testcases.MyBuildings.None.WasteReadingDateOverlappingTest"></class>
 <class name="com.arc.testcases.MyBuildings.None.PerformanceScoreVerificationReviewTest"/>
 
-  
+   -->
 </classes>
 </test>
 
@@ -122,10 +122,10 @@
 <parameter name="wasteSheet" value="BWaste"/>
 
 <classes>
-
+<!-- 
 <class name="com.arc.testcases.MyBuildings.Other.LoginCaseTest"></class>
-<class name="com.arc.testcases.MyBuildings.Other.ClickSearchedProgramTest"></class>
 <class name="com.arc.testcases.MyBuildings.Other.AddNewProjectTest"></class>
+<class name="com.arc.testcases.MyBuildings.Other.ClickSearchedProgramTest"></class>
 <class name="com.arc.testcases.MyBuildings.Other.PaymentbyCCTest"></class>
 <class name="com.arc.testcases.MyBuildings.Other.EnergyMeterCreateTest"></class>
 <class name="com.arc.testcases.MyBuildings.Other.WaterMeterCreateTest"></class>
@@ -150,7 +150,7 @@
 <class name="com.arc.testcases.MyBuildings.Other.WTotalAnalyticsTest"/>
 <class name="com.arc.testcases.MyBuildings.Other.BillingStatusVerificationTest"></class>
 <class name="com.arc.testcases.MyBuildings.Other.PerformanceScoreVerificationReviewTest"/>
-  		
+  		 -->
 </classes>
 </test>
 
@@ -170,10 +170,10 @@
 <parameter name="wasteSheet" value="BWaste"/>
 
 <classes>
-
+<!-- 
 <class name="com.arc.testcases.MyBuildings.LEEDfortransit.LoginCaseTest"></class>
-<class name="com.arc.testcases.MyBuildings.LEEDfortransit.ClickSearchedProgramTest"></class>
 <class name="com.arc.testcases.MyBuildings.LEEDfortransit.AbovegroundAddNewProjectTest"/>
+<class name="com.arc.testcases.MyBuildings.LEEDfortransit.ClickSearchedProgramTest"></class>
 <class name="com.arc.testcases.MyBuildings.LEEDfortransit.PaymentbyCCTest"></class>
 <class name="com.arc.testcases.MyBuildings.LEEDfortransit.BasePointPdfFileUplaod"/>
 <class name="com.arc.testcases.MyBuildings.LEEDfortransit.BaseScoreAttemptTest"></class>
@@ -204,7 +204,7 @@
 <class name="com.arc.testcases.MyBuildings.LEEDfortransit.PreCertReviewTest"/>
 <class name="com.arc.testcases.MyBuildings.LEEDfortransit.UnderGroundAddNewProjectTest"/>
 
-</classes>
+ --></classes>
 </test>
-
+ 
 </suite>  

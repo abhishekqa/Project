@@ -20,6 +20,7 @@ public class ProjectFieldVerificationTest extends BaseClass {
 	@Parameters({"rowNum" ,"buildingSheet","loginSheet"})
 	public void projectFieldVerification(int rowNum, String buildingSheet, String loginSheet) throws IOException {
 		
+		System.out.println(Thread.currentThread().getStackTrace()[1].getMethodName());
 		CommonMethod.ExtentReportConfig();
 		
 		CommonMethod.test = CommonMethod.extent.startTest("MProjReadOnlyFieldTest-BLEEDfortransit", "Verifies if Project Field is displayed correct").assignCategory("CheckProject");

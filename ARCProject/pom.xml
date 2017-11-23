@@ -17,7 +17,7 @@
 		  <compilerArgument>-proc:none</compilerArgument>
         </configuration>
       </plugin>
-     <plugin>
+     <!-- <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-surefire-plugin</artifactId>
         <version>2.12.2</version>
@@ -30,7 +30,7 @@
                <suiteXmlFile>src/main/resources/TestNg-Building.xml</suiteXmlFile>              
           </suiteXmlFiles>         
         </configuration>       
-      </plugin>   
+      </plugin> -->   
    <plugin>
 			<groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-clean-plugin</artifactId>

@@ -20,6 +20,8 @@ public class VerifyAgreementFileDownloadTest extends BaseClass {
 	@Parameters({"rowNum" ,"buildingSheet","loginSheet"})
 	public void verifyAgreementFileDownload(int rowNum, String buildingSheet, String loginSheet) throws IOException {
 		
+		System.out.println(Thread.currentThread().getStackTrace()[1].getMethodName());
+		
 		CommonMethod.ExtentReportConfig();
 		
 		CommonMethod.test = CommonMethod.extent.startTest("AgreementpdfdownloadTest-TransitU", "Verifies if Login functionality is working fine").assignCategory("CheckLogin");

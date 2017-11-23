@@ -17,6 +17,7 @@ public class  WTotalAnalyticsTest extends BaseClass {
 	@Parameters({"rowNum" ,"buildingSheet","loginSheet"})
 	public void verifyWDailiyMTCO2(int rowNum, String buildingSheet, String loginSheet) throws IOException {
 		
+		System.out.println(Thread.currentThread().getStackTrace()[1].getMethodName());
 		CommonMethod.ExtentReportConfig();
 		
 		CommonMethod.test = CommonMethod.extent.startTest("ADailiyMTCO2eTest-TransitU", "Verifies Total Analytics successfully").assignCategory("CheckAnalytics");

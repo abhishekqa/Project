@@ -18,10 +18,11 @@ import com.arc.driver.CommonMethod;
 public class PrecertificationPayTest extends BaseClass {
 
 	
-	@Test(dependsOnMethods = { "com.arc.testcases.MyBuildings.LEED.LoginCaseTest.loginCaseTest","com.arc.testcases.MyBuildings.LEED.SearchProgramTest.searchProgramTest","com.arc.testcases.MyBuildings.LEED.ClickSearchedProgramTest.clickSearchedProgramTest","com.arc.testcases.MyBuildings.LEED.PaymentbyCCTest.paymentbyCCTest","com.arc.testcases.MyBuildings.LEED.PrerequisitesAttemptTest.prerequisitesAttemptTest","com.arc.testcases.MyBuildings.LEED.VerifyRequirementsCompleteTest.verifyRequirementsCompleteTest" })
+	@Test(dependsOnMethods = { "com.arc.testcases.MyBuildings.LEED.LoginCaseTest.loginCase","com.arc.testcases.MyBuildings.LEED.ClickSearchedProgramTest.clickSearchedProgram","com.arc.testcases.MyBuildings.LEED.PaymentbyCCTest.paymentbyCC","com.arc.testcases.MyBuildings.LEED.PrerequisitesAttemptTest.prerequisitesAttempt","com.arc.testcases.MyBuildings.LEED.VerifyRequirementsCompleteTest.verifyRequirementsComplete" })
 	@Parameters({"rowNum" ,"buildingSheet","paymentSheet","loginSheet"})
-	public void precertificationPayTest(int rowNum, String buildingSheet, String paymentSheet, String loginSheet) throws IOException {
+	public void precertificationPay(int rowNum, String buildingSheet, String paymentSheet, String loginSheet) throws IOException {
 		
+		System.out.println(Thread.currentThread().getStackTrace()[1].getMethodName());
 		CommonMethod.ExtentReportConfig();
 		
 		CommonMethod.test = CommonMethod.extent.startTest("PrecertificationPayTest-LEED", "Verifies if Precertifiction functionality is correct").assignCategory("CheckPrecertification");

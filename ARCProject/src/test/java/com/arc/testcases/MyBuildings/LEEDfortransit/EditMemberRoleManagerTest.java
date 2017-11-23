@@ -20,6 +20,7 @@ public class EditMemberRoleManagerTest extends BaseClass {
 	@Parameters({"rowNum" ,"buildingSheet","loginSheet"})
 	public void editMemberRoleManager(int rowNum, String buildingSheet, String loginSheet) throws IOException {
 		
+		System.out.println(Thread.currentThread().getStackTrace()[1].getMethodName());
 		CommonMethod.ExtentReportConfig();
 		
 		CommonMethod.test = CommonMethod.extent.startTest("EditTeamMemberRoleTest-TrasitU", "Verifies if edit team member functionality is working fine").assignCategory("CheckTeam");

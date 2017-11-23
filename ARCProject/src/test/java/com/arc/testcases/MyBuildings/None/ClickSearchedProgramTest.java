@@ -13,7 +13,7 @@ public class ClickSearchedProgramTest extends BaseClass {
 	@Test(dependsOnMethods = { "com.arc.testcases.MyBuildings.None.LoginCaseTest.loginCase"})
 	@Parameters({"rowNum" ,"buildingSheet" ,"loginSheet"})
 	public void clickSearchedProgram(int rowNum, String buildingSheet, String loginSheet) throws IOException {
-		
+		System.out.println(Thread.currentThread().getStackTrace()[1].getMethodName());
 		CommonMethod.ExtentReportConfig();
 		
 		CommonMethod.test = CommonMethod.extent.startTest("SearchNavigationTest-BNone", "Verifies if Search functionality is working fine").assignCategory("CheckSearch");

@@ -18,6 +18,7 @@ public class PaymentbyCheckTest extends BaseClass {
 	@Parameters({"rowNum" ,"buildingSheet","loginSheet","paymentSheet"})
 	public void paymentbyCC(int rowNum, String buildingSheet, String loginSheet, String paymentSheet) throws IOException {
 		
+		System.out.println(Thread.currentThread().getStackTrace()[1].getMethodName());
 		CommonMethod.ExtentReportConfig();
 	    CommonMethod.test = CommonMethod.extent.startTest("PaymentByCheckTest-LEED", "Verifies if Payment done through creditcard is successful").assignCategory("CheckPayment");
         ReusableMethodsLogin reuse = new ReusableMethodsLogin();

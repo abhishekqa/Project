@@ -17,6 +17,7 @@ public class InternationalLanguagesSpecaialCharacterMeterCreateTest extends Base
 	@Parameters({"rowNum" ,"buildingSheet","loginSheet"})
 	public void energyMeterCreate(int rowNum, String buildingSheet, String loginSheet) throws IOException {
 		
+		System.out.println(Thread.currentThread().getStackTrace()[1].getMethodName());
 		CommonMethod.ExtentReportConfig();
 		
 		CommonMethod.test = CommonMethod.extent.startTest("CreateILSepcharMeterTest-TransitU", "Verifies if Energy meter created and added successfully").assignCategory("CheckMeter");

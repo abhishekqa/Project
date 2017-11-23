@@ -15,6 +15,7 @@ public class UnderGroundAddNewProjectTest extends BaseClass {
 	@Parameters({"rowNum" ,"buildingSheet","loginSheet"})
 	public void addNewProject(int rowNum, String buildingSheet, String loginSheet) throws IOException {
 		
+		System.out.println(Thread.currentThread().getStackTrace()[1].getMethodName());
 		CommonMethod.ExtentReportConfig();
 		
 		CommonMethod.test = CommonMethod.extent.startTest("AddNewProjectTest-TransitU", "Verifies if New Project is added successfully").assignCategory("CheckAddProject");

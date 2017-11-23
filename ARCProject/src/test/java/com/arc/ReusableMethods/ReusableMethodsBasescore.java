@@ -113,14 +113,20 @@ for(int i=0;i<=17;i++){
 	//System.out.println(System.getProperty("user.dir")+"/ARCDataTemplete/PdfScript.exe");
 	CommonMethod.displayhiddenElement("UploadBasePointHidden");
 	
-	CommonMethod.sendKeys("UploadBasePointHidden", System.getProperty("user.dir")+"/ARCDataTemplete/USGBC.pdf");
+	CommonMethod.sendKeys("UploadBasePointHidden", CommonMethod.basepointFilePdf);
+	
+	System.out.println(CommonMethod.basepointFilePdf);
 	
 	//Thread.sleep(6000);
-	WebDriverWait wait = new WebDriverWait(driver, 15);
+	/*WebDriverWait wait = new WebDriverWait(driver, 15);
 	wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(".//*[@class='messenger-message-inner']")));
+	*/
+	CommonMethod.WaitUntilVisibility("pdfFileUploaded");
 	
 	//CommonMethod.FluentWait("InfoMessage");
-	CommonMethod.assertEqualsmessage( "InfoMessage", "File successfully uploaded.", "something went wrong");
+	//CommonMethod.assertEqualsmessage( "InfoMessage", "File successfully uploaded.", "something went wrong");
+	
+	CommonMethod.Isdisplayed("pdfFileUploaded", "File Not  Uploaded Successfully");
 	
 	CommonMethod.click( "NextButtonprerequisites");
 	CommonMethod.testlog( "Pass","Clicking on Next button");
@@ -140,11 +146,15 @@ CommonMethod.click( "SiteDevelopment");
 
 for(int i=0;i<=22;i++){
 	
-	CommonMethod.FluentWait( "BclickFileUpload");
+    CommonMethod.displayhiddenElement("UploadBasePointHidden");
+	
+	CommonMethod.sendKeys("UploadBasePointHidden", CommonMethod.basepointFilePdf);
+	
+	/*CommonMethod.FluentWait( "BclickFileUpload");
     CommonMethod.moveToElement( "BclickFileUpload");
 	CommonMethod.click( "BclickFileUpload");
 	Runtime.getRuntime().exec(System.getProperty("user.dir")+"/ARCDataTemplete/PdfScript.exe");
-	Thread.sleep(6000);
+	*/Thread.sleep(6000);
 	CommonMethod.assertEqualsmessage( "InfoMessage", "File successfully uploaded.", "something went wrong");
 	
 	CommonMethod.click( "NextButtonprerequisites");

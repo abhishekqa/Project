@@ -16,7 +16,7 @@ public class  WTotalAnalyticsTest extends BaseClass {
 	@Test(dependsOnMethods = { "com.arc.testcases.MyBuildings.None.LoginCaseTest.loginCaseTest","com.arc.testcases.MyBuildings.None.ClickSearchedProgramTest.clickSearchedProgramTest","com.arc.testcases.MyBuildings.None.PaymentbyCCTest.paymentbyCCTest" })
 	@Parameters({"rowNum" ,"buildingSheet","loginSheet"})
 	public void verifyWDailiyMTCO2(int rowNum, String buildingSheet, String loginSheet) throws IOException {
-		
+		System.out.println(Thread.currentThread().getStackTrace()[1].getMethodName());
 		CommonMethod.ExtentReportConfig();
 		
 		CommonMethod.test = CommonMethod.extent.startTest("ADailiyMTCO2eTest-BNone", "Verifies Total Analytics successfully").assignCategory("CheckAnalytics");

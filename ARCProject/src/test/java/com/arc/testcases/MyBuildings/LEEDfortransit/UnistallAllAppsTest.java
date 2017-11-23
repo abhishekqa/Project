@@ -16,8 +16,10 @@ public class UnistallAllAppsTest extends BaseClass {
 	
 	@Test(dependsOnMethods = { "com.arc.testcases.MyBuildings.LEEDfortransit.LoginCaseTest.loginCase","com.arc.testcases.MyBuildings.LEEDfortransit.ClickSearchedProgramTest.clickSearchedProgram","com.arc.testcases.MyBuildings.LEEDfortransit.PaymentbyCCTest.paymentbyCC" })
 	@Parameters({"rowNum" ,"buildingSheet","loginSheet"})
-	public void installAllApps(int rowNum, String buildingSheet, String loginSheet) throws IOException {
+	public void uninstallAllApps(int rowNum, String buildingSheet, String loginSheet) throws IOException {
 		
+		
+		System.out.println(Thread.currentThread().getStackTrace()[1].getMethodName());
 		CommonMethod.ExtentReportConfig();
 		
 		CommonMethod.test = CommonMethod.extent.startTest("UnistallAppsTest-TransitU", "Verifies if Apps functionality is working fine").assignCategory("CheckApps");

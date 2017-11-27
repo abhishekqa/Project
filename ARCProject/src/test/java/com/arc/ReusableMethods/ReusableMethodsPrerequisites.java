@@ -2,10 +2,6 @@ package com.arc.ReusableMethods;
 
 import java.io.IOException;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
-
 import com.arc.driver.BaseClass;
 import com.arc.driver.CommonMethod;
 import com.relevantcodes.extentreports.ExtentTest;
@@ -93,16 +89,11 @@ public class ReusableMethodsPrerequisites extends BaseClass {
 			  CommonMethod.testlog( "Pass", "Clicking on Credit " + firstCredit);
 
 			  for (int i = 0; i <= NoOfCredits; i++) {
-			   /*
-			   CommonMethod.FluentWait( "BclickFileUpload");
-			   CommonMethod.moveToElement( "BclickFileUpload");
-			   CommonMethod.click( "BclickFileUpload");
-			   Runtime.getRuntime().exec(System.getProperty("user.dir") +"\\ARCDataTemplete\\txtFileUploadScript");*/
+			   
 			   CommonMethod.displayhiddenElement("ParkPdfUpload");
-				Thread.sleep(6000);
-				CommonMethod.sendKeys("ParkPdfUpload", CommonMethod.basepointFilePdf);    
-			   Thread.sleep(5000);
-			   CommonMethod.assertEqualsmessage( "InfoMessage", "File successfully uploaded.", "something went wrong");
+			   Thread.sleep(6000);
+			   CommonMethod.sendKeys("ParkPdfUpload", CommonMethod.basepointFilePdf);    
+			   CommonMethod.WaitUntilInVisibility("ImageLoader");
 			   CommonMethod.testlog( "Pass","Pdf file Uploaded successfully");
 			   CommonMethod.click("BNext");
 			   CommonMethod.testlog( "Pass","Clicking on Next button");
@@ -692,16 +683,12 @@ public class ReusableMethodsPrerequisites extends BaseClass {
 
 		for (int i = 0; i <= NoOfCredits; i++) {
 			
-			/*CommonMethod.FluentWait( "BclickFileUpload");
-		    CommonMethod.moveToElement( "BclickFileUpload");
-			CommonMethod.click( "BclickFileUpload");
-			Runtime.getRuntime().exec(System.getProperty("user.dir") +"/ARCDataTemplete/txtFileUploadScript.exe");*/
+			
 			CommonMethod.displayhiddenElement("UploadBasePointHidden");
 			Thread.sleep(6000);
 			CommonMethod.sendKeys("UploadBasePointHidden", CommonMethod.prerequisiteTextFile);
-			WebDriverWait wait = new WebDriverWait(driver, 5);
-	        wait.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath(".//*[@id='uploaded_files']/p[1]/img")));
-			CommonMethod.testlog( "Pass","text file Uploaded successfully");
+			CommonMethod.WaitUntilInVisibility("ImageLoader");
+	        CommonMethod.testlog( "Pass","text file Uploaded successfully");
 			CommonMethod.click( "NextButtonprerequisites");
 			CommonMethod.testlog( "Pass","Clicking on Next button");
 			Thread.sleep(3000);
@@ -781,9 +768,8 @@ public class ReusableMethodsPrerequisites extends BaseClass {
 			//Thread.sleep(6000);
 			CommonMethod.sendKeys("UploadBasePointHidden", CommonMethod.basepointFilePdf);
 			//Thread.sleep(6000);
-			WebDriverWait wait = new WebDriverWait(driver, 5);
-	        wait.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath(".//*[@id='uploaded_files']/p[1]/img")));
-			CommonMethod.testlog( "Pass","text file Uploaded successfully");
+			CommonMethod.WaitUntilInVisibility("ImageLoader");
+	        CommonMethod.testlog( "Pass","text file Uploaded successfully");
 			CommonMethod.click( "NextButtonprerequisites");
 			CommonMethod.testlog( "Pass","Clicking on Next button");
 			Thread.sleep(3000);

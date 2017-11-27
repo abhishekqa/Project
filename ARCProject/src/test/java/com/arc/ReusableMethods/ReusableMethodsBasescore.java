@@ -2,10 +2,6 @@ package com.arc.ReusableMethods;
 
 import java.io.IOException;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
 import com.arc.driver.BaseClass;
@@ -103,24 +99,13 @@ CommonMethod.click( "SiteDevelopment");
 
 for(int i=0;i<=17;i++){
 	
-	//CommonMethod.click( "BclickFileUpload");
-	//CommonMethod.FluentWait( "UploadDataMeterHidden");
-    //CommonMethod.moveToElement( "UploadDataMeterHidden");
-/*	CommonMethod.displayhiddenElement("UploadDataMeterHidden");
-	Thread.sleep(3000);*/
-    //CommonMethod.click( "BclickFileUpload");
-	//Runtime.getRuntime().exec(System.getProperty("user.dir")+"/ARCDataTemplete/PdfScript.exe");
-	//System.out.println(System.getProperty("user.dir")+"/ARCDataTemplete/PdfScript.exe");
 	CommonMethod.displayhiddenElement("UploadBasePointHidden");
 	
 	CommonMethod.sendKeys("UploadBasePointHidden", CommonMethod.basepointFilePdf);
 	
 	System.out.println(CommonMethod.basepointFilePdf);
-	
-	WebDriverWait wait = new WebDriverWait(driver, 5);
-    wait.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath(".//*[@id='uploaded_files']/p[1]/img")));
-	CommonMethod.Isdisplayed("pdfFileUploaded", "File Not  Uploaded Successfully");
-	
+	CommonMethod.WaitUntilInVisibility("ImageLoader");
+	CommonMethod.testlog( "Pass","file Uploaded successfully");
 	CommonMethod.click( "NextButtonprerequisites");
 	CommonMethod.testlog( "Pass","Clicking on Next button");
 	Thread.sleep(3000);
@@ -144,9 +129,8 @@ for(int i=0;i<=22;i++){
 	CommonMethod.sendKeys("UploadBasePointHidden", CommonMethod.basepointFilePdf);
 	
 	Thread.sleep(6000);
-	WebDriverWait wait = new WebDriverWait(driver, 10);
-    wait.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath(".//*[@id='uploaded_files']/p[1]/img")));
-	
+	CommonMethod.WaitUntilInVisibility("ImageLoader");
+	CommonMethod.testlog( "Pass","file Uploaded successfully");
 	CommonMethod.click( "NextButtonprerequisites");
 	CommonMethod.testlog( "Pass","Clicking on Next button");
 	Thread.sleep(3000);

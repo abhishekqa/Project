@@ -6,9 +6,6 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
 import com.arc.driver.BaseClass;
@@ -131,26 +128,14 @@ public class ReusableMethodsManage extends BaseClass{
 		CommonMethod.ArcSpecifictoggle( "Manage");
 		CommonMethod.click( "Project");
 		CommonMethod.testlog( "Pass", "Clicking on Project");
-		/*CommonMethod.FluentWait( "ParkingImageUpload");
-	    CommonMethod.moveToElement( "ParkingImageUpload");
-		CommonMethod.click( "ParkingImageUpload");
-		Runtime.getRuntime().exec(System.getProperty("user.dir") +"\\ARCDataTemplete\\AutoItParkingScrit");*/
-		CommonMethod.displayhiddenElement("ParkPdfUpload");
 		CommonMethod.sendKeys("ParkPdfUpload", CommonMethod.parkImageUpload);
-		Thread.sleep(5000);
-		CommonMethod.assertEqualsmessage( "InfoMessage", "File successfully uploaded.", "something went wrong");
+		CommonMethod.WaitUntilInVisibility("ImageLoader");
 		Thread.sleep(5000);
 		CommonMethod.testlog( "Pass","Parking image 1 file Uploaded successfully");
 		CommonMethod.testlog( "Pass", "Clicking on Project");
-		/*CommonMethod.FluentWait( "ParkingImageUpload");
-	    CommonMethod.moveToElement( "ParkingImageUpload");
-		CommonMethod.click( "ParkingImageUpload");
-		Runtime.getRuntime().exec(System.getProperty("user.dir") +"\\ARCDataTemplete\\AutoItParkingScrit");*/
 		CommonMethod.displayhiddenElement("ParkPdfUpload");
 		CommonMethod.sendKeys("ParkPdfUpload", CommonMethod.parkImageUpload);
-		Thread.sleep(5000);
-		WebDriverWait wait = new WebDriverWait(driver, 5);
-        wait.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath(".//*[@id='uploaded_files']/p[1]/img")));
+		CommonMethod.WaitUntilInVisibility("ImageLoader");
 		Thread.sleep(5000);
 		CommonMethod.testlog( "Pass","Parking image 2 file Uploaded successfully");
 		
@@ -201,10 +186,6 @@ public class ReusableMethodsManage extends BaseClass{
 		CommonMethod.click( "Project");
 		CommonMethod.testlog( "Pass", "Clicking on Project");
 		System.out.println(CommonMethod.getattributeValue( "M_ProjectID_value"));
-		// CommonMethod.assertEqualsmessageAttributevalue(
-		// "M_ProjectID_value",
-		// CommonMethod.filereadID(CommonMethod.ArcProjectIDUrl), "Value is not
-		// correct");
 		CommonMethod.assertEqualsmessageAttributevalue( "M_ProjectName_value", ProjectName,
 				"Value is not correct");
 		CommonMethod.assertEqualsmessageAttributevalue( "M_Address_value", Address,
@@ -244,18 +225,11 @@ public void VerifyProjectDetails( String sheetName, int rowNum) throws IOExcepti
 		CommonMethod.click( "Project");
 		CommonMethod.testlog( "Pass", "Clicking on Project");
 		System.out.println(CommonMethod.getattributeValue( "M_ProjectID_value"));
-		// CommonMethod.assertEqualsmessageAttributevalue(
-		// "M_ProjectID_value",
-		// CommonMethod.filereadID(CommonMethod.ArcProjectIDUrl), "Value is not
-		// correct");
-		CommonMethod.assertEqualsmessageAttributevalue( "M_Address_value", address,
-				"Value is not correct");
+		CommonMethod.assertEqualsmessageAttributevalue( "M_Address_value", address,"Value is not correct");
 		CommonMethod.assertEqualsmessageAttributevalue( "M_City_value", city, "Value is not correct");
 		CommonMethod.assertEqualsmessageAttributevalue( "M_State_value", state, "Value is not correct");
 		CommonMethod.assertEqualsmessageAttributevalue( "M_Country_value", country,
 				"Value is not correct");
-		//CommonMethod.assertEqualsmessageAttributevalue( "M_OwnerType_value", "T & W Corporation","Value is not correct");
-		
 		CommonMethod.assertEqualsmessageAttributevalue( "M_OwnerOrg_value", own_org, "Value is not correct");
 		CommonMethod.assertEqualsmessageAttributevalue( "M_OwnerEmail_value", own_email,
 				"Value is not correct");
@@ -286,26 +260,18 @@ public void VerifyProjectDetailsTransit( String sheetName, int rowNum) throws IO
 		CommonMethod.click( "Project");
 		CommonMethod.testlog( "Pass", "Clicking on Project");
 		System.out.println(CommonMethod.getattributeValue( "M_ProjectID_value"));
-		// CommonMethod.assertEqualsmessageAttributevalue(
-		// "M_ProjectID_value",
-		// CommonMethod.filereadID(CommonMethod.ArcProjectIDUrl), "Value is not
-		// correct");
 		CommonMethod.assertEqualsmessageAttributevalue( "M_Address_value", address,
 				"Value is not correct");
 		CommonMethod.assertEqualsmessageAttributevalue( "M_City_value", city, "Value is not correct");
 		CommonMethod.assertEqualsmessageAttributevalue( "M_State_value", state, "Value is not correct");
 		CommonMethod.assertEqualsmessageAttributevalue( "M_Country_value", country,
 				"Value is not correct");
-		//CommonMethod.assertEqualsmessageAttributevalue( "M_OwnerType_value", "T & W Corporation","Value is not correct");
-		
 		CommonMethod.assertEqualsmessageAttributevalue( "M_OwnerOrg_value", own_org, "Value is not correct");
 		CommonMethod.assertEqualsmessageAttributevalue( "M_OwnerEmail_value", own_email,
 				"Value is not correct");
 		CommonMethod.assertEqualsmessageAttributevalue( "M_OwnerCountry_value", own_con,
 				"Value is not correct");
 		CommonMethod.assertEqualsmessageAttributevalue( "M_GrossArea_value", gross_area, "Value is not correct");
-		//CommonMethod.assertEqualsmessageAttributevalue( "M_OperatingHours_value", opr_hrs, "Value is not correct");
-		//CommonMethod.assertEqualsmessageAttributevalue( "M_Occupancy_value", occupancy, "Value is not correct");
 		CommonMethod.testlog( "Pass", "Verifying project details field present on Project details page");
 
 	}
@@ -548,26 +514,20 @@ public void VerifyProjectDetailsParking() throws IOException, InterruptedExcepti
 		CommonMethod.scrolldowntoElement( "Apps");
 		CommonMethod.testlog( "Pass", "Clicking on Apps");
 		CommonMethod.click( "Apps");
-		/*CommonMethod.click( "EnergyStar");
-		CommonMethod.testlog( "Pass", "Unstalling Energystar(Default Install)");
-	    CommonMethod.assertEqualsmessage( "InfoMessage", "Uninstalled successfully.", "something went wrong");*/
 		Assert.assertEquals(CommonMethod.getText("EnergyInstallCheck"),"Installed", "App Not Installed");
 		Thread.sleep(2000);
 		CommonMethod.click( "DropBox");
 		CommonMethod.testlog( "Pass", "Installing Dropbox");
 		Thread.sleep(2000);
 		Assert.assertEquals(CommonMethod.getText("DropboxInstallCheck"),"Installed", "App Not Installed");
-		//CommonMethod.assertEqualsmessage( "InfoMessage", "Installed successfully.", "something went wrong");
 		CommonMethod.click( "OneDrive");
 		CommonMethod.testlog( "Pass", "Installing OneDrive");
 		Thread.sleep(2000);
 		Assert.assertEquals(CommonMethod.getText("OneDriveInstallCheck"),"Installed", "App Not Installed");
-		//CommonMethod.assertEqualsmessage( "InfoMessage", "Installed successfully.", "something went wrong");
 		CommonMethod.click( "GoogleDrive");
 		CommonMethod.testlog( "Pass", "Installing GoogleDrive");
 		Thread.sleep(2000);
 		Assert.assertEquals(CommonMethod.getText("GoogleInstallCheck"),"Installed", "App Not Installed");
-		//CommonMethod.assertEqualsmessage( "InfoMessage", "Installed successfully.", "something went wrong");
 		CommonMethod.testlog( "Pass", "Verifying if apps are installed successfully");
 		Thread.sleep(5000);
 
@@ -579,20 +539,12 @@ public void VerifyProjectDetailsParking() throws IOException, InterruptedExcepti
 		CommonMethod.scrolldowntoElement( "Apps");
 		CommonMethod.testlog( "Pass", "Clicking on Apps");
 		CommonMethod.click( "Apps");
-		// CommonMethod.assertEqualsmessage( "InfoMessage", "Installed
-		// successfully.", "something went wrong");
 		CommonMethod.click( "DropBox");
 		CommonMethod.testlog( "Pass", "Installing Dropbox");
-		// CommonMethod.assertEqualsmessage( "InfoMessage", "Installed
-		// successfully.", "something went wrong");
 		CommonMethod.click( "OneDrive");
 		CommonMethod.testlog( "Pass", "Installing OneDrive");
-		// CommonMethod.assertEqualsmessage( "InfoMessage", "Installed
-		// successfully.", "something went wrong");
 		CommonMethod.click( "GoogleDrive");
 		CommonMethod.testlog( "Pass", "Installing GoogleDrive");
-		// CommonMethod.assertEqualsmessage( "InfoMessage", "Installed
-		// successfully.", "something went wrong");
 		CommonMethod.testlog( "Pass", "Verifying if apps are installed successfully");
 		Thread.sleep(5000);
 
@@ -676,22 +628,18 @@ public void VerifyProjectDetailsParking() throws IOException, InterruptedExcepti
 		CommonMethod.testlog( "Pass", "Uninstalling EnergyStar");
 		Thread.sleep(2000);
 		Assert.assertEquals(CommonMethod.getText("EnergyInstallCheck"),"Install", "App Not Installed"); 
-		//CommonMethod.assertEqualsmessage( "InfoMessage", "Uninstalled successfully.", "something went wrong");
 		CommonMethod.click( "DropBox");
 		CommonMethod.testlog( "Pass", "Uninstalling Dropbox");
 		Thread.sleep(2000);
 		Assert.assertEquals(CommonMethod.getText("DropboxInstallCheck"),"Install", "App Not Installed");
-		//CommonMethod.assertEqualsmessage( "InfoMessage", "Uninstalled successfully.", "something went wrong");
 		CommonMethod.click( "OneDrive");
 		CommonMethod.testlog( "Pass", "Unistalling OneDrive");
 		Thread.sleep(2000);
 		Assert.assertEquals(CommonMethod.getText("OneDriveInstallCheck"),"Install", "App Not Installed");
-		//CommonMethod.assertEqualsmessage( "InfoMessage", "Uninstalled successfully.", "something went wrong");
 		CommonMethod.click( "GoogleDrive");
 		CommonMethod.testlog( "Pass", "Unistalling GoogleDrive");
 		Thread.sleep(2000);
 		Assert.assertEquals(CommonMethod.getText("GoogleInstallCheck"),"Install", "App Not Installed");
-		//CommonMethod.assertEqualsmessage( "InfoMessage", "Uninstalled successfully.", "something went wrong");
 		CommonMethod.testlog( "Pass", "Verifying if apps are Uninstalled successfully");
 		Thread.sleep(5000);
 

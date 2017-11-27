@@ -1176,19 +1176,7 @@ public void CreateWaterWMeter(String param,String Metername,String MeterLocator,
     	
     }
  
- public void uploadImageParking() throws IOException, InterruptedException{
  
- 	CommonMethod.ArcSpecifictoggle( "Manage");
-	CommonMethod.click( "Project");
-	CommonMethod.testlog( "Pass", "Clicking on Project");
- 	CommonMethod.click( "M_Upload");
- 	Thread.sleep(1000);
- 	Runtime.getRuntime().exec("D:\\ARCREPOSITORY\\ARCTests\\ARCDataTemplete\\AutoItParkingScrit.exe");
- 	//Assert.assertEquals("Info","File uploaded successfully");
- 	Thread.sleep(5000);
- 	CommonMethod.testlog("Pass","File uploaded successfully");
- 	
- }
 
    public void CreateWasteMeter(String param, String sheetName, int rowNum ) throws IOException, InterruptedException{	
 	    

@@ -24,12 +24,13 @@
  
  <!-- <class name="com.arc.testcases.MyBuildings.LEED.USBuildingLEEDv4Test"/> -->
   
-  
+<!--  
 <class name="com.arc.testcases.MyBuildings.LEED.LoginCaseTest"></class>
- <!--<class name="com.arc.testcases.MyBuildings.LEED.AddNewProjectTest"></class> 
+ <class name="com.arc.testcases.MyBuildings.LEED.AddNewProjectTest"></class> 
 <class name="com.arc.testcases.MyBuildings.LEED.ClickSearchedProgramTest"></class> 
 <class name="com.arc.testcases.MyBuildings.LEED.PaymentbyCCTest"></class>
- <class name="com.arc.testcases.MyBuildings.LEED.BasePointPdfFileUplaod"/>
+ --><class name="com.arc.testcases.MyBuildings.LEED.BasePointPdfFileUplaod"/>
+ <!--
 <class name="com.arc.testcases.MyBuildings.LEED.RenewableAllBaseScoreAttemptTest"></class>
 <class name="com.arc.testcases.MyBuildings.LEED.PrerequisitesPdfFileUploadTest"></class>
 <class name="com.arc.testcases.MyBuildings.LEED.PrerequisitesTextFileUploadTest"></class>
@@ -202,9 +203,7 @@
 <class name="com.arc.testcases.MyBuildings.LEEDfortransit.BillingStatusVerificationTest"></class>
 <class name="com.arc.testcases.MyBuildings.LEEDfortransit.ProjectFieldVerificationTest"></class>
 <class name="com.arc.testcases.MyBuildings.LEEDfortransit.ProjectDetailsVerificationTest"></class>
--->
 <class name="com.arc.testcases.MyBuildings.LEEDfortransit.CalculateWeightedOccupancyTest"></class>
-<!-- 
 <class name="com.arc.testcases.MyBuildings.LEEDfortransit.PreCertReviewTest"/>
 <class name="com.arc.testcases.MyBuildings.LEEDfortransit.UnderGroundAddNewProjectTest"/>
 

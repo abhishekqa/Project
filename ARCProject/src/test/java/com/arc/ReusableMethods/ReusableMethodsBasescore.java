@@ -104,7 +104,9 @@ for(int i=0;i<=17;i++){
 	CommonMethod.sendKeys("UploadBasePointHidden", CommonMethod.basepointFilePdf);
 	
 	System.out.println(CommonMethod.basepointFilePdf);
-	CommonMethod.WaitUntilInVisibility("ImageLoader");
+	//CommonMethod.WaitUntilInVisibility("ImageLoader");
+	
+	CommonMethod.Isdisplayed("FileUploadVerifyPdf", "File Not Uploaded");
 	CommonMethod.testlog( "Pass","file Uploaded successfully");
 	CommonMethod.click( "NextButtonprerequisites");
 	CommonMethod.testlog( "Pass","Clicking on Next button");
@@ -129,7 +131,8 @@ for(int i=0;i<=22;i++){
 	CommonMethod.sendKeys("UploadBasePointHidden", CommonMethod.basepointFilePdf);
 	
 	Thread.sleep(6000);
-	CommonMethod.WaitUntilInVisibility("ImageLoader");
+	//CommonMethod.WaitUntilInVisibility("ImageLoader");
+	CommonMethod.Isdisplayed("FileUploadVerifyImage", "File Not Uploaded");
 	CommonMethod.testlog( "Pass","file Uploaded successfully");
 	CommonMethod.click( "NextButtonprerequisites");
 	CommonMethod.testlog( "Pass","Clicking on Next button");

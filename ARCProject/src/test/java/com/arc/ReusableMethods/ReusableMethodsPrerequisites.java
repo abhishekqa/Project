@@ -93,7 +93,7 @@ public class ReusableMethodsPrerequisites extends BaseClass {
 			   CommonMethod.displayhiddenElement("ParkPdfUpload");
 			   Thread.sleep(6000);
 			   CommonMethod.sendKeys("ParkPdfUpload", CommonMethod.basepointFilePdf);    
-			   CommonMethod.WaitUntilInVisibility("ImageLoader");
+			    CommonMethod.Isdisplayed("FileUploadVerifyPdf", "File Not Uploaded");
 			   CommonMethod.testlog( "Pass","Pdf file Uploaded successfully");
 			   CommonMethod.click("BNext");
 			   CommonMethod.testlog( "Pass","Clicking on Next button");
@@ -687,7 +687,7 @@ public class ReusableMethodsPrerequisites extends BaseClass {
 			CommonMethod.displayhiddenElement("UploadBasePointHidden");
 			Thread.sleep(6000);
 			CommonMethod.sendKeys("UploadBasePointHidden", CommonMethod.prerequisiteTextFile);
-			CommonMethod.WaitUntilInVisibility("ImageLoader");
+			CommonMethod.Isdisplayed("FileUploadVerifyTxt", "File Not Uploaded");
 	        CommonMethod.testlog( "Pass","text file Uploaded successfully");
 			CommonMethod.click( "NextButtonprerequisites");
 			CommonMethod.testlog( "Pass","Clicking on Next button");
@@ -760,16 +760,10 @@ public class ReusableMethodsPrerequisites extends BaseClass {
 
 		for (int i = 0; i <= NoOfCredits; i++) {
 			
-			/*CommonMethod.FluentWait( "BclickFileUpload");
-		    CommonMethod.moveToElement( "BclickFileUpload");
-			CommonMethod.click( "BclickFileUpload");
-			Runtime.getRuntime().exec(System.getProperty("user.dir") +"/ARCDataTemplete/PdfScript.exe");*/
 			CommonMethod.displayhiddenElement("UploadBasePointHidden");
-			//Thread.sleep(6000);
 			CommonMethod.sendKeys("UploadBasePointHidden", CommonMethod.basepointFilePdf);
-			//Thread.sleep(6000);
-			CommonMethod.WaitUntilInVisibility("ImageLoader");
-	        CommonMethod.testlog( "Pass","text file Uploaded successfully");
+			CommonMethod.Isdisplayed("FileUploadVerifyPdf", "File Not Uploaded");
+			CommonMethod.testlog( "Pass","text file Uploaded successfully");
 			CommonMethod.click( "NextButtonprerequisites");
 			CommonMethod.testlog( "Pass","Clicking on Next button");
 			Thread.sleep(3000);

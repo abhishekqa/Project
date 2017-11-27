@@ -129,7 +129,8 @@ public class ReusableMethodsManage extends BaseClass{
 		CommonMethod.click( "Project");
 		CommonMethod.testlog( "Pass", "Clicking on Project");
 		CommonMethod.sendKeys("ParkPdfUpload", CommonMethod.parkImageUpload);
-		CommonMethod.WaitUntilInVisibility("ImageLoader");
+		//CommonMethod.WaitUntilInVisibility("ImageLoader");
+		CommonMethod.Isdisplayed("FileUploadVerifyImage", "File Not Uploaded");
 		Thread.sleep(5000);
 		CommonMethod.testlog( "Pass","Parking image 1 file Uploaded successfully");
 		CommonMethod.testlog( "Pass", "Clicking on Project");

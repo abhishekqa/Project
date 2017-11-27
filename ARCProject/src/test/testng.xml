@@ -24,8 +24,13 @@
 
 
 <classes>
-<class name="com.arc.testcases.MyBuildings.LEED.LoginCaseTest"/>
-<class name="com.arc.testcases.MyBuildings.LEED.AddNewProjectTest"/>
+<class name="com.arc.testcases.MyBuildings.LEED.LoginCaseTest"></class>
+<class name="com.arc.testcases.MyBuildings.LEED.ClickSearchedProgramTest"></class>
+<class name="com.arc.testcases.MyBuildings.LEED.AddNewProjectTest"></class>
+<class name="com.arc.testcases.MyBuildings.LEED.PaymentbyCCTest"></class>
+<class name="com.arc.testcases.MyBuildings.LEED.BasePointPdfFileUplaod"/>
+
+
 
 <!-- <class name="com.arc.testcases.MyBuildings.LEED.LoginCaseTest"></class>
 <class name="com.arc.testcases.MyBuildings.LEED.ClickSearchedProgramTest"></class>

@@ -19,6 +19,7 @@
 <parameter name="citySheet" value="NewCityProject"/>
 <parameter name="paymentSheet" value="Payment"/>
 <parameter name="energySheet" value="BEnergy"/>
+<parameter name="cdataInputSheet" value="CDataInput"/>
 <parameter name="teamSheet" value="BTeam"/>
 <parameter name="waterSheet" value="BWater"/>
 <parameter name="wasteSheet" value="BWaste"/>
@@ -26,11 +27,19 @@
 
 
 <classes>
+<!--     
 <class name="com.arc.testcases.MyCities.LEEDforCities.LoginCaseTest"/>
 <class name="com.arc.testcases.MyCities.LEEDforCities.SearchProgramTest"/>
 <class name="com.arc.testcases.MyCities.LEEDforCities.ClickSearchedProgramTest"/> 
 <class name="com.arc.testcases.MyCities.LEEDforCities.AddNewProjectTest"/>
-<class name="com.arc.testcases.MyCities.LEEDforCities.PaymentbyCCTest"/> 
+<class name="com.arc.testcases.MyCities.LEEDforCities.PaymentbyCCTest"/>  
+<class name="com.arc.testcases.MyCities.LEEDforCities.EnergyMeterCreateTest"></class>
+<class name="com.arc.testcases.MyCities.LEEDforCities.WaterMeterCreateTest"></class>
+<class name="com.arc.testcases.MyCities.LEEDforCities.WasteGenerationMeterCreateTest"></class>
+<class name="com.arc.testcases.MyCities.LEEDforCities.WastediversionMeterCreateTest"></class>
+<class name="com.arc.testcases.MyCities.LEEDforCities.TrasnsportionCreateMeterTest"></class>
+<class name="com.arc.testcases.MyCities.LEEDforCities.HumanExpCreateSurveyTest"></class>
+<class name="com.arc.testcases.MyCities.LEEDforCities.AdditionalDeatilsCreateMeterTest"></class>
 <class name="com.arc.testcases.MyCities.LEEDforCities.PrerequisitesAttemptTest"/>
 <class name="com.arc.testcases.MyCities.LEEDforCities.ProjectFieldVerificationTest"/>
 <class name="com.arc.testcases.MyCities.LEEDforCities.EditProjectDetailsTest"/>
@@ -42,8 +51,8 @@
 <class name="com.arc.testcases.MyCities.LEEDforCities.BillingDateVerificationTest"/>
 <class name="com.arc.testcases.MyCities.LEEDforCities.BillingRegistrationAmountVerificationTest"/>
 <class name="com.arc.testcases.MyCities.LEEDforCities.BillingStatusVerificationTest"/>
-<class name="com.arc.testcases.MyCities.LEEDforCities.PrecertificationPayTest"/>
-
+<class name="com.arc.testcases.MyCities.LEEDforCities.PrecertificationPayTest"/> -->
+ 
 </classes>
 </test>
 
@@ -58,6 +67,7 @@
 <parameter name="rowNum" value="4"/>
 <parameter name="loginSheet" value="Login"/>
 <parameter name="citySheet" value="NewCityProject"/>
+<parameter name="cdataInputSheet" value="CDataInput"/>
 <parameter name="paymentSheet" value="Payment"/>
 <parameter name="energySheet" value="BEnergy"/>
 <parameter name="teamSheet" value="BTeam"/>
@@ -67,11 +77,19 @@
 
 
 <classes>
+  <!--   
 <class name="com.arc.testcases.MyCities.None.LoginCaseTest"/>
 <class name="com.arc.testcases.MyCities.None.SearchProgramTest"/>
 <class name="com.arc.testcases.MyCities.None.ClickSearchedProgramTest"/> 
 <class name="com.arc.testcases.MyCities.None.AddNewProjectTest"/>
-<class name="com.arc.testcases.MyCities.None.PaymentbyCCTest"/> 
+<class name="com.arc.testcases.MyCities.None.PaymentbyCCTest"/> -->
+<class name="com.arc.testcases.MyCities.None.EnergyMeterCreateTest"></class>
+<class name="com.arc.testcases.MyCities.None.WaterMeterCreateTest"></class>
+<class name="com.arc.testcases.MyCities.None.WasteGenerationMeterCreateTest"></class>
+<class name="com.arc.testcases.MyCities.None.WastediversionMeterCreateTest"></class>
+<class name="com.arc.testcases.MyCities.None.TrasnsportionCreateMeterTest"></class>
+<class name="com.arc.testcases.MyCities.None.HumanExpCreateSurveyTest"></class>
+<class name="com.arc.testcases.MyCities.None.AdditionalDeatilsCreateMeterTest"></class><!-- 
 <class name="com.arc.testcases.MyCities.None.ProjectFieldVerificationTest"/>
 <class name="com.arc.testcases.MyCities.None.EditProjectDetailsTest"/>
 <class name="com.arc.testcases.MyCities.None.ProjectDetailsVerificationTest"/>
@@ -81,9 +99,11 @@
 <class name="com.arc.testcases.MyCities.None.InstallAllAppsTest"/>
 <class name="com.arc.testcases.MyCities.None.BillingDateVerificationTest"/>
 <class name="com.arc.testcases.MyCities.None.BillingRegistrationAmountVerificationTest"/>
+
+
 <class name="com.arc.testcases.MyCities.None.BillingStatusVerificationTest"/>
 <class name="com.arc.testcases.MyCities.None.PerformanceReviewTest"/>
- 
+ -->
 </classes>
 </test>
  
@@ -99,6 +119,7 @@
 <parameter name="rowNum" value="3"/>
 <parameter name="loginSheet" value="Login"/>
 <parameter name="citySheet" value="NewCityProject"/>
+<parameter name="cdataInputSheet" value="CDataInput"/>
 <parameter name="paymentSheet" value="Payment"/>
 <parameter name="energySheet" value="BEnergy"/>
 <parameter name="teamSheet" value="BTeam"/>
@@ -108,11 +129,19 @@
 
 
 <classes>
+    <!--  
 <class name="com.arc.testcases.MyCities.Other.LoginCaseTest"/>
 <class name="com.arc.testcases.MyCities.Other.SearchProgramTest"/>
 <class name="com.arc.testcases.MyCities.Other.ClickSearchedProgramTest"/> 
 <class name="com.arc.testcases.MyCities.Other.AddNewProjectTest"/>
-<class name="com.arc.testcases.MyCities.Other.PaymentbyCCTest"/> 
+<class name="com.arc.testcases.MyCities.Other.PaymentbyCCTest"/>
+<class name="com.arc.testcases.MyCities.Other.EnergyMeterCreateTest"></class>
+<class name="com.arc.testcases.MyCities.Other.WaterMeterCreateTest"></class>
+<class name="com.arc.testcases.MyCities.Other.WasteGenerationMeterCreateTest"></class>
+<class name="com.arc.testcases.MyCities.Other.WastediversionMeterCreateTest"></class>
+<class name="com.arc.testcases.MyCities.Other.TrasnsportionCreateMeterTest"></class>
+<class name="com.arc.testcases.MyCities.Other.HumanExpCreateSurveyTest"></class>
+<class name="com.arc.testcases.MyCities.Other.AdditionalDeatilsCreateMeterTest"></class>
 <class name="com.arc.testcases.MyCities.Other.ProjectFieldVerificationTest"/>
 <class name="com.arc.testcases.MyCities.Other.EditProjectDetailsTest"/>
 <class name="com.arc.testcases.MyCities.Other.ProjectDetailsVerificationTest"/>
@@ -122,11 +151,13 @@
 <class name="com.arc.testcases.MyCities.Other.InstallAllAppsTest"/>
 <class name="com.arc.testcases.MyCities.Other.BillingDateVerificationTest"/>
 <class name="com.arc.testcases.MyCities.Other.BillingRegistrationAmountVerificationTest"/>
+
+
 <class name="com.arc.testcases.MyCities.Other.BillingStatusVerificationTest"/>
 <class name="com.arc.testcases.MyCities.Other.PerformanceReviewTest"/>
- 
+ -->
 </classes>
 </test>
-
+ 
 
 </suite>  

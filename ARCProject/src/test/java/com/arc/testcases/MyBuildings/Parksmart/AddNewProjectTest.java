@@ -1,31 +1,32 @@
 package com.arc.testcases.MyBuildings.Parksmart;
 
 import java.io.IOException;
+import org.testng.ITestResult;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 import com.arc.ReusableMethods.ReusableMethodsAddProject;
 import com.arc.ReusableMethods.ReusableMethodsLogin;
 import com.arc.driver.BaseClass;
 import com.arc.driver.CommonMethod;
+import com.relevantcodes.extentreports.LogStatus;
 
 public class AddNewProjectTest extends BaseClass {
 	
-	@Test
-	//(dependsOnMethods={"com.arc.testcases.MyBuildings.Parksmart.LoginCaseTest.loginCase"})
-	@Parameters({"rowNum" ,"loginSheet","buildingSheet"})
-	public void addNewProject(int rowNum, String loginSheet, String buildingSheet) throws IOException {
-		System.out.println(Thread.currentThread().getStackTrace()[1].getMethodName());
+	@Test(dependsOnMethods={"com.arc.testcases.MyBuildings.Parksmart.LoginCaseTest.loginCaseTest"})
+	@Parameters({"rowNum" ,"loginSheet","parkingSheet"})
+	public void addNewProjectTest(int rowNum, String loginSheet, String parkingSheet ) throws IOException {
+		
 		CommonMethod.ExtentReportConfig();
 		
-		CommonMethod.test = CommonMethod.extent.startTest("AddNewProjectUS Test-Parking", "Verifies if New Project is added successfully").assignCategory("CheckAddProject");
+		CommonMethod.test = CommonMethod.extent.startTest("AddNewProjectUSTest-Parking", "Verifies if New Project is added successfully").assignCategory("CheckAddProject");
     
 		ReusableMethodsLogin reuse = new ReusableMethodsLogin();
 		ReusableMethodsAddProject reuseAddProject = new ReusableMethodsAddProject();
 		
-		try {
-			
+		try {	
 			reuse.LoginWithparking(rowNum, "My Parking", loginSheet);
-			reuseAddProject.AddProjectParksmartUS(rowNum, buildingSheet);
+			reuseAddProject.AddProjectParksmartUS(parkingSheet, rowNum);
 
 		} catch (Throwable t) {
 			System.out.println(t.getLocalizedMessage());
@@ -36,4 +37,6 @@ public class AddNewProjectTest extends BaseClass {
 			throw e1;
 		}
 	}
+
+	
 }

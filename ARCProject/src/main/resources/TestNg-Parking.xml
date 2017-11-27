@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="SanityTestCasesSuite">
+
+
+<listeners>
+        <listener class-name="com.arc.driver.ExtentReportNG" />
+      <!--   <listener class-name="com.arc.driver.RetryListener"></listener>  -->
+</listeners>
+
+
+<test name="ARCRegressionTest-Building-Parking">
+
+
+<parameter name="browserName" value="firefox"/>
+<parameter name="environment" value="staging"/>
+<parameter name="rowNum" value="2"/>
+<parameter name="loginSheet" value="Login"/>
+<parameter name="paymentSheet" value="Payment"/>
+<parameter name="parkingSheet" value="NewParkingProject"/>
+
+<classes>
+
+
+<<class name="com.arc.testcases.MyBuildings.Parksmart.LoginCaseTest"></class>
+<class name="com.arc.testcases.MyBuildings.Parksmart.SearchProgramTest"></class>
+<class name="com.arc.testcases.MyBuildings.Parksmart.AddNewProjectTest"></class>
+<class name="com.arc.testcases.MyBuildings.Parksmart.PaymentbyCCTest"></class>
+<class name="com.arc.testcases.MyBuildings.Parksmart.VerifyAgreementFileDownloadTest"></class>
+<class name="com.arc.testcases.MyBuildings.Parksmart.BillingDateVerificationTest"></class>
+<class name="com.arc.testcases.MyBuildings.Parksmart.BillingRegistrationAmountVerificationTest"></class>
+<class name="com.arc.testcases.MyBuildings.Parksmart.BillingStatusVerificationTest"></class>
+<class name="com.arc.testcases.MyBuildings.Parksmart.ProjectDetailsVerificationTest"></class> 
+<class name="com.arc.testcases.MyBuildings.Parksmart.EditProjectDetailsTest"></class>
+<class name="com.arc.testcases.MyBuildings.Parksmart.ProjectDetailsDisplayTest"></class>
+<class name="com.arc.testcases.MyBuildings.Parksmart.AllManagementTotalPointTest"></class>
+<class name="com.arc.testcases.MyBuildings.Parksmart.AllProgramsTotalPointTest"></class>
+<class name="com.arc.testcases.MyBuildings.Parksmart.AllTechnologyandStructureDesignTest"></class>
+<class name="com.arc.testcases.MyBuildings.Parksmart.AllInnovationTest"></class> 
+<class name="com.arc.testcases.MyBuildings.Parksmart.AllMeasuresFileUploadTest"></class>
+<class name="com.arc.testcases.MyBuildings.Parksmart.ParkingImageUploadTest"></class>
+
+</classes>
+</test>
+
+</suite>  

@@ -693,34 +693,30 @@ public void AddUndergroundProjectLEEDfortransit(int rowNum,  String sheetName ) 
 
 	}
 	
-	public void AddProjectParksmartUS(int rowNum, String sheetName) throws IOException, InterruptedException {
-
+	public void AddProjectParksmartUS(String sheetName,int rowNum) throws IOException, InterruptedException {
+	       
 		String prjType 		= data.getCellData(sheetName, "Project Type", rowNum);
 		String prjRating 	= data.getCellData(sheetName, "Rating System", rowNum);
 		String ownerOrg 	= data.getCellData(sheetName, "Owner Organization", rowNum);
-		String ownerType 	= data.getCellData(sheetName, "Owner Type", rowNum);
 		String ownerCountry = data.getCellData(sheetName, "Owner Country", rowNum);
 		String ownerMail 	= data.getCellData(sheetName, "Owner Email", rowNum);
-		String prjParkNo 	= data.getCellData(sheetName, "no_park_space", rowNum);
-		String prjParkLevel	= data.getCellData(sheetName, "park_level", rowNum);
-		String prjDateComm 	= data.getCellData(sheetName, "date_comm", rowNum);
+		String parkingSpaces = data.getCellData(sheetName, "Parking Spaces", rowNum);
+		String parkingStructure=  data.getCellData(sheetName, "parking structure", rowNum);
+
+		String dataCommisioned= data.getCellData(sheetName, "Data Commisioned", rowNum);
 		String prjAddress 	= data.getCellData(sheetName, "Address", rowNum);
 		String prjCity 		= data.getCellData(sheetName, "City", rowNum);
 		String prjCountry 	= data.getCellData(sheetName, "Country", rowNum);
 		String prjState 	= data.getCellData(sheetName, "State", rowNum);
 		String prjZip 		= data.getCellData(sheetName, "Zip", rowNum);
 		
-		//creating the project name
-		data.setCellData(sheetName,"Project Name" ,rowNum, "USMyParking"+" " + CommonMethod.randomNumber() );
-														   
+		data.setCellData(sheetName,"Project Name" ,rowNum, "US Building Parking"+" " + CommonMethod.randomNumber() );
+		   
 		String prjName 	= data.getCellData(sheetName, "Project Name", rowNum);
 		
+		
 		clickAddProjectMyBuildings();
-		
-		CommonMethod.sendKeys("ProjectName", prjName);
-				
-		Thread.sleep(2000);
-		
+		CommonMethod.sendKeys( "ProjectName",prjName);
 		CommonMethod.testlog( "Pass", "Feeding Random Unique name for Project and saving to external location");
 		
 		CommonMethod.selectdropdown("ClickOnProjectType",prjType);
@@ -729,58 +725,50 @@ public void AddUndergroundProjectLEEDfortransit(int rowNum,  String sheetName ) 
 		CommonMethod.selectdropdown("ClickOnRatingSystem",prjRating);
 		CommonMethod.testlog( "Pass", "Selecting RatingSystem Parksmart");
 		
-		CommonMethod.selectdropdown( "OwnerType", ownerType);
+		CommonMethod.selectdropdownrandom( "OwnerType");
 		CommonMethod.testlog( "Pass", "Selecting Owner Type Type");
 		
-		CommonMethod.sendKeys( "OwnerOrg", ownerOrg);
+		CommonMethod.sendKeys( "OwnerOrg",ownerOrg);
 		CommonMethod.click( "OwnerOrg");
 		Thread.sleep(1000);
 		CommonMethod.click( "ownerorg");
-		/*CommonMethod.moveToElement( "ownerorg");
-		CommonMethod.click( "ownerorg");
-		CommonMethod.FluentWait( "ownerorg");
-		*/
-		
 		CommonMethod.testlog( "Pass", "Entering Owner Organization");
-		CommonMethod.sendKeys( "OwnerEmail", ownerMail);
+		
+		CommonMethod.sendKeys( "OwnerEmail", ownerMail);		
 		CommonMethod.testlog( "Pass", "Entering Owner Email");
+		
 		CommonMethod.selectdropdown( "OwnerCountry", ownerCountry);
 		CommonMethod.testlog( "Pass", "Entering Owner Country");
 		
-		CommonMethod.sendKeys( "NumParkingSpaces", prjParkNo);
-	
+		CommonMethod.sendKeys( "NumParkingSpaces", parkingSpaces);
 		CommonMethod.testlog( "Pass", "Entering No. of parking spaces");
 		
-		CommonMethod.scrolldowntoElement( "NumParkinglevel");
-		CommonMethod.sendKeys( "NumParkinglevel", prjParkLevel);
+	
+		CommonMethod.sendKeys( "NumParkinglevel", parkingStructure);
 		CommonMethod.testlog( "Pass", "Entering No. of parking Level");
 		
-		CommonMethod.sendKeys( "DataCommisioned", prjDateComm);
+		CommonMethod.sendKeys( "DataCommisioned", dataCommisioned);
 		CommonMethod.testlog( "Pass", "Entering Year constructed");
 		
 		CommonMethod.sendKeys( "Address", prjAddress);
 		CommonMethod.testlog( "Pass", "Entering Address");
+		
 		CommonMethod.sendKeys( "City", prjCity);
 		CommonMethod.testlog( "Pass", "Entering City");
-		CommonMethod.selectdropdown( "Country",prjCountry);
+		
+		CommonMethod.selectdropdown( "Country", prjCountry);
 		CommonMethod.testlog( "Pass", "Entering Country");
+		
 		CommonMethod.selectdropdown( "State", prjState);
 		CommonMethod.testlog( "Pass", "Entering State");
 		CommonMethod.sendKeys( "ZipCode", prjZip);
 		CommonMethod.testlog( "Pass", "Entering Zipcode");
+		
 		CommonMethod.click( "AgreeTermsProgReg");
 		CommonMethod.testlog( "Pass", "Clicking on agree to terms");
 		CommonMethod.click( "NextButton");
 		CommonMethod.testlog( "Pass", "Clicking on Next button");
-		
-		String[] splits = CommonMethod.getText("amountPayable").split(" ");
-		
-		String Amount= splits[0]+" "+splits[1];
-		
-		data.setCellData(sheetName, "Amount" , rowNum, Amount );
-		
-		
-		Thread.sleep(10000);
+		Thread.sleep(8000);
 
 
 	}

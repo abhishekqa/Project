@@ -3,12 +3,12 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.arc.testcases.MyBuildings.LEED.PaymentbyCCTest">
+      <class name="com.arc.testcases.MyBuildings.Parksmart.ProjectDetailsDisplayTest">
         <methods>
+          <include name="projectDetails"/>
           <include name="end"/>
-          <include name="paymentbyCC"/>
         </methods>
-      </class> <!-- com.arc.testcases.MyBuildings.LEED.PaymentbyCCTest -->
+      </class> <!-- com.arc.testcases.MyBuildings.Parksmart.ProjectDetailsDisplayTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

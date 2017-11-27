@@ -49,7 +49,637 @@ public class ReusableMethodsDataInput extends BaseClass{
 		    CommonMethod.testlog( "Pass","Clicking EATooltip1");
 				
 			}
-	 
+	 public void CreateEnergyMeterCities(String param, String sheetName, int rowNum) throws IOException, InterruptedException{
+	   	  	
+		   	String reading1  = data.getCellData(sheetName, "EReading1", rowNum);
+		   	String reading2  = data.getCellData(sheetName, "EReading2", rowNum);
+		   	String reading3  = data.getCellData(sheetName, "EReading3", rowNum);
+		   	String reading4  = data.getCellData(sheetName, "EReading4", rowNum);
+		   	String reading5  = data.getCellData(sheetName, "EReading5", rowNum);
+		   	
+		   	
+		   	CommonMethod.ArcSpecifictoggle( "CreditAction");
+				ClickDataInput();
+		   	ClickDataInputParam(param);
+		   	
+		   	CommonMethod.click("EditButton1");
+		   	Thread.sleep(2000);
+		   	CommonMethod.clear("ETextboxValue1");
+		   	CommonMethod.sendKeys("ETextboxValue1",reading1);
+		   	CommonMethod.click("SaveButton1");
+		   	Thread.sleep(2000);
+		   	CommonMethod.testlog("Pass", "Saving Energy Reading 1 ");
+		   	
+		   	CommonMethod.click("EditButton2");
+		   	Thread.sleep(2000);
+		   	CommonMethod.clear("ETextboxValue2");
+		   	CommonMethod.sendKeys("ETextboxValue2", reading2);
+		   	CommonMethod.click("SaveButton2");
+		   	Thread.sleep(2000);
+		   	CommonMethod.testlog("Pass", "Saving Energy Reading 2 ");
+		   	
+		   	CommonMethod.click("EditButton3");
+		   	Thread.sleep(2000);
+		   	CommonMethod.clear("ETextboxValue3");
+		   	CommonMethod.sendKeys("ETextboxValue3", reading3);
+		   	CommonMethod.click("SaveButton3");
+		   	Thread.sleep(2000);
+		   	CommonMethod.testlog("Pass", "Saving Energy Reading 3 ");
+		   	
+		   	CommonMethod.click("PreviousYear");
+		   	Thread.sleep(2000);
+		   	CommonMethod.click("EditButton4");
+		   	Thread.sleep(2000);
+		   	CommonMethod.clear("ETextboxValue4");
+		   	CommonMethod.sendKeys("ETextboxValue4", reading4);
+		   	CommonMethod.click("SaveButton4");
+		   	Thread.sleep(2000);
+		   	CommonMethod.testlog("Pass", "Saving Energy Reading 4 ");
+		   	
+		   	CommonMethod.click("PreviousYear");
+		   	Thread.sleep(2000);
+		   	CommonMethod.click("EditButton5");
+		   	Thread.sleep(2000);
+		   	CommonMethod.clear("ETextboxValue5");
+		   	CommonMethod.sendKeys("ETextboxValue5", reading5);
+		   	CommonMethod.click("SaveButton5");
+		   	Thread.sleep(2000);
+		   	CommonMethod.testlog("Pass", "Saving Energy Reading 5 ");
+		   	
+		   	driver.navigate().refresh();
+		   	Thread.sleep(5000);
+		   	
+		   	CommonMethod.assertcontainsattributevalue("ETextboxValue1", reading1,"Not Correct");
+		   	CommonMethod.assertcontainsattributevalue("ETextboxValue2", reading2,"Not Correct");
+		   	CommonMethod.assertcontainsattributevalue("ETextboxValue3", reading3,"Not Correct");
+		   	CommonMethod.assertcontainsattributevalue("ETextboxValue4", reading4,"Not Correct");
+		   	CommonMethod.assertcontainsattributevalue("ETextboxValue5", reading5,"Not Correct");
+		  
+		   	Thread.sleep(2000);
+		   	CommonMethod.testlog( "Pass"," Verifies added meter reading saved & displays correctly after refresh ");
+		   	
+		   	
+		   	
+		   	
+		   }
+		   
+		public void CreateWaterMeterCities(String param, String sheetName, int rowNum) throws IOException, InterruptedException{
+			
+			/*************************Reading data from excel sheet ************************************/
+				
+			String reading1  = data.getCellData(sheetName, "WaterReading1", rowNum);
+			String reading2  = data.getCellData(sheetName, "WaterReading2", rowNum);
+			String reading3  = data.getCellData(sheetName, "WaterReading3", rowNum);
+			String reading4  = data.getCellData(sheetName, "WaterReading4", rowNum);
+			String reading5  = data.getCellData(sheetName, "WaterReading5", rowNum);
+			
+			
+			CommonMethod.ArcSpecifictoggle( "CreditAction");
+			ClickDataInput();
+			ClickDataInputParam(param);
+			CommonMethod.click("EditButton1");
+			Thread.sleep(2000);
+			CommonMethod.clear("WTextboxValue1");
+			CommonMethod.sendKeys("WTextboxValue1",reading1);
+			CommonMethod.click("SaveButton1");
+			Thread.sleep(2000);
+			CommonMethod.testlog("Pass", "Saving Water Reading 1 ");
+			
+			CommonMethod.click("EditButton2");
+			Thread.sleep(2000);
+			CommonMethod.clear("WTextboxValue2");
+			CommonMethod.sendKeys("WTextboxValue2", reading2);
+			CommonMethod.click("SaveButton2");
+			Thread.sleep(2000);
+			CommonMethod.testlog("Pass", "Saving Water Reading 2 ");
+			
+			CommonMethod.click("EditButton3");
+			Thread.sleep(2000);
+			CommonMethod.clear("WTextboxValue3");
+			CommonMethod.sendKeys("WTextboxValue3", reading3);
+			CommonMethod.click("SaveButton3");
+			Thread.sleep(2000);
+			CommonMethod.testlog("Pass", "Saving Water Reading 3 ");
+			
+			CommonMethod.click("PreviousYear");
+			Thread.sleep(2000);
+			CommonMethod.click("EditButton4");
+			Thread.sleep(2000);
+			CommonMethod.clear("WTextboxValue4");
+			CommonMethod.sendKeys("WTextboxValue4", reading4);
+			CommonMethod.click("SaveButton4");
+			Thread.sleep(2000);
+			CommonMethod.testlog("Pass", "Saving water Reading 4 ");
+			
+			CommonMethod.click("PreviousYear");
+			Thread.sleep(2000);
+			CommonMethod.click("EditButton5");
+			Thread.sleep(2000);
+			CommonMethod.clear("WTextboxValue5");
+			CommonMethod.sendKeys("WTextboxValue5", reading5);
+			CommonMethod.click("SaveButton5");
+			Thread.sleep(2000);
+			CommonMethod.testlog("Pass", "Saving water Reading 5 ");
+			
+			driver.navigate().refresh();
+			Thread.sleep(5000);
+
+			
+			CommonMethod.assertcontainsattributevalue("WTextboxValue1", reading1,"Not Correct");
+			CommonMethod.assertcontainsattributevalue("WTextboxValue2", reading2,"Not Correct");
+			CommonMethod.assertcontainsattributevalue("WTextboxValue3", reading3,"Not Correct");
+			CommonMethod.assertcontainsattributevalue("WTextboxValue4", reading4,"Not Correct");
+			CommonMethod.assertcontainsattributevalue("WTextboxValue5", reading5,"Not Correct");
+
+			
+			CommonMethod.testlog( "Pass"," Verifies added meter reading saved & displays correctly after refresh");
+			
+			
+			Thread.sleep(1000);
+			
+		}
+		public void CreateAddDeatilsMeterCities(String param, String sheetName, int rowNum) throws IOException, InterruptedException{
+			
+			/*************************Reading data from excel sheet ************************************/
+			
+			
+			String reading1  = data.getCellData(sheetName, "ADeatailsValueReading1", rowNum);
+			String reading2  = data.getCellData(sheetName, "ADeatailsValueReading2", rowNum);
+			String reading3  = data.getCellData(sheetName, "ADeatailsValueReading3", rowNum);
+			String reading4  = data.getCellData(sheetName, "ADeatailsValueReading4", rowNum);
+			String reading5  = data.getCellData(sheetName, "ADeatailsValueReading5", rowNum);
+			
+			String ureading1  = data.getCellData(sheetName, "ADeatailsUnitReading1", rowNum);
+			String ureading2  = data.getCellData(sheetName, "ADeatailsUnitReading2", rowNum);
+			String ureading3  = data.getCellData(sheetName, "ADeatailsUnitReading3", rowNum);
+			String ureading4  = data.getCellData(sheetName, "ADeatailsUnitReading4", rowNum);
+			String ureading5  = data.getCellData(sheetName, "ADeatailsUnitReading5", rowNum);
+			
+			
+			CommonMethod.ArcSpecifictoggle( "CreditAction");
+			ClickDataInput();
+			ClickDataInputParam(param);
+			Thread.sleep(1000);
+			CommonMethod.click("Option1");
+			Thread.sleep(1000);
+			CommonMethod.click("AddButton");
+			Thread.sleep(1000);
+			
+			CommonMethod.click("Option2");
+			Thread.sleep(1000);
+			CommonMethod.click("AddButton");
+			Thread.sleep(1000);
+			
+			CommonMethod.click("Option3");
+			Thread.sleep(1000);
+			CommonMethod.click("AddButton");
+			Thread.sleep(1000);
+			
+			CommonMethod.click("Option4");
+			Thread.sleep(1000);
+			CommonMethod.click("AddButton");
+			Thread.sleep(1000);
+			
+			CommonMethod.click("Option5");
+			Thread.sleep(1000);
+			CommonMethod.click("AddButton");
+			Thread.sleep(1000);
+			
+			CommonMethod.click("EditButton1");	
+			CommonMethod.selectdropdown("Ayear1","2017");
+			Thread.sleep(1000);
+			CommonMethod.sendKeys("Avalue1", reading1);	
+			CommonMethod.sendKeys("Aunit1", ureading1);
+			CommonMethod.click("SaveButton1");
+			Thread.sleep(3000);
+			CommonMethod.testlog("Pass", "Additional field reading 1 units saved successfully" );
+			
+			CommonMethod.click("EditButton2");
+			CommonMethod.selectdropdown("Ayear2","2016");
+			Thread.sleep(1000);
+			CommonMethod.sendKeys("Avalue2", reading2);
+			CommonMethod.clear("Aunit2");
+			CommonMethod.sendKeys("Aunit2", ureading2);
+			Thread.sleep(1000);
+			CommonMethod.click("SaveButton2");
+			Thread.sleep(3000);
+			CommonMethod.testlog("Pass", "Additional field reading 2 units saved successfully" );
+			
+			CommonMethod.click("EditButton3");
+			CommonMethod.selectdropdown("Ayear3","2013");
+			Thread.sleep(1000);
+			CommonMethod.sendKeys("Avalue3", reading3);
+			CommonMethod.clear("Aunit3");
+			CommonMethod.sendKeys("Aunit3", ureading3);
+			CommonMethod.click("SaveButton3");
+			Thread.sleep(2000);
+			CommonMethod.testlog("Pass", "Additional field reading 3 units saved successfully" );
+			
+			CommonMethod.click("EditButton4");
+			CommonMethod.selectdropdown("Ayear4","2012");
+			Thread.sleep(1000);
+			CommonMethod.sendKeys("Avalue4", reading4);
+			CommonMethod.clear("Aunit4");
+			CommonMethod.sendKeys("Aunit4", ureading4);
+			CommonMethod.click("SaveButton4");
+			Thread.sleep(2000);
+			CommonMethod.testlog("Pass", "Additional field reading 4 units saved successfully" );
+			
+			CommonMethod.click("EditButton5");
+			CommonMethod.selectdropdown("Ayear5","2011");
+			Thread.sleep(1000);
+			CommonMethod.sendKeys("Avalue5", reading5);
+			CommonMethod.clear("Aunit5");
+			CommonMethod.sendKeys("Aunit5", ureading5);
+			CommonMethod.click("SaveButton5");
+			Thread.sleep(3000);
+		   CommonMethod.testlog("Pass", "Additional field reading 5 units saved successfully" );
+		   
+		   driver.navigate().refresh();
+		   Thread.sleep(5000);
+
+			
+			CommonMethod.assertcontainsattributevalue("Avalue1", reading1,"Not Correct");
+			CommonMethod.assertcontainsattributevalue("Avalue2", reading2,"Not Correct");
+			CommonMethod.assertcontainsattributevalue("Avalue3", reading3,"Not Correct");
+			CommonMethod.assertcontainsattributevalue("Avalue4", reading4,"Not Correct");
+			CommonMethod.assertcontainsattributevalue("Avalue5", reading5,"Not Correct");
+			CommonMethod.testlog("Pass","Verifies added meter reading saved & displays correctly after refresh");
+			
+			
+
+			
+		}
+		public void CreateTransportMeterCities(String param, String sheetName, int rowNum) throws IOException, InterruptedException{
+			
+			/*************************Reading data from excel sheet ************************************/
+			
+			String reading1  = data.getCellData(sheetName, "TReading1", rowNum);
+			String reading2  = data.getCellData(sheetName, "TReading2", rowNum);
+			String reading3  = data.getCellData(sheetName, "TReading3", rowNum);
+			String reading4  = data.getCellData(sheetName, "TReading4", rowNum);
+			String reading5  = data.getCellData(sheetName, "TReading5", rowNum);
+			
+			
+			CommonMethod.ArcSpecifictoggle( "CreditAction");
+			ClickDataInput();
+			ClickDataInputParam(param);
+			CommonMethod.click("EditButton1");
+			Thread.sleep(2000);
+			CommonMethod.clear("TTextboxValue1");
+			CommonMethod.sendKeys("TTextboxValue1",reading1);
+			CommonMethod.click("SaveButton1");
+			Thread.sleep(2000);
+			CommonMethod.testlog("Pass", "Saving Transportationr Reading 1 ");
+			
+			CommonMethod.click("EditButton2");
+			Thread.sleep(2000);
+			CommonMethod.clear("TTextboxValue2");
+			CommonMethod.sendKeys("TTextboxValue2", reading2);
+			CommonMethod.click("SaveButton2");
+			Thread.sleep(2000);
+			CommonMethod.testlog("Pass", "Saving Transportation Reading 2 ");
+			
+			CommonMethod.click("EditButton3");
+			Thread.sleep(2000);
+			CommonMethod.clear("TTextboxValue3");
+			CommonMethod.sendKeys("TTextboxValue3", reading3);
+			CommonMethod.click("SaveButton3");
+			Thread.sleep(2000);
+			CommonMethod.testlog("Pass", "Saving Transportation Reading 3 ");
+			
+			CommonMethod.click("PreviousYear");
+			Thread.sleep(2000);
+			CommonMethod.click("EditButton4");
+			Thread.sleep(2000);
+			CommonMethod.clear("TTextboxValue4");
+			CommonMethod.sendKeys("TTextboxValue4", reading4);
+			CommonMethod.click("SaveButton4");
+			Thread.sleep(2000);
+			CommonMethod.testlog("Pass", "Saving Transportation Reading 4 ");
+			
+			CommonMethod.click("PreviousYear");
+			Thread.sleep(2000);
+			CommonMethod.click("EditButton5");
+			Thread.sleep(2000);
+			CommonMethod.clear("TTextboxValue5");
+			CommonMethod.sendKeys("TTextboxValue5", reading5);
+			CommonMethod.click("SaveButton5");
+			Thread.sleep(2000);
+			CommonMethod.testlog("Pass", "Saving Transportation Reading 5 ");
+			
+			driver.navigate().refresh();
+			Thread.sleep(5000);
+
+			
+			CommonMethod.assertcontainsattributevalue("TTextboxValue1", reading1,"Not Correct");
+			CommonMethod.assertcontainsattributevalue("TTextboxValue2", reading2,"Not Correct");
+			CommonMethod.assertcontainsattributevalue("TTextboxValue3", reading3,"Not Correct");
+			CommonMethod.assertcontainsattributevalue("TTextboxValue4", reading4,"Not Correct");
+			CommonMethod.assertcontainsattributevalue("TTextboxValue5", reading5,"Not Correct");
+
+			Thread.sleep(3000);
+			CommonMethod.testlog( "Pass"," Verifies added meter reading saved & displays correctly after refresh ");
+			
+			
+			
+			
+		}
+		public void CreateHumtMeterCities(String param, String sheetName, int rowNum) throws IOException, InterruptedException{
+			
+			/*************************Reading data from excel sheet ************************************/
+			
+			
+			String reading1  = data.getCellData(sheetName, "HPReading1", rowNum);
+			String reading2  = data.getCellData(sheetName, "HPReading2", rowNum);
+			String reading3  = data.getCellData(sheetName, "HPReading3", rowNum);
+			String reading4  = data.getCellData(sheetName, "HPReading4", rowNum);
+			String reading5  = data.getCellData(sheetName, "HPReading5", rowNum);
+			
+			
+			CommonMethod.ArcSpecifictoggle( "CreditAction");
+			ClickDataInput();
+			ClickDataInputParam(param);
+			CommonMethod.click("EditButton1");
+			Thread.sleep(2000);
+			CommonMethod.clear("HTextboxValue1");
+			CommonMethod.sendKeys("HTextboxValue1",reading1);
+			CommonMethod.click("SaveButton1");
+			Thread.sleep(2000);
+			CommonMethod.testlog("Pass", "Saving Human Experience Reading 1 ");
+			
+			CommonMethod.click("EditButton2");
+			Thread.sleep(2000);
+			CommonMethod.clear("HTextboxValue2");
+			CommonMethod.sendKeys("HTextboxValue2", reading2);
+			CommonMethod.click("SaveButton2");
+			Thread.sleep(2000);
+			CommonMethod.testlog("Pass", "Saving Human Experience Reading 2 ");
+			
+			CommonMethod.click("EditButton3");
+			Thread.sleep(2000);
+			CommonMethod.clear("HTextboxValue3");
+			CommonMethod.sendKeys("HTextboxValue3", reading3);
+			CommonMethod.click("SaveButton3");
+			Thread.sleep(2000);
+			CommonMethod.testlog("Pass", "Saving Human Experience Reading 3 ");
+			
+			CommonMethod.click("PreviousYear");
+			Thread.sleep(2000);
+			CommonMethod.click("EditButton4");
+			Thread.sleep(2000);
+			CommonMethod.clear("HTextboxValue4");
+			CommonMethod.sendKeys("HTextboxValue4", reading4);
+			CommonMethod.click("SaveButton4");
+			Thread.sleep(2000);
+			CommonMethod.testlog("Pass", "Saving Human Experience Reading 4 ");
+			
+			CommonMethod.click("PreviousYear");
+			Thread.sleep(2000);
+			CommonMethod.click("EditButton5");
+			Thread.sleep(2000);
+			CommonMethod.clear("HTextboxValue5");
+			CommonMethod.sendKeys("HTextboxValue5", reading5);
+			CommonMethod.click("SaveButton5");
+			Thread.sleep(2000);
+			CommonMethod.testlog("Pass", "Saving Human Experience Reading 5 ");
+			
+			driver.navigate().refresh();
+			Thread.sleep(5000);
+
+			
+			CommonMethod.assertcontainsattributevalue("HTextboxValue1", reading1,"Not Correct");
+			CommonMethod.assertcontainsattributevalue("HTextboxValue2", reading2,"Not Correct");
+			CommonMethod.assertcontainsattributevalue("HTextboxValue3", reading3,"Not Correct");
+			CommonMethod.assertcontainsattributevalue("HTextboxValue4", reading4,"Not Correct");
+			CommonMethod.assertcontainsattributevalue("HTextboxValue5", reading5,"Not Correct");
+			Thread.sleep(2000);
+			
+			CommonMethod.testlog( "Pass"," Verifies added meter reading saved & displays correctly after refresh");
+			
+			
+
+			
+		}
+		public void CreateWasteMeterCities(String param, String sheetName, int rowNum) throws IOException, InterruptedException{
+			
+			/*************************Reading data from excel sheet ************************************/
+			
+			
+			String reading1  = data.getCellData(sheetName, "wastegeneration1", rowNum);
+			String reading2  = data.getCellData(sheetName, "wastegeneration2", rowNum);
+			String reading3  = data.getCellData(sheetName, "wastegeneration3", rowNum);
+			String reading4  = data.getCellData(sheetName, "wastegeneration4", rowNum);
+			String reading5  = data.getCellData(sheetName, "wastegeneration5", rowNum);
+			
+			
+			CommonMethod.ArcSpecifictoggle( "CreditAction");
+			ClickDataInput();
+			ClickDataInputParam(param);
+			CommonMethod.click("EditButton1");
+			Thread.sleep(2000);
+			CommonMethod.clear("CWTextboxValue1");
+			CommonMethod.sendKeys("CWTextboxValue1",reading1);
+			CommonMethod.click("SaveButton1");
+			Thread.sleep(2000);
+			CommonMethod.testlog("Pass", "Saving Waste Reading 1 ");
+			
+			CommonMethod.click("EditButton2");
+			Thread.sleep(2000);
+			CommonMethod.clear("CWTextboxValue2");
+			CommonMethod.sendKeys("CWTextboxValue2", reading2);
+			CommonMethod.click("SaveButton2");
+			Thread.sleep(2000);
+			CommonMethod.testlog("Pass", "Saving Waste Reading 2 ");
+			
+			CommonMethod.click("EditButton3");
+			Thread.sleep(2000);
+			CommonMethod.clear("CWTextboxValue3");
+			CommonMethod.sendKeys("CWTextboxValue3", reading3);
+			CommonMethod.click("SaveButton3");
+			Thread.sleep(2000);
+			CommonMethod.testlog("Pass", "Saving Waste Reading 3 ");
+			
+			CommonMethod.click("PreviousYear");
+			Thread.sleep(2000);
+			CommonMethod.click("EditButton4");
+			Thread.sleep(2000);
+			CommonMethod.clear("CWTextboxValue4");
+			CommonMethod.sendKeys("CWTextboxValue4", reading4);
+			CommonMethod.click("SaveButton4");
+			Thread.sleep(2000);
+			CommonMethod.testlog("Pass", "Saving Waste Reading 4 ");
+			
+			CommonMethod.click("PreviousYear");
+			Thread.sleep(2000);
+			CommonMethod.click("EditButton5");
+			Thread.sleep(2000);
+			CommonMethod.clear("CWTextboxValue5");
+			CommonMethod.sendKeys("CWTextboxValue5", reading5);
+			CommonMethod.click("SaveButton5");
+			Thread.sleep(2000);
+			CommonMethod.testlog("Pass", "Saving Waste Reading 5 ");
+			
+			driver.navigate().refresh();
+			Thread.sleep(5000);
+
+			
+			CommonMethod.assertcontainsattributevalue("CWTextboxValue1", reading1,"Not Correct");
+			CommonMethod.assertcontainsattributevalue("CWTextboxValue2", reading2,"Not Correct");
+			CommonMethod.assertcontainsattributevalue("CWTextboxValue3", reading3,"Not Correct");
+			CommonMethod.assertcontainsattributevalue("CWTextboxValue4", reading4,"Not Correct");
+			CommonMethod.assertcontainsattributevalue("CWTextboxValue5", reading5,"Not Correct");
+
+			
+			CommonMethod.testlog( "Pass"," Verifies added meter reading saved & displays correctly after refresh ");
+			
+			
+			Thread.sleep(3000);
+			
+		}
+		public void CreateWastediversionMeterCities(String param, String sheetName, int rowNum) throws IOException, InterruptedException{
+			
+			/*************************Reading data from excel sheet ************************************/
+			
+			
+			String reading1  = data.getCellData(sheetName, "wastediversion1", rowNum);
+			String reading2  = data.getCellData(sheetName, "wastediversion2", rowNum);
+			String reading3  = data.getCellData(sheetName, "wastediversion3", rowNum);
+			String reading4  = data.getCellData(sheetName, "wastediversion4", rowNum);
+			String reading5  = data.getCellData(sheetName, "wastediversion5", rowNum);
+			
+			
+			CommonMethod.ArcSpecifictoggle( "CreditAction");
+			ClickDataInput();
+			ClickDataInputParam(param);
+			CommonMethod.click("EditButton6");
+			Thread.sleep(2000);
+			
+			CommonMethod.clear("dWTextboxValue1");
+			CommonMethod.sendKeys("dWTextboxValue1",reading1);
+			CommonMethod.click("SaveButton6");
+			Thread.sleep(2000);
+			CommonMethod.testlog("Pass", "Saving Waste Reading 1 ");
+			
+			CommonMethod.click("EditButton7");
+			Thread.sleep(2000);
+			CommonMethod.clear("dWTextboxValue2");
+			CommonMethod.sendKeys("dWTextboxValue2", reading2);
+			CommonMethod.click("SaveButton7");
+			Thread.sleep(2000);
+			CommonMethod.testlog("Pass", "Saving Waste Reading 2 ");
+			
+			CommonMethod.click("EditButton8");
+			Thread.sleep(2000);
+			CommonMethod.clear("dWTextboxValue3");
+			CommonMethod.sendKeys("dWTextboxValue3", reading3);
+			CommonMethod.click("SaveButton8");
+			Thread.sleep(2000);
+			CommonMethod.testlog("Pass", "Saving Waste Reading 3 ");
+			
+			
+			CommonMethod.click("EditButton9");
+			Thread.sleep(2000);
+			CommonMethod.clear("dWTextboxValue4");
+			CommonMethod.sendKeys("dWTextboxValue4", reading4);
+			CommonMethod.click("SaveButton9");
+			Thread.sleep(2000);
+			CommonMethod.testlog("Pass", "Saving Waste Reading 4 ");
+			
+			CommonMethod.click("EditButton10");
+			Thread.sleep(2000);
+			CommonMethod.clear("dWTextboxValue5");
+			CommonMethod.sendKeys("dWTextboxValue5", reading5);
+			CommonMethod.click("SaveButton10");
+			Thread.sleep(2000);
+			CommonMethod.testlog("Pass", "Saving Waste Reading 5 ");
+			
+			driver.navigate().refresh();
+			Thread.sleep(5000);
+
+			
+			CommonMethod.assertcontainsattributevalue("dWTextboxValue1", reading1,"Not Correct");
+			CommonMethod.assertcontainsattributevalue("dWTextboxValue2", reading2,"Not Correct");
+			CommonMethod.assertcontainsattributevalue("dWTextboxValue3", reading3,"Not Correct");
+			CommonMethod.assertcontainsattributevalue("dWTextboxValue4", reading4,"Not Correct");
+			CommonMethod.assertcontainsattributevalue("dWTextboxValue5", reading5,"Not Correct");
+
+			
+			CommonMethod.testlog( "Pass"," Verifies added meter reading saved & displays correctly after refresh ");
+			
+			
+			Thread.sleep(3000);
+			
+		}
+
+		public void CreatehumanExpMeterCities(String param, String sheetName, int rowNum) throws IOException, InterruptedException{
+			
+			/*************************Reading data from excel sheet ************************************/
+			
+			
+			String reading1  = data.getCellData(sheetName, "WaterReading1", rowNum);
+			String reading2  = data.getCellData(sheetName, "WaterReading2", rowNum);
+			String reading3  = data.getCellData(sheetName, "WaterReading3", rowNum);
+			String reading4  = data.getCellData(sheetName, "WaterReading4", rowNum);
+			String reading5  = data.getCellData(sheetName, "WaterReading5", rowNum);
+			
+			
+			CommonMethod.ArcSpecifictoggle( "CreditAction");
+			ClickDataInput();
+			ClickDataInputParam(param);
+			CommonMethod.click("EditButton1");
+			Thread.sleep(2000);
+			CommonMethod.clear("ETextboxValue1");
+			CommonMethod.sendKeys("ETextboxValue1",reading1);
+			CommonMethod.click("SaveButton1");
+			Thread.sleep(2000);
+			CommonMethod.testlog("Pass", "Saving Water Reading 1 ");
+			
+			CommonMethod.click("EditButton2");
+			Thread.sleep(2000);
+			CommonMethod.clear("ETextboxValue2");
+			CommonMethod.sendKeys("ETextboxValue2", reading2);
+			CommonMethod.click("SaveButton2");
+			Thread.sleep(2000);
+			CommonMethod.testlog("Pass", "Saving Water Reading 2 ");
+			
+			CommonMethod.click("EditButton3");
+			Thread.sleep(2000);
+			CommonMethod.clear("ETextboxValue3");
+			CommonMethod.sendKeys("ETextboxValue3", reading3);
+			CommonMethod.click("SaveButton3");
+			Thread.sleep(2000);
+			CommonMethod.testlog("Pass", "Saving Water Reading 3 ");
+			
+			CommonMethod.click("PreviousYear");
+			Thread.sleep(2000);
+			CommonMethod.click("EditButton4");
+			Thread.sleep(2000);
+			CommonMethod.clear("ETextboxValue4");
+			CommonMethod.sendKeys("ETextboxValue4", reading4);
+			CommonMethod.click("SaveButton4");
+			Thread.sleep(2000);
+			CommonMethod.testlog("Pass", "Saving water Reading 4 ");
+			
+			CommonMethod.click("PreviousYear");
+			Thread.sleep(2000);
+			CommonMethod.click("EditButton5");
+			Thread.sleep(2000);
+			CommonMethod.clear("ETextboxValue5");
+			CommonMethod.sendKeys("ETextboxValue5", reading5);
+			CommonMethod.click("SaveButton5");
+			Thread.sleep(2000);
+			CommonMethod.testlog("Pass", "Saving water Reading 5 ");
+			
+			CommonMethod.assertcontainsattributevalue("WTextboxValue1", reading1,"Not Correct");
+			CommonMethod.assertcontainsattributevalue("WTextboxValue2", reading2,"Not Correct");
+			CommonMethod.assertcontainsattributevalue("WTextboxValue3", reading3,"Not Correct");
+			CommonMethod.assertcontainsattributevalue("WTextboxValue4", reading4,"Not Correct");
+			CommonMethod.assertcontainsattributevalue("WTextboxValue5", reading5,"Not Correct");
+			CommonMethod.testlog( "Pass"," Verifies added meter reading saved & displays correctly after refresh ");
+			Thread.sleep(3000);
+			
+		}
 	 
     public void ClickDataInputParam( String param) throws IOException{
 		

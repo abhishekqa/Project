@@ -13,13 +13,13 @@ import com.arc.driver.CommonMethod;
 
 public class EnergyMeterCreateTest extends BaseClass {
 	
-	@Test(dependsOnMethods = { "com.arc.testcases.MyCities.None.LoginCaseTest.loginCase","com.arc.testcases.MyCities.None.ClickSearchedProgramTest.clickSearchedProgram","com.arc.testcases.MyCities.None.PaymentbyCCTest.paymentbyCC" })
-	@Parameters({"rowNum" ,"loginSheet","citySheet","energySheet"})
-	public void energyMeterCreate(int rowNum, String loginSheet, String citySheet, String energySheet) throws IOException {
+	@Test//(dependsOnMethods = { "com.arc.testcases.MyCities.LEEDforCities.LoginCaseTest.loginCase","com.arc.testcases.MyCities.LEEDforCities.ClickSearchedProgramTest.clickSearchedProgram","com.arc.testcases.MyCities.LEEDforCities.PaymentbyCCTest.paymentbyCC" })
+	@Parameters({"rowNum" ,"loginSheet", "citySheet","cdataInputSheet"})
+	public void energyMeterCreate(int rowNum, String loginSheet, String citySheet, String cdataInputSheet) throws IOException {
 		System.out.println(Thread.currentThread().getStackTrace()[1].getMethodName());
 		CommonMethod.ExtentReportConfig();
 		
-		CommonMethod.test = CommonMethod.extent.startTest("dd", "Verifies if Login functionality is working fine").assignCategory("CheckLogin");
+		CommonMethod.test = CommonMethod.extent.startTest("EnergyMeterCreateTest-CNone", "Verifies if Create Energy meter redaing is working fine").assignCategory("CreateMeter");
     
 		ReusableMethodsLogin reuse = new ReusableMethodsLogin();
 		ReusableMethodsDataInput reuseDI = new ReusableMethodsDataInput();
@@ -27,17 +27,17 @@ public class EnergyMeterCreateTest extends BaseClass {
 		
 		try {
 			
-			reuse.LoginWithCities(rowNum, "My Cities", loginSheet);
+			reuse.LoginToArc(rowNum, "My Projects", loginSheet);
 			reuseSearch.SearchProgram(data.getCellData(citySheet, "ProjectName", rowNum));
 			reuseSearch.VerifySearchedProgram(data.getCellData(citySheet, "ProjectName", rowNum));
-			reuseDI.CreateMeter("Energy", "Test Energy Meter","AddMeterEnergy", energySheet, rowNum);
+			reuseDI.CreateEnergyMeterCities("Energy", cdataInputSheet, rowNum);
 
 		} catch (Throwable t) {
 			System.out.println(t.getLocalizedMessage());
 			Error e1 = new Error(t.getMessage());
 			e1.setStackTrace(t.getStackTrace());
 			//CommonMethod.testlogError(driver,  "<pre>" + e1.toString() + "</pre>");
-			CommonMethod.takeScreenshot("energyMeterCreateTest-City");
+			CommonMethod.takeScreenshot("energyMeterCreateTest-CNone");
 			throw e1;
 		}
 	}

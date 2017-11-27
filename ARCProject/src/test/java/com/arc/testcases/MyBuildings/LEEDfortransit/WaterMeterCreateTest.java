@@ -23,7 +23,7 @@ public class WaterMeterCreateTest extends BaseClass {
 		System.out.println(Thread.currentThread().getStackTrace()[1].getMethodName());
 		CommonMethod.ExtentReportConfig();
 		
-		CommonMethod.test = CommonMethod.extent.startTest("CreateWaterMeterTest-TransitU", "Verifies if Water meter created and added successfully").assignCategory("CheckMeter");
+		CommonMethod.test = CommonMethod.extent.startTest("CreateWaterMeterTest-TransitUS", "Verifies if Water meter created and added successfully").assignCategory("CreateMeter");
     
 		ReusableMethodsLogin reuse = new ReusableMethodsLogin();
 		ReusableMethodsDataInput reuseDI = new ReusableMethodsDataInput();
@@ -43,7 +43,7 @@ public class WaterMeterCreateTest extends BaseClass {
 			Error e1 = new Error(t.getMessage());
 			e1.setStackTrace(t.getStackTrace());
 			//CommonMethod.testlogError(driver,  "<pre>" + e1.toString() + "</pre>");
-			CommonMethod.takeScreenshot( "waterMeterCreateTest-TransitU");
+			CommonMethod.takeScreenshot( "waterMeterCreateTest-TransitUS");
 			throw e1;
 		}
 	}

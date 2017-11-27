@@ -20,7 +20,7 @@ public class EnergyMeterCreateTest extends BaseClass {
 		System.out.println(Thread.currentThread().getStackTrace()[1].getMethodName());
 		CommonMethod.ExtentReportConfig();
 		
-		CommonMethod.test = CommonMethod.extent.startTest("CreateEnergyMeterTest-TransitU", "Verifies if Energy meter created and added successfully").assignCategory("CheckMeter");
+		CommonMethod.test = CommonMethod.extent.startTest("CreateEnergyMeterTest-TransitUS", "Verifies if Energy meter created and added successfully").assignCategory("CreateMeter");
         ReusableMethodsLogin reuse = new ReusableMethodsLogin();
 		ReusableMethodsDataInput reuseDI = new ReusableMethodsDataInput();
 		ReusableMethodsSearch reuseSearch = new ReusableMethodsSearch();
@@ -37,7 +37,7 @@ public class EnergyMeterCreateTest extends BaseClass {
 			Error e1 = new Error(t.getMessage());
 			e1.setStackTrace(t.getStackTrace());
 			//CommonMethod.testlogError(  "<pre>" + e1.toString() + "</pre>");
-			CommonMethod.takeScreenshot( "energyMeterCreateTest-TransitU");
+			CommonMethod.takeScreenshot( "energyMeterCreateTest-TransitUS");
 			throw e1;
 		}
 	}

@@ -7,22 +7,38 @@
        <!--  <listener class-name="com.arc.driver.RetryListener"></listener> -->
 </listeners>
 
+<!-- 
+ <test name="ARCRegressionTest-LEED-for-Buildings" > -->
 
- <test name="ARCRegressionTest-LEED-for-Buildings" >
-
-<parameter name="browserName"     value="firefox"/>
-<parameter name="environment"     value="staging"/>
-<parameter name="rowNum"          value="2"/>
-<parameter name="loginSheet"      value="Login"/>
-<parameter name="buildingSheet"  value="NewBuildingProject"/>
-<parameter name="paymentSheet"    value="Payment"/>
-<parameter name="energySheet"     value="BEnergy"/>
-<parameter name="teamSheet"       value="BTeam"/>
-<parameter name="waterSheet"      value="BWater"/>
-<parameter name="wasteSheet"      value="BWaste"/>
+<parameter name="browserName" value="firefox"/>
+<parameter name="environment" value="staging"/>
+<parameter name="rowNum" value="2"/>
+<parameter name="loginSheet" value="Login"/>
+<parameter name="buildingSheet" value="NewBuildingProject"/>
+<parameter name="paymentSheet" value="Payment"/>
+<parameter name="energySheet" value="BEnergy"/>
+<parameter name="teamSheet" value="BTeam"/>
+<parameter name="waterSheet" value="BWater"/>
+<parameter name="wasteSheet" value="BWaste"/>
+<parameter name="cdataInputSheet" value="CDataInput"/>
+<parameter name="parkingSheet" value="NewParkingProject"/>
+<parameter name="citySheet" value="NewCityProject"/>
 <classes>
+
+<class name="com.arc.testcases.MyCities.LEEDforCities.EnergyMeterCreateTest"></class>
+</classes>
+<!-- <class name="com.arc.testcases.MyCities.LEEDforCities.WaterMeterCreateTest"></class>
+<class name="com.arc.testcases.MyCities.LEEDforCities.WasteGenerationMeterCreateTest"></class>
+<class name="com.arc.testcases.MyCities.LEEDforCities.WastediversionMeterCreateTest"></class>
+<class name="com.arc.testcases.MyCities.LEEDforCities.TrasnsportionCreateMeterTest"></class>
+<class name="com.arc.testcases.MyCities.LEEDforCities.HumanExpCreateSurveyTest"></class>
+<class name="com.arc.testcases.MyCities.LEEDforCities.AdditionalDeatilsCreateMeterTest"/>
+
+<class name="com.arc.testcases.MyBuildings.LEEDfortransit.CalculateWeightedOccupancyTest">
+ -->
+
  
- <!-- <class name="com.arc.testcases.MyBuildings.LEED.USBuildingLEEDv4Test"/> -->
+ <!-- <class name="com.arc.testcases.MyBuildings.LEED.USBuildingLEEDv4Test"/>
  <class name="com.arc.testcases.MyBuildings.LEED.LoginCaseTest"></class>
  <class name="com.arc.testcases.MyBuildings.LEED.ClickSearchedProgramTest"></class>
  <class name="com.arc.testcases.MyBuildings.LEED.AddNewProjectTest"></class>
@@ -60,8 +76,8 @@
  
 </classes>
 </test>
- 
-<!-- other none same -->
+ -->
+<!-- 
 <test name="ARCRegressionTest-Building-None">
 
 <parameter name="browserName" value="firefox"/>
@@ -76,8 +92,6 @@
 <parameter name="wasteSheet" value="BWaste"/>
 
 <classes>
-
-
 <class name="com.arc.testcases.MyBuildings.None.LoginCaseTest"></class>
 <class name="com.arc.testcases.MyBuildings.None.ClickSearchedProgramTest"></class>
 <class name="com.arc.testcases.MyBuildings.None.AddNewProjectTest"></class>
@@ -429,9 +443,7 @@
 <parameter name="waterSheet" value="BWater"/>
 <parameter name="wasteSheet" value="BWaste"/>
 <classes>
- 
-
-<class name="com.arc.testcases.MyCommunities.None.LoginCaseTest"/>
+ <class name="com.arc.testcases.MyCommunities.None.LoginCaseTest"/>
 <class name="com.arc.testcases.MyCommunities.None.AddNewProjectTest"/>
 <class name="com.arc.testcases.MyCommunities.None.SearchProgramTest"/>
 <class name="com.arc.testcases.MyCommunities.None.ClickSearchedProgramTest"/>
@@ -452,5 +464,5 @@
 
 </classes>
 </test>
- 
+  -->
 </suite>  

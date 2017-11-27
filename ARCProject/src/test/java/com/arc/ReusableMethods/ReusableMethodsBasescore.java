@@ -117,15 +117,8 @@ for(int i=0;i<=17;i++){
 	
 	System.out.println(CommonMethod.basepointFilePdf);
 	
-	//Thread.sleep(6000);
-	/*WebDriverWait wait = new WebDriverWait(driver, 15);
-	wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(".//*[@class='messenger-message-inner']")));
-	*/
-	CommonMethod.WaitUntilVisibility("pdfFileUploaded");
-	
-	//CommonMethod.FluentWait("InfoMessage");
-	//CommonMethod.assertEqualsmessage( "InfoMessage", "File successfully uploaded.", "something went wrong");
-	
+	WebDriverWait wait = new WebDriverWait(driver, 5);
+    wait.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath(".//*[@id='uploaded_files']/p[1]/img")));
 	CommonMethod.Isdisplayed("pdfFileUploaded", "File Not  Uploaded Successfully");
 	
 	CommonMethod.click( "NextButtonprerequisites");
@@ -150,12 +143,9 @@ for(int i=0;i<=22;i++){
 	
 	CommonMethod.sendKeys("UploadBasePointHidden", CommonMethod.basepointFilePdf);
 	
-	/*CommonMethod.FluentWait( "BclickFileUpload");
-    CommonMethod.moveToElement( "BclickFileUpload");
-	CommonMethod.click( "BclickFileUpload");
-	Runtime.getRuntime().exec(System.getProperty("user.dir")+"/ARCDataTemplete/PdfScript.exe");
-	*/Thread.sleep(6000);
-	CommonMethod.assertEqualsmessage( "InfoMessage", "File successfully uploaded.", "something went wrong");
+	Thread.sleep(6000);
+	WebDriverWait wait = new WebDriverWait(driver, 10);
+    wait.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath(".//*[@id='uploaded_files']/p[1]/img")));
 	
 	CommonMethod.click( "NextButtonprerequisites");
 	CommonMethod.testlog( "Pass","Clicking on Next button");

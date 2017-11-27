@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>ARCRegressionTest-None-for-Communities</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>16/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>1/0/6</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Nov 20 18:40:12 IST 2017</td>
+<td>Started on:</td><td>Sun Nov 26 16:35:32 IST 2017</td>
 </tr>
-<tr><td>Total time:</td><td>1241 seconds (1241423 ms)</td>
+<tr><td>Total time:</td><td>600 seconds (600433 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,68 +67,41 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td width="30%"><b>Exception</b></td>
 <td width="10%"><b>Time (seconds)</b></td>
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.arc.testcases.MyCommunities.None.PerformanceReviewTest.waterFileUploadTest()'><b>waterFileUploadTest</b><br>Test class: com.arc.testcases.MyCommunities.None.PerformanceReviewTest<br>Parameters: 4, NewCommunityProject, Payment, Login</td>
-<td><div><pre>java.lang.Error: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[text()=\&quot;Successfully Submitted\&quot;]&quot;}
-Command duration or timeout: 60.07 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
-System info: host: &apos;G10GNLT049&apos;, ip: &apos;192.168.0.100&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_151&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=32.0.2, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 0aed8a4f-b039-415f-bf1a-8d6c76b2a0f7
-*** Element info: {Using=xpath, value=//span[text()=&quot;Successfully Submitted&quot;]}
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-	at com.arc.driver.CommonMethod.findElement(CommonMethod.java:86)
-	at com.arc.driver.CommonMethod.getText(CommonMethod.java:177)
-	at com.arc.ReusableMethods.ReusableMethodsReviewCertification.verifySuccessfullySubmittedPayment(ReusableMethodsReviewCertification.java:258)
-	at com.arc.testcases.MyCommunities.None.PerformanceReviewTest.waterFileUploadTest(PerformanceReviewTest.java:32)
-... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace197449185", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace197449185'><pre>java.lang.Error: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[text()=\&quot;Successfully Submitted\&quot;]&quot;}
-Command duration or timeout: 60.07 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
-System info: host: &apos;G10GNLT049&apos;, ip: &apos;192.168.0.100&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_151&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=32.0.2, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 0aed8a4f-b039-415f-bf1a-8d6c76b2a0f7
-*** Element info: {Using=xpath, value=//span[text()=&quot;Successfully Submitted&quot;]}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-	at com.arc.driver.CommonMethod.findElement(CommonMethod.java:86)
-	at com.arc.driver.CommonMethod.getText(CommonMethod.java:177)
-	at com.arc.ReusableMethods.ReusableMethodsReviewCertification.verifySuccessfullySubmittedPayment(ReusableMethodsReviewCertification.java:258)
-	at com.arc.testcases.MyCommunities.None.PerformanceReviewTest.waterFileUploadTest(PerformanceReviewTest.java:32)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+<td title='com.arc.testcases.MyCommunities.None.EnergyMeterCreateTest.energyMeterCreate()'><b>energyMeterCreate</b><br>Test class: com.arc.testcases.MyCommunities.None.EnergyMeterCreateTest<br>Parameters: 4, Login, NewCommunityProject, CDataInput</td>
+<td></td>
+<td>115</td>
+<td>com.arc.testcases.MyCommunities.None.EnergyMeterCreateTest@56235b8e</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.arc.testcases.MyCommunities.None.AdditionalDeatilsCreateMeterTest.aditioanalFieldMeterCreate()'><b>aditioanalFieldMeterCreate</b><br>Test class: com.arc.testcases.MyCommunities.None.AdditionalDeatilsCreateMeterTest</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;citySheet&apos; is required by @Test on method aditioanalFieldMeterCreate but has not been marked @Optional or defined
+in C:\Users\Lenovo\Documents\Abhishek\ARCProject\src\main\resources\TestNg-Community.xml
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1343835789", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1343835789'><pre>org.testng.TestNGException: 
+Parameter &apos;citySheet&apos; is required by @Test on method aditioanalFieldMeterCreate but has not been marked @Optional or defined
+in C:\Users\Lenovo\Documents\Abhishek\ARCProject\src\main\resources\TestNg-Community.xml
+	at org.testng.internal.Parameters.createParameters(Parameters.java:154)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:361)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:451)
+	at org.testng.internal.Invoker.handleParameters(Invoker.java:1270)
+	at org.testng.internal.Invoker.createParameters(Invoker.java:985)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1075)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
 	at org.testng.TestRunner.privateRun(TestRunner.java:774)
@@ -146,96 +119,178 @@ Session ID: 0aed8a4f-b039-415f-bf1a-8d6c76b2a0f7
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
 </pre></div></td>
-<td>122</td>
-<td>com.arc.testcases.MyCommunities.None.PerformanceReviewTest@3e9b1010</td></tr>
-</table><p>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
+<td>0</td>
+<td>com.arc.testcases.MyCommunities.None.AdditionalDeatilsCreateMeterTest@527740a2</td></tr>
 <tr>
-<td title='com.arc.testcases.MyCommunities.None.AddNewProjectTest.addNewProject()'><b>addNewProject</b><br>Test class: com.arc.testcases.MyCommunities.None.AddNewProjectTest<br>Parameters: 4, Login, NewCommunityProject</td>
-<td></td>
-<td>54</td>
-<td>com.arc.testcases.MyCommunities.None.AddNewProjectTest@6fc6f14e</td></tr>
+<td title='com.arc.testcases.MyCommunities.None.HumanExpCreateSurveyTest.humanExperienceMeterCreate()'><b>humanExperienceMeterCreate</b><br>Test class: com.arc.testcases.MyCommunities.None.HumanExpCreateSurveyTest</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;citySheet&apos; is required by @Test on method humanExperienceMeterCreate but has not been marked @Optional or defined
+in C:\Users\Lenovo\Documents\Abhishek\ARCProject\src\main\resources\TestNg-Community.xml
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace627746290", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace627746290'><pre>org.testng.TestNGException: 
+Parameter &apos;citySheet&apos; is required by @Test on method humanExperienceMeterCreate but has not been marked @Optional or defined
+in C:\Users\Lenovo\Documents\Abhishek\ARCProject\src\main\resources\TestNg-Community.xml
+	at org.testng.internal.Parameters.createParameters(Parameters.java:154)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:361)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:451)
+	at org.testng.internal.Invoker.handleParameters(Invoker.java:1270)
+	at org.testng.internal.Invoker.createParameters(Invoker.java:985)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1075)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1191)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.run(TestNG.java:1024)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+</pre></div></td>
+<td>0</td>
+<td>com.arc.testcases.MyCommunities.None.HumanExpCreateSurveyTest@6d7b4f4c</td></tr>
 <tr>
-<td title='com.arc.testcases.MyCommunities.None.AddTeamMemberTest.addTeamMember()'><b>addTeamMember</b><br>Test class: com.arc.testcases.MyCommunities.None.AddTeamMemberTest<br>Parameters: 4, Login, NewCommunityProject, BTeam</td>
-<td></td>
-<td>47</td>
-<td>com.arc.testcases.MyCommunities.None.AddTeamMemberTest@6b09bb57</td></tr>
+<td title='com.arc.testcases.MyCommunities.None.TrasnsportionCreateMeterTest.transprotionMeterCreate()'><b>transprotionMeterCreate</b><br>Test class: com.arc.testcases.MyCommunities.None.TrasnsportionCreateMeterTest</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;citySheet&apos; is required by @Test on method transprotionMeterCreate but has not been marked @Optional or defined
+in C:\Users\Lenovo\Documents\Abhishek\ARCProject\src\main\resources\TestNg-Community.xml
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace131301148", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace131301148'><pre>org.testng.TestNGException: 
+Parameter &apos;citySheet&apos; is required by @Test on method transprotionMeterCreate but has not been marked @Optional or defined
+in C:\Users\Lenovo\Documents\Abhishek\ARCProject\src\main\resources\TestNg-Community.xml
+	at org.testng.internal.Parameters.createParameters(Parameters.java:154)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:361)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:451)
+	at org.testng.internal.Invoker.handleParameters(Invoker.java:1270)
+	at org.testng.internal.Invoker.createParameters(Invoker.java:985)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1075)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1191)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.run(TestNG.java:1024)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+</pre></div></td>
+<td>0</td>
+<td>com.arc.testcases.MyCommunities.None.TrasnsportionCreateMeterTest@4e9ba398</td></tr>
 <tr>
-<td title='com.arc.testcases.MyCommunities.None.BillingDateVerificationTest.billingDateVerification()'><b>billingDateVerification</b><br>Test class: com.arc.testcases.MyCommunities.None.BillingDateVerificationTest<br>Parameters: 4, Login, NewCommunityProject</td>
-<td></td>
-<td>36</td>
-<td>com.arc.testcases.MyCommunities.None.BillingDateVerificationTest@185d8b6</td></tr>
+<td title='com.arc.testcases.MyCommunities.None.WasteGenerationMeterCreateTest.wasteMeterCreate()'><b>wasteMeterCreate</b><br>Test class: com.arc.testcases.MyCommunities.None.WasteGenerationMeterCreateTest</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;citySheet&apos; is required by @Test on method wasteMeterCreate but has not been marked @Optional or defined
+in C:\Users\Lenovo\Documents\Abhishek\ARCProject\src\main\resources\TestNg-Community.xml
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace525527919", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace525527919'><pre>org.testng.TestNGException: 
+Parameter &apos;citySheet&apos; is required by @Test on method wasteMeterCreate but has not been marked @Optional or defined
+in C:\Users\Lenovo\Documents\Abhishek\ARCProject\src\main\resources\TestNg-Community.xml
+	at org.testng.internal.Parameters.createParameters(Parameters.java:154)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:361)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:451)
+	at org.testng.internal.Invoker.handleParameters(Invoker.java:1270)
+	at org.testng.internal.Invoker.createParameters(Invoker.java:985)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1075)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1191)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.run(TestNG.java:1024)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+</pre></div></td>
+<td>0</td>
+<td>com.arc.testcases.MyCommunities.None.WasteGenerationMeterCreateTest@5abca1e0</td></tr>
 <tr>
-<td title='com.arc.testcases.MyCommunities.None.BillingRegistrationAmountVerificationTest.billingRegistrationAmountVerification()'><b>billingRegistrationAmountVerification</b><br>Test class: com.arc.testcases.MyCommunities.None.BillingRegistrationAmountVerificationTest<br>Parameters: 4, Login, NewCommunityProject</td>
-<td></td>
-<td>46</td>
-<td>com.arc.testcases.MyCommunities.None.BillingRegistrationAmountVerificationTest@67784306</td></tr>
+<td title='com.arc.testcases.MyCommunities.None.WastediversionMeterCreateTest.wasteMeterCreate()'><b>wasteMeterCreate</b><br>Test class: com.arc.testcases.MyCommunities.None.WastediversionMeterCreateTest</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;citySheet&apos; is required by @Test on method wasteMeterCreate but has not been marked @Optional or defined
+in C:\Users\Lenovo\Documents\Abhishek\ARCProject\src\main\resources\TestNg-Community.xml
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace911561694", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace911561694'><pre>org.testng.TestNGException: 
+Parameter &apos;citySheet&apos; is required by @Test on method wasteMeterCreate but has not been marked @Optional or defined
+in C:\Users\Lenovo\Documents\Abhishek\ARCProject\src\main\resources\TestNg-Community.xml
+	at org.testng.internal.Parameters.createParameters(Parameters.java:154)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:361)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:451)
+	at org.testng.internal.Invoker.handleParameters(Invoker.java:1270)
+	at org.testng.internal.Invoker.createParameters(Invoker.java:985)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1075)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1191)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.run(TestNG.java:1024)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+</pre></div></td>
+<td>0</td>
+<td>com.arc.testcases.MyCommunities.None.WastediversionMeterCreateTest@2286778</td></tr>
 <tr>
-<td title='com.arc.testcases.MyCommunities.None.BillingStatusVerificationTest.billingStatusVerification()'><b>billingStatusVerification</b><br>Test class: com.arc.testcases.MyCommunities.None.BillingStatusVerificationTest<br>Parameters: 4, Login, NewCommunityProject</td>
-<td></td>
-<td>35</td>
-<td>com.arc.testcases.MyCommunities.None.BillingStatusVerificationTest@335eadca</td></tr>
-<tr>
-<td title='com.arc.testcases.MyCommunities.None.ClickSearchedProgramTest.clickSearchedProgram()'><b>clickSearchedProgram</b><br>Test class: com.arc.testcases.MyCommunities.None.ClickSearchedProgramTest<br>Parameters: 4, Login, NewCommunityProject</td>
-<td></td>
-<td>24</td>
-<td>com.arc.testcases.MyCommunities.None.ClickSearchedProgramTest@5abca1e0</td></tr>
-<tr>
-<td title='com.arc.testcases.MyCommunities.None.EditMemberRoleManagerTest.editMemberRoleManager()'><b>editMemberRoleManager</b><br>Test class: com.arc.testcases.MyCommunities.None.EditMemberRoleManagerTest<br>Parameters: 4, Login, NewCommunityProject</td>
-<td></td>
-<td>50</td>
-<td>com.arc.testcases.MyCommunities.None.EditMemberRoleManagerTest@6536e911</td></tr>
-<tr>
-<td title='com.arc.testcases.MyCommunities.None.EditProjectDetailsTest.editProjectDetails()'><b>editProjectDetails</b><br>Test class: com.arc.testcases.MyCommunities.None.EditProjectDetailsTest<br>Parameters: 4, Login, NewCommunityProject</td>
-<td></td>
-<td>55</td>
-<td>com.arc.testcases.MyCommunities.None.EditProjectDetailsTest@13a5fe33</td></tr>
-<tr>
-<td title='com.arc.testcases.MyCommunities.None.InstallAllAppsTest.installAllApps()'><b>installAllApps</b><br>Test class: com.arc.testcases.MyCommunities.None.InstallAllAppsTest<br>Parameters: 4, Login, NewCommunityProject</td>
-<td></td>
-<td>42</td>
-<td>com.arc.testcases.MyCommunities.None.InstallAllAppsTest@6f1fba17</td></tr>
-<tr>
-<td title='com.arc.testcases.MyCommunities.None.LoginCaseTest.loginCase()'><b>loginCase</b><br>Test class: com.arc.testcases.MyCommunities.None.LoginCaseTest<br>Parameters: 4, Login</td>
-<td></td>
-<td>28</td>
-<td>com.arc.testcases.MyCommunities.None.LoginCaseTest@20398b7c</td></tr>
-<tr>
-<td title='com.arc.testcases.MyCommunities.None.PaymentbyCCTest.paymentbyCC()'><b>paymentbyCC</b><br>Test class: com.arc.testcases.MyCommunities.None.PaymentbyCCTest<br>Parameters: 4, Login, NewCommunityProject, Payment</td>
-<td></td>
-<td>57</td>
-<td>com.arc.testcases.MyCommunities.None.PaymentbyCCTest@2286778</td></tr>
-<tr>
-<td title='com.arc.testcases.MyCommunities.None.ProjectDetailsVerificationTest.projectDetailsVerification()'><b>projectDetailsVerification</b><br>Test class: com.arc.testcases.MyCommunities.None.ProjectDetailsVerificationTest<br>Parameters: 4, Login, NewCommunityProject</td>
-<td></td>
-<td>40</td>
-<td>com.arc.testcases.MyCommunities.None.ProjectDetailsVerificationTest@5f9d02cb</td></tr>
-<tr>
-<td title='com.arc.testcases.MyCommunities.None.ProjectFieldVerificationTest.projectFieldVerification()'><b>projectFieldVerification</b><br>Test class: com.arc.testcases.MyCommunities.None.ProjectFieldVerificationTest<br>Parameters: 4, Login, NewCommunityProject</td>
-<td></td>
-<td>38</td>
-<td>com.arc.testcases.MyCommunities.None.ProjectFieldVerificationTest@370736d9</td></tr>
-<tr>
-<td title='com.arc.testcases.MyCommunities.None.SearchProgramTest.searchProgram()'><b>searchProgram</b><br>Test class: com.arc.testcases.MyCommunities.None.SearchProgramTest<br>Parameters: 4, Login, NewCommunityProject</td>
-<td></td>
-<td>44</td>
-<td>com.arc.testcases.MyCommunities.None.SearchProgramTest@56235b8e</td></tr>
-<tr>
-<td title='com.arc.testcases.MyCommunities.None.VerifyAgreementFileDownloadTest.verifyAgreementFileDownload()'><b>verifyAgreementFileDownload</b><br>Test class: com.arc.testcases.MyCommunities.None.VerifyAgreementFileDownloadTest<br>Parameters: 4, Login, NewCommunityProject</td>
-<td></td>
-<td>51</td>
-<td>com.arc.testcases.MyCommunities.None.VerifyAgreementFileDownloadTest@18eed359</td></tr>
-<tr>
-<td title='com.arc.testcases.MyCommunities.None.VerifyCertificationStatusTest.verifyCertificationStatus()'><b>verifyCertificationStatus</b><br>Test class: com.arc.testcases.MyCommunities.None.VerifyCertificationStatusTest<br>Parameters: 4, Login, NewCommunityProject</td>
-<td></td>
-<td>37</td>
-<td>com.arc.testcases.MyCommunities.None.VerifyCertificationStatusTest@6c3708b3</td></tr>
+<td title='com.arc.testcases.MyCommunities.None.WaterMeterCreateTest.waterMeterCreate()'><b>waterMeterCreate</b><br>Test class: com.arc.testcases.MyCommunities.None.WaterMeterCreateTest</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;citySheet&apos; is required by @Test on method waterMeterCreate but has not been marked @Optional or defined
+in C:\Users\Lenovo\Documents\Abhishek\ARCProject\src\main\resources\TestNg-Community.xml
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1415979460", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1415979460'><pre>org.testng.TestNGException: 
+Parameter &apos;citySheet&apos; is required by @Test on method waterMeterCreate but has not been marked @Optional or defined
+in C:\Users\Lenovo\Documents\Abhishek\ARCProject\src\main\resources\TestNg-Community.xml
+	at org.testng.internal.Parameters.createParameters(Parameters.java:154)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:361)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:451)
+	at org.testng.internal.Invoker.handleParameters(Invoker.java:1270)
+	at org.testng.internal.Invoker.createParameters(Invoker.java:985)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1075)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1191)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.run(TestNG.java:1024)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+</pre></div></td>
+<td>0</td>
+<td>com.arc.testcases.MyCommunities.None.WaterMeterCreateTest@3632be31</td></tr>
 </table><p>
 </body>
 </html>

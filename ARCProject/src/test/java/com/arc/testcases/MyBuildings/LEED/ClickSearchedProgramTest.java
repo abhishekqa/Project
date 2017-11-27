@@ -18,8 +18,8 @@ import com.relevantcodes.extentreports.LogStatus;
 public class ClickSearchedProgramTest extends BaseClass {
 
 	@Test//(dependsOnMethods = { "com.arc.testcases.MyBuildings.LEED.LoginCaseTest.loginCase"})
-	@Parameters({"rowNum" ,"loginSheet"})
-	public void clickSearchedProgram(int rowNum, String loginSheet) throws IOException {
+	@Parameters({"rowNum" ,"loginSheet","buildingSheet"})
+	public void clickSearchedProgram(int rowNum, String loginSheet, String buildingSheet) throws IOException {
 		
 		System.out.println(Thread.currentThread().getStackTrace()[1].getMethodName());
 		CommonMethod.ExtentReportConfig();
@@ -31,7 +31,7 @@ public class ClickSearchedProgramTest extends BaseClass {
 		try {
 			
 			reuse.LoginToArc(rowNum, "My Projects",loginSheet);
-			reuseSearch.VerifySearchedProgram( "1000137567");
+			reuseSearch.VerifySearchedProgram(data.getCellData(buildingSheet, "Project Name", rowNum));
 			
 
 		} catch (Throwable t) {

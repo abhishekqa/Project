@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="18" failed="0" total="21" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="SanityTestCasesSuite" duration-ms="141961" started-at="2017-11-23T08:15:14Z" finished-at="2017-11-23T08:17:36Z">
+  <suite name="SanityTestCasesSuite" duration-ms="4772881" started-at="2017-11-26T09:56:00Z" finished-at="2017-11-26T11:15:32Z">
     <groups>
     </groups>
-    <test name="ARCRegressionTest-LEED-for-Buildings" duration-ms="141793" started-at="2017-11-23T08:15:14Z" finished-at="2017-11-23T08:17:36Z">
-      <class name="com.arc.testcases.MyBuildings.LEED.BasePointPdfFileUplaod">
-        <test-method status="PASS" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.LEED.BasePointPdfFileUplaod@1ce92674]" name="setup" is-config="true" duration-ms="24171" started-at="2017-11-23T13:45:14Z" finished-at="2017-11-23T13:45:39Z">
+    <test name="ARCRegressionTest-LEED-for-Communities" duration-ms="1269053" started-at="2017-11-26T09:56:00Z" finished-at="2017-11-26T10:17:09Z">
+      <class name="com.arc.testcases.MyCommunities.LEEDforCommunities.WastediversionMeterCreateTest">
+        <test-method status="PASS" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyCommunities.LEEDforCommunities.WastediversionMeterCreateTest@56ac3a89]" name="setup" is-config="true" duration-ms="137477" started-at="2017-11-26T15:42:39Z" finished-at="2017-11-26T15:44:57Z">
           <params>
             <param index="0">
               <value>
@@ -23,7 +23,282 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="baseScoreAttempt(int, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.LEED.BasePointPdfFileUplaod@1ce92674]" name="baseScoreAttempt" duration-ms="116100" started-at="2017-11-23T13:45:39Z" finished-at="2017-11-23T13:47:35Z">
+        <test-method status="SKIP" signature="wasteMeterCreate(int, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyCommunities.LEEDforCommunities.WastediversionMeterCreateTest@56ac3a89]" name="wasteMeterCreate" duration-ms="0" started-at="2017-11-26T15:44:57Z" finished-at="2017-11-26T15:44:57Z">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'citySheet' is required by @Test on method wasteMeterCreate but has not been marked @Optional or defined
+in C:\Users\Lenovo\Documents\Abhishek\ARCProject\src\main\resources\TestNg-Community.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'citySheet' is required by @Test on method wasteMeterCreate but has not been marked @Optional or defined
+in C:\Users\Lenovo\Documents\Abhishek\ARCProject\src\main\resources\TestNg-Community.xml
+	at org.testng.internal.Parameters.createParameters(Parameters.java:154)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:361)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:451)
+	at org.testng.internal.Invoker.handleParameters(Invoker.java:1270)
+	at org.testng.internal.Invoker.createParameters(Invoker.java:985)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1075)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1191)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.run(TestNG.java:1024)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wasteMeterCreate -->
+        <test-method status="PASS" signature="end()[pri:0, instance:com.arc.testcases.MyCommunities.LEEDforCommunities.WastediversionMeterCreateTest@56ac3a89]" name="end" is-config="true" duration-ms="1022" started-at="2017-11-26T15:44:57Z" finished-at="2017-11-26T15:44:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- end -->
+      </class> <!-- com.arc.testcases.MyCommunities.LEEDforCommunities.WastediversionMeterCreateTest -->
+      <class name="com.arc.testcases.MyCommunities.LEEDforCommunities.WasteGenerationMeterCreateTest">
+        <test-method status="FAIL" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyCommunities.LEEDforCommunities.WasteGenerationMeterCreateTest@490ab905]" name="setup" is-config="true" duration-ms="0" started-at="2017-11-26T15:39:46Z" finished-at="2017-11-26T15:39:46Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[staging]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.remote.UnreachableBrowserException">
+            <message>
+              <![CDATA[Error communicating with the remote browser. It may have died.
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'G10GNLT049', ip: '192.168.0.102', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_151'
+Driver info: driver.version: RemoteWebDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=46.0, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: b8a0c67b-66d4-46b1-9943-a2a40bb75f52]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'G10GNLT049', ip: '192.168.0.102', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_151'
+Driver info: driver.version: RemoteWebDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=46.0, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: b8a0c67b-66d4-46b1-9943-a2a40bb75f52
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:665)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:316)
+	at com.arc.driver.BaseClass.setup(BaseClass.java:147)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:510)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:211)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:170)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:104)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1191)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.run(TestNG.java:1024)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:7055 [/127.0.0.1] failed: Connection refused: connect
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:151)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:71)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.openqa.selenium.remote.internal.ApacheHttpClient.fallBackExecute(ApacheHttpClient.java:162)
+	at org.openqa.selenium.remote.internal.ApacheHttpClient.execute(ApacheHttpClient.java:90)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:142)
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.execute(NewProfileExtensionConnection.java:160)
+	at org.openqa.selenium.firefox.FirefoxDriver$LazyCommandExecutor.execute(FirefoxDriver.java:380)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:644)
+	... 26 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:74)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:134)
+	... 41 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.remote.UnreachableBrowserException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="SKIP" signature="wasteMeterCreate(int, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyCommunities.LEEDforCommunities.WasteGenerationMeterCreateTest@490ab905]" name="wasteMeterCreate" duration-ms="0" started-at="2017-11-26T15:42:38Z" finished-at="2017-11-26T15:42:38Z">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'citySheet' is required by @Test on method wasteMeterCreate but has not been marked @Optional or defined
+in C:\Users\Lenovo\Documents\Abhishek\ARCProject\src\main\resources\TestNg-Community.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'citySheet' is required by @Test on method wasteMeterCreate but has not been marked @Optional or defined
+in C:\Users\Lenovo\Documents\Abhishek\ARCProject\src\main\resources\TestNg-Community.xml
+	at org.testng.internal.Parameters.createParameters(Parameters.java:154)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:361)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:451)
+	at org.testng.internal.Invoker.handleParameters(Invoker.java:1270)
+	at org.testng.internal.Invoker.createParameters(Invoker.java:985)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1075)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1191)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.run(TestNG.java:1024)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wasteMeterCreate -->
+        <test-method status="FAIL" signature="end()[pri:0, instance:com.arc.testcases.MyCommunities.LEEDforCommunities.WasteGenerationMeterCreateTest@490ab905]" name="end" is-config="true" duration-ms="0" started-at="2017-11-26T15:42:38Z" finished-at="2017-11-26T15:42:38Z">
+          <exception class="org.openqa.selenium.remote.UnreachableBrowserException">
+            <message>
+              <![CDATA[Error communicating with the remote browser. It may have died.
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'G10GNLT049', ip: '192.168.0.102', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_151'
+Driver info: driver.version: RemoteWebDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=46.0, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: b8a0c67b-66d4-46b1-9943-a2a40bb75f52]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'G10GNLT049', ip: '192.168.0.102', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_151'
+Driver info: driver.version: RemoteWebDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=46.0, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: b8a0c67b-66d4-46b1-9943-a2a40bb75f52
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:665)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:701)
+	at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:526)
+	at com.arc.driver.BaseClass.end(BaseClass.java:185)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:510)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:211)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
+	at org.testng.internal.TestMethodWorker.invokeAfterClassMethods(TestMethodWorker.java:220)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1191)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.run(TestNG.java:1024)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:7055 [/127.0.0.1] failed: Connection refused: connect
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:151)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:71)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.openqa.selenium.remote.internal.ApacheHttpClient.fallBackExecute(ApacheHttpClient.java:144)
+	at org.openqa.selenium.remote.internal.ApacheHttpClient.execute(ApacheHttpClient.java:90)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:142)
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.execute(NewProfileExtensionConnection.java:160)
+	at org.openqa.selenium.firefox.FirefoxDriver$LazyCommandExecutor.execute(FirefoxDriver.java:380)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:644)
+	... 27 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:74)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:134)
+	... 42 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.remote.UnreachableBrowserException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- end -->
+      </class> <!-- com.arc.testcases.MyCommunities.LEEDforCommunities.WasteGenerationMeterCreateTest -->
+      <class name="com.arc.testcases.MyCommunities.LEEDforCommunities.EnergyMeterCreateTest">
+        <test-method status="PASS" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyCommunities.LEEDforCommunities.EnergyMeterCreateTest@3f49dace]" name="setup" is-config="true" duration-ms="259565" started-at="2017-11-26T15:26:00Z" finished-at="2017-11-26T15:30:19Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[staging]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="energyMeterCreate(int, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyCommunities.LEEDforCommunities.EnergyMeterCreateTest@3f49dace]" name="energyMeterCreate" duration-ms="165531" started-at="2017-11-26T15:30:19Z" finished-at="2017-11-26T15:33:05Z">
           <params>
             <param index="0">
               <value>
@@ -32,40 +307,1199 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[NewBuildingProject]]>
+                <![CDATA[Login]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[Login]]>
+                <![CDATA[NewCommunityProject]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[CDataInput]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- baseScoreAttempt -->
-        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.arc.testcases.MyBuildings.LEED.BasePointPdfFileUplaod@1ce92674]" name="teardown" is-config="true" duration-ms="458" started-at="2017-11-23T13:47:35Z" finished-at="2017-11-23T13:47:35Z">
+        </test-method> <!-- energyMeterCreate -->
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.arc.testcases.MyCommunities.LEEDforCommunities.EnergyMeterCreateTest@3f49dace]" name="teardown" is-config="true" duration-ms="478" started-at="2017-11-26T15:33:05Z" finished-at="2017-11-26T15:33:05Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=baseScoreAttempt status=SUCCESS method=BasePointPdfFileUplaod.baseScoreAttempt(int, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.LEED.BasePointPdfFileUplaod@1ce92674] output={null}]]]>
+                <![CDATA[[TestResult name=energyMeterCreate status=SUCCESS method=EnergyMeterCreateTest.energyMeterCreate(int, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyCommunities.LEEDforCommunities.EnergyMeterCreateTest@3f49dace] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method status="PASS" signature="end()[pri:0, instance:com.arc.testcases.MyBuildings.LEED.BasePointPdfFileUplaod@1ce92674]" name="end" is-config="true" duration-ms="1040" started-at="2017-11-23T13:47:35Z" finished-at="2017-11-23T13:47:36Z">
+        <test-method status="PASS" signature="end()[pri:0, instance:com.arc.testcases.MyCommunities.LEEDforCommunities.EnergyMeterCreateTest@3f49dace]" name="end" is-config="true" duration-ms="1562" started-at="2017-11-26T15:33:05Z" finished-at="2017-11-26T15:33:07Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- end -->
-      </class> <!-- com.arc.testcases.MyBuildings.LEED.BasePointPdfFileUplaod -->
-    </test> <!-- ARCRegressionTest-LEED-for-Buildings -->
-    <test name="ARCRegressionTest-Building-None" duration-ms="2" started-at="2017-11-23T08:17:36Z" finished-at="2017-11-23T08:17:36Z">
-    </test> <!-- ARCRegressionTest-Building-None -->
-    <test name="ARCRegressionTest-Building-Other" duration-ms="3" started-at="2017-11-23T08:17:36Z" finished-at="2017-11-23T08:17:36Z">
-    </test> <!-- ARCRegressionTest-Building-Other -->
-    <test name="ARCRegressionTest-Building-Transit" duration-ms="1" started-at="2017-11-23T08:17:36Z" finished-at="2017-11-23T08:17:36Z">
-    </test> <!-- ARCRegressionTest-Building-Transit -->
+      </class> <!-- com.arc.testcases.MyCommunities.LEEDforCommunities.EnergyMeterCreateTest -->
+      <class name="com.arc.testcases.MyCommunities.LEEDforCommunities.HumanExpCreateSurveyTest">
+        <test-method status="PASS" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyCommunities.LEEDforCommunities.HumanExpCreateSurveyTest@72d818d1]" name="setup" is-config="true" duration-ms="23759" started-at="2017-11-26T15:46:19Z" finished-at="2017-11-26T15:46:42Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[staging]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="SKIP" signature="humanExperienceMeterCreate(int, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyCommunities.LEEDforCommunities.HumanExpCreateSurveyTest@72d818d1]" name="humanExperienceMeterCreate" duration-ms="0" started-at="2017-11-26T15:46:42Z" finished-at="2017-11-26T15:46:42Z">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'citySheet' is required by @Test on method humanExperienceMeterCreate but has not been marked @Optional or defined
+in C:\Users\Lenovo\Documents\Abhishek\ARCProject\src\main\resources\TestNg-Community.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'citySheet' is required by @Test on method humanExperienceMeterCreate but has not been marked @Optional or defined
+in C:\Users\Lenovo\Documents\Abhishek\ARCProject\src\main\resources\TestNg-Community.xml
+	at org.testng.internal.Parameters.createParameters(Parameters.java:154)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:361)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:451)
+	at org.testng.internal.Invoker.handleParameters(Invoker.java:1270)
+	at org.testng.internal.Invoker.createParameters(Invoker.java:985)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1075)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1191)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.run(TestNG.java:1024)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- humanExperienceMeterCreate -->
+        <test-method status="PASS" signature="end()[pri:0, instance:com.arc.testcases.MyCommunities.LEEDforCommunities.HumanExpCreateSurveyTest@72d818d1]" name="end" is-config="true" duration-ms="950" started-at="2017-11-26T15:46:42Z" finished-at="2017-11-26T15:46:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- end -->
+      </class> <!-- com.arc.testcases.MyCommunities.LEEDforCommunities.HumanExpCreateSurveyTest -->
+      <class name="com.arc.testcases.MyCommunities.LEEDforCommunities.TrasnsportionCreateMeterTest">
+        <test-method status="PASS" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyCommunities.LEEDforCommunities.TrasnsportionCreateMeterTest@27c20538]" name="setup" is-config="true" duration-ms="80185" started-at="2017-11-26T15:44:58Z" finished-at="2017-11-26T15:46:18Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[staging]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="SKIP" signature="transprotionMeterCreate(int, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyCommunities.LEEDforCommunities.TrasnsportionCreateMeterTest@27c20538]" name="transprotionMeterCreate" duration-ms="0" started-at="2017-11-26T15:46:18Z" finished-at="2017-11-26T15:46:18Z">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'citySheet' is required by @Test on method transprotionMeterCreate but has not been marked @Optional or defined
+in C:\Users\Lenovo\Documents\Abhishek\ARCProject\src\main\resources\TestNg-Community.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'citySheet' is required by @Test on method transprotionMeterCreate but has not been marked @Optional or defined
+in C:\Users\Lenovo\Documents\Abhishek\ARCProject\src\main\resources\TestNg-Community.xml
+	at org.testng.internal.Parameters.createParameters(Parameters.java:154)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:361)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:451)
+	at org.testng.internal.Invoker.handleParameters(Invoker.java:1270)
+	at org.testng.internal.Invoker.createParameters(Invoker.java:985)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1075)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1191)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.run(TestNG.java:1024)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- transprotionMeterCreate -->
+        <test-method status="PASS" signature="end()[pri:0, instance:com.arc.testcases.MyCommunities.LEEDforCommunities.TrasnsportionCreateMeterTest@27c20538]" name="end" is-config="true" duration-ms="760" started-at="2017-11-26T15:46:18Z" finished-at="2017-11-26T15:46:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- end -->
+      </class> <!-- com.arc.testcases.MyCommunities.LEEDforCommunities.TrasnsportionCreateMeterTest -->
+      <class name="com.arc.testcases.MyCommunities.LEEDforCommunities.AdditionalDeatilsCreateMeterTest">
+        <test-method status="PASS" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyCommunities.LEEDforCommunities.AdditionalDeatilsCreateMeterTest@6e06451e]" name="setup" is-config="true" duration-ms="24463" started-at="2017-11-26T15:46:43Z" finished-at="2017-11-26T15:47:08Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[staging]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="end()[pri:0, instance:com.arc.testcases.MyCommunities.LEEDforCommunities.AdditionalDeatilsCreateMeterTest@6e06451e]" name="end" is-config="true" duration-ms="797" started-at="2017-11-26T15:47:08Z" finished-at="2017-11-26T15:47:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- end -->
+        <test-method status="SKIP" signature="aditioanalFieldMeterCreate(int, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyCommunities.LEEDforCommunities.AdditionalDeatilsCreateMeterTest@6e06451e]" name="aditioanalFieldMeterCreate" duration-ms="0" started-at="2017-11-26T15:47:08Z" finished-at="2017-11-26T15:47:08Z">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'citySheet' is required by @Test on method aditioanalFieldMeterCreate but has not been marked @Optional or defined
+in C:\Users\Lenovo\Documents\Abhishek\ARCProject\src\main\resources\TestNg-Community.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'citySheet' is required by @Test on method aditioanalFieldMeterCreate but has not been marked @Optional or defined
+in C:\Users\Lenovo\Documents\Abhishek\ARCProject\src\main\resources\TestNg-Community.xml
+	at org.testng.internal.Parameters.createParameters(Parameters.java:154)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:361)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:451)
+	at org.testng.internal.Invoker.handleParameters(Invoker.java:1270)
+	at org.testng.internal.Invoker.createParameters(Invoker.java:985)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1075)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1191)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.run(TestNG.java:1024)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aditioanalFieldMeterCreate -->
+      </class> <!-- com.arc.testcases.MyCommunities.LEEDforCommunities.AdditionalDeatilsCreateMeterTest -->
+      <class name="com.arc.testcases.MyCommunities.LEEDforCommunities.WaterMeterCreateTest">
+        <test-method status="PASS" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyCommunities.LEEDforCommunities.WaterMeterCreateTest@1e397ed7]" name="setup" is-config="true" duration-ms="398082" started-at="2017-11-26T15:33:07Z" finished-at="2017-11-26T15:39:45Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[staging]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="SKIP" signature="waterMeterCreate(int, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyCommunities.LEEDforCommunities.WaterMeterCreateTest@1e397ed7]" name="waterMeterCreate" duration-ms="0" started-at="2017-11-26T15:39:45Z" finished-at="2017-11-26T15:39:45Z">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'citySheet' is required by @Test on method waterMeterCreate but has not been marked @Optional or defined
+in C:\Users\Lenovo\Documents\Abhishek\ARCProject\src\main\resources\TestNg-Community.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'citySheet' is required by @Test on method waterMeterCreate but has not been marked @Optional or defined
+in C:\Users\Lenovo\Documents\Abhishek\ARCProject\src\main\resources\TestNg-Community.xml
+	at org.testng.internal.Parameters.createParameters(Parameters.java:154)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:361)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:451)
+	at org.testng.internal.Invoker.handleParameters(Invoker.java:1270)
+	at org.testng.internal.Invoker.createParameters(Invoker.java:985)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1075)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1191)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.run(TestNG.java:1024)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- waterMeterCreate -->
+        <test-method status="PASS" signature="end()[pri:0, instance:com.arc.testcases.MyCommunities.LEEDforCommunities.WaterMeterCreateTest@1e397ed7]" name="end" is-config="true" duration-ms="1140" started-at="2017-11-26T15:39:45Z" finished-at="2017-11-26T15:39:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- end -->
+      </class> <!-- com.arc.testcases.MyCommunities.LEEDforCommunities.WaterMeterCreateTest -->
+    </test> <!-- ARCRegressionTest-LEED-for-Communities -->
+    <test name="ARCRegressionTest-Other-for-Communities" duration-ms="2903120" started-at="2017-11-26T10:17:09Z" finished-at="2017-11-26T11:05:32Z">
+      <class name="com.arc.testcases.MyCommunities.Other.HumanExpCreateSurveyTest">
+        <test-method status="PASS" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyCommunities.Other.HumanExpCreateSurveyTest@21213b92]" name="setup" is-config="true" duration-ms="326354" started-at="2017-11-26T16:24:04Z" finished-at="2017-11-26T16:29:31Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[staging]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="SKIP" signature="humanExperienceMeterCreate(int, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyCommunities.Other.HumanExpCreateSurveyTest@21213b92]" name="humanExperienceMeterCreate" duration-ms="0" started-at="2017-11-26T16:29:31Z" finished-at="2017-11-26T16:29:31Z">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'citySheet' is required by @Test on method humanExperienceMeterCreate but has not been marked @Optional or defined
+in C:\Users\Lenovo\Documents\Abhishek\ARCProject\src\main\resources\TestNg-Community.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'citySheet' is required by @Test on method humanExperienceMeterCreate but has not been marked @Optional or defined
+in C:\Users\Lenovo\Documents\Abhishek\ARCProject\src\main\resources\TestNg-Community.xml
+	at org.testng.internal.Parameters.createParameters(Parameters.java:154)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:361)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:451)
+	at org.testng.internal.Invoker.handleParameters(Invoker.java:1270)
+	at org.testng.internal.Invoker.createParameters(Invoker.java:985)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1075)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1191)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.run(TestNG.java:1024)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- humanExperienceMeterCreate -->
+        <test-method status="PASS" signature="end()[pri:0, instance:com.arc.testcases.MyCommunities.Other.HumanExpCreateSurveyTest@21213b92]" name="end" is-config="true" duration-ms="978" started-at="2017-11-26T16:29:31Z" finished-at="2017-11-26T16:29:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- end -->
+      </class> <!-- com.arc.testcases.MyCommunities.Other.HumanExpCreateSurveyTest -->
+      <class name="com.arc.testcases.MyCommunities.Other.WastediversionMeterCreateTest">
+        <test-method status="PASS" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyCommunities.Other.WastediversionMeterCreateTest@31610302]" name="setup" is-config="true" duration-ms="23130" started-at="2017-11-26T15:53:31Z" finished-at="2017-11-26T15:53:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[staging]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="SKIP" signature="wasteMeterCreate(int, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyCommunities.Other.WastediversionMeterCreateTest@31610302]" name="wasteMeterCreate" duration-ms="0" started-at="2017-11-26T15:53:54Z" finished-at="2017-11-26T15:53:54Z">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'citySheet' is required by @Test on method wasteMeterCreate but has not been marked @Optional or defined
+in C:\Users\Lenovo\Documents\Abhishek\ARCProject\src\main\resources\TestNg-Community.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'citySheet' is required by @Test on method wasteMeterCreate but has not been marked @Optional or defined
+in C:\Users\Lenovo\Documents\Abhishek\ARCProject\src\main\resources\TestNg-Community.xml
+	at org.testng.internal.Parameters.createParameters(Parameters.java:154)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:361)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:451)
+	at org.testng.internal.Invoker.handleParameters(Invoker.java:1270)
+	at org.testng.internal.Invoker.createParameters(Invoker.java:985)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1075)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1191)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.run(TestNG.java:1024)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wasteMeterCreate -->
+        <test-method status="PASS" signature="end()[pri:0, instance:com.arc.testcases.MyCommunities.Other.WastediversionMeterCreateTest@31610302]" name="end" is-config="true" duration-ms="657" started-at="2017-11-26T15:53:54Z" finished-at="2017-11-26T15:53:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- end -->
+      </class> <!-- com.arc.testcases.MyCommunities.Other.WastediversionMeterCreateTest -->
+      <class name="com.arc.testcases.MyCommunities.Other.WaterMeterCreateTest">
+        <test-method status="PASS" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyCommunities.Other.WaterMeterCreateTest@31dc339b]" name="setup" is-config="true" duration-ms="185315" started-at="2017-11-26T15:49:49Z" finished-at="2017-11-26T15:52:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[staging]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="SKIP" signature="waterMeterCreate(int, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyCommunities.Other.WaterMeterCreateTest@31dc339b]" name="waterMeterCreate" duration-ms="0" started-at="2017-11-26T15:52:54Z" finished-at="2017-11-26T15:52:54Z">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'citySheet' is required by @Test on method waterMeterCreate but has not been marked @Optional or defined
+in C:\Users\Lenovo\Documents\Abhishek\ARCProject\src\main\resources\TestNg-Community.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'citySheet' is required by @Test on method waterMeterCreate but has not been marked @Optional or defined
+in C:\Users\Lenovo\Documents\Abhishek\ARCProject\src\main\resources\TestNg-Community.xml
+	at org.testng.internal.Parameters.createParameters(Parameters.java:154)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:361)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:451)
+	at org.testng.internal.Invoker.handleParameters(Invoker.java:1270)
+	at org.testng.internal.Invoker.createParameters(Invoker.java:985)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1075)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1191)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.run(TestNG.java:1024)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- waterMeterCreate -->
+        <test-method status="PASS" signature="end()[pri:0, instance:com.arc.testcases.MyCommunities.Other.WaterMeterCreateTest@31dc339b]" name="end" is-config="true" duration-ms="579" started-at="2017-11-26T15:52:54Z" finished-at="2017-11-26T15:52:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- end -->
+      </class> <!-- com.arc.testcases.MyCommunities.Other.WaterMeterCreateTest -->
+      <class name="com.arc.testcases.MyCommunities.Other.TrasnsportionCreateMeterTest">
+        <test-method status="FAIL" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyCommunities.Other.TrasnsportionCreateMeterTest@71318ec4]" name="setup" is-config="true" duration-ms="0" started-at="2017-11-26T15:53:55Z" finished-at="2017-11-26T15:53:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[staging]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Timed out waiting for page load.
+Command duration or timeout: 1800.17 seconds
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'G10GNLT049', ip: '192.168.0.102', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_151'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=46.0, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: fcccc4fe-26e3-45bf-a5d8-51132f5f5e0b]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Timed out waiting for page load.
+Command duration or timeout: 1800.17 seconds
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'G10GNLT049', ip: '192.168.0.102', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_151'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=46.0, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: fcccc4fe-26e3-45bf-a5d8-51132f5f5e0b
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:316)
+	at com.arc.driver.BaseClass.setup(BaseClass.java:147)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:510)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:211)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:170)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:104)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1191)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.run(TestNG.java:1024)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+Caused by: org.openqa.selenium.TimeoutException: Timed out waiting for page load.
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'G10GNLT049', ip: '192.168.0.102', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_151'
+Driver info: driver.version: unknown
+	at <anonymous class>.Utils.initWebLoadingListener/<(file:///C:/Users/Lenovo/AppData/Local/Temp/anonymous1324904320066873460webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9071)
+	at <anonymous class>.WebLoadingListener/e(file:///C:/Users/Lenovo/AppData/Local/Temp/anonymous1324904320066873460webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:5142)
+	at <anonymous class>.WebLoadingListener/<(file:///C:/Users/Lenovo/AppData/Local/Temp/anonymous1324904320066873460webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:5150)
+	at <anonymous class>.fxdriver.Timer.prototype.setTimeout/<.notify(file:///C:/Users/Lenovo/AppData/Local/Temp/anonymous1324904320066873460webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:625)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="SKIP" signature="transprotionMeterCreate(int, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyCommunities.Other.TrasnsportionCreateMeterTest@71318ec4]" name="transprotionMeterCreate" duration-ms="0" started-at="2017-11-26T16:24:03Z" finished-at="2017-11-26T16:24:03Z">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'citySheet' is required by @Test on method transprotionMeterCreate but has not been marked @Optional or defined
+in C:\Users\Lenovo\Documents\Abhishek\ARCProject\src\main\resources\TestNg-Community.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'citySheet' is required by @Test on method transprotionMeterCreate but has not been marked @Optional or defined
+in C:\Users\Lenovo\Documents\Abhishek\ARCProject\src\main\resources\TestNg-Community.xml
+	at org.testng.internal.Parameters.createParameters(Parameters.java:154)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:361)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:451)
+	at org.testng.internal.Invoker.handleParameters(Invoker.java:1270)
+	at org.testng.internal.Invoker.createParameters(Invoker.java:985)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1075)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1191)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.run(TestNG.java:1024)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- transprotionMeterCreate -->
+        <test-method status="PASS" signature="end()[pri:0, instance:com.arc.testcases.MyCommunities.Other.TrasnsportionCreateMeterTest@71318ec4]" name="end" is-config="true" duration-ms="750" started-at="2017-11-26T16:24:03Z" finished-at="2017-11-26T16:24:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- end -->
+      </class> <!-- com.arc.testcases.MyCommunities.Other.TrasnsportionCreateMeterTest -->
+      <class name="com.arc.testcases.MyCommunities.Other.WasteGenerationMeterCreateTest">
+        <test-method status="PASS" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyCommunities.Other.WasteGenerationMeterCreateTest@544fe44c]" name="setup" is-config="true" duration-ms="35411" started-at="2017-11-26T15:52:55Z" finished-at="2017-11-26T15:53:30Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[staging]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="SKIP" signature="wasteMeterCreate(int, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyCommunities.Other.WasteGenerationMeterCreateTest@544fe44c]" name="wasteMeterCreate" duration-ms="0" started-at="2017-11-26T15:53:30Z" finished-at="2017-11-26T15:53:30Z">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'citySheet' is required by @Test on method wasteMeterCreate but has not been marked @Optional or defined
+in C:\Users\Lenovo\Documents\Abhishek\ARCProject\src\main\resources\TestNg-Community.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'citySheet' is required by @Test on method wasteMeterCreate but has not been marked @Optional or defined
+in C:\Users\Lenovo\Documents\Abhishek\ARCProject\src\main\resources\TestNg-Community.xml
+	at org.testng.internal.Parameters.createParameters(Parameters.java:154)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:361)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:451)
+	at org.testng.internal.Invoker.handleParameters(Invoker.java:1270)
+	at org.testng.internal.Invoker.createParameters(Invoker.java:985)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1075)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1191)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.run(TestNG.java:1024)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wasteMeterCreate -->
+        <test-method status="PASS" signature="end()[pri:0, instance:com.arc.testcases.MyCommunities.Other.WasteGenerationMeterCreateTest@544fe44c]" name="end" is-config="true" duration-ms="728" started-at="2017-11-26T15:53:30Z" finished-at="2017-11-26T15:53:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- end -->
+      </class> <!-- com.arc.testcases.MyCommunities.Other.WasteGenerationMeterCreateTest -->
+      <class name="com.arc.testcases.MyCommunities.Other.EnergyMeterCreateTest">
+        <test-method status="PASS" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyCommunities.Other.EnergyMeterCreateTest@3c0f93f1]" name="setup" is-config="true" duration-ms="26075" started-at="2017-11-26T15:47:09Z" finished-at="2017-11-26T15:47:35Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[staging]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="energyMeterCreate(int, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyCommunities.Other.EnergyMeterCreateTest@3c0f93f1]" name="energyMeterCreate" duration-ms="133227" started-at="2017-11-26T15:47:35Z" finished-at="2017-11-26T15:49:48Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Login]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[NewCommunityProject]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[CDataInput]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- energyMeterCreate -->
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.arc.testcases.MyCommunities.Other.EnergyMeterCreateTest@3c0f93f1]" name="teardown" is-config="true" duration-ms="164" started-at="2017-11-26T15:49:48Z" finished-at="2017-11-26T15:49:48Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=energyMeterCreate status=SUCCESS method=EnergyMeterCreateTest.energyMeterCreate(int, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyCommunities.Other.EnergyMeterCreateTest@3c0f93f1] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="end()[pri:0, instance:com.arc.testcases.MyCommunities.Other.EnergyMeterCreateTest@3c0f93f1]" name="end" is-config="true" duration-ms="848" started-at="2017-11-26T15:49:48Z" finished-at="2017-11-26T15:49:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- end -->
+      </class> <!-- com.arc.testcases.MyCommunities.Other.EnergyMeterCreateTest -->
+      <class name="com.arc.testcases.MyCommunities.Other.AdditionalDeatilsCreateMeterTest">
+        <test-method status="PASS" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyCommunities.Other.AdditionalDeatilsCreateMeterTest@a67c67e]" name="setup" is-config="true" duration-ms="359708" started-at="2017-11-26T16:29:32Z" finished-at="2017-11-26T16:35:31Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[staging]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="SKIP" signature="aditioanalFieldMeterCreate(int, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyCommunities.Other.AdditionalDeatilsCreateMeterTest@a67c67e]" name="aditioanalFieldMeterCreate" duration-ms="0" started-at="2017-11-26T16:35:31Z" finished-at="2017-11-26T16:35:31Z">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'citySheet' is required by @Test on method aditioanalFieldMeterCreate but has not been marked @Optional or defined
+in C:\Users\Lenovo\Documents\Abhishek\ARCProject\src\main\resources\TestNg-Community.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'citySheet' is required by @Test on method aditioanalFieldMeterCreate but has not been marked @Optional or defined
+in C:\Users\Lenovo\Documents\Abhishek\ARCProject\src\main\resources\TestNg-Community.xml
+	at org.testng.internal.Parameters.createParameters(Parameters.java:154)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:361)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:451)
+	at org.testng.internal.Invoker.handleParameters(Invoker.java:1270)
+	at org.testng.internal.Invoker.createParameters(Invoker.java:985)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1075)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1191)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.run(TestNG.java:1024)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aditioanalFieldMeterCreate -->
+        <test-method status="PASS" signature="end()[pri:0, instance:com.arc.testcases.MyCommunities.Other.AdditionalDeatilsCreateMeterTest@a67c67e]" name="end" is-config="true" duration-ms="713" started-at="2017-11-26T16:35:31Z" finished-at="2017-11-26T16:35:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- end -->
+      </class> <!-- com.arc.testcases.MyCommunities.Other.AdditionalDeatilsCreateMeterTest -->
+    </test> <!-- ARCRegressionTest-Other-for-Communities -->
+    <test name="ARCRegressionTest-None-for-Communities" duration-ms="600433" started-at="2017-11-26T11:05:32Z" finished-at="2017-11-26T11:15:32Z">
+      <class name="com.arc.testcases.MyCommunities.None.HumanExpCreateSurveyTest">
+        <test-method status="PASS" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyCommunities.None.HumanExpCreateSurveyTest@6d7b4f4c]" name="setup" is-config="true" duration-ms="32972" started-at="2017-11-26T16:44:35Z" finished-at="2017-11-26T16:45:07Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[staging]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="SKIP" signature="humanExperienceMeterCreate(int, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyCommunities.None.HumanExpCreateSurveyTest@6d7b4f4c]" name="humanExperienceMeterCreate" duration-ms="0" started-at="2017-11-26T16:45:07Z" finished-at="2017-11-26T16:45:07Z">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'citySheet' is required by @Test on method humanExperienceMeterCreate but has not been marked @Optional or defined
+in C:\Users\Lenovo\Documents\Abhishek\ARCProject\src\main\resources\TestNg-Community.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'citySheet' is required by @Test on method humanExperienceMeterCreate but has not been marked @Optional or defined
+in C:\Users\Lenovo\Documents\Abhishek\ARCProject\src\main\resources\TestNg-Community.xml
+	at org.testng.internal.Parameters.createParameters(Parameters.java:154)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:361)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:451)
+	at org.testng.internal.Invoker.handleParameters(Invoker.java:1270)
+	at org.testng.internal.Invoker.createParameters(Invoker.java:985)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1075)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1191)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.run(TestNG.java:1024)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- humanExperienceMeterCreate -->
+        <test-method status="PASS" signature="end()[pri:0, instance:com.arc.testcases.MyCommunities.None.HumanExpCreateSurveyTest@6d7b4f4c]" name="end" is-config="true" duration-ms="794" started-at="2017-11-26T16:45:07Z" finished-at="2017-11-26T16:45:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- end -->
+      </class> <!-- com.arc.testcases.MyCommunities.None.HumanExpCreateSurveyTest -->
+      <class name="com.arc.testcases.MyCommunities.None.WaterMeterCreateTest">
+        <test-method status="PASS" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyCommunities.None.WaterMeterCreateTest@3632be31]" name="setup" is-config="true" duration-ms="23073" started-at="2017-11-26T16:37:54Z" finished-at="2017-11-26T16:38:17Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[staging]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="SKIP" signature="waterMeterCreate(int, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyCommunities.None.WaterMeterCreateTest@3632be31]" name="waterMeterCreate" duration-ms="0" started-at="2017-11-26T16:38:17Z" finished-at="2017-11-26T16:38:17Z">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'citySheet' is required by @Test on method waterMeterCreate but has not been marked @Optional or defined
+in C:\Users\Lenovo\Documents\Abhishek\ARCProject\src\main\resources\TestNg-Community.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'citySheet' is required by @Test on method waterMeterCreate but has not been marked @Optional or defined
+in C:\Users\Lenovo\Documents\Abhishek\ARCProject\src\main\resources\TestNg-Community.xml
+	at org.testng.internal.Parameters.createParameters(Parameters.java:154)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:361)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:451)
+	at org.testng.internal.Invoker.handleParameters(Invoker.java:1270)
+	at org.testng.internal.Invoker.createParameters(Invoker.java:985)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1075)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1191)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.run(TestNG.java:1024)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- waterMeterCreate -->
+        <test-method status="PASS" signature="end()[pri:0, instance:com.arc.testcases.MyCommunities.None.WaterMeterCreateTest@3632be31]" name="end" is-config="true" duration-ms="826" started-at="2017-11-26T16:38:17Z" finished-at="2017-11-26T16:38:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- end -->
+      </class> <!-- com.arc.testcases.MyCommunities.None.WaterMeterCreateTest -->
+      <class name="com.arc.testcases.MyCommunities.None.WasteGenerationMeterCreateTest">
+        <test-method status="PASS" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyCommunities.None.WasteGenerationMeterCreateTest@5abca1e0]" name="setup" is-config="true" duration-ms="22987" started-at="2017-11-26T16:38:18Z" finished-at="2017-11-26T16:38:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[staging]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="SKIP" signature="wasteMeterCreate(int, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyCommunities.None.WasteGenerationMeterCreateTest@5abca1e0]" name="wasteMeterCreate" duration-ms="0" started-at="2017-11-26T16:38:41Z" finished-at="2017-11-26T16:38:41Z">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'citySheet' is required by @Test on method wasteMeterCreate but has not been marked @Optional or defined
+in C:\Users\Lenovo\Documents\Abhishek\ARCProject\src\main\resources\TestNg-Community.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'citySheet' is required by @Test on method wasteMeterCreate but has not been marked @Optional or defined
+in C:\Users\Lenovo\Documents\Abhishek\ARCProject\src\main\resources\TestNg-Community.xml
+	at org.testng.internal.Parameters.createParameters(Parameters.java:154)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:361)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:451)
+	at org.testng.internal.Invoker.handleParameters(Invoker.java:1270)
+	at org.testng.internal.Invoker.createParameters(Invoker.java:985)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1075)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1191)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.run(TestNG.java:1024)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wasteMeterCreate -->
+        <test-method status="PASS" signature="end()[pri:0, instance:com.arc.testcases.MyCommunities.None.WasteGenerationMeterCreateTest@5abca1e0]" name="end" is-config="true" duration-ms="853" started-at="2017-11-26T16:38:41Z" finished-at="2017-11-26T16:38:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- end -->
+      </class> <!-- com.arc.testcases.MyCommunities.None.WasteGenerationMeterCreateTest -->
+      <class name="com.arc.testcases.MyCommunities.None.EnergyMeterCreateTest">
+        <test-method status="PASS" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyCommunities.None.EnergyMeterCreateTest@56235b8e]" name="setup" is-config="true" duration-ms="24914" started-at="2017-11-26T16:35:32Z" finished-at="2017-11-26T16:35:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[staging]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="energyMeterCreate(int, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyCommunities.None.EnergyMeterCreateTest@56235b8e]" name="energyMeterCreate" duration-ms="115993" started-at="2017-11-26T16:35:57Z" finished-at="2017-11-26T16:37:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[4]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Login]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[NewCommunityProject]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[CDataInput]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- energyMeterCreate -->
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.arc.testcases.MyCommunities.None.EnergyMeterCreateTest@56235b8e]" name="teardown" is-config="true" duration-ms="101" started-at="2017-11-26T16:37:53Z" finished-at="2017-11-26T16:37:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=energyMeterCreate status=SUCCESS method=EnergyMeterCreateTest.energyMeterCreate(int, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyCommunities.None.EnergyMeterCreateTest@56235b8e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="end()[pri:0, instance:com.arc.testcases.MyCommunities.None.EnergyMeterCreateTest@56235b8e]" name="end" is-config="true" duration-ms="741" started-at="2017-11-26T16:37:53Z" finished-at="2017-11-26T16:37:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- end -->
+      </class> <!-- com.arc.testcases.MyCommunities.None.EnergyMeterCreateTest -->
+      <class name="com.arc.testcases.MyCommunities.None.AdditionalDeatilsCreateMeterTest">
+        <test-method status="PASS" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyCommunities.None.AdditionalDeatilsCreateMeterTest@527740a2]" name="setup" is-config="true" duration-ms="23591" started-at="2017-11-26T16:45:08Z" finished-at="2017-11-26T16:45:32Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[staging]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="SKIP" signature="aditioanalFieldMeterCreate(int, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyCommunities.None.AdditionalDeatilsCreateMeterTest@527740a2]" name="aditioanalFieldMeterCreate" duration-ms="0" started-at="2017-11-26T16:45:32Z" finished-at="2017-11-26T16:45:32Z">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'citySheet' is required by @Test on method aditioanalFieldMeterCreate but has not been marked @Optional or defined
+in C:\Users\Lenovo\Documents\Abhishek\ARCProject\src\main\resources\TestNg-Community.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'citySheet' is required by @Test on method aditioanalFieldMeterCreate but has not been marked @Optional or defined
+in C:\Users\Lenovo\Documents\Abhishek\ARCProject\src\main\resources\TestNg-Community.xml
+	at org.testng.internal.Parameters.createParameters(Parameters.java:154)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:361)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:451)
+	at org.testng.internal.Invoker.handleParameters(Invoker.java:1270)
+	at org.testng.internal.Invoker.createParameters(Invoker.java:985)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1075)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1191)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.run(TestNG.java:1024)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aditioanalFieldMeterCreate -->
+        <test-method status="PASS" signature="end()[pri:0, instance:com.arc.testcases.MyCommunities.None.AdditionalDeatilsCreateMeterTest@527740a2]" name="end" is-config="true" duration-ms="615" started-at="2017-11-26T16:45:32Z" finished-at="2017-11-26T16:45:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- end -->
+      </class> <!-- com.arc.testcases.MyCommunities.None.AdditionalDeatilsCreateMeterTest -->
+      <class name="com.arc.testcases.MyCommunities.None.WastediversionMeterCreateTest">
+        <test-method status="PASS" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyCommunities.None.WastediversionMeterCreateTest@2286778]" name="setup" is-config="true" duration-ms="318153" started-at="2017-11-26T16:38:42Z" finished-at="2017-11-26T16:44:00Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[staging]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="SKIP" signature="wasteMeterCreate(int, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyCommunities.None.WastediversionMeterCreateTest@2286778]" name="wasteMeterCreate" duration-ms="0" started-at="2017-11-26T16:44:00Z" finished-at="2017-11-26T16:44:00Z">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'citySheet' is required by @Test on method wasteMeterCreate but has not been marked @Optional or defined
+in C:\Users\Lenovo\Documents\Abhishek\ARCProject\src\main\resources\TestNg-Community.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'citySheet' is required by @Test on method wasteMeterCreate but has not been marked @Optional or defined
+in C:\Users\Lenovo\Documents\Abhishek\ARCProject\src\main\resources\TestNg-Community.xml
+	at org.testng.internal.Parameters.createParameters(Parameters.java:154)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:361)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:451)
+	at org.testng.internal.Invoker.handleParameters(Invoker.java:1270)
+	at org.testng.internal.Invoker.createParameters(Invoker.java:985)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1075)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1191)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.run(TestNG.java:1024)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wasteMeterCreate -->
+        <test-method status="PASS" signature="end()[pri:0, instance:com.arc.testcases.MyCommunities.None.WastediversionMeterCreateTest@2286778]" name="end" is-config="true" duration-ms="632" started-at="2017-11-26T16:44:00Z" finished-at="2017-11-26T16:44:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- end -->
+      </class> <!-- com.arc.testcases.MyCommunities.None.WastediversionMeterCreateTest -->
+      <class name="com.arc.testcases.MyCommunities.None.TrasnsportionCreateMeterTest">
+        <test-method status="PASS" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyCommunities.None.TrasnsportionCreateMeterTest@4e9ba398]" name="setup" is-config="true" duration-ms="33379" started-at="2017-11-26T16:44:00Z" finished-at="2017-11-26T16:44:34Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[staging]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="SKIP" signature="transprotionMeterCreate(int, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyCommunities.None.TrasnsportionCreateMeterTest@4e9ba398]" name="transprotionMeterCreate" duration-ms="0" started-at="2017-11-26T16:44:34Z" finished-at="2017-11-26T16:44:34Z">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'citySheet' is required by @Test on method transprotionMeterCreate but has not been marked @Optional or defined
+in C:\Users\Lenovo\Documents\Abhishek\ARCProject\src\main\resources\TestNg-Community.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'citySheet' is required by @Test on method transprotionMeterCreate but has not been marked @Optional or defined
+in C:\Users\Lenovo\Documents\Abhishek\ARCProject\src\main\resources\TestNg-Community.xml
+	at org.testng.internal.Parameters.createParameters(Parameters.java:154)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:361)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:451)
+	at org.testng.internal.Invoker.handleParameters(Invoker.java:1270)
+	at org.testng.internal.Invoker.createParameters(Invoker.java:985)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1075)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1191)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.run(TestNG.java:1024)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- transprotionMeterCreate -->
+        <test-method status="PASS" signature="end()[pri:0, instance:com.arc.testcases.MyCommunities.None.TrasnsportionCreateMeterTest@4e9ba398]" name="end" is-config="true" duration-ms="796" started-at="2017-11-26T16:44:34Z" finished-at="2017-11-26T16:44:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- end -->
+      </class> <!-- com.arc.testcases.MyCommunities.None.TrasnsportionCreateMeterTest -->
+    </test> <!-- ARCRegressionTest-None-for-Communities -->
   </suite> <!-- SanityTestCasesSuite -->
 </testng-results>

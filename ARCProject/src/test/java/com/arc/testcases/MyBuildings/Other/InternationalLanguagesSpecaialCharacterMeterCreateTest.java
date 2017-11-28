@@ -26,8 +26,7 @@ public class InternationalLanguagesSpecaialCharacterMeterCreateTest extends Base
 		try {
 			
 			reuse.LoginToArc(rowNum, "My Projects", loginSheet);
-		    //reuseSearch.VerifySearchedProgram( "1000137567");
-			reuseSearch.SearchProgram( data.getCellData(buildingSheet, "Project Name", rowNum));
+		    reuseSearch.SearchProgram( data.getCellData(buildingSheet, "Project Name", rowNum));
 			reuseSearch.VerifySearchedProgram( data.getCellData(buildingSheet, "Project Name", rowNum));
 			reuseDI.CreateMeterInternationalLanguage("Energy", "Energy Meter Test","AddMeterEnergy");
 
@@ -35,7 +34,6 @@ public class InternationalLanguagesSpecaialCharacterMeterCreateTest extends Base
 			System.out.println(t.getLocalizedMessage());
 			Error e1 = new Error(t.getMessage());
 			e1.setStackTrace(t.getStackTrace());
-			//CommonMethod.testlogError(  "<pre>" + e1.toString() + "</pre>");
 			CommonMethod.takeScreenshot( "createILSepcharMeterTest-BOther");
 			throw e1;
 		}

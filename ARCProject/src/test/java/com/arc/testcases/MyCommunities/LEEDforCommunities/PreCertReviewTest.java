@@ -16,7 +16,7 @@ public class PreCertReviewTest extends BaseClass {
 	public void precertificationReview(int rowNum, String communitySheet, String paymentSheet, String loginSheet) throws IOException {
 		System.out.println(Thread.currentThread().getStackTrace()[1].getMethodName());
 		CommonMethod.ExtentReportConfig();
-		CommonMethod.test = CommonMethod.extent.startTest("AllSearaioPrecCertReviewTest", "Verifies  ReviewPageTest successully ").assignCategory("SubmitForReview");
+		CommonMethod.test = CommonMethod.extent.startTest("AllSearaioPrecCertReviewTest LEEDComm", "Verifies  ReviewPageTest successully ").assignCategory("SubmitForReview");
 		ReusableMethodsLogin reuse = new ReusableMethodsLogin();
 		ReusableMethodsSearch reuseSearch = new ReusableMethodsSearch();
 		ReusableMethodsReviewCertification reusePreCert= new ReusableMethodsReviewCertification();
@@ -36,7 +36,7 @@ public class PreCertReviewTest extends BaseClass {
 			System.out.println(t.getLocalizedMessage());
 			Error e1 = new Error(t.getMessage());
 			e1.setStackTrace(t.getStackTrace());
-			CommonMethod.takeScreenshot( "allSearaioPrecCertReviewTest");
+			CommonMethod.takeScreenshot( "allSearaioPrecCertReviewTestLEEDComm");
 			throw e1;
 		}
 	}

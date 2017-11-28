@@ -22,7 +22,7 @@ public class VerifyAgreementFileDownloadTest extends BaseClass {
 		System.out.println(Thread.currentThread().getStackTrace()[1].getMethodName());
 		CommonMethod.ExtentReportConfig();
 		
-		CommonMethod.test = CommonMethod.extent.startTest("Verify Agreement file download Test", "Verifies if Login functionality is working fine").assignCategory("CheckLogin");
+		CommonMethod.test = CommonMethod.extent.startTest("Verify Agreement file download TestCommOther", "Verifies if Login functionality is working fine").assignCategory("CheckLogin");
     
 		ReusableMethodsLogin reuse = new ReusableMethodsLogin();
 		ReusableMethodsManage reuseManage = new ReusableMethodsManage();
@@ -40,7 +40,7 @@ public class VerifyAgreementFileDownloadTest extends BaseClass {
 			System.out.println(t.getLocalizedMessage());
 			Error e1 = new Error(t.getMessage());
 			e1.setStackTrace(t.getStackTrace());
-			CommonMethod.takeScreenshot("verifyAgreementFileDownloadTest-communities");
+			CommonMethod.takeScreenshot("verifyAgreementFileDownloadTest-communitiesOther");
 			throw e1;
 		}
 	}

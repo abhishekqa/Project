@@ -13,7 +13,7 @@ import com.arc.driver.CommonMethod;
 
 public class EnergyMeterCreateTest extends BaseClass {
 	
-	@Test(dependsOnMethods = { "com.arc.testcases.MyBuildings.Other.LoginCaseTest.loginCase","com.arc.testcases.MyBuildings.Other.ClickSearchedProgramTest.clickSearchedProgram","com.arc.testcases.MyBuildings.Other.PaymentbyCCTest.paymentbyCC" })
+	@Test//(dependsOnMethods = { "com.arc.testcases.MyBuildings.Other.LoginCaseTest.loginCase","com.arc.testcases.MyBuildings.Other.ClickSearchedProgramTest.clickSearchedProgram","com.arc.testcases.MyBuildings.Other.PaymentbyCCTest.paymentbyCC" })
 	@Parameters({"rowNum" ,"buildingSheet","loginSheet", "energySheet"})
 	public void energyMeterCreate(int rowNum, String buildingSheet, String loginSheet, String energySheet) throws IOException {
 		System.out.println(Thread.currentThread().getStackTrace()[1].getMethodName());
@@ -35,7 +35,6 @@ public class EnergyMeterCreateTest extends BaseClass {
 			System.out.println(t.getLocalizedMessage());
 			Error e1 = new Error(t.getMessage());
 			e1.setStackTrace(t.getStackTrace());
-			//CommonMethod.testlogError(  "<pre>" + e1.toString() + "</pre>");
 			CommonMethod.takeScreenshot( "createEnergyMeterTest-BOther");
 			throw e1;
 		}

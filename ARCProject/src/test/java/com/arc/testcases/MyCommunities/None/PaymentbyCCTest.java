@@ -22,7 +22,7 @@ public class PaymentbyCCTest extends BaseClass {
 		System.out.println(Thread.currentThread().getStackTrace()[1].getMethodName());
 		CommonMethod.ExtentReportConfig();
 		
-		CommonMethod.test = CommonMethod.extent.startTest("Payment By Creditcard-Communities", "Verifies if Payment done through creditcard is successful").assignCategory("CheckPayment");
+		CommonMethod.test = CommonMethod.extent.startTest("Payment By Creditcard-CommunitiesNone", "Verifies if Payment done through creditcard is successful").assignCategory("CheckPayment");
     
 		ReusableMethodsLogin reuse = new ReusableMethodsLogin();
 		ReusableMethodsAddProject reuseAddProject = new ReusableMethodsAddProject();
@@ -39,7 +39,7 @@ public class PaymentbyCCTest extends BaseClass {
 			System.out.println(t.getLocalizedMessage());
 			Error e1 = new Error(t.getMessage());
 			e1.setStackTrace(t.getStackTrace());
-			CommonMethod.takeScreenshot("paymentbyCCTest-communities");
+			CommonMethod.takeScreenshot("paymentbyCCTest-communitiesNone");
 			throw e1;
 		}
 	}

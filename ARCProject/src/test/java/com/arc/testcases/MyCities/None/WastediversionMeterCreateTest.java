@@ -15,7 +15,7 @@ public class WastediversionMeterCreateTest extends BaseClass {
 	
 	@Test //(dependsOnMethods = { "com.arc.testcases.MyCities.LEEDforCities.LoginCaseTest.loginCase","com.arc.testcases.MyCities.LEEDforCities.SearchProgramTest.searchProgram","com.arc.testcases.MyCities.LEEDforCities.ClickSearchedProgramTest.clickSearchedProgram","com.arc.testcases.MyCities.LEEDforCities.PaymentbyCCTest.paymentbyCC" })
 	@Parameters({"rowNum" ,"loginSheet", "citySheet","cdataInputSheet"})
-	public void wasteMeterCreate(int rowNum, String loginSheet, String citySheet, String cdataInputSheet) throws IOException {
+	public void wasteDiversionMeterCreate(int rowNum, String loginSheet, String citySheet, String cdataInputSheet) throws IOException {
 		
 		CommonMethod.ExtentReportConfig();
 		System.out.println(Thread.currentThread().getStackTrace()[1].getMethodName());
@@ -36,7 +36,7 @@ public class WastediversionMeterCreateTest extends BaseClass {
 			System.out.println(t.getLocalizedMessage());
 			Error e1 = new Error(t.getMessage());
 			e1.setStackTrace(t.getStackTrace());
-			CommonMethod.takeScreenshot("createWasteMeterTest-CNone");
+			CommonMethod.takeScreenshot("createWasteDiversionMeterTest-CNone");
 			throw e1;
 		}
 	}

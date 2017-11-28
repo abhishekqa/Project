@@ -19,7 +19,7 @@ public class  ETotalAnalyticsTest extends BaseClass {
 		System.out.println(Thread.currentThread().getStackTrace()[1].getMethodName());
 		CommonMethod.ExtentReportConfig();
 		
-		CommonMethod.test = CommonMethod.extent.startTest("AEnergyCalculatioonTest-BOther", "Verifies Total Analytics Tool Tip successfully").assignCategory("CheckAnalytics");
+		CommonMethod.test = CommonMethod.extent.startTest("AEnergyTotalAnalyticsTest-BOther", "Verifies Total Analytics Tool Tip successfully").assignCategory("CheckAnalytics");
     
 		ReusableMethodsLogin reuse = new ReusableMethodsLogin();
 		ReusableMethodsDataInput reuseDI = new ReusableMethodsDataInput();
@@ -28,7 +28,6 @@ public class  ETotalAnalyticsTest extends BaseClass {
 		try {
 			
 			reuse.LoginToArc(rowNum, "My Projects", loginSheet);
-		 //   reuseSearch.VerifySearchedProgram( "1000137787");
 			reuseSearch.SearchProgram(data.getCellData(buildingSheet, "Project Name", rowNum));
 		    reuseSearch.VerifySearchedProgram( data.getCellData(buildingSheet, "Project Name", rowNum));
 			reuseDI.verifyEDailiyMTCO2e("Atotal");		
@@ -37,8 +36,7 @@ public class  ETotalAnalyticsTest extends BaseClass {
 			System.out.println(t.getLocalizedMessage());
 			Error e1 = new Error(t.getMessage());
 			e1.setStackTrace(t.getStackTrace());
-			//CommonMethod.testlogError(  "<pre>" + e1.toString() + "</pre>");
-			CommonMethod.takeScreenshot( "aTotalEnergyTest-BOther");
+			CommonMethod.takeScreenshot( "aTotalAnalyticsTest-BOther");
 			throw e1;
 		}
 	}

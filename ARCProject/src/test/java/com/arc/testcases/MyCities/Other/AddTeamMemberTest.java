@@ -22,7 +22,7 @@ public class AddTeamMemberTest extends BaseClass {
 		System.out.println(Thread.currentThread().getStackTrace()[1].getMethodName());
 		CommonMethod.ExtentReportConfig();
 		
-		CommonMethod.test = CommonMethod.extent.startTest("Add TeamMember Test-Cities", "Verifies if TeamMember add functionality is working fine").assignCategory("CheckTeam");
+		CommonMethod.test = CommonMethod.extent.startTest("Add TeamMember Test-CitiesOther", "Verifies if TeamMember add functionality is working fine").assignCategory("CheckTeam");
     
 		ReusableMethodsLogin reuse = new ReusableMethodsLogin();
 		ReusableMethodsManage reuseManage = new ReusableMethodsManage();
@@ -40,7 +40,7 @@ public class AddTeamMemberTest extends BaseClass {
 			System.out.println(t.getLocalizedMessage());
 			Error e1 = new Error(t.getMessage());
 			e1.setStackTrace(t.getStackTrace());
-			CommonMethod.takeScreenshot("addTeamMemberTest-city");
+			CommonMethod.takeScreenshot("addTeamMemberTest-cityOther");
 			throw e1;
 		}
 	}

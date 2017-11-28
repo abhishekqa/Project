@@ -22,7 +22,7 @@ public class PrerequisitesAttemptTest extends BaseClass {
 		System.out.println(Thread.currentThread().getStackTrace()[1].getMethodName());
 		CommonMethod.ExtentReportConfig();
 		
-		CommonMethod.test = CommonMethod.extent.startTest("PrerequisitesAttempt Test-Communities", "Verifies if Prerequisites functionality is working fine").assignCategory("CheckPrerequisites");
+		CommonMethod.test = CommonMethod.extent.startTest("PrerequisitesAttempt Test-CommunitiesLEED", "Verifies if Prerequisites functionality is working fine").assignCategory("CheckPrerequisites");
     
 		ReusableMethodsLogin reuse = new ReusableMethodsLogin();
 		ReusableMethodsPrerequisites reusePrereq = new ReusableMethodsPrerequisites();
@@ -40,7 +40,7 @@ public class PrerequisitesAttemptTest extends BaseClass {
 			System.out.println(t.getLocalizedMessage());
 			Error e1 = new Error(t.getMessage());
 			e1.setStackTrace(t.getStackTrace());
-			CommonMethod.takeScreenshot("prerequisitesAttemptTest-communities");
+			CommonMethod.takeScreenshot("prerequisitesAttemptTest-communitiesLEED");
 			throw e1;
 		}
 	}

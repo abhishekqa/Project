@@ -37,7 +37,7 @@ public class AddNewProjectTest extends BaseClass {
 			System.out.println(t.getLocalizedMessage());
 			Error e1 = new Error(t.getMessage());
 			e1.setStackTrace(t.getStackTrace());
-			CommonMethod.takeScreenshot("addNewProjectTest-communities");
+			CommonMethod.takeScreenshot("addNewProjectTest-LEEDcommunities");
 			throw e1;
 		}
 	}

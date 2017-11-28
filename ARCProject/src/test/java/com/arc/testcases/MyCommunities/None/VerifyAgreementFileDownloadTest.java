@@ -22,15 +22,13 @@ public class VerifyAgreementFileDownloadTest extends BaseClass {
 		System.out.println(Thread.currentThread().getStackTrace()[1].getMethodName());
 		CommonMethod.ExtentReportConfig();
 		
-		CommonMethod.test = CommonMethod.extent.startTest("Verify Agreement File Download Test", "Verifies if Login functionality is working fine").assignCategory("CheckLogin");
+		CommonMethod.test = CommonMethod.extent.startTest("Verify Agreement File Download Test CommNone", "Verifies if Login functionality is working fine").assignCategory("CheckLogin");
     
 		ReusableMethodsLogin reuse = new ReusableMethodsLogin();
 		ReusableMethodsManage reuseManage = new ReusableMethodsManage();
 		ReusableMethodsSearch reuseSearch = new ReusableMethodsSearch();
 		
 		try {
-			
-			
 			reuse.LoginWithCommunities(rowNum, "My Communities", loginSheet);
 			reuseSearch.SearchProgram(data.getCellData(communitySheet, "ProjectName", rowNum));
 			reuseSearch.VerifySearchedProgram(data.getCellData(communitySheet, "ProjectName", rowNum));
@@ -40,7 +38,7 @@ public class VerifyAgreementFileDownloadTest extends BaseClass {
 			System.out.println(t.getLocalizedMessage());
 			Error e1 = new Error(t.getMessage());
 			e1.setStackTrace(t.getStackTrace());
-			CommonMethod.takeScreenshot("verifyAgreementFileDownloadTest-communities");
+			CommonMethod.takeScreenshot("verifyAgreementFileDownloadTest-communitiesNone");
 			throw e1;
 		}
 	}

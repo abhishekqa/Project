@@ -23,15 +23,13 @@ public class WasteMeterCreateTest extends BaseClass {
 		System.out.println(Thread.currentThread().getStackTrace()[1].getMethodName());
 		CommonMethod.ExtentReportConfig();
 		
-		CommonMethod.test = CommonMethod.extent.startTest("Waste Meter Create Test", "Verifies if Login functionality is working fine").assignCategory("CheckLogin");
+		CommonMethod.test = CommonMethod.extent.startTest("Waste Meter Create Test CommLEED", "Verifies if Login functionality is working fine").assignCategory("CheckLogin");
     
 		ReusableMethodsLogin reuse = new ReusableMethodsLogin();
 		ReusableMethodsDataInput reuseDI = new ReusableMethodsDataInput();
 		ReusableMethodsSearch reuseSearch = new ReusableMethodsSearch();
 		
 		try {
-			
-			
 			reuse.LoginWithCommunities(rowNum, "My Communities", loginSheet);
 			reuseSearch.SearchProgram(data.getCellData(communitySheet, "ProjectName", rowNum));
 			reuseSearch.VerifySearchedProgram(data.getCellData(communitySheet, "ProjectName", rowNum));
@@ -41,7 +39,7 @@ public class WasteMeterCreateTest extends BaseClass {
 			System.out.println(t.getLocalizedMessage());
 			Error e1 = new Error(t.getMessage());
 			e1.setStackTrace(t.getStackTrace());
-			CommonMethod.takeScreenshot("wasteMeterCreateTest-communities");
+			CommonMethod.takeScreenshot("wasteMeterCreateTest-communitiesLEED");
 			throw e1;
 		}
 	}

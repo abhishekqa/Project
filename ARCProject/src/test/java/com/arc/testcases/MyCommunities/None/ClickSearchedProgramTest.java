@@ -20,7 +20,7 @@ public class ClickSearchedProgramTest extends BaseClass {
 		System.out.println(Thread.currentThread().getStackTrace()[1].getMethodName());
 		CommonMethod.ExtentReportConfig();
 		
-		CommonMethod.test = CommonMethod.extent.startTest("SearchNavigation Test-Communities", "Verifies if Search functionality is working fine").assignCategory("CheckSearch");
+		CommonMethod.test = CommonMethod.extent.startTest("SearchNavigation Test-CommunitiesNone", "Verifies if Search functionality is working fine").assignCategory("CheckSearch");
     
 		ReusableMethodsLogin reuse = new ReusableMethodsLogin();
 		ReusableMethodsSearch reuseSearch = new ReusableMethodsSearch();
@@ -35,7 +35,7 @@ public class ClickSearchedProgramTest extends BaseClass {
 			System.out.println(t.getLocalizedMessage());
 			Error e1 = new Error(t.getMessage());
 			e1.setStackTrace(t.getStackTrace());
-			CommonMethod.takeScreenshot("clickSearchedProgramTest-communities");
+			CommonMethod.takeScreenshot("clickSearchedProgramTest-communitiesNone");
 			throw e1;
 		}
 	}

@@ -19,7 +19,7 @@ public class LoginInvaildValuesTest extends BaseClass {
 		System.out.println(Thread.currentThread().getStackTrace()[1].getMethodName());
 		CommonMethod.ExtentReportConfig();
 		
-		CommonMethod.test = CommonMethod.extent.startTest("Invalid Login Test-Communities", "Verifies if Login functionality is working fine with invalid values").assignCategory("CheckLogin");
+		CommonMethod.test = CommonMethod.extent.startTest("Invalid Login Test-Communities None", "Verifies if Login functionality is working fine with invalid values").assignCategory("CheckLogin");
     
 		ReusableMethodsLogin reuse = new ReusableMethodsLogin();
 
@@ -32,7 +32,7 @@ public class LoginInvaildValuesTest extends BaseClass {
 			System.out.println(t.getLocalizedMessage());
 			Error e1 = new Error(t.getMessage());
 			e1.setStackTrace(t.getStackTrace());
-			CommonMethod.takeScreenshot("loginInvaildValuesTest-communities");
+			CommonMethod.takeScreenshot("loginInvaildValuesTest-communities None");
 			throw e1;
 		}
 	}

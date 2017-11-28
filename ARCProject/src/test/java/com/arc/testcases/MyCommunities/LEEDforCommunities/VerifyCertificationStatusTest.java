@@ -22,7 +22,7 @@ public class VerifyCertificationStatusTest extends BaseClass {
 		System.out.println(Thread.currentThread().getStackTrace()[1].getMethodName());
 		CommonMethod.ExtentReportConfig();
 		
-		CommonMethod.test = CommonMethod.extent.startTest("CertificationStatus Test-Communities", "Verifies if Certification status is displayed correctly").assignCategory("CheckCertification");
+		CommonMethod.test = CommonMethod.extent.startTest("CertificationStatus Test-CommunitiesLEED", "Verifies if Certification status is displayed correctly").assignCategory("CheckCertification");
     
 		ReusableMethodsLogin reuse = new ReusableMethodsLogin();
 		ReusableMethodsManage reuseManage = new ReusableMethodsManage();
@@ -40,7 +40,7 @@ public class VerifyCertificationStatusTest extends BaseClass {
 			System.out.println(t.getLocalizedMessage());
 			Error e1 = new Error(t.getMessage());
 			e1.setStackTrace(t.getStackTrace());
-			CommonMethod.takeScreenshot("verifyCertificationStatusTest-communities");
+			CommonMethod.takeScreenshot("verifyCertificationStatusTest-communitiesLEED");
 			throw e1;
 		}
 	}

@@ -22,7 +22,7 @@ public class AddNewProjectTest extends BaseClass {
 		System.out.println(Thread.currentThread().getStackTrace()[1].getMethodName());	
 		CommonMethod.ExtentReportConfig();
 		
-		CommonMethod.test = CommonMethod.extent.startTest("Add New Project-Cities", "Verifies if New Project is added successfully").assignCategory("CheckAddProject");
+		CommonMethod.test = CommonMethod.extent.startTest("Add New Project-CitiesOther", "Verifies if New Project is added successfully").assignCategory("CheckAddProject");
     
 		ReusableMethodsLogin reuse = new ReusableMethodsLogin();
 		ReusableMethodsAddProject reuseAddProject = new ReusableMethodsAddProject();
@@ -37,7 +37,7 @@ public class AddNewProjectTest extends BaseClass {
 			System.out.println(t.getLocalizedMessage());
 			Error e1 = new Error(t.getMessage());
 			e1.setStackTrace(t.getStackTrace());
-			CommonMethod.takeScreenshot("addNewProjectTest-city");
+			CommonMethod.takeScreenshot("addNewProjectTest-cityOther");
 			throw e1;
 		}
 	}

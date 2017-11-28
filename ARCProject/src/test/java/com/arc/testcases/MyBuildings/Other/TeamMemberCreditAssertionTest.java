@@ -18,11 +18,11 @@ public class TeamMemberCreditAssertionTest extends BaseClass {
 	
 	@Test(dependsOnMethods = { "com.arc.testcases.MyBuildings.None.Login.LoginCaseTest.loginCase","com.arc.testcases.MyBuildings.None.PublicSearch.SearchProgramTest.searchProgram","com.arc.testcases.MyBuildings.None.PublicSearch.ClickSearchedProgramTest.clickSearchedProgram","com.arc.testcases.MyBuildings.None.AddProject.PaymentbyCCTest.paymentbyCC" })
 	@Parameters({"rowNum" ,"buildingSheet","loginSheet"})
-	public void prerequisitesAttempt(int rowNum, String buildingSheet, String loginSheet) throws IOException {
+	public void TeamMemberCreditAssertion(int rowNum, String buildingSheet, String loginSheet) throws IOException {
 		System.out.println(Thread.currentThread().getStackTrace()[1].getMethodName());
 		CommonMethod.ExtentReportConfig();
 		
-		CommonMethod.test = CommonMethod.extent.startTest("PrerequisitesAttemptTest-BNone", "Verifies if Prerequisites functionality is working fine").assignCategory("CheckPrerequisites","ARCPPS-465").assignCategory("ARCPPS");
+		CommonMethod.test = CommonMethod.extent.startTest("Team MemberCreditAssertionTest-BOther", "Verifies if Prerequisites functionality is working fine").assignCategory("CheckPrerequisites","ARCPPS-465").assignCategory("ARCPPS");
     
 		ReusableMethodsLogin reuse = new ReusableMethodsLogin();
 		ReusableMethodsPrerequisites reusePrereq = new ReusableMethodsPrerequisites();
@@ -38,8 +38,7 @@ public class TeamMemberCreditAssertionTest extends BaseClass {
 			System.out.println(t.getLocalizedMessage());
 			Error e1 = new Error(t.getMessage());
 			e1.setStackTrace(t.getStackTrace());
-			//CommonMethod.testlogError(  "<pre>" + e1.toString() + "</pre>");
-			CommonMethod.takeScreenshot( "prerequisitesAttemptTest-BNone");
+			CommonMethod.takeScreenshot( "TeamMemberCreditAssertion-BOther");
 			throw e1;
 		}
 	}

@@ -22,17 +22,13 @@ public class WasteMeterEditReadingTest extends BaseClass {
 		System.out.println(Thread.currentThread().getStackTrace()[1].getMethodName());
 		CommonMethod.ExtentReportConfig();
 		
-		CommonMethod.test = CommonMethod.extent.startTest("ARC-Login Test city None", "Verifies if Login functionality is working fine").assignCategory("CheckLogin");
+		CommonMethod.test = CommonMethod.extent.startTest("ARC-Waste Meter Edit Reading Test city None", "Verifies if Login functionality is working fine").assignCategory("EditMeter");
     
 		ReusableMethodsLogin reuse = new ReusableMethodsLogin();
 		ReusableMethodsDataInput reuseDI = new ReusableMethodsDataInput();
 		ReusableMethodsSearch reuseSearch = new ReusableMethodsSearch();
 		
 		try {
-
-
-
-		
 			reuse.LoginWithCities(rowNum, "My Cities", loginSheet);
 			reuseSearch.SearchProgram(data.getCellData(citySheet, "ProjectName", rowNum));
 			reuseSearch.VerifySearchedProgram(data.getCellData(citySheet, "ProjectName", rowNum));

@@ -19,7 +19,7 @@ public class WaterMeterCreateTest extends BaseClass {
 		
 		CommonMethod.ExtentReportConfig();
 		System.out.println(Thread.currentThread().getStackTrace()[1].getMethodName());
-		CommonMethod.test = CommonMethod.extent.startTest("CreateWaterMeterTest-CLEED", "Verifies if Login functionality is working fine").assignCategory("CreateMeter");
+		CommonMethod.test = CommonMethod.extent.startTest("CreateWaterMeterTest-CommLEED", "Verifies if Login functionality is working fine").assignCategory("CreateMeter");
     
 		ReusableMethodsLogin reuse = new ReusableMethodsLogin();
 		ReusableMethodsDataInput reuseDI = new ReusableMethodsDataInput();

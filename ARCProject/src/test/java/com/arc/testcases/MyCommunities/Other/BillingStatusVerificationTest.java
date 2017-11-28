@@ -22,7 +22,7 @@ public class BillingStatusVerificationTest extends BaseClass {
 		System.out.println(Thread.currentThread().getStackTrace()[1].getMethodName());
 		CommonMethod.ExtentReportConfig();
 		
-		CommonMethod.test = CommonMethod.extent.startTest("BillingStatus Test-Communities", "Verifies if billing status is displaying correct in billing page").assignCategory("CheckCommunities");
+		CommonMethod.test = CommonMethod.extent.startTest("BillingStatus Test-CommunitiesOther", "Verifies if billing status is displaying correct in billing page").assignCategory("CheckCommunities");
     
 		ReusableMethodsLogin reuse = new ReusableMethodsLogin();
 		ReusableMethodsManage reuseManage = new ReusableMethodsManage();
@@ -40,7 +40,7 @@ public class BillingStatusVerificationTest extends BaseClass {
 			System.out.println(t.getLocalizedMessage());
 			Error e1 = new Error(t.getMessage());
 			e1.setStackTrace(t.getStackTrace());
-			CommonMethod.takeScreenshot("billingStatusVerificationTest-communities");
+			CommonMethod.takeScreenshot("billingStatusVerificationTest-communitiesOther");
 			throw e1;
 		}
 	}

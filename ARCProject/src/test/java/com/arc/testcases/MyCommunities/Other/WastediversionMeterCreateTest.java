@@ -15,7 +15,7 @@ public class WastediversionMeterCreateTest extends BaseClass {
 	
 	@Test //(dependsOnMethods = { "com.arc.testcases.MyCommunities.Other.LoginCaseTest.loginCase","com.arc.testcases.MyCommunities.Other.SearchProgramTest.searchProgram","com.arc.testcases.MyCommunities.Other.ClickSearchedProgramTest.clickSearchedProgram","com.arc.testcases.MyCommunities.Other.PaymentbyCCTest.paymentbyCC" })
 	@Parameters({"rowNum" ,"loginSheet", "communitySheet","cdataInputSheet"})
-	public void wasteMeterCreate(int rowNum, String loginSheet, String communitySheet, String cdataInputSheet) throws IOException {
+	public void wasteDiversionMeterCreate(int rowNum, String loginSheet, String communitySheet, String cdataInputSheet) throws IOException {
 		
 		CommonMethod.ExtentReportConfig();
 		System.out.println(Thread.currentThread().getStackTrace()[1].getMethodName());

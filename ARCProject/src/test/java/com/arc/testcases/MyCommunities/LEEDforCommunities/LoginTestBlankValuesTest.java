@@ -19,21 +19,19 @@ public class LoginTestBlankValuesTest extends BaseClass {
 		System.out.println(Thread.currentThread().getStackTrace()[1].getMethodName());
 		CommonMethod.ExtentReportConfig();
 		
-		CommonMethod.test = CommonMethod.extent.startTest("BlankValue Login Test-communities", "Verifies if Login functionality is working fine with blank values").assignCategory("CheckLogin");
+		CommonMethod.test = CommonMethod.extent.startTest("BlankValue Login Test-communitiesLEED", "Verifies if Login functionality is working fine with blank values").assignCategory("CheckLogin");
     
 		ReusableMethodsLogin reuse = new ReusableMethodsLogin();
 
 		
 		try {
-			
-			
 			reuse.LoginIncorrectData(rowNum,"Email field is required.", loginSheet);
 
 		} catch (Throwable t) {
 			System.out.println(t.getLocalizedMessage());
 			Error e1 = new Error(t.getMessage());
 			e1.setStackTrace(t.getStackTrace());
-			CommonMethod.takeScreenshot("loginTestBlankValuesTest-communities");
+			CommonMethod.takeScreenshot("loginTestBlankValuesTest-communitiesLEED");
 			throw e1;
 		}
 	}

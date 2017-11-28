@@ -22,14 +22,12 @@ public class AddNewProjectTest extends BaseClass {
 		System.out.println(Thread.currentThread().getStackTrace()[1].getMethodName());
 		CommonMethod.ExtentReportConfig();
 		
-		CommonMethod.test = CommonMethod.extent.startTest("Add New Project-Communities", "Verifies if New Project is added successfully").assignCategory("CheckAddProject");
+		CommonMethod.test = CommonMethod.extent.startTest("Add New Project-CommunitiesOther", "Verifies if New Project is added successfully").assignCategory("CheckAddProject");
     
 		ReusableMethodsLogin reuse = new ReusableMethodsLogin();
 		ReusableMethodsAddProject reuseAddProject = new ReusableMethodsAddProject();
 		
 		try {
-			
-			
 			reuse.LoginWithCommunities(rowNum, "My Communities", loginSheet);
 			reuseAddProject.AddProjectCommunitiesOther(communitySheet, rowNum);
 
@@ -37,7 +35,7 @@ public class AddNewProjectTest extends BaseClass {
 			System.out.println(t.getLocalizedMessage());
 			Error e1 = new Error(t.getMessage());
 			e1.setStackTrace(t.getStackTrace());
-			CommonMethod.takeScreenshot("addNewProjectTest-communities");
+			CommonMethod.takeScreenshot("addNewProjectTest-communitiesOther");
 			throw e1;
 		}
 	}

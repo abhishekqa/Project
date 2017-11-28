@@ -31,7 +31,6 @@ public class ModifyOccOptHrsProjectDetailsTest extends BaseClass {
 		try {
 			
 			reuse.LoginToArc(rowNum, "My Projects", loginSheet);
-		//	reuseSearch.VerifySearchedProgram("1000137141");
 			reuseSearch.SearchProgram(data.getCellData(buildingSheet, "Project Name", rowNum));
 			reuseSearch.VerifySearchedProgram(data.getCellData(buildingSheet, "Project Name", rowNum));
 			reuseManage.editProjectDetails(buildingSheet, rowNum);
@@ -40,7 +39,6 @@ public class ModifyOccOptHrsProjectDetailsTest extends BaseClass {
 			System.out.println(t.getLocalizedMessage());
 			Error e1 = new Error(t.getMessage());
 			e1.setStackTrace(t.getStackTrace());
-			//CommonMethod.testlogError( "<pre>" + e1.toString() + "</pre>");
 			CommonMethod.takeScreenshot("editProjectDetailsTest-BOther");
 			throw e1;
 		}

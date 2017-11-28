@@ -15,7 +15,7 @@ public class AdditionalDeatilsCreateMeterTest extends BaseClass {
 	
 	@Test //(dependsOnMethods = { "com.arc.testcases.MyCommunities.None.LoginCaseTest.loginCase","com.arc.testcases.MyCommunities.None.SearchProgramTest.searchProgram","com.arc.testcases.MyCommunities.None.ClickSearchedProgramTest.clickSearchedProgram","com.arc.testcases.MyCommunities.None.PaymentbyCCTest.paymentbyCC" })
 	@Parameters({"rowNum" ,"loginSheet", "communitySheet","cdataInputSheet"})
-	public void aditioanalFieldMeterCreate(int rowNum, String loginSheet, String communitySheet, String cdataInputSheet) throws IOException {
+	public void AdditionalDeatilsCreateMeter(int rowNum, String loginSheet, String communitySheet, String cdataInputSheet) throws IOException {
 		
 		CommonMethod.ExtentReportConfig();
 		System.out.println(Thread.currentThread().getStackTrace()[1].getMethodName());

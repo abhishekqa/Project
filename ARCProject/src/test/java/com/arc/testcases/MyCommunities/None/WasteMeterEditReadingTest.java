@@ -22,7 +22,7 @@ public class WasteMeterEditReadingTest extends BaseClass {
 		System.out.println(Thread.currentThread().getStackTrace()[1].getMethodName());
 		CommonMethod.ExtentReportConfig();
 		
-		CommonMethod.test = CommonMethod.extent.startTest("Waste Meter Edit Test", "Verifies if Login functionality is working fine").assignCategory("CheckLogin");
+		CommonMethod.test = CommonMethod.extent.startTest("Waste Meter Edit Test CommNone", "Verifies if Login functionality is working fine").assignCategory("CheckLogin");
     
 		ReusableMethodsLogin reuse = new ReusableMethodsLogin();
 		ReusableMethodsDataInput reuseDI = new ReusableMethodsDataInput();
@@ -39,7 +39,7 @@ public class WasteMeterEditReadingTest extends BaseClass {
 			System.out.println(t.getLocalizedMessage());
 			Error e1 = new Error(t.getMessage());
 			e1.setStackTrace(t.getStackTrace());
-			CommonMethod.takeScreenshot("wasteMeterEditReadingTest-communities");
+			CommonMethod.takeScreenshot("wasteMeterEditReadingTest-communitiesCommNone");
 			throw e1;
 		}
 	}

@@ -15,7 +15,7 @@ public class WasteGenerationMeterCreateTest extends BaseClass {
 	
 	@Test //(dependsOnMethods = { "com.arc.testcases.MyCities.LEEDforCities.LoginCaseTest.loginCase","com.arc.testcases.MyCities.LEEDforCities.SearchProgramTest.searchProgram","com.arc.testcases.MyCities.LEEDforCities.ClickSearchedProgramTest.clickSearchedProgram","com.arc.testcases.MyCities.LEEDforCities.PaymentbyCCTest.paymentbyCC" })
 	@Parameters({"rowNum" ,"loginSheet", "citySheet","cdataInputSheet"})
-	public void wasteMeterCreate(int rowNum, String loginSheet, String citySheet, String cdataInputSheet) throws IOException {
+	public void wasteGenerationMeterCreate(int rowNum, String loginSheet, String citySheet, String cdataInputSheet) throws IOException {
 		
 		CommonMethod.ExtentReportConfig();
 		System.out.println(Thread.currentThread().getStackTrace()[1].getMethodName());

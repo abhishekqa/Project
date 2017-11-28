@@ -22,7 +22,7 @@ public class InstallAllAppsTest extends BaseClass {
 		System.out.println(Thread.currentThread().getStackTrace()[1].getMethodName());
 		CommonMethod.ExtentReportConfig();
 		
-		CommonMethod.test = CommonMethod.extent.startTest("Install Apps-Communities", "Verifies if Apps functionality is working fine").assignCategory("CheckApps");
+		CommonMethod.test = CommonMethod.extent.startTest("Install Apps-CommunitiesLEED", "Verifies if Apps functionality is working fine").assignCategory("CheckApps");
     
 		ReusableMethodsLogin reuse = new ReusableMethodsLogin();
 		ReusableMethodsManage reuseManage = new ReusableMethodsManage();
@@ -40,7 +40,7 @@ public class InstallAllAppsTest extends BaseClass {
 			System.out.println(t.getLocalizedMessage());
 			Error e1 = new Error(t.getMessage());
 			e1.setStackTrace(t.getStackTrace());
-			CommonMethod.takeScreenshot("installAllAppsTest-communities");
+			CommonMethod.takeScreenshot("installAllAppsTest-communitiesLEED");
 			throw e1;
 		}
 	}

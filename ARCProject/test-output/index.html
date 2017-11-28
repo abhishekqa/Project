@@ -23,7 +23,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -37,7 +37,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-SanityTestCasesSuite">
-              <span class="suite-name border-passed">SanityTestCasesSuite</span>
+              <span class="suite-name border-failed">SanityTestCasesSuite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -90,21 +90,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">1 method, 1 failed,   </span>
                   </li>
                   <li>
-                    <span class="method-list-title passed">Passed methods</span>
-                    <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-SanityTestCasesSuite" class="hide-methods passed suite-SanityTestCasesSuite"> (hide)</a> <!-- hide-methods passed suite-SanityTestCasesSuite -->
-                      <a href="#" panel-name="suite-SanityTestCasesSuite" class="show-methods passed suite-SanityTestCasesSuite"> (show)</a> <!-- show-methods passed suite-SanityTestCasesSuite -->
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-SanityTestCasesSuite" class="hide-methods failed suite-SanityTestCasesSuite"> (hide)</a> <!-- hide-methods failed suite-SanityTestCasesSuite -->
+                      <a href="#" panel-name="suite-SanityTestCasesSuite" class="show-methods failed suite-SanityTestCasesSuite"> (show)</a> <!-- show-methods failed suite-SanityTestCasesSuite -->
                     </span>
-                    <div class="method-list-content passed suite-SanityTestCasesSuite">
+                    <div class="method-list-content failed suite-SanityTestCasesSuite">
                       <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-SanityTestCasesSuite" title="com.arc.testcases.MyBuildings.LEEDfortransit.CalculateWeightedOccupancyTest" hash-for-method="carbonTotal(3, NewBuildingProject, Login)">carbonTotal(3, NewBuildingProject, Login)</a> <!-- method navigator-link -->
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-SanityTestCasesSuite" title="com.arc.testcases.MyBuildings.Other.EnergyMeterCreateTest" hash-for-method="energyMeterCreate(5, NewBuildingProject, Login, BEnergy)">energyMeterCreate(5, NewBuildingProject, Login, BEnergy)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content passed suite-SanityTestCasesSuite -->
+                    </div> <!-- method-list-content failed suite-SanityTestCasesSuite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -116,22 +116,36 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-SanityTestCasesSuite" class="panel SanityTestCasesSuite">
-          <div class="suite-SanityTestCasesSuite-class-passed">
+          <div class="suite-SanityTestCasesSuite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.arc.testcases.MyBuildings.LEEDfortransit.CalculateWeightedOccupancyTest</span>
+              <img src="failed.png"/>
+              <span class="class-name">com.arc.testcases.MyBuildings.Other.EnergyMeterCreateTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="carbonTotal(3, NewBuildingProject, Login)">
-                  </a> <!-- carbonTotal(3, NewBuildingProject, Login) -->
-                  <span class="method-name">carbonTotal</span>
-                  <span class="parameters">(3, NewBuildingProject, Login)</span>
+                  <a name="energyMeterCreate(5, NewBuildingProject, Login, BEnergy)">
+                  </a> <!-- energyMeterCreate(5, NewBuildingProject, Login, BEnergy) -->
+                  <span class="method-name">energyMeterCreate</span>
+                  <span class="parameters">(5, NewBuildingProject, Login, BEnergy)</span>
+                  <div class="stack-trace">java.lang.Error: Error communicating with the remote browser. It may have died.
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;G10GNLT049&apos;, ip: &apos;172.18.0.227&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_151&apos;
+Driver info: driver.version: RemoteWebDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=46.0, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 55f66e8a-e6c4-4740-856c-84eac08c0a18
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:665)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:122)
+	at com.arc.driver.CommonMethod.sendKeys(CommonMethod.java:176)
+	at com.arc.ReusableMethods.ReusableMethodsDataInput.CreateMeter(ReusableMethodsDataInput.java:743)
+	at com.arc.testcases.MyBuildings.Other.EnergyMeterCreateTest.energyMeterCreate(EnergyMeterCreateTest.java:32)
+... Removed 24 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-SanityTestCasesSuite-class-passed -->
+          </div> <!-- suite-SanityTestCasesSuite-class-failed -->
         </div> <!-- panel SanityTestCasesSuite -->
         <div panel-name="test-xml-SanityTestCasesSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -180,6 +194,9 @@
     &lt;parameter name=&quot;energySheet&quot; value=&quot;BEnergy&quot;/&gt;
     &lt;parameter name=&quot;teamSheet&quot; value=&quot;BTeam&quot;/&gt;
     &lt;parameter name=&quot;paymentSheet&quot; value=&quot;Payment&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.arc.testcases.MyBuildings.Other.EnergyMeterCreateTest&quot;/&gt;
+    &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- ARCRegressionTest-Building-Other --&gt;
   &lt;test name=&quot;ARCRegressionTest-Building-Transit&quot;&gt;
     &lt;parameter name=&quot;loginSheet&quot; value=&quot;Login&quot;/&gt;
@@ -192,9 +209,6 @@
     &lt;parameter name=&quot;energySheet&quot; value=&quot;BEnergy&quot;/&gt;
     &lt;parameter name=&quot;teamSheet&quot; value=&quot;BTeam&quot;/&gt;
     &lt;parameter name=&quot;paymentSheet&quot; value=&quot;Payment&quot;/&gt;
-    &lt;classes&gt;
-      &lt;class name=&quot;com.arc.testcases.MyBuildings.LEEDfortransit.CalculateWeightedOccupancyTest&quot;/&gt;
-    &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- ARCRegressionTest-Building-Transit --&gt;
 &lt;/suite&gt; &lt;!-- SanityTestCasesSuite --&gt;
             </pre>
@@ -213,10 +227,10 @@
                 <span class="test-name">ARCRegressionTest-Building-None (0 classes)</span>
               </li>
               <li>
-                <span class="test-name">ARCRegressionTest-Building-Other (0 classes)</span>
+                <span class="test-name">ARCRegressionTest-Building-Other (1 class)</span>
               </li>
               <li>
-                <span class="test-name">ARCRegressionTest-Building-Transit (1 class)</span>
+                <span class="test-name">ARCRegressionTest-Building-Transit (0 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -244,9 +258,9 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'carbonTotal')
-data.setCell(0, 2, 'com.arc.testcases.MyBuildings.LEEDfortransit.CalculateWeightedOccupancyTest')
-data.setCell(0, 3, 71220);
+data.setCell(0, 1, 'energyMeterCreate')
+data.setCell(0, 2, 'com.arc.testcases.MyBuildings.Other.EnergyMeterCreateTest')
+data.setCell(0, 3, 87815);
 window.suiteTableData['SanityTestCasesSuite']= { tableData: data, tableDiv: 'times-div-SanityTestCasesSuite'}
 return data;
 }
@@ -277,22 +291,26 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.arc.testcases.MyBuildings.LEEDfortransit.CalculateWeightedOccupancyTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.arc.testcases.MyBuildings.Other.EnergyMeterCreateTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setup(firefox, staging)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">carbonTotal(3, NewBuildingProject, Login)</span>
-                <span class="method-start">25049 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">energyMeterCreate(5, NewBuildingProject, Login, BEnergy)</span>
+                <span class="method-start">33269 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">teardown([TestResult name=carbonTotal status=SUCCESS method=CalculateWeightedOccupancyTest.carbonTotal(int, j...)</span>
-                <span class="method-start">96271 ms</span>
+                <span class="method-name">teardown([TestResult name=energyMeterCreate status=FAILURE method=EnergyMeterCreateTest.energyMeterCreate(int...)</span>
+                <span class="method-start">121118 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">end</span>
-                <span class="method-start">96698 ms</span>
+                <span class="method-start">122226 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

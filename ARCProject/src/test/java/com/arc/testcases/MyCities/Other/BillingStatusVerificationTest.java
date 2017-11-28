@@ -22,15 +22,13 @@ public class BillingStatusVerificationTest extends BaseClass {
 		System.out.println(Thread.currentThread().getStackTrace()[1].getMethodName());
 		CommonMethod.ExtentReportConfig();
 		
-		CommonMethod.test = CommonMethod.extent.startTest("BillingStatus Test-Cities", "Verifies if billing status is displaying correct in billing page").assignCategory("CheckBilling");
+		CommonMethod.test = CommonMethod.extent.startTest("BillingStatus Test-Cities Other", "Verifies if billing status is displaying correct in billing page").assignCategory("CheckBilling");
     
 		ReusableMethodsLogin reuse = new ReusableMethodsLogin();
 		ReusableMethodsManage reuseManage = new ReusableMethodsManage();
 		ReusableMethodsSearch reuseSearch = new ReusableMethodsSearch();
 		
 		try {
-			
-			
 			reuse.LoginWithCities(rowNum, "My Cities",loginSheet);
 			reuseSearch.SearchProgram(data.getCellData(citySheet, "ProjectName", rowNum));
 			reuseSearch.VerifySearchedProgram(data.getCellData(citySheet, "ProjectName", rowNum));
@@ -40,7 +38,7 @@ public class BillingStatusVerificationTest extends BaseClass {
 			System.out.println(t.getLocalizedMessage());
 			Error e1 = new Error(t.getMessage());
 			e1.setStackTrace(t.getStackTrace());
-			CommonMethod.takeScreenshot("billingStatusVerificationTest-city");
+			CommonMethod.takeScreenshot("billingStatusVerificationTest-cityOther");
 			throw e1;
 		}
 	}

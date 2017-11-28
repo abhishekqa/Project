@@ -22,15 +22,13 @@ public class VerifyCertificationStatusTest extends BaseClass {
 		System.out.println(Thread.currentThread().getStackTrace()[1].getMethodName());
 		CommonMethod.ExtentReportConfig();
 		
-		CommonMethod.test = CommonMethod.extent.startTest("CertificationStatus Test-Communities", "Verifies if Certification status is displayed correctly").assignCategory("CheckCertification");
+		CommonMethod.test = CommonMethod.extent.startTest("CertificationStatus Test-CommunitiesNone", "Verifies if Certification status is displayed correctly").assignCategory("CheckCertification");
     
 		ReusableMethodsLogin reuse = new ReusableMethodsLogin();
 		ReusableMethodsManage reuseManage = new ReusableMethodsManage();
 		ReusableMethodsSearch reuseSearch = new ReusableMethodsSearch();
 		
 		try {
-			
-			
 			reuse.LoginWithCommunities(rowNum, "My Communities", loginSheet);
 			reuseSearch.SearchProgram(data.getCellData(communitySheet, "ProjectName", rowNum));
 			reuseSearch.VerifySearchedProgram(data.getCellData(communitySheet, "ProjectName", rowNum));
@@ -40,7 +38,7 @@ public class VerifyCertificationStatusTest extends BaseClass {
 			System.out.println(t.getLocalizedMessage());
 			Error e1 = new Error(t.getMessage());
 			e1.setStackTrace(t.getStackTrace());
-			CommonMethod.takeScreenshot("verifyCertificationStatusTest-communities");
+			CommonMethod.takeScreenshot("verifyCertificationStatusTest-communitiesNone");
 			throw e1;
 		}
 	}

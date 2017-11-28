@@ -22,15 +22,13 @@ public class VerifyRequirementsCompleteTest extends BaseClass {
 		System.out.println(Thread.currentThread().getStackTrace()[1].getMethodName());
 		CommonMethod.ExtentReportConfig();
 		
-		CommonMethod.test = CommonMethod.extent.startTest("RequirementComplete Test-Communities", "Verifies if Requirements is complete for Precertification").assignCategory("CheckPrerequisties");
+		CommonMethod.test = CommonMethod.extent.startTest("RequirementComplete Test-CommunitiesLEED", "Verifies if Requirements is complete for Precertification").assignCategory("CheckPrerequisties");
     
 		ReusableMethodsLogin reuse = new ReusableMethodsLogin();
 		ReusableMethodsPrerequisites reusePrereq = new ReusableMethodsPrerequisites();
 		ReusableMethodsSearch reuseSearch = new ReusableMethodsSearch();
 		
 		try {
-			
-			
 			reuse.LoginWithCommunities(rowNum, "My Communities", loginSheet);
 			reuseSearch.SearchProgram(data.getCellData(communitySheet, "ProjectName", rowNum));
 			reuseSearch.VerifySearchedProgram(data.getCellData(communitySheet, "ProjectName", rowNum));
@@ -40,7 +38,7 @@ public class VerifyRequirementsCompleteTest extends BaseClass {
 			System.out.println(t.getLocalizedMessage());
 			Error e1 = new Error(t.getMessage());
 			e1.setStackTrace(t.getStackTrace());
-			CommonMethod.takeScreenshot("verifyRequirementsCompleteTest-communities");
+			CommonMethod.takeScreenshot("verifyRequirementsCompleteTest-communitiesLEED");
 			throw e1;
 		}
 	}

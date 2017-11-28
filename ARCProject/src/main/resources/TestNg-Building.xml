@@ -201,9 +201,9 @@
 <class name="com.arc.testcases.MyBuildings.LEEDfortransit.WTotalAnalyticsTest"></class>
 <class name="com.arc.testcases.MyBuildings.LEEDfortransit.BillingStatusVerificationTest"></class>
 <class name="com.arc.testcases.MyBuildings.LEEDfortransit.ProjectFieldVerificationTest"></class>
-<class name="com.arc.testcases.MyBuildings.LEEDfortransit.ProjectDetailsVerificationTest"></class>-->
+<class name="com.arc.testcases.MyBuildings.LEEDfortransit.ProjectDetailsVerificationTest"></class>
 <class name="com.arc.testcases.MyBuildings.LEEDfortransit.CalculateWeightedOccupancyTest"></class>
-<!-- <class name="com.arc.testcases.MyBuildings.LEEDfortransit.PreCertReviewTest"/>
+<class name="com.arc.testcases.MyBuildings.LEEDfortransit.PreCertReviewTest"/>
 <class name="com.arc.testcases.MyBuildings.LEEDfortransit.UnderGroundAddNewProjectTest"/>
 
  --></classes>

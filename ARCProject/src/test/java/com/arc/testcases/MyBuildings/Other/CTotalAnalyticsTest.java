@@ -28,7 +28,6 @@ public class  CTotalAnalyticsTest extends BaseClass {
 		try {
 			
 			reuse.LoginToArc(rowNum, "My Projects", loginSheet);
-		  //  reuseSearch.VerifySearchedProgram( "1000137787");
 		 	reuseSearch.SearchProgram( data.getCellData(buildingSheet, "Project Name", rowNum));
 			reuseSearch.VerifySearchedProgram( data.getCellData(buildingSheet, "Project Name", rowNum));
 			reuseDI.verifyCTotalProjectAnalytics("Atotal");
@@ -40,7 +39,6 @@ public class  CTotalAnalyticsTest extends BaseClass {
 			System.out.println(t.getLocalizedMessage());
 			Error e1 = new Error(t.getMessage());
 			e1.setStackTrace(t.getStackTrace());
-			//CommonMethod.testlogError(  "<pre>" + e1.toString() + "</pre>");
 			CommonMethod.takeScreenshot( "analyticTotalCarbonTest-BOther");
 			throw e1;
 		}

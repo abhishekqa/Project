@@ -22,15 +22,13 @@ public class BillingRegistrationAmountVerificationTest extends BaseClass {
 		System.out.println(Thread.currentThread().getStackTrace()[1].getMethodName());
 		CommonMethod.ExtentReportConfig();
 		
-		CommonMethod.test = CommonMethod.extent.startTest("RegistrationAmount Test-Communities", "Verifies if registration amount is displayed correct in billing page").assignCategory("CheckBilling");
+		CommonMethod.test = CommonMethod.extent.startTest("RegistrationAmount Test-CommunitiesOther", "Verifies if registration amount is displayed correct in billing page").assignCategory("CheckBilling");
     
 		ReusableMethodsLogin reuse = new ReusableMethodsLogin();
 		ReusableMethodsManage reuseManage = new ReusableMethodsManage();
 		ReusableMethodsSearch reuseSearch = new ReusableMethodsSearch();
 		
 		try {
-			
-			
 			reuse.LoginWithCommunities(rowNum, "My Communities", loginSheet);
 			reuseSearch.SearchProgram(data.getCellData(communitySheet, "ProjectName", rowNum));
 			reuseSearch.VerifySearchedProgram(data.getCellData(communitySheet, "ProjectName", rowNum));
@@ -40,7 +38,7 @@ public class BillingRegistrationAmountVerificationTest extends BaseClass {
 			System.out.println(t.getLocalizedMessage());
 			Error e1 = new Error(t.getMessage());
 			e1.setStackTrace(t.getStackTrace());
-			CommonMethod.takeScreenshot("billingRegistrationAmountVerificationTest-communities");
+			CommonMethod.takeScreenshot("billingRegistrationAmountVerificationTest-communitiesOther");
 			throw e1;
 		}
 	}

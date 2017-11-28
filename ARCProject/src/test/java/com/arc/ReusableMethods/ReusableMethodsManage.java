@@ -125,8 +125,8 @@ public class ReusableMethodsManage extends BaseClass{
 
 	}
 	public void uploadImageParking() throws IOException, InterruptedException {
-		CommonMethod.ArcSpecifictoggle("ParkMeasures");
-		CommonMethod.click( "Manage");
+		
+		CommonMethod.ArcSpecifictoggle("Manage");
 		CommonMethod.click( "Project");
 		CommonMethod.testlog( "Pass", "Clicking on Project");
 		CommonMethod.sendKeys("ParkPdfUpload", CommonMethod.parkImageUpload);
@@ -143,8 +143,8 @@ public class ReusableMethodsManage extends BaseClass{
 		
 	}
 	public void projectFieldDisplayedParking() throws IOException, InterruptedException {
-		CommonMethod.ArcSpecifictoggle("ParkMeasures");
-		CommonMethod.click( "Manage");
+		
+		CommonMethod.ArcSpecifictoggle("Manage");
 		CommonMethod.click( "Project");
 		CommonMethod.testlog( "Pass", "Clicking on Project");
 		CommonMethod.Isdisplayed( "M_PName", "Field Not visible");
@@ -279,8 +279,8 @@ public void VerifyProjectDetailsTransit( String sheetName, int rowNum) throws IO
 	}
 	
 public void VerifyProjectDetailsParking() throws IOException, InterruptedException {
-	CommonMethod.ArcSpecifictoggle("ParkMeasures");
-	CommonMethod.click( "Manage");
+	
+	CommonMethod.ArcSpecifictoggle("Manage");
 	CommonMethod.click( "Project");
 	CommonMethod.testlog( "Pass", "Clicking on Project");
     CommonMethod.testlog("Pass","Verifying registered address , city ,country , owner details , data commissioned fields");
@@ -376,8 +376,8 @@ public void VerifyProjectDetailsParking() throws IOException, InterruptedExcepti
 	}
 	public void editProjectDetailsParking(String sheetName, int rowNum) throws IOException, InterruptedException {
 		
-		CommonMethod.ArcSpecifictoggle("ParkMeasures");
-		CommonMethod.click( "Manage");
+		
+		CommonMethod.ArcSpecifictoggle("Manage");
 		CommonMethod.click( "Project");
 		CommonMethod.testlog( "Pass", "Clicking on Project");
 		Thread.sleep(2000);
@@ -562,8 +562,7 @@ public void VerifyProjectDetailsParking() throws IOException, InterruptedExcepti
 		String Month = new SimpleDateFormat("MMM").format(cal.getTime());
 		String Curdate = dateFormat.format(date);
 		int Year = Calendar.getInstance().get(Calendar.YEAR);
-		CommonMethod.ArcSpecifictoggle("ParkMeasures");
-		CommonMethod.click( "Manage");
+		CommonMethod.ArcSpecifictoggle("Manage");
 		CommonMethod.scrolldowntoElement( "Billing");
 		CommonMethod.testlog( "Pass", "Clicking on Billing");
 		CommonMethod.click( "Billing");
@@ -577,8 +576,8 @@ public void VerifyProjectDetailsParking() throws IOException, InterruptedExcepti
 		/** Reading data from excel **/
 		String parkingregamount = data.getCellData(sheetName, "Parking Registration Amount", rowNum);
 		System.out.println(parkingregamount);
-		CommonMethod.ArcSpecifictoggle("ParkMeasures");
-		CommonMethod.click( "Manage");
+		
+		CommonMethod.ArcSpecifictoggle( "Manage");
 		CommonMethod.scrolldowntoElement( "Billing");
 		CommonMethod.click( "Billing");
 		CommonMethod.testlog( "Pass", "Clicking on Billing");
@@ -617,8 +616,7 @@ public void VerifyProjectDetailsParking() throws IOException, InterruptedExcepti
 
 	public void verifyBillingStatus() throws IOException, InterruptedException {
 
-		CommonMethod.ArcSpecifictoggle("ParkMeasures");
-		CommonMethod.click( "Manage");
+		CommonMethod.ArcSpecifictoggle("Manage");
 		CommonMethod.scrolldowntoElement( "Billing");
 		CommonMethod.click( "Billing");
 		CommonMethod.testlog( "Pass", "Clicking on Billing");

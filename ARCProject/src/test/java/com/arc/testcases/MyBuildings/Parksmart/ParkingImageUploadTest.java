@@ -24,7 +24,7 @@ public class ParkingImageUploadTest extends BaseClass {
 	public void projectDetails(int rowNum, String parkingSheet, String loginSheet) throws IOException {
 		
 		CommonMethod.ExtentReportConfig();
-		
+		System.out.println(Thread.currentThread().getStackTrace()[1].getMethodName());
 		CommonMethod.test = CommonMethod.extent.startTest("ParkingImageUploadTest-Parking", "Verifies if parking images uploaded successfully").assignCategory("ParkingImageUpload");
     
 		ReusableMethodsLogin reuse = new ReusableMethodsLogin();

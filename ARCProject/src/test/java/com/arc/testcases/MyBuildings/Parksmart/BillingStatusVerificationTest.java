@@ -20,7 +20,7 @@ public class BillingStatusVerificationTest extends BaseClass {
 	public void billingStatusVerificationTest(int rowNum, String parkingSheet, String loginSheet) throws IOException {
 		
 		CommonMethod.ExtentReportConfig();
-		
+		System.out.println(Thread.currentThread().getStackTrace()[1].getMethodName());
 		CommonMethod.test = CommonMethod.extent.startTest("BillingStatusTest-Parking", "Verifies if billing status is displaying correct in billing page").assignCategory("CheckBilling");
     
 		ReusableMethodsLogin reuse = new ReusableMethodsLogin();
@@ -30,7 +30,6 @@ public class BillingStatusVerificationTest extends BaseClass {
 		try {
 			
 			reuse.LoginToArc(rowNum, "My Projects", loginSheet);
-			//reuseSearch.VerifySearchedProgram( "1000137787");
 			reuseSearch.SearchProgram( data.getCellData(parkingSheet, "Project Name", rowNum));
 			reuseSearch.VerifySearchedProgram( data.getCellData(parkingSheet, "Project Name", rowNum));
 			reuseManage.verifyBillingStatus();
@@ -39,8 +38,7 @@ public class BillingStatusVerificationTest extends BaseClass {
 			System.out.println(t.getLocalizedMessage());
 			Error e1 = new Error(t.getMessage());
 			e1.setStackTrace(t.getStackTrace());
-			//CommonMethod.testlogError(  "<pre>" + e1.toString() + "</pre>");
-			CommonMethod.takeScreenshot( "billingStatusVerificationTest-LEED");
+			CommonMethod.takeScreenshot( "billingStatusVerificationTest-Park");
 			throw e1;
 		}
 	}

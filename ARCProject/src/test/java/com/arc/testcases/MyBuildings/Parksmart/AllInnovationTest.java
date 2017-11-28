@@ -22,7 +22,7 @@ public class AllInnovationTest extends BaseClass {
 	public void innovationTotalPointTest(int rowNum, String parkingSheet, String loginSheet) throws IOException {
 		
 		CommonMethod.ExtentReportConfig();
-		
+		System.out.println(Thread.currentThread().getStackTrace()[1].getMethodName());
 		CommonMethod.test = CommonMethod.extent.startTest("InnovationTotalPointTest-Parking", "Verifies if Innovation total point  functionality is working fine").assignCategory("CheckTotalPoint");
     
 		ReusableMethodsLogin reuse = new ReusableMethodsLogin();

@@ -11,7 +11,7 @@ import com.arc.driver.CommonMethod;
 public class PreCertReviewTest extends BaseClass {
 
 	
-	@Test//(dependsOnMethods = { "com.arc.testcases.MyBuildings.LEED.LoginCaseTest.loginCase","com.arc.testcases.MyBuildings.LEED.ClickSearchedProgramTest.clickSearchedProgram","com.arc.testcases.MyBuildings.LEED.PaymentbyCCTest.paymentbyCC" })
+	@Test//(dependsOnMethods = { "com.arc.testcases.MyCommunities.LEEDforCommunities.LoginCaseTest.loginCase","com.arc.testcases.MyCommunities.LEEDforCommunities.ClickSearchedProgramTest.clickSearchedProgram","com.arc.testcases.MyCommunities.LEEDforCommunities.PaymentbyCCTest.paymentbyCC" })
 	@Parameters({"rowNum" ,"communitySheet", "paymentSheet", "loginSheet" })
 	public void precertificationReview(int rowNum, String communitySheet, String paymentSheet, String loginSheet) throws IOException {
 		System.out.println(Thread.currentThread().getStackTrace()[1].getMethodName());
@@ -24,7 +24,6 @@ public class PreCertReviewTest extends BaseClass {
 					
 			
 			reuse.LoginToArc(rowNum, "My Projects",loginSheet);
-			//reuseSearch.VerifySearchedProgram( "1000137567");
 			reuseSearch.SearchProgram( data.getCellData(communitySheet, "ProjectName", rowNum));
 			reuseSearch.VerifySearchedProgram( data.getCellData(communitySheet, "ProjectName", rowNum));
 			reusePreCert.verifyPreCertReviewSelection("Review");
@@ -37,7 +36,6 @@ public class PreCertReviewTest extends BaseClass {
 			System.out.println(t.getLocalizedMessage());
 			Error e1 = new Error(t.getMessage());
 			e1.setStackTrace(t.getStackTrace());
-			//CommonMethod.testlogError(  "<pre>" + e1.toString() + "</pre>");
 			CommonMethod.takeScreenshot( "allSearaioPrecCertReviewTest");
 			throw e1;
 		}

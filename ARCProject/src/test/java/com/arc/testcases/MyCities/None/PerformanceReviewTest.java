@@ -16,7 +16,7 @@ public class PerformanceReviewTest extends BaseClass {
 	public void performanceReview(int rowNum, String communitySheet, String paymentSheet, String loginSheet) throws IOException {
 		System.out.println(Thread.currentThread().getStackTrace()[1].getMethodName());
 		CommonMethod.ExtentReportConfig();
-		CommonMethod.test = CommonMethod.extent.startTest("AllSearaioPrecCertReviewTest", "Verifies  ReviewPageTest successully ").assignCategory("SubmitForReview");
+		CommonMethod.test = CommonMethod.extent.startTest("AllSearaioPrecCertReviewTest City None", "Verifies  ReviewPageTest successully ").assignCategory("SubmitForReview");
 		ReusableMethodsLogin reuse = new ReusableMethodsLogin();
 		ReusableMethodsSearch reuseSearch = new ReusableMethodsSearch();
 		ReusableMethodsReviewCertification reusePreCert= new ReusableMethodsReviewCertification();
@@ -24,7 +24,6 @@ public class PerformanceReviewTest extends BaseClass {
 					
 			
 			reuse.LoginToArc(rowNum, "My Projects",loginSheet);
-			//reuseSearch.VerifySearchedProgram( "1000137567");
 			reuseSearch.SearchProgram( data.getCellData(communitySheet, "ProjectName", rowNum));
 			reuseSearch.VerifySearchedProgram( data.getCellData(communitySheet, "ProjectName", rowNum));
 			reusePreCert.verifyPerformanceReviewSelection("Review");
@@ -37,8 +36,7 @@ public class PerformanceReviewTest extends BaseClass {
 			System.out.println(t.getLocalizedMessage());
 			Error e1 = new Error(t.getMessage());
 			e1.setStackTrace(t.getStackTrace());
-			//CommonMethod.testlogError(  "<pre>" + e1.toString() + "</pre>");
-			CommonMethod.takeScreenshot( "allSearaioPrecCertReviewTest");
+			CommonMethod.takeScreenshot( "allSearaioPrecCertReviewTestCityNone");
 			throw e1;
 		}
 	}

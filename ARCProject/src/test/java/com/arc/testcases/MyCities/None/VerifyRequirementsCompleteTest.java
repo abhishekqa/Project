@@ -22,7 +22,7 @@ public class VerifyRequirementsCompleteTest extends BaseClass {
 		System.out.println(Thread.currentThread().getStackTrace()[1].getMethodName());
 		CommonMethod.ExtentReportConfig();
 		
-		CommonMethod.test = CommonMethod.extent.startTest("RequirementComplete Test-Cities", "Verifies if Requirements is complete for Precertification").assignCategory("CheckPrerequisties");
+		CommonMethod.test = CommonMethod.extent.startTest("RequirementComplete Test-Cities None", "Verifies if Requirements is complete for Precertification").assignCategory("CheckPrerequisties");
     
 		ReusableMethodsLogin reuse = new ReusableMethodsLogin();
 		ReusableMethodsPrerequisites reusePrereq = new ReusableMethodsPrerequisites();
@@ -40,8 +40,7 @@ public class VerifyRequirementsCompleteTest extends BaseClass {
 			System.out.println(t.getLocalizedMessage());
 			Error e1 = new Error(t.getMessage());
 			e1.setStackTrace(t.getStackTrace());
-			//CommonMethod.testlogError(driver,  "<pre>" + e1.toString() + "</pre>");
-			CommonMethod.takeScreenshot("verifyRequirementsCompleteTest-city");
+			CommonMethod.takeScreenshot("verifyRequirementsCompleteTest-city None");
 			throw e1;
 		}
 	}

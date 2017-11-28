@@ -21,7 +21,7 @@ public class AllManagementTotalPointTest extends BaseClass {
 	public void managementTotalPointTest(int rowNum, String parkingSheet, String loginSheet) throws IOException {
 		
 		CommonMethod.ExtentReportConfig();
-		
+		System.out.println(Thread.currentThread().getStackTrace()[1].getMethodName());
 		CommonMethod.test = CommonMethod.extent.startTest("ManagementTotalPointTest-Parking", "Verifies if Management TotalPoint functionality is working fine").assignCategory("CheckTotalPoint");
     
 		ReusableMethodsLogin reuse = new ReusableMethodsLogin();

@@ -22,7 +22,7 @@ public class PrerequisitesAttemptTest extends BaseClass {
 		System.out.println(Thread.currentThread().getStackTrace()[1].getMethodName());
 		CommonMethod.ExtentReportConfig();
 		
-		CommonMethod.test = CommonMethod.extent.startTest("PrerequisitesAttempt Test-Cities", "Verifies if Prerequisites functionality is working fine").assignCategory("CheckPrerequisites");
+		CommonMethod.test = CommonMethod.extent.startTest("PrerequisitesAttempt Test-Cities None", "Verifies if Prerequisites functionality is working fine").assignCategory("CheckPrerequisites");
     
 		ReusableMethodsLogin reuse = new ReusableMethodsLogin();
 		ReusableMethodsPrerequisites reusePrereq = new ReusableMethodsPrerequisites();
@@ -41,7 +41,7 @@ public class PrerequisitesAttemptTest extends BaseClass {
 			Error e1 = new Error(t.getMessage());
 			e1.setStackTrace(t.getStackTrace());
 			//CommonMethod.testlogError(driver,  "<pre>" + e1.toString() + "</pre>");
-			CommonMethod.takeScreenshot("prerequisitesAttemptTest-city");
+			CommonMethod.takeScreenshot("prerequisitesAttemptTest-city None");
 			throw e1;
 		}
 	}

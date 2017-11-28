@@ -18,7 +18,7 @@ public class WaterMeterCreateTest extends BaseClass {
 	public void waterMeterCreate(int rowNum, String loginSheet, String citySheet, String cdataInputSheet) throws IOException {
 		
 		CommonMethod.ExtentReportConfig();
-		
+		System.out.println(Thread.currentThread().getStackTrace()[1].getMethodName());
 		CommonMethod.test = CommonMethod.extent.startTest("CreateWaterMeterTest-CNone", "Verifies if Water Meter Create functionality is working fine").assignCategory("CreateMeter");
     
 		ReusableMethodsLogin reuse = new ReusableMethodsLogin();
@@ -28,7 +28,6 @@ public class WaterMeterCreateTest extends BaseClass {
 		try {
 			
 			reuse.LoginToArc(rowNum, "My Projects", loginSheet);
-			//reuseSearch.VerifySearchedProgram("1000138686");
 			reuseSearch.SearchProgram(data.getCellData(citySheet, "ProjectName", rowNum));
 			reuseSearch.VerifySearchedProgram(data.getCellData(citySheet, "ProjectName", rowNum));
 			reuseDI.CreateWaterMeterCities("Water", cdataInputSheet, rowNum);
@@ -37,7 +36,6 @@ public class WaterMeterCreateTest extends BaseClass {
 			System.out.println(t.getLocalizedMessage());
 			Error e1 = new Error(t.getMessage());
 			e1.setStackTrace(t.getStackTrace());
-			//CommonMethod.testlogError(driver,  "<pre>" + e1.toString() + "</pre>");
 			CommonMethod.takeScreenshot("createWaterMeterTest-CNone");
 			throw e1;
 		}

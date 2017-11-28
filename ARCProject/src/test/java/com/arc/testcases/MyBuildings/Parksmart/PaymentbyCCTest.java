@@ -22,7 +22,8 @@ public class PaymentbyCCTest extends BaseClass {
 		public void paymentbyCCTest(int rowNum, String parkingSheet, String paymentSheet, String loginSheet ) throws IOException {
 			
 			CommonMethod.ExtentReportConfig();
-		    CommonMethod.test = CommonMethod.extent.startTest("PaymentByCreditcardTest-parking", "Verifies if Payment done through creditcard is successful").assignCategory("CheckPayment");
+			System.out.println(Thread.currentThread().getStackTrace()[1].getMethodName());
+			CommonMethod.test = CommonMethod.extent.startTest("PaymentByCreditcardTest-parking", "Verifies if Payment done through creditcard is successful").assignCategory("CheckPayment");
 		    ReusableMethodsLogin reuse = new ReusableMethodsLogin();
 		    ReusableMethodsSearch reuseSearch = new ReusableMethodsSearch();
 			ReusableMethodsAddProject reuseAddProject = new ReusableMethodsAddProject();

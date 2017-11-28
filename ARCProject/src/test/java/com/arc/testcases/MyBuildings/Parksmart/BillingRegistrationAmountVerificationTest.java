@@ -25,7 +25,7 @@ public class BillingRegistrationAmountVerificationTest extends BaseClass {
 		public void billingRegistrationAmountVerificationTest(int rowNum, String parkingSheet, String paymentSheet, String loginSheet ) throws IOException {
 			
 			CommonMethod.ExtentReportConfig();
-			
+			System.out.println(Thread.currentThread().getStackTrace()[1].getMethodName());
 			CommonMethod.test = CommonMethod.extent.startTest("ProjRegAmountTest-Parking", "Verifies if registration amount is displayed correct in billing page").assignCategory("CheckBilling");
 	    
 			ReusableMethodsLogin reuse = new ReusableMethodsLogin();
@@ -35,7 +35,6 @@ public class BillingRegistrationAmountVerificationTest extends BaseClass {
 			try {
 				
 				reuse.LoginToArc(rowNum, "My Projects", loginSheet);
-				//reuseSearch.VerifySearchedProgram(, "1000136044");
 				reuseSearch.SearchProgram(data.getCellData(parkingSheet, "Project Name", rowNum));
 				reuseSearch.VerifySearchedProgram( data.getCellData(parkingSheet, "Project Name", rowNum));
 				reuseManage.verifyParkingRegAmount(paymentSheet, rowNum);
@@ -44,7 +43,6 @@ public class BillingRegistrationAmountVerificationTest extends BaseClass {
 				System.out.println(t.getLocalizedMessage());
 				Error e1 = new Error(t.getMessage());
 				e1.setStackTrace(t.getStackTrace());
-				//CommonMethod.testlogError(,  "<pre>" + e1.toString() + "</pre>");
 				CommonMethod.takeScreenshot( "projRegAmountTest-Parking");
 				throw e1;
 			}

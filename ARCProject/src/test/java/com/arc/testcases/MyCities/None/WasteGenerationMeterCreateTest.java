@@ -18,7 +18,7 @@ public class WasteGenerationMeterCreateTest extends BaseClass {
 	public void wasteMeterCreate(int rowNum, String loginSheet, String citySheet, String cdataInputSheet) throws IOException {
 		
 		CommonMethod.ExtentReportConfig();
-		
+		System.out.println(Thread.currentThread().getStackTrace()[1].getMethodName());
 		CommonMethod.test = CommonMethod.extent.startTest("CreateWasteGenerationMeterTest-CNone", "Verifies if Waste Generation functionality is working fine").assignCategory("CreateMeter");
     
 		ReusableMethodsLogin reuse = new ReusableMethodsLogin();
@@ -28,7 +28,6 @@ public class WasteGenerationMeterCreateTest extends BaseClass {
 		try {
 			
 			reuse.LoginToArc(rowNum, "My Projects", loginSheet);
-			//reuseSearch.VerifySearchedProgram("1000138686");
 			reuseSearch.SearchProgram(data.getCellData(citySheet, "ProjectName", rowNum));
 			reuseSearch.VerifySearchedProgram(data.getCellData(citySheet, "ProjectName", rowNum));
 			reuseDI.CreateWasteMeterCities("Waste", cdataInputSheet, rowNum);
@@ -37,7 +36,6 @@ public class WasteGenerationMeterCreateTest extends BaseClass {
 			System.out.println(t.getLocalizedMessage());
 			Error e1 = new Error(t.getMessage());
 			e1.setStackTrace(t.getStackTrace());
-			//CommonMethod.testlogError(driver,  "<pre>" + e1.toString() + "</pre>");
 			CommonMethod.takeScreenshot("createWasteMeterTest-CNone");
 			throw e1;
 		}

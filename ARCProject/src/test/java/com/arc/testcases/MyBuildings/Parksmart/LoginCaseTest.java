@@ -20,7 +20,7 @@ public class LoginCaseTest extends BaseClass {
 		public void loginCaseTest(int rowNum, String loginSheet)throws IOException {
 			
 			CommonMethod.ExtentReportConfig();
-			
+			System.out.println(Thread.currentThread().getStackTrace()[1].getMethodName());
 			CommonMethod.test = CommonMethod.extent.startTest("LoginTest-parking", "Verifies if parking login functionality is working fine").assignCategory("CheckLogin");
 	    
 			ReusableMethodsLogin reuse = new ReusableMethodsLogin();

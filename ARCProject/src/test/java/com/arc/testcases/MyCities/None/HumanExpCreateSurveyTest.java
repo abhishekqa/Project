@@ -28,7 +28,6 @@ public class HumanExpCreateSurveyTest extends BaseClass {
 		try {
 			
 			reuse.LoginToArc(rowNum, "My Projects", loginSheet);
-			//reuseSearch.VerifySearchedProgram("1000138676");
 			reuseSearch.SearchProgram(data.getCellData(citySheet, "ProjectName", rowNum));
 			reuseSearch.VerifySearchedProgram(data.getCellData(citySheet, "ProjectName", rowNum));
 			reuseDI.CreateHumtMeterCities("HumanExperience", cdataInputSheet, rowNum);
@@ -37,7 +36,6 @@ public class HumanExpCreateSurveyTest extends BaseClass {
 			System.out.println(t.getLocalizedMessage());
 			Error e1 = new Error(t.getMessage());
 			e1.setStackTrace(t.getStackTrace());
-			//CommonMethod.testlogError(driver,  "<pre>" + e1.toString() + "</pre>");
 			CommonMethod.takeScreenshot("CreateHumanExpCreateSurveyTest-CNone");
 			throw e1;
 		}

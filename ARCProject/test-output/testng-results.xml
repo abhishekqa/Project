@@ -2,12 +2,18 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="SanityTestCasesSuite" duration-ms="176344" started-at="2017-11-27T09:30:04Z" finished-at="2017-11-27T09:33:01Z">
+  <suite name="SanityTestCasesSuite" duration-ms="97994" started-at="2017-11-28T04:29:39Z" finished-at="2017-11-28T04:31:17Z">
     <groups>
     </groups>
-    <test name="ARCRegressionTest-LEED-for-Buildings" duration-ms="176270" started-at="2017-11-27T09:30:04Z" finished-at="2017-11-27T09:33:01Z">
-      <class name="com.arc.testcases.MyBuildings.LEED.BasePointPdfFileUplaod">
-        <test-method status="PASS" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.LEED.BasePointPdfFileUplaod@1ce92674]" name="setup" is-config="true" duration-ms="23350" started-at="2017-11-27T15:00:04Z" finished-at="2017-11-27T15:00:28Z">
+    <test name="ARCRegressionTest-LEED-for-Buildings" duration-ms="7" started-at="2017-11-28T04:29:39Z" finished-at="2017-11-28T04:29:39Z">
+    </test> <!-- ARCRegressionTest-LEED-for-Buildings -->
+    <test name="ARCRegressionTest-Building-None" duration-ms="1" started-at="2017-11-28T04:29:39Z" finished-at="2017-11-28T04:29:39Z">
+    </test> <!-- ARCRegressionTest-Building-None -->
+    <test name="ARCRegressionTest-Building-Other" duration-ms="1" started-at="2017-11-28T04:29:39Z" finished-at="2017-11-28T04:29:39Z">
+    </test> <!-- ARCRegressionTest-Building-Other -->
+    <test name="ARCRegressionTest-Building-Transit" duration-ms="97894" started-at="2017-11-28T04:29:39Z" finished-at="2017-11-28T04:31:17Z">
+      <class name="com.arc.testcases.MyBuildings.LEEDfortransit.CalculateWeightedOccupancyTest">
+        <test-method status="PASS" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.LEEDfortransit.CalculateWeightedOccupancyTest@64bfbc86]" name="setup" is-config="true" duration-ms="25040" started-at="2017-11-28T09:59:39Z" finished-at="2017-11-28T10:00:04Z">
           <params>
             <param index="0">
               <value>
@@ -23,11 +29,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="baseScoreAttempt(int, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.LEED.BasePointPdfFileUplaod@1ce92674]" name="baseScoreAttempt" duration-ms="151328" started-at="2017-11-27T15:00:28Z" finished-at="2017-11-27T15:02:59Z">
+        <test-method status="PASS" signature="carbonTotal(int, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.LEEDfortransit.CalculateWeightedOccupancyTest@64bfbc86]" name="carbonTotal" duration-ms="71220" started-at="2017-11-28T10:00:04Z" finished-at="2017-11-28T10:01:16Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[2]]>
+                <![CDATA[3]]>
               </value>
             </param>
             <param index="1">
@@ -43,29 +49,23 @@
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- baseScoreAttempt -->
-        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.arc.testcases.MyBuildings.LEED.BasePointPdfFileUplaod@1ce92674]" name="teardown" is-config="true" duration-ms="484" started-at="2017-11-27T15:02:59Z" finished-at="2017-11-27T15:03:00Z">
+        </test-method> <!-- carbonTotal -->
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.arc.testcases.MyBuildings.LEEDfortransit.CalculateWeightedOccupancyTest@64bfbc86]" name="teardown" is-config="true" duration-ms="427" started-at="2017-11-28T10:01:16Z" finished-at="2017-11-28T10:01:16Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=baseScoreAttempt status=SUCCESS method=BasePointPdfFileUplaod.baseScoreAttempt(int, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.LEED.BasePointPdfFileUplaod@1ce92674] output={null}]]]>
+                <![CDATA[[TestResult name=carbonTotal status=SUCCESS method=CalculateWeightedOccupancyTest.carbonTotal(int, java.lang.String, java.lang.String)[pri:0, instance:com.arc.testcases.MyBuildings.LEEDfortransit.CalculateWeightedOccupancyTest@64bfbc86] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method status="PASS" signature="end()[pri:0, instance:com.arc.testcases.MyBuildings.LEED.BasePointPdfFileUplaod@1ce92674]" name="end" is-config="true" duration-ms="1088" started-at="2017-11-27T15:03:00Z" finished-at="2017-11-27T15:03:01Z">
+        <test-method status="PASS" signature="end()[pri:0, instance:com.arc.testcases.MyBuildings.LEEDfortransit.CalculateWeightedOccupancyTest@64bfbc86]" name="end" is-config="true" duration-ms="1191" started-at="2017-11-28T10:01:16Z" finished-at="2017-11-28T10:01:17Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- end -->
-      </class> <!-- com.arc.testcases.MyBuildings.LEED.BasePointPdfFileUplaod -->
-    </test> <!-- ARCRegressionTest-LEED-for-Buildings -->
-    <test name="ARCRegressionTest-Building-None" duration-ms="0" started-at="2017-11-27T09:33:01Z" finished-at="2017-11-27T09:33:01Z">
-    </test> <!-- ARCRegressionTest-Building-None -->
-    <test name="ARCRegressionTest-Building-Other" duration-ms="3" started-at="2017-11-27T09:33:01Z" finished-at="2017-11-27T09:33:01Z">
-    </test> <!-- ARCRegressionTest-Building-Other -->
-    <test name="ARCRegressionTest-Building-Transit" duration-ms="0" started-at="2017-11-27T09:33:01Z" finished-at="2017-11-27T09:33:01Z">
+      </class> <!-- com.arc.testcases.MyBuildings.LEEDfortransit.CalculateWeightedOccupancyTest -->
     </test> <!-- ARCRegressionTest-Building-Transit -->
   </suite> <!-- SanityTestCasesSuite -->
 </testng-results>

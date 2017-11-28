@@ -18,7 +18,7 @@ public class ReusableMethodsManage extends BaseClass{
 	
 	public void calcuateWeightedOccupancy( String sheetName, int rowNum) throws IOException, InterruptedException {
 
-		String annual_ridership  = data.getCellData(sheetName, "TAnnualridership", rowNum);
+		String annual_ridership  = data.getCellData(sheetName, "TMAnnualRidership", rowNum);
 		String full_time_staff  = data.getCellData(sheetName, "TFulltimestaff", rowNum);
 		String average_time = data.getCellData(sheetName, "TAveragetime", rowNum);
 		String Weekly_Operating_hours = data.getCellData(sheetName, "TWeeklyOperatinghours", rowNum);
@@ -33,7 +33,7 @@ public class ReusableMethodsManage extends BaseClass{
 		CommonMethod.moveToElement("TMAnnualRidership");
 		CommonMethod.clear( "TMAnnualRidership");
 		CommonMethod.sendKeys("TMAnnualRidership", annual_ridership);
-		CommonMethod.click( "TMAnnualRidership");
+		CommonMethod.click( "TMFullTimeStaff");
 		Thread.sleep(3000);
 		CommonMethod.testlog("Pass", "Entering Annual Ridership Value");
 		
@@ -125,7 +125,8 @@ public class ReusableMethodsManage extends BaseClass{
 
 	}
 	public void uploadImageParking() throws IOException, InterruptedException {
-		CommonMethod.ArcSpecifictoggle( "Manage");
+		CommonMethod.ArcSpecifictoggle("ParkMeasures");
+		CommonMethod.click( "Manage");
 		CommonMethod.click( "Project");
 		CommonMethod.testlog( "Pass", "Clicking on Project");
 		CommonMethod.sendKeys("ParkPdfUpload", CommonMethod.parkImageUpload);
@@ -142,8 +143,8 @@ public class ReusableMethodsManage extends BaseClass{
 		
 	}
 	public void projectFieldDisplayedParking() throws IOException, InterruptedException {
-
-		CommonMethod.ArcSpecifictoggle( "Manage");
+		CommonMethod.ArcSpecifictoggle("ParkMeasures");
+		CommonMethod.click( "Manage");
 		CommonMethod.click( "Project");
 		CommonMethod.testlog( "Pass", "Clicking on Project");
 		CommonMethod.Isdisplayed( "M_PName", "Field Not visible");
@@ -278,8 +279,8 @@ public void VerifyProjectDetailsTransit( String sheetName, int rowNum) throws IO
 	}
 	
 public void VerifyProjectDetailsParking() throws IOException, InterruptedException {
-
-	CommonMethod.ArcSpecifictoggle( "Manage");
+	CommonMethod.ArcSpecifictoggle("ParkMeasures");
+	CommonMethod.click( "Manage");
 	CommonMethod.click( "Project");
 	CommonMethod.testlog( "Pass", "Clicking on Project");
     CommonMethod.testlog("Pass","Verifying registered address , city ,country , owner details , data commissioned fields");
@@ -375,7 +376,8 @@ public void VerifyProjectDetailsParking() throws IOException, InterruptedExcepti
 	}
 	public void editProjectDetailsParking(String sheetName, int rowNum) throws IOException, InterruptedException {
 		
-		CommonMethod.ArcSpecifictoggle( "Manage");
+		CommonMethod.ArcSpecifictoggle("ParkMeasures");
+		CommonMethod.click( "Manage");
 		CommonMethod.click( "Project");
 		CommonMethod.testlog( "Pass", "Clicking on Project");
 		Thread.sleep(2000);
@@ -463,6 +465,7 @@ public void VerifyProjectDetailsParking() throws IOException, InterruptedExcepti
 	}
 
 	public void VerifyFileDownload( String filename) throws IOException, InterruptedException {
+		
 		CommonMethod.ArcSpecifictoggle( "Manage");
 		CommonMethod.scrolldowntoElement( "Agreements");
 		CommonMethod.click( "Agreements");
@@ -559,7 +562,8 @@ public void VerifyProjectDetailsParking() throws IOException, InterruptedExcepti
 		String Month = new SimpleDateFormat("MMM").format(cal.getTime());
 		String Curdate = dateFormat.format(date);
 		int Year = Calendar.getInstance().get(Calendar.YEAR);
-		CommonMethod.ArcSpecifictoggle( "Manage");
+		CommonMethod.ArcSpecifictoggle("ParkMeasures");
+		CommonMethod.click( "Manage");
 		CommonMethod.scrolldowntoElement( "Billing");
 		CommonMethod.testlog( "Pass", "Clicking on Billing");
 		CommonMethod.click( "Billing");
@@ -573,7 +577,8 @@ public void VerifyProjectDetailsParking() throws IOException, InterruptedExcepti
 		/** Reading data from excel **/
 		String parkingregamount = data.getCellData(sheetName, "Parking Registration Amount", rowNum);
 		System.out.println(parkingregamount);
-		CommonMethod.ArcSpecifictoggle( "Manage");
+		CommonMethod.ArcSpecifictoggle("ParkMeasures");
+		CommonMethod.click( "Manage");
 		CommonMethod.scrolldowntoElement( "Billing");
 		CommonMethod.click( "Billing");
 		CommonMethod.testlog( "Pass", "Clicking on Billing");
@@ -612,7 +617,8 @@ public void VerifyProjectDetailsParking() throws IOException, InterruptedExcepti
 
 	public void verifyBillingStatus() throws IOException, InterruptedException {
 
-		CommonMethod.ArcSpecifictoggle( "Manage");
+		CommonMethod.ArcSpecifictoggle("ParkMeasures");
+		CommonMethod.click( "Manage");
 		CommonMethod.scrolldowntoElement( "Billing");
 		CommonMethod.click( "Billing");
 		CommonMethod.testlog( "Pass", "Clicking on Billing");
@@ -628,19 +634,19 @@ public void VerifyProjectDetailsParking() throws IOException, InterruptedExcepti
 		CommonMethod.click( "EnergyStar");
 		CommonMethod.testlog( "Pass", "Uninstalling EnergyStar");
 		Thread.sleep(2000);
-		Assert.assertEquals(CommonMethod.getText("EnergyInstallCheck"),"Install", "App Not Installed"); 
+		Assert.assertEquals(CommonMethod.getText("EnergyUnInstallCheck"),"Install", "App Not Installed"); 
 		CommonMethod.click( "DropBox");
 		CommonMethod.testlog( "Pass", "Uninstalling Dropbox");
 		Thread.sleep(2000);
-		Assert.assertEquals(CommonMethod.getText("DropboxInstallCheck"),"Install", "App Not Installed");
+		Assert.assertEquals(CommonMethod.getText("DropboxUnInstallCheck"),"Install", "App Not Installed");
 		CommonMethod.click( "OneDrive");
 		CommonMethod.testlog( "Pass", "Unistalling OneDrive");
 		Thread.sleep(2000);
-		Assert.assertEquals(CommonMethod.getText("OneDriveInstallCheck"),"Install", "App Not Installed");
+		Assert.assertEquals(CommonMethod.getText("OneDriveUnInstallCheck"),"Install", "App Not Installed");
 		CommonMethod.click( "GoogleDrive");
 		CommonMethod.testlog( "Pass", "Unistalling GoogleDrive");
 		Thread.sleep(2000);
-		Assert.assertEquals(CommonMethod.getText("GoogleInstallCheck"),"Install", "App Not Installed");
+		Assert.assertEquals(CommonMethod.getText("GoogleUnInstallCheck"),"Install", "App Not Installed");
 		CommonMethod.testlog( "Pass", "Verifying if apps are Uninstalled successfully");
 		Thread.sleep(5000);
 

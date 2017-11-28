@@ -18,11 +18,11 @@ public class ManagementTotalPointTest extends BaseClass {
 	
 	@Test//(dependsOnMethods = { "com.arc.testcases.MyBuildings.LEED.LoginCaseTest.loginCaseTest","com.arc.testcases.MyBuildings.LEED.ClickSearchedProgramTest.clickSearchedProgramTest","com.arc.testcases.MyBuildings.LEED.PaymentbyCCTest.paymentbyCCTest" })
 	@Parameters({"rowNum" ,"buildingSheet","loginSheet"})
-	public void prerequisitesAttemptTest(int rowNum, String buildingSheet, String loginSheet) throws IOException {
+	public void managementTotalPoint(int rowNum, String buildingSheet, String loginSheet) throws IOException {
 		
 		CommonMethod.ExtentReportConfig();
-		
-		CommonMethod.test = CommonMethod.extent.startTest("PrerequisitesAttemptTest-LEED", "Verifies if Prerequisites functionality is working fine").assignCategory("CheckPrerequisites");
+		System.out.println(Thread.currentThread().getStackTrace()[1].getMethodName());
+		CommonMethod.test = CommonMethod.extent.startTest("ManagementTotalPointTest-Parking", "Verifies if Prerequisites functionality is working fine").assignCategory("CheckPrerequisites");
     
 		ReusableMethodsLogin reuse = new ReusableMethodsLogin();
 		ReusableMethodsPrerequisites reusePrereq = new ReusableMethodsPrerequisites();
@@ -31,7 +31,6 @@ public class ManagementTotalPointTest extends BaseClass {
 		try {
 			
 			reuse.LoginToArc(rowNum, "My Projects", loginSheet);
-		//	reuseSearch.VerifySearchedProgram( "1000137574");
 			reuseSearch.SearchProgram( data.getCellData(buildingSheet, "Project Name", rowNum));
 			reuseSearch.VerifySearchedProgram( data.getCellData(buildingSheet, "Project Name", rowNum));
 			reusePrereq.parkingman("sitemanagement",9);
@@ -40,8 +39,7 @@ public class ManagementTotalPointTest extends BaseClass {
 			System.out.println(t.getLocalizedMessage());
 			Error e1 = new Error(t.getMessage());
 			e1.setStackTrace(t.getStackTrace());
-			//CommonMethod.testlogError(  "<pre>" + e1.toString() + "</pre>");
-			CommonMethod.takeScreenshot( "prerequisitesAttemptTest-LEED");
+			CommonMethod.takeScreenshot( "ManagementTotalPointTest-Parking");
 			throw e1;
 		}
 	}

@@ -22,7 +22,7 @@ public class SearchProgramTest extends BaseClass {
 	public void searchProgramTest(int rowNum, String loginSheet ,String parkingSheet) throws IOException {
 		
 		CommonMethod.ExtentReportConfig();
-		
+		System.out.println(Thread.currentThread().getStackTrace()[1].getMethodName());
 		CommonMethod.test = CommonMethod.extent.startTest("SearchProgramTest-parking", "Verifies if Search functionality is working fine").assignCategory("CheckSearch");
         
 		ReusableMethodsLogin reuse = new ReusableMethodsLogin();

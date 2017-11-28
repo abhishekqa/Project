@@ -40,7 +40,6 @@ public class AddTeamMemberTest extends BaseClass {
 			System.out.println(t.getLocalizedMessage());
 			Error e1 = new Error(t.getMessage());
 			e1.setStackTrace(t.getStackTrace());
-			//CommonMethod.testlogError(driver,  "<pre>" + e1.toString() + "</pre>");
 			CommonMethod.takeScreenshot("addTeamMemberTest-communities");
 			throw e1;
 		}

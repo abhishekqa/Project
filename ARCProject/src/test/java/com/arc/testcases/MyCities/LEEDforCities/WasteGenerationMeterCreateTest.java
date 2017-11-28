@@ -18,7 +18,7 @@ public class WasteGenerationMeterCreateTest extends BaseClass {
 	public void wasteMeterCreate(int rowNum, String loginSheet, String citySheet, String cdataInputSheet) throws IOException {
 		
 		CommonMethod.ExtentReportConfig();
-		
+		System.out.println(Thread.currentThread().getStackTrace()[1].getMethodName());
 		CommonMethod.test = CommonMethod.extent.startTest("CreateWasteGenerationMeterTest-CLEED", "Verifies if Waste Generation functionality is working fine").assignCategory("CreateMeter");
     
 		ReusableMethodsLogin reuse = new ReusableMethodsLogin();

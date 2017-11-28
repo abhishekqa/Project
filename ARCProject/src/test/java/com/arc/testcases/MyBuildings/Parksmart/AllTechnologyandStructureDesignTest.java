@@ -19,10 +19,10 @@ public class AllTechnologyandStructureDesignTest extends BaseClass {
 	@Test(dependsOnMethods = { "com.arc.testcases.MyBuildings.Parksmart.LoginCaseTest.loginCaseTest","com.arc.testcases.MyBuildings.Parksmart.SearchProgramTest.searchProgramTest","com.arc.testcases.MyBuildings.Parksmart.PaymentbyCCTest.paymentbyCCTest" })
 
 	@Parameters({"rowNum" ,"parkingSheet","loginSheet"})
-	public void managementTotalPointTest(int rowNum, String parkingSheet, String loginSheet) throws IOException {
+	public void AllTechnologyandStructureDesign(int rowNum, String parkingSheet, String loginSheet) throws IOException {
 		
 		CommonMethod.ExtentReportConfig();
-		
+		System.out.println(Thread.currentThread().getStackTrace()[1].getMethodName());
 		CommonMethod.test = CommonMethod.extent.startTest("TechnologyandStructureDesignTotalPointTest-Parking", "Verifies if technology and Structure design total point functionality is working fine").assignCategory("CheckTotalPoint");
     
 		ReusableMethodsLogin reuse = new ReusableMethodsLogin();

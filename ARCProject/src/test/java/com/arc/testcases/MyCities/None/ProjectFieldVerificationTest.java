@@ -22,7 +22,7 @@ public class ProjectFieldVerificationTest extends BaseClass {
 		System.out.println(Thread.currentThread().getStackTrace()[1].getMethodName());
 		CommonMethod.ExtentReportConfig();
 		
-		CommonMethod.test = CommonMethod.extent.startTest("ProjectField Test-Buildings", "Verifies if Project Field is displayed correct").assignCategory("CheckProject");
+		CommonMethod.test = CommonMethod.extent.startTest("ProjectField Test-City None ", "Verifies if Project Field is displayed correct").assignCategory("CheckProject");
     
 		ReusableMethodsLogin reuse = new ReusableMethodsLogin();
 		ReusableMethodsManage reuseManage = new ReusableMethodsManage();
@@ -40,7 +40,6 @@ public class ProjectFieldVerificationTest extends BaseClass {
 			System.out.println(t.getLocalizedMessage());
 			Error e1 = new Error(t.getMessage());
 			e1.setStackTrace(t.getStackTrace());
-			//CommonMethod.testlogError(driver,  "<pre>" + e1.toString() + "</pre>");
 			CommonMethod.takeScreenshot("projectFieldVerificationTest-city");
 			throw e1;
 		}

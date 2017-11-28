@@ -22,7 +22,7 @@ public class ProjectDetailsVerificationTest extends BaseClass {
 		System.out.println(Thread.currentThread().getStackTrace()[1].getMethodName());
 		CommonMethod.ExtentReportConfig();
 		
-		CommonMethod.test = CommonMethod.extent.startTest("ProjectDetails Test-Buildings", "Verifies if Project Details is correct").assignCategory("CheckProject");
+		CommonMethod.test = CommonMethod.extent.startTest("ProjectDetails Test- City None", "Verifies if Project Details is correct").assignCategory("CheckProject");
     
 		ReusableMethodsLogin reuse = new ReusableMethodsLogin();
 		ReusableMethodsManage reuseManage = new ReusableMethodsManage();
@@ -38,8 +38,7 @@ public class ProjectDetailsVerificationTest extends BaseClass {
 			System.out.println(t.getLocalizedMessage());
 			Error e1 = new Error(t.getMessage());
 			e1.setStackTrace(t.getStackTrace());
-			//CommonMethod.testlogError(driver,  "<pre>" + e1.toString() + "</pre>");
-			CommonMethod.takeScreenshot("projectDetailsVerificationTest-city");
+			CommonMethod.takeScreenshot("projectDetailsVerificationTest-city None");
 			throw e1;
 		}
 	}

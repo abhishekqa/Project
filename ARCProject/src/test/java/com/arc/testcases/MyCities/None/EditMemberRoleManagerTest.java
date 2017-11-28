@@ -22,7 +22,7 @@ public class EditMemberRoleManagerTest extends BaseClass {
 		System.out.println(Thread.currentThread().getStackTrace()[1].getMethodName());
 		CommonMethod.ExtentReportConfig();
 		
-		CommonMethod.test = CommonMethod.extent.startTest("EditTeamMemberRole Test-Cities", "Verifies if edit team member functionality is working fine").assignCategory("CheckTeam");
+		CommonMethod.test = CommonMethod.extent.startTest("EditTeamMemberRole Test-CitiesNone", "Verifies if edit team member functionality is working fine").assignCategory("CheckTeam");
     
 		ReusableMethodsLogin reuse = new ReusableMethodsLogin();
 		ReusableMethodsManage reuseManage = new ReusableMethodsManage();
@@ -39,8 +39,7 @@ public class EditMemberRoleManagerTest extends BaseClass {
 			System.out.println(t.getLocalizedMessage());
 			Error e1 = new Error(t.getMessage());
 			e1.setStackTrace(t.getStackTrace());
-			//CommonMethod.testlogError(driver,  "<pre>" + e1.toString() + "</pre>");
-			CommonMethod.takeScreenshot("editMemberRoleManagerTest-city");
+			CommonMethod.takeScreenshot("editMemberRoleManagerTest-cityNone");
 			throw e1;
 		}
 	}

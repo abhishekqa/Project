@@ -20,7 +20,7 @@ public class SearchProgramTest extends BaseClass {
 		
 		CommonMethod.ExtentReportConfig();
 		
-		CommonMethod.test = CommonMethod.extent.startTest("SearchProgram Test-Cities", "Verifies if Search functionality is working fine").assignCategory("CheckSearch");
+		CommonMethod.test = CommonMethod.extent.startTest("SearchProgram Test-Cities None", "Verifies if Search functionality is working fine").assignCategory("CheckSearch");
         
 		ReusableMethodsLogin reuse = new ReusableMethodsLogin();
 		ReusableMethodsSearch reuseSearch = new ReusableMethodsSearch();
@@ -36,7 +36,7 @@ public class SearchProgramTest extends BaseClass {
 			Error e1 = new Error(t.getMessage());
 			e1.setStackTrace(t.getStackTrace());
 			//CommonMethod.testlogError(driver,  "<pre>" + e1.toString() + "</pre>");
-			CommonMethod.takeScreenshot("searchProgramTest-city");
+			CommonMethod.takeScreenshot("searchProgramTest-city None");
 			throw e1;
 		}
 	}

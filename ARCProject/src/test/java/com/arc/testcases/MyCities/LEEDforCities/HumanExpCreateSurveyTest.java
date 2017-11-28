@@ -18,7 +18,7 @@ public class HumanExpCreateSurveyTest extends BaseClass {
 	public void humanExperienceMeterCreate(int rowNum, String loginSheet, String citySheet, String cdataInputSheet) throws IOException {
 		
 		CommonMethod.ExtentReportConfig();
-		
+		System.out.println(Thread.currentThread().getStackTrace()[1].getMethodName());
 		CommonMethod.test = CommonMethod.extent.startTest("CreateHumanExpCreateSurveyTest-CLEED", "Verifies if Create Human Experience Survey functionality is working fine").assignCategory("CreateMeter");
     
 		ReusableMethodsLogin reuse = new ReusableMethodsLogin();
@@ -28,7 +28,6 @@ public class HumanExpCreateSurveyTest extends BaseClass {
 		try {
 			
 			reuse.LoginToArc(rowNum, "My Projects", loginSheet);
-			//reuseSearch.VerifySearchedProgram("1000138676");
 			reuseSearch.SearchProgram(data.getCellData(citySheet, "ProjectName", rowNum));
 			reuseSearch.VerifySearchedProgram(data.getCellData(citySheet, "ProjectName", rowNum));
 			reuseDI.CreateHumtMeterCities("HumanExperience", cdataInputSheet, rowNum);

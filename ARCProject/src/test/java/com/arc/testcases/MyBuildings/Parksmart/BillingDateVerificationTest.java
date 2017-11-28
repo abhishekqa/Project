@@ -17,7 +17,7 @@ public class BillingDateVerificationTest extends BaseClass {
 	public void billingDateVerificationTest(int rowNum, String parkingSheet, String loginSheet) throws IOException {
 		
 		CommonMethod.ExtentReportConfig();
-		
+		System.out.println(Thread.currentThread().getStackTrace()[1].getMethodName());
 		CommonMethod.test = CommonMethod.extent.startTest("BillingDateTest-Parking", "Verifies if Billing Date is correct").assignCategory("CheckBilling");
     
 		ReusableMethodsLogin reuse = new ReusableMethodsLogin();

@@ -18,7 +18,7 @@ public class TrasnsportionCreateMeterTest extends BaseClass {
 	public void transprotionMeterCreate(int rowNum, String loginSheet, String citySheet, String cdataInputSheet) throws IOException {
 		
 		CommonMethod.ExtentReportConfig();
-		
+		System.out.println(Thread.currentThread().getStackTrace()[1].getMethodName());
 		CommonMethod.test = CommonMethod.extent.startTest("CreateTransportationMeterTest-CLEED", "Verifies if Create Transportation functionality is working fine").assignCategory("CreateMeter");
     
 		ReusableMethodsLogin reuse = new ReusableMethodsLogin();

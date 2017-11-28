@@ -22,7 +22,7 @@ public class BillingDateVerificationTest extends BaseClass {
 		System.out.println(Thread.currentThread().getStackTrace()[1].getMethodName());
 		CommonMethod.ExtentReportConfig();
 		
-		CommonMethod.test = CommonMethod.extent.startTest("BillingDate Test-Cities", "Verifies if Billing Date is correct").assignCategory("CheckBilling");
+		CommonMethod.test = CommonMethod.extent.startTest("BillingDate Test-CitiesNone", "Verifies if Billing Date is correct").assignCategory("CheckBilling");
     
 		ReusableMethodsLogin reuse = new ReusableMethodsLogin();
 		ReusableMethodsManage reuseManage = new ReusableMethodsManage();
@@ -39,8 +39,7 @@ public class BillingDateVerificationTest extends BaseClass {
 			System.out.println(t.getLocalizedMessage());
 			Error e1 = new Error(t.getMessage());
 			e1.setStackTrace(t.getStackTrace());
-			//CommonMethod.testlogError(driver,  "<pre>" + e1.toString() + "</pre>");
-			CommonMethod.takeScreenshot( "billingDateVerificationTest-city");
+			CommonMethod.takeScreenshot( "billingDateVerificationTest-cityNone");
 			throw e1;
 		}
 	}

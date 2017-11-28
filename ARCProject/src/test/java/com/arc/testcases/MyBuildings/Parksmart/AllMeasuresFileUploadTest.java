@@ -21,7 +21,7 @@ public class AllMeasuresFileUploadTest extends BaseClass {
 	public void allMeasuresFileUploadTest(int rowNum, String parkingSheet, String loginSheet) throws IOException {
 		
 		CommonMethod.ExtentReportConfig();
-		
+		System.out.println(Thread.currentThread().getStackTrace()[1].getMethodName());
 		CommonMethod.test = CommonMethod.extent.startTest("AllMeasuresFileUpload_48Credits-parking", "Verifies if all measures file upload functionality is working fine").assignCategory("FileUpload");
     
 		ReusableMethodsLogin reuse = new ReusableMethodsLogin();

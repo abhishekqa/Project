@@ -1,15 +1,12 @@
 package com.arc.testcases.MyBuildings.Parksmart;
 
 import java.io.IOException;
-import org.testng.ITestResult;
-import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 import com.arc.ReusableMethods.ReusableMethodsAddProject;
 import com.arc.ReusableMethods.ReusableMethodsLogin;
 import com.arc.driver.BaseClass;
 import com.arc.driver.CommonMethod;
-import com.relevantcodes.extentreports.LogStatus;
 
 public class AddNewProjectTest extends BaseClass {
 	
@@ -18,7 +15,7 @@ public class AddNewProjectTest extends BaseClass {
 	public void addNewProjectTest(int rowNum, String loginSheet, String parkingSheet ) throws IOException {
 		
 		CommonMethod.ExtentReportConfig();
-		
+		System.out.println(Thread.currentThread().getStackTrace()[1].getMethodName());
 		CommonMethod.test = CommonMethod.extent.startTest("AddNewProjectUSTest-Parking", "Verifies if New Project is added successfully").assignCategory("CheckAddProject");
     
 		ReusableMethodsLogin reuse = new ReusableMethodsLogin();

@@ -24,8 +24,8 @@ public class VerifyAgreementFileDownloadTest extends BaseClass {
 	public void verifyAgreementFileDownloadTest(int rowNum, String parkingSheet, String loginSheet) throws IOException {
 		
 		CommonMethod.ExtentReportConfig();
-		
-		CommonMethod.test = CommonMethod.extent.startTest("AgreementpdfdownloadTest-BLEED", "Verifies if sign agreement downloaded successfully working fine").assignCategory("AgreementDownload");
+		System.out.println(Thread.currentThread().getStackTrace()[1].getMethodName());
+		CommonMethod.test = CommonMethod.extent.startTest("AgreementpdfdownloadTest-Parksmart", "Verifies if sign agreement downloaded successfully working fine").assignCategory("AgreementDownload");
     
 		ReusableMethodsLogin reuse = new ReusableMethodsLogin();
 		ReusableMethodsManage reuseManage = new ReusableMethodsManage();
@@ -41,8 +41,7 @@ public class VerifyAgreementFileDownloadTest extends BaseClass {
 			System.out.println(t.getLocalizedMessage());
 			Error e1 = new Error(t.getMessage());
 			e1.setStackTrace(t.getStackTrace());
-			//CommonMethod.testlogError(  "<pre>" + e1.toString() + "</pre>");
-			CommonMethod.takeScreenshot( "verifyAgreementFileDownloadTest-LEED");
+			CommonMethod.takeScreenshot( "verifyAgreementFileDownloadTest-Parksmart");
 			throw e1;
 		}
 	}

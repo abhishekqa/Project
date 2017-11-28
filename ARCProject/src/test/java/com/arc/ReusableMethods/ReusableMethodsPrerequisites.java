@@ -42,7 +42,9 @@ public class ReusableMethodsPrerequisites extends BaseClass {
 	}
 	public void parkinInnovation(String firstCredit, int NoOfCredits)
 			throws IOException, InterruptedException {
-		CommonMethod.ArcSpecifictoggle( "Innovation");
+		
+		CommonMethod.ArcSpecifictoggle("ParkMeasures");
+		CommonMethod.click( "Innovation");
 		CommonMethod.click( firstCredit);
 		CommonMethod.testlog("Pass", "Clicking on Credit " + firstCredit);
 
@@ -83,8 +85,8 @@ public class ReusableMethodsPrerequisites extends BaseClass {
 	
 	 public void AllMeasureFileUpload(  String firstCredit, int NoOfCredits)
 			   throws IOException, InterruptedException {
-
-			  CommonMethod.ArcSpecifictoggle( "AllMeasure");
+		      CommonMethod.ArcSpecifictoggle("ParkMeasures");
+			  CommonMethod.click( "AllMeasure");
 			  CommonMethod.click( firstCredit);
 			  CommonMethod.testlog( "Pass", "Clicking on Credit " + firstCredit);
 
@@ -107,7 +109,8 @@ public class ReusableMethodsPrerequisites extends BaseClass {
 	
 	public void parkingTechnology(String firstCredit, int NoOfCredits)
 			throws IOException, InterruptedException {
-		CommonMethod.ArcSpecifictoggle( "Technology");
+		CommonMethod.ArcSpecifictoggle("ParkMeasures");
+		CommonMethod.click( "Technology");
 		CommonMethod.click( firstCredit);
 		CommonMethod.testlog("Pass", "Clicking on Credit " + firstCredit);
 
@@ -327,7 +330,8 @@ public class ReusableMethodsPrerequisites extends BaseClass {
 	}
 	public void parkingman(String firstCredit, int NoOfCredits)
 			throws IOException, InterruptedException {
-		CommonMethod.ArcSpecifictoggle( "Management");
+		CommonMethod.ArcSpecifictoggle("ParkMeasures");
+		CommonMethod.click( "Management");
 		CommonMethod.click( firstCredit);
 		CommonMethod.testlog("Pass", "Clicking on Credit " + firstCredit);
 
@@ -511,7 +515,8 @@ public class ReusableMethodsPrerequisites extends BaseClass {
 	}
 	public void parkingprogram(String firstCredit, int NoOfCredits)
 			throws IOException, InterruptedException {
-		   CommonMethod.ArcSpecifictoggle( "Program");
+		   CommonMethod.ArcSpecifictoggle("ParkMeasures");   
+		   CommonMethod.click( "Program");
 		   CommonMethod.click( firstCredit);
 		   CommonMethod.testlog("Pass", "Clicking on Credit " + firstCredit);
 

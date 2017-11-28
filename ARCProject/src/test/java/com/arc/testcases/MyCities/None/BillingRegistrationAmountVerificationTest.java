@@ -22,7 +22,7 @@ public class BillingRegistrationAmountVerificationTest extends BaseClass {
 		System.out.println(Thread.currentThread().getStackTrace()[1].getMethodName());
 		CommonMethod.ExtentReportConfig();
 		
-		CommonMethod.test = CommonMethod.extent.startTest("RegistrationAmount Test-Cities", "Verifies if registration amount is displayed correct in billing page").assignCategory("CheckBilling");
+		CommonMethod.test = CommonMethod.extent.startTest("RegistrationAmount Test-CitiesNone", "Verifies if registration amount is displayed correct in billing page").assignCategory("CheckBilling");
     
 		ReusableMethodsLogin reuse = new ReusableMethodsLogin();
 		ReusableMethodsManage reuseManage = new ReusableMethodsManage();
@@ -38,8 +38,7 @@ public class BillingRegistrationAmountVerificationTest extends BaseClass {
 			System.out.println(t.getLocalizedMessage());
 			Error e1 = new Error(t.getMessage());
 			e1.setStackTrace(t.getStackTrace());
-			//CommonMethod.testlogError(driver,  "<pre>" + e1.toString() + "</pre>");
-			CommonMethod.takeScreenshot("billingRegistrationAmountVerificationTest-city");
+			CommonMethod.takeScreenshot("billingRegistrationAmountVerificationTest-cityNone");
 			throw e1;
 		}
 	}

@@ -13,7 +13,7 @@ import com.arc.driver.CommonMethod;
 
 public class HumanExpCreateSurveyTest extends BaseClass {
 	
-	@Test //(dependsOnMethods = { "com.arc.testcases.MyCities.LEEDforCities.LoginCaseTest.loginCase","com.arc.testcases.MyCities.LEEDforCities.SearchProgramTest.searchProgram","com.arc.testcases.MyCities.LEEDforCities.ClickSearchedProgramTest.clickSearchedProgram","com.arc.testcases.MyCities.LEEDforCities.PaymentbyCCTest.paymentbyCC" })
+	@Test //(dependsOnMethods = { "com.arc.testcases.MyCommunities.Other.LoginCaseTest.loginCase","com.arc.testcases.MyCommunities.Other.SearchProgramTest.searchProgram","com.arc.testcases.MyCommunities.Other.ClickSearchedProgramTest.clickSearchedProgram","com.arc.testcases.MyCommunities.Other.PaymentbyCCTest.paymentbyCC" })
 	@Parameters({"rowNum" ,"loginSheet", "communitySheet","cdataInputSheet"})
 	public void humanExperienceMeterCreate(int rowNum, String loginSheet, String communitySheet, String cdataInputSheet) throws IOException {
 		
@@ -28,7 +28,6 @@ public class HumanExpCreateSurveyTest extends BaseClass {
 		try {
 			
 			reuse.LoginToArc(rowNum, "My Projects", loginSheet);
-			//reuseSearch.VerifySearchedProgram("1000138676");
 			reuseSearch.SearchProgram(data.getCellData(communitySheet, "ProjectName", rowNum));
 			reuseSearch.VerifySearchedProgram(data.getCellData(communitySheet, "ProjectName", rowNum));
 			reuseDI.CreateHumtMeterCities("HumanExperience", cdataInputSheet, rowNum);
@@ -37,7 +36,6 @@ public class HumanExpCreateSurveyTest extends BaseClass {
 			System.out.println(t.getLocalizedMessage());
 			Error e1 = new Error(t.getMessage());
 			e1.setStackTrace(t.getStackTrace());
-			//CommonMethod.testlogError(driver,  "<pre>" + e1.toString() + "</pre>");
 			CommonMethod.takeScreenshot("CreateHumanExpCreateSurveyTest-ComOther");
 			throw e1;
 		}

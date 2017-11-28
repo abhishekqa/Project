@@ -24,7 +24,7 @@ public class PrecertificationPayTest extends BaseClass {
 		System.out.println(Thread.currentThread().getStackTrace()[1].getMethodName());
 		CommonMethod.ExtentReportConfig();
 		
-		CommonMethod.test = CommonMethod.extent.startTest("PrecertificationPay Test-Cities", "Verifies if Precertifiction functionality is correct").assignCategory("CheckPrecertification");
+		CommonMethod.test = CommonMethod.extent.startTest("PrecertificationPay Test-Cities None", "Verifies if Precertifiction functionality is correct").assignCategory("CheckPrecertification");
     
 		ReusableMethodsLogin reuse = new ReusableMethodsLogin();
 		ReusableMethodsPrerequisites reusePrereq = new ReusableMethodsPrerequisites();
@@ -44,8 +44,7 @@ public class PrecertificationPayTest extends BaseClass {
 			System.out.println(t.getLocalizedMessage());
 			Error e1 = new Error(t.getMessage());
 			e1.setStackTrace(t.getStackTrace());
-			//CommonMethod.testlogError(driver,  "<pre>" + e1.toString() + "</pre>");
-			CommonMethod.takeScreenshot("precertificationPayTest-city");
+			CommonMethod.takeScreenshot("precertificationPayTest-cityNone");
 			throw e1;
 		}
 	}

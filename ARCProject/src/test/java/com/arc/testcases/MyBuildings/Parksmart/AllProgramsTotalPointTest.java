@@ -32,7 +32,6 @@ public class AllProgramsTotalPointTest extends BaseClass {
 		try {
 			
 			reuse.LoginToArc(rowNum, "My Projects", loginSheet);
-		//	reuseSearch.VerifySearchedProgram( "1000136838");
 			reuseSearch.SearchProgram( data.getCellData(parkingSheet, "Project Name", rowNum));
 			reuseSearch.VerifySearchedProgram( data.getCellData(parkingSheet, "Project Name", rowNum));
 			reusePrereq.parkingprogram("B1Placemaking",12);
@@ -41,7 +40,6 @@ public class AllProgramsTotalPointTest extends BaseClass {
 			System.out.println(t.getLocalizedMessage());
 			Error e1 = new Error(t.getMessage());
 			e1.setStackTrace(t.getStackTrace());
-			//CommonMethod.testlogError(  "<pre>" + e1.toString() + "</pre>");
 			CommonMethod.takeScreenshot( "programsTotalPointTest-Parking");
 			throw e1;
 		}

@@ -723,7 +723,7 @@ public class ReusableMethodsDataInput extends BaseClass{
     	CommonMethod.sendKeys( "MeterName",meterName);
     	CommonMethod.testlog( "Pass","Entering Meter Name");
     	Thread.sleep(1000);
-    	CommonMethod.click( "AddButton");
+    	CommonMethod.click( "AddButtonMeter");
     	CommonMethod.testlog( "Pass","Clicking on Add Button");
     	Thread.sleep(2000);
     	
@@ -825,7 +825,7 @@ public void CreateOtherMeter(String param,String Metername,String MeterLocator, 
     	CommonMethod.click("EnergyOther");
     	CommonMethod.testlog( "Pass","Selecting Other Fuels");
     	Thread.sleep(1000);
-    	CommonMethod.click( "AddButton");
+    	CommonMethod.click( "AddButtonMeter");
     	CommonMethod.testlog( "Pass","Clicking on Add Button");
     	Thread.sleep(2000);
     	
@@ -941,7 +941,7 @@ public void CreateWaterWMeter(String param,String Metername,String MeterLocator,
     	CommonMethod.sendKeys( "MeterName", meterName);
     	CommonMethod.testlog( "Pass","Entering Meter Name");
     	Thread.sleep(1000);
-    	CommonMethod.click( "AddButton");
+    	CommonMethod.click( "AddButtonMeter");
     	CommonMethod.testlog( "Pass","Clicking on Add Button");
     	Thread.sleep(2000);
     	
@@ -1022,7 +1022,7 @@ public void CreateWaterWMeter(String param,String Metername,String MeterLocator,
     	CommonMethod.sendKeys( "MeterName","거기, 저기, 그곳, 저곳");
     	CommonMethod.testlog( "Pass","Entering Meter Name");
     	Thread.sleep(1000);
-    	CommonMethod.click( "AddButton");
+    	CommonMethod.click( "AddButtonMeter");
     	CommonMethod.testlog( "Pass","Clicking on Add Button");
     	Thread.sleep(2000);	
     	CommonMethod.testlog("Pass","Test Pass Kornian Meter added Successully");
@@ -1041,7 +1041,7 @@ public void CreateWaterWMeter(String param,String Metername,String MeterLocator,
     	CommonMethod.sendKeys( "MeterName","わたしは にほんごがすこししかはなせませ");
     	CommonMethod.testlog( "Pass","Entering Meter Name");
     	Thread.sleep(1000);
-    	CommonMethod.click( "AddButton");
+    	CommonMethod.click( "AddButtonMeter");
     	CommonMethod.testlog( "Pass","Clicking on Add Button");
     	Thread.sleep(2000);
     	CommonMethod.testlog("Pass"," Test passed Japanese Meter added Successully");
@@ -1053,7 +1053,7 @@ public void CreateWaterWMeter(String param,String Metername,String MeterLocator,
     	CommonMethod.sendKeys( "MeterName","謝謝你。 siè sie̊ nǐ");
     	CommonMethod.testlog( "Pass","Entering Meter Name");
     	Thread.sleep(1000);
-    	CommonMethod.click( "AddButton");
+    	CommonMethod.click( "AddButtonMeter");
     	CommonMethod.testlog( "Pass","Clicking on Add Button");
     	Thread.sleep(2000);
     	CommonMethod.testlog("Pass"," Test passed Mandarin Meter added Successully");
@@ -1065,7 +1065,7 @@ public void CreateWaterWMeter(String param,String Metername,String MeterLocator,
     	CommonMethod.sendKeys( "MeterName","今天的作业");
     	CommonMethod.testlog( "Pass","Entering Meter Name");
     	Thread.sleep(1000);
-    	CommonMethod.click( "AddButton");
+    	CommonMethod.click( "AddButtonMeter");
     	CommonMethod.testlog( "Pass","Clicking on Add Button");
     	Thread.sleep(2000);
     	CommonMethod.testlog("Pass"," Test passed Chinese Meter added Successully");
@@ -1080,7 +1080,7 @@ public void CreateWaterWMeter(String param,String Metername,String MeterLocator,
     	CommonMethod.sendKeys( "MeterName","á, é, í, ó, ú, ü, ñ, ¿, ¡¿Dónde");
     	CommonMethod.testlog( "Pass","Entering Meter Name");
     	Thread.sleep(1000);
-    	CommonMethod.click( "AddButton");
+    	CommonMethod.click( "AddButtonMeter");
     	CommonMethod.testlog( "Pass","Clicking on Add Button");
     	Thread.sleep(2000);
     	CommonMethod.testlog("Pass"," Test passed Meter added Successully");
@@ -1092,7 +1092,7 @@ public void CreateWaterWMeter(String param,String Metername,String MeterLocator,
     	CommonMethod.sendKeys( "MeterName","está el baño?");
     	CommonMethod.testlog( "Pass","Entering Meter Name");
     	Thread.sleep(1000);
-    	CommonMethod.click( "AddButton");
+    	CommonMethod.click( "AddButtonMeter");
     	CommonMethod.testlog( "Pass","Clicking on Add Button");
     	Thread.sleep(2000);
     	CommonMethod.testlog("Pass"," Test passed Meter added Successully");
@@ -1104,7 +1104,7 @@ public void CreateWaterWMeter(String param,String Metername,String MeterLocator,
     	CommonMethod.sendKeys( "MeterName","Frío");
     	CommonMethod.testlog( "Pass","Entering Meter Name");
     	Thread.sleep(1000);
-    	CommonMethod.click( "AddButton");
+    	CommonMethod.click( "AddButtonMeter");
     	CommonMethod.testlog( "Pass","Clicking on Add Button");
     	Thread.sleep(2000);
     	CommonMethod.testlog("Pass"," Test passed Meter added Successully");

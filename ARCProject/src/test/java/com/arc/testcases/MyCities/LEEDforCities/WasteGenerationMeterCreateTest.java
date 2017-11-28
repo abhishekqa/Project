@@ -15,7 +15,7 @@ public class WasteGenerationMeterCreateTest extends BaseClass {
 	
 	@Test //(dependsOnMethods = { "com.arc.testcases.MyCities.LEEDforCities.LoginCaseTest.loginCase","com.arc.testcases.MyCities.LEEDforCities.SearchProgramTest.searchProgram","com.arc.testcases.MyCities.LEEDforCities.ClickSearchedProgramTest.clickSearchedProgram","com.arc.testcases.MyCities.LEEDforCities.PaymentbyCCTest.paymentbyCC" })
 	@Parameters({"rowNum" ,"loginSheet", "citySheet","cdataInputSheet"})
-	public void wasteMeterCreate(int rowNum, String loginSheet, String citySheet, String cdataInputSheet) throws IOException {
+	public void wasteGenerationMeterCreate(int rowNum, String loginSheet, String citySheet, String cdataInputSheet) throws IOException {
 		
 		CommonMethod.ExtentReportConfig();
 		System.out.println(Thread.currentThread().getStackTrace()[1].getMethodName());
@@ -28,7 +28,6 @@ public class WasteGenerationMeterCreateTest extends BaseClass {
 		try {
 			
 			reuse.LoginToArc(rowNum, "My Projects", loginSheet);
-			//reuseSearch.VerifySearchedProgram("1000138686");
 			reuseSearch.SearchProgram(data.getCellData(citySheet, "ProjectName", rowNum));
 			reuseSearch.VerifySearchedProgram(data.getCellData(citySheet, "ProjectName", rowNum));
 			reuseDI.CreateWasteMeterCities("Waste", cdataInputSheet, rowNum);
@@ -37,8 +36,7 @@ public class WasteGenerationMeterCreateTest extends BaseClass {
 			System.out.println(t.getLocalizedMessage());
 			Error e1 = new Error(t.getMessage());
 			e1.setStackTrace(t.getStackTrace());
-			//CommonMethod.testlogError(driver,  "<pre>" + e1.toString() + "</pre>");
-			CommonMethod.takeScreenshot("createWasteMeterTest-CLEED");
+			CommonMethod.takeScreenshot("createWasteGenerationMeterTest-CLEED");
 			throw e1;
 		}
 	}

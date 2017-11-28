@@ -34,7 +34,6 @@ public class ParkingImageUploadTest extends BaseClass {
 		try {
 			
 			reuse.LoginToArc(rowNum, "My Projects", loginSheet);
-			//reuseSearch.VerifySearchedProgram( "1000139287");
 			reuseSearch.SearchProgram( data.getCellData(parkingSheet, "Project Name", rowNum));
 			reuseSearch.VerifySearchedProgram( data.getCellData(parkingSheet, "Project Name", rowNum));
 			reuseManage.uploadImageParking();
@@ -43,7 +42,6 @@ public class ParkingImageUploadTest extends BaseClass {
 			System.out.println(t.getLocalizedMessage());
 			Error e1 = new Error(t.getMessage());
 			e1.setStackTrace(t.getStackTrace());
-			//CommonMethod.testlogError(  "<pre>" + e1.toString() + "</pre>");
 			CommonMethod.takeScreenshot( "parkingImageUploadTest-Parking");
 			throw e1;
 		}

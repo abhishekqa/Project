@@ -31,7 +31,6 @@ public class AllMeasuresFileUploadTest extends BaseClass {
 		try {
 			
 			reuse.LoginToArc(rowNum, "My Projects",loginSheet);
-			//reuseSearch.VerifySearchedProgram( "1000137535");
 			reuseSearch.SearchProgram( data.getCellData(parkingSheet, "Project Name", rowNum));
 			reuseSearch.VerifySearchedProgram( data.getCellData(parkingSheet, "Project Name", rowNum));
 			reusePrereq.AllMeasureFileUpload("MA1Parking",47);
@@ -40,7 +39,6 @@ public class AllMeasuresFileUploadTest extends BaseClass {
 			System.out.println(t.getLocalizedMessage());
 			Error e1 = new Error(t.getMessage());
 			e1.setStackTrace(t.getStackTrace());
-			//CommonMethod.testlogError(  "<pre>" + e1.toString() + "</pre>");
 			CommonMethod.takeScreenshot( "allMeasuresFileUpload_48Credits-parking");
 			throw e1;
 		}

@@ -30,7 +30,6 @@ public class PaymentbyCCTest extends BaseClass {
 			ReusableMethodsSearch reusePublicSearch = new ReusableMethodsSearch();
 			try {
 				reuse.LoginToArc(rowNum,"My Projects", loginSheet);
-				//reuseSearch.VerifySearchedProgram( "1000139159");
 				reusePublicSearch.SearchProgram( data.getCellData(parkingSheet, "Project Name", rowNum));
 				reusePublicSearch.VerifySearchedProgram( data.getCellData(parkingSheet, "Project Name", rowNum));
 				reuseAddProject.PaymentbyCC("ParkingPaymentVerify","Congratulations on your Parksmart registration!",paymentSheet, rowNum );
@@ -39,7 +38,6 @@ public class PaymentbyCCTest extends BaseClass {
 				System.out.println(t.getLocalizedMessage());
 				Error e1 = new Error(t.getMessage());
 				e1.setStackTrace(t.getStackTrace());
-				//CommonMethod.testlogError(  "<pre>" + e1.toString() + "</pre>");
 				CommonMethod.takeScreenshot( "paymentByCreditcardTest-parking");
 				throw e1;
 			}

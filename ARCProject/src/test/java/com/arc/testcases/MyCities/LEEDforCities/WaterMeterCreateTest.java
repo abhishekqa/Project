@@ -28,7 +28,6 @@ public class WaterMeterCreateTest extends BaseClass {
 		try {
 			
 			reuse.LoginToArc(rowNum, "My Projects", loginSheet);
-			//reuseSearch.VerifySearchedProgram("1000138686");
 			reuseSearch.SearchProgram(data.getCellData(citySheet, "ProjectName", rowNum));
 			reuseSearch.VerifySearchedProgram(data.getCellData(citySheet, "ProjectName", rowNum));
 			reuseDI.CreateWaterMeterCities("Water", cdataInputSheet, rowNum);
@@ -37,7 +36,6 @@ public class WaterMeterCreateTest extends BaseClass {
 			System.out.println(t.getLocalizedMessage());
 			Error e1 = new Error(t.getMessage());
 			e1.setStackTrace(t.getStackTrace());
-			//CommonMethod.testlogError(driver,  "<pre>" + e1.toString() + "</pre>");
 			CommonMethod.takeScreenshot("createWaterMeterTest-CLEED");
 			throw e1;
 		}

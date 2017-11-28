@@ -22,7 +22,7 @@ public class WasteMeterEditReadingTest extends BaseClass {
 		System.out.println(Thread.currentThread().getStackTrace()[1].getMethodName());
 		CommonMethod.ExtentReportConfig();
 		
-		CommonMethod.test = CommonMethod.extent.startTest("ARC-Login Test", "Verifies if Login functionality is working fine").assignCategory("CheckLogin");
+		CommonMethod.test = CommonMethod.extent.startTest("ARC-Waste Meter Edit Reading Test city Leed", "Verifies if Login functionality is working fine").assignCategory("CreateMeter");
     
 		ReusableMethodsLogin reuse = new ReusableMethodsLogin();
 		ReusableMethodsDataInput reuseDI = new ReusableMethodsDataInput();
@@ -39,8 +39,7 @@ public class WasteMeterEditReadingTest extends BaseClass {
 			System.out.println(t.getLocalizedMessage());
 			Error e1 = new Error(t.getMessage());
 			e1.setStackTrace(t.getStackTrace());
-			//CommonMethod.testlogError(driver,  "<pre>" + e1.toString() + "</pre>");
-			CommonMethod.takeScreenshot("wasteMeterEditReadingTest-city");
+			CommonMethod.takeScreenshot("wasteMeterEditReadingTest-cityleed");
 			throw e1;
 		}
 	}

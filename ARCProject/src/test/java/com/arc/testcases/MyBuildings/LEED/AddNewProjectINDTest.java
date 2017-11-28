@@ -14,7 +14,7 @@ import com.arc.driver.CommonMethod;
 
 public class AddNewProjectINDTest extends BaseClass {
 	
-	@Test(dependsOnMethods={"com.arc.testcases.MyBuildings.LEED.LoginCaseTest.loginCaseTest"})
+	//@Test(dependsOnMethods={"com.arc.testcases.MyBuildings.LEED.LoginCaseTest.loginCaseTest"})
 	@Parameters({"rowNum" ,"buildingSheet","waterSheet" })
 	public void addNewProjectTest(int rowNum, String sheetName) throws IOException {
 		
